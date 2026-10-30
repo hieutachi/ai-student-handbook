@@ -1,0 +1,469 @@
+{
+  "time": "2026-10-30T11:15:11.808Z",
+  "browser": "Chrome/156.0.8078.48",
+  "results": [
+    {
+      "name": "Dashboard 14 tasks / 8 phases",
+      "ok": true,
+      "evidence": "Read state.js from file://"
+    },
+    {
+      "name": "Book loaded",
+      "ok": true,
+      "evidence": "4 full chapters, 4 self-check controls"
+    },
+    {
+      "name": "Chapter 3 keeps its seven teaching moves",
+      "ok": true,
+      "evidence": {
+        "missing": [],
+        "h2": 28
+      }
+    },
+    {
+      "name": "Chapter 4 has dossiers 1–7 plus clinic, rubric, checklist",
+      "ok": true,
+      "evidence": {
+        "dossiers": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7"
+        ],
+        "hasClinic": true,
+        "hasRubric": true,
+        "hasChecklist": true
+      }
+    },
+    {
+      "name": "Answers are collapsed until opened",
+      "ok": true,
+      "evidence": "Answer blocks ship closed; print opens them temporarily"
+    },
+    {
+      "name": "Images decoded",
+      "ok": true,
+      "evidence": [
+        16,
+        []
+      ]
+    },
+    {
+      "name": "All book anchors exist",
+      "ok": true,
+      "evidence": []
+    },
+    {
+      "name": "Budget 1000 calls",
+      "ok": true,
+      "evidence": [
+        "18.500 USD",
+        "≈ 462500 VND · chưa phí khác"
+      ]
+    },
+    {
+      "name": "Reject blank budget",
+      "ok": true,
+      "evidence": "No fabricated estimate for empty field"
+    },
+    {
+      "name": "Trace 42000 / 60000",
+      "ok": true,
+      "evidence": [
+        "Dừng tại i = 2 · tổng 42.000 VND. Vở ghi chưa được cộng.",
+        "Dừng tại i = 3 · tổng 60.000 VND. Đã cộng đủ ba khoản; vẫn cần ca biên và dữ liệu sai."
+      ]
+    },
+    {
+      "name": "TOC non-accented search",
+      "ok": true,
+      "evidence": "Unicode NFD and đ/d normalization"
+    },
+    {
+      "name": "Self-check saves local progress",
+      "ok": true,
+      "evidence": "User-owned self-check, not test score"
+    },
+    {
+      "name": "Font controls stay within 16–22 px",
+      "ok": true,
+      "evidence": "Measured CSS variable, then restored 18px"
+    },
+    {
+      "name": "Reader self-check persists after reload",
+      "ok": true,
+      "evidence": "Same isolated Chrome file:// origin"
+    },
+    {
+      "name": "Quiz gives explanation",
+      "ok": true,
+      "evidence": "Correct choice plus reasoning"
+    },
+    {
+      "name": "Print opens and restores answers",
+      "ok": true,
+      "evidence": "beforeprint/afterprint events"
+    },
+    {
+      "name": "No page overflow at 768",
+      "ok": true,
+      "evidence": {
+        "width": 768,
+        "scrollWidth": 753
+      }
+    },
+    {
+      "name": "No page overflow at 375",
+      "ok": true,
+      "evidence": {
+        "width": 375,
+        "scrollWidth": 360
+      }
+    },
+    {
+      "name": "Mobile menu opens",
+      "ok": true,
+      "evidence": "375px actual browser emulation"
+    },
+    {
+      "name": "PDF rendered",
+      "ok": true,
+      "evidence": "reports/print-preview.pdf; requires visual spot check"
+    },
+    {
+      "name": "Web starts with three samples",
+      "ok": true,
+      "evidence": "Fresh isolated browser profile"
+    },
+    {
+      "name": "Web valid add 75000",
+      "ok": true,
+      "evidence": {
+        "total": "75.000 đ",
+        "message": "Đã thêm khoản chi giả. Hãy tự nhẩm tổng để đối chiếu."
+      }
+    },
+    {
+      "name": "Web rejects numeric suffix",
+      "ok": true,
+      "evidence": {
+        "total": "75.000 đ",
+        "message": "Nhập số nguyên VND, không có dấu chấm, phẩy hay chữ."
+      }
+    },
+    {
+      "name": "Web displays literal HTML-like title",
+      "ok": true,
+      "evidence": "textContent, not parsed markup"
+    },
+    {
+      "name": "Web localStorage persists in tested browser",
+      "ok": true,
+      "evidence": "Observed on this Chrome file:// profile only; not universal guarantee"
+    },
+    {
+      "name": "Web delete to empty = 0",
+      "ok": true,
+      "evidence": "All fake rows removed in isolated profile"
+    },
+    {
+      "name": "Corrupt storage falls back without overwrite",
+      "ok": true,
+      "evidence": "Broken fixture kept; no real user data used"
+    },
+    {
+      "name": "Fallback adds a real in-memory row",
+      "ok": true,
+      "evidence": {
+        "total": "60.001 đ",
+        "message": "Đã thêm khoản chi giả. Hãy tự nhẩm tổng để đối chiếu."
+      }
+    },
+    {
+      "name": "Fallback does not promise persistence",
+      "ok": true,
+      "evidence": "In-memory addition disappears after reload, notice remains"
+    },
+    {
+      "name": "Web demo no mobile page overflow",
+      "ok": true,
+      "evidence": {
+        "width": 375,
+        "scrollWidth": 360
+      }
+    },
+    {
+      "name": "SVG transformed text in bounds: cover.svg",
+      "ok": true,
+      "evidence": []
+    },
+    {
+      "name": "SVG text does not collide: cover.svg",
+      "ok": true,
+      "evidence": []
+    },
+    {
+      "name": "SVG text at least 18px: cover.svg",
+      "ok": true,
+      "evidence": 18
+    },
+    {
+      "name": "SVG transformed text in bounds: chapter-01.svg",
+      "ok": true,
+      "evidence": []
+    },
+    {
+      "name": "SVG text does not collide: chapter-01.svg",
+      "ok": true,
+      "evidence": []
+    },
+    {
+      "name": "SVG text at least 18px: chapter-01.svg",
+      "ok": true,
+      "evidence": 18
+    },
+    {
+      "name": "SVG transformed text in bounds: chapter-02.svg",
+      "ok": true,
+      "evidence": []
+    },
+    {
+      "name": "SVG text does not collide: chapter-02.svg",
+      "ok": true,
+      "evidence": []
+    },
+    {
+      "name": "SVG text at least 18px: chapter-02.svg",
+      "ok": true,
+      "evidence": 18
+    },
+    {
+      "name": "SVG transformed text in bounds: chapter-03.svg",
+      "ok": true,
+      "evidence": []
+    },
+    {
+      "name": "SVG text does not collide: chapter-03.svg",
+      "ok": true,
+      "evidence": []
+    },
+    {
+      "name": "SVG text at least 18px: chapter-03.svg",
+      "ok": true,
+      "evidence": 18
+    },
+    {
+      "name": "SVG transformed text in bounds: chapter-04.svg",
+      "ok": true,
+      "evidence": []
+    },
+    {
+      "name": "SVG text does not collide: chapter-04.svg",
+      "ok": true,
+      "evidence": []
+    },
+    {
+      "name": "SVG text at least 18px: chapter-04.svg",
+      "ok": true,
+      "evidence": 18
+    },
+    {
+      "name": "SVG transformed text in bounds: ecosystem.svg",
+      "ok": true,
+      "evidence": []
+    },
+    {
+      "name": "SVG text does not collide: ecosystem.svg",
+      "ok": true,
+      "evidence": []
+    },
+    {
+      "name": "SVG text at least 18px: ecosystem.svg",
+      "ok": true,
+      "evidence": 18
+    },
+    {
+      "name": "SVG transformed text in bounds: roles.svg",
+      "ok": true,
+      "evidence": []
+    },
+    {
+      "name": "SVG text does not collide: roles.svg",
+      "ok": true,
+      "evidence": []
+    },
+    {
+      "name": "SVG text at least 18px: roles.svg",
+      "ok": true,
+      "evidence": 18
+    },
+    {
+      "name": "SVG transformed text in bounds: token-context.svg",
+      "ok": true,
+      "evidence": []
+    },
+    {
+      "name": "SVG text does not collide: token-context.svg",
+      "ok": true,
+      "evidence": []
+    },
+    {
+      "name": "SVG text at least 18px: token-context.svg",
+      "ok": true,
+      "evidence": 18
+    },
+    {
+      "name": "SVG transformed text in bounds: workspace.svg",
+      "ok": true,
+      "evidence": []
+    },
+    {
+      "name": "SVG text does not collide: workspace.svg",
+      "ok": true,
+      "evidence": []
+    },
+    {
+      "name": "SVG text at least 18px: workspace.svg",
+      "ok": true,
+      "evidence": 18
+    },
+    {
+      "name": "SVG transformed text in bounds: workflow.svg",
+      "ok": true,
+      "evidence": []
+    },
+    {
+      "name": "SVG text does not collide: workflow.svg",
+      "ok": true,
+      "evidence": []
+    },
+    {
+      "name": "SVG text at least 18px: workflow.svg",
+      "ok": true,
+      "evidence": 18
+    },
+    {
+      "name": "SVG transformed text in bounds: debugging.svg",
+      "ok": true,
+      "evidence": []
+    },
+    {
+      "name": "SVG text does not collide: debugging.svg",
+      "ok": true,
+      "evidence": []
+    },
+    {
+      "name": "SVG text at least 18px: debugging.svg",
+      "ok": true,
+      "evidence": 18
+    },
+    {
+      "name": "SVG transformed text in bounds: active-learning.svg",
+      "ok": true,
+      "evidence": []
+    },
+    {
+      "name": "SVG text does not collide: active-learning.svg",
+      "ok": true,
+      "evidence": []
+    },
+    {
+      "name": "SVG text at least 18px: active-learning.svg",
+      "ok": true,
+      "evidence": 18
+    },
+    {
+      "name": "SVG transformed text in bounds: ai-trap.svg",
+      "ok": true,
+      "evidence": []
+    },
+    {
+      "name": "SVG text does not collide: ai-trap.svg",
+      "ok": true,
+      "evidence": []
+    },
+    {
+      "name": "SVG text at least 18px: ai-trap.svg",
+      "ok": true,
+      "evidence": 18
+    },
+    {
+      "name": "SVG transformed text in bounds: security.svg",
+      "ok": true,
+      "evidence": []
+    },
+    {
+      "name": "SVG text does not collide: security.svg",
+      "ok": true,
+      "evidence": []
+    },
+    {
+      "name": "SVG text at least 18px: security.svg",
+      "ok": true,
+      "evidence": 18
+    },
+    {
+      "name": "SVG transformed text in bounds: final-boss.svg",
+      "ok": true,
+      "evidence": []
+    },
+    {
+      "name": "SVG text does not collide: final-boss.svg",
+      "ok": true,
+      "evidence": []
+    },
+    {
+      "name": "SVG text at least 18px: final-boss.svg",
+      "ok": true,
+      "evidence": 18
+    },
+    {
+      "name": "SVG transformed text in bounds: skill-map.svg",
+      "ok": true,
+      "evidence": []
+    },
+    {
+      "name": "SVG text does not collide: skill-map.svg",
+      "ok": true,
+      "evidence": []
+    },
+    {
+      "name": "SVG text at least 18px: skill-map.svg",
+      "ok": true,
+      "evidence": 18
+    },
+    {
+      "name": "One-page outline is first and complete",
+      "ok": true,
+      "evidence": {
+        "position": 1,
+        "routes": 5,
+        "missions": 7,
+        "dossiers": 8,
+        "broken": [],
+        "hasContract": true,
+        "hasLimits": true
+      }
+    },
+    {
+      "name": "Online build hides internal dashboard link",
+      "ok": true,
+      "evidence": "offline package keeps dashboard"
+    },
+    {
+      "name": "No runtime exceptions",
+      "ok": true,
+      "evidence": []
+    },
+    {
+      "name": "No remote content requests",
+      "ok": true,
+      "evidence": []
+    }
+  ],
+  "errors": [],
+  "externalRequests": []
+}

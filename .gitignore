@@ -1,0 +1,21 @@
+# Dau ra trung gian va bo nho tam — tai tao bang scripts/, khong can review
+site/
+__pycache__/
+*.pyc
+
+# Nhat ky kiem chay tam va ban trinh dich de lai boi verify_examples.py
+reports/verification-*/
+reports/browser-check-*/
+*.exe
+*.out
+*.obj
+
+# Mo ta publish cua may nguoi bien tap (duong dan tuyet doi, may khac khong dung duoc)
+*.qoder.site
+
+# He dieu hanh / trinh soan thao
+.DS_Store
+Thumbs.db
+*.swp
+.idea/
+.vscode/

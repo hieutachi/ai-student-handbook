@@ -1,0 +1,176 @@
+<!doctype html><html lang="vi"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>THƯ VIỆN PROMPT · HỎI ÍT HƠN, HIỂU RÕ HƠN</title><style>:root{--paper:#f6f3ea;--ink:#20342d;--muted:#58685f;--green:#35634b;--soft:#dce8d0;--rust:#b95132;--yellow:#f2dfa5;--line:#d4dbcf;--font:18px;--nav:270px}*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:90px}body{margin:0;background:var(--paper);color:var(--ink);font:var(--font)/1.8 system-ui,-apple-system,'Segoe UI',sans-serif}a{color:var(--green);text-underline-offset:4px}button,input,select{font:inherit}button,select{cursor:pointer}button{padding:8px 15px;min-height:40px;border:1px solid #879b85;border-radius:5px;background:transparent;color:var(--ink)}button:hover{background:var(--soft)}a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,summary:focus-visible{outline:3px solid var(--rust);outline-offset:4px}img{max-width:100%;height:auto}h1,h2,h3,h4{line-height:1.24;text-wrap:balance}h1,h2{font-family:Georgia,'Times New Roman',serif;font-weight:500;letter-spacing:-.035em}h1{font-size:clamp(48px,6vw,82px)}h2{font-size:clamp(31px,3vw,43px);margin:64px 0 25px}h3{font-size:24px;margin:40px 0 18px;letter-spacing:-.025em}h4{font-size:20px;margin:30px 0 16px}p{margin:0 0 20px}li{margin:8px 0}ul,ol{padding-left:26px}strong{font-weight:700}code{font: .87em/1.5 ui-monospace,Consolas,monospace;background:#e8ebdf;padding:2px 5px;border-radius:3px;overflow-wrap:anywhere}pre{margin:0;padding:23px;overflow-x:auto;max-width:100%;background:#21362f;color:#eef3e5;font-size:14px;line-height:1.65;tab-size:4}pre code{font:inherit;color:inherit;background:none;padding:0;border-radius:0;white-space:pre;overflow-wrap:normal}blockquote{margin:25px 0;padding:20px 24px;border-left:3px solid var(--green);background:#e8ecde;font-size:.96em}blockquote p:last-child{margin:0}hr{border:0;border-top:1px solid var(--line);margin:50px 0}.skip{position:fixed;left:12px;top:-100px;z-index:100;background:white;padding:12px}.skip:focus{top:12px}.sidebar{position:fixed;inset:0 auto 0 0;width:var(--nav);border-right:1px solid var(--line);padding:28px 22px 22px;background:#eceee3;overflow-y:auto;z-index:30}.brand{font:700 19px/1.25 system-ui;text-decoration:none;color:var(--ink);display:block;letter-spacing:-.03em}.brand small{display:block;font:11px/1.5 ui-monospace,monospace;letter-spacing:.08em;margin-top:9px;color:var(--muted)}.nav-search{margin:26px 0 16px;width:100%;background:transparent;border:1px solid #abb7a5;border-radius:5px;padding:9px 11px;font-size:13px}.toc{padding:0;list-style:none}.toc ul{list-style:none;margin:0 0 17px;padding:0 0 0 12px}.toc li{margin:3px 0}.toc a{display:block;font-size:12px;line-height:1.5;text-decoration:none;padding:5px 7px;border-radius:4px;color:#52634f}.toc>.toc-group>.chapter-link{font-size:13px;font-weight:700;color:var(--ink);margin-top:14px}.toc a:hover,.toc a.active{background:#dce5d0;color:#20342d}.nav-foot{font-size:11px;line-height:1.6;border-top:1px solid var(--line);padding-top:16px;margin-top:24px;color:var(--muted)}.topbar{height:62px;position:sticky;top:0;margin-left:var(--nav);display:flex;align-items:center;justify-content:space-between;padding:0 4vw;background:#f6f3eafa;border-bottom:1px solid var(--line);z-index:20;gap:12px}.top-label{font:11px/1.5 ui-monospace,monospace;letter-spacing:.12em;text-transform:uppercase}.tools{display:flex;align-items:center;gap:7px}.tools button{font-size:12px;padding:5px 9px;min-height:35px}.scroll-track{height:2px;position:absolute;bottom:0;left:0;right:0;background:var(--line)}#scroll-progress{height:100%;width:0;background:var(--rust)}.mobile-menu{display:none}.shade{display:none}main{margin-left:var(--nav)}.inner{max-width:1190px;padding:0 5vw;margin:auto}.eyebrow{font:11px/1.6 ui-monospace,monospace;letter-spacing:.17em;text-transform:uppercase}.hero{padding:64px 0 45px;border-bottom:1px solid var(--line)}.hero-grid{display:grid;grid-template-columns:1.05fr 1fr;gap:20px;align-items:center}.hero h1{margin:20px 0 25px}.hero h1 em{color:var(--rust);font-weight:400}.hero .lede{font-size:20px;line-height:1.6;max-width:620px}.hero-art{width:100%;border-radius:50% 50% 10px 10px}.hero-nav{display:flex;flex-wrap:wrap;gap:10px;margin-top:27px}.hero-nav a{padding:11px 17px;text-decoration:none;font-size:13px;border:1px solid var(--green);border-radius:4px}.hero-nav a:first-child{background:var(--green);color:#fff}.edition{font-size:11px;color:var(--muted);margin-top:35px;letter-spacing:.02em}.route-map{display:grid;grid-template-columns:repeat(4,1fr);margin:35px 0 0;border-top:1px solid var(--line)}.route-map a{padding:17px 12px 0 0;text-decoration:none;font-size:12px}.route-map b{display:block;font:23px Georgia;margin-bottom:5px}.intro{padding:20px 0 60px}.chapter{padding:70px 0 50px;border-top:1px solid var(--line)}.chapter-heading{display:grid;grid-template-columns:90px 1fr;gap:25px;align-items:start;margin:0 0 32px}.chapter-num{font:75px/.95 Georgia;color:var(--rust);letter-spacing:-.06em}.chapter-heading h2{font-size:clamp(36px,4.4vw,63px);margin:12px 0 18px;max-width:760px}.chapter-heading p{font-size:15px;color:var(--muted);line-height:1.65;max-width:720px}.opener{margin:0 0 50px}.opener img{width:100%;border:1px solid var(--line);border-radius:8px}.prose{max-width:900px;margin:0 auto;min-width:0}.prose>p:first-child{font-size:1.08em}.prose figure{margin:36px 0}.prose figure img{width:100%;border-radius:7px;border:1px solid var(--line);background:#f6f3ea}figcaption{font-size:12px;line-height:1.55;color:var(--muted);margin-top:8px}figcaption a{white-space:nowrap}.table-scroll{overflow-x:auto;max-width:100%;border:1px solid var(--line);border-radius:5px;margin:26px 0}table{border-collapse:collapse;min-width:570px;width:100%;font-size:14px;line-height:1.65}th{text-align:left;background:#e5e9dc;font-weight:650}td,th{padding:13px 15px;vertical-align:top;border-bottom:1px solid var(--line)}tr:last-child td{border-bottom:0}td code,th code{font-size:.9em}tbody tr:nth-child(even){background:#fff5}.code-wrap{margin:25px 0;min-width:0;max-width:100%;border-radius:6px;overflow:hidden}.code-top{background:#324b40;color:#dde6d6;padding:7px 14px;display:flex;justify-content:space-between;align-items:center;font:11px/1.5 ui-monospace,monospace}.code-top button{font:11px system-ui;min-height:28px;padding:3px 9px;color:#f4f7ef;border-color:#9eb19b}.code-top button:hover{background:#48624f}.answer{margin:30px 0;border-top:1px solid #a9b9a0;border-bottom:1px solid #a9b9a0;padding:4px 0}.answer summary{cursor:pointer;line-height:1.5;padding:17px 7px;font-size:16px;font-weight:650}.answer-body{padding:15px 8px 20px;min-width:0}.answer summary::marker{color:var(--rust)}.answer[open]{background:#f0f1e5}.instructor{font-size:14px}.widget{border:1px solid #b2c3a5;background:#e9edde;padding:26px;border-radius:8px;margin:34px 0}.widget h3{margin:8px 0 14px;font:30px/1.2 Georgia}.widget p{font-size:14px}.widget label{display:block;font-size:12px;font-weight:600}.widget input,.widget select{width:100%;border:1px solid #9dad94;background:#fbfcf6;padding:9px;border-radius:4px;margin-top:6px;color:var(--ink)}.budget-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.budget-result{display:flex;align-items:baseline;gap:15px;flex-wrap:wrap;margin:20px 0 0}.budget-result strong{font:38px/1.2 Georgia}.budget-result span{font-size:14px}.error{color:#91331e;font-weight:600}.trace-items{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:22px 0}.trace-item{border:1px solid #bbc8af;padding:18px 10px;text-align:center;border-radius:5px}.trace-item small{display:block;font:11px/1.4 ui-monospace,monospace}.trace-item b{font:28px/1.5 Georgia}.trace-item.added{background:#bfd7a5;border-color:#5b7946}.trace-item.current{outline:2px solid var(--rust);outline-offset:2px}.trace-controls{display:flex;align-items:end;gap:10px;flex-wrap:wrap}.trace-controls label{flex:1;min-width:160px}.trace-state{margin-top:18px;font-size:15px;min-height:54px}.quiz fieldset{border:0;padding:0;margin:0}.quiz legend{font-size:17px;font-weight:650;margin-bottom:15px}.quiz label{font-weight:400;font-size:15px;margin:9px 0;display:flex;gap:10px;align-items:start}.quiz input{width:auto;margin:6px 0 0}.quiz-result{margin-top:14px!important}.chapter-end{max-width:900px;margin:40px auto 0;padding:22px 0;border-top:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;gap:15px;font-size:13px}.chapter-end button[aria-pressed=true]{background:var(--green);color:white}.study-status{font:11px/1.5 ui-monospace,monospace;color:var(--muted)}.supplement{border-top:1px solid var(--line);padding:60px 0}.supplement>.section-title{font-size:44px;margin:12px 0 32px}.footer{padding:50px 0;border-top:1px solid var(--line);font-size:13px;color:var(--muted)}.footer strong{font:26px Georgia;color:var(--ink)}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}[hidden]{display:none!important}.focus .sidebar{display:none}.focus .topbar,.focus main{margin-left:0}.focus .inner{max-width:1100px}.focus .top-label{display:none}@media(min-width:1600px){:root{--nav:300px}.sidebar{padding:35px 28px}.inner{padding:0 65px}}@media(max-width:1150px){.hero-grid{grid-template-columns:1fr}.hero-art{max-height:440px;object-fit:contain;border-radius:0}.hero h1{max-width:680px}.hero .lede{max-width:650px}.top-label{display:none}}@media(max-width:950px){.sidebar{transform:translateX(-100%);width:280px;visibility:hidden}.topbar,main{margin-left:0}.mobile-menu{display:block}.nav-open .sidebar{transform:translateX(0);visibility:visible}.nav-open .shade{display:block;position:fixed;inset:0;background:#10241966;z-index:25;border:0;border-radius:0;width:100%;height:100%}.focus .sidebar{display:block}.inner{padding:0 6vw}.top-label{display:block}.hero{padding-top:42px}}@media(max-width:580px){body{font-size:var(--font)}.inner{padding:0 20px}.topbar{padding:0 14px}.top-label{display:none}.tools{gap:4px}.tools button{padding:5px 7px;font-size:11px}#focus-toggle{display:none}.hero{padding-top:33px}.hero h1{font-size:48px}.hero .lede{font-size:18px}.hero-art{max-height:none}.hero-nav a{font-size:12px}.route-map{grid-template-columns:repeat(2,1fr)}.route-map a{padding:12px 10px 0 0}.chapter{padding-top:42px}.chapter-heading{grid-template-columns:44px 1fr;gap:12px}.chapter-num{font-size:40px}.chapter-heading h2{font-size:35px;margin-top:8px}.chapter-heading p{font-size:13px}.opener{margin-bottom:30px}h2{font-size:31px;margin-top:42px}h3{font-size:22px}.widget{padding:17px}.budget-grid{grid-template-columns:repeat(2,1fr);gap:12px}.budget-result strong{font-size:32px}.trace-items{gap:7px}.trace-item{padding:12px 5px}.trace-item b{font-size:22px}.trace-item small{font-size:9px}.chapter-end{flex-direction:column;align-items:flex-start}.prose figure{margin:26px 0}.code-top{padding:7px 10px}pre{padding:16px}.supplement>.section-title{font-size:36px}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}@page{size:A4;margin:18mm}@media print{body{background:white;font:10.5pt/1.6 Georgia;color:#111}.sidebar,.topbar,.hero-nav,.route-map,.shade,.skip,.tools,.code-top button,.chapter-end,.widget button,.quiz,.nav-foot{display:none!important}main{margin:0}.inner{max-width:none;padding:0}.hero{padding-top:0}.hero-grid{grid-template-columns:1fr 1fr}.hero h1{font-size:40pt}.hero-art{max-height:100mm}.hero .lede{font-size:13pt}.hero .edition{font-size:8pt}.chapter,.supplement{break-before:page;padding-top:10mm}.chapter-heading h2{font-size:28pt}.chapter-num{font-size:42pt}.opener img{max-height:90mm;object-fit:contain}.prose{max-width:none}.prose h2{font-size:21pt}.prose h3{font-size:15pt}h2,h3,h4,summary{break-after:avoid}.prose figure{break-inside:avoid}.prose figure img{max-height:115mm;object-fit:contain}.table-scroll{overflow:visible}table{min-width:0;font-size:8.5pt}td,th{padding:6pt}pre{white-space:pre-wrap;overflow:visible;color:#111;background:#f1f1ec;font-size:8pt;overflow-wrap:anywhere}pre code{white-space:pre-wrap}.code-wrap{break-inside:avoid}.answer-body{display:block!important}.answer{border-color:#aaa}.widget{break-inside:avoid}.footer{font-size:9pt}a{color:inherit}.study-status{display:none}}
+main{margin:0}.preview-header{padding:16px 5vw;background:#20342d;color:#fff;font-size:13px}.preview-header a{color:#dce8d0}.preview-main{max-width:1000px;margin:auto;padding:30px 25px}.pending{font-size:13px;color:#58685f;border-left:2px solid #aaa;padding:10px}h1{font-size:44px}</style><body><header class="preview-header"><a href="../index.html">Về dashboard</a> · Bản xem trước nội dung; chưa thay cho kiểm thử bản xuất bản.</header><main class="preview-main prose"><h1>THƯ VIỆN PROMPT · HỎI ÍT HƠN, HIỂU RÕ HƠN</h1>
+<p>Tám thẻ P01–P08 kế thừa chức năng học tập của mục 3.4 bản nguồn; P09–P11 là bổ sung biên tập cho việc chuẩn bị ngữ cảnh, giao Agent và kiểm chứng nguồn. Chọn <strong>một thẻ cho đúng điểm nghẽn</strong>, không gửi cả thư viện. Bạn có thể dùng câu hỏi với bạn học hoặc giảng viên nếu không có quyền truy cập AI.</p>
+<p>Prompt là lời yêu cầu, không phải cơ chế bảo vệ quyền hệ thống. Chỉ dùng khi phạm vi môn học cho phép, chỉ gửi dữ liệu giả. Trước khi bấm gửi, đọc lại tất cả nội dung và thay phần có ngoặc vuông bằng dữ liệu của bài tập được phép chia sẻ; đừng để AI tự đoán tệp hoặc kết quả chạy.</p>
+<h2>P01 · Socratic: bắt đầu từ câu hỏi</h2>
+<p><strong>Dùng khi:</strong> Minh biết chương trình ra 42000 nhưng chưa chỉ ra lượt bị bỏ. <strong>Bạn chuẩn bị:</strong> viết chỉ số hợp lệ và tổng tính tay lên giấy.</p>
+<div class="code-wrap"><pre><code class="language-text">Tôi là Minh, năm nhất học C++. Bản C++ ViSinhVien chỉ dùng
+vector&lt;long long&gt; amounts, không cần class Expense bốn trường.
+Dữ liệu hoàn toàn giả: Cơm trưa 35000, Xe buýt 7000, Vở ghi 18000.
+Tổng đúng 60000; vòng lặp i &lt; n - 1 đang cho 42000, n là int.
+Hợp đồng: tiền nguyên VND từ 1 đến 1000000000; tối đa 500 khoản;
+danh sách rỗng hợp lệ và tổng bằng 0.
+Hãy hỏi kiểu Socratic, một câu mỗi lượt, chờ tôi trả lời.
+Bắt đầu từ các chỉ số hợp lệ của ba phần tử. Không viết vòng lặp
+đúng và chưa nêu điều kiện cần thay. Chỉ nhận xét lập luận tôi gửi.
+Bằng chứng cuối buổi: tôi tự trace, nêu lượt bị bỏ và lý do sửa.
+Nếu lỡ lộ lời giải, dừng và giao ca một khoản 7000 để tôi tự trace;
+không giải hộ ca mới. Không nhận đã chạy code nếu chưa thực thi.
+</code></pre></div>
+<p><strong>THINK FIRST:</strong> Sau câu hỏi đầu, bạn phải viết được điều gì mà trước đó chưa viết được? Nếu AI hỏi năm câu cùng lúc, chọn một câu để trả lời và yêu cầu chờ. Nếu đáp án lộ, việc đọc nó là ôn tập, không còn là bằng chứng tự giải.</p>
+<h2>P02 · Ba tầng gợi ý</h2>
+<p><strong>Dùng khi:</strong> chưa biết nhìn vào đâu nhưng vẫn muốn tự sửa. <strong>Bạn chuẩn bị:</strong> một dòng mô tả điều đã thử, chẳng hạn “em đã in tổng sau từng lượt”.</p>
+<div class="code-wrap"><pre><code class="language-text">Tôi tự viết vòng lặp C++ cộng vector&lt;long long&gt; amounts trong
+ViSinhVien. Ba khoản giả theo thứ tự: 35000, 7000, 18000 VND.
+Mong đợi 60000, đang nhận 42000. Mỗi khoản nguyên từ 1 đến 1e9,
+tối đa 500 khoản, rỗng tổng 0. Vòng lặp hiện dùng i &lt; n - 1;
+n và i là int, tổng là long long.
+Chuẩn bị ba mức gợi ý: mức 1 chỉ vùng cần xem; mức 2 hỏi quan hệ
+chỉ số cuối và số phần tử; mức 3 cho bảng trace còn ô trống.
+Bây giờ CHỈ đưa mức 1. Chỉ nâng mức khi tôi yêu cầu sau khi báo
+điều đã thử. Không viết code sửa hoặc điều kiện đúng.
+Kết quả cần có là bảng tôi tự điền và một thay đổi tôi giải thích.
+Nếu lộ lời giải, báo rõ rồi giao ca rỗng và danh sách một khoản 12000
+để tôi tự so hai cận, không kèm kết quả. Ca rỗng riêng lẻ không đủ
+phân biệt hai cận. Không chỉnh file hay chạy lệnh ở nhiệm vụ này.
+</code></pre></div>
+<p><strong>Lỗi thường gặp:</strong> xin cả ba tầng một lúc rồi đọc hết. Nhịp hữu ích là một gợi ý → một thao tác → một nhận xét, không phải một prompt dài → một đáp án hoàn chỉnh.</p>
+<h2>P03 · Trace cả giá trị lẫn kiểu</h2>
+<p><strong>Dùng khi:</strong> Lan thấy một chuỗi số dài và muốn biết nó hình thành ở đâu. Đây là lỗi mô phỏng riêng, không mô tả demo Web đúng đi kèm.</p>
+<div class="code-wrap"><pre><code class="language-text">Tôi là Lan, năm hai học Web. ViSinhVien dùng HTML/JS/localStorage,
+không backend. Bộ mẫu giả chuẩn có tiền số: 35000, 7000, 18000;
+tổng 60000. Bây giờ tôi mô phỏng lỗi bằng amount chuỗi "35000",
+"7000", "18000", với total bắt đầu là số 0.
+Mỗi lượt thực hiện total = total + expense.amount.
+Hãy tạo bảng TRỐNG với cột: lượt, kiểu total trước, kiểu amount,
+phép toán, giá trị total sau, kiểu total sau. Chờ tôi điền từng hàng.
+Không điền hộ và không viết hàm chuyển kiểu. Hợp đồng đích là
+amount số nguyên VND từ 1 đến 1e9; tối đa 500 khoản, rỗng trả 0.
+Hãy nhận xét chỗ tôi nhầm kiểu; mục tiêu là tôi chỉ ra lượt đầu
+đổi kiểu và ranh giới cần kiểm tra đầu vào.
+Nếu lỡ điền bảng, dừng; để tôi tự trace một chuỗi "7000" từ total=0.
+Không nói rằng chạy thử đã thành công nếu chỉ suy luận.
+</code></pre></div>
+<p>Giữ dấu ngoặc kép khi ghi chuỗi. <code>"35000"</code> và <code>35000</code> nhìn gần giống nhưng phép cộng có thể xử lý khác. Ghi mỗi kết quả cùng kiểu là cách chống đoán bằng hình dáng.</p>
+<h2>P04 · Review đúng một thay đổi</h2>
+<p><strong>Dùng khi:</strong> đã có bản vá nhỏ và muốn kiểm tra lập luận, không muốn AI viết lại cả chương trình.</p>
+<div class="code-wrap"><pre><code class="language-text">Tôi là Minh. Bản C++ ViSinhVien dùng vector&lt;long long&gt; amounts;
+int n là số khoản, int i là chỉ số, long long total là tổng.
+Dữ liệu giả 35000, 7000, 18000; tổng đúng 60000, cận cũ cho 42000.
+Thay đổi duy nhất của tôi: i &lt; n - 1 thành i &lt; n.
+Hợp đồng dữ liệu: nguyên VND từ 1 đến 1e9, tối đa 500; rỗng tổng 0.
+Chỉ review thay đổi cận này, hỏi tôi chứng minh phạm vi chỉ số và
+chọn test. Không viết lại hàm, không thêm validation hay tính năng.
+Phân biệt rõ: sửa cận KHÔNG tự chứng minh chương trình từ chối
+đầu vào sai; phần validation là việc riêng chưa được review ở đây.
+Chờ tôi giải thích ba khoản, một khoản 7000, rỗng và vì sao dùng
+long long. Nếu đưa lời giải đầy đủ, dừng rồi giao n=1 để tôi tự so
+hai điều kiện. Không thay file và không nhận đã chạy kiểm thử.
+</code></pre></div>
+<p><strong>QUICK CHECK:</strong> Nếu review nói “đã sửa cận nên an toàn mọi đầu vào”, bạn sẽ phản biện bằng ca nào? Gợi ý để tự nghĩ: số lượng và miền tiền chưa xuất hiện trong diff này.</p>
+<h2>P05 · Test trước code</h2>
+<p><strong>Dùng khi:</strong> chuẩn bị viết hàm tính tổng, chưa muốn được cho thuật toán.</p>
+<div class="code-wrap"><pre><code class="language-text">Tôi là Lan. Chưa viết hàm totalExpenses cho bản Web ViSinhVien.
+Expense gồm id, title, amount, category. Hợp đồng phần tính tiền:
+amount phải là số nguyên VND từ 1 đến 1000000000; tối đa 500
+khoản; rỗng trả 0; amount dạng chuỗi phải bị từ chối ở hàm tính tổng.
+Dữ liệu giả: Cơm trưa 35000, Xe buýt 7000, Vở ghi 18000; tổng 60000.
+Hãy yêu cầu tôi đề xuất lần lượt ca thường, biên và dữ liệu sai.
+Không viết hàm, không viết test tự động, không tính hộ kỳ vọng.
+Sau mỗi ca, hỏi lý do hoặc chỉ ra LOẠI ca còn thiếu, chưa cho đáp án.
+Bảng do tôi điền cần có đầu vào, kỳ vọng, lý do và trạng thái chưa chạy.
+Nếu lộ code/đáp án, dừng và để tôi tự tính ca 500 khoản mỗi khoản 1e9.
+Không gộp kiểm thử parseAmount với kiểm thử form/DOM/localStorage.
+</code></pre></div>
+<p>Một bộ test không có kỳ vọng độc lập dễ xác nhận nhầm chính lỗi của chương trình. Đầu ra AI sinh ra cũng cần đối chiếu bằng tính tay hoặc lập luận.</p>
+<h2>P06 · Đọc tiếng Anh có đối chiếu</h2>
+<p><strong>Dùng khi:</strong> vướng từ kỹ thuật, không phải yêu cầu AI đoán nội dung một trang chưa đọc.</p>
+<div class="code-wrap"><pre><code class="language-text">Tôi là Lan, làm Web ViSinhVien bằng HTML/JS/localStorage, không backend.
+Câu sau do cẩm nang tự soạn để luyện đọc, KHÔNG là trích dẫn chính thức:
+"The value of a text input is a string. Convert and validate it before
+storing an expense amount."
+Ví dụ giả: ô nhập Cơm trưa chứa "35000"; Expense.amount cần là số nguyên
+VND từ 1 đến 1e9, tối đa 500 khoản trong danh sách, rỗng tổng 0.
+Giải thích value, string, convert, validate trong ngữ cảnh rồi hỏi tôi
+diễn giải câu trên bằng tiếng Việt và nêu một đầu vào sai.
+Không viết hàm, không bịa nguồn, không nhận đã mở tài liệu chính thức.
+Tôi cần chứng minh mình phân biệt chuyển kiểu và kiểm tra hợp lệ.
+Nếu lộ code, dừng rồi hỏi tôi phân tích "35000abc" bằng lời,
+không nêu sẵn kết luận.
+</code></pre></div>
+<p>Với trang thật, thêm URL và đoạn đã đọc được. Nếu AI không truy cập được trang, yêu cầu nói rõ; bản dịch tự tin không chứng minh nó đã đọc đúng nguồn.</p>
+<h2>P07 · Vấn đáp, không đoán điểm môn học</h2>
+<div class="code-wrap"><pre><code class="language-text">Tôi đã học hai lỗi ViSinhVien: cận vòng lặp C++ bỏ cuối cho 42000
+thay vì 60000 và amount chuỗi trong JS làm phép + nối ký tự.
+Dữ liệu giả: 35000, 7000, 18000 VND. C++ dùng vector&lt;long long&gt;;
+Web dùng Expense(id,title,amount,category). Tiền nguyên từ 1 đến 1e9,
+tối đa 500 khoản, rỗng tổng 0. Web dùng localStorage, không backend.
+Vấn đáp một câu mỗi lượt: chỉ số, kiểu dữ liệu, test, rồi lưu trữ Web.
+Chờ tôi trả lời; hỏi thêm nếu mơ hồ. Không trả lời thay, không phán
+năng lực tổng quát và không đoán điểm hay quy định của học phần.
+Cuối phiên ghi điều tôi đã chứng minh bằng ví dụ và chỗ cần luyện.
+Nếu lộ đáp án, bỏ câu đó khỏi đánh giá độc lập, giao câu biến thể
+mới không kèm gợi ý trong lượt đầu. Không nhận đã kiểm thử code.
+</code></pre></div>
+<p><strong>AI VS HUMAN — phân vai, không thi hơn thua:</strong> AI đặt câu hỏi và phản hồi. Bạn phải nêu ví dụ, tự chạy nếu cần, giải thích tại sao bằng chứng đủ hoặc chưa đủ. Một câu bạn đã đọc đáp án chỉ tính là ôn tập.</p>
+<h2>P08 · Đóng chat rồi làm biến thể</h2>
+<div class="code-wrap"><pre><code class="language-text">Tôi muốn tự kiểm tra mà chưa nhận lời giải. ViSinhVien có ba khoản
+giả: Cơm trưa 35000, Xe buýt 7000, Vở ghi 18000. Tiền nguyên VND
+1..1e9, tối đa 500 khoản, rỗng tổng 0. C++ dùng vector&lt;long long&gt;;
+Web dùng Expense(id,title,amount,category). Hợp đồng Web: id là số
+nguyên an toàn, dương, không trùng; title là chuỗi sau trim dài 1–80
+đơn vị UTF-16; category là chuỗi thuộc an-uong, di-lai, hoc-tap, khac.
+Giao hai nhiệm vụ ngắn: C++ tìm tiền lớn nhất, quy ước rỗng trả 0;
+JS tính tổng theo category nhưng phải xác thực TOÀN BỘ danh sách
+trước khi lọc, không che khoản sai nằm ở nhóm khác.
+Không cho thuật toán, code, kết quả mẫu hoặc gợi ý ngay.
+Tôi đóng chat, thử 4 phút rồi gửi bài và dự đoán. Nếu chưa xong,
+chỉ giúp xác định điểm nghẽn; không coi thời gian là thước đo năng lực.
+Đối chiếu lập luận, ca thường, rỗng và dữ liệu sai tôi trình bày.
+Nếu lộ đáp án, đổi sang tính bất biến khi đảo thứ tự, chưa nói kết quả.
+</code></pre></div>
+<p>Bốn phút là một lượt tự thử ngắn, khác bài 25 phút không AI ở chương 3. Không cần hoàn tất mọi thứ trong một lượt; cần trung thực điều tự làm được.</p>
+<h2>P09 · Brief trước khi hỏi — bổ sung biên tập</h2>
+<div class="code-wrap"><pre><code class="language-text">Mục tiêu: [một việc cụ thể trong ViSinhVien]. Tôi học [C++/Web].
+Môi trường và vị trí: [tên shell, thư mục hiện tại, file liên quan].
+Dữ liệu GIẢ chuẩn 35000, 7000, 18000 VND; tổng 60000.
+Hợp đồng: tiền nguyên 1..1e9, tối đa 500, rỗng tổng 0.
+Hiện tượng quan sát: [đầu ra đã nhìn thấy, hoặc ghi chưa chạy].
+Kỳ vọng tôi tự tính: [giá trị và cách tính].
+Điều đã thử: [một thao tác và kết quả, không suy đoán].
+Đoạn code liên quan: [chỉ phần cần thiết, không bí mật/dữ liệu thật].
+Chỉ phân tích nguyên nhân và hỏi tối đa một câu còn thiếu trước;
+chưa sửa file, chưa cài gì, chưa chạy lệnh. Nói rõ giả thuyết nào
+cần kiểm chứng và đề xuất một phép thử nhỏ để phân biệt chúng.
+</code></pre></div>
+<p>Nếu chưa biết môi trường, ghi “chưa xác định” và hỏi cách xác định; đừng điền một phiên bản cho đẹp biểu mẫu.</p>
+<h2>P10 · Hợp đồng giao việc cho Agent — bổ sung biên tập</h2>
+<div class="code-wrap"><pre><code class="language-text">Bài tập ViSinhVien với dữ liệu giả 35000,7000,18000 VND.
+Tiền nguyên 1..1e9, tối đa 500 khoản, rỗng tổng 0.
+Đích: [một thay đổi đã thống nhất]. Chỉ làm trong bản sao
+bai-lam/[nhánh], chỉ được sửa [danh sách file cụ thể].
+Bước đầu chỉ đọc, nêu kế hoạch và test dự kiến; chờ tôi đồng ý
+trước khi sửa. Không thay config/quyền, không cài gói, không gọi API,
+không đăng nhập, không commit/push/publish, không xóa file.
+Nếu cần vượt phạm vi, dừng và nêu việc cần quyết định, không tự làm.
+Sau sửa cho diff, lệnh thực sự chạy, exit code và output; phân biệt
+trace với test đã chạy. Giữ cả lần thất bại, không dùng executable cũ
+sau lỗi build. Việc thiếu công cụ phải ghi chưa kiểm chứng.
+Tôi sẽ đọc diff, kiểm test và tự giải thích trước khi nhận kết quả.
+</code></pre></div>
+<p>Trước khi dùng thẻ, kiểm tra quyền thật trong công cụ. Chỉ câu “không xóa file” trong prompt không thay thế cơ chế giới hạn filesystem hoặc phê duyệt hành động.</p>
+<h2>P11 · Kiểm chứng nguồn — bổ sung biên tập</h2>
+<div class="code-wrap"><pre><code class="language-text">Tôi cần kiểm chứng claim sau cho cẩm nang sinh viên CNTT:
+[claim cụ thể; ghi rõ sản phẩm, phiên bản, quốc gia nếu liên quan].
+Nguồn đang có: [URL và đoạn đã đọc được, hoặc chưa có].
+Ưu tiên tài liệu chính thức. Phân biệt nội dung quan sát trực tiếp,
+suy luận và phần chưa truy cập được. Ghi URL, ngày đọc, phạm vi áp dụng.
+Không dùng một trang giá để suy ra quyền lợi hiện tại của tài khoản tôi.
+Không suy quy định môn học TLU từ lời khuyên chung trên mạng.
+Không đăng nhập, không đăng ký/mua, không gọi API trả phí hay gửi dữ liệu.
+Nếu không đọc được nguồn, nêu rõ hạn chế và câu hỏi cần kiểm tiếp;
+không bịa trích dẫn, giá, điều khoản hoặc kết quả kiểm chứng.
+</code></pre></div>
+<h2>Trước khi rời thư viện</h2>
+<p>Ghi một câu: “Tôi dùng P__ để tháo gỡ __; bằng chứng sau lượt hỏi là __.” Nếu ô cuối chỉ có “AI đã trả lời”, quay lại và chọn một phép thử hoặc lời giải thích do chính bạn thực hiện.</p>
+</main></body></html>

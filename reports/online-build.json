@@ -1,0 +1,17 @@
+{
+  "site_directory": "site",
+  "entry": "site/index.html",
+  "rewritten_parent_links": 68,
+  "remaining_parent_links": 0,
+  "files_copied": 34,
+  "svg_images": 16,
+  "total_bytes": 1353466,
+  "excluded_from_online": [
+    "dashboard/",
+    "scripts/",
+    "chapters/ (nguồn biên tập)",
+    "reports/*.png|pdf|jsonl",
+    "website/ (nguồn CSS/JS)"
+  ],
+  "broken_links": []
+}

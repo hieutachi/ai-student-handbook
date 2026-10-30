@@ -1,0 +1,1035 @@
+<!doctype html><html lang="vi"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>CHƯƠNG 2 · TRỞ THÀNH NGƯỜI ĐIỀU KHIỂN AI</title><style>:root{--paper:#f6f3ea;--ink:#20342d;--muted:#58685f;--green:#35634b;--soft:#dce8d0;--rust:#b95132;--yellow:#f2dfa5;--line:#d4dbcf;--font:18px;--nav:270px}*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:90px}body{margin:0;background:var(--paper);color:var(--ink);font:var(--font)/1.8 system-ui,-apple-system,'Segoe UI',sans-serif}a{color:var(--green);text-underline-offset:4px}button,input,select{font:inherit}button,select{cursor:pointer}button{padding:8px 15px;min-height:40px;border:1px solid #879b85;border-radius:5px;background:transparent;color:var(--ink)}button:hover{background:var(--soft)}a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,summary:focus-visible{outline:3px solid var(--rust);outline-offset:4px}img{max-width:100%;height:auto}h1,h2,h3,h4{line-height:1.24;text-wrap:balance}h1,h2{font-family:Georgia,'Times New Roman',serif;font-weight:500;letter-spacing:-.035em}h1{font-size:clamp(48px,6vw,82px)}h2{font-size:clamp(31px,3vw,43px);margin:64px 0 25px}h3{font-size:24px;margin:40px 0 18px;letter-spacing:-.025em}h4{font-size:20px;margin:30px 0 16px}p{margin:0 0 20px}li{margin:8px 0}ul,ol{padding-left:26px}strong{font-weight:700}code{font: .87em/1.5 ui-monospace,Consolas,monospace;background:#e8ebdf;padding:2px 5px;border-radius:3px;overflow-wrap:anywhere}pre{margin:0;padding:23px;overflow-x:auto;max-width:100%;background:#21362f;color:#eef3e5;font-size:14px;line-height:1.65;tab-size:4}pre code{font:inherit;color:inherit;background:none;padding:0;border-radius:0;white-space:pre;overflow-wrap:normal}blockquote{margin:25px 0;padding:20px 24px;border-left:3px solid var(--green);background:#e8ecde;font-size:.96em}blockquote p:last-child{margin:0}hr{border:0;border-top:1px solid var(--line);margin:50px 0}.skip{position:fixed;left:12px;top:-100px;z-index:100;background:white;padding:12px}.skip:focus{top:12px}.sidebar{position:fixed;inset:0 auto 0 0;width:var(--nav);border-right:1px solid var(--line);padding:28px 22px 22px;background:#eceee3;overflow-y:auto;z-index:30}.brand{font:700 19px/1.25 system-ui;text-decoration:none;color:var(--ink);display:block;letter-spacing:-.03em}.brand small{display:block;font:11px/1.5 ui-monospace,monospace;letter-spacing:.08em;margin-top:9px;color:var(--muted)}.nav-search{margin:26px 0 16px;width:100%;background:transparent;border:1px solid #abb7a5;border-radius:5px;padding:9px 11px;font-size:13px}.toc{padding:0;list-style:none}.toc ul{list-style:none;margin:0 0 17px;padding:0 0 0 12px}.toc li{margin:3px 0}.toc a{display:block;font-size:12px;line-height:1.5;text-decoration:none;padding:5px 7px;border-radius:4px;color:#52634f}.toc>.toc-group>.chapter-link{font-size:13px;font-weight:700;color:var(--ink);margin-top:14px}.toc a:hover,.toc a.active{background:#dce5d0;color:#20342d}.nav-foot{font-size:11px;line-height:1.6;border-top:1px solid var(--line);padding-top:16px;margin-top:24px;color:var(--muted)}.topbar{height:62px;position:sticky;top:0;margin-left:var(--nav);display:flex;align-items:center;justify-content:space-between;padding:0 4vw;background:#f6f3eafa;border-bottom:1px solid var(--line);z-index:20;gap:12px}.top-label{font:11px/1.5 ui-monospace,monospace;letter-spacing:.12em;text-transform:uppercase}.tools{display:flex;align-items:center;gap:7px}.tools button{font-size:12px;padding:5px 9px;min-height:35px}.scroll-track{height:2px;position:absolute;bottom:0;left:0;right:0;background:var(--line)}#scroll-progress{height:100%;width:0;background:var(--rust)}.mobile-menu{display:none}.shade{display:none}main{margin-left:var(--nav)}.inner{max-width:1190px;padding:0 5vw;margin:auto}.eyebrow{font:11px/1.6 ui-monospace,monospace;letter-spacing:.17em;text-transform:uppercase}.hero{padding:64px 0 45px;border-bottom:1px solid var(--line)}.hero-grid{display:grid;grid-template-columns:1.05fr 1fr;gap:20px;align-items:center}.hero h1{margin:20px 0 25px}.hero h1 em{color:var(--rust);font-weight:400}.hero .lede{font-size:20px;line-height:1.6;max-width:620px}.hero-art{width:100%;border-radius:50% 50% 10px 10px}.hero-nav{display:flex;flex-wrap:wrap;gap:10px;margin-top:27px}.hero-nav a{padding:11px 17px;text-decoration:none;font-size:13px;border:1px solid var(--green);border-radius:4px}.hero-nav a:first-child{background:var(--green);color:#fff}.edition{font-size:11px;color:var(--muted);margin-top:35px;letter-spacing:.02em}.route-map{display:grid;grid-template-columns:repeat(4,1fr);margin:35px 0 0;border-top:1px solid var(--line)}.route-map a{padding:17px 12px 0 0;text-decoration:none;font-size:12px}.route-map b{display:block;font:23px Georgia;margin-bottom:5px}.intro{padding:20px 0 60px}.chapter{padding:70px 0 50px;border-top:1px solid var(--line)}.chapter-heading{display:grid;grid-template-columns:90px 1fr;gap:25px;align-items:start;margin:0 0 32px}.chapter-num{font:75px/.95 Georgia;color:var(--rust);letter-spacing:-.06em}.chapter-heading h2{font-size:clamp(36px,4.4vw,63px);margin:12px 0 18px;max-width:760px}.chapter-heading p{font-size:15px;color:var(--muted);line-height:1.65;max-width:720px}.opener{margin:0 0 50px}.opener img{width:100%;border:1px solid var(--line);border-radius:8px}.prose{max-width:900px;margin:0 auto;min-width:0}.prose>p:first-child{font-size:1.08em}.prose figure{margin:36px 0}.prose figure img{width:100%;border-radius:7px;border:1px solid var(--line);background:#f6f3ea}figcaption{font-size:12px;line-height:1.55;color:var(--muted);margin-top:8px}figcaption a{white-space:nowrap}.table-scroll{overflow-x:auto;max-width:100%;border:1px solid var(--line);border-radius:5px;margin:26px 0}table{border-collapse:collapse;min-width:570px;width:100%;font-size:14px;line-height:1.65}th{text-align:left;background:#e5e9dc;font-weight:650}td,th{padding:13px 15px;vertical-align:top;border-bottom:1px solid var(--line)}tr:last-child td{border-bottom:0}td code,th code{font-size:.9em}tbody tr:nth-child(even){background:#fff5}.code-wrap{margin:25px 0;min-width:0;max-width:100%;border-radius:6px;overflow:hidden}.code-top{background:#324b40;color:#dde6d6;padding:7px 14px;display:flex;justify-content:space-between;align-items:center;font:11px/1.5 ui-monospace,monospace}.code-top button{font:11px system-ui;min-height:28px;padding:3px 9px;color:#f4f7ef;border-color:#9eb19b}.code-top button:hover{background:#48624f}.answer{margin:30px 0;border-top:1px solid #a9b9a0;border-bottom:1px solid #a9b9a0;padding:4px 0}.answer summary{cursor:pointer;line-height:1.5;padding:17px 7px;font-size:16px;font-weight:650}.answer-body{padding:15px 8px 20px;min-width:0}.answer summary::marker{color:var(--rust)}.answer[open]{background:#f0f1e5}.instructor{font-size:14px}.widget{border:1px solid #b2c3a5;background:#e9edde;padding:26px;border-radius:8px;margin:34px 0}.widget h3{margin:8px 0 14px;font:30px/1.2 Georgia}.widget p{font-size:14px}.widget label{display:block;font-size:12px;font-weight:600}.widget input,.widget select{width:100%;border:1px solid #9dad94;background:#fbfcf6;padding:9px;border-radius:4px;margin-top:6px;color:var(--ink)}.budget-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.budget-result{display:flex;align-items:baseline;gap:15px;flex-wrap:wrap;margin:20px 0 0}.budget-result strong{font:38px/1.2 Georgia}.budget-result span{font-size:14px}.error{color:#91331e;font-weight:600}.trace-items{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:22px 0}.trace-item{border:1px solid #bbc8af;padding:18px 10px;text-align:center;border-radius:5px}.trace-item small{display:block;font:11px/1.4 ui-monospace,monospace}.trace-item b{font:28px/1.5 Georgia}.trace-item.added{background:#bfd7a5;border-color:#5b7946}.trace-item.current{outline:2px solid var(--rust);outline-offset:2px}.trace-controls{display:flex;align-items:end;gap:10px;flex-wrap:wrap}.trace-controls label{flex:1;min-width:160px}.trace-state{margin-top:18px;font-size:15px;min-height:54px}.quiz fieldset{border:0;padding:0;margin:0}.quiz legend{font-size:17px;font-weight:650;margin-bottom:15px}.quiz label{font-weight:400;font-size:15px;margin:9px 0;display:flex;gap:10px;align-items:start}.quiz input{width:auto;margin:6px 0 0}.quiz-result{margin-top:14px!important}.chapter-end{max-width:900px;margin:40px auto 0;padding:22px 0;border-top:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;gap:15px;font-size:13px}.chapter-end button[aria-pressed=true]{background:var(--green);color:white}.study-status{font:11px/1.5 ui-monospace,monospace;color:var(--muted)}.supplement{border-top:1px solid var(--line);padding:60px 0}.supplement>.section-title{font-size:44px;margin:12px 0 32px}.footer{padding:50px 0;border-top:1px solid var(--line);font-size:13px;color:var(--muted)}.footer strong{font:26px Georgia;color:var(--ink)}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}[hidden]{display:none!important}.focus .sidebar{display:none}.focus .topbar,.focus main{margin-left:0}.focus .inner{max-width:1100px}.focus .top-label{display:none}@media(min-width:1600px){:root{--nav:300px}.sidebar{padding:35px 28px}.inner{padding:0 65px}}@media(max-width:1150px){.hero-grid{grid-template-columns:1fr}.hero-art{max-height:440px;object-fit:contain;border-radius:0}.hero h1{max-width:680px}.hero .lede{max-width:650px}.top-label{display:none}}@media(max-width:950px){.sidebar{transform:translateX(-100%);width:280px;visibility:hidden}.topbar,main{margin-left:0}.mobile-menu{display:block}.nav-open .sidebar{transform:translateX(0);visibility:visible}.nav-open .shade{display:block;position:fixed;inset:0;background:#10241966;z-index:25;border:0;border-radius:0;width:100%;height:100%}.focus .sidebar{display:block}.inner{padding:0 6vw}.top-label{display:block}.hero{padding-top:42px}}@media(max-width:580px){body{font-size:var(--font)}.inner{padding:0 20px}.topbar{padding:0 14px}.top-label{display:none}.tools{gap:4px}.tools button{padding:5px 7px;font-size:11px}#focus-toggle{display:none}.hero{padding-top:33px}.hero h1{font-size:48px}.hero .lede{font-size:18px}.hero-art{max-height:none}.hero-nav a{font-size:12px}.route-map{grid-template-columns:repeat(2,1fr)}.route-map a{padding:12px 10px 0 0}.chapter{padding-top:42px}.chapter-heading{grid-template-columns:44px 1fr;gap:12px}.chapter-num{font-size:40px}.chapter-heading h2{font-size:35px;margin-top:8px}.chapter-heading p{font-size:13px}.opener{margin-bottom:30px}h2{font-size:31px;margin-top:42px}h3{font-size:22px}.widget{padding:17px}.budget-grid{grid-template-columns:repeat(2,1fr);gap:12px}.budget-result strong{font-size:32px}.trace-items{gap:7px}.trace-item{padding:12px 5px}.trace-item b{font-size:22px}.trace-item small{font-size:9px}.chapter-end{flex-direction:column;align-items:flex-start}.prose figure{margin:26px 0}.code-top{padding:7px 10px}pre{padding:16px}.supplement>.section-title{font-size:36px}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}@page{size:A4;margin:18mm}@media print{body{background:white;font:10.5pt/1.6 Georgia;color:#111}.sidebar,.topbar,.hero-nav,.route-map,.shade,.skip,.tools,.code-top button,.chapter-end,.widget button,.quiz,.nav-foot{display:none!important}main{margin:0}.inner{max-width:none;padding:0}.hero{padding-top:0}.hero-grid{grid-template-columns:1fr 1fr}.hero h1{font-size:40pt}.hero-art{max-height:100mm}.hero .lede{font-size:13pt}.hero .edition{font-size:8pt}.chapter,.supplement{break-before:page;padding-top:10mm}.chapter-heading h2{font-size:28pt}.chapter-num{font-size:42pt}.opener img{max-height:90mm;object-fit:contain}.prose{max-width:none}.prose h2{font-size:21pt}.prose h3{font-size:15pt}h2,h3,h4,summary{break-after:avoid}.prose figure{break-inside:avoid}.prose figure img{max-height:115mm;object-fit:contain}.table-scroll{overflow:visible}table{min-width:0;font-size:8.5pt}td,th{padding:6pt}pre{white-space:pre-wrap;overflow:visible;color:#111;background:#f1f1ec;font-size:8pt;overflow-wrap:anywhere}pre code{white-space:pre-wrap}.code-wrap{break-inside:avoid}.answer-body{display:block!important}.answer{border-color:#aaa}.widget{break-inside:avoid}.footer{font-size:9pt}a{color:inherit}.study-status{display:none}}
+main{margin:0}.preview-header{padding:16px 5vw;background:#20342d;color:#fff;font-size:13px}.preview-header a{color:#dce8d0}.preview-main{max-width:1000px;margin:auto;padding:30px 25px}.pending{font-size:13px;color:#58685f;border-left:2px solid #aaa;padding:10px}h1{font-size:44px}</style><body><header class="preview-header"><a href="../index.html">Về dashboard</a> · Bản xem trước nội dung; chưa thay cho kiểm thử bản xuất bản.</header><main class="preview-main prose"><h1>CHƯƠNG 2 · TRỞ THÀNH NGƯỜI ĐIỀU KHIỂN AI</h1>
+<p>Minh đã biết không nên chọn câu trả lời chỉ vì nó tự tin. Nhưng chương trình C++ vẫn hiện <strong>42000</strong>, trong khi ba khoản trên giấy cộng thành <strong>60000</strong>. Lan mở bản Web để cùng kiểm tra: bảng đã có đủ ba khoản, tổng đúng; khi thử nhập <code>35000abc</code>, cô muốn biết chương trình thực sự từ chối ở đâu. Một trợ lý lại đề nghị cài thêm thư viện để “xử lý tiền chuyên nghiệp”. Lần này, hai bạn không hỏi “AI nào giỏi nhất?” mà hỏi: <strong>việc gì cần làm, công cụ được làm đến đâu, bằng chứng nào đủ để nhận kết quả?</strong></p>
+<p><strong>Bổ sung biên tập — hành trình, nhân vật và mọi hội thoại trong chương là tình huống HƯ CẤU</strong>, không phải log tài khoản Qoder, benchmark hay khảo sát TLU. Minh năm nhất học C++; Lan năm hai học OOP/DSA/Web/CSDL. Hai phiên bản ViSinhVien phục vụ học tập, chưa nối với nhau. Không nhập thông tin sinh viên thật, tài khoản, sao kê hay bí mật vào mã hoặc hội thoại.</p>
+<p>Dữ liệu xuyên suốt là Cơm trưa <strong>35000</strong>, Xe buýt <strong>7000</strong>, Vở ghi <strong>18000</strong>, đơn vị VND nguyên. <code>42000</code> đúng cho hai khoản đầu, sai nếu là tổng cuối cả ba. Khoản hợp lệ nằm trong <strong>1–1000000000</strong>, tối đa <strong>500 khoản</strong>, rỗng tổng <strong>0</strong>; tổng cực đại <strong>500000000000</strong>.</p>
+<p>Bảy Mission đi từ môi trường đến nghiệm thu. Dự kiến hai buổi 90 phút, cộng thời gian đọc sâu và làm lại; đây không phải chuẩn tốc độ hay CLO chính thức. Chọn một nhánh thực hành sâu, vẫn giải thích lỗi trọng tâm nhánh kia.</p>
+<p>Phân biệt <strong>demo đúng</strong>, <strong>mã lỗi chủ đích</strong>, <strong>bài làm</strong>, <strong>kỳ vọng</strong>, <strong>kết quả đã chạy</strong>. Trace không phải log máy. Thiếu công cụ vẫn đọc, dự đoán và ghi phần chưa thực hiện; không cần mua dịch vụ hay tự cài trên máy chung.</p>
+<h2>2.1. Mission 01 — Làm chủ môi trường trước khi giao việc</h2>
+<h3>Mục tiêu và bối cảnh: biết cửa sổ nào đang làm gì</h3>
+<p><strong>Mục tiêu</strong> là mở đúng gốc, phân biệt Editor, IDE, terminal, shell, CLI và Agent. <strong>Bối cảnh:</strong> Minh gọi cả vùng mã, hội thoại và cửa sổ lệnh là “AI”. Nhầm vai trò dễ dẫn đến lưu sai bản hoặc dùng sai cú pháp shell.</p>
+<p>Editor soạn thảo tệp; IDE tích hợp việc mở dự án, tìm mã và tiện ích phát triển. Web chat thường chỉ biết ngữ cảnh được cung cấp, trừ khi có kết nối bổ sung. Agent kết hợp AI với công cụ, có thể đọc, sửa, chạy lệnh <strong>tùy sản phẩm, chế độ và quyền</strong>.</p>
+<p>Đây là những cách làm bổ sung nhau, không phải bảng xếp hạng hay lộ trình thay thế. Công cụ mạnh hơn không tự tạo kết luận đúng hơn.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Cách làm</th>
+<th>Việc phù hợp trong ViSinhVien</th>
+<th>Trách nhiệm không chuyển cho AI</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Editor</td>
+<td>Đọc và sửa cận vòng lặp</td>
+<td>Lưu đúng tệp, hiểu dòng vừa sửa</td>
+</tr>
+<tr>
+<td>IDE</td>
+<td>Mở dự án, tìm hàm, dùng terminal</td>
+<td>Biết đang mở thư mục nào và có công cụ gì</td>
+</tr>
+<tr>
+<td>Web chat</td>
+<td>Hỏi nghĩa của <code>+=</code> hoặc một lỗi nhỏ</td>
+<td>Cung cấp đoạn mã đủ ngữ cảnh, kiểm chứng giải thích</td>
+</tr>
+<tr>
+<td>Agent</td>
+<td>Tìm vị trí, đề xuất thay đổi, kiểm thử theo quyền</td>
+<td>Giới hạn phạm vi, xem diff, đọc bằng chứng</td>
+</tr>
+</tbody>
+</table></div>
+<p>Terminal là cửa sổ nhận và hiển thị văn bản. Shell là chương trình diễn giải lệnh bên trong, chẳng hạn Bash hoặc PowerShell. CLI là giao diện dòng lệnh của chương trình được gọi, ví dụ <code>g++</code>, <code>node</code>, Qoder CLI. Khi gõ <code>g++ --version</code>, shell tìm chương trình <code>g++</code>; chương trình in phiên bản; terminal hiển thị. Nếu không tìm thấy lệnh, vấn đề trước mắt là môi trường hoặc đường dẫn, chưa phải vòng lặp C++.</p>
+<p><img alt="Bản đồ môi trường: IDE chứa vùng soạn thảo và terminal; shell diễn giải lệnh gọi CLI; Agent hoạt động theo quyền được cấp." src="../../assets/workspace.svg"/></p>
+<p>Có Qoder IDE không chứng minh đã có compiler <code>g++</code>, runtime Node.js hoặc Qoder CLI. Có Windows cũng không xác định shell: cùng máy có thể mở PowerShell và Git Bash. Hãy đọc tên phiên terminal hoặc cấu hình hiển thị; đừng thử trộn cú pháp cho đến khi một lệnh tình cờ chạy được.</p>
+<h3>Nhiệm vụ và hướng dẫn: một gốc, hai nhánh bài làm</h3>
+<p><strong>Nhiệm vụ</strong> là chuẩn bị bài làm, giữ nguyên ví dụ. <strong>Hướng dẫn:</strong> mở gốc <strong><code>AI-Student-Handbook</code></strong> trong Qoder IDE, không mở toàn ổ đĩa hoặc riêng nhánh con.</p>
+<p>Bằng File Explorer/trình quản lý tệp, tạo <code>bai-lam</code>, rồi hai thư mục con <code>nam-1-cpp</code>, <code>nam-2-web</code>. Copy <strong>nội dung</strong> mỗi nhánh tương ứng từ <code>vi-du</code> sang <code>bai-lam</code>; tránh lồng thêm tầng <code>nam-1-cpp/nam-1-cpp</code>. Giữ <code>vi-du</code> để đối chiếu.</p>
+<p>Dùng chức năng New File của IDE hoặc trình quản lý tệp tạo <code>ghi-chep-02.txt</code> trong nhánh bạn học. Đây là tệp tự tạo, không có sẵn; kiểm phần mở rộng để tránh <code>.txt.txt</code>.</p>
+<div class="code-wrap"><pre><code class="language-text">AI-Student-Handbook/              ← thư mục mở trong IDE và cwd của các lệnh
+  vi-du/                         ← tham khảo, không sửa
+    nam-1-cpp/
+    nam-2-web/
+  bai-lam/
+    nam-1-cpp/
+      loi-bo-sot.cpp
+      vi_sinh_vien.cpp
+      ghi-chep-02.txt             ← người học tự tạo
+    nam-2-web/
+      index.html
+      data.js
+      app.js
+      test_data.cjs
+      ghi-chep-02.txt             ← người học tự tạo
+</code></pre></div>
+<p>Mở terminal qua menu IDE hoặc tìm <strong>Terminal: Create New Terminal</strong> nếu phiên bản có mục đó; không đoán phím tắt. Bố cục khác thì xem <a href="https://docs.qoder.com/user-guide/editor/terminal.md">tài liệu terminal</a>.</p>
+<p><strong>Cwd</strong> là thư mục hiện hành. Mọi lệnh thực hành dùng cwd gốc <code>AI-Student-Handbook</code>, đường dẫn <code>bai-lam/...</code>. Terminal cũ có thể không chuyển theo thư mục IDE: kiểm vị trí trước build/test.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Nhu cầu</th>
+<th>Bash, gồm Git Bash</th>
+<th>PowerShell</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Xem cwd</td>
+<td><code>pwd</code></td>
+<td><code>Get-Location</code></td>
+</tr>
+<tr>
+<td>Liệt kê mục ở cwd</td>
+<td><code>ls</code></td>
+<td><code>Get-ChildItem</code></td>
+</tr>
+<tr>
+<td>Chuyển đến gốc đã xác định nếu đang ở sai nơi</td>
+<td><code>cd "đường/dẫn/AI-Student-Handbook"</code></td>
+<td><code>Set-Location "đường\dẫn\AI-Student-Handbook"</code></td>
+</tr>
+<tr>
+<td>Đọc mã thoát lệnh ngoài vừa chạy</td>
+<td><code>echo $?</code></td>
+<td><code>$LASTEXITCODE</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>Dòng đổi thư mục là mẫu để <strong>thay đường dẫn thật</strong>, không gõ nguyên chữ “đường/dẫn”. Đặt đường dẫn có dấu cách trong dấu nháy kép. Nếu cwd đã đúng thì không đổi nữa. Không lần lượt chạy hai cột; chỉ dùng cột khớp shell. Từ đây chương không yêu cầu chuyển vào nhánh con, nên cũng không cần nhớ lúc nào phải <code>cd</code> ngược ra.</p>
+<h3>Prompt mẫu: xác định điều biết được, không cài đặt</h3>
+<div class="code-wrap"><pre><code class="language-text">Tôi mở gốc AI-Student-Handbook trong Qoder IDE và mới học terminal.
+Chỉ giải thích dựa trên thông tin tôi cung cấp; không sửa hay chạy lệnh.
+Giúp tôi phân biệt IDE, terminal, shell, CLI và Agent.
+Bài làm ở bai-lam/nam-1-cpp và bai-lam/nam-2-web; vi-du chỉ để đọc.
+Hãy hỏi tôi kiểm tra tên shell và cwd trước khi đưa lệnh phù hợp.
+Không giả định có g++, Node.js hay Qoder CLI; không hướng dẫn tự cài.
+</code></pre></div>
+<p><strong>Kỳ vọng</strong> là hai nhánh sao chép đúng, một ghi chép nêu tên shell/cwd và giải thích được ai làm gì khi gọi <code>node --version</code>. Không cần AI thực thi thao tác này. Nếu không dùng AI, tự trả lời prompt như một phiếu học tập; ghi rõ đó là thực hành thủ công.</p>
+<p><strong>Lỗi thường gặp</strong> là sửa tệp trong <code>vi-du</code>, sao chép lồng thư mục, mở terminal cũ ở nơi khác, hoặc tưởng IDE có sẵn compiler. Cách xử lý đầu tiên là nhìn cây tệp và cwd, không nhờ Agent “tìm mọi nơi trên máy”. Thiếu công cụ thì ghi thiếu; việc cài phải theo quyền và quy định của máy phòng thực hành.</p>
+<h3>Câu kiểm — Chọn công cụ đủ dùng</h3>
+<p>Bạn cần giải thích <code>+=</code> và tìm hàm <code>app.js</code> gọi trong <code>data.js</code>: hai việc có cần cùng mức quyền không? Nếu Windows đang mở Git Bash, bạn sẽ dùng cột nào trong bảng? Ghi câu trả lời trước khi mở phần đối chiếu.</p>
+<h3>Đáp án Mission 01</h3>
+<p>Một đoạn chat nhỏ đủ giải thích <code>+=</code>; Ask với hai tệp thuận tiện cho việc lần theo lời gọi. Cả hai chưa cần quyền sửa. Windows chạy Git Bash dùng cột Bash, vì shell quyết định cú pháp. Editor lưu nội dung; IDE tổ chức công việc; terminal hiển thị; shell diễn giải; CLI là chương trình được gọi; Agent sử dụng công cụ trong giới hạn được cấp.</p>
+<h3>Tiêu chí hoàn thành</h3>
+<p>Chỉ đúng gốc, tham khảo, bài làm, ghi chép; đọc cwd/shell; giải thích thiếu <code>g++</code> khác lỗi C++. Nộp sơ đồ vị trí và ghi nhận, không chỉ ảnh giao diện.</p>
+<h2>2.2. Mission 02 — Hỏi đúng trước khi cho phép sửa</h2>
+<h3>Mục tiêu và bối cảnh: thu nhỏ câu hỏi để nhìn thấy bằng chứng</h3>
+<p><strong>Mục tiêu</strong> là hỏi chỉ đọc, với ngữ cảnh nhỏ và vị trí kiểm lại được. <strong>Bối cảnh:</strong> Minh hỏi “Tại sao tổng sai?” mà chưa gửi mã, dữ liệu; Lan muốn suy handler chỉ từ hàm tổng. Câu trả lời dài không bù được ngữ cảnh thiếu.</p>
+<p>Theo hồ sơ đối chiếu kỹ thuật <strong>30/10/2026</strong>, <strong>Qoder IDE</strong> có Ask/Agent; Ask đọc hiểu và gợi ý snippet, không tự sửa tệp. Qoder Desktop có Coding/General; <strong>General vẫn là agent, không phải Ask chỉ đọc</strong>. Qoder CLI là sản phẩm dòng lệnh riêng; không chuyển giả định UI/quyền giữa ba sản phẩm.</p>
+<p>Open, Ctrl+L, <code>@</code>, Add to Chat dưới đây dựa trên tài liệu IDE, không xác nhận UI máy bạn. Nếu khác, kiểm sản phẩm/phiên bản thay vì chọn quyền rộng hơn. Không có cam kết giá, quota hoặc điều kiện tài khoản.</p>
+<h3>Nhiệm vụ và hướng dẫn: một câu hỏi có thể kiểm lại</h3>
+<p><strong>Nhiệm vụ</strong> của Minh là tìm cận lặp và dự đoán lượt bị bỏ; của Lan là lần từ chuỗi nhập đến trường <code>amount</code>. <strong>Hướng dẫn:</strong> giữ gốc <code>AI-Student-Handbook</code> đang mở, chọn tệp trong <code>bai-lam</code>, mở Chat theo tài liệu IDE bằng Ctrl+L nếu phù hợp phiên bản, rồi chọn <strong>Ask</strong> trên thanh công cụ chat. Chưa giao sửa và chưa yêu cầu chạy terminal.</p>
+<p>Dùng <code>@</code> để chọn tệp hoặc thư mục làm ngữ cảnh. Khi chỉ cần một đoạn, bôi chọn rồi dùng <strong>Add to Chat</strong> nếu có. Minh bắt đầu với <code>bai-lam/nam-1-cpp/loi-bo-sot.cpp</code>. Lan bắt đầu với <code>bai-lam/nam-2-web/app.js</code> và <code>data.js</code>; thêm <code>index.html</code> khi cần xác minh form. Ngữ cảnh nhỏ không có nghĩa cắt mất khai báo kiểu hoặc dữ liệu đầu vào quan trọng.</p>
+<p>Một câu hỏi tốt tách bốn thứ: đầu vào, điều mong muốn, điều quan sát, đoạn mã liên quan. Viết “tôi quan sát 42000 với ba khoản” khác “chắc chắn compiler cộng sai”. Câu đầu là dữ kiện cần đối chiếu; câu sau đã nhảy đến một giả thuyết yếu. Nếu chưa chạy, thay “quan sát” bằng “tôi dự đoán từ mã”, đừng mượn log hư cấu của sách làm kết quả của mình.</p>
+<h3>Prompt mẫu cho Minh và Lan</h3>
+<div class="code-wrap"><pre><code class="language-text">Tôi học C++ năm nhất. Chỉ đọc bai-lam/nam-1-cpp/loi-bo-sot.cpp.
+Không sửa tệp, không chạy lệnh. Dữ liệu giả: 35000, 7000, 18000.
+Tổng yêu cầu là 60000; tình huống bài học có tổng sai 42000.
+Tìm vòng lặp thực tế, nêu kiểu của n và lập bảng i, điều kiện,
+khoản được cộng, tổng sau bước. Chưa viết lại cả chương trình.
+Tách điều đọc được, giả thuyết và điều chưa chạy kiểm chứng.
+Dẫn vị trí mã để tôi tự mở lại; thiếu ngữ cảnh thì nói rõ.
+</code></pre></div>
+<div class="code-wrap"><pre><code class="language-text">Tôi học Web/OOP/DSA năm hai. Chỉ đọc các tệp được đính kèm trong
+bai-lam/nam-2-web; không sửa hoặc chạy lệnh.
+Lần theo ô nhập → submit → parseAmount → Expense.amount → tổng → lưu/hiện.
+Ở mỗi bước ghi tên tệp, tên hàm thật hoặc mô tả handler vô danh,
+vị trí tìm thấy và kiểu dữ liệu. Nếu cần index.html, hãy nói cần nó.
+Không bịa hàm handleSubmit; không thêm server, CSDL hay dependency.
+Phân biệt mã đọc được với trạng thái trình duyệt chưa quan sát.
+</code></pre></div>
+<p>Mở vị trí AI dẫn, kiểm tên hàm, khai báo và nơi gọi. Nếu AI bịa <code>handleSubmit</code>, sửa mô tả thành <strong>handler submit vô danh</strong>, không đổi mã cho khớp câu trả lời. Chưa xem <code>index.html</code> thì chưa đủ bằng chứng về phần tử hoặc thứ tự script.</p>
+<p>Prompt không thay hàng rào quyền: chế độ, cấu hình và phê duyệt mới quyết định công cụ được làm gì. Ask chỉ đọc cũng không cho phép đưa dữ liệu nhạy cảm vào ngữ cảnh.</p>
+<p><strong>Kỳ vọng:</strong> Minh mở được vòng lặp ở dòng 9 demo lỗi; Lan tìm được <code>D.parseAmount</code> trong <code>app.js</code>. Số dòng có thể đổi; ghi tên tệp, đoạn mã và điều đã kiểm lại.</p>
+<p><strong>Lỗi thường gặp:</strong> gửi quá nhiều hoặc bỏ mất kiểu/cận, nhầm sản phẩm, coi “sẽ kiểm thử” là kết quả. Thu nhỏ câu hỏi và đòi chứng cứ thay vì đổi công cụ để tìm câu trả lời vừa ý.</p>
+<h3>Câu kiểm — Bằng chứng còn thiếu ở đâu?</h3>
+<p>AI chỉ đọc <code>data.js</code> rồi nói “nút Thêm đã gắn đúng sự kiện”. Bạn có thể nhận kết luận đó không? Nếu AI gửi một snippet trong Ask, có thể nói tệp đã thay đổi chưa?</p>
+<h3>Đáp án Mission 02</h3>
+<p>Chưa thể xác nhận sự kiện nếu chưa xem mã gắn handler và phần tử liên quan ở <code>app.js</code>/<code>index.html</code>. Snippet trong hội thoại là đề xuất, không đồng nghĩa tệp đã được sửa hoặc lưu. Yêu cầu bổ sung đúng ngữ cảnh rồi tự mở lại vị trí; không cần cấp quyền Agent chỉ để giải quyết sự thiếu bằng chứng này.</p>
+<h3>Tiêu chí hoàn thành</h3>
+<p>Có prompt chỉ đọc, vị trí tự kiểm, điều chưa biết; phân biệt đúng sản phẩm, chỉ dùng dữ liệu giả. Chưa cần bản vá, cần mô tả được lỗi.</p>
+<h2>2.3. Mission 03 — Debug C++: tìm 18000 bị bỏ, không vá mò</h2>
+<h3>Mục tiêu và bối cảnh: một dòng sửa phải có lời giải thích</h3>
+<p><strong>Mục tiêu</strong> là trace 0, 1, 3 phần tử; hiểu cận, kiểu, tham chiếu và compiler. <strong>Bối cảnh:</strong> <a href="../../vi-du/nam-1-cpp/loi-bo-sot.cpp">demo lỗi <code>loi-bo-sot.cpp</code></a> dùng <code>i &lt; n - 1</code>, dữ liệu cố định trong <code>main</code>, không có hàm tổng riêng hay <strong><code>--test</code></strong>.</p>
+<p><strong>Nhiệm vụ:</strong> giai đoạn 1 chỉ sửa cận trên dữ liệu hợp lệ; validation tiền/số lượng là mở rộng riêng. Không thay toàn tệp bằng <a href="../../vi-du/nam-1-cpp/vi_sinh_vien.cpp">bản đúng</a>: cần diff nhỏ và trace để chứng minh đã hiểu nguyên nhân.</p>
+<h3>Hợp đồng trước thuật toán: vì sao dùng long long?</h3>
+<p>Mô hình chung của một khoản là <code>Expense{id,title,amount,category}</code>. Nhánh C++ hiện chỉ lấy cột tiền làm <code>std::vector&lt;long long&gt;</code> để luyện thuật toán; nhánh Web giữ đối tượng đủ bốn trường. Không nên nói C++ này đã triển khai lớp Expense hoặc lưu đủ tên và nhóm. Hai cách biểu diễn phục vụ hai mục tiêu học khác nhau nhưng cùng hợp đồng tiền.</p>
+<p>Mỗi khoản dương, tối đa 1000000000; 500 khoản lớn nhất cho tổng 500000000000. <code>int</code> thường có miền 32 bit, không đủ cho tổng đó; dùng <code>long long</code> cho phần tử và biến tổng. Đừng nhầm giới hạn <strong>mỗi khoản</strong> với giới hạn <strong>toàn bộ tổng</strong>. Giá trị vừa kiểu số cũng chưa chắc hợp lệ nghiệp vụ: <code>-1</code> biểu diễn được trong <code>long long</code>, nhưng không phải khoản chi được chấp nhận ở bài này.</p>
+<p>Lõi sau dùng đúng tên và chữ ký của hàm trong bản đúng, <strong>đã lược bỏ validation để tập trung vào duyệt</strong>. Đây là trích đoạn đọc hiểu, không phải toàn bộ tệp để thay vào bài làm. Nó giả định số lượng và tiền đều đã hợp lệ.</p>
+<div class="code-wrap"><pre><code class="language-cpp">long long totalExpenses(const std::vector&lt;long long&gt;&amp; amounts) {
+    int n = static_cast&lt;int&gt;(amounts.size());
+    long long total = 0;
+    for (int i = 0; i &lt; n; ++i) {
+        total += amounts[i];
+    }
+    return total;
+}
+</code></pre></div>
+<p>Hàm trả <code>long long</code>. Tham số <code>const std::vector&lt;long long&gt;&amp;</code> nhận vector bằng tham chiếu để không sao chép cả danh sách; <code>const</code> ngăn sửa qua tham số này. <code>size()</code> lấy số phần tử; chuyển sang <code>int</code> phù hợp ở đây vì đã giới hạn 500, không phải mẫu chuyển kiểu an toàn cho mọi vector khổng lồ. Biến <code>total</code> khởi tạo bằng 0, nên trường hợp không có lượt cộng vẫn có kết quả xác định.</p>
+<p>Vòng lặp bắt đầu <code>i = 0</code>, tiếp tục khi <code>i &lt; n</code>, rồi tăng <code>i</code>. Chỉ số hợp lệ là 0 đến <code>n - 1</code>; điều kiện phải chặn <strong>trước khi</strong> chỉ số bằng <code>n</code> được dùng. <code>+=</code> lấy tổng cũ cộng phần tử đang xét rồi ghi lại. Dấu <code>}</code> đóng vòng lặp, không tự cộng phần tử cuối. <code>return total</code> chuyển kết quả về nơi gọi, không phải lệnh in ra terminal.</p>
+<h3>Hướng dẫn: dự đoán trước khi nhìn đáp án</h3>
+<p>Mở <code>bai-lam/nam-1-cpp/loi-bo-sot.cpp</code>, giữ nguyên vector <code>{35000, 7000, 18000}</code> trong giai đoạn 1. Đọc <code>int n = static_cast&lt;int&gt;(amounts.size());</code>, rồi chép cận lỗi vào ghi chép. Đoạn dưới là <strong>snippet lỗi có chủ đích, trích từ demo lỗi</strong>, không chèn vào bản đúng:</p>
+<div class="code-wrap"><pre><code class="language-cpp">for (int i = 0; i &lt; n - 1; ++i) {
+    total += amounts[i];
+}
+</code></pre></div>
+<p>Tự lập bảng cột <code>i</code>, điều kiện, khoản được cộng, tổng sau bước. Với ba khoản, viết cả lượt điều kiện sai làm vòng lặp dừng; nếu chỉ ghi các lượt thành công, bạn dễ bỏ qua chính điểm gây lỗi. Làm thêm danh sách rỗng và danh sách chỉ có <code>7000</code>. Chưa biên dịch cũng làm được phần này; gắn nhãn “trace thủ công”.</p>
+<h3>Prompt mẫu: giữ quyền suy nghĩ ở phía người học</h3>
+<div class="code-wrap"><pre><code class="language-text">Chỉ đọc bai-lam/nam-1-cpp/loi-bo-sot.cpp, chưa sửa hoặc chạy lệnh.
+Tôi dự đoán ba khoản 35000, 7000, 18000 bị bỏ khoản cuối.
+Hãy kiểm tra bảng trace của tôi cho n = 0, n = 1 với [7000], n = 3.
+Giải thích vai trò int n và nguy cơ nếu đổi sang size() - 1.
+Chỉ gợi ý cận nhỏ nhất cần sửa, không cộng bù phần tử cuối.
+Tách lỗi duyệt với kiểm tra tiền/số lượng còn thiếu trong demo lỗi.
+</code></pre></div>
+<p><img alt="Trace C++: cận sai dừng trước khoản Vở ghi; ca rỗng cùng trả 0 nên cần thêm ca một khoản." src="../../assets/debugging.svg"/></p>
+<h3>Đáp án trace — Lượt dừng cũng là bằng chứng</h3>
+<p>Với <code>n = 3</code>, cận lỗi là <code>i &lt; 2</code>. Nó cộng đúng hai khoản đã được truy cập nhưng không bao giờ cộng chỉ số 2. Bảng gồm cả bản sai và bản sửa để bạn đối chiếu từng bước, không chỉ nhìn tổng cuối.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Phiên bản</th>
+<th style="text-align:right">i</th>
+<th>Điều kiện</th>
+<th style="text-align:right">Khoản được cộng</th>
+<th style="text-align:right">Tổng sau bước</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Sai</td>
+<td style="text-align:right">0</td>
+<td><code>0 &lt; 2</code>: đúng</td>
+<td style="text-align:right">35000</td>
+<td style="text-align:right">35000</td>
+</tr>
+<tr>
+<td>Sai</td>
+<td style="text-align:right">1</td>
+<td><code>1 &lt; 2</code>: đúng</td>
+<td style="text-align:right">7000</td>
+<td style="text-align:right">42000</td>
+</tr>
+<tr>
+<td>Sai</td>
+<td style="text-align:right">2</td>
+<td><code>2 &lt; 2</code>: sai, dừng</td>
+<td style="text-align:right">Không cộng</td>
+<td style="text-align:right">42000</td>
+</tr>
+<tr>
+<td>Đúng</td>
+<td style="text-align:right">0</td>
+<td><code>0 &lt; 3</code>: đúng</td>
+<td style="text-align:right">35000</td>
+<td style="text-align:right">35000</td>
+</tr>
+<tr>
+<td>Đúng</td>
+<td style="text-align:right">1</td>
+<td><code>1 &lt; 3</code>: đúng</td>
+<td style="text-align:right">7000</td>
+<td style="text-align:right">42000</td>
+</tr>
+<tr>
+<td>Đúng</td>
+<td style="text-align:right">2</td>
+<td><code>2 &lt; 3</code>: đúng</td>
+<td style="text-align:right">18000</td>
+<td style="text-align:right">60000</td>
+</tr>
+<tr>
+<td>Đúng</td>
+<td style="text-align:right">3</td>
+<td><code>3 &lt; 3</code>: sai, dừng</td>
+<td style="text-align:right">Không cộng</td>
+<td style="text-align:right">60000</td>
+</tr>
+</tbody>
+</table></div>
+<p>Với <code>n = 0</code> kiểu <code>int</code>, cận sai kiểm <code>0 &lt; -1</code>, cận đúng kiểm <code>0 &lt; 0</code>; cả hai đều sai ngay, tổng giữ 0. Không có truy cập <code>amounts[-1]</code> trong hai vòng lặp này. Ca rỗng qua <strong>không phân biệt được</strong> hai phiên bản. Với <code>n = 1</code>, cận sai kiểm <code>0 &lt; 0</code> nên trả 0; cận đúng kiểm <code>0 &lt; 1</code>, cộng 7000 rồi dừng. Một phần tử là phản ví dụ rất nhỏ nhưng mạnh.</p>
+<p>Bản vá là <code>i &lt; n</code>, không phải <code>i &lt;= n</code>. Cận <code>&lt;=</code> cho phép truy cập chỉ số <code>n</code>, nằm ngoài vector; trong C++ đó là hành vi không xác định, không có lời hứa luôn báo lỗi đẹp. Cộng riêng <code>amounts[n - 1]</code> sau vòng lặp cũng chỉ che nguyên nhân và làm bạn phải xử lý rỗng riêng.</p>
+<h3>Đọc sâu: size không dấu, reference không phải copy</h3>
+<p>Đừng máy móc đổi cận thành <code>i &lt; amounts.size() - 1</code>. <code>size()</code> trả kiểu kích thước không dấu; phép trừ với danh sách rỗng không tạo <code>-1</code> như với <code>int n</code>. Giá trị <strong>unsigned wrap</strong> vòng về một số rất lớn theo số học không dấu, khiến điều kiện và truy cập có thể sai nghiêm trọng. Bản thân phép wrap không phải cùng khái niệm với truy cập ngoài giới hạn; hậu quả truy cập mới dẫn đến hành vi không xác định. Bài dùng <code>int n</code> trong miền tối đa 500 để người mới tập trung vào cận, không cổ vũ ép kiểu tùy tiện.</p>
+<p>Tham chiếu ở chữ ký hàm cũng cần được hiểu chứ không chỉ chép. Trace đoạn <strong>biệt lập</strong> sau. Nếu tự thử ở tệp riêng, đặt <code>#include &lt;iostream&gt;</code> ở đầu tệp, ngoài mọi hàm; đặt năm dòng dưới trong thân <code>int main()</code>. Không chèn vào demo chỉ để xem kết quả.</p>
+<div class="code-wrap"><pre><code class="language-cpp">long long total = 0;
+long long&amp; alias = total;
+long long copied = total;
+alias += 35000;
+std::cout &lt;&lt; total &lt;&lt; ' ' &lt;&lt; copied &lt;&lt; '\n';
+</code></pre></div>
+<p>Dòng 2 tạo một tên khác cho chính biến <code>total</code>; dấu <code>&amp;</code> tại khai báo tham chiếu này không phải yêu cầu người dùng nhập địa chỉ. Dòng 3 tạo một biến mới, lấy giá trị tại thời điểm sao chép. Thay đổi qua <code>alias</code> tác động <code>total</code>, không tự cập nhật <code>copied</code>. Tham chiếu <code>const</code> của hàm tổng giữ cùng ý tưởng tránh sao chép nhưng không cho thay đổi danh sách qua tham số ấy.</p>
+<h3>Đáp án tham chiếu — Hai tên và một bản chụp giá trị</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Sau dòng</th>
+<th style="text-align:right">total</th>
+<th>alias nhìn thấy</th>
+<th>copied</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td style="text-align:right">0</td>
+<td>Chưa khai báo</td>
+<td>Chưa khai báo</td>
+</tr>
+<tr>
+<td>2</td>
+<td style="text-align:right">0</td>
+<td>0, cùng biến total</td>
+<td>Chưa khai báo</td>
+</tr>
+<tr>
+<td>3</td>
+<td style="text-align:right">0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>4</td>
+<td style="text-align:right">35000</td>
+<td>35000</td>
+<td>0</td>
+</tr>
+</tbody>
+</table></div>
+<p>Output <strong>kỳ vọng</strong>, không phải log chạy của người đọc, là <code>35000 0</code>. Giải thích được vì sao biến copy giữ 0 quan trọng hơn nhớ một câu định nghĩa tham chiếu.</p>
+<h3>Lỗi compiler: dấu chấm phẩy và chương trình cũ</h3>
+<p>Đoạn sau là <strong>snippet lỗi cú pháp biệt lập</strong>, không phải lỗi đang có trong demo phát hành. Các tên <code>n</code> và <code>amounts</code> giả định đã khai báo; dòng khởi tạo thiếu dấu chấm phẩy:</p>
+<div class="code-wrap"><pre><code class="language-cpp">long long total = 0
+for (int i = 0; i &lt; n; ++i) {
+    total += amounts[i];
+}
+</code></pre></div>
+<p>Compiler có thể báo dạng <code>expected ',' or ';' before 'for'</code>. Câu chữ tùy phiên bản; vị trí trỏ vào <code>for</code> là nơi bộ phân tích không tiếp tục được, trong khi nguyên nhân nằm ở dòng ngay trước. Đọc tên tệp, dòng, cột và <strong>thông báo lỗi đầu tiên</strong>, rồi xem dòng trước có kết thúc đủ không. Các lỗi phía sau có thể là dây chuyền, không cần yêu cầu AI viết lại cả thuật toán.</p>
+<div class="code-wrap"><pre><code class="language-text">Tôi gửi lệnh biên dịch, cwd và thông báo lỗi đầu tiên của C++.
+Chỉ giải thích file, dòng, cột và phần mã cần kiểm tra.
+Đề xuất sửa đổi nhỏ nhất; xem cả dòng trước vị trí compiler chỉ ra.
+Không sửa thuật toán ngoài phạm vi, không nói chạy được khi chưa chạy.
+</code></pre></div>
+<p>Sau khi sửa <code>;</code>, phải lưu và biên dịch lại. Nếu build thất bại nhưng còn executable từ lần trước, chạy nó có thể vẫn hiện 60000. Điều đó chỉ nói bản cũ chạy được, không chứng minh mã vừa sửa hợp lệ. Hướng dẫn build ở Mission 07 buộc đọc exit code compiler trước khi chạy executable; không dán cả khối lệnh liên tiếp rồi chọn dòng output đẹp nhất.</p>
+<h3>Hoàn tất bản vá và tách validation</h3>
+<p><strong>Trước khi đổi cận</strong>, tạo checkpoint bằng bản sao tệp theo hướng dẫn Mission 06 bên dưới, ghi rõ đây là mốc trước sửa. Nếu đã lỡ sửa, giữ bản hiện tại và ghi đúng thời điểm; không dựng lại một lịch sử thao tác chưa từng làm.</p>
+<p><strong>Kỳ vọng:</strong> diff chỉ đổi <code>i &lt; n - 1</code> thành <code>i &lt; n</code>, giữ vector ba khoản, trace ra 60000. Có compiler thì chạy theo Mission 07; thiếu thì ghi “chưa chạy, đã trace”. Thử vector khác là lượt riêng sau bản vá, luôn biên dịch lại.</p>
+<p>Bản đúng chặn quá 500 khoản trước ép kiểu, kiểm tiền <code>&lt;= 0</code> hoặc <code>&gt; 1000000000LL</code>, ném <code>std::invalid_argument</code> nếu sai. Demo lỗi sửa cận <strong>chưa có validation ấy</strong>; không nhận đạt C7–C9. Chín test bản đúng không chạy mã demo lỗi vừa sửa.</p>
+<p><strong>Lỗi thường gặp:</strong> dùng <code>&lt;=</code>, cộng bù, thay cả tệp, tưởng rỗng qua là đủ, nhầm reference/copy, chạy executable cũ. Giữ trace, diff và trạng thái build để nối kết luận với đúng mã.</p>
+<h3>Câu kiểm — Một dòng sửa giải quyết được bao nhiêu?</h3>
+<p>Rỗng trả 0 có chứng minh đúng cận không? Đổi cận đúng có làm khoản <code>-1</code> tự bị từ chối không? Vì sao <code>i &lt;= n</code> không phải cách “chạy thêm cho đủ”?</p>
+<h3>Đáp án Mission 03</h3>
+<p>Không: với <code>int n = 0</code>, hai cận đều không chạy. Đổi cận không bổ sung validation, nên cần tách kiểm tra miền dữ liệu. <code>i &lt;= n</code> cho truy cập chỉ số ngoài danh sách. Ca <code>[7000]</code> giúp bắt lỗi bỏ phần tử cuối; ca dữ liệu sai kiểm một trách nhiệm khác.</p>
+<h3>Tiêu chí hoàn thành</h3>
+<p>Giữ ba trace; giải thích unsigned wrap, reference/copy, lỗi <code>;</code>; chỉ vá cận. Nhật ký tách chạy/dự đoán/validation chưa làm. Trình bày: Vở ghi bị chặn ở đâu, sửa gì, còn thiếu bằng chứng nào?</p>
+<h2>2.4. Mission 04 — Debug Web: đi theo dữ liệu, không đoán tên hàm</h2>
+<h3>Mục tiêu và bối cảnh: demo đúng vẫn là một bài học debug</h3>
+<p><strong>Mục tiêu:</strong> lần theo HTML, handler, API, lưu trữ và kiểu dữ liệu. <strong>Bối cảnh:</strong> Web phát hành đang đúng; khi chưa có dữ liệu lưu, đã nạp ba mẫu tổng <strong>60000</strong>. Không nhập trùng rồi xem 120000 là lỗi.</p>
+<p><strong>Nhiệm vụ:</strong> Lan thử <code>35000abc</code>, kiểm cơ chế từ chối và fault lab riêng. Minh <strong>review chéo với Lan</strong>, không ngầm đổi persona. Không thêm server, đăng nhập hay CSDL; điểm nối SQL dành Chương 4.</p>
+<h3>Hướng dẫn: mở trang, đọc mô hình và ba tệp</h3>
+<p>Giữ bốn tệp Web cùng nhau trong <code>bai-lam/nam-2-web</code>. Mở trực tiếp <code>index.html</code> từ trình quản lý tệp bằng Chrome, Edge hoặc trình duyệt phù hợp. Hai thẻ script cuối trang lần lượt nạp <code>data.js</code>, <code>app.js</code>, <strong>không dùng module</strong>; demo này mở bằng <code>file://</code> không cần server. Nếu lỗi, kiểm vị trí tệp và Console trước, đừng lập tức chuyển kiến trúc.</p>
+<p>Mở Developer Tools bằng F12 rồi chọn Console; nếu không được, dùng <code>Ctrl+Shift+I</code> trên Windows/Linux, <code>Cmd+Option+I</code> trên macOS, hoặc menu More tools → Developer tools. Tên menu có thể khác. Console ở trình duyệt không phải terminal Bash/PowerShell của IDE: lệnh JavaScript dưới đây chạy ở Console, lệnh <code>node</code> ở terminal.</p>
+<p><code>Expense</code> có bốn trường: <code>id</code> định danh khoản giả, <code>title</code> tên hiển thị, <code>amount</code> số tiền, <code>category</code> mã nhóm. <a href="../../vi-du/nam-2-web/data.js">Hàm <code>sampleExpenses</code></a> trả ba đối tượng sau:</p>
+<div class="code-wrap"><pre><code class="language-javascript">const expenses = [
+  { id: 1, title: 'Cơm trưa', amount: 35000, category: 'an-uong' },
+  { id: 2, title: 'Xe buýt', amount: 7000, category: 'di-lai' },
+  { id: 3, title: 'Vở ghi', amount: 18000, category: 'hoc-tap' }
+];
+</code></pre></div>
+<p>Đây là trích đoạn mô hình đọc hiểu, không dán để thay biến nội bộ của ứng dụng. Số tiền không có dấu nháy; <code>id</code> không phải mã sinh viên. <code>categories</code> ánh xạ <code>hoc-tap</code> thành “Học tập”. Liên hệ OOP nằm ở việc biểu diễn thực thể và giữ bất biến dữ liệu, không ở yêu cầu phải viết <code>class Expense</code> mới được coi là có mô hình.</p>
+<p>Liên hệ DSA: <code>totalExpenses</code> duyệt một lần nên thời gian <strong>O(n)</strong>; biến tổng và phần phụ trợ của chính hàm tổng dùng <strong>O(1)</strong> bộ nhớ thêm, không tính mảng đầu vào. Không gán O(1) cho cả ứng dụng: <code>normalizeExpenses</code> tạo mảng mới và <code>Set</code> id, còn render tạo các phần tử DOM. Thuật toán tổng đơn giản vẫn cần đúng trường và đúng kiểu ở đầu vào.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Chặng dữ liệu</th>
+<th>Vị trí/API thực tế</th>
+<th>Kiểu và câu hỏi cần kiểm</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Ô nhập</td>
+<td><code>index.html</code>: form <code>expense-form</code>, input <code>id/name="amount"</code></td>
+<td><code>type="text"</code>, <code>inputmode="numeric"</code>; giá trị đọc là chuỗi</td>
+</tr>
+<tr>
+<td>Nhận submit</td>
+<td><code>app.js</code>: <code>form.addEventListener('submit', event =&gt; ...)</code></td>
+<td>Handler vô danh, <code>event</code> là đối tượng sự kiện</td>
+</tr>
+<tr>
+<td>Chặn gửi mặc định</td>
+<td><code>app.js</code>: <code>event.preventDefault()</code></td>
+<td>Không để hành vi submit mặc định điều hướng trang</td>
+</tr>
+<tr>
+<td>Parse tiền</td>
+<td><code>D.parseAmount(form.elements.amount.value)</code></td>
+<td>Chuỗi qua kiểm tra thành số hợp lệ, hoặc ném lỗi</td>
+</tr>
+<tr>
+<td>Tạo khoản</td>
+<td><code>app.js</code>: <code>{ id, title, amount, category }</code></td>
+<td>Chọn id chưa dùng, đưa vào <code>D.normalizeExpenses</code></td>
+</tr>
+<tr>
+<td>Tính tổng</td>
+<td><code>data.js</code>: <code>totalExpenses(expenses)</code></td>
+<td>Kiểm mảng, số lượng và phần tiền</td>
+</tr>
+<tr>
+<td>Hiển thị, lưu</td>
+<td><code>app.js</code>: <code>render()</code>, <code>save()</code></td>
+<td><code>textContent</code>, định dạng số, localStorage hoặc bộ nhớ</td>
+</tr>
+</tbody>
+</table></div>
+<p><code>data.js</code> công bố API ở <code>globalThis.ViData</code> cho trình duyệt và <code>module.exports</code> cho Node.js. <code>app.js</code> đặt tên ngắn <code>D</code> cho API đó. <code>test_data.cjs</code> dùng <code>require('./data.js')</code>, không giữ một bản logic sao chép khác. Thứ tự script quan trọng: khi <code>app.js</code> lấy <code>globalThis.ViData</code>, API phải đã được nạp.</p>
+<p>Handler submit không tên nên ghi “hàm vô danh gắn vào submit của form”, không bịa <code>handleSubmit</code>. Nó kiểm số lượng, title; parse tiền; lấy category; dùng <code>Set</code> chọn id nhỏ nhất còn trống; gọi normalize trên danh sách mới rồi mới gán lại <code>expenses</code>. Nếu có lỗi trước phép gán, <code>catch</code> hiện thông báo, danh sách cũ không được thêm khoản sai. Đây là lý do phải lần theo thứ tự, không chỉ thấy một <code>try/catch</code> rồi kết luận chung chung “đã an toàn”.</p>
+<h3>Prompt mẫu: lần theo giá trị 35000abc</h3>
+<div class="code-wrap"><pre><code class="language-text">Chỉ đọc bai-lam/nam-2-web/index.html, app.js, data.js; không sửa/chạy.
+Demo đúng đã có ba khoản mẫu 60000 khi chưa có dữ liệu lưu.
+Nếu nhập title giả hợp lệ, amount là 35000abc và gửi form,
+hãy lần theo phần tử thật, handler vô danh, parseAmount và catch.
+Chỉ ra nơi từ chối, kiểu dữ liệu và vì sao tổng không được đổi.
+Phân biệt totalExpenses kiểm phần tiền với normalizeExpenses kiểm schema.
+Không thêm server/dependency, không chèn fault lab vào demo đúng.
+</code></pre></div>
+<h3>BEHIND THE SCENE — Nhìn giống số chưa phải số</h3>
+<p><code>input.value</code> trả chuỗi, kể cả với nhiều ô <code>type="number"</code>; demo thực tế dùng <code>type="text"</code>, không phải ô số. <code>inputmode="numeric"</code> chỉ gợi ý kiểu bàn phím, không thay bộ kiểm tra dữ liệu. Fault lab sau chạy độc lập trong Console, không thêm khoản vào app. Khối <code>{ ... }</code> giữ các biến minh họa trong phạm vi riêng để có thể thử lại.</p>
+<div class="code-wrap"><pre><code class="language-javascript">{
+  const first = '35000';
+  const second = '7000';
+  console.log(first + second);
+  console.log(typeof first);
+}
+</code></pre></div>
+<p>Kỳ vọng là <code>350007000</code> rồi <code>string</code>: <code>+</code> nối hai chuỗi, không cộng tiền. Chỉ gọi <code>Number</code> cũng chưa làm đúng hợp đồng, vì chuỗi rỗng hoặc dạng số mũ có thể được chuyển thành giá trị số ngoài cú pháp nhập cho phép. <code>parseInt('35000abc', 10)</code> trả 35000 do đọc phần đầu; nó không xác nhận toàn chuỗi là một số tiền hợp lệ.</p>
+<p>API <code>parseAmount(input)</code> trước hết yêu cầu <code>typeof input === 'string'</code>. Sau <code>trim()</code>, regex <strong><code>/^[0-9]+$/</code></strong> buộc toàn chuỗi là ít nhất một chữ số: <code>^</code> neo đầu, <code>$</code> neo cuối, <code>[0-9]</code> chọn chữ số, <code>+</code> yêu cầu có ký tự. <code>trim()</code> bỏ khoảng trắng ở hai đầu, không xóa khoảng trắng giữa <code>35 000</code>. Chỉ sau kiểm dạng mới gọi <code>Number</code>, rồi <code>Number.isSafeInteger</code> và kiểm miền dương tới <code>MAX_AMOUNT</code>.</p>
+<p>JavaScript có miền số nguyên an toàn từ -9007199254740991 đến 9007199254740991. Tổng cực đại 500000000000 của bài nằm trong miền đó. Nhưng <code>typeof value === 'number'</code> chưa đủ: số lẻ, <code>NaN</code> và <code>Infinity</code> cũng cần bị loại. Sự kết hợp cú pháp chuỗi, tính nguyên an toàn và miền nghiệp vụ mới là hợp đồng đầy đủ của parse.</p>
+<p>Snippet Console dưới dùng <strong>API thật đã được trang nạp</strong>, vẫn không thay danh sách:</p>
+<div class="code-wrap"><pre><code class="language-javascript">{
+  const D = globalThis.ViData;
+  const amount = D.parseAmount(' 35000 ');
+  console.log(amount, typeof amount);
+  try {
+    D.parseAmount('35000abc');
+    console.log('Không đạt: đầu vào sai đã lọt qua');
+  } catch (error) {
+    console.log('Đã từ chối:', error.message);
+  }
+}
+</code></pre></div>
+<p>Kỳ vọng là <code>35000 number</code> và thông báo từ chối. Sau đó thử qua form với title giả hợp lệ, category hợp lệ và tiền <code>35000abc</code>: phải có thông báo, số khoản và tổng giữ nguyên. Ghi tổng <strong>trước</strong> thao tác để tránh lẫn với dữ liệu đã lưu. Kiểm hàm trực tiếp và kiểm qua form là hai bằng chứng khác nhau; một ô nhập ngăn gõ chữ cũng chưa chứng minh API tự kiểm đầy đủ.</p>
+<h3>Fault lab biệt lập — value thiếu, tổng thành NaN</h3>
+<p>Đoạn sau <strong>cố ý có lỗi ánh xạ</strong>, không phải mã lỗi đang có trong <code>data.js</code> hay yêu cầu sửa demo Web. Dữ liệu tối giản chỉ có trường tiền, không phải Expense đầy đủ. Tự dự đoán <code>x.value</code> và biến tổng riêng trước khi chạy Console.</p>
+<div class="code-wrap"><pre><code class="language-javascript">{
+  const items = [{ amount: 35000 }, { amount: 7000 }, { amount: 18000 }];
+  const wrong = items.reduce((sum, x) =&gt; sum + x.value, 0);
+  console.log(wrong);
+  console.log(Number.isNaN(wrong));
+  const correct = items.reduce((sum, x) =&gt; sum + x.amount, 0);
+  console.log(correct);
+}
+</code></pre></div>
+<h3>Đáp án fault lab — undefined không phải NaN</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Lượt</th>
+<th style="text-align:right">amount của x</th>
+<th>x.value</th>
+<th>sum trước</th>
+<th>Phép cộng</th>
+<th>sum sau</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td style="text-align:right">35000</td>
+<td><code>undefined</code></td>
+<td>0</td>
+<td><code>0 + undefined</code></td>
+<td><code>NaN</code></td>
+</tr>
+<tr>
+<td>2</td>
+<td style="text-align:right">7000</td>
+<td><code>undefined</code></td>
+<td><code>NaN</code></td>
+<td><code>NaN + undefined</code></td>
+<td><code>NaN</code></td>
+</tr>
+<tr>
+<td>3</td>
+<td style="text-align:right">18000</td>
+<td><code>undefined</code></td>
+<td><code>NaN</code></td>
+<td><code>NaN + undefined</code></td>
+<td><code>NaN</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>Thuộc tính thiếu trả <code>undefined</code>; phép cộng nhận giá trị đó dẫn tới <code>NaN</code>, viết tắt Not-a-Number. Output kỳ vọng là <code>NaN</code>, <code>true</code>, <code>60000</code>. <code>typeof NaN</code> vẫn là <code>"number"</code>; dùng <code>Number.isNaN</code> để nhận diện NaN, không coi hai khái niệm là một. Đổi sang <code>x.amount</code> sửa ánh xạ trong fault lab, nhưng <code>reduce</code> ấy chưa kiểm số lượng hay miền tiền. Ứng dụng thật vẫn phải dùng API có kiểm tra.</p>
+<p>Ba biểu hiện 42000, 350007000, NaN gợi ba giả thuyết: bỏ phần tử, nối chuỗi, nhận trường/giá trị không dùng được như số. Đó chưa phải chẩn đoán chỉ từ màn hình. Cần xem input, kiểu, mã và trạng thái dữ liệu để chọn phép thử phân biệt chúng.</p>
+<h3>Ranh giới schema và ca hồi quy đã được bổ sung</h3>
+<p><code>totalExpenses</code> kiểm đầu vào là mảng, tối đa 500 phần tử và từng <code>amount</code> hợp lệ. Nó <strong>không kiểm đủ bốn trường</strong> của Expense; <code>[{ amount: 7000 }]</code> vẫn đủ để kiểm riêng hàm tổng. <code>normalizeExpenses</code> mới kiểm id nguyên an toàn dương và không trùng, title là chuỗi không rỗng sau trim dài tối đa 80, category là chuỗi thuộc tập cho phép, cùng tiền hợp lệ; hàm trả danh sách đối tượng mới đã chuẩn hóa.</p>
+<p>Điểm này từng có một lỗi thật trong bản nguồn: chỉ dùng <code>Object.hasOwn(categories, item.category)</code> cho phép <code>category: ['khac']</code> lọt qua vì mảng bị chuyển thành khóa chuỗi <code>khac</code>. Bản mới đã thêm <strong><code>typeof item.category !== 'string'</code></strong> vào nhánh từ chối. Regression test kiểm mảng category đã có trong <code>test_data.cjs</code>. Không bảo người học sửa lại demo hiện đã vá.</p>
+<p>“Hồi quy” ở đây là nguy cơ một hành vi đã được sửa bị phá trở lại khi thay đổi mã. Test phải giữ phản ví dụ cụ thể, không chỉ thêm một ca vui vẻ với category chuỗi. Theo hồ sơ audit, bản nguồn có 33 ca, lượt thêm kiểm tra đã từng thất bại exit 1 trước bản vá, rồi bản mới đạt <strong>34 passed, 0 failed</strong>. Đó là bằng chứng của lượt rà được ghi nguồn, không phải lịch sử thực hành do bạn tự chạy. Nếu dùng để học, ghi rõ đang đọc lịch sử hay vừa kiểm lại bản hiện tại.</p>
+<h3>Lưu cục bộ: không nhầm khả năng mở trang với lưu bền vững</h3>
+<p><code>app.js</code> bắt đầu bằng <code>D.sampleExpenses()</code>, sau đó thử đọc khóa <code>visinhvien-demo-v1</code> trong localStorage. Nếu có dữ liệu, <code>JSON.parse</code> và <code>normalizeExpenses</code> kiểm trước khi dùng. Nếu đọc hoặc chuẩn hóa thất bại, app giữ mẫu trong bộ nhớ, đặt <code>persistent = false</code>, cảnh báo và không ghi đè dữ liệu cũ. Nếu ghi thất bại do chặn hoặc hết dung lượng, app cũng chuyển sang bộ nhớ tạm.</p>
+<p>Mở <code>file://</code> không cần server <strong>không có nghĩa localStorage được bảo đảm ở mọi browser</strong>. Hành vi lưu trên file trực tiếp khác nhau theo trình duyệt và chính sách. Dữ liệu không đồng bộ giữa máy, không có tài khoản hay CSDL máy chủ. Fallback RAM cho phép tiếp tục thao tác, nhưng tải lại có thể mất thay đổi. Nút Khôi phục mẫu thay dữ liệu bằng ba khoản sau xác nhận; nó không tự bật lại khả năng lưu khi <code>persistent</code> đã false trong phiên.</p>
+<p>Để quan sát hợp lệ, ghi có thấy cảnh báo không; thêm một khoản giả rồi tải lại và đối chiếu. Nếu cần trạng thái 42000, trên <strong>bài làm</strong> xóa riêng Vở ghi rồi thêm lại 18000 với nhóm Học tập; hoặc dùng mảng lab riêng. Đừng diễn giải việc chủ động xóa một khoản là bug bỏ phần tử. Khôi phục mẫu sẽ thay toàn danh sách, nên chỉ dùng khi đã biết dữ liệu giả hiện tại có thể bỏ.</p>
+<p><strong>Kỳ vọng:</strong> sơ đồ có kiểu, thử <code>35000abc</code> không đổi tổng, báo lưu trữ đúng mức quan sát. <strong>Lỗi thường gặp:</strong> nhập trùng, bịa handler, lạm dụng parseInt, nhầm NaN/undefined hoặc Node/browser. Không tái hiện fallback thì ghi chưa kiểm, không tắt bảo vệ.</p>
+<h3>Câu kiểm — Ai chịu trách nhiệm kiểm điều gì?</h3>
+<p>Inputmode có thay regex không? Hàm tổng có kiểm đủ schema không? Khôi phục mẫu có phục hồi quyền lưu bị chặn không?</p>
+<h3>Đáp án Mission 04</h3>
+<p>Không cho cả ba câu. Inputmode không thay validation; hàm tổng chỉ kiểm phần tiền và số lượng; normalize mới kiểm schema. Nút khôi phục thay dữ liệu mẫu, không đảo cờ <code>persistent</code> đã false. Kiểm DOM và lưu trữ phải làm ở trình duyệt, riêng với kiểm logic Node.js.</p>
+<h3>Tiêu chí hoàn thành</h3>
+<p>Chỉ đúng luồng/API, giải thích string → number, undefined → NaN và hồi quy category. Ghi trạng thái trước/sau, từ chối và lưu trữ. Demo đúng thì nộp bằng chứng <strong>“không thay mã”</strong>.</p>
+<h2>2.5. Mission 05 — Giao Agent một công việc có giới hạn</h2>
+<h3>Mục tiêu và bối cảnh: quyền mạnh hơn cần hợp đồng rõ hơn</h3>
+<p><strong>Mục tiêu:</strong> giao việc có phạm vi và bằng chứng. <strong>Bối cảnh hư cấu:</strong> Agent đề nghị sửa cận kèm định dạng dự án, cài thư viện tiền. Lan hỏi vì sao API đang có chưa đủ; phần hữu ích không hợp thức hóa phần ngoài phạm vi.</p>
+<p><strong>Nhiệm vụ:</strong> viết hợp đồng một bản vá, Observe/Plan trước Act. Nếu đã tự sửa, dùng diff/checkpoint <strong>mô phỏng</strong> giao việc; không làm hỏng lại bài hoặc nhận Agent đã thực thi.</p>
+<h3>Hướng dẫn: Observe → Plan → Act → Test, rồi Review</h3>
+<p>Observe thu thập mã, dữ liệu, lỗi và trạng thái môi trường. Plan nêu giả thuyết, tệp dự kiến đổi, phép thử và điều chưa biết. Act thực hiện thay đổi đã cho phép. Test kiểm giả thuyết bằng ca thường, ca biên và đọc kết quả. Sau đó người học Review diff và bằng chứng để quyết định nhận. Các bước là mô hình tư duy, không hứa giao diện luôn hiện đúng năm nhãn.</p>
+<p><img alt="Luồng cộng tác: Ask để hiểu, phân tích và sửa có giới hạn, kiểm thử rồi review; nếu test sai phải quay lại quan sát." src="../../assets/workflow.svg"/></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Bước</th>
+<th>Việc với tình huống 42000</th>
+<th>Bằng chứng cần giữ</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Observe</td>
+<td>Đọc vector và <code>i &lt; n - 1</code>, xác định <code>int n</code></td>
+<td>Tệp, đoạn mã, output thật hoặc trace có nhãn</td>
+</tr>
+<tr>
+<td>Plan</td>
+<td>Giả thuyết bỏ khoản cuối; chỉ sửa cận</td>
+<td>Dự đoán rỗng, một khoản, ba khoản</td>
+</tr>
+<tr>
+<td>Act</td>
+<td>Đổi thành <code>i &lt; n</code> ở đúng bài làm</td>
+<td>Diff nhỏ và trạng thái đã lưu</td>
+</tr>
+<tr>
+<td>Test</td>
+<td>Biên dịch rồi chạy đúng executable; thử ca phân biệt</td>
+<td>Cwd, shell, lệnh, output, exit code hoặc lý do chưa chạy</td>
+</tr>
+<tr>
+<td>Review</td>
+<td>So yêu cầu, diff và kết quả</td>
+<td>Quyết định nhận/từ chối, phần còn chưa kiểm</td>
+</tr>
+</tbody>
+</table></div>
+<p>Test sai không phải lý do bỏ ca khó. Nếu tổng đã đúng nhưng khoản âm chưa bị chặn, hãy ghi bản vá cận đạt mục tiêu hẹp còn validation chưa triển khai. Không sửa expected thành actual sai, không xóa assertion, không giấu lượt thất bại. Vòng lặp quay lại Observe phải dựa trên dữ kiện mới, không đổi mã ngẫu nhiên cho tới khi màn hình xanh.</p>
+<h3>Prompt mẫu: hợp đồng trước khi chuyển sang Agent</h3>
+<div class="code-wrap"><pre><code class="language-text">Workspace mở ở gốc AI-Student-Handbook. Dữ liệu hoàn toàn giả.
+Chỉ được sửa bai-lam/nam-1-cpp/loi-bo-sot.cpp nếu bản vá chưa có.
+Mục tiêu giai đoạn 1: sửa cận để ba khoản 35000, 7000, 18000 ra 60000.
+Trước mắt chỉ Observe và Plan; chưa sửa, chưa chạy lệnh.
+Nêu nguyên nhân, đúng dòng dự kiến đổi và dự đoán ca 0, 1, 3 khoản.
+Giữ vector mẫu; không thêm validation trong bản vá cận này.
+Không sửa vi-du, Web hoặc bài người khác; không đọc ngoài phạm vi cần thiết.
+Không cài dependency, đổi cấu hình/quyền, tạo key, commit, publish hay triển khai.
+Nếu bị chặn, dừng và báo; không thử đường vòng để vượt chặn.
+Sau khi tôi đồng ý bước tiếp theo, báo diff, test thật, lượt fail và phần chưa kiểm.
+Không coi prompt này là cơ chế khóa quyền kỹ thuật.
+</code></pre></div>
+<p>Chuyển Ask sang Agent khi đã mô tả lỗi, biết tệp được đổi và có dự đoán. Trong IDE, xem chính sách <strong>Settings → Chat → Auto-Run → Terminal</strong> theo tài liệu; không mặc định mọi lệnh chờ xác nhận và không tự thay cài đặt.</p>
+<p>Bị chặn hoặc quyền không rõ thì dừng, không nới quyền hay chuyển công cụ để vượt chặn. Đường dẫn Settings trên không áp cho Desktop/CLI. Quyền, tài khoản và công cụ hiện có trên máy người học <strong>chưa được xác minh</strong>.</p>
+<h3>Dependency cần kiểm, không cần cài để chứng tỏ chủ động</h3>
+<p>Dependency là thành phần phần mềm dự án phụ thuộc. Bản Web thuần này dùng API trình duyệt, còn test dùng <code>node:assert/strict</code>, mô-đun có sẵn của Node.js; không cần <code>npm install</code> cho các bài đã nêu. Dùng <code>require</code> không tự có nghĩa đó là gói bên thứ ba. Phải đọc đường dẫn và tên mô-đun trước khi quyết định thiếu dependency.</p>
+<p>Trong <strong>tình huống hư cấu</strong>, Agent đưa một tên gói lạ và bảo chạy lệnh cài. Quyết định phù hợp là yêu cầu lý do cần, chức năng hiện có chưa đáp ứng ở đâu và phương án không thêm gói. Nếu một nhiệm vụ khác thực sự cần dependency, phải kiểm đúng registry, tên gói, nhà phát hành, kho nguồn, phiên bản, giấy phép, phụ thuộc bắc cầu, script cài và thay đổi manifest/lockfile. Sự tồn tại của trang gói hoặc nhiều lượt tải không đủ để chứng minh an toàn.</p>
+<p>Chưa kiểm thì ghi “dependency chưa xác minh”, không gọi nó độc hại chỉ vì lạ; cũng không cài để xem có gì. Không dùng lệnh tải mã từ mạng rồi nối thẳng vào shell thực thi. Kiểm chi tiết dependency là chủ đề được mở rộng ở Chương 4; tại đây lựa chọn đúng là giữ bài không phát sinh thành phần không cần thiết.</p>
+<p><strong>Kỳ vọng:</strong> kế hoạch có điểm dừng, quyền và test. <strong>Lỗi thường gặp:</strong> “làm tốt nhất có thể”, sửa cả dự án, nhầm prompt với sandbox, coi lời hứa là log. Thiếu compiler không cho phép tự cài.</p>
+<h3>Câu kiểm — Phần hữu ích có hợp thức hóa phần thừa?</h3>
+<p>Nhận bản vá kèm đổi Auto-Run/dependency hay tách từng việc? Có xóa ca khoản âm thất bại để hoàn thành giai đoạn 1 không?</p>
+<h3>Đáp án Mission 05</h3>
+<p>Tách bản vá cận khỏi đổi quyền và dependency; hai việc sau ngoài phạm vi. Giữ ca khoản âm, ghi đó là kiểm validation chưa được triển khai trong demo lỗi, không xóa hay báo toàn chương đạt. Có thể hoàn thành mục tiêu hẹp bằng chứng rõ, nhưng không nhận mục tiêu rộng chưa làm.</p>
+<h3>Tiêu chí hoàn thành</h3>
+<p>Bạn viết được hợp đồng, chỉ ra điểm phải dừng trước Act, phân biệt Ask/Agent với Desktop và CLI, từ chối phần cài đặt không cần thiết. Nhật ký ghi rõ thao tác nào thật, thao tác nào mô phỏng, test nào chưa thực hiện. Quyền kiểm soát thể hiện ở quyết định có lý do, không ở số lần nhấn chấp nhận.</p>
+<h2>2.6. Mission 06 — Đọc diff và giữ đường quay lại</h2>
+<h3>Mục tiêu và bối cảnh: “đã sửa” chưa phải “tôi nhận”</h3>
+<p><strong>Mục tiêu:</strong> review bằng bốn câu hỏi, giữ checkpoint. <strong>Bối cảnh hư cấu:</strong> diff sửa đúng cận nhưng bỏ kiểm category và thêm cấu hình tự chạy. Tổng 60000 không phơi lộ mọi hậu quả.</p>
+<p><strong>Nhiệm vụ:</strong> tách bản vá hợp lệ khỏi phần vượt phạm vi. Diff là khác biệt trước/sau; đọc nội dung thêm/xóa, không chỉ màu hoặc số dòng. Một dòng bỏ kiểm tra có thể gây hồi quy.</p>
+<h3>Hướng dẫn: checkpoint trước, bốn câu hỏi sau</h3>
+<p>Trước lượt sửa, dùng trình quản lý tệp tạo checkpoint trong <code>bai-lam/checkpoints/</code>, đặt một thư mục mốc rõ như <code>moc-01-truoc-can</code>, rồi sao chép tệp bài làm cần giữ vào đó. Nếu đã sửa cận, bản chụp hiện tại là <strong>sau sửa</strong>: đặt tên tương ứng, không ghi nhận nó là trước sửa. Ghi thời điểm và nội dung của mốc trong nhật ký. Đây là bản chụp riêng, <strong>không đổi tên hai nhánh bài làm</strong>, không thay cwd và không biến checkpoint thành nơi chạy lệnh chính.</p>
+<p>Bản gốc <code>vi-du</code> giúp đối chiếu ban đầu; checkpoint còn giữ công việc của bạn đã có trước lượt sửa. Hai thứ không thay thế nhau. Người đã học Git có thể dùng quy trình checkpoint được lớp hướng dẫn, nhưng chương không yêu cầu tự commit. Không tự tạo commit hoặc đẩy mã lên dịch vụ ngoài chỉ để lưu một bản vá học tập.</p>
+<p>Trong Qoder IDE, dùng <strong>View Changes</strong> theo phiên bản để xem đề xuất và quyết định accept/reject. Nếu tự sửa bằng tay, so tệp trước/sau bằng công cụ so sánh của IDE hoặc đọc cạnh nhau với checkpoint. Dù cách xem khác, luôn trả lời bốn câu:</p>
+<ol>
+<li><strong>File nào đổi?</strong> Có nằm trong bài làm và phạm vi đã đồng ý không?</li>
+<li><strong>Dòng nào đổi?</strong> Nội dung bị xóa và được thêm là gì, không chỉ màu nào nhiều hơn?</li>
+<li><strong>Liên quan lỗi thế nào?</strong> Trace hoặc phép thử nào giải thích thay đổi này?</li>
+<li><strong>Có ảnh hưởng hợp đồng dữ liệu không?</strong> Kiểu, miền, số lượng, schema hay hành vi từ chối có đổi không?</li>
+</ol>
+<p>Diff <strong>minh họa đúng phạm vi</strong> dưới đây chỉ mô tả dòng cận, không phải một lệnh để chạy:</p>
+<div class="code-wrap"><pre><code class="language-diff">-    for (int i = 0; i &lt; n - 1; ++i) {
++    for (int i = 0; i &lt; n; ++i) {
+</code></pre></div>
+<p>Tệp phải là <code>bai-lam/nam-1-cpp/loi-bo-sot.cpp</code>; lý do là chỉ số cuối cần được duyệt, chỉ số <code>n</code> phải bị chặn. Hợp đồng tiền chưa đổi; validation vẫn là phần mở rộng. Nếu diff còn sửa <code>vi_sinh_vien.cpp</code>, Web, test, quyền hoặc dependency, yêu cầu tách và giải trình trước khi nhận. Không “accept tất cả rồi tính sau” khi chưa biết cách hoàn nguyên phần nào.</p>
+<h3>Prompt mẫu: review không tự sửa thêm</h3>
+<div class="code-wrap"><pre><code class="language-text">Chỉ review diff và checkpoint tôi cung cấp; không sửa hoặc chạy lệnh.
+Phạm vi được giao: cận vòng lặp trong bai-lam/nam-1-cpp/loi-bo-sot.cpp.
+Trả lời bốn câu: file nào, dòng nào, liên quan lỗi ra sao,
+ảnh hưởng hợp đồng dữ liệu thế nào.
+Đánh dấu riêng thay đổi dependency, test, cấu hình/quyền và tệp ngoài phạm vi.
+Không coi accept là chứng nhận đúng; nêu test hồi quy cần giữ.
+Nếu bản sửa không ổn, đề xuất phục hồi có chọn lọc, không ghi đè bài khác.
+</code></pre></div>
+<p>Accept chỉ là nhận thay đổi, không chứng nhận tính đúng. Reject không phải bản sao dự phòng và không bảo đảm phục hồi mọi thao tác đã chạy bên ngoài đề xuất. Phải biết tệp đang lưu ở đĩa, checkpoint chụp lúc nào và executable nào sẽ được chạy. Nếu bài nhóm có thay đổi khác cùng lúc, hỏi người phụ trách phần đó qua quy trình nhóm thay vì ghi đè cả thư mục.</p>
+<h3>Nhật ký fail: không xóa lịch sử để tạo câu chuyện đẹp</h3>
+<p>Sửa không ổn thì dừng, giữ bằng chứng, so checkpoint và phục hồi chọn lọc, rồi kiểm lại. Không xóa hàng loạt hay đè bài khác. Phục hồi mã không tự phục hồi quyền browser, localStorage hoặc trạng thái tiến trình.</p>
+<p>Ghi mẫu trống này vào <code>bai-lam/nam-1-cpp/ghi-chep-02.txt</code> hoặc ghi chép nhánh Web:</p>
+<div class="code-wrap"><pre><code class="language-text">Phạm vi được mở và tệp được phép đổi:
+Cwd, shell, công cụ/phiên bản nếu đã kiểm:
+Checkpoint trước sửa, thời điểm và nội dung:
+Input; expected; actual trước sửa (hoặc trace, chưa chạy):
+File/dòng đổi, lý do theo bốn câu hỏi:
+Lệnh hoặc thao tác kiểm tra; executable/tệp test thực tế:
+Stdout, stderr liên quan; exit code nếu có:
+Lượt thất bại: input, expected, actual, bước xử lý tiếp:
+Kết quả sau sửa và quyết định nhận/từ chối:
+Phần chưa chạy/chưa xác minh; nguồn AI hỗ trợ và phần tự làm:
+</code></pre></div>
+<p>Giữ lỗi đầu tiên, input và expected/actual, không nhất thiết toàn log. Che thông tin cá nhân/bí mật trước chia sẻ, không làm sai chẩn đoán.</p>
+<p>Category mảng từng thất bại rồi qua sau bản vá. Xóa kiểm <code>typeof</code> hoặc regression test có thể làm schema yếu lại dù tổng mẫu vẫn 60000: review bảo vệ cả hành vi đã đúng.</p>
+<p><strong>Kỳ vọng:</strong> quyết định có lý do, đường quay lại rõ. <strong>Lỗi thường gặp:</strong> coi View Changes thay checkpoint, nhận cả diff vì một dòng đúng, xóa test khó, chỉ giữ lượt xanh. Mỗi quyết định phải có phạm vi và phép thử.</p>
+<h3>Câu kiểm — Khi nào phải dừng nhận thay đổi?</h3>
+<p>Diff sửa đúng cận nhưng xóa regression test <code>category</code> mảng; test còn lại đều qua. Bạn có thể ghi “không hồi quy” không? Checkpoint của hôm qua có chắc giữ được phần bạn vừa viết sáng nay không?</p>
+<h3>Đáp án Mission 06</h3>
+<p>Không thể nhận “không hồi quy” khi phản ví dụ bảo vệ hành vi đã bị bỏ mà chưa có lý do hợp lệ. Yêu cầu giữ test và bỏ phần thay đổi ngoài phạm vi. Checkpoint chỉ giữ trạng thái tại lúc chụp; cần biết thời điểm và so với công việc mới, không phục hồi mù toàn thư mục.</p>
+<h3>Tiêu chí hoàn thành</h3>
+<p>Có checkpoint xác định, bốn câu trả lời về diff, nhật ký giữ cả lần fail nếu có và quyết định accept/reject không vượt phạm vi. Nếu chưa có lượt fail thật, ghi “chưa phát sinh”, không bịa một lịch sử sửa lỗi. Bạn giải thích được cách quay lại mà không làm mất bài khác.</p>
+<h2>2.7. Mission 07 — Nghiệm thu bằng lệnh, ca biên và lời giải thích</h2>
+<h3>Mục tiêu, bối cảnh và nhiệm vụ cuối chặng</h3>
+<p><strong>Mục tiêu:</strong> báo cáo có giới hạn rõ. <strong>Bối cảnh:</strong> Minh có bản vá cận, Lan có demo đúng; chưa thể nói mọi thứ đã được kiểm. <strong>Nhiệm vụ:</strong> build/run nếu đủ công cụ, đối chiếu C/W/T, thử browser, tự chấm và nêu phần chưa kiểm; không làm xanh bằng mọi giá.</p>
+<h3>Hướng dẫn CLI: kiểm môi trường trước, đọc ba loại bằng chứng</h3>
+<p>Mọi lệnh dưới đây chạy ở <strong>gốc <code>AI-Student-Handbook</code></strong>, không chuyển cwd vào nhánh. Kiểm <code>pwd</code> trong Bash hoặc <code>Get-Location</code> trong PowerShell, nhìn thấy <code>bai-lam</code> trước khi tiếp tục. Kiểm <code>g++ --version</code> hoặc <code>node --version</code> tương ứng nhánh. Nếu không tìm thấy, dừng phần chạy đó, ghi “chưa thực hiện vì thiếu công cụ”; tham khảo <a href="https://gcc.gnu.org/">GCC</a>, <a href="https://www.msys2.org/">MSYS2</a> hoặc <a href="https://nodejs.org/">Node.js</a> theo quy định máy, không yêu cầu Agent tự cài.</p>
+<p>Stdout là luồng kết quả thông thường; stderr thường chứa chẩn đoán lỗi. Terminal có thể hiển thị cả hai xen kẽ, nên ảnh chụp màn hình không luôn phân biệt nguồn của từng dòng. Exit code là trạng thái tiến trình trả về: thông thường 0 là thành công, khác 0 là thất bại. Vẫn phải đọc những gì đã chạy; một chương trình lỗi thuật toán có thể trả 0 vì nó không tự kiểm kết quả.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Bằng chứng</th>
+<th>Bash, gồm Git Bash</th>
+<th>PowerShell</th>
+<th>Cách đọc</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Stdout</td>
+<td>Đọc output của lệnh</td>
+<td>Đọc output của lệnh</td>
+<td>Tổng hoặc dòng PASS, không tự chứng minh đủ ca</td>
+</tr>
+<tr>
+<td>Stderr</td>
+<td>Đọc chẩn đoán của lệnh</td>
+<td>Đọc chẩn đoán của lệnh</td>
+<td>Compiler error hoặc FAIL; không bỏ qua vì có stdout đẹp</td>
+</tr>
+<tr>
+<td>Exit code lệnh ngoài</td>
+<td><code>echo $?</code> ngay sau lệnh</td>
+<td><code>$LASTEXITCODE</code> ngay sau lệnh</td>
+<td>Ghi riêng mã compiler, chương trình, test</td>
+</tr>
+<tr>
+<td>Cwd</td>
+<td><code>pwd</code></td>
+<td><code>Get-Location</code></td>
+<td>Phải là gốc chứa <code>bai-lam</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>Trong Bash, một lệnh xen vào có thể thay <code>$?</code>; trong PowerShell, <code>$LASTEXITCODE</code> là mã của chương trình ngoài gần nhất, không phải kết quả mọi cmdlet. Vì vậy hãy đọc và ghi ngay sau lệnh cần kiểm. “Không tìm thấy lệnh” hay “không tìm thấy tệp” nghĩa là chưa chạy được phép thử, không phải phép thử đã trả kết quả đạt.</p>
+<h3>Build và chạy C++: hai executable, hai mục đích</h3>
+<p>Để tránh lẫn tên giữa shell, chương đặt tên đầu ra <code>.exe</code> rõ ràng trong cả hai cột. Trên Bash Unix, đây vẫn có thể là tên tệp executable; định dạng thực do compiler/nền tảng quyết định, không do phần mở rộng. <code>-std=c++17</code> chọn chuẩn, <code>-Wall -Wextra</code> bật cảnh báo, <code>-o</code> chỉ đường dẫn đầu ra.</p>
+<p><strong>Bash — cwd gốc. Chạy từng dòng; nếu biên dịch khác 0, dừng trước dòng chạy:</strong></p>
+<div class="code-wrap"><pre><code class="language-bash">g++ -std=c++17 -Wall -Wextra "bai-lam/nam-1-cpp/loi-bo-sot.cpp" -o "bai-lam/nam-1-cpp/loi-bo-sot.exe"
+echo $?
+./bai-lam/nam-1-cpp/loi-bo-sot.exe
+echo $?
+</code></pre></div>
+<p><strong>PowerShell — cwd gốc. Cùng quy tắc dừng khi biên dịch lỗi:</strong></p>
+<div class="code-wrap"><pre><code class="language-powershell">g++ -std=c++17 -Wall -Wextra "bai-lam/nam-1-cpp/loi-bo-sot.cpp" -o "bai-lam/nam-1-cpp/loi-bo-sot.exe"
+$LASTEXITCODE
+.\bai-lam\nam-1-cpp\loi-bo-sot.exe
+$LASTEXITCODE
+</code></pre></div>
+<p>Output <strong>kỳ vọng</strong> trước sửa là <code>Tong chi tieu: 42000 VND</code>, sau bản vá cận là <code>Tong chi tieu: 60000 VND</code>. Không thêm <code>--test</code>: demo lỗi không xử lý tham số đó và không chờ nhập tiền từ bàn phím. Nếu bạn đã sửa trước lượt chạy đầu, không ghi một output trước sửa giả; dùng trace có nhãn để đối chiếu.</p>
+<p>Bản đúng có bộ test riêng. <strong>Bash, vẫn cwd gốc; chỉ chạy executable sau khi compiler trả 0:</strong></p>
+<div class="code-wrap"><pre><code class="language-bash">g++ -std=c++17 -Wall -Wextra "bai-lam/nam-1-cpp/vi_sinh_vien.cpp" -o "bai-lam/nam-1-cpp/vi_sinh_vien.exe"
+echo $?
+./bai-lam/nam-1-cpp/vi_sinh_vien.exe
+echo $?
+./bai-lam/nam-1-cpp/vi_sinh_vien.exe --test
+echo $?
+</code></pre></div>
+<p><strong>PowerShell, vẫn cwd gốc; kiểm từng mã thoát:</strong></p>
+<div class="code-wrap"><pre><code class="language-powershell">g++ -std=c++17 -Wall -Wextra "bai-lam/nam-1-cpp/vi_sinh_vien.cpp" -o "bai-lam/nam-1-cpp/vi_sinh_vien.exe"
+$LASTEXITCODE
+.\bai-lam\nam-1-cpp\vi_sinh_vien.exe
+$LASTEXITCODE
+.\bai-lam\nam-1-cpp\vi_sinh_vien.exe --test
+$LASTEXITCODE
+</code></pre></div>
+<p>Bản đúng chạy thường có output kỳ vọng sau; chữ không dấu nhằm dễ hiển thị trên terminal, không ảnh hưởng phép tính:</p>
+<div class="code-wrap"><pre><code class="language-text">Com trua: 35000 VND
+Xe buyt: 7000 VND
+Vo ghi: 18000 VND
+Tong chi tieu: 60000 VND
+</code></pre></div>
+<p>Chế độ test kỳ vọng kết thúc <strong><code>9 passed, 0 failed</code></strong>, exit 0. <code>--test</code> là tham số do chính <code>main</code> bản đúng xử lý, không phải chức năng tự có của C++. Compiler thành công có thể im lặng; im lặng không có nghĩa chưa chạy. Compiler thất bại phải dừng, vì executable cũ còn tồn tại có thể đánh lừa bạn.</p>
+<h3>Bảng C1–C9 — Giữ cả phép cộng và trách nhiệm từ chối</h3>
+<p>Che cột đáp án để dự đoán trước. Bảng là ma trận học tập; “lõi sai” dùng <code>int n</code> và chỉ xét phép duyệt. Với dữ liệu ngoài hợp đồng, không lấy một tổng số học tình cờ để hợp thức hóa input.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Ca</th>
+<th>Input tiền</th>
+<th style="text-align:right">Đáp án đúng</th>
+<th>Lõi sai <code>i &lt; n - 1</code></th>
+<th>Ý nghĩa</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>C1</td>
+<td>Rỗng, <code>n = 0</code></td>
+<td style="text-align:right">0</td>
+<td>0</td>
+<td>Qua ca này chưa đủ</td>
+</tr>
+<tr>
+<td>C2</td>
+<td><code>[7000]</code></td>
+<td style="text-align:right">7000</td>
+<td>0</td>
+<td>Bắt lỗi bỏ khoản duy nhất</td>
+</tr>
+<tr>
+<td>C3</td>
+<td><code>[35000,7000,18000]</code></td>
+<td style="text-align:right">60000</td>
+<td>42000</td>
+<td>Ca xuyên suốt chương</td>
+</tr>
+<tr>
+<td>C4</td>
+<td><code>[1]</code></td>
+<td style="text-align:right">1</td>
+<td>0</td>
+<td>Biên nhỏ nhất hợp lệ</td>
+</tr>
+<tr>
+<td>C5</td>
+<td><code>[1000000000]</code></td>
+<td style="text-align:right">1000000000</td>
+<td>0</td>
+<td>Biên lớn nhất mỗi khoản</td>
+</tr>
+<tr>
+<td>C6</td>
+<td>500 khoản, mỗi khoản 1000000000</td>
+<td style="text-align:right">500000000000</td>
+<td>499000000000</td>
+<td>Giới hạn số lượng và kiểu tổng</td>
+</tr>
+<tr>
+<td>C7</td>
+<td>Một khoản 0 hoặc -1</td>
+<td style="text-align:right">Từ chối</td>
+<td>Không dùng lõi để hợp thức hóa</td>
+<td>Kiểm tra đầu vào</td>
+</tr>
+<tr>
+<td>C8</td>
+<td>Một khoản 1000000001</td>
+<td style="text-align:right">Từ chối</td>
+<td>Không có tổng hợp lệ</td>
+<td>Vượt giới hạn mỗi khoản</td>
+</tr>
+<tr>
+<td>C9</td>
+<td>501 khoản hợp lệ</td>
+<td style="text-align:right">Từ chối</td>
+<td>Không có tổng hợp lệ</td>
+<td>Vượt giới hạn số lượng</td>
+</tr>
+</tbody>
+</table></div>
+<p>Chín hàng C <strong>không ánh xạ một-một</strong> sang chín lượt <code>check</code> của bản đúng. Bộ tự động hiện có: ba khoản, rỗng, một khoản 7000, một khoản 1, 500 khoản lớn; từ chối 0, <strong>-1000</strong>, 1000000001; từ chối 501 khoản. C5 không có ca đơn lẻ riêng, dù biên trên xuất hiện trong ca 500 khoản; giá trị âm của C7 trong bảng là -1, còn test dùng -1000. Đừng ghi mọi ô đã chạy nguyên xi chỉ từ con số 9.</p>
+<p>Muốn thử C1/C2 trên demo lỗi sau khi hoàn tất bản vá, thay <strong>riêng dòng vector</strong> trong bài làm thành <code>{}</code> hoặc <code>{7000}</code>, lưu và biên dịch lại mỗi lượt; ghi đó là thay dữ liệu thử, không phải mở rộng bản vá. Khôi phục <code>{35000, 7000, 18000}</code> khi kết thúc. Các ca còn lại có thể trace nếu chưa có harness; C7–C9 thuộc validation, không thể nhận đạt từ lõi chỉ cộng. Bản đúng chạy test qua cũng không chứng minh tệp lỗi vừa sửa đã được chạy.</p>
+<h3>Chạy Node.js và hiểu phạm vi của 34 ca</h3>
+<p><strong>Bash — cwd gốc:</strong></p>
+<div class="code-wrap"><pre><code class="language-bash">node --version
+node "bai-lam/nam-2-web/test_data.cjs"
+echo $?
+</code></pre></div>
+<p><strong>PowerShell — cwd gốc:</strong></p>
+<div class="code-wrap"><pre><code class="language-powershell">node --version
+node "bai-lam/nam-2-web/test_data.cjs"
+$LASTEXITCODE
+</code></pre></div>
+<p>Nếu kiểm phiên bản thất bại, dừng trước lệnh test. <a href="../../vi-du/nam-2-web/test_data.cjs">Bộ <code>test_data.cjs</code></a> hiện tại kỳ vọng <strong><code>34 passed, 0 failed</code></strong>, exit 0: 33 ca gốc cộng regression category mảng. Không dùng số 33 còn trong bản kế hoạch cũ làm chuẩn cho bản đã cập nhật. Test bắt ngoại lệ bằng <code>assert.throws</code>; một ca từ chối đúng sẽ được báo PASS, không phải cứ có lỗi được ném là cả bộ thất bại.</p>
+<p>Bộ test dùng logic <code>data.js</code> qua Node, không mở browser, không khởi động server, không chứng minh handler/DOM/localStorage. Nó cũng không chạy mọi chuỗi trong bảng W hay mọi biến thể T. Bảng nhóm nhiều giá trị để người học mở rộng kiểm tra; phải đọc tên ca và input thực tế trước khi ghi độ bao phủ.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Quan sát</th>
+<th>Kết luận được phép</th>
+<th>Bước tiếp theo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Exit 0, tất cả ca được báo đạt</td>
+<td>Các ca thực sự chạy đã qua</td>
+<td>Lưu log, kiểm tiếp giao diện</td>
+</tr>
+<tr>
+<td>Exit khác 0, có assertion lỗi</td>
+<td>Có phép kiểm không đạt</td>
+<td>Giữ input, expected/actual và lỗi</td>
+</tr>
+<tr>
+<td>Không tìm thấy <code>node</code></td>
+<td>Chưa chạy được bộ test</td>
+<td>Ghi thiếu runtime, không đánh dấu đạt</td>
+</tr>
+<tr>
+<td>Không tìm thấy tệp test</td>
+<td>Sai cwd/đường dẫn hoặc thiếu tệp</td>
+<td>Kiểm cây tệp, không tự tạo test thay thế</td>
+</tr>
+</tbody>
+</table></div>
+<h3>Bảng W1–W10 — Kiểm toàn chuỗi, không chỉ phần đầu</h3>
+<p>Dùng <code>globalThis.ViData.parseAmount</code> trong Console để kiểm trực tiếp; dùng form để kiểm luồng ứng dụng. Hai cách cần ghi riêng. Mỗi chuỗi bị từ chối phải được bắt lỗi hoặc quan sát thông báo phù hợp; không đòi một câu lỗi nguyên văn giống nhau giữa mọi môi trường.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Ca parseAmount</th>
+<th>Chuỗi đưa vào</th>
+<th>Đáp án theo hợp đồng</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>W1</td>
+<td><code>"35000"</code></td>
+<td>Số 35000</td>
+</tr>
+<tr>
+<td>W2</td>
+<td><code>" 7000 "</code></td>
+<td>Số 7000 sau trim</td>
+</tr>
+<tr>
+<td>W3</td>
+<td><code>"1"</code></td>
+<td>Chấp nhận, biên dưới</td>
+</tr>
+<tr>
+<td>W4</td>
+<td><code>"1000000000"</code></td>
+<td>Chấp nhận, biên trên</td>
+</tr>
+<tr>
+<td>W5</td>
+<td><code>"0007"</code></td>
+<td>Số 7; vẫn là chuỗi chữ số hợp lệ</td>
+</tr>
+<tr>
+<td>W6</td>
+<td><code>""</code>, <code>"   "</code></td>
+<td>Từ chối vì rỗng sau trim</td>
+</tr>
+<tr>
+<td>W7</td>
+<td><code>"0"</code>, <code>"-1"</code>, <code>"+1"</code></td>
+<td>Từ chối: giá trị 0 hoặc có dấu</td>
+</tr>
+<tr>
+<td>W8</td>
+<td><code>"1.5"</code>, <code>"35.000"</code>, <code>"35,000"</code></td>
+<td>Từ chối: không chỉ gồm chữ số</td>
+</tr>
+<tr>
+<td>W9</td>
+<td><code>"1e3"</code>, <code>"12abc"</code>, <code>"35 000"</code></td>
+<td>Từ chối: sai dạng chuỗi</td>
+</tr>
+<tr>
+<td>W10</td>
+<td><code>"1000000001"</code>, <code>"9007199254740992"</code></td>
+<td>Từ chối: vượt miền cho phép</td>
+</tr>
+</tbody>
+</table></div>
+<p>Biến thể xuyên suốt <code>35000abc</code> thuộc cùng lỗi dạng chuỗi như W9 nhưng không thay thế các ca gốc trong bảng. Bộ tự động dùng một số phản ví dụ khác như <code>15k</code>, <code>15.000</code>, <code>15,000</code>, <code>3.5</code>, và kiểm cả đầu vào không phải chuỗi như số 35000, <code>null</code>. Một số ô nhập ở ứng dụng khác có thể biến đổi ký tự trước khi gọi hàm; không gõ được chữ chưa chứng minh API tự chặn đầy đủ.</p>
+<h3>Bảng T1–T8 — Tổng chỉ nhận phần tiền đã đúng kiểu</h3>
+<p>Các input rút gọn chỉ có <code>amount</code> dùng để cô lập trách nhiệm của <code>totalExpenses</code>, không tuyên bố chúng đủ schema lưu. Muốn đi qua ranh giới lưu/đọc, cần đối tượng đủ trường và <code>normalizeExpenses</code>.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Ca totalExpenses</th>
+<th>Danh sách/amount</th>
+<th>Đáp án</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>T1</td>
+<td>Danh sách rỗng</td>
+<td>0</td>
+</tr>
+<tr>
+<td>T2</td>
+<td>Ba Expense giả của chương</td>
+<td>60000</td>
+</tr>
+<tr>
+<td>T3</td>
+<td>Một khoản amount là số 1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>T4</td>
+<td>500 khoản amount đều là số 1000000000</td>
+<td>500000000000</td>
+</tr>
+<tr>
+<td>T5</td>
+<td>501 khoản hợp lệ</td>
+<td>Từ chối vì quá số lượng</td>
+</tr>
+<tr>
+<td>T6</td>
+<td>amount là chuỗi <code>"35000"</code></td>
+<td>Từ chối; hàm tổng không nhận chuỗi thay số</td>
+</tr>
+<tr>
+<td>T7</td>
+<td>amount là 0, -1, 1.5 hoặc 1000000001</td>
+<td>Từ chối giá trị không hợp lệ</td>
+</tr>
+<tr>
+<td>T8</td>
+<td>amount thiếu, <code>undefined</code>, <code>NaN</code> hoặc <code>Infinity</code></td>
+<td>Từ chối, không cho tổng NaN lọt ra</td>
+</tr>
+</tbody>
+</table></div>
+<p>“Từ chối” là API ném lỗi hoặc ứng dụng báo không hợp lệ theo cơ chế đã triển khai; không ghi nhận khoản sai. Nếu thử trực tiếp, <code>try/catch</code> giúp phân biệt từ chối dự kiến với lỗi do bạn gọi sai tên API. Đừng sửa test để cho chuỗi tiền đi qua hàm tổng chỉ vì form ban đầu cũng đọc chuỗi: parse chính là ranh giới chuyển kiểu trước đó.</p>
+<h3>Nghiệm thu browser: một lượt đúng, một lượt sai, một lượt tải lại</h3>
+<p>Ghi tổng/số khoản ban đầu. Chưa có dữ liệu lưu thì có ba mẫu 60000; nếu khác, ghi trạng thái hoặc khôi phục sau xác nhận bỏ dữ liệu giả. Thêm Bánh mì 15000: từ mẫu thành 75000, trạng thái khác tăng đúng 15000. Form vừa được reset: <strong>nhập lại tên giả hợp lệ và chọn nhóm</strong>, rồi thử tiền <code>35000abc</code>. Phải thấy thông báo từ chối tiền, tổng/số khoản giữ nguyên; nếu bỏ trống tên và bị <code>required</code> chặn thì chưa kiểm được <code>parseAmount</code>.</p>
+<p>Tiếp theo nhập title giả <code>&lt;b&gt;Vở&lt;/b&gt;</code>, <strong>amount <code>1</code>, nhóm Học tập</strong>, rồi submit thành công. Quan sát hàng vừa thêm: tên phải hiện nguyên văn, không in đậm; tổng tăng 1 VND. <code>render()</code> dùng <code>cell.textContent</code>; test giữ chuỗi không chứng minh DOM, cần quan sát bảng thật. Không dùng dữ liệu thật hay script độc hại.</p>
+<p>Ghi cảnh báo, tải lại và đối chiếu. Fallback RAM có thể mất thay đổi; không báo lưu bền vững. Chưa tái hiện chặn lưu/dữ liệu hỏng thì ghi chưa kiểm, không đổi bảo vệ hoặc xóa dữ liệu trang khác.</p>
+<h3>Qoder CLI — Tùy chọn, không điều kiện hoàn thành</h3>
+<p>Chỉ thử khi CLI đã cài và đăng nhập. Từ cwd gốc, <code>qoder --version</code> kiểm phiên bản, <code>qoder</code> mở phiên. <strong>Trong phiên CLI</strong>, <code>/help</code> xem trợ giúp, <code>/usage</code> xem sử dụng, <code>/quit</code> thoát; không gõ chúng vào Bash/PowerShell bên ngoài.</p>
+<p>Không cần cài CLI, tạo tệp hướng dẫn Agent hay đổi cấu hình để hoàn thành. CLI có quyền/chế độ riêng; không suy từ IDE/Desktop. Chưa dùng thì ghi “không thực hiện phần tùy chọn”.</p>
+<h3>Prompt mẫu: yêu cầu báo cáo có giới hạn</h3>
+<div class="code-wrap"><pre><code class="language-text">Review bằng chứng tôi cung cấp, không tự nhận đã chạy thay tôi.
+Cwd quy ước là gốc AI-Student-Handbook; bài làm ở bai-lam.
+Tách: trace, build C++, chạy demo lỗi đã sửa, 9 test bản đúng,
+34 test dữ liệu Web, thử form/DOM và thử localStorage.
+So với bảng C1–C9, W1–W10, T1–T8; nêu input nào chưa được chạy nguyên xi.
+Kiểm hồi quy category mảng nhưng không sửa demo Web đang đúng.
+Giữ các lần fail, không đổi expected để hợp thức hóa actual.
+Kết luận đạt ở phạm vi nào, còn gì chưa xác minh và bước nhỏ tiếp theo.
+</code></pre></div>
+<p><strong>Kỳ vọng:</strong> hồ sơ có bài làm, diff, trace, lệnh/thao tác và kết quả. <strong>Lỗi thường gặp:</strong> nhầm test bản đúng với bản vá, Node với browser, exit 0 với đúng thuật toán, trace với chạy thật. Mỗi kết luận cần gắn phép kiểm.</p>
+<h3>Câu kiểm tổng kết — Năm câu phải tự trả lời</h3>
+<ol>
+<li>Rỗng ra 0 có chứng minh vòng lặp đúng không?</li>
+<li><code>input.value</code> của ô số có phải số nguyên không?</li>
+<li><code>x.value</code> thiếu thì tổng trong fault lab là <code>undefined</code> hay <code>NaN</code>?</li>
+<li>Node test qua có chứng minh localStorage lưu được không?</li>
+<li>AI nói “đã sửa” thì có được nộp ngay không?</li>
+</ol>
+<h3>Đáp án tổng kết</h3>
+<ol>
+<li>Không. Với <code>int n = 0</code>, bản sai và đúng đều không chạy; cần thêm ca một khoản.</li>
+<li>Không. <code>.value</code> là chuỗi; qua parse và kiểm hợp đồng rồi mới đặt vào <code>Expense.amount</code>.</li>
+<li>Thuộc tính thiếu là <code>undefined</code>; phép cộng trong fault lab tạo <code>NaN</code>. Hai giá trị không đồng nhất.</li>
+<li>Không. Cần thử browser; <code>file://</code> có thể bị chặn lưu và fallback RAM.</li>
+<li>Chưa. Phải xem diff, biết tệp đã lưu, chạy kiểm tra hoặc ghi rõ chưa chạy, giữ bằng chứng fail nếu có.</li>
+</ol>
+<h3>Rubric tự đánh giá — Chấm bằng đầu ra, không bằng sự tự tin</h3>
+<p>Mỗi tiêu chí 0–2 điểm, tổng 10. Đây là rubric tự học, không thay thang điểm chính thức của học phần. Bạn có thể thực hiện sâu một nhánh, nhưng phải giải thích các lỗi trọng tâm nhánh còn lại và ghi đúng giới hạn môi trường.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Tiêu chí</th>
+<th>0 điểm</th>
+<th>1 điểm</th>
+<th>2 điểm</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Hiểu công cụ</td>
+<td>Trộn IDE, shell, CLI</td>
+<td>Phân biệt được một phần</td>
+<td>Gọi đúng vai trò và đúng shell</td>
+</tr>
+<tr>
+<td>Giới hạn Agent</td>
+<td>Cho sửa tùy ý</td>
+<td>Có giới hạn nhưng thiếu kiểm tra</td>
+<td>Ask trước, phạm vi nhỏ, xem diff</td>
+</tr>
+<tr>
+<td>Giải thích lỗi</td>
+<td>Chỉ chép đáp án</td>
+<td>Nêu nguyên nhân, thiếu trace</td>
+<td>Trace đúng, giải thích cả ca biên</td>
+</tr>
+<tr>
+<td>Bằng chứng kiểm thử</td>
+<td>Chỉ nói “chạy rồi”</td>
+<td>Có output, thiếu ngữ cảnh</td>
+<td>Có input, lệnh/thao tác, kết quả và trạng thái</td>
+</tr>
+<tr>
+<td>An toàn và trung thực</td>
+<td>Dữ liệu thật hoặc bịa đã chạy</td>
+<td>Có ghi thiếu sót nhưng chưa đủ</td>
+<td>Dữ liệu giả, checkpoint, phần chưa chạy rõ ràng</td>
+</tr>
+</tbody>
+</table></div>
+<p>8–10 điểm: chuyển tiếp, giữ thói quen kiểm chứng. 5–7: làm lại tiêu chí thấp nhất. Dưới 5: quay lại mở đúng gốc, trace một phần tử. Không suy năng lực dài hạn từ một phiên hay bịa log vì thiếu compiler.</p>
+<h3>Tiêu chí hoàn thành và năng lực mang theo</h3>
+<p>Nêu được test nào chạy mã nào, đối chiếu đủ ba bảng, giữ nhật ký và tự chấm có căn cứ. Báo cáo một phút: lỗi, vị trí sửa hoặc lý do không sửa, bằng chứng, phần chưa kiểm.</p>
+<p>Minh giải thích được lượt dừng, reference và executable cũ; Lan lần được chuỗi qua parse, schema, tổng, lưu trữ và biết giữ test hồi quy. Cả hai có quyền từ chối dependency hoặc đổi quyền ngoài phạm vi.</p>
+<p>Mang sang chương sau: <strong>quan sát → dự đoán → thay đổi nhỏ → kiểm tra → review → ghi bằng chứng</strong>. Chưa chạy thì nói chưa chạy; không có quyền thì dừng; không có lý do thì không mở rộng hệ thống.</p>
+<h3>Nguồn gốc, cập nhật và giới hạn xác minh</h3>
+<p>Kế thừa <code>ban-thao/02-agent-ide-cli.md</code>, tổ chức theo <a href="../../editorial/02_EDITORIAL_BLUEPRINT.md">Blueprint</a> và <a href="../../editorial/03_VISUAL_DESIGN_SYSTEM.md">Visual Design System</a>. Hành trình, quyết định dependency và câu kiểm mới là <strong>bổ sung biên tập</strong>; hội thoại hư cấu, fault lab biệt lập. Các bảng C/W/T, rubric giữ chuyên môn nguồn, có chú thích độ bao phủ theo API thật.</p>
+<p>Mốc đối chiếu <strong>30/10/2026</strong> theo <a href="../../editorial/01_SOURCE_AUDIT.md">Source Audit cập nhật</a>, không phải vừa truy cập lại mọi nguồn hay quan sát tài khoản bạn. Audit phân biệt 33 ca gốc và 34 ca mới. Lượt biên tập này chạy lại Node trên bản tham khảo: <strong>34 passed, 0 failed</strong>, exit 0; không thay kiểm bài làm của bạn.</p>
+<p>Mã đối chiếu: <a href="../../vi-du/nam-1-cpp/loi-bo-sot.cpp">C++ lỗi</a>, <a href="../../vi-du/nam-1-cpp/vi_sinh_vien.cpp">C++ đúng/9 test</a>, <a href="../../vi-du/nam-2-web/index.html">HTML</a>, <a href="../../vi-du/nam-2-web/app.js">app.js</a>, <a href="../../vi-du/nam-2-web/data.js">data.js</a>, <a href="../../vi-du/nam-2-web/test_data.cjs">34 test</a>. Link chỉ để đọc; sửa trong <code>bai-lam</code>.</p>
+<p>Nguồn chính thức dùng để tra thao tác và ngữ nghĩa:</p>
+<ul>
+<li><a href="https://docs.qoder.com/quick-start.md">Qoder IDE quick start</a>, <a href="https://docs.qoder.com/user-guide/chat/overview.md">Chat overview</a>, <a href="https://docs.qoder.com/user-guide/chat/ask.md">Ask</a>, <a href="https://docs.qoder.com/user-guide/chat/agent.md">Agent</a>: vai trò chế độ và review thay đổi.</li>
+<li><a href="https://docs.qoder.com/user-guide/chat/context.md">Context</a>, <a href="https://docs.qoder.com/user-guide/editor/terminal.md">Terminal</a>: chọn ngữ cảnh, terminal và chính sách chạy lệnh của IDE.</li>
+<li><a href="https://docs.qoder.com/qoder/overview.md">Qoder Desktop overview</a>, <a href="https://docs.qoder.com/qoder/new-task.md">Desktop new task</a>: Coding/General, không đồng nhất General với Ask chỉ đọc.</li>
+<li><a href="https://docs.qoder.com/cli/quickstart.md">Qoder CLI quickstart</a>, <a href="https://docs.qoder.com/cli/working-modes.md">CLI working modes</a>: sản phẩm CLI, điều kiện và chế độ riêng.</li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/parseInt">MDN parseInt</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/isSafeInteger">Number.isSafeInteger</a>: đọc một phần chuỗi và miền nguyên an toàn.</li>
+<li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage">MDN localStorage</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/API/Node/textContent">textContent</a>: giới hạn <code>file://</code> và hiển thị văn bản.</li>
+</ul>
+<p>Trong lượt biên tập này chưa có <code>g++</code> được tìm thấy để compile/run C++; chưa thử UI Qoder, tài khoản, quyền Auto-Run, DOM hay persistence/fallback trên browser thực. Tham chiếu ba hình workspace/workflow/debugging giữ đúng đường dẫn thiết kế; ảnh chưa hiện diện tại thời điểm kiểm nên chưa xác nhận render. Các giới hạn ấy là việc phải kiểm tiếp, không được đổi thành “đã đạt” chỉ vì Markdown hoặc test dữ liệu hợp lệ.</p>
+</main></body></html>

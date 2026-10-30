@@ -1,0 +1,50 @@
+{
+  "outline.md": {
+    "words_whitespace": 967,
+    "sections": 6
+  },
+  "introduction.md": {
+    "words_whitespace": 1536,
+    "sections": 7
+  },
+  "chapter-01.md": {
+    "words_whitespace": 11129,
+    "sections": 6
+  },
+  "chapter-02.md": {
+    "words_whitespace": 12096,
+    "sections": 7
+  },
+  "chapter-03.md": {
+    "words_whitespace": 10271,
+    "sections": 7
+  },
+  "chapter-04.md": {
+    "words_whitespace": 10843,
+    "sections": 14
+  },
+  "final-boss.md": {
+    "words_whitespace": 3479,
+    "sections": 8
+  },
+  "prompt-library.md": {
+    "words_whitespace": 2529,
+    "sections": 12
+  },
+  "glossary.md": {
+    "words_whitespace": 2952,
+    "sections": 7
+  },
+  "learning-agreement.md": {
+    "words_whitespace": 2013,
+    "sections": 6
+  },
+  "words_total": 57815,
+  "images": 16,
+  "tables": 76,
+  "code_blocks": 85,
+  "details": 38,
+  "broken_links": [],
+  "pending_report": [],
+  "html_bytes": 511249
+}

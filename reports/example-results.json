@@ -1,0 +1,288 @@
+{
+  "time": "2026-10-30T11:24:01.037893+00:00",
+  "all_expected_checks_passed": true,
+  "checks": [
+    {
+      "time": "2026-10-30T11:23:55.115819+00:00",
+      "label": "Node version",
+      "command": [
+        "node",
+        "--version"
+      ],
+      "exit_code": 0,
+      "expected_exit": 0,
+      "intentional_failure_fixture": false,
+      "stdout": "v24.21.0\n",
+      "stderr": "",
+      "ok": true
+    },
+    {
+      "time": "2026-10-30T11:23:55.123642+00:00",
+      "label": "Python version",
+      "command": [
+        "C:\\Python314\\python.exe",
+        "--version"
+      ],
+      "exit_code": 0,
+      "expected_exit": 0,
+      "intentional_failure_fixture": false,
+      "stdout": "Python 3.14.7\n",
+      "stderr": "",
+      "ok": true
+    },
+    {
+      "time": "2026-10-30T11:23:55.158340+00:00",
+      "label": "JavaScript data regression 34",
+      "command": [
+        "node",
+        "D:\\0. TLU\\Chủ nhiệm - cố vấn học tập\\MasterMeeting\\AI-Student-Handbook\\vi-du\\nam-2-web\\test_data.cjs"
+      ],
+      "exit_code": 0,
+      "expected_exit": 0,
+      "intentional_failure_fixture": false,
+      "stdout": "PASS ba khoản = 60000\nPASS rỗng = 0\nPASS một khoản = 7000\nPASS 500 khoản lớn vẫn nguyên chính xác\nPASS parse \"35000\"\nPASS parse \" 7000 \"\nPASS parse \"1\"\nPASS parse \"0007\"\nPASS parse \"1000000000\"\nPASS từ chối \"\"\nPASS từ chối \" \"\nPASS từ chối \"0\"\nPASS từ chối \"-1\"\nPASS từ chối \"15k\"\nPASS từ chối \"15.000\"\nPASS từ chối \"15,000\"\nPASS từ chối \"3.5\"\nPASS từ chối \"1e3\"\nPASS từ chối \"Infinity\"\nPASS từ chối \"1000000001\"\nPASS từ chối 35000\nPASS từ chối null\nPASS từ chối amount là chuỗi\nPASS từ chối sai tên trường value\nPASS từ chối 501 khoản\nPASS không thay đổi dữ liệu gốc\nPASS schema lưu hợp lệ\nPASS từ chối id trùng\nPASS từ chối title rỗng\nPASS từ chối category lạ\nPASS từ chối category mảng dù ép sang khóa hợp lệ\nPASS giữ tiêu đề có ký hiệu như dữ liệu\nPASS bài lỗi chuỗi minh họa\nPASS bài lỗi value minh họa\n34 passed, 0 failed\n",
+      "stderr": "",
+      "ok": true
+    },
+    {
+      "time": "2026-10-30T11:23:55.189392+00:00",
+      "label": "SQLite standalone",
+      "command": [
+        "C:\\Python314\\python.exe",
+        "D:\\0. TLU\\Chủ nhiệm - cố vấn học tập\\MasterMeeting\\AI-Student-Handbook\\vi-du\\minh-hoa-sqlite.py"
+      ],
+      "exit_code": 0,
+      "expected_exit": 0,
+      "intentional_failure_fixture": false,
+      "stdout": "Tong du lieu mau: 60000 VND\nTra cuu tham so: [(\"Vở O'Reilly\", 12000)]\nPASS reject amount -1\nPASS reject amount 0\nPASS reject amount 1.5\nPASS reject amount 1000000001\nPASS empty total = 0\nPASS SQLite demo; khong tao file CSDL, khong goi dich vu ngoai\n",
+      "stderr": "",
+      "ok": true
+    },
+    {
+      "time": "2026-10-30T11:23:55.224229+00:00",
+      "label": "Silver original intentional failures",
+      "command": [
+        "node",
+        "D:\\0. TLU\\Chủ nhiệm - cố vấn học tập\\MasterMeeting\\AI-Student-Handbook\\vi-du\\final-boss\\test_silver.cjs"
+      ],
+      "exit_code": 1,
+      "expected_exit": 1,
+      "intentional_failure_fixture": true,
+      "stdout": "PASS rong\nPASS parse hop le\nPASS tu choi rong\nPASS tu choi 0\nPASS tu choi amount chuoi\nPASS tu choi 501 khoan\n6 passed, 6 failed\n",
+      "stderr": "FAIL ba khoan: Expected values to be strictly equal:\n\nNaN !== 60000\n\nFAIL mot khoan: Expected values to be strictly equal:\n\nNaN !== 7000\n\nFAIL 500 khoan lon: Expected values to be strictly equal:\n+ actual - expected\n\n+ NaN\n- 500000000000\n\nFAIL tu choi hau to abc: Missing expected exception.\nFAIL tu choi so le: Missing expected exception.\nFAIL tu choi ky hieu mu: Missing expected exception.\n",
+      "ok": true
+    },
+    {
+      "time": "2026-10-30T11:23:55.263079+00:00",
+      "label": "Silver patched temporary copy",
+      "command": [
+        "node",
+        "D:\\0. TLU\\Chủ nhiệm - cố vấn học tập\\MasterMeeting\\AI-Student-Handbook\\reports\\verification-7h0tl3wi\\test_silver.cjs"
+      ],
+      "exit_code": 0,
+      "expected_exit": 0,
+      "intentional_failure_fixture": false,
+      "stdout": "PASS ba khoan\nPASS rong\nPASS mot khoan\nPASS 500 khoan lon\nPASS parse hop le\nPASS tu choi hau to abc\nPASS tu choi so le\nPASS tu choi ky hieu mu\nPASS tu choi rong\nPASS tu choi 0\nPASS tu choi amount chuoi\nPASS tu choi 501 khoan\n12 passed, 0 failed\n",
+      "stderr": "",
+      "ok": true
+    },
+    {
+      "time": "2026-10-30T11:23:58.728998+00:00",
+      "label": "Compiler version",
+      "command": [
+        "wsl.exe",
+        "-d",
+        "Ubuntu-22.04",
+        "--",
+        "g++",
+        "--version"
+      ],
+      "exit_code": 0,
+      "expected_exit": 0,
+      "intentional_failure_fixture": false,
+      "stdout": "g++ (Ubuntu 11.4.0-1ubuntu1~22.04.3) 11.4.0\nCopyright (C) 2021 Free Software Foundation, Inc.\nThis is free software; see the source for copying conditions.  There is NO\nwarranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.\n\n",
+      "stderr": "",
+      "ok": true
+    },
+    {
+      "time": "2026-10-30T11:23:59.314565+00:00",
+      "label": "C++ build vi_sinh_vien.cpp",
+      "command": [
+        "wsl.exe",
+        "-d",
+        "Ubuntu-22.04",
+        "--",
+        "g++",
+        "-std=c++17",
+        "-Wall",
+        "-Wextra",
+        "/mnt/d/0. TLU/Chủ nhiệm - cố vấn học tập/MasterMeeting/AI-Student-Handbook/vi-du/nam-1-cpp/vi_sinh_vien.cpp",
+        "-o",
+        "/mnt/d/0. TLU/Chủ nhiệm - cố vấn học tập/MasterMeeting/AI-Student-Handbook/reports/verification-7h0tl3wi/correct.exe"
+      ],
+      "exit_code": 0,
+      "expected_exit": 0,
+      "intentional_failure_fixture": false,
+      "stdout": "",
+      "stderr": "",
+      "ok": true
+    },
+    {
+      "time": "2026-10-30T11:23:59.385062+00:00",
+      "label": "C++ run vi_sinh_vien.cpp --test",
+      "command": [
+        "wsl.exe",
+        "-d",
+        "Ubuntu-22.04",
+        "--",
+        "/mnt/d/0. TLU/Chủ nhiệm - cố vấn học tập/MasterMeeting/AI-Student-Handbook/reports/verification-7h0tl3wi/correct.exe",
+        "--test"
+      ],
+      "exit_code": 0,
+      "expected_exit": 0,
+      "intentional_failure_fixture": false,
+      "stdout": "PASS ba khoan\nPASS danh sach rong\nPASS mot khoan\nPASS khoan chi 1 VND\nPASS 500 khoan lon\nPASS tu choi 0\nPASS tu choi -1000\nPASS tu choi 1000000001\nPASS tu choi 501 khoan\n9 passed, 0 failed\n",
+      "stderr": "",
+      "ok": true
+    },
+    {
+      "time": "2026-10-30T11:23:59.450872+00:00",
+      "label": "C++ correct sample",
+      "command": [
+        "wsl.exe",
+        "-d",
+        "Ubuntu-22.04",
+        "--",
+        "/mnt/d/0. TLU/Chủ nhiệm - cố vấn học tập/MasterMeeting/AI-Student-Handbook/reports/verification-7h0tl3wi/correct.exe"
+      ],
+      "exit_code": 0,
+      "expected_exit": 0,
+      "intentional_failure_fixture": false,
+      "stdout": "Com trua: 35000 VND\nXe buyt: 7000 VND\nVo ghi: 18000 VND\nTong chi tieu: 60000 VND\n",
+      "stderr": "",
+      "ok": true
+    },
+    {
+      "time": "2026-10-30T11:23:59.909939+00:00",
+      "label": "C++ build loi-bo-sot.cpp",
+      "command": [
+        "wsl.exe",
+        "-d",
+        "Ubuntu-22.04",
+        "--",
+        "g++",
+        "-std=c++17",
+        "-Wall",
+        "-Wextra",
+        "/mnt/d/0. TLU/Chủ nhiệm - cố vấn học tập/MasterMeeting/AI-Student-Handbook/vi-du/nam-1-cpp/loi-bo-sot.cpp",
+        "-o",
+        "/mnt/d/0. TLU/Chủ nhiệm - cố vấn học tập/MasterMeeting/AI-Student-Handbook/reports/verification-7h0tl3wi/offbyone.exe"
+      ],
+      "exit_code": 0,
+      "expected_exit": 0,
+      "intentional_failure_fixture": false,
+      "stdout": "",
+      "stderr": "",
+      "ok": true
+    },
+    {
+      "time": "2026-10-30T11:23:59.976160+00:00",
+      "label": "C++ run loi-bo-sot.cpp",
+      "command": [
+        "wsl.exe",
+        "-d",
+        "Ubuntu-22.04",
+        "--",
+        "/mnt/d/0. TLU/Chủ nhiệm - cố vấn học tập/MasterMeeting/AI-Student-Handbook/reports/verification-7h0tl3wi/offbyone.exe"
+      ],
+      "exit_code": 0,
+      "expected_exit": 0,
+      "intentional_failure_fixture": false,
+      "stdout": "Tong chi tieu: 42000 VND\n",
+      "stderr": "",
+      "ok": true
+    },
+    {
+      "time": "2026-10-30T11:24:00.459261+00:00",
+      "label": "C++ build bronze.cpp",
+      "command": [
+        "wsl.exe",
+        "-d",
+        "Ubuntu-22.04",
+        "--",
+        "g++",
+        "-std=c++17",
+        "-Wall",
+        "-Wextra",
+        "/mnt/d/0. TLU/Chủ nhiệm - cố vấn học tập/MasterMeeting/AI-Student-Handbook/vi-du/final-boss/bronze.cpp",
+        "-o",
+        "/mnt/d/0. TLU/Chủ nhiệm - cố vấn học tập/MasterMeeting/AI-Student-Handbook/reports/verification-7h0tl3wi/bronze.exe"
+      ],
+      "exit_code": 0,
+      "expected_exit": 0,
+      "intentional_failure_fixture": false,
+      "stdout": "",
+      "stderr": "",
+      "ok": true
+    },
+    {
+      "time": "2026-10-30T11:24:00.528259+00:00",
+      "label": "C++ run bronze.cpp",
+      "command": [
+        "wsl.exe",
+        "-d",
+        "Ubuntu-22.04",
+        "--",
+        "/mnt/d/0. TLU/Chủ nhiệm - cố vấn học tập/MasterMeeting/AI-Student-Handbook/reports/verification-7h0tl3wi/bronze.exe"
+      ],
+      "exit_code": 1,
+      "expected_exit": 1,
+      "intentional_failure_fixture": true,
+      "stdout": "FAIL ba khoan\nPASS rong\nFAIL mot khoan\nFAIL bien tren hop le\nFAIL 500 khoan lon\nPASS tu choi 0\nPASS tu choi am\nPASS tu choi vuot tien\nPASS tu choi 501\n5 passed, 4 failed\n",
+      "stderr": "",
+      "ok": true
+    },
+    {
+      "time": "2026-10-30T11:24:00.970433+00:00",
+      "label": "C++ build bronze-fixed.cpp",
+      "command": [
+        "wsl.exe",
+        "-d",
+        "Ubuntu-22.04",
+        "--",
+        "g++",
+        "-std=c++17",
+        "-Wall",
+        "-Wextra",
+        "/mnt/d/0. TLU/Chủ nhiệm - cố vấn học tập/MasterMeeting/AI-Student-Handbook/reports/verification-7h0tl3wi/bronze-fixed.cpp",
+        "-o",
+        "/mnt/d/0. TLU/Chủ nhiệm - cố vấn học tập/MasterMeeting/AI-Student-Handbook/reports/verification-7h0tl3wi/bronze-fixed.exe"
+      ],
+      "exit_code": 0,
+      "expected_exit": 0,
+      "intentional_failure_fixture": false,
+      "stdout": "",
+      "stderr": "",
+      "ok": true
+    },
+    {
+      "time": "2026-10-30T11:24:01.037068+00:00",
+      "label": "C++ run bronze-fixed.cpp",
+      "command": [
+        "wsl.exe",
+        "-d",
+        "Ubuntu-22.04",
+        "--",
+        "/mnt/d/0. TLU/Chủ nhiệm - cố vấn học tập/MasterMeeting/AI-Student-Handbook/reports/verification-7h0tl3wi/bronze-fixed.exe"
+      ],
+      "exit_code": 0,
+      "expected_exit": 0,
+      "intentional_failure_fixture": false,
+      "stdout": "PASS ba khoan\nPASS rong\nPASS mot khoan\nPASS bien tren hop le\nPASS 500 khoan lon\nPASS tu choi 0\nPASS tu choi am\nPASS tu choi vuot tien\nPASS tu choi 501\n9 passed, 0 failed\n",
+      "stderr": "",
+      "ok": true
+    }
+  ],
+  "source_sha256": "704d10e9603d0b494196795b9b45ae701dfc1caadeab54bcc3d76c4c7ae53772",
+  "note": "Intentional fixtures are expected to fail before repair. Temporary patched copies and binaries are removed after verification; rerun this script to reproduce."
+}

@@ -1,0 +1,23 @@
+{
+  "time": "2026-10-30T01:03:47.660Z",
+  "browser": "Chrome/156.0.8078.48",
+  "results": [
+    {
+      "name": "Chapter 2 preview width 1440",
+      "ok": true,
+      "evidence": {
+        "width": 1440,
+        "scrollWidth": 1425
+      }
+    },
+    {
+      "name": "Chapter 2 preview width 375",
+      "ok": true,
+      "evidence": {
+        "width": 375,
+        "scrollWidth": 360
+      }
+    }
+  ],
+  "errors": []
+}

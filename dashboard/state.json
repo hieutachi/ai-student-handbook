@@ -1,0 +1,498 @@
+{
+  "title": "HỌC CNTT CÙNG AI",
+  "started": "2026-10-29T23:24:54.719404+00:00",
+  "updated": "2026-10-30T11:17:21.945930+00:00",
+  "tasks": [
+    {
+      "id": "audit",
+      "phase": 0,
+      "title": "Đọc đủ nguồn và kiểm kê chủ đề",
+      "status": "COMPLETED",
+      "output": "editorial/01_SOURCE_AUDIT.md",
+      "issue": ""
+    },
+    {
+      "id": "dashboard",
+      "phase": 0,
+      "title": "Dashboard và bản nguồn bất biến",
+      "status": "COMPLETED",
+      "output": "dashboard/index.html",
+      "issue": ""
+    },
+    {
+      "id": "blueprint",
+      "phase": 1,
+      "title": "Bản đồ nội dung cũ → mới",
+      "status": "COMPLETED",
+      "output": "editorial/02_EDITORIAL_BLUEPRINT.md",
+      "issue": ""
+    },
+    {
+      "id": "design",
+      "phase": 2,
+      "title": "Hệ thống thị giác và nhân vật",
+      "status": "COMPLETED",
+      "output": "editorial/03_VISUAL_DESIGN_SYSTEM.md",
+      "issue": ""
+    },
+    {
+      "id": "chapter1",
+      "phase": 3,
+      "title": "Chương 1 · Bước vào thế giới AI",
+      "status": "COMPLETED",
+      "output": "chapters/chapter-01.md",
+      "issue": ""
+    },
+    {
+      "id": "chapter2",
+      "phase": 3,
+      "title": "Chương 2 · Trở thành người điều khiển AI",
+      "status": "COMPLETED",
+      "output": "chapters/chapter-02.md",
+      "issue": ""
+    },
+    {
+      "id": "chapter3",
+      "phase": 3,
+      "title": "Chương 3 · Đừng để AI suy nghĩ thay bạn",
+      "status": "COMPLETED",
+      "output": "chapters/chapter-03.md",
+      "issue": "NIT: vài bảng 4–6 cột phải cuộn ngang trên điện thoại (đã có vùng cuộn có nhãn)"
+    },
+    {
+      "id": "chapter4",
+      "phase": 3,
+      "title": "Chương 4 · Sử dụng AI có trách nhiệm",
+      "status": "COMPLETED",
+      "output": "chapters/chapter-04.md",
+      "issue": "NIT giữ nguyên: hai nhãn khóa giả khác tên (đều có ghi chú)"
+    },
+    {
+      "id": "supplements",
+      "phase": 3,
+      "title": "Prompt, từ điển, thỏa thuận và Final Boss",
+      "status": "COMPLETED",
+      "output": "chapters/final-boss.md",
+      "issue": ""
+    },
+    {
+      "id": "visuals",
+      "phase": 4,
+      "title": "Cover, opener và các sơ đồ học tập",
+      "status": "COMPLETED",
+      "output": "assets/manifest.json",
+      "issue": ""
+    },
+    {
+      "id": "website",
+      "phase": 5,
+      "title": "Trình đọc offline và tương tác",
+      "status": "COMPLETED",
+      "output": "website/index.html",
+      "issue": ""
+    },
+    {
+      "id": "contentqa",
+      "phase": 6,
+      "title": "Rà soát nội dung và trải nghiệm sinh viên",
+      "status": "COMPLETED",
+      "output": "reports/04_QUALITY_REPORT.md",
+      "issue": ""
+    },
+    {
+      "id": "technicalqa",
+      "phase": 6,
+      "title": "Ví dụ, liên kết, ảnh và trình duyệt",
+      "status": "COMPLETED",
+      "output": "reports/browser-results.json",
+      "issue": ""
+    },
+    {
+      "id": "delivery",
+      "phase": 7,
+      "title": "Báo cáo, gói tải và bàn giao",
+      "status": "COMPLETED",
+      "output": "reports/04_QUALITY_REPORT.md",
+      "issue": ""
+    }
+  ],
+  "events": [
+    {
+      "time": "2026-10-29T23:24:54.719425+00:00",
+      "message": "Đã bảo toàn nguồn 2532 dòng; biên tập viên đang đọc toàn bộ bốn chương để lập kiểm kê."
+    },
+    {
+      "time": "2026-10-29T23:24:54.796906+00:00",
+      "message": "Đã tạo dashboard, nhật ký và checkpoint lưu trên đĩa; đang kiểm tra khả năng đọc trạng thái."
+    },
+    {
+      "time": "2026-10-29T23:25:30.118300+00:00",
+      "message": "Đã mở thử dashboard: đọc đúng 14 task, 8 phase và 2 sự kiện; lưu trạng thái cục bộ hoạt động."
+    },
+    {
+      "time": "2026-10-29T23:28:51.608059+00:00",
+      "message": "Đã đọc đủ 2532 dòng, kiểm kê 28 mục và phụ trợ; phát hiện 7 điểm hướng dẫn cần sửa."
+    },
+    {
+      "time": "2026-10-29T23:28:51.684610+00:00",
+      "message": "Đã chốt bản đồ 28 mục sang bốn chương, bảy Mission, bảy hồ sơ sự cố và Final Boss."
+    },
+    {
+      "time": "2026-10-29T23:28:51.763059+00:00",
+      "message": "Đã chốt typography, màu, hai nhân vật và 16 hình vector có mục đích học tập."
+    },
+    {
+      "time": "2026-10-29T23:28:51.836286+00:00",
+      "message": "Bắt đầu biên tập Chương 1: mở bằng ba phiếu đáp hư cấu, giữ đủ kiến thức và bài tính chi phí."
+    },
+    {
+      "time": "2026-10-29T23:31:48.131473+00:00",
+      "message": "Kiểm chứng phát hiện category dạng mảng lọt validation. Đã lưu test thất bại, sửa bản sao và thêm test: 34 passed, 0 failed; bản nguồn 33 ca giữ nguyên."
+    },
+    {
+      "time": "2026-10-29T23:41:15.597219+00:00",
+      "message": "Bộ ví dụ và hai đề Final Boss đã chạy: demo đúng đạt; đề lỗi thất bại như dự kiến, bản vá tạm đạt. Screenshot công cụ tích hợp không khả dụng; đã kết xuất và xem dashboard bằng Chrome headless cô lập."
+    },
+    {
+      "time": "2026-10-29T23:42:08.472148+00:00",
+      "message": "Chương 1 đã biên tập đủ 6 mục, 10982 đơn vị cách trắng; đối chiếu số liệu và 11 nguồn gốc. Kiểm render sẽ thực hiện ở Phase6."
+    },
+    {
+      "time": "2026-10-29T23:42:08.543163+00:00",
+      "message": "Bắt đầu Chương 2 theo bảy Mission; thống nhất đường dẫn bản sao và phân biệt demo đúng với đề lỗi."
+    },
+    {
+      "time": "2026-10-30T00:37:53.919715+00:00",
+      "message": "Đã dựng xem trước nội dung thật: chapter-01.md"
+    },
+    {
+      "time": "2026-10-30T00:37:53.930672+00:00",
+      "message": "Đã dựng xem trước nội dung thật: introduction.md"
+    },
+    {
+      "time": "2026-10-30T00:37:53.939161+00:00",
+      "message": "Đã dựng xem trước nội dung thật: prompt-library.md"
+    },
+    {
+      "time": "2026-10-30T00:37:53.955936+00:00",
+      "message": "Đã dựng xem trước nội dung thật: glossary.md"
+    },
+    {
+      "time": "2026-10-30T00:37:53.972294+00:00",
+      "message": "Đã dựng xem trước nội dung thật: final-boss.md"
+    },
+    {
+      "time": "2026-10-30T00:37:53.984527+00:00",
+      "message": "Đã dựng xem trước nội dung thật: learning-agreement.md"
+    },
+    {
+      "time": "2026-10-30T00:37:54.068904+00:00",
+      "message": "Đã hoàn thiện 11 prompt, từ điển, thỏa thuận, mở đầu và Final Boss ba mức; rà sinh viên sửa 7 điểm thao tác/giải thích, rubric100 đã đối chiếu."
+    },
+    {
+      "time": "2026-10-30T00:54:25.383426+00:00",
+      "message": "Đã dựng xem trước nội dung thật: chapter-01.md"
+    },
+    {
+      "time": "2026-10-30T00:54:25.394988+00:00",
+      "message": "Đã dựng xem trước nội dung thật: introduction.md"
+    },
+    {
+      "time": "2026-10-30T00:54:25.403224+00:00",
+      "message": "Đã dựng xem trước nội dung thật: prompt-library.md"
+    },
+    {
+      "time": "2026-10-30T00:54:25.420356+00:00",
+      "message": "Đã dựng xem trước nội dung thật: glossary.md"
+    },
+    {
+      "time": "2026-10-30T00:54:25.435104+00:00",
+      "message": "Đã dựng xem trước nội dung thật: final-boss.md"
+    },
+    {
+      "time": "2026-10-30T00:54:25.447329+00:00",
+      "message": "Đã dựng xem trước nội dung thật: learning-agreement.md"
+    },
+    {
+      "time": "2026-10-30T00:59:26.646386+00:00",
+      "message": "Đã đọc toàn bộ bản thảo, kiểm đủ 7 Mission, bảng C/W/T và phạm vi bằng chứng; chuyển sang chương 3."
+    },
+    {
+      "time": "2026-10-30T00:59:54.686910+00:00",
+      "message": "Biên tập học chủ động, tự dự đoán, thử nhớ lại và bài không AI."
+    },
+    {
+      "time": "2026-10-30T01:02:38.856414+00:00",
+      "message": "Đã dựng xem trước nội dung thật: chapter-02.md"
+    },
+    {
+      "time": "2026-10-30T01:04:29.917232+00:00",
+      "message": "Đã kiểm xem trước chương 2 ở viewport thực 1440/375 px và sửa neo tra nhanh của trình xuất bản."
+    },
+    {
+      "time": "2026-10-30T01:07:45.526905+00:00",
+      "message": "Review độc lập chương 2 không thấy blocker; đã sửa 3 điểm: nhập lại tên sau form.reset để kiểm đúng parser, tạo checkpoint trước vá, đặt include ngoài hàm."
+    },
+    {
+      "time": "2026-10-30T01:07:45.718857+00:00",
+      "message": "Đã dựng xem trước nội dung thật: chapter-02.md"
+    },
+    {
+      "time": "2026-10-30T01:39:30.128772+00:00",
+      "message": "Chương 3 đã viết (710 dòng, 9983 từ); bắt đầu rà độc lập theo vai sinh viên và đối chiếu mã ví dụ."
+    },
+    {
+      "time": "2026-10-30T01:49:47.273257+00:00",
+      "message": "Chương 4 viết xong: 7 hồ sơ sự cố (đủ 6 phần), phòng khám SQL/XSS/C++, checklist, rubric 8; 9955 từ, 12 mục; chờ rà độc lập."
+    },
+    {
+      "time": "2026-10-30T01:49:47.349658+00:00",
+      "message": "Đã sinh 16 SVG + manifest bằng make_visuals.py; chờ kiểm hiển thị thật trong trình duyệt."
+    },
+    {
+      "time": "2026-10-30T02:09:03.106813+00:00",
+      "message": "Đã dựng xem trước nội dung thật: chapter-03.md"
+    },
+    {
+      "time": "2026-10-30T02:09:03.137563+00:00",
+      "message": "Đã dựng xem trước nội dung thật: chapter-04.md"
+    },
+    {
+      "time": "2026-10-30T02:09:03.148645+00:00",
+      "message": "Đã dựng xem trước nội dung thật: introduction.md"
+    },
+    {
+      "time": "2026-10-30T02:09:03.157198+00:00",
+      "message": "Đã dựng xem trước nội dung thật: prompt-library.md"
+    },
+    {
+      "time": "2026-10-30T02:09:03.172969+00:00",
+      "message": "Đã dựng xem trước nội dung thật: glossary.md"
+    },
+    {
+      "time": "2026-10-30T02:09:03.189282+00:00",
+      "message": "Đã dựng xem trước nội dung thật: final-boss.md"
+    },
+    {
+      "time": "2026-10-30T02:09:03.200847+00:00",
+      "message": "Đã dựng xem trước nội dung thật: learning-agreement.md"
+    },
+    {
+      "time": "2026-10-30T02:09:03.230083+00:00",
+      "message": "Đã dựng xem trước nội dung thật: chapter-01.md"
+    },
+    {
+      "time": "2026-10-30T02:09:03.269198+00:00",
+      "message": "Đã dựng xem trước nội dung thật: chapter-02.md"
+    },
+    {
+      "time": "2026-10-30T02:10:08.703826+00:00",
+      "message": "Dựng thư viện 16 hình vào dashboard; ghi 3 nhóm kiểm thật (46 nội dung, 16 ví dụ, 76 trình duyệt)."
+    },
+    {
+      "time": "2026-10-30T02:15:58.403812+00:00",
+      "message": "Đã dựng xem trước nội dung thật: chapter-03.md"
+    },
+    {
+      "time": "2026-10-30T02:16:15.380681+00:00",
+      "message": "Review độc lập chương 3: không blocker; 34 test Web chạy lại đạt. Đã sửa 10 điểm (chỉ dẫn bảng trace đúng cho A, giải nghĩa P02, mở Console + cảnh báo dán, tách bước validation C++, mẫu runTests, tự kiểm EXPLAIN IT BACK, đường dẫn ghi chép, giới hạn 500 chưa kiểm ở loi-bo-sot, bỏ nguồn không tồn tại, nhãn mục vận dụng). Còn lại NIT bảng rộng trên điện thoại."
+    },
+    {
+      "time": "2026-10-30T02:25:30.487098+00:00",
+      "message": "Chương 3: áp 5 sửa nhỏ từ review sinh viên (cách dùng $LASTEXITCODE, đếm 34 ca theo output, câu chữ bảng kiểm thử). Chương 4 đang được review độc lập."
+    },
+    {
+      "time": "2026-10-30T02:33:01.840201+00:00",
+      "message": "Hình: chạy lại Chrome headless 79/79 đạt — 16 SVG giải mã, không tràn khung, không chồng chữ, cỡ chữ ≥18px; manifest có alt và mục đích."
+    },
+    {
+      "time": "2026-10-30T02:35:33.029070+00:00",
+      "message": "Chương 3 hoàn tất sau rà độc lập: không blocker, 15 điểm đã sửa; 10.238 từ, 7 mục."
+    },
+    {
+      "time": "2026-10-30T02:35:33.109790+00:00",
+      "message": "Bản đọc offline: 79/79 phép kiểm Chrome, 4 chương, 16 ảnh giải mã, không tràn ở 1440/768/375, PDF 157 trang, không yêu cầu mạng."
+    },
+    {
+      "time": "2026-10-30T02:35:33.190688+00:00",
+      "message": "Đang rà chương 4 độc lập; báo cáo chất lượng đã soạn khung với phần chưa kiểm ghi rõ."
+    },
+    {
+      "time": "2026-10-30T03:10:07.709047+00:00",
+      "message": "Chương 4 hoàn tất sau hai lượt rà độc lập: không blocker; 1 điểm lớn (\"số lẻ\" → \"số thập phân\", sửa cả mở đầu, ch2, thỏa thuận) và 22 điểm nhỏ đã sửa; hình security.svg đồng bộ sáu bước với văn."
+    },
+    {
+      "time": "2026-10-30T03:10:07.783796+00:00",
+      "message": "Rà bổ sung chương 1: không blocker; 6 điểm lớn đã sửa (provider theo tự mô tả, chọn Thẻ A, rubric, bai-lam/, VND không dấu chấm trong máy tính chi phí) và 8 điểm nhỏ."
+    },
+    {
+      "time": "2026-10-30T03:10:07.859326+00:00",
+      "message": "Rà vai sinh viên đủ bốn chương; mọi điểm lớn đã sửa; 46/46 kiểm nội dung sau sửa."
+    },
+    {
+      "time": "2026-10-30T03:10:07.937705+00:00",
+      "message": "Sau sửa: 16/16 ví dụ thực thi (WSL g++ 11.4), 80/80 kiểm Chrome 156, PDF 159 trang, không yêu cầu mạng."
+    },
+    {
+      "time": "2026-10-30T03:14:47.971573+00:00",
+      "message": "Bàn giao: 46/46 nội dung, 16/16 ví dụ, 80/80 trình duyệt sau sửa; đóng gói kèm SHA-256."
+    },
+    {
+      "time": "2026-10-30T11:12:36.179001+00:00",
+      "message": "Bản online: thêm chapters/outline.md (967 từ, 6 mục) làm trang đầu; scripts/build_online.py sinh site/ (34 tệp, 1,35 MB, 68 liên kết viết lại); 80/80 kiểm Chrome trên chính site/, 82/82 trên bản offline, 50/50 kiểm nội dung."
+    },
+    {
+      "time": "2026-10-30T11:12:36.256697+00:00",
+      "message": "Publish Qoder Sites: ai-student-handbook-8nchu0xfadn.qoder.website, operation succeeded + committed; chuyển truy cập sang public theo ủy quyền; HTTP 200 trang chủ và tài nguyên, 16/16 ảnh decode, 404 thật cho đường dẫn lạ, không có khóa/dữ liệu cá nhân trong site/."
+    },
+    {
+      "time": "2026-10-30T11:17:21.945930+00:00",
+      "message": "Phát hành lại cùng dự án (action mới) sau khi báo cáo chất lượng thêm mục 10: operation succeeded + committed, access public. Kiểm lại trên URL thật: trang chủ 200 có #ban-do, demo và SVG 200, bản report trên live đã có mục 10."
+    }
+  ],
+  "gallery": [
+    {
+      "path": "assets/cover.svg",
+      "title": "Học CNTT cùng AI — một bài toán, bốn chặng"
+    },
+    {
+      "path": "assets/chapter-01.svg",
+      "title": "Cùng hỏi. Khác đáp."
+    },
+    {
+      "path": "assets/chapter-02.svg",
+      "title": "Khoản tiền bị bỏ quên"
+    },
+    {
+      "path": "assets/chapter-03.svg",
+      "title": "Giữ phần nghĩ cho mình"
+    },
+    {
+      "path": "assets/chapter-04.svg",
+      "title": "Trước khi bấm chia sẻ"
+    },
+    {
+      "path": "assets/ecosystem.svg",
+      "title": "Nhiều lối vào, khác điều kiện"
+    },
+    {
+      "path": "assets/roles.svg",
+      "title": "Ai làm gì trong một lượt hỏi?"
+    },
+    {
+      "path": "assets/token-context.svg",
+      "title": "Một câu hỏi, nhiều mảnh nhỏ"
+    },
+    {
+      "path": "assets/workspace.svg",
+      "title": "Bên trong một không gian làm việc"
+    },
+    {
+      "path": "assets/workflow.svg",
+      "title": "Điều khiển, không phó mặc"
+    },
+    {
+      "path": "assets/debugging.svg",
+      "title": "Lượt cuối chưa từng chạy"
+    },
+    {
+      "path": "assets/active-learning.svg",
+      "title": "Giữ bằng chứng của việc hiểu"
+    },
+    {
+      "path": "assets/ai-trap.svg",
+      "title": "Một ca đúng chưa đủ"
+    },
+    {
+      "path": "assets/security.svg",
+      "title": "Thu hồi trước. Dọn sau."
+    },
+    {
+      "path": "assets/final-boss.svg",
+      "title": "Nâng năng lực, không nâng gói phí"
+    },
+    {
+      "path": "assets/skill-map.svg",
+      "title": "Bốn năng lực. Bốn dấu vết."
+    }
+  ],
+  "checks": [
+    {
+      "status": "PASS",
+      "label": "Nội dung bốn chương và phần phụ trợ",
+      "evidence": "46/46 phép kiểm cấu trúc, ngôn ngữ và an toàn; xem chi tiết theo từng tệp.",
+      "path": "reports/content-checks.json"
+    },
+    {
+      "status": "PASS",
+      "label": "Ví dụ thực thi",
+      "evidence": "16 phép kiểm trên WSL Ubuntu 22.04 g++ 11.4.0 và Node 24; giữ FAIL chủ đích ở Final Boss.",
+      "path": "reports/example-results.json"
+    },
+    {
+      "status": "PASS",
+      "label": "Bản xuất bản, hình và in",
+      "evidence": "80 phép kiểm Chrome headless: 16 SVG không tràn/không chồng chữ/cỡ chữ ≥18px, 3 viewport, PDF 159 trang, không yêu cầu mạng.",
+      "path": "reports/browser-results.json"
+    },
+    {
+      "status": "PASS",
+      "label": "Rà soát độc lập bằng vai sinh viên",
+      "evidence": "Bốn chương đã rà; không blocker. 1 lỗi lớn về từ ngữ (\"số lẻ\") + 22 điểm nhỏ đã sửa; NIT còn lại được ghi trong báo cáo.",
+      "path": "reports/04_QUALITY_REPORT.md"
+    },
+    {
+      "status": "CHỜ",
+      "label": "Thử với lớp sinh viên thật",
+      "evidence": "Chưa có buổi thử; review là mô phỏng vai, không thay phản hồi lớp học."
+    }
+  ],
+  "percent": 100,
+  "previews": [
+    {
+      "source": "chapter-04.md",
+      "title": "CHƯƠNG 4 · SỬ DỤNG AI CÓ TRÁCH NHIỆM",
+      "path": "dashboard/previews/chapter-04.html"
+    },
+    {
+      "source": "introduction.md",
+      "title": "HỌC CNTT CÙNG AI",
+      "path": "dashboard/previews/introduction.html"
+    },
+    {
+      "source": "prompt-library.md",
+      "title": "THƯ VIỆN PROMPT · HỎI ÍT HƠN, HIỂU RÕ HƠN",
+      "path": "dashboard/previews/prompt-library.html"
+    },
+    {
+      "source": "glossary.md",
+      "title": "Glossary · Tra từ để đọc tiếp được",
+      "path": "dashboard/previews/glossary.html"
+    },
+    {
+      "source": "final-boss.md",
+      "title": "FINAL BOSS · BUILD IT. TEST IT. EXPLAIN IT.",
+      "path": "dashboard/previews/final-boss.html"
+    },
+    {
+      "source": "learning-agreement.md",
+      "title": "Thỏa thuận học tập · Được làm gì, tự làm gì, chứng minh bằng gì?",
+      "path": "dashboard/previews/learning-agreement.html"
+    },
+    {
+      "source": "chapter-01.md",
+      "title": "CHƯƠNG 1 · BƯỚC VÀO THẾ GIỚI AI",
+      "path": "dashboard/previews/chapter-01.html"
+    },
+    {
+      "source": "chapter-02.md",
+      "title": "CHƯƠNG 2 · TRỞ THÀNH NGƯỜI ĐIỀU KHIỂN AI",
+      "path": "dashboard/previews/chapter-02.html"
+    },
+    {
+      "source": "chapter-03.md",
+      "title": "CHƯƠNG 3 · ĐỪNG ĐỂ AI SUY NGHĨ THAY BẠN",
+      "path": "dashboard/previews/chapter-03.html"
+    }
+  ]
+}

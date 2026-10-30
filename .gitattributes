@@ -1,0 +1,13 @@
+# Nguon nay duoc kiem bang ma hash byte (source/ giu nguyen ban goc), nen duong dan
+# xuong dong phai giong nhau tren moi may. Neu de Git tu doi CRLF khi clone tren Linux,
+# phep kiem "nguon khong doi" se that bai khong vi ly do noi dung.
+* text=auto eol=lf
+
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.pdf binary
+*.exe binary
+*.obj binary
+*.zip binary
+*.svg text eol=lf

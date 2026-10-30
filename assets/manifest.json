@@ -1,0 +1,98 @@
+[
+  {
+    "title": "Học CNTT cùng AI — một bài toán, bốn chặng",
+    "path": "assets/cover.svg",
+    "alt": "Minh tóc đen ngắn áo xanh và Lan tóc đen ngang vai áo cam cùng đọc ba phiếu: Cơm trưa 35000, Xe buýt 7000, Vở ghi 18000; tổng đúng là 60000.",
+    "purpose": "Mở tình huống chung của cẩm nang và giới thiệu hai nhân vật hư cấu xuyên suốt."
+  },
+  {
+    "title": "Cùng hỏi. Khác đáp.",
+    "path": "assets/chapter-01.svg",
+    "alt": "Minh so ba phiếu đáp hư cấu A, B, C; Lan cùng đặt câu hỏi về model, context và ứng dụng.",
+    "purpose": "Khơi gợi việc so điều kiện tạo đáp án thay vì xếp hạng giao diện AI."
+  },
+  {
+    "title": "Khoản tiền bị bỏ quên",
+    "path": "assets/chapter-02.svg",
+    "alt": "Hai khoản 35000 và 7000 được cộng; chỉ phiếu Vở ghi 18000 được khoanh là bị bỏ. Minh chỉ dữ liệu, Lan rà ghi chép; bản lỗi cho 42000 thay vì 60000.",
+    "purpose": "Dẫn vào truy dấu lỗi bỏ phần tử cuối, không làm hỏng demo Web vốn đúng."
+  },
+  {
+    "title": "Giữ phần nghĩ cho mình",
+    "path": "assets/chapter-03.svg",
+    "alt": "Minh tự viết dự đoán i=2 bị bỏ; Lan giải thích 2<2 là sai. AI chỉ gợi ý xem lượt cuối.",
+    "purpose": "Tách hỗ trợ của AI khỏi trách nhiệm dự đoán và giải thích của người học."
+  },
+  {
+    "title": "Trước khi bấm chia sẻ",
+    "path": "assets/chapter-04.svg",
+    "alt": "Minh và Lan rà phiếu dữ liệu, quyền, nguồn, test trước khi gửi bài. Chú thích nhắc thu hồi key bị lộ trước khi dọn dấu vết.",
+    "purpose": "Biến trách nhiệm thành những việc cụ thể trước khi chia sẻ."
+  },
+  {
+    "title": "Nhiều lối vào, khác điều kiện",
+    "path": "assets/ecosystem.svg",
+    "alt": "Chat web, API và trợ lý IDE đi qua cổng dịch vụ tới model từ xa; một nhánh riêng chạy model trên máy. Không có thứ hạng thương hiệu.",
+    "purpose": "Phân biệt cách truy cập, quyền, dữ liệu và điều kiện vận hành."
+  },
+  {
+    "title": "Ai làm gì trong một lượt hỏi?",
+    "path": "assets/roles.svg",
+    "alt": "Bốn vai trò xếp Model, Provider, Application, User. Request đi ngược từ User tới Model; response xuôi từ Model tới User. Mũi tên không biểu thị quan hệ sở hữu.",
+    "purpose": "Giải thích vai trò và luồng trao đổi; một tổ chức có thể đảm nhiệm nhiều vai trò."
+  },
+  {
+    "title": "Một câu hỏi, nhiều mảnh nhỏ",
+    "path": "assets/token-context.svg",
+    "alt": "Năm lát cắt giả định minh họa token, không phải tokenizer thật. Cửa sổ hữu hạn có chỉ dẫn, dữ liệu, hội thoại và phần dành cho đầu ra; nội dung ngoài cửa sổ không tự được nhớ.",
+    "purpose": "Làm rõ tính minh họa của token và giới hạn ngữ cảnh, không suy diễn số token hay chi phí."
+  },
+  {
+    "title": "Bên trong một không gian làm việc",
+    "path": "assets/workspace.svg",
+    "alt": "Khung IDE chứa cây tệp, editor và terminal. Trong terminal, shell nhận python --version và gọi CLI Python. AI hoặc Agent ở ngoài ranh giới quyền đọc, sửa, chạy lệnh.",
+    "purpose": "Phân biệt IDE, editor, terminal, shell, CLI và quyền giới hạn của Agent."
+  },
+  {
+    "title": "Điều khiển, không phó mặc",
+    "path": "assets/workflow.svg",
+    "alt": "Ask sang Analyze, Edit, Test, Review. Test sai quay lại Analyze; đổi yêu cầu hoặc phát hiện thiếu sau review quay lại Ask.",
+    "purpose": "Thể hiện quy trình có vòng kiểm chứng thay vì chuỗi giao việc một chiều."
+  },
+  {
+    "title": "Lượt cuối chưa từng chạy",
+    "path": "assets/debugging.svg",
+    "alt": "Trace n=3, total=0, cận i<n-1: i=0 cộng 35000; i=1 cộng 7000 thành 42000; i=2 không thỏa 2<2, bỏ 18000. Kỳ vọng 60000; sửa cận i<n, validation là bước riêng.",
+    "purpose": "Chỉ rõ lượt kiểm tra điều kiện thất bại và sai lệch tổng bằng dữ liệu cụ thể."
+  },
+  {
+    "title": "Giữ bằng chứng của việc hiểu",
+    "path": "assets/active-learning.svg",
+    "alt": "Vòng sáu bước hai hàng: dự đoán, nhận gợi ý, tự sửa, chạy test, giải thích, biến thể; biến thể quay về dự đoán. AI chỉ hỗ trợ ở bước gợi ý.",
+    "purpose": "Gợi một vòng học chủ động có bằng chứng tự làm, không khẳng định tác động trí nhớ."
+  },
+  {
+    "title": "Một ca đúng chưa đủ",
+    "path": "assets/ai-trap.svg",
+    "alt": "Lời AI giả lập sai: mảng rỗng ra 0 nên vòng lặp đúng. Phản ví dụ [7000] với i=0, n=1, cận i<n-1 làm 0<0 sai: thực tế 0, kỳ vọng 7000.",
+    "purpose": "Dùng một phản ví dụ nhỏ để bác bỏ kết luận tự tin nhưng thiếu kiểm chứng."
+  },
+  {
+    "title": "Thu hồi trước. Dọn sau.",
+    "path": "assets/security.svg",
+    "alt": "Sáu bước theo đúng thứ tự trong chương: 01 dừng chia sẻ thêm; 02 thu hồi key ở nhà cung cấp, ô lớn bên trái; 03 kiểm tra mức sử dụng; 04 rà bản liên quan; 05 báo đúng đầu mối; 06 giảm bản lưu và chặn tái diễn, không tự viết lại lịch sử kho mã. Nhãn KEY_DEMO_INVALID không phải key thật.",
+    "purpose": "Ưu tiên vô hiệu hóa thông tin xác thực trước dọn dấu vết và phòng ngừa tái diễn."
+  },
+  {
+    "title": "Nâng năng lực, không nâng gói phí",
+    "path": "assets/final-boss.svg",
+    "alt": "Bronze thực hành C++, Silver thực hành Web, Gold nâng quy trình kiểm soát Agent từ một trong hai nhánh: quyền, diff, test, review, khai báo. Không cần trả phí; không có AI có thể mô phỏng thủ công và ghi rõ.",
+    "purpose": "Phân mức theo năng lực và bằng chứng, không theo giá công cụ."
+  },
+  {
+    "title": "Bốn năng lực. Bốn dấu vết.",
+    "path": "assets/skill-map.svg",
+    "alt": "Bốn nhánh bằng chứng quanh tự làm, tự giải thích: bản đồ công cụ; trace, diff, test; dự đoán và bài không AI; phiếu rà dữ liệu, nguồn, quyền và khai báo.",
+    "purpose": "Liên kết bốn năng lực với sản phẩm quan sát được, không chứng nhận tự động."
+  }
+]

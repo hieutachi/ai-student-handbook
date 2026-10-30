@@ -1,0 +1,1075 @@
+<!doctype html><html lang="vi"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>CHƯƠNG 3 · ĐỪNG ĐỂ AI SUY NGHĨ THAY BẠN</title><style>:root{--paper:#f6f3ea;--ink:#20342d;--muted:#58685f;--green:#35634b;--soft:#dce8d0;--rust:#b95132;--yellow:#f2dfa5;--line:#d4dbcf;--font:18px;--nav:270px}*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:90px}body{margin:0;background:var(--paper);color:var(--ink);font:var(--font)/1.8 system-ui,-apple-system,'Segoe UI',sans-serif}a{color:var(--green);text-underline-offset:4px}button,input,select{font:inherit}button,select{cursor:pointer}button{padding:8px 15px;min-height:40px;border:1px solid #879b85;border-radius:5px;background:transparent;color:var(--ink)}button:hover{background:var(--soft)}a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,summary:focus-visible{outline:3px solid var(--rust);outline-offset:4px}img{max-width:100%;height:auto}h1,h2,h3,h4{line-height:1.24;text-wrap:balance}h1,h2{font-family:Georgia,'Times New Roman',serif;font-weight:500;letter-spacing:-.035em}h1{font-size:clamp(48px,6vw,82px)}h2{font-size:clamp(31px,3vw,43px);margin:64px 0 25px}h3{font-size:24px;margin:40px 0 18px;letter-spacing:-.025em}h4{font-size:20px;margin:30px 0 16px}p{margin:0 0 20px}li{margin:8px 0}ul,ol{padding-left:26px}strong{font-weight:700}code{font: .87em/1.5 ui-monospace,Consolas,monospace;background:#e8ebdf;padding:2px 5px;border-radius:3px;overflow-wrap:anywhere}pre{margin:0;padding:23px;overflow-x:auto;max-width:100%;background:#21362f;color:#eef3e5;font-size:14px;line-height:1.65;tab-size:4}pre code{font:inherit;color:inherit;background:none;padding:0;border-radius:0;white-space:pre;overflow-wrap:normal}blockquote{margin:25px 0;padding:20px 24px;border-left:3px solid var(--green);background:#e8ecde;font-size:.96em}blockquote p:last-child{margin:0}hr{border:0;border-top:1px solid var(--line);margin:50px 0}.skip{position:fixed;left:12px;top:-100px;z-index:100;background:white;padding:12px}.skip:focus{top:12px}.sidebar{position:fixed;inset:0 auto 0 0;width:var(--nav);border-right:1px solid var(--line);padding:28px 22px 22px;background:#eceee3;overflow-y:auto;z-index:30}.brand{font:700 19px/1.25 system-ui;text-decoration:none;color:var(--ink);display:block;letter-spacing:-.03em}.brand small{display:block;font:11px/1.5 ui-monospace,monospace;letter-spacing:.08em;margin-top:9px;color:var(--muted)}.nav-search{margin:26px 0 16px;width:100%;background:transparent;border:1px solid #abb7a5;border-radius:5px;padding:9px 11px;font-size:13px}.toc{padding:0;list-style:none}.toc ul{list-style:none;margin:0 0 17px;padding:0 0 0 12px}.toc li{margin:3px 0}.toc a{display:block;font-size:12px;line-height:1.5;text-decoration:none;padding:5px 7px;border-radius:4px;color:#52634f}.toc>.toc-group>.chapter-link{font-size:13px;font-weight:700;color:var(--ink);margin-top:14px}.toc a:hover,.toc a.active{background:#dce5d0;color:#20342d}.nav-foot{font-size:11px;line-height:1.6;border-top:1px solid var(--line);padding-top:16px;margin-top:24px;color:var(--muted)}.topbar{height:62px;position:sticky;top:0;margin-left:var(--nav);display:flex;align-items:center;justify-content:space-between;padding:0 4vw;background:#f6f3eafa;border-bottom:1px solid var(--line);z-index:20;gap:12px}.top-label{font:11px/1.5 ui-monospace,monospace;letter-spacing:.12em;text-transform:uppercase}.tools{display:flex;align-items:center;gap:7px}.tools button{font-size:12px;padding:5px 9px;min-height:35px}.scroll-track{height:2px;position:absolute;bottom:0;left:0;right:0;background:var(--line)}#scroll-progress{height:100%;width:0;background:var(--rust)}.mobile-menu{display:none}.shade{display:none}main{margin-left:var(--nav)}.inner{max-width:1190px;padding:0 5vw;margin:auto}.eyebrow{font:11px/1.6 ui-monospace,monospace;letter-spacing:.17em;text-transform:uppercase}.hero{padding:64px 0 45px;border-bottom:1px solid var(--line)}.hero-grid{display:grid;grid-template-columns:1.05fr 1fr;gap:20px;align-items:center}.hero h1{margin:20px 0 25px}.hero h1 em{color:var(--rust);font-weight:400}.hero .lede{font-size:20px;line-height:1.6;max-width:620px}.hero-art{width:100%;border-radius:50% 50% 10px 10px}.hero-nav{display:flex;flex-wrap:wrap;gap:10px;margin-top:27px}.hero-nav a{padding:11px 17px;text-decoration:none;font-size:13px;border:1px solid var(--green);border-radius:4px}.hero-nav a:first-child{background:var(--green);color:#fff}.edition{font-size:11px;color:var(--muted);margin-top:35px;letter-spacing:.02em}.route-map{display:grid;grid-template-columns:repeat(4,1fr);margin:35px 0 0;border-top:1px solid var(--line)}.route-map a{padding:17px 12px 0 0;text-decoration:none;font-size:12px}.route-map b{display:block;font:23px Georgia;margin-bottom:5px}.intro{padding:20px 0 60px}.chapter{padding:70px 0 50px;border-top:1px solid var(--line)}.chapter-heading{display:grid;grid-template-columns:90px 1fr;gap:25px;align-items:start;margin:0 0 32px}.chapter-num{font:75px/.95 Georgia;color:var(--rust);letter-spacing:-.06em}.chapter-heading h2{font-size:clamp(36px,4.4vw,63px);margin:12px 0 18px;max-width:760px}.chapter-heading p{font-size:15px;color:var(--muted);line-height:1.65;max-width:720px}.opener{margin:0 0 50px}.opener img{width:100%;border:1px solid var(--line);border-radius:8px}.prose{max-width:900px;margin:0 auto;min-width:0}.prose>p:first-child{font-size:1.08em}.prose figure{margin:36px 0}.prose figure img{width:100%;border-radius:7px;border:1px solid var(--line);background:#f6f3ea}figcaption{font-size:12px;line-height:1.55;color:var(--muted);margin-top:8px}figcaption a{white-space:nowrap}.table-scroll{overflow-x:auto;max-width:100%;border:1px solid var(--line);border-radius:5px;margin:26px 0}table{border-collapse:collapse;min-width:570px;width:100%;font-size:14px;line-height:1.65}th{text-align:left;background:#e5e9dc;font-weight:650}td,th{padding:13px 15px;vertical-align:top;border-bottom:1px solid var(--line)}tr:last-child td{border-bottom:0}td code,th code{font-size:.9em}tbody tr:nth-child(even){background:#fff5}.code-wrap{margin:25px 0;min-width:0;max-width:100%;border-radius:6px;overflow:hidden}.code-top{background:#324b40;color:#dde6d6;padding:7px 14px;display:flex;justify-content:space-between;align-items:center;font:11px/1.5 ui-monospace,monospace}.code-top button{font:11px system-ui;min-height:28px;padding:3px 9px;color:#f4f7ef;border-color:#9eb19b}.code-top button:hover{background:#48624f}.answer{margin:30px 0;border-top:1px solid #a9b9a0;border-bottom:1px solid #a9b9a0;padding:4px 0}.answer summary{cursor:pointer;line-height:1.5;padding:17px 7px;font-size:16px;font-weight:650}.answer-body{padding:15px 8px 20px;min-width:0}.answer summary::marker{color:var(--rust)}.answer[open]{background:#f0f1e5}.instructor{font-size:14px}.widget{border:1px solid #b2c3a5;background:#e9edde;padding:26px;border-radius:8px;margin:34px 0}.widget h3{margin:8px 0 14px;font:30px/1.2 Georgia}.widget p{font-size:14px}.widget label{display:block;font-size:12px;font-weight:600}.widget input,.widget select{width:100%;border:1px solid #9dad94;background:#fbfcf6;padding:9px;border-radius:4px;margin-top:6px;color:var(--ink)}.budget-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.budget-result{display:flex;align-items:baseline;gap:15px;flex-wrap:wrap;margin:20px 0 0}.budget-result strong{font:38px/1.2 Georgia}.budget-result span{font-size:14px}.error{color:#91331e;font-weight:600}.trace-items{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:22px 0}.trace-item{border:1px solid #bbc8af;padding:18px 10px;text-align:center;border-radius:5px}.trace-item small{display:block;font:11px/1.4 ui-monospace,monospace}.trace-item b{font:28px/1.5 Georgia}.trace-item.added{background:#bfd7a5;border-color:#5b7946}.trace-item.current{outline:2px solid var(--rust);outline-offset:2px}.trace-controls{display:flex;align-items:end;gap:10px;flex-wrap:wrap}.trace-controls label{flex:1;min-width:160px}.trace-state{margin-top:18px;font-size:15px;min-height:54px}.quiz fieldset{border:0;padding:0;margin:0}.quiz legend{font-size:17px;font-weight:650;margin-bottom:15px}.quiz label{font-weight:400;font-size:15px;margin:9px 0;display:flex;gap:10px;align-items:start}.quiz input{width:auto;margin:6px 0 0}.quiz-result{margin-top:14px!important}.chapter-end{max-width:900px;margin:40px auto 0;padding:22px 0;border-top:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;gap:15px;font-size:13px}.chapter-end button[aria-pressed=true]{background:var(--green);color:white}.study-status{font:11px/1.5 ui-monospace,monospace;color:var(--muted)}.supplement{border-top:1px solid var(--line);padding:60px 0}.supplement>.section-title{font-size:44px;margin:12px 0 32px}.footer{padding:50px 0;border-top:1px solid var(--line);font-size:13px;color:var(--muted)}.footer strong{font:26px Georgia;color:var(--ink)}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}[hidden]{display:none!important}.focus .sidebar{display:none}.focus .topbar,.focus main{margin-left:0}.focus .inner{max-width:1100px}.focus .top-label{display:none}@media(min-width:1600px){:root{--nav:300px}.sidebar{padding:35px 28px}.inner{padding:0 65px}}@media(max-width:1150px){.hero-grid{grid-template-columns:1fr}.hero-art{max-height:440px;object-fit:contain;border-radius:0}.hero h1{max-width:680px}.hero .lede{max-width:650px}.top-label{display:none}}@media(max-width:950px){.sidebar{transform:translateX(-100%);width:280px;visibility:hidden}.topbar,main{margin-left:0}.mobile-menu{display:block}.nav-open .sidebar{transform:translateX(0);visibility:visible}.nav-open .shade{display:block;position:fixed;inset:0;background:#10241966;z-index:25;border:0;border-radius:0;width:100%;height:100%}.focus .sidebar{display:block}.inner{padding:0 6vw}.top-label{display:block}.hero{padding-top:42px}}@media(max-width:580px){body{font-size:var(--font)}.inner{padding:0 20px}.topbar{padding:0 14px}.top-label{display:none}.tools{gap:4px}.tools button{padding:5px 7px;font-size:11px}#focus-toggle{display:none}.hero{padding-top:33px}.hero h1{font-size:48px}.hero .lede{font-size:18px}.hero-art{max-height:none}.hero-nav a{font-size:12px}.route-map{grid-template-columns:repeat(2,1fr)}.route-map a{padding:12px 10px 0 0}.chapter{padding-top:42px}.chapter-heading{grid-template-columns:44px 1fr;gap:12px}.chapter-num{font-size:40px}.chapter-heading h2{font-size:35px;margin-top:8px}.chapter-heading p{font-size:13px}.opener{margin-bottom:30px}h2{font-size:31px;margin-top:42px}h3{font-size:22px}.widget{padding:17px}.budget-grid{grid-template-columns:repeat(2,1fr);gap:12px}.budget-result strong{font-size:32px}.trace-items{gap:7px}.trace-item{padding:12px 5px}.trace-item b{font-size:22px}.trace-item small{font-size:9px}.chapter-end{flex-direction:column;align-items:flex-start}.prose figure{margin:26px 0}.code-top{padding:7px 10px}pre{padding:16px}.supplement>.section-title{font-size:36px}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}@page{size:A4;margin:18mm}@media print{body{background:white;font:10.5pt/1.6 Georgia;color:#111}.sidebar,.topbar,.hero-nav,.route-map,.shade,.skip,.tools,.code-top button,.chapter-end,.widget button,.quiz,.nav-foot{display:none!important}main{margin:0}.inner{max-width:none;padding:0}.hero{padding-top:0}.hero-grid{grid-template-columns:1fr 1fr}.hero h1{font-size:40pt}.hero-art{max-height:100mm}.hero .lede{font-size:13pt}.hero .edition{font-size:8pt}.chapter,.supplement{break-before:page;padding-top:10mm}.chapter-heading h2{font-size:28pt}.chapter-num{font-size:42pt}.opener img{max-height:90mm;object-fit:contain}.prose{max-width:none}.prose h2{font-size:21pt}.prose h3{font-size:15pt}h2,h3,h4,summary{break-after:avoid}.prose figure{break-inside:avoid}.prose figure img{max-height:115mm;object-fit:contain}.table-scroll{overflow:visible}table{min-width:0;font-size:8.5pt}td,th{padding:6pt}pre{white-space:pre-wrap;overflow:visible;color:#111;background:#f1f1ec;font-size:8pt;overflow-wrap:anywhere}pre code{white-space:pre-wrap}.code-wrap{break-inside:avoid}.answer-body{display:block!important}.answer{border-color:#aaa}.widget{break-inside:avoid}.footer{font-size:9pt}a{color:inherit}.study-status{display:none}}
+main{margin:0}.preview-header{padding:16px 5vw;background:#20342d;color:#fff;font-size:13px}.preview-header a{color:#dce8d0}.preview-main{max-width:1000px;margin:auto;padding:30px 25px}.pending{font-size:13px;color:#58685f;border-left:2px solid #aaa;padding:10px}h1{font-size:44px}</style><body><header class="preview-header"><a href="../index.html">Về dashboard</a> · Bản xem trước nội dung; chưa thay cho kiểm thử bản xuất bản.</header><main class="preview-main prose"><h1>CHƯƠNG 3 · ĐỪNG ĐỂ AI SUY NGHĨ THAY BẠN</h1>
+<p>Minh đóng cửa sổ chat, nhìn lại vòng lặp vừa sửa. Tổng đã thành <strong>60000</strong>, nhưng khi Lan hỏi “Nếu chỉ có một khoản thì sao?”, Minh lại muốn mở chat. Lan cũng có chuyện tương tự: giao diện Web hoạt động, nhưng cô chưa giải thích được vì sao giá trị đọc từ ô nhập phải qua hai bước chuyển kiểu và kiểm tra. Hai bạn thống nhất một cuộc hẹn khác: không mang đến câu trả lời dài nhất, mà mang đến <strong>một điều tự giải thích được khi không còn nhìn lời giải</strong>.</p>
+<p><strong>Nhân vật, tình huống và hội thoại trong chương đều HƯ CẤU.</strong> Minh học C++ năm nhất; Lan học Web/OOP/DSA/CSDL năm hai. Đây không phải khảo sát, chuẩn đầu ra hoặc quy định chính thức của TLU. Quyền dùng AI trong bài nộp theo từng học phần.</p>
+<p>Chương này luyện dự đoán, tự sửa, kiểm chứng và vận dụng. Chọn một nhánh thực hành sâu, đọc nhánh kia để đối chiếu; không cần làm hết trong một buổi.</p>
+<p><strong>Quy ước:</strong> gọi gốc <code>AI-Student-Handbook</code> là <strong>NEW</strong>. Mở NEW, dùng bản sao <code>bai-lam/nam-1-cpp</code> và <code>bai-lam/nam-2-web</code> đã tạo ở Chương 2; <code>vi-du</code> chỉ tham khảo. Nếu thiếu bản sao, làm mục 2.1 của <a href="../../chapters/chapter-02.md">Chương 2</a>. Ghi trong vở hoặc <code>bai-lam/nam-1-cpp/ghi-chep-02.txt</code> (tệp đã tạo ở Chương 2). Không cài đặt, đổi cấu hình, đăng nhập, gọi API hay truy cập mạng. Không có AI thì dùng hội thoại hư cấu làm phiếu gợi ý, ghi đúng là học bằng phiếu.</p>
+<h2>3.1. AI TRAP — Câu trả lời tự tin có giữ lại phần học của bạn?</h2>
+<h3>Một hợp đồng nhỏ để không tranh luận bằng cảm giác</h3>
+<p>ViSinhVien dùng dữ liệu <strong>hoàn toàn giả</strong> sau. Bảng này là điểm tựa để tính tay, không phải lịch sử chi tiêu thật.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>id</th>
+<th>title</th>
+<th style="text-align:right">amount</th>
+<th>category</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Cơm trưa</td>
+<td style="text-align:right">35000</td>
+<td><code>an-uong</code></td>
+</tr>
+<tr>
+<td>2</td>
+<td>Xe buýt</td>
+<td style="text-align:right">7000</td>
+<td><code>di-lai</code></td>
+</tr>
+<tr>
+<td>3</td>
+<td>Vở ghi</td>
+<td style="text-align:right">18000</td>
+<td><code>hoc-tap</code></td>
+</tr>
+</tbody>
+</table></div>
+<p>“Hợp đồng” là điều kiện đầu vào và kết quả phải bảo đảm, không phải điều AI được tự thay cho tiện viết code.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Phần hợp đồng</th>
+<th>Quy định của bài</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Tiền</td>
+<td><code>amount</code> là số nguyên VND từ 1 đến 1000000000, không lưu chuỗi có dấu phân cách.</td>
+</tr>
+<tr>
+<td>Danh sách</td>
+<td>Tối đa 500 khoản; rỗng hợp lệ, tổng bằng 0.</td>
+</tr>
+<tr>
+<td>Tổng</td>
+<td>Mẫu có tổng 60000; cực đại là <code>500 × 1000000000 = 500000000000</code>.</td>
+</tr>
+<tr>
+<td>C++ năm nhất</td>
+<td>Chỉ dùng <code>vector&lt;long long&gt;</code> chứa tiền; không yêu cầu class <code>Expense</code>.</td>
+</tr>
+<tr>
+<td>Web năm hai</td>
+<td>Mỗi <code>Expense</code> có <code>id</code>, <code>title</code>, <code>amount</code>, <code>category</code>.</td>
+</tr>
+<tr>
+<td><code>id</code> Web</td>
+<td>Số nguyên an toàn, dương, không trùng trong danh sách.</td>
+</tr>
+<tr>
+<td><code>title</code> Web</td>
+<td>Chuỗi; sau <code>trim()</code> dài 1–80 <strong>đơn vị UTF-16</strong>, theo <code>.length</code> của JavaScript.</td>
+</tr>
+<tr>
+<td><code>category</code> Web</td>
+<td><strong>Chuỗi</strong> thuộc <code>an-uong</code>, <code>di-lai</code>, <code>hoc-tap</code>, <code>khac</code>; mảng <code>['khac']</code> không hợp lệ.</td>
+</tr>
+</tbody>
+</table></div>
+<p>Trong C++, <code>long long</code> đủ chứa tổng cực đại, còn số nguyên có dấu 32 bit thì không. Trong JavaScript, 500000000000 nằm trong miền số nguyên an toàn của <code>Number</code>, giới hạn trên là 9007199254740991. “Biểu diễn được” vẫn khác “được phép”: số âm biểu diễn được nhưng vi phạm hợp đồng tiền. Độ dài UTF-16 cũng không luôn bằng số ký tự nhìn thấy; một số ký hiệu được tính bằng hai đơn vị.</p>
+<p>Bản Web là HTML/JavaScript với <code>localStorage</code>, không backend, đăng nhập thật hoặc SQLite tích hợp. Bài SQL/SQLite dùng cùng dữ liệu là bài CSDL riêng. Demo Web hiện <strong>đúng</strong>: nếu chưa có dữ liệu lưu, nó bắt đầu bằng ba khoản, tổng <strong>60000</strong>. Đừng chẩn đoán một lỗi do cẩm nang cố ý dựng trong mảng lab thành lỗi của demo.</p>
+<h3>Bẫy: đúng một kết quả rồi kết luận đúng tất cả</h3>
+<p><strong>Bổ sung biên tập — phiếu trả lời AI HƯ CẤU, cố ý sai:</strong></p>
+<blockquote>
+<p>“Đã đổi cận vòng lặp và thấy 60000, vậy chương trình xử lý mọi đầu vào an toàn. Ở Web cứ dùng <code>Number</code> cho mọi giá trị là đủ. Muốn tổng theo nhóm thì lọc trước, dữ liệu nhóm khác không liên quan.”</p>
+</blockquote>
+<p>Chưa cần viết lại hàm. Gạch chân ba kết luận, rồi với mỗi kết luận nêu một đầu vào cần thử. Nếu chỉ trả lời “AI có thể sai”, bạn mới nhắc lại khẩu hiệu, chưa có phản biện kỹ thuật.</p>
+<h3>Đáp án AI TRAP — Ba kết luận vượt quá bằng chứng</h3>
+<p>Đổi cận chỉ sửa việc bỏ cuối; <code>{0}</code> hoặc 501 khoản vẫn cần validation riêng. <code>Number("")</code> cho 0, chuyển được nhưng không hợp lệ. Lọc trước có thể che khoản sai: tiền chuỗi ở <code>di-lai</code> phải khiến yêu cầu tổng <code>hoc-tap</code> bị từ chối. Hãy tách yêu cầu, tìm phản ví dụ và xác định phạm vi test thay vì tranh luận về giọng văn AI.</p>
+<h3>Sáu tình huống: ranh giới nằm ở nhiệm vụ đang luyện</h3>
+<p>“Tận dụng” giữ phần học cần thiết ở phía bạn; “giao việc học cho AI” để AI nghĩ thay phần đang cần luyện. Không chỉ nhìn code do AI gợi ý rồi kết luận về tính liêm chính.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Tình huống</th>
+<th>Tận dụng để học</th>
+<th>Dấu hiệu giao việc học cho AI</th>
+<th>Vùng xám phải kiểm tra</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1. Minh gặp lỗi biên dịch</td>
+<td>Gửi lỗi và đoạn tối thiểu, tự giải thích nguyên nhân sau gợi ý.</td>
+<td>Dán cả bài, thay bằng lời giải không đọc.</td>
+<td>Bản vá rất nhỏ vẫn có thể bị cấm trong bài đánh giá không cho AI.</td>
+</tr>
+<tr>
+<td>2. Minh học vòng lặp</td>
+<td>Xin câu hỏi về chỉ số, tự trace ba khoản.</td>
+<td>Xin vòng lặp hoàn chỉnh rồi học thuộc.</td>
+<td>Được xem mẫu không đồng nghĩa được nộp thuật toán do AI xây.</td>
+</tr>
+<tr>
+<td>3. Lan đọc tiếng Anh</td>
+<td>Giải nghĩa thuật ngữ, đối chiếu câu gốc.</td>
+<td>Chỉ đọc tóm tắt rồi nhận đã đọc tài liệu.</td>
+<td>Dịch hỗ trợ khác với viết hộ phần phân tích được chấm.</td>
+</tr>
+<tr>
+<td>4. Lan thiết kế test</td>
+<td>Tự tính kỳ vọng, nhờ tìm loại ca còn thiếu.</td>
+<td>Nhận cả hàm lẫn kỳ vọng test từ một câu trả lời.</td>
+<td>Môn có thể cho sinh test nhưng yêu cầu khai báo.</td>
+</tr>
+<tr>
+<td>5. Hai bạn làm giao diện</td>
+<td>Sinh khung không phải trọng tâm rồi tự nối dữ liệu.</td>
+<td>Không biết nút Lưu gọi gì nhưng nhận đã làm chủ Web.</td>
+<td>Nếu đang học HTML, khung sinh sẵn có thể bỏ qua mục tiêu chính.</td>
+</tr>
+<tr>
+<td>6. Chuẩn bị bài nhóm</td>
+<td>Thống nhất hỗ trợ, mỗi người giải thích phần mình.</td>
+<td>AI hoàn thành phần chưa làm nhưng báo tự làm hoàn toàn.</td>
+<td>Quy tắc nhóm, ghi nhận hỗ trợ và cách đánh giá có thể khác nhau.</td>
+</tr>
+</tbody>
+</table></div>
+<p>Trước khi mở chat, viết: “Bài đang luyện __; AI chỉ hỗ trợ __; tôi tự chứng minh __.” Minh chọn điều kiện dừng, Lan chọn đường đi của kiểu dữ liệu. Nếu quyền sử dụng chưa rõ, đọc hướng dẫn học phần và hỏi giảng viên trước khi dùng cho bài nộp. Khai báo không tự biến một cách dùng bị cấm thành được phép.</p>
+<h3>Vibe coding có kiểm soát: dựng nhanh, nhận chậm</h3>
+<p>Ở đây, <strong>vibe coding</strong> là mô tả mong muốn bằng ngôn ngữ tự nhiên, nhận code và điều chỉnh qua nhiều lượt. Dựng nhanh có ích để thử ý tưởng; chạy được không tự chứng minh người làm hiểu chương trình.</p>
+<p>Lan có thể nhận hàng trăm dòng rồi liên tục nhắn “sửa hết”. Cách có kiểm soát ngược lại: biết <code>index.html</code> chứa giao diện, <code>data.js</code> xử lý dữ liệu, <code>app.js</code> nối sự kiện và lưu trữ; chọn một vấn đề, dự đoán, nhận một thay đổi, kiểm vài ca rồi mới đi tiếp. Không thêm framework, dịch vụ hay đăng nhập để giải quyết lỗi chuỗi tiền.</p>
+<p>Hiểu không phải thuộc mọi API. Bạn được tra tên phương thức nhưng phải trả lời bốn câu:</p>
+<ol>
+<li>Đoạn code nhận dữ liệu gì, kiểu nào, từ đâu?</li>
+<li>Nó trả về hoặc thay đổi điều gì?</li>
+<li>Nó dựa vào điều kiện nào của hợp đồng?</li>
+<li>Nếu bỏ một điều kiện, tôi tạo được ca nào khiến nó sai?</li>
+</ol>
+<p>Với <code>localStorage.setItem</code>, Lan cần biết nó lưu chuỗi, có thể thất bại, và không được báo lưu bền khi chỉ cập nhật bộ nhớ. Với <code>vector</code>, Minh cần biết ba phần tử có chỉ số 0, 1, 2. Quên tên API thì tra; không biết vì sao thiếu phần tử cuối thì trace.</p>
+<p><img alt="Bẫy AI: từ câu trả lời tự tin, quay về dự đoán, phản ví dụ và bằng chứng do người học kiểm tra." src="../../assets/ai-trap.svg"/></p>
+<h2>3.2. THINK FIRST / PREDICT BEFORE ASKING — Viết dự đoán trước câu hỏi</h2>
+<h3>Một phiếu ngắn trước khi nhấn Gửi</h3>
+<p>Chưa có lời giải vẫn được hỏi. Viết “cộng từ khoản đầu đến khoản cuối” rồi thử một khoản để tạo chỗ bám cho gợi ý.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Điều cần ghi</th>
+<th>Minh điền trước khi hỏi</th>
+<th>Nếu chưa biết</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Đầu vào</td>
+<td><code>35000, 7000, 18000</code>, số nguyên</td>
+<td>Chép đúng dữ liệu và kiểu đang có.</td>
+</tr>
+<tr>
+<td>Kỳ vọng</td>
+<td>60000, do cộng đủ ba khoản</td>
+<td>Tính tay ca một khoản trước.</td>
+</tr>
+<tr>
+<td>Hiện tượng</td>
+<td>Dự đoán cận lỗi cho 42000; chưa chạy</td>
+<td>Ghi “chưa chạy”, không mượn log của sách.</td>
+</tr>
+<tr>
+<td>Giả thuyết</td>
+<td>Có thể chưa cộng Vở ghi</td>
+<td>Ghi nơi nghi ngờ, chưa khẳng định nguyên nhân.</td>
+</tr>
+<tr>
+<td>Điều xin hỗ trợ</td>
+<td>Một câu hỏi về chỉ số</td>
+<td>Không xin đồng thời giải thích, sửa cả bài và sinh test.</td>
+</tr>
+</tbody>
+</table></div>
+<p>Chương 2 đã giải cận và build; lần này luyện <strong>giữ từng bước suy nghĩ</strong>. Nếu nhớ lời giải, hãy tự giải thích ca mới.</p>
+<h3>Hội thoại C++: người học phải đi qua lượt dừng</h3>
+<p>Đây là <strong>mã lỗi chủ đích</strong> từ <code>loi-bo-sot.cpp</code>. <code>amounts</code> là <code>std::vector&lt;long long&gt;{35000, 7000, 18000}</code>, <code>total</code> là <code>long long</code> khởi tạo 0.</p>
+<div class="code-wrap"><pre><code class="language-cpp">int n = static_cast&lt;int&gt;(amounts.size());
+for (int i = 0; i &lt; n - 1; ++i) { // CỐ Ý SAI
+    total += amounts[i];
+}
+</code></pre></div>
+<p>Trước khi mở đối chiếu, tự ghi <code>n</code>, các chỉ số hợp lệ và từng lần kiểm tra điều kiện, kể cả lần sai khiến vòng lặp dừng. <code>size()</code> là số lượng, không phải chỉ số cuối. Với ba khoản mẫu, <code>int n</code> không có rủi ro. <code>loi-bo-sot.cpp</code> <strong>chưa</strong> kiểm giới hạn 500; bản có kiểm số lượng trước khi ép sang <code>int</code> nằm ở mục 3.6. Không suy ra mọi phép ép kích thước về <code>int</code> đều an toàn.</p>
+<h3>Đáp án hội thoại C++ — HƯ CẤU, không phải log thực thi</h3>
+<p><strong>Minh:</strong> Em tính tay 60000. Với cận đang đọc, em dự đoán 42000. Em nghi thiếu Vở ghi nhưng chưa biết phải sửa thế nào.</p>
+<p><strong>Người hướng dẫn:</strong> Chưa sửa. Ba phần tử có chỉ số nào?</p>
+<p><strong>Minh:</strong> 1, 2, 3… Em nhầm: vector bắt đầu ở 0, vậy là 0, 1, 2.</p>
+<p><strong>Người hướng dẫn:</strong> Khi ấy <code>n</code> và điều kiện lượt đầu bằng gì?</p>
+<p><strong>Minh:</strong> <code>n = 3</code>, nên <code>n - 1 = 2</code>. Lượt đầu <code>0 &lt; 2</code> đúng, tổng thành 35000.</p>
+<p><strong>Người hướng dẫn:</strong> Em tự đi tiếp, cả lượt không được chạy.</p>
+<p><strong>Minh:</strong> <code>i = 1</code>, <code>1 &lt; 2</code> đúng, tổng thành 42000. Đến <code>i = 2</code>, <code>2 &lt; 2</code> sai. Chưa đọc 18000 mà đã dừng. Phép cộng không sai; thiếu một số hạng.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Lần kiểm tra</th>
+<th style="text-align:right">i</th>
+<th>Điều kiện lỗi</th>
+<th>Khoản được cộng</th>
+<th style="text-align:right">total sau kiểm tra</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td style="text-align:right">0</td>
+<td><code>0 &lt; 2</code>: đúng</td>
+<td>Cơm trưa 35000</td>
+<td style="text-align:right">35000</td>
+</tr>
+<tr>
+<td>2</td>
+<td style="text-align:right">1</td>
+<td><code>1 &lt; 2</code>: đúng</td>
+<td>Xe buýt 7000</td>
+<td style="text-align:right">42000</td>
+</tr>
+<tr>
+<td>3</td>
+<td style="text-align:right">2</td>
+<td><code>2 &lt; 2</code>: sai</td>
+<td>Không có</td>
+<td style="text-align:right">42000</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Người hướng dẫn:</strong> Em muốn đọc chỉ số nào và không được đọc chỉ số nào?</p>
+<p><strong>Minh:</strong> Đọc 0, 1, 2; không đọc 3. Em đề xuất <code>i &lt; n</code>. Khi <code>i = 2</code>, cộng thêm 18000 thành 60000; tăng lên 3 thì dừng.</p>
+<p><strong>Người hướng dẫn:</strong> Một khoản Vở ghi và danh sách rỗng có giúp kiểm đề xuất không?</p>
+<p><strong>Minh:</strong> Một khoản: cũ kiểm <code>0 &lt; 0</code>, bỏ luôn khoản duy nhất; mới kiểm <code>0 &lt; 1</code>, cộng 18000. Rỗng: mới kiểm <code>0 &lt; 0</code>, tổng giữ 0. Cũ với <code>int n = 0</code> cũng không lặp, nên riêng ca rỗng không phân biệt được hai cận.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Đầu vào</th>
+<th style="text-align:right">Kỳ vọng cận lỗi</th>
+<th style="text-align:right">Kỳ vọng cận đúng</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Ba khoản mẫu</td>
+<td style="text-align:right">42000</td>
+<td style="text-align:right">60000</td>
+</tr>
+<tr>
+<td>Chỉ 18000</td>
+<td style="text-align:right">0</td>
+<td style="text-align:right">18000</td>
+</tr>
+<tr>
+<td>Rỗng</td>
+<td style="text-align:right">0</td>
+<td style="text-align:right">0</td>
+</tr>
+</tbody>
+</table></div>
+<p>Đây là <strong>trace thủ công và đầu ra kỳ vọng</strong>, không phải bằng chứng đã biên dịch. Sửa cận không tự thêm kiểm tra tiền hoặc số lượng. Cũng không thay bằng <code>size() - 1</code> cho “gọn”: kích thước thuộc kiểu không dấu, trừ 1 khi rỗng có thể tạo giá trị rất lớn; xem giải thích ở mục 2.3.</p>
+<p>Nếu dùng AI làm người hỏi, yêu cầu chờ câu trả lời, không để nó tự nhận là giảng viên của bạn. Giá trị của hội thoại nằm ở câu Minh tự nói về chỉ số 2, không phải số lượt trao đổi.</p>
+<h3>Phiên 25 phút CÓ AI hỗ trợ: sáu bước, sáu dấu vết</h3>
+<p>Đây là phiên học <strong>có giai đoạn được hỏi AI</strong>, khác hoàn toàn thử thách không AI ở mục 3.5. Chọn một mục tiêu: Minh sửa cận; Lan giải thích tiền chuỗi trong lab. Chỉ dùng phương tiện đã được phép; nếu không truy cập AI, thay lượt hỏi bằng phiếu gợi ý hoặc bạn học và ghi rõ cách làm.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Thời gian</th>
+<th>Việc phải làm</th>
+<th>Dấu vết cần giữ</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0–4 phút: tự thử</td>
+<td>Đọc đề, phác một cách, dù còn thiếu.</td>
+<td>Code tự viết hoặc mô tả thuật toán.</td>
+</tr>
+<tr>
+<td>4–7 phút: dự đoán</td>
+<td>Tính tay; ghi chỉ số hoặc kiểu từng chặng.</td>
+<td>Kỳ vọng viết <strong>trước</strong> chạy và trước hỏi.</td>
+</tr>
+<tr>
+<td>7–11 phút: xin gợi ý</td>
+<td>Một câu mỗi lượt, tự trả lời rồi mới hỏi tiếp.</td>
+<td>Câu gợi ý và câu trả lời của bạn.</td>
+</tr>
+<tr>
+<td>11–16 phút: tự sửa</td>
+<td>Chỉ sửa nguyên nhân đã giải thích được.</td>
+<td>Dòng đổi cùng lý do.</td>
+</tr>
+<tr>
+<td>16–21 phút: kiểm chứng</td>
+<td>Ca thường, biên và sai theo phạm vi việc sửa.</td>
+<td>Kỳ vọng, thực tế, kết luận; ghi validation còn thiếu nếu có.</td>
+</tr>
+<tr>
+<td>21–25 phút: biến thể không AI</td>
+<td>Đóng chat, đổi dữ liệu hoặc câu hỏi.</td>
+<td>Bài tự làm và chỗ chưa chắc.</td>
+</tr>
+</tbody>
+</table></div>
+<p>Minh dự đoán <code>0 → 35000 → 42000 → 60000</code>; Lan vẽ “ô nhập → đối tượng → danh sách → tổng”. Chưa viết được code vẫn bắt đầu bằng hai dấu vết này. Khi mới sửa cận, test tiền sai chưa bị từ chối là phần validation còn thiếu.</p>
+<p>Thử tối đa ba lượt gợi ý cho một nút thắt, theo quy ước phiên học. Mỗi lượt phải dẫn đến một hành động tự làm: điền trace, sửa dòng hoặc nghĩ test. Vẫn vướng thì thu xuống một khoản.</p>
+<h3>Khi đáp án lộ, hoặc hết giờ mà chưa xong</h3>
+<p>Nếu AI viết luôn điều kiện đúng, ghi “đã xem lời giải phần cận”, đóng lại, tự giải thích rồi thử ca mới. Câu đã lộ chỉ tính là ôn tập. Thẻ P02 (bảng thẻ P01–P08 ở cuối mục 3.3 và trong <a href="../../chapters/prompt-library.md">Thư viện prompt</a>) có thể xin bảng trống, nhưng không bảo đảm AI tuân thủ.</p>
+<p>Nếu mệt, ghi cụ thể “đã biết chỉ số cuối, chưa biết lập điều kiện” rồi dừng. Thời lượng không chẩn đoán khả năng tập trung hay năng lực ngành học. Phiên sau thu nhỏ nhiệm vụ; khi hỏi người hướng dẫn, mang đầu vào, kỳ vọng, thực tế và điều đã thử.</p>
+<h2>3.3. REVERSE ENGINEERING / EXPLAIN IT BACK — Lần ngược rồi giải thích lại</h2>
+<p>Mục này cố ý ghép hai bước vì chúng đi liền nhau: phần đầu là <strong>REVERSE ENGINEERING</strong> (lần ngược luồng dữ liệu), phần “Giải thích lại” bên dưới là <strong>EXPLAIN IT BACK</strong>. Mục 3.7 cuối chương là <strong>SKILL UNLOCKED</strong>.</p>
+<h3>Từ một con số trên màn hình về nơi dữ liệu được tạo</h3>
+<p><strong>Reverse engineering</strong> ở đây là đọc ngược chương trình để hiểu luồng. <strong>Explain it back</strong> là giải thích bằng lời của bạn, kèm vị trí code và ví dụ.</p>
+<p>Trong <code>bai-lam/nam-2-web</code>, Lan lần từ tổng hiển thị về <code>render()</code>, <code>D.totalExpenses(expenses)</code>, chỗ gán <code>expenses</code>, handler <code>submit</code> vô danh và <code>D.parseAmount</code> trong <code>app.js</code>. Sau đó mở <code>data.js</code> đọc hàm, <code>index.html</code> kiểm form và thứ tự script. Không bịa <code>handleSubmit</code> khi mã dùng callback vô danh.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Chặng cần lần</th>
+<th>Vị trí/vai trò</th>
+<th>Kiểu và điều phải giải thích</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Ô nhập</td>
+<td><code>index.html</code>, đọc trong <code>app.js</code></td>
+<td><code>.value</code> là chuỗi, dù người dùng gõ chữ số.</td>
+</tr>
+<tr>
+<td>Phân tích tiền</td>
+<td><code>parseAmount</code> trong <code>data.js</code></td>
+<td>Kiểm cách viết, chuyển thành số, kiểm miền tiền.</td>
+</tr>
+<tr>
+<td>Danh sách ứng viên</td>
+<td>Handler <code>submit</code> trong <code>app.js</code></td>
+<td>Ghép khoản mới; <code>normalizeExpenses</code> kiểm cả danh sách trước khi gán.</td>
+</tr>
+<tr>
+<td>Tính tổng</td>
+<td><code>totalExpenses</code> trong <code>data.js</code></td>
+<td>Kiểm tiền/số lượng, trả số; không xác thực toàn schema.</td>
+</tr>
+<tr>
+<td>Lưu</td>
+<td><code>save()</code> trong <code>app.js</code></td>
+<td><code>JSON.stringify</code> tạo chuỗi để ghi vào <code>localStorage</code>; ghi có thể lỗi.</td>
+</tr>
+<tr>
+<td>Hiển thị</td>
+<td><code>render()</code> trong <code>app.js</code></td>
+<td>Định dạng để nhìn, không biến tiền lưu thành chuỗi có dấu chấm.</td>
+</tr>
+<tr>
+<td>Đọc lại</td>
+<td>Khối khởi tạo trong <code>app.js</code></td>
+<td><code>JSON.parse</code> rồi <code>normalizeExpenses</code>; JSON hợp lệ chưa chắc đúng schema.</td>
+</tr>
+</tbody>
+</table></div>
+<p>Trong handler, vế phải <code>D.normalizeExpenses([...expenses, khoản_mới])</code> phải thành công trước khi gán lại <code>expenses</code>. Dữ liệu sai bị ném lỗi và bắt ở giao diện, nên không được thêm vào danh sách. Dữ liệu hợp lệ được cập nhật trong bộ nhớ, sau đó mới gọi <code>save()</code> và <code>render()</code>: lưu thất bại không hoàn tác khoản vừa thêm trong RAM, nhưng phải báo không lưu bền.</p>
+<h3>Lab kiểu dữ liệu: không làm hỏng demo đúng</h3>
+<p>Giữ nguyên <code>data.js</code> đang đúng. Trên giấy hoặc vùng nháp, giả lập ba <code>amount</code> là chuỗi <code>"35000"</code>, <code>"7000"</code>, <code>"18000"</code>, biến <code>total</code> ban đầu là số 0. Mỗi lượt thực hiện <code>total = total + expense.amount</code>. Đây là <strong>lab lỗi chủ đích</strong>, không phải mô tả trạng thái dữ liệu mẫu của ứng dụng.</p>
+<p>Chưa mở đáp án: lập bảng lượt, <code>total</code> trước và kiểu, <code>amount</code> và kiểu, <code>total</code> sau và kiểu. Giữ dấu ngoặc kép; bỏ chúng làm mất phần quan trọng nhất của bài.</p>
+<h3>Đáp án hội thoại Web — HƯ CẤU, giải thích bằng giá trị và kiểu</h3>
+<p><strong>Lan:</strong> Trong lab, em dự đoán kết quả là chuỗi dài chứ không phải tiền. Em định thay toán tử cộng.</p>
+<p><strong>Người hướng dẫn:</strong> Trước khi đổi toán tử, em biết kiểu của <code>.value</code> chưa?</p>
+<p><strong>Lan:</strong> Em từng nghĩ gõ số thì nhận số. Nhưng giá trị của ô nhập là chuỗi. Em phải kiểm <code>typeof</code> nếu muốn quan sát trên Console, không đoán bằng hình dáng.</p>
+<p><strong>Người hướng dẫn:</strong> Vậy lượt đầu, bên trái và bên phải là gì?</p>
+<p><strong>Lan:</strong> Số 0 cộng chuỗi <code>"35000"</code> thành chuỗi <code>"035000"</code>. Tổng đã đổi kiểu ngay lượt đầu.</p>
+<p><strong>Người hướng dẫn:</strong> Em làm hai lượt tiếp và ghi cả kiểu.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Lượt</th>
+<th>total trước và kiểu</th>
+<th>amount và kiểu</th>
+<th>total sau và kiểu</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><code>0</code>, number</td>
+<td><code>"35000"</code>, string</td>
+<td><code>"035000"</code>, string</td>
+</tr>
+<tr>
+<td>2</td>
+<td><code>"035000"</code>, string</td>
+<td><code>"7000"</code>, string</td>
+<td><code>"0350007000"</code>, string</td>
+</tr>
+<tr>
+<td>3</td>
+<td><code>"0350007000"</code>, string</td>
+<td><code>"18000"</code>, string</td>
+<td><code>"035000700018000"</code>, string</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Lan:</strong> Sau lượt đầu không còn cộng số. Em đang nối ký tự liên tiếp.</p>
+<p><strong>Người hướng dẫn:</strong> Nên sửa ở đâu để phía sau không phải đoán kiểu?</p>
+<p><strong>Lan:</strong> Ở biên nhập liệu: kiểm chuỗi, chuyển số, kiểm giá trị rồi mới tạo <code>Expense</code>. Hàm tổng vẫn phải từ chối tiền sai vì dữ liệu có thể đến từ đường khác.</p>
+<p><strong>Người hướng dẫn:</strong> Chỉ dùng <code>Number</code> đủ không? Xét chuỗi rỗng và số âm.</p>
+<p><strong>Lan:</strong> Không. <code>Number("")</code> cho 0; <code>Number("-7000")</code> cho số âm. Cả hai không là khoản hợp lệ. Em cho phép khoảng trắng ngoài cùng, rồi chỉ nhận chữ số; từ chối chấm, phẩy, chữ và ký hiệu mũ.</p>
+<p><strong>Người hướng dẫn:</strong> Khi tải lại trang, dữ liệu đã lưu có cần kiểm nữa?</p>
+<p><strong>Lan:</strong> Có. <code>localStorage</code> giữ chuỗi JSON. Parse được chỉ chứng minh cú pháp JSON; vẫn phải kiểm danh sách, tiền, id, title, category. Lỗi đọc không được âm thầm đổi dữ liệu cũ thành danh sách rỗng rồi ghi đè.</p>
+<p>Các kết quả trên là <strong>kỳ vọng từ trace</strong>. Khi tiền đã là số, trace đúng là <code>0 → 35000 → 42000 → 60000</code>. <code>42000</code> ở giữa là tổng trung gian đúng; <code>42000</code> cuối vòng lặp C++ lỗi là kết quả sai. Cùng con số, khác thời điểm và yêu cầu.</p>
+<h3>EXPLAIN IT BACK — Giải thích lại: vượt qua câu “em hiểu rồi”</h3>
+<p>Đóng phần hội thoại. Trong khoảng một phút, kể đường đi của <code>"18000"</code> từ ô nhập đến số trong danh sách rồi chuỗi JSON. Chỉ vào tên hàm khi nói. Nếu kẹt, đánh dấu chặng bị thiếu trước khi mở lại tài liệu. <strong>Tự kiểm:</strong> mở lại bảng “Chặng cần lần” ở đầu mục này và đánh dấu từng chặng bạn đã nói được; thiếu chặng nào thì đó là việc ôn tiếp theo. Minh chỉ tham gia phần này như <strong>review chéo với Lan</strong>, không ngầm chuyển sang làm dự án Web năm hai.</p>
+<p>Dùng thêm câu tiếng Anh <strong>do cẩm nang tự soạn, không phải trích dẫn chính thức</strong>: “The value of a text input is a string. Convert and validate it before storing an expense amount.” Giải nghĩa <code>value</code> là giá trị, <code>string</code> là chuỗi, <code>convert</code> là chuyển kiểu, <code>validate</code> là kiểm tra hợp lệ. Sau đó tự diễn giải cả câu và chọn một trường hợp chuyển được nhưng không hợp lệ. Với tài liệu thật, phải giữ đoạn gốc và nguồn để đối chiếu; bản dịch không thay việc đọc điều kiện áp dụng.</p>
+<p>Về lưu trữ, bản demo khởi tạo mẫu trước. Không có bản lưu thì giữ ba khoản 60000; có bản lưu hợp lệ thì dùng bản đó, kể cả <code>[]</code> với tổng 0. Nếu đọc/parse/normalize thất bại, <code>persistent = false</code>, dùng mẫu trong bộ nhớ và thông báo không ghi đè dữ liệu cũ. Nếu ghi thất bại, <code>save()</code> cũng chuyển sang bộ nhớ tạm, các thay đổi sau trong phiên không thử ghi tiếp. Nút khôi phục mẫu không tự bật lại quyền lưu.</p>
+<p><code>file://</code> có hành vi lưu trữ phụ thuộc trình duyệt. Kiểm reload ở cùng file và cùng trình duyệt; nếu dùng HTTP có sẵn, cần cùng origin, tức cùng giao thức, host và cổng. Khác địa chỉ có thể là vùng lưu khác. Không dựng server hoặc backend chỉ để hoàn thành bài đọc này.</p>
+<h3>Tám chức năng prompt gốc: chọn đúng một điểm nghẽn</h3>
+<p>Tám chức năng dưới đây kế thừa mục 3.4 bản nguồn; thẻ đầy đủ, có ngữ cảnh và cách xử lý lộ đáp án, nằm trong <a href="../../chapters/prompt-library.md">Thư viện prompt</a>. Chương giữ cách chọn và bằng chứng học, không bắt bạn chép lại tám khối dài.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Thẻ</th>
+<th>Chức năng và khi dùng</th>
+<th>Bạn phải chuẩn bị/làm</th>
+<th>Nếu đáp án lộ</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../../chapters/prompt-library.md">P01</a></td>
+<td>Socratic, một câu mỗi lượt; chưa biết vì sao bỏ khoản cuối.</td>
+<td>Tự nêu chỉ số, trace, giải thích dòng sửa.</td>
+<td>Ghi đã xem; đóng lại và trace ca một khoản mới.</td>
+</tr>
+<tr>
+<td><a href="../../chapters/prompt-library.md">P02</a></td>
+<td>Ba tầng gợi ý: vùng cần xem → quan hệ chỉ số/kích thước → bảng trống.</td>
+<td>Sau mỗi tầng báo điều vừa thử, không xin cả ba cùng lúc.</td>
+<td>Tự so ca rỗng <strong>và</strong> một khoản; rỗng riêng lẻ chưa phân biệt cận.</td>
+</tr>
+<tr>
+<td><a href="../../chapters/prompt-library.md">P03</a></td>
+<td>Trace giá trị và kiểu ở lab tiền chuỗi.</td>
+<td>Điền từng hàng, chỉ lượt đầu đổi kiểu.</td>
+<td>Che bảng, tự trace một chuỗi khác.</td>
+</tr>
+<tr>
+<td><a href="../../chapters/prompt-library.md">P04</a></td>
+<td>Review đúng một thay đổi nhỏ.</td>
+<td>Chứng minh cận, chọn test, nói validation nào chưa làm.</td>
+<td>Không thay cả file; tự so hai cận với <code>n = 1</code>.</td>
+</tr>
+<tr>
+<td><a href="../../chapters/prompt-library.md">P05</a></td>
+<td>Test trước code.</td>
+<td>Tự đề xuất ca thường, biên, sai và tính kỳ vọng.</td>
+<td>Đóng lời giải, tính ca 500 khoản tối đa.</td>
+</tr>
+<tr>
+<td><a href="../../chapters/prompt-library.md">P06</a></td>
+<td>Giải thích tiếng Anh có đối chiếu.</td>
+<td>Diễn giải câu gốc, phân biệt chuyển kiểu/kiểm hợp lệ.</td>
+<td>Tự phân tích <code>"35000abc"</code> bằng lời.</td>
+</tr>
+<tr>
+<td><a href="../../chapters/prompt-library.md">P07</a></td>
+<td>Vấn đáp như người hướng dẫn.</td>
+<td>Trả lời bằng ví dụ về chỉ số, kiểu, test, lưu trữ.</td>
+<td>Bỏ câu đã lộ khỏi đánh giá độc lập, chuyển câu mới.</td>
+</tr>
+<tr>
+<td><a href="../../chapters/prompt-library.md">P08</a></td>
+<td>Giao biến thể rồi đóng chat.</td>
+<td>Tự làm max C++ hoặc tổng nhóm Web; nêu chỗ chưa chứng minh.</td>
+<td>Chuyển sang bài đảo thứ tự, chưa xem kết quả.</td>
+</tr>
+</tbody>
+</table></div>
+<p>Một thẻ không làm thay nhiệm vụ chuẩn bị. P05 không hữu ích nếu bạn để AI tính luôn mọi kỳ vọng; P07 không phải công cụ đoán điểm học phần. Bốn phút tự thử trong P08 chỉ là lượt ngắn, không thay thử thách 25 phút ở mục 3.5.</p>
+<h2>3.4. MEMORY EXPERIMENT — Tự quan sát điều còn nhớ, không kết luận nhân quả</h2>
+<h3>Hai nhiệm vụ gần tương đương, một mục tiêu quan sát</h3>
+<p><strong>Bổ sung biên tập.</strong> Hoạt động tự quan sát nhớ lại, không nghiên cứu tác động AI lên trí nhớ. Hai nhiệm vụ cùng số khoản, phép cộng, giới hạn chỉ số; chưa có phép đo chứng minh độ khó tương đương.</p>
+<p>Chuẩn bị giấy, đồng hồ, 12–15 phút; không cần AI. Dùng cận đúng đã học, đổi thứ tự dữ liệu:</p>
+<ul>
+<li><strong>A:</strong> <code>35000, 7000, 18000</code>. Đọc câu trả lời của Minh về cận <code>i &lt; n</code> và bảng “Đầu vào / Kỳ vọng cận đúng” ở mục 3.2 (tổng <code>0 → 35000 → 42000 → 60000</code>) trong khoảng 90 giây, rồi gấp phần đó lại. Ghi rõ A đã được đọc lời giải.</li>
+<li><strong>B:</strong> <code>18000, 35000, 7000</code>. Trong khoảng 90 giây, tự viết bảng chỉ số/tổng mà không mở lời giải. Không chạy trước để lấy kết quả.</li>
+</ul>
+<p>Tung đồng xu hoặc chọn thứ tự B trước A nếu thuận tiện; ghi thứ tự thật. Không coi việc đổi thứ tự đã loại bỏ ảnh hưởng luyện tập. Nếu chưa hiểu vòng lặp, làm cả hai với trợ giúp và ghi đúng mức hỗ trợ; lúc này chỉ quan sát nhớ lại, không so “có AI” với “không AI”.</p>
+<h3>Quy trình: tách lúc học khỏi lúc nhớ lại</h3>
+<p>Sau từng nhiệm vụ, che code và ghi chép, nghỉ khoảng hai phút bằng một việc không liên quan đến bài. Sau đó trả lời cùng bốn câu trên giấy trắng: chỉ số hợp lệ là gì; tổng sau mỗi lượt là gì; điều kiện nào làm dừng; với một khoản và rỗng sẽ ra sao, vì sao? Không mở kết quả trong khi trả lời. Cuối cùng mới đối chiếu và đánh dấu phần cần nhìn lại.</p>
+<p>Nếu máy hoặc hoàn cảnh không cho nghỉ đúng thời lượng, ghi thời gian thực tế. Ngày hôm sau có thể trả lời lại bốn câu trước khi đọc chương; đây là lượt tự kiểm bổ sung, không bắt buộc để “đạt”. Không chép câu vừa đọc rồi gọi đó là nhớ lại độc lập.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Nhiệm vụ</th>
+<th>Thứ tự/thời gian thật</th>
+<th>Hỗ trợ đã xem</th>
+<th>Tự nhớ được ý nào</th>
+<th>Ý sai hoặc cần mở lại</th>
+<th>Giải thích được ca mới?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A</td>
+<td>…</td>
+<td>Bảng đã có lời giải</td>
+<td>…</td>
+<td>…</td>
+<td>…</td>
+</tr>
+<tr>
+<td>B</td>
+<td>…</td>
+<td>Tự lập bảng; ghi thêm nếu có</td>
+<td>…</td>
+<td>…</td>
+<td>…</td>
+</tr>
+<tr>
+<td>Lượt hôm sau, nếu làm</td>
+<td>…</td>
+<td>Chưa xem lại/đã xem lại</td>
+<td>…</td>
+<td>…</td>
+<td>…</td>
+</tr>
+</tbody>
+</table></div>
+<h3>Đáp án đối chiếu MEMORY EXPERIMENT</h3>
+<p>A có tổng lần lượt 35000, 42000, 60000; B có 18000, 53000, 60000. Cả hai đọc chỉ số 0, 1, 2 và dừng trước 3 với cận <code>i &lt; n</code>. Một khoản hợp lệ có tổng bằng chính khoản ấy; rỗng giữ 0. Dãy tổng trung gian khác nhau nhưng tổng cuối không đổi.</p>
+<p>Đối chiếu từng ý: nhớ 60000 chưa chứng minh nhớ quá trình cộng; nhớ tên <code>long long</code> chưa chứng minh hiểu giới hạn tổng.</p>
+<h3>Viết kết luận đúng mức bằng chứng</h3>
+<p>Nhận xét <strong>HƯ CẤU</strong> phù hợp: “A tôi nhớ tổng cuối nhưng quên lượt dừng; B tôi tự viết được ba tổng trung gian. Tôi sẽ luyện điều kiện dừng khi đóng tài liệu.” Không suy “AI làm tôi nhớ kém”.</p>
+<p>Kiến thức sẵn có, thứ tự, độ quen, mệt mỏi, thời gian, việc nhìn đáp án và cách tự chấm đều có thể ảnh hưởng. Không kiểm soát chúng và thiếu nhóm so sánh, bạn không suy nhân quả, tạo phần trăm hay gắn nhãn trí nhớ tốt/xấu. Chỉ chọn <strong>hành động học tiếp</strong>: nhớ lại, giải thích thành lời hoặc đổi dữ liệu.</p>
+<h2>3.5. 25-MINUTE NO-AI CHALLENGE — Tự làm trọn một nhiệm vụ nhỏ</h2>
+<h3>Luật phiên này: không AI từ đầu đến cuối</h3>
+<p><strong>Bổ sung biên tập.</strong> Đây là 25 phút độc lập, không phải 21 phút có AI rồi bốn phút đóng chat. Đóng hội thoại, không dùng Agent, sinh code, giải thích AI hoặc gợi ý AI trong cả phiên. Dùng vùng soạn thảo không hiện gợi ý AI đang có sẵn hoặc làm trên giấy; không đổi cấu hình công cụ để thi hành bài. Được đọc đề, hợp đồng, ghi chú cú pháp tự viết; không mở đáp án dưới đây hay nhờ người khác làm hộ.</p>
+<p>Nếu vô tình nhìn thấy gợi ý, ghi thời điểm và phần đã thấy; tiếp tục luyện nhưng không gọi cả phiên là độc lập. Điều cần bảo vệ là chất lượng bằng chứng, không phải một dấu tích đẹp.</p>
+<p><strong>Nhiệm vụ chung:</strong> đếm số khoản có tiền <strong>từ 10000 VND trở lên</strong>. Danh sách đầu vào của riêng bài đếm này <strong>đã được xác nhận hợp lệ</strong> theo hợp đồng. Bạn chưa phải viết parser hoặc validation mới; hãy ghi rõ tiền đề đó trong lời giải.</p>
+<ul>
+<li>Minh viết <code>countLargeAmounts(const std::vector&lt;long long&gt;&amp; amounts)</code>, trả số lượng bằng <code>int</code>.</li>
+<li>Lan viết <code>countLargeExpenses(expenses)</code>, dùng <code>expense.amount</code> là số, trả số lượng bằng <code>number</code>. Không đọc DOM hoặc <code>localStorage</code> trong hàm.</li>
+</ul>
+<p>Chọn một nhánh. Không đổi nhiệm vụ thành tính tổng hoặc tìm số tiền lớn nhất. Chuẩn bị ca ba khoản mẫu, rỗng, một khoản 10000, một khoản 9999, và đảo thứ tự ba khoản. Với Web, các đối tượng đầy đủ và id không trùng; với C++, chỉ cần vector tiền.</p>
+<h3>Chia thời gian để còn chỗ kiểm chứng</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Khoảng phút</th>
+<th>Việc tự làm</th>
+<th>Sản phẩm nhỏ</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0–5</td>
+<td>Diễn giải “từ 10000 trở lên”; tính kỳ vọng các ca.</td>
+<td>Bảng trước chạy, có cả biên bằng 10000.</td>
+</tr>
+<tr>
+<td>5–12</td>
+<td>Viết thuật toán bằng lời rồi code hoặc giả mã.</td>
+<td>Một biến đếm, cách duyệt, điều kiện xét khoản.</td>
+</tr>
+<tr>
+<td>12–18</td>
+<td>Trace từng khoản; nếu có môi trường sẵn thì chạy bản nháp.</td>
+<td>Kết quả thực hoặc nhãn trace, không trộn hai loại.</td>
+</tr>
+<tr>
+<td>18–22</td>
+<td>Tự tìm và sửa một điểm sai/thiếu; nếu đã đúng, giải thích vì sao.</td>
+<td>Dòng đổi và lý do hoặc lập luận bảo vệ code.</td>
+</tr>
+<tr>
+<td>22–25</td>
+<td>Đóng cả code, nói lại cách làm và ghi điểm nghẽn.</td>
+<td>Giải thích ngắn, trạng thái cuối phiên.</td>
+</tr>
+</tbody>
+</table></div>
+<p>Không cần thêm tệp: viết trong vở hoặc vùng nháp của ghi chép hiện có. Nếu thử C++ trong bản sao, giữ lại mã trước thay đổi để đối chiếu, không ghi đè bản tham khảo. Không có compiler/runtime thì hoàn thành giả mã và trace, đánh dấu phần thực thi chưa làm.</p>
+<h3>Đối chiếu theo bằng chứng, không theo tốc độ</h3>
+<p>Ghi có/chưa có cho bốn điểm: phân biệt đếm/cộng tiền; kỳ vọng độc lập; trace hoặc lần chạy được mô tả đúng; giải thích biên 10000 và rỗng. Giữ bản tự làm trước khi mở đáp án. Chưa xong thì ghi điểm nghẽn cụ thể, chẳng hạn “em tăng tiền thay vì tăng số lượng”, để chọn việc phiên sau.</p>
+<h3>Đáp án thử thách không AI — Đếm, không cộng tiền</h3>
+<p>Kỳ vọng: ba khoản mẫu có <strong>2</strong> khoản đạt; rỗng <strong>0</strong>; <code>[10000]</code> cho <strong>1</strong>; <code>[9999]</code> cho <strong>0</strong>; đảo thứ tự vẫn <strong>2</strong>. Lượt cộng tiền 18000 không có nghĩa tăng biến đếm thêm 18000; mỗi khoản thỏa điều kiện chỉ tăng 1.</p>
+<p>Các lõi sau là lời giải đọc sau phiên, giả định đầu vào đã hợp lệ; không thay thế validation ở mục 3.6.</p>
+<div class="code-wrap"><pre><code class="language-cpp">int countLargeAmounts(const std::vector&lt;long long&gt;&amp; amounts) {
+    int count = 0;
+    for (long long amount : amounts) {
+        if (amount &gt;= 10000) ++count;
+    }
+    return count;
+}
+</code></pre></div>
+<div class="code-wrap"><pre><code class="language-javascript">function countLargeExpenses(expenses) {
+  let count = 0;
+  for (const expense of expenses) {
+    if (expense.amount &gt;= 10000) count += 1;
+  }
+  return count;
+}
+</code></pre></div>
+<p>Mỗi hàm duyệt một lần, thời gian O(n), bộ nhớ phụ O(1), không thay đổi đầu vào. Biến đếm C++ tối đa 500 nên <code>int</code> phù hợp; điều này không mâu thuẫn với việc <strong>tổng tiền</strong> phải dùng <code>long long</code>. Sau khi xem đáp án, sửa lại bản nháp là ôn tập có đối chiếu, không sửa lịch sử thành “tự làm đúng ngay”.</p>
+<h2>3.6. AI CHALLENGE — Sửa ít, xác thực đủ, thử biến thể</h2>
+<p><em>Mục vận dụng: ghép các bước 3.1–3.5 vào một bài sửa thật trước khi điểm lại năng lực ở 3.7.</em></p>
+<h3>Chuẩn bị: một nhánh, một bản sao, ba loại bằng chứng</h3>
+<p>Chọn Minh hoặc Lan, nộp code/nháp, bảng kỳ vọng–thực tế và giải thích. P04/P05/P08 là hỗ trợ tùy chọn. Mở NEW, dùng bản sao <code>bai-lam</code>: C++ sửa <code>loi-bo-sot.cpp</code>, giữ <code>vi_sinh_vien.cpp</code> đối chiếu; Web giữ bốn tệp cùng thư mục, <strong>tái dựng lõi ở lab riêng</strong>, không chữa demo đúng.</p>
+<p>Trace là lập luận; test logic kiểm hàm; thao tác trình duyệt kiểm sự kiện, hiển thị, lưu trữ. Không dùng một loại để nhận đã hoàn tất cả ba.</p>
+<h3>Nhánh Minh: từ bản vá cận đến hợp đồng đầy đủ</h3>
+<p><strong>Bước 1 — Vá đúng một nguyên nhân.</strong> Trong bản sao <code>loi-bo-sot.cpp</code>, dự đoán ba khoản, một khoản 18000, rỗng trước sửa. Trace rồi đổi cận. Giữ ghi nhận: đây là bản vá duyệt trên đầu vào hợp lệ, chưa bổ sung validation.</p>
+<p><strong>Bước 2 — Bổ sung validation thành việc riêng.</strong> Tách hàm <code>totalExpenses</code> phía trên <code>main</code>, vẫn dùng <code>vector&lt;long long&gt;</code>. Kiểm số lượng trước khi chuyển <code>size()</code> sang <code>int</code>; kiểm từng tiền trước khi cộng. Danh sách sai phải ném <code>std::invalid_argument</code>, không bỏ qua khoản sai hoặc trả 0. Thêm <code>&lt;stdexcept&gt;</code> cho ngoại lệ, giữ <code>&lt;vector&gt;</code> và <code>&lt;iostream&gt;</code>. <strong>Nếu bước này quá lớn:</strong> làm hai lượt nhỏ — lượt 1 chỉ thêm kiểm số lượng (quá 500 thì ném lỗi), build và thử; lượt 2 mới thêm kiểm từng tiền. Bản hoàn chỉnh để đối chiếu nằm ở mục “Đáp án” cuối 3.6; chỉ mở sau khi đã tự thử.</p>
+<p><strong>Bước 3 — Gọi hàm và kiểm cả nhánh lỗi.</strong> Trong <code>main</code>, gọi hàm với vector đang thử. Đặt lời gọi trong <code>try</code>, bắt <code>std::invalid_argument</code> để báo lỗi và trả mã khác 0. Trọng tâm là tiền đã ở kiểu <code>long long</code>; chưa yêu cầu hệ thống nhập bàn phím phát hiện mọi chuỗi sai. Khi mở rộng nhập sau này, phải kiểm cả việc đọc/chuyển đổi thành công trước khi đưa vào vector.</p>
+<p><strong>Bước 4 — Chạy đúng bản vừa sửa.</strong> <code>loi-bo-sot.cpp</code> không có <code>--test</code>. Thay vector dữ liệu trong bản sao để thử từng ca rồi build lại, hoặc tự viết bộ gọi test khi đã hiểu (xem hàm <code>runTests()</code> trong <code>vi_sinh_vien.cpp</code> làm mẫu); không gắn <code>--test</code> và tưởng chương trình sẽ tự kiểm. Dùng <code>std::vector&lt;long long&gt;(500, 1000000000LL)</code> để tạo ca cực đại, không gõ 500 số.</p>
+<p>Từ <strong>gốc NEW</strong>, khi máy đã có <code>g++</code>, chọn đúng shell. Bash/Git Bash dùng nối <code>&amp;&amp;</code> để chỉ chạy khi build thành công:</p>
+<div class="code-wrap"><pre><code class="language-bash">g++ -std=c++17 -Wall -Wextra "bai-lam/nam-1-cpp/loi-bo-sot.cpp" -o "bai-lam/nam-1-cpp/loi-bo-sot.exe" &amp;&amp; "./bai-lam/nam-1-cpp/loi-bo-sot.exe"
+</code></pre></div>
+<p>PowerShell dùng kiểm mã build:</p>
+<div class="code-wrap"><pre><code class="language-powershell">g++ -std=c++17 -Wall -Wextra "bai-lam/nam-1-cpp/loi-bo-sot.cpp" -o "bai-lam/nam-1-cpp/loi-bo-sot.exe"
+if ($LASTEXITCODE -eq 0) { &amp; ".\bai-lam\nam-1-cpp\loi-bo-sot.exe" }
+</code></pre></div>
+<p>Đọc output và mã thoát theo mục 2.7; nếu build lỗi thì dừng, không chạy executable cũ. Dùng IDE thì Build thành công rồi Run đúng đích. Thiếu compiler thì trace, ghi chưa thực thi, không tự cài trên máy chung.</p>
+<h3>Nhánh Lan: tái dựng lõi, không chữa một demo đang đúng</h3>
+<p><strong>Bước 1 — Chọn trạng thái xuất phát rõ ràng.</strong> Nếu chưa có dữ liệu lưu, demo mở với ba khoản 60000. Muốn luyện thêm Vở ghi từ tổng 42000, trên <strong>bản sao với dữ liệu giả có thể thay</strong>, xóa riêng Vở ghi bằng nút Xóa của dòng đó rồi thêm lại. Xóa có thể được lưu; không dùng thao tác này với dữ liệu cần giữ. Không xóa cả kho trình duyệt để đạt trạng thái bài.</p>
+<p>Phương án không đụng lưu trữ: dùng mảng lab riêng gồm hai đối tượng Cơm trưa và Xe buýt. Mảng này có tổng 42000; thêm <code>{id: 3, title: 'Vở ghi', amount: 18000, category: 'hoc-tap'}</code> thì kỳ vọng 60000. Thêm Vở ghi vào đủ ba mẫu sẽ cho <strong>78000</strong>, không phải 60000. Nếu đang có dữ liệu cũ khác, tính theo dữ liệu thật đang hiển thị hoặc chuyển sang mảng lab; đừng giả định tổng ban đầu.</p>
+<p><strong>Bước 2 — Test trước lõi.</strong> Sau trim chỉ nhận chữ số, rồi kiểm số nguyên an toàn trong 1..1e9. Viết cách xử lý trước khi mở đáp án. Tách <code>parseAmount</code> khỏi <code>totalExpenses</code>; hàm tổng không chữa tiền chuỗi để che lỗi nguồn dữ liệu.</p>
+<p><strong>Bước 3 — Hai tầng kiểm tra.</strong> <code>{amount: 7000}</code> đủ cho riêng <code>totalExpenses</code>, vì hàm chỉ kiểm mảng, số lượng và tiền. Đối tượng ấy thiếu <code>id/title/category</code> nên không đủ cho <code>normalizeExpenses</code>. Normalize kiểm schema, trả danh sách mới, không chữa tiền chuỗi.</p>
+<p><strong>Bước 4 — Đọc chỗ nối.</strong> Tìm <code>D.parseAmount</code> rồi gán qua <code>D.normalizeExpenses</code> trong <code>app.js</code>, không thay handler đúng bằng lab. Nhập sai phải giữ danh sách, tổng và dữ liệu lưu. Nhập hợp lệ có thể thêm trong RAM khi ghi thất bại, nhưng phải báo bộ nhớ tạm.</p>
+<p><strong>Bước 5 — Kiểm trình duyệt.</strong> Mở <code>bai-lam/nam-2-web/index.html</code>, thêm lại Vở ghi từ hai khoản, thử đầu vào sai, đọc thông báo thêm/lưu rồi reload cùng địa chỉ. Nếu dùng RAM, không kỳ vọng thay đổi còn sau reload.</p>
+<p>Bản đầy đủ bọc logic trong hàm tự gọi, công bố <code>globalThis.ViData</code>; <code>app.js</code> lấy bằng <code>const D = globalThis.ViData</code>. Trong Node, API gán <code>module.exports</code>, bộ test dùng <code>require('./data.js')</code>. HTML nạp <strong>script thông thường</strong> theo thứ tự:</p>
+<div class="code-wrap"><pre><code class="language-html">&lt;script src="data.js"&gt;&lt;/script&gt;
+&lt;script src="app.js"&gt;&lt;/script&gt;
+</code></pre></div>
+<p>Không thêm <code>type="module"</code>, <code>import</code>, server hoặc thư viện. <code>test_data.cjs</code> là chương trình kiểm logic riêng, không gắn vào trang. Nếu đã có Node.js, chạy từ <strong>gốc NEW</strong>:</p>
+<div class="code-wrap"><pre><code class="language-bash">node "bai-lam/nam-2-web/test_data.cjs"
+</code></pre></div>
+<p>Lệnh này dùng được trong Bash hoặc PowerShell; cách đọc mã thoát tùy shell như Chương 2. <strong>Bộ Web hiện có 34 ca</strong>, gồm 33 ca gốc và regression cho <code>category</code> dạng mảng. Kỳ vọng bản đúng là <code>34 passed, 0 failed</code>; đó chưa phải kết quả máy bạn. Bản C++ tham khảo <code>vi_sinh_vien.cpp</code> có <strong>9 ca</strong>, chạy bằng <code>--test</code> sau build; không lẫn bộ này với bản bài làm <code>loi-bo-sot.cpp</code> không có bộ test. Test tham khảo xanh cũng không chứng minh hàm lab tự viết đúng.</p>
+<h3>Bảng kiểm thử: ghi kỳ vọng trước, thực tế sau</h3>
+<p>Bảng giữ các ca cốt lõi của nguồn, thêm ranh giới schema. Cột thực tế để người học điền; “chưa chạy” khác “đã chạy đạt”. Với ca sai, kỳ vọng là <strong>từ chối</strong>, không phải tổng 0. Trong hàm, từ chối là phát sinh lỗi; ở giao diện, bắt lỗi và không nhận thay đổi sai.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Ca</th>
+<th>Kỳ vọng</th>
+<th>Vì sao cần</th>
+<th>Thực tế/trạng thái</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Ba khoản mẫu</td>
+<td>60000</td>
+<td>Cộng đủ ba số hạng.</td>
+<td>…</td>
+</tr>
+<tr>
+<td>Chỉ Vở ghi 18000</td>
+<td>18000</td>
+<td>Phát hiện bỏ phần tử cuối.</td>
+<td>…</td>
+</tr>
+<tr>
+<td>Rỗng</td>
+<td>0</td>
+<td>Tổng của danh sách hợp lệ không có khoản.</td>
+<td>…</td>
+</tr>
+<tr>
+<td>Đảo thứ tự ba khoản</td>
+<td>60000</td>
+<td>Tổng không phụ thuộc thứ tự.</td>
+<td>…</td>
+</tr>
+<tr>
+<td>Một khoản 1; một khoản 1000000000</td>
+<td>Lần lượt 1; 1000000000</td>
+<td>Hai biên đều được nhận.</td>
+<td>…</td>
+</tr>
+<tr>
+<td>500 khoản, mỗi khoản 1000000000</td>
+<td>500000000000</td>
+<td>Kiểm số lượng và kiểu tổng.</td>
+<td>…</td>
+</tr>
+<tr>
+<td>501 khoản, tiền đều hợp lệ</td>
+<td>Từ chối</td>
+<td>Không chỉ kiểm từng tiền.</td>
+<td>…</td>
+</tr>
+<tr>
+<td>Có khoản 0, âm hoặc 1000000001</td>
+<td>Từ chối từng ca</td>
+<td>Không bỏ qua khoản sai.</td>
+<td>…</td>
+</tr>
+<tr>
+<td>JS có <code>amount: "35000"</code> hoặc <code>1.5</code></td>
+<td>Từ chối</td>
+<td>Không là tiền số nguyên hợp lệ.</td>
+<td>…</td>
+</tr>
+<tr>
+<td>Chuỗi nhập <code>" 35000 "</code></td>
+<td>Số 35000</td>
+<td>Cho phép khoảng trắng ngoài cùng.</td>
+<td>…</td>
+</tr>
+<tr>
+<td>Nhập <code>""</code>, <code>" "</code>, <code>"35.000"</code>, <code>"35000abc"</code></td>
+<td>Từ chối từng ca</td>
+<td>Kiểm toàn chuỗi, không đọc một phần.</td>
+<td>…</td>
+</tr>
+<tr>
+<td>Nhập <code>"0"</code>, <code>"1000000001"</code>, <code>"1e3"</code></td>
+<td>Từ chối từng ca</td>
+<td>Cách viết đúng chưa đủ; ký hiệu mũ không được nhận.</td>
+<td>…</td>
+</tr>
+<tr>
+<td>Schema có id trùng, 0 hoặc không an toàn</td>
+<td>Từ chối từng ca</td>
+<td>Danh tính khoản phải hợp lệ, duy nhất.</td>
+<td>…</td>
+</tr>
+<tr>
+<td>Title toàn khoảng trắng hoặc 81 đơn vị UTF-16</td>
+<td>Từ chối từng ca</td>
+<td>Kiểm sau trim, giới hạn 80.</td>
+<td>…</td>
+</tr>
+<tr>
+<td>Title <code>" Vở ghi "</code></td>
+<td>Chuẩn hóa thành <code>"Vở ghi"</code></td>
+<td>Không làm biến đổi tiền.</td>
+<td>…</td>
+</tr>
+<tr>
+<td>Category <code>"khac"</code> / <code>['khac']</code> / <code>"toString"</code></td>
+<td>Nhận / từ chối / từ chối</td>
+<td>Kiểm kiểu chuỗi và khóa riêng trong danh mục.</td>
+<td>…</td>
+</tr>
+</tbody>
+</table></div>
+<p>Nếu tạo 500 đối tượng để thử <strong>normalize</strong>, dùng id riêng cho từng khoản; nhân bản cùng một id 500 lần sẽ kiểm lỗi trùng id chứ chưa kiểm được biên số lượng hợp lệ. Nếu chỉ thử <strong>totalExpenses</strong>, các đối tượng có tiền là đủ theo phạm vi hàm.</p>
+<h3>Đáp án validation C++ — Lõi đầy đủ, không phải chỉ một dòng cận</h3>
+<p>Lõi sau kế thừa <code>vi-du/nam-1-cpp/vi_sinh_vien.cpp</code>. Đặt hàm trên <code>main</code> trong bản bài làm, không chép đè bản tham khảo có <code>runTests()</code> và nhánh <code>--test</code>.</p>
+<div class="code-wrap"><pre><code class="language-cpp">#include &lt;iostream&gt;
+#include &lt;stdexcept&gt;
+#include &lt;vector&gt;
+
+long long totalExpenses(const std::vector&lt;long long&gt;&amp; amounts) {
+    if (amounts.size() &gt; 500) {
+        throw std::invalid_argument("Toi da 500 khoan chi");
+    }
+    long long total = 0;
+    int n = static_cast&lt;int&gt;(amounts.size());
+    for (int i = 0; i &lt; n; ++i) {
+        if (amounts[i] &lt;= 0 || amounts[i] &gt; 1000000000LL) {
+            throw std::invalid_argument("Moi khoan: 1 den 1000000000 VND");
+        }
+        total += amounts[i];
+    }
+    return total;
+}
+</code></pre></div>
+<p><code>const ...&amp;</code> nhận tham chiếu chỉ đọc, không sao chép vector. Khi rỗng, không vào thân vòng lặp, tổng giữ 0. Kiểm số lượng trước phép ép kích thước; kiểm tiền trước cộng; không có nhánh “gặp sai thì bỏ qua”. Thời gian O(n), bộ nhớ phụ O(1).</p>
+<p>Mẫu <code>main</code> cho bản bài làm, có bắt lỗi, được bổ sung để thử các ca sai. Chỉ thay vector khi thử dữ liệu khác; các dòng tên khoản dưới đây mô tả riêng bộ mẫu, nên cần đổi/bỏ chúng nếu đổi dữ liệu, tránh nhãn in không khớp.</p>
+<div class="code-wrap"><pre><code class="language-cpp">int main() {
+    const std::vector&lt;long long&gt; amounts = {35000, 7000, 18000};
+    try {
+        const long long total = totalExpenses(amounts);
+        std::cout &lt;&lt; "Com trua: 35000 VND\nXe buyt: 7000 VND\nVo ghi: 18000 VND\n";
+        std::cout &lt;&lt; "Tong chi tieu: " &lt;&lt; total &lt;&lt; " VND\n";
+        return 0;
+    } catch (const std::invalid_argument&amp; error) {
+        std::cerr &lt;&lt; error.what() &lt;&lt; '\n';
+        return 1;
+    }
+}
+</code></pre></div>
+<p><strong>Đầu ra kỳ vọng</strong> với bộ mẫu là ba dòng tiền và <code>Tong chi tieu: 60000 VND</code>; không phải log đã chạy. Khi thử ca sai, nhánh bắt lỗi trả 1, không in tổng hợp lệ bằng 0. Hàm này nhận tiền đã có kiểu số nguyên; nó không thể phát hiện một lỗi parser đã biến đầu vào sai thành số hợp lệ từ trước.</p>
+<h3>Đáp án validation Web — Tách parse, tổng và schema trong lab</h3>
+<p>Lõi <code>validAmount</code>, <code>parseAmount</code>, <code>totalExpenses</code>, <code>normalizeExpenses</code> dưới đây kế thừa <code>vi-du/nam-2-web/data.js</code> của NEW, có kiểm <strong>kiểu chuỗi category</strong>. Vỏ <code>chapter3Lab</code> là <strong>bổ sung biên tập</strong> để thử độc lập; không thay <code>globalThis.ViData</code>, không truy cập DOM/lưu trữ và không chép đè <code>data.js</code>.</p>
+<p>Nếu muốn thử, mở <code>bai-lam/nam-2-web/index.html</code>, nhấn F12 rồi chọn thẻ <strong>Console</strong> (cách mở ở mục 2.4, Chương 2). Lần đầu dán mã, Chrome/Edge có thể chặn và yêu cầu tự gõ một cụm cho phép dán; đọc kỹ cảnh báo, chỉ dán khối trong cẩm nang này, không dán mã lạ. Đọc rồi nhập khối lab một lần; <code>var chapter3Lab</code> cho phép tạo lại lab sau khi sửa. Có thể chỉ đọc/trace nếu chưa quen Console. Khối này tự đủ phần logic, không cần gói ngoài.</p>
+<div class="code-wrap"><pre><code class="language-javascript">var chapter3Lab = (function () {
+  'use strict';
+  const MAX_AMOUNT = 1000000000;
+  const MAX_ITEMS = 500;
+  const categories = Object.freeze({
+    'an-uong': 'Ăn uống', 'di-lai': 'Đi lại',
+    'hoc-tap': 'Học tập', 'khac': 'Khác'
+  });
+
+  function validAmount(amount) {
+    return Number.isSafeInteger(amount) &amp;&amp; amount &gt; 0 &amp;&amp; amount &lt;= MAX_AMOUNT;
+  }
+
+  function parseAmount(input) {
+    if (typeof input !== 'string' || !/^[0-9]+$/.test(input.trim())) {
+      throw new Error('Nhập số nguyên VND, không có dấu chấm, phẩy hay chữ.');
+    }
+    const amount = Number(input.trim());
+    if (!validAmount(amount)) throw new Error('Số tiền phải từ 1 đến 1.000.000.000 VND.');
+    return amount;
+  }
+
+  function totalExpenses(expenses) {
+    if (!Array.isArray(expenses) || expenses.length &gt; MAX_ITEMS) {
+      throw new Error('Danh sách tối đa 500 khoản.');
+    }
+    let total = 0;
+    for (const expense of expenses) {
+      if (!expense || !validAmount(expense.amount)) {
+        throw new Error('amount phải là số nguyên VND hợp lệ.');
+      }
+      total += expense.amount;
+    }
+    return total;
+  }
+
+  function normalizeExpenses(input) {
+    if (!Array.isArray(input) || input.length &gt; MAX_ITEMS) {
+      throw new Error('Dữ liệu lưu không đúng định dạng.');
+    }
+    const ids = new Set();
+    return input.map(item =&gt; {
+      if (!item || !Number.isSafeInteger(item.id) || item.id &lt; 1 || ids.has(item.id) ||
+          typeof item.title !== 'string' || !item.title.trim() || item.title.trim().length &gt; 80 ||
+          typeof item.category !== 'string' || !Object.hasOwn(categories, item.category) ||
+          !validAmount(item.amount)) {
+        throw new Error('Một khoản lưu sẵn không hợp lệ.');
+      }
+      ids.add(item.id);
+      return { id: item.id, title: item.title.trim(), amount: item.amount, category: item.category };
+    });
+  }
+
+  return { parseAmount, totalExpenses, normalizeExpenses, categories };
+})();
+</code></pre></div>
+<p><code>/^[0-9]+$/</code> kiểm toàn chuỗi sau trim, không nhận dấu chấm, phẩy, chữ hoặc mũ. <code>parseInt("35000abc", 10)</code> có thể đọc được tiền tố 35000, nên chỉ thêm radix không sửa được lỗi nhận hậu tố. <code>Number.isInteger</code> kiểm số nguyên; ở đây dùng <code>Number.isSafeInteger</code> rồi giới hạn riêng miền tiền. <code>"0007"</code> hợp lệ và cho số 7; <code>"0"</code> chỉ đúng cách viết nhưng sai miền.</p>
+<p><code>Object.hasOwn</code> kiểm khóa riêng, nhưng không thay kiểm kiểu: <code>['khac']</code> có thể bị ép thành tên khóa <code>"khac"</code>. Vì vậy phải giữ <code>typeof item.category !== 'string'</code>. <code>Set</code> lưu id đã gặp để phát hiện trùng. Normalize trả đối tượng mới với title đã trim, không sửa đối tượng đầu vào. Nó dùng thêm O(n) bộ nhớ cho danh sách mới và tập id; không gọi mọi phần của quá trình này là O(1).</p>
+<p>Ví dụ thử sau khi mở bản Web và tạo lab; các chú thích là <strong>kỳ vọng</strong>, không phải thông báo kiểm thử đã chạy:</p>
+<div class="code-wrap"><pre><code class="language-javascript">chapter3Lab.totalExpenses(globalThis.ViData.sampleExpenses()); // kỳ vọng 60000
+chapter3Lab.parseAmount(' 35000 ');                            // kỳ vọng số 35000
+chapter3Lab.totalExpenses([]);                                // kỳ vọng 0
+</code></pre></div>
+<p>Thử từng ca sai riêng và chờ lỗi: <code>chapter3Lab.parseAmount('35000abc')</code>, hoặc <code>chapter3Lab.totalExpenses([{amount: '35000'}])</code>. Lỗi mong đợi không phải “Console hỏng”; đó là hàm đang từ chối dữ liệu. Để kiểm không thay đổi đầu vào, chụp giá trị JSON trước/sau lời gọi rồi đối chiếu, không chỉ nhìn tổng.</p>
+<h3>Biến thể: đóng chat trước khi mở lời giải</h3>
+<p><strong>Minh:</strong> viết <code>maxExpense</code> nhận cùng vector tiền, rỗng trả 0, vẫn từ chối mọi tiền sai và quá 500 khoản. Tự dự đoán ba khoản, một khoản và rỗng. Đừng chỉ đổi tên hàm tổng; biến đang giữ <strong>một khoản lớn nhất</strong>, không phải tổng đã cộng.</p>
+<p><strong>Lan:</strong> viết <code>totalByCategory</code>, nhận danh sách Expense và mã nhóm. Mã nhóm phải là chuỗi trong danh mục. Kiểm <strong>toàn bộ danh sách</strong> trước khi chọn nhóm, gồm schema, tiền và số lượng; bất kỳ khoản sai nào cũng làm lời gọi bị từ chối, kể cả khoản thuộc nhóm khác. Không giả định đầu vào đã được normalize ở nơi nào đó nếu chữ ký hàm chưa nêu tiền đề ấy.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Biến thể/ca</th>
+<th>Kỳ vọng cần tự đối chiếu</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Max ba mẫu / chỉ Vở ghi / rỗng</td>
+<td>35000 / 18000 / 0</td>
+</tr>
+<tr>
+<td>Max có 0, số âm, quá 1e9 hoặc 501 khoản</td>
+<td>Từ chối, dù đã gặp một giá trị lớn hợp lệ trước đó.</td>
+</tr>
+<tr>
+<td>Tổng <code>hoc-tap</code> / <code>khac</code> trên ba mẫu</td>
+<td>18000 / 0</td>
+</tr>
+<tr>
+<td>Tổng nhóm trên rỗng, mã nhóm hợp lệ</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Chọn <code>hoc-tap</code>, khoản <code>di-lai</code> có amount chuỗi hoặc 1.5</td>
+<td>Từ chối, không trả 18000.</td>
+</tr>
+<tr>
+<td>Chọn <code>hoc-tap</code>, khoản ngoài nhóm có id trùng, title rỗng hoặc category mảng</td>
+<td>Từ chối từng ca schema.</td>
+</tr>
+<tr>
+<td>501 khoản, không khoản nào thuộc nhóm chọn</td>
+<td>Từ chối, không trả 0.</td>
+</tr>
+<tr>
+<td>Mã nhóm yêu cầu là <code>['khac']</code> hoặc <code>toString</code></td>
+<td>Từ chối mã nhóm.</td>
+</tr>
+</tbody>
+</table></div>
+<h3>Đáp án biến thể max C++ — Kiểm hết rồi mới kết luận</h3>
+<p>Đặt hàm sau <code>totalExpenses</code> trong bản bài làm; nó dùng lại validation của hàm tổng. Cách này duyệt hai lượt nhưng dễ đọc ở năm nhất, vẫn O(n) thời gian và O(1) bộ nhớ phụ.</p>
+<div class="code-wrap"><pre><code class="language-cpp">long long maxExpense(const std::vector&lt;long long&gt;&amp; amounts) {
+    totalExpenses(amounts); // Kiểm toàn bộ tiền và số lượng; có thể ném lỗi.
+    long long best = 0;
+    for (long long amount : amounts) {
+        if (amount &gt; best) best = amount;
+    }
+    return best;
+}
+</code></pre></div>
+<p>Mốc 0 phù hợp vì mọi khoản hợp lệ đều dương; rỗng giữ 0 mà không cần truy cập phần tử đầu. Với mẫu, <code>best</code> thành 35000 và giữ nguyên khi gặp 7000, 18000. Không được trả sớm khi gặp 1000000000 trước khi kiểm các khoản còn lại: danh sách có thể chứa khoản sai phía sau. Gọi hàm tổng ở đầu là cách tái sử dụng kiểm tra, không có nghĩa tổng chính là max. Khi thêm test, đổi lời gọi sang <code>maxExpense</code>, đừng chạy lại hàm tổng rồi nhận là đã test max.</p>
+<h3>Đáp án tổng theo category — Xác thực trước, chọn nhóm sau</h3>
+<p>Hàm lab sau dùng <code>chapter3Lab</code> đã tạo ở đáp án Web. Đây là <strong>hàm bổ sung</strong>, chưa có trong API demo; không nói bộ 34 test hiện có đã kiểm nó.</p>
+<div class="code-wrap"><pre><code class="language-javascript">function totalByCategory(expenses, category) {
+  if (typeof category !== 'string' || !Object.hasOwn(chapter3Lab.categories, category)) {
+    throw new Error('Mã nhóm không hợp lệ.');
+  }
+  const checked = chapter3Lab.normalizeExpenses(expenses);
+  const selected = checked.filter(expense =&gt; expense.category === category);
+  return chapter3Lab.totalExpenses(selected);
+}
+</code></pre></div>
+<p>Nếu mã nhóm sai, lời gọi bị từ chối ngay. Khi mã hợp lệ, normalize kiểm toàn danh sách trước lọc: không có kết quả nhóm nào được trả từ danh sách chứa khoản sai. <code>totalExpenses(selected)</code> cộng sau khi schema đã được bảo vệ. Nếu nơi gọi đã có bảo đảm schema rõ ràng, có thể kiểm toàn bộ tiền/số lượng bằng <code>totalExpenses(expenses)</code> trước khi lọc; nhưng <strong>chỉ lời gọi đó không đủ chứng minh schema</strong> cho hàm nhận dữ liệu bất kỳ.</p>
+<p>Ví dụ phản chứng với bộ mẫu: đổi riêng tiền Xe buýt thành <code>"7000"</code>, vẫn hỏi <code>hoc-tap</code>. Hàm phải ném lỗi, dù Vở ghi hoàn toàn đúng. Đổi Xe buýt thành id 1 trùng Cơm trưa cũng phải lỗi. Lọc <code>hoc-tap</code> trước normalize sẽ làm biến mất các bằng chứng sai đó và trả 18000 trái hợp đồng.</p>
+<p>Với dữ liệu hợp lệ, <code>hoc-tap</code> cho 18000, <code>khac</code> cho 0. Số 0 này nghĩa không có khoản thuộc nhóm, không phải “gặp lỗi nên trả 0”. Cách normalize rồi filter tạo danh sách mới, nên toàn hàm O(n) thời gian, O(n) bộ nhớ phụ. Có thể tối ưu sau, nhưng chưa đánh đổi thứ tự kiểm tra để tiết kiệm một lượt duyệt nhỏ.</p>
+<h2>3.7. SKILL UNLOCKED — Năng lực ở lại khi cửa sổ chat đóng</h2>
+<h3>Ba mức tự đánh giá, không phải nhãn năng lực lâu dài</h3>
+<p>Chọn <strong>tự làm / cần gợi ý / chưa làm</strong>, kèm bằng chứng. “Tự làm” nghĩa đã đóng chat, không nhìn đáp án. Đây là ghi nhận hiện tại, không phán năng lực lâu dài.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Năng lực</th>
+<th>Việc cần làm được</th>
+<th>Mức và bằng chứng của bạn</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Giải thích</td>
+<td>Nêu hợp đồng tiền, số lượng, tổng rỗng, tổng cực đại.</td>
+<td>…</td>
+</tr>
+<tr>
+<td>Giải thích</td>
+<td>Trace đến 60000 và chỉ vì sao cận lỗi dừng ở 42000.</td>
+<td>…</td>
+</tr>
+<tr>
+<td>Giải thích</td>
+<td>Phân biệt <code>35000</code> với <code>"35000"</code>, hậu quả của phép <code>+</code>.</td>
+<td>…</td>
+</tr>
+<tr>
+<td>Sửa</td>
+<td>Chỉ thay phần gây lỗi, tách vá cận khỏi validation.</td>
+<td>…</td>
+</tr>
+<tr>
+<td>Sửa</td>
+<td>Tự chọn ca một khoản, rỗng, biên lớn và dữ liệu sai.</td>
+<td>…</td>
+</tr>
+<tr>
+<td>Sửa</td>
+<td>Phân biệt từ chối với tổng hợp lệ bằng 0.</td>
+<td>…</td>
+</tr>
+<tr>
+<td>Vận dụng</td>
+<td>Làm max hoặc tổng nhóm và không che khoản sai ngoài nhóm.</td>
+<td>…</td>
+</tr>
+<tr>
+<td>Vận dụng</td>
+<td>Nêu phần đã nhận hỗ trợ, tự làm và còn cần hỏi.</td>
+<td>…</td>
+</tr>
+</tbody>
+</table></div>
+<p>Chọn một dòng chưa làm được, thu nhỏ ví dụ rồi thử lại. Bài đếm 3.5 là bước vận dụng nhỏ, chưa thay validation ở 3.6.</p>
+<h3>Tám câu vấn đáp: hỏi từng câu rồi chờ</h3>
+<p>Nhờ bạn học hoặc dùng P07; hỏi rồi chờ, cho phép giấy và ví dụ. Không suy điểm học phần.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Câu hỏi</th>
+<th>Gợi ý để tự lập luận</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1. Vì sao đúng 60000 nhưng cận lỗi ra 42000?</td>
+<td>Viết ba số hạng và tìm phép cộng chưa xảy ra.</td>
+</tr>
+<tr>
+<td>2. Ba phần tử có chỉ số cuối nào; dừng khi nào?</td>
+<td>Phân biệt số lượng với chỉ số bắt đầu từ 0.</td>
+</tr>
+<tr>
+<td>3. Vì sao cần <code>long long</code> dù ba khoản đều nhỏ?</td>
+<td>Nhân số khoản tối đa với tiền tối đa.</td>
+</tr>
+<tr>
+<td>4. Rỗng trả 0 có mâu thuẫn tiền phải dương?</td>
+<td>Tổng danh sách và tiền của một khoản là hai đối tượng.</td>
+</tr>
+<tr>
+<td>5. Vì sao <code>0 + "35000"</code> không là tổng hợp lệ?</td>
+<td>Nêu kiểu hai toán hạng và kết quả.</td>
+</tr>
+<tr>
+<td>6. Chuyển chuỗi thành số đã đủ chưa?</td>
+<td>Xét rỗng, <code>"0"</code>, số âm, quá giới hạn và hậu tố chữ.</td>
+</tr>
+<tr>
+<td>7. <code>localStorage</code> có nghĩa có tài khoản hoặc CSDL máy chủ?</td>
+<td>Chỉ nơi dữ liệu nằm, phạm vi origin và trạng thái RAM.</td>
+</tr>
+<tr>
+<td>8. Test xanh đã chứng minh bạn hiểu chưa?</td>
+<td>Tự giải thích một ca, sửa một lỗi và làm biến thể mới.</td>
+</tr>
+</tbody>
+</table></div>
+<h3>Đáp án vấn đáp — Những ý cần có, không phải văn mẫu để học thuộc</h3>
+<ol>
+<li>Thiếu Vở ghi 18000 vì chỉ số 2 chưa vào thân vòng lặp; 35000 + 7000 là 42000.</li>
+<li>Chỉ số cuối là 2 khi <code>n = 3</code>; cận đúng cho 0, 1, 2 và chặn 3 trước truy cập.</li>
+<li>Tổng tối đa 500000000000 vượt số nguyên có dấu 32 bit; cần xét hợp đồng, không chỉ mẫu nhỏ.</li>
+<li>Rỗng không chứa khoản 0 nào; nó không có khoản để cộng, nên tổng 0 hợp lệ.</li>
+<li>Phép <code>+</code> với số 0 và chuỗi tạo <code>"035000"</code>, kiểu string, không phải tiền number.</li>
+<li>Cần kiểm cách viết và miền giá trị; chuyển được chưa đủ, còn hàm tổng phải từ chối tiền chuỗi.</li>
+<li>Dữ liệu ở trình duyệt, không đồng bộ/tài khoản/backend; đọc hoặc ghi lỗi có thể chuyển sang RAM. SQLite là bài riêng.</li>
+<li>Test chỉ kiểm những ca đã chọn trên mã đã gọi; hiểu cần lời giải thích và vận dụng không nhìn đáp án.</li>
+</ol>
+<p>Nếu câu trả lời còn mơ hồ, hỏi thêm một ví dụ thay vì phán “chưa hiểu gì”. “Em chưa biết xử lý JSON sai mà không ghi đè bản cũ” là điểm nghẽn cụ thể để luyện tiếp.</p>
+<h3>Chu trình và phiếu ba dòng</h3>
+<p><img alt="Chu trình học chủ động: mục tiêu, tự thử, dự đoán, một gợi ý, tự sửa, kiểm chứng, biến thể không AI và ghi chỗ chưa chắc." src="../../assets/active-learning.svg"/></p>
+<div class="code-wrap"><pre><code class="language-text">Chọn mục tiêu + đọc hợp đồng
+          ↓
+Tự thử → Dự đoán trước hỏi/chạy
+          ↓
+Xin một gợi ý → Tự trả lời → Tự sửa một điểm
+          ↓
+Kiểm chứng bằng test
+    ├─ Chưa đúng → Ghi điểm nghẽn → Thu nhỏ và thử lại
+    └─ Đúng → Biến thể không AI → Ghi chỗ chưa chắc
+                                      ↓
+                              Chọn việc tiếp theo
+</code></pre></div>
+<p>Cuối phiên chỉ cần ba dòng. Ví dụ sau là <strong>phiếu HƯ CẤU</strong>, không phải kết quả học của một sinh viên thật:</p>
+<div class="code-wrap"><pre><code class="language-text">Học được: Cận cũ không cho i = 2 đi vào thân vòng lặp.
+Chưa chắc: Tôi chưa tự giải thích hết kiểm tra dữ liệu đọc từ JSON.
+Việc tiếp: Tự trace ca một khoản và một ca sai ngoài nhóm, chưa mở AI.
+</code></pre></div>
+<p>Gọi tên hành động hoặc kiến thức cụ thể; “học được nhiều” không giúp phiên sau biết bắt đầu đâu. Đầu ra cuối chương là một bài làm nhỏ, bảng kiểm có trạng thái thật và lời giải thích của chính bạn. Nếu muốn ghép thêm diff, hai lỗi chủ đích và khai báo hỗ trợ, chuyển sang <a href="../../chapters/final-boss.md">Final Boss</a> sau khi học đủ các phần liên quan; bộ đề đó khác bài cận đơn và demo Web đúng ở đây.</p>
+<h3>Gợi ý cho người hướng dẫn: trình bày trong bảy phút</h3>
+<p>Phần này kế thừa speaker notes của nguồn; tham gia tự nguyện, không kiểm tra bất ngờ. Phút 0–1 giới thiệu dữ liệu và mời tính tay; phút 1–2 hỏi phần luyện nào bị mất nếu AI viết luôn vòng lặp; phút 2–3:15 cho tự ghi chỉ số trước khi hiện trace Minh. Phút 3:15–4:30 đặt số cạnh chuỗi, dự đoán lượt cộng đầu; phút 4:30–5:30 làm mẫu hỏi một câu rồi chờ. Phút 5:30–6:30 cho phác biến thể độc lập; phút cuối điền phiếu ba dòng. Bảy phút chỉ là dẫn nhập, không thay hai hoạt động 25 phút hoặc dùng làm phép đo tốc độ.</p>
+<h3>Nguồn kế thừa và điểm kết năng lực</h3>
+<p>Kế thừa chương 3 (mục 3.1–3.7) của <a href="../../source/Cam-nang-AI-Sinh-vien.original.md">bản bảo toàn</a>, <a href="../../editorial/02_EDITORIAL_BLUEPRINT.md">Blueprint</a>, <a href="../../editorial/01_SOURCE_AUDIT.md">Source Audit</a>, P01–P08 trong <a href="../../chapters/prompt-library.md">Thư viện prompt</a> và mã <a href="../../vi-du/nam-2-web/data.js">data.js</a>, <a href="../../vi-du/nam-2-web/app.js">app.js</a>, <a href="../../vi-du/nam-1-cpp/vi_sinh_vien.cpp">C++</a>. Hoạt động và vỏ lab mới có nhãn bổ sung biên tập tại chỗ.</p>
+<p><strong>Năng lực mở khóa:</strong> tự dự đoán, sửa và kiểm chứng; giải thích được 60000, 42000 và chuỗi nối sai. Khi đóng chat, bạn còn cách tự làm lại, bằng chứng kiểm được và một việc tiếp theo cụ thể.</p>
+</main></body></html>

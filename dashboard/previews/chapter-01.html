@@ -1,0 +1,899 @@
+<!doctype html><html lang="vi"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>CHƯƠNG 1 · BƯỚC VÀO THẾ GIỚI AI</title><style>:root{--paper:#f6f3ea;--ink:#20342d;--muted:#58685f;--green:#35634b;--soft:#dce8d0;--rust:#b95132;--yellow:#f2dfa5;--line:#d4dbcf;--font:18px;--nav:270px}*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:90px}body{margin:0;background:var(--paper);color:var(--ink);font:var(--font)/1.8 system-ui,-apple-system,'Segoe UI',sans-serif}a{color:var(--green);text-underline-offset:4px}button,input,select{font:inherit}button,select{cursor:pointer}button{padding:8px 15px;min-height:40px;border:1px solid #879b85;border-radius:5px;background:transparent;color:var(--ink)}button:hover{background:var(--soft)}a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,summary:focus-visible{outline:3px solid var(--rust);outline-offset:4px}img{max-width:100%;height:auto}h1,h2,h3,h4{line-height:1.24;text-wrap:balance}h1,h2{font-family:Georgia,'Times New Roman',serif;font-weight:500;letter-spacing:-.035em}h1{font-size:clamp(48px,6vw,82px)}h2{font-size:clamp(31px,3vw,43px);margin:64px 0 25px}h3{font-size:24px;margin:40px 0 18px;letter-spacing:-.025em}h4{font-size:20px;margin:30px 0 16px}p{margin:0 0 20px}li{margin:8px 0}ul,ol{padding-left:26px}strong{font-weight:700}code{font: .87em/1.5 ui-monospace,Consolas,monospace;background:#e8ebdf;padding:2px 5px;border-radius:3px;overflow-wrap:anywhere}pre{margin:0;padding:23px;overflow-x:auto;max-width:100%;background:#21362f;color:#eef3e5;font-size:14px;line-height:1.65;tab-size:4}pre code{font:inherit;color:inherit;background:none;padding:0;border-radius:0;white-space:pre;overflow-wrap:normal}blockquote{margin:25px 0;padding:20px 24px;border-left:3px solid var(--green);background:#e8ecde;font-size:.96em}blockquote p:last-child{margin:0}hr{border:0;border-top:1px solid var(--line);margin:50px 0}.skip{position:fixed;left:12px;top:-100px;z-index:100;background:white;padding:12px}.skip:focus{top:12px}.sidebar{position:fixed;inset:0 auto 0 0;width:var(--nav);border-right:1px solid var(--line);padding:28px 22px 22px;background:#eceee3;overflow-y:auto;z-index:30}.brand{font:700 19px/1.25 system-ui;text-decoration:none;color:var(--ink);display:block;letter-spacing:-.03em}.brand small{display:block;font:11px/1.5 ui-monospace,monospace;letter-spacing:.08em;margin-top:9px;color:var(--muted)}.nav-search{margin:26px 0 16px;width:100%;background:transparent;border:1px solid #abb7a5;border-radius:5px;padding:9px 11px;font-size:13px}.toc{padding:0;list-style:none}.toc ul{list-style:none;margin:0 0 17px;padding:0 0 0 12px}.toc li{margin:3px 0}.toc a{display:block;font-size:12px;line-height:1.5;text-decoration:none;padding:5px 7px;border-radius:4px;color:#52634f}.toc>.toc-group>.chapter-link{font-size:13px;font-weight:700;color:var(--ink);margin-top:14px}.toc a:hover,.toc a.active{background:#dce5d0;color:#20342d}.nav-foot{font-size:11px;line-height:1.6;border-top:1px solid var(--line);padding-top:16px;margin-top:24px;color:var(--muted)}.topbar{height:62px;position:sticky;top:0;margin-left:var(--nav);display:flex;align-items:center;justify-content:space-between;padding:0 4vw;background:#f6f3eafa;border-bottom:1px solid var(--line);z-index:20;gap:12px}.top-label{font:11px/1.5 ui-monospace,monospace;letter-spacing:.12em;text-transform:uppercase}.tools{display:flex;align-items:center;gap:7px}.tools button{font-size:12px;padding:5px 9px;min-height:35px}.scroll-track{height:2px;position:absolute;bottom:0;left:0;right:0;background:var(--line)}#scroll-progress{height:100%;width:0;background:var(--rust)}.mobile-menu{display:none}.shade{display:none}main{margin-left:var(--nav)}.inner{max-width:1190px;padding:0 5vw;margin:auto}.eyebrow{font:11px/1.6 ui-monospace,monospace;letter-spacing:.17em;text-transform:uppercase}.hero{padding:64px 0 45px;border-bottom:1px solid var(--line)}.hero-grid{display:grid;grid-template-columns:1.05fr 1fr;gap:20px;align-items:center}.hero h1{margin:20px 0 25px}.hero h1 em{color:var(--rust);font-weight:400}.hero .lede{font-size:20px;line-height:1.6;max-width:620px}.hero-art{width:100%;border-radius:50% 50% 10px 10px}.hero-nav{display:flex;flex-wrap:wrap;gap:10px;margin-top:27px}.hero-nav a{padding:11px 17px;text-decoration:none;font-size:13px;border:1px solid var(--green);border-radius:4px}.hero-nav a:first-child{background:var(--green);color:#fff}.edition{font-size:11px;color:var(--muted);margin-top:35px;letter-spacing:.02em}.route-map{display:grid;grid-template-columns:repeat(4,1fr);margin:35px 0 0;border-top:1px solid var(--line)}.route-map a{padding:17px 12px 0 0;text-decoration:none;font-size:12px}.route-map b{display:block;font:23px Georgia;margin-bottom:5px}.intro{padding:20px 0 60px}.chapter{padding:70px 0 50px;border-top:1px solid var(--line)}.chapter-heading{display:grid;grid-template-columns:90px 1fr;gap:25px;align-items:start;margin:0 0 32px}.chapter-num{font:75px/.95 Georgia;color:var(--rust);letter-spacing:-.06em}.chapter-heading h2{font-size:clamp(36px,4.4vw,63px);margin:12px 0 18px;max-width:760px}.chapter-heading p{font-size:15px;color:var(--muted);line-height:1.65;max-width:720px}.opener{margin:0 0 50px}.opener img{width:100%;border:1px solid var(--line);border-radius:8px}.prose{max-width:900px;margin:0 auto;min-width:0}.prose>p:first-child{font-size:1.08em}.prose figure{margin:36px 0}.prose figure img{width:100%;border-radius:7px;border:1px solid var(--line);background:#f6f3ea}figcaption{font-size:12px;line-height:1.55;color:var(--muted);margin-top:8px}figcaption a{white-space:nowrap}.table-scroll{overflow-x:auto;max-width:100%;border:1px solid var(--line);border-radius:5px;margin:26px 0}table{border-collapse:collapse;min-width:570px;width:100%;font-size:14px;line-height:1.65}th{text-align:left;background:#e5e9dc;font-weight:650}td,th{padding:13px 15px;vertical-align:top;border-bottom:1px solid var(--line)}tr:last-child td{border-bottom:0}td code,th code{font-size:.9em}tbody tr:nth-child(even){background:#fff5}.code-wrap{margin:25px 0;min-width:0;max-width:100%;border-radius:6px;overflow:hidden}.code-top{background:#324b40;color:#dde6d6;padding:7px 14px;display:flex;justify-content:space-between;align-items:center;font:11px/1.5 ui-monospace,monospace}.code-top button{font:11px system-ui;min-height:28px;padding:3px 9px;color:#f4f7ef;border-color:#9eb19b}.code-top button:hover{background:#48624f}.answer{margin:30px 0;border-top:1px solid #a9b9a0;border-bottom:1px solid #a9b9a0;padding:4px 0}.answer summary{cursor:pointer;line-height:1.5;padding:17px 7px;font-size:16px;font-weight:650}.answer-body{padding:15px 8px 20px;min-width:0}.answer summary::marker{color:var(--rust)}.answer[open]{background:#f0f1e5}.instructor{font-size:14px}.widget{border:1px solid #b2c3a5;background:#e9edde;padding:26px;border-radius:8px;margin:34px 0}.widget h3{margin:8px 0 14px;font:30px/1.2 Georgia}.widget p{font-size:14px}.widget label{display:block;font-size:12px;font-weight:600}.widget input,.widget select{width:100%;border:1px solid #9dad94;background:#fbfcf6;padding:9px;border-radius:4px;margin-top:6px;color:var(--ink)}.budget-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.budget-result{display:flex;align-items:baseline;gap:15px;flex-wrap:wrap;margin:20px 0 0}.budget-result strong{font:38px/1.2 Georgia}.budget-result span{font-size:14px}.error{color:#91331e;font-weight:600}.trace-items{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:22px 0}.trace-item{border:1px solid #bbc8af;padding:18px 10px;text-align:center;border-radius:5px}.trace-item small{display:block;font:11px/1.4 ui-monospace,monospace}.trace-item b{font:28px/1.5 Georgia}.trace-item.added{background:#bfd7a5;border-color:#5b7946}.trace-item.current{outline:2px solid var(--rust);outline-offset:2px}.trace-controls{display:flex;align-items:end;gap:10px;flex-wrap:wrap}.trace-controls label{flex:1;min-width:160px}.trace-state{margin-top:18px;font-size:15px;min-height:54px}.quiz fieldset{border:0;padding:0;margin:0}.quiz legend{font-size:17px;font-weight:650;margin-bottom:15px}.quiz label{font-weight:400;font-size:15px;margin:9px 0;display:flex;gap:10px;align-items:start}.quiz input{width:auto;margin:6px 0 0}.quiz-result{margin-top:14px!important}.chapter-end{max-width:900px;margin:40px auto 0;padding:22px 0;border-top:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;gap:15px;font-size:13px}.chapter-end button[aria-pressed=true]{background:var(--green);color:white}.study-status{font:11px/1.5 ui-monospace,monospace;color:var(--muted)}.supplement{border-top:1px solid var(--line);padding:60px 0}.supplement>.section-title{font-size:44px;margin:12px 0 32px}.footer{padding:50px 0;border-top:1px solid var(--line);font-size:13px;color:var(--muted)}.footer strong{font:26px Georgia;color:var(--ink)}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}[hidden]{display:none!important}.focus .sidebar{display:none}.focus .topbar,.focus main{margin-left:0}.focus .inner{max-width:1100px}.focus .top-label{display:none}@media(min-width:1600px){:root{--nav:300px}.sidebar{padding:35px 28px}.inner{padding:0 65px}}@media(max-width:1150px){.hero-grid{grid-template-columns:1fr}.hero-art{max-height:440px;object-fit:contain;border-radius:0}.hero h1{max-width:680px}.hero .lede{max-width:650px}.top-label{display:none}}@media(max-width:950px){.sidebar{transform:translateX(-100%);width:280px;visibility:hidden}.topbar,main{margin-left:0}.mobile-menu{display:block}.nav-open .sidebar{transform:translateX(0);visibility:visible}.nav-open .shade{display:block;position:fixed;inset:0;background:#10241966;z-index:25;border:0;border-radius:0;width:100%;height:100%}.focus .sidebar{display:block}.inner{padding:0 6vw}.top-label{display:block}.hero{padding-top:42px}}@media(max-width:580px){body{font-size:var(--font)}.inner{padding:0 20px}.topbar{padding:0 14px}.top-label{display:none}.tools{gap:4px}.tools button{padding:5px 7px;font-size:11px}#focus-toggle{display:none}.hero{padding-top:33px}.hero h1{font-size:48px}.hero .lede{font-size:18px}.hero-art{max-height:none}.hero-nav a{font-size:12px}.route-map{grid-template-columns:repeat(2,1fr)}.route-map a{padding:12px 10px 0 0}.chapter{padding-top:42px}.chapter-heading{grid-template-columns:44px 1fr;gap:12px}.chapter-num{font-size:40px}.chapter-heading h2{font-size:35px;margin-top:8px}.chapter-heading p{font-size:13px}.opener{margin-bottom:30px}h2{font-size:31px;margin-top:42px}h3{font-size:22px}.widget{padding:17px}.budget-grid{grid-template-columns:repeat(2,1fr);gap:12px}.budget-result strong{font-size:32px}.trace-items{gap:7px}.trace-item{padding:12px 5px}.trace-item b{font-size:22px}.trace-item small{font-size:9px}.chapter-end{flex-direction:column;align-items:flex-start}.prose figure{margin:26px 0}.code-top{padding:7px 10px}pre{padding:16px}.supplement>.section-title{font-size:36px}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}@page{size:A4;margin:18mm}@media print{body{background:white;font:10.5pt/1.6 Georgia;color:#111}.sidebar,.topbar,.hero-nav,.route-map,.shade,.skip,.tools,.code-top button,.chapter-end,.widget button,.quiz,.nav-foot{display:none!important}main{margin:0}.inner{max-width:none;padding:0}.hero{padding-top:0}.hero-grid{grid-template-columns:1fr 1fr}.hero h1{font-size:40pt}.hero-art{max-height:100mm}.hero .lede{font-size:13pt}.hero .edition{font-size:8pt}.chapter,.supplement{break-before:page;padding-top:10mm}.chapter-heading h2{font-size:28pt}.chapter-num{font-size:42pt}.opener img{max-height:90mm;object-fit:contain}.prose{max-width:none}.prose h2{font-size:21pt}.prose h3{font-size:15pt}h2,h3,h4,summary{break-after:avoid}.prose figure{break-inside:avoid}.prose figure img{max-height:115mm;object-fit:contain}.table-scroll{overflow:visible}table{min-width:0;font-size:8.5pt}td,th{padding:6pt}pre{white-space:pre-wrap;overflow:visible;color:#111;background:#f1f1ec;font-size:8pt;overflow-wrap:anywhere}pre code{white-space:pre-wrap}.code-wrap{break-inside:avoid}.answer-body{display:block!important}.answer{border-color:#aaa}.widget{break-inside:avoid}.footer{font-size:9pt}a{color:inherit}.study-status{display:none}}
+main{margin:0}.preview-header{padding:16px 5vw;background:#20342d;color:#fff;font-size:13px}.preview-header a{color:#dce8d0}.preview-main{max-width:1000px;margin:auto;padding:30px 25px}.pending{font-size:13px;color:#58685f;border-left:2px solid #aaa;padding:10px}h1{font-size:44px}</style><body><header class="preview-header"><a href="../index.html">Về dashboard</a> · Bản xem trước nội dung; chưa thay cho kiểm thử bản xuất bản.</header><main class="preview-main prose"><h1>CHƯƠNG 1 · BƯỚC VÀO THẾ GIỚI AI</h1>
+<p>Minh mở ba giao diện AI, dán cùng đoạn C++ và hỏi cùng một câu. Nơi thứ nhất hỏi ngược lại. Nơi thứ hai đưa cách sửa rất chắc chắn. Nơi thứ ba sửa khác, nhắc phải kiểm thử. Minh nhìn ba cửa sổ: “Nếu đều là AI, tại sao chúng không nói giống nhau? Mình nên tin cái nào?”.</p>
+<p><strong>Bổ sung biên tập — tình huống mở và ba thẻ trả lời hoàn toàn HƯ CẤU</strong>, không đại diện sản phẩm, không phải hội thoại hay benchmark thực. Minh năm nhất học C++; Lan năm hai học OOP/DSA/CSDL/Web. Hai nhân vật hư cấu không đại diện khảo sát TLU.</p>
+<p>Hai bạn làm <strong>ViSinhVien</strong>, bài tập chi tiêu bằng dữ liệu GIẢ. Minh học mảng và vòng lặp; Lan làm Web với HTML, JavaScript, <code>localStorage</code>. Không có backend, đăng nhập, ngân hàng hay tài chính thật. Trợ lý AI giúp học; ViSinhVien không tích hợp AI.</p>
+<p>Ba khoản GIẢ trên giấy của Minh là:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Khoản chi GIẢ</th>
+<th style="text-align:right">Số tiền nguyên VND</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Cơm trưa</td>
+<td style="text-align:right">35000</td>
+</tr>
+<tr>
+<td>Xe buýt</td>
+<td style="text-align:right">7000</td>
+</tr>
+<tr>
+<td>Vở ghi</td>
+<td style="text-align:right">18000</td>
+</tr>
+<tr>
+<td>Tổng cần có</td>
+<td style="text-align:right">60000</td>
+</tr>
+</tbody>
+</table></div>
+<p>Đây là <strong>snippet có lỗi chủ đích</strong> để đọc và đặt câu hỏi, không phải yêu cầu làm hỏng demo đúng. Các số tiền trong snippet đã được giả định hợp lệ; chương trình chưa làm nhiệm vụ nhập và xác thực dữ liệu.</p>
+<div class="code-wrap"><pre><code class="language-cpp">#include &lt;iostream&gt;
+#include &lt;vector&gt;
+
+int main() {
+    std::vector&lt;long long&gt; amounts = {35000, 7000, 18000};
+    long long total = 0;
+    int n = static_cast&lt;int&gt;(amounts.size());
+    for (int i = 0; i &lt; n - 1; ++i) {
+        total += amounts[i];
+    }
+    std::cout &lt;&lt; "Tong chi tieu: " &lt;&lt; total &lt;&lt; " VND\n";
+    return 0;
+}
+</code></pre></div>
+<p>Minh dán nguyên snippet vào từng giao diện, rồi dùng cùng câu hỏi:</p>
+<div class="code-wrap"><pre><code class="language-text">Tôi mới học vòng lặp C++. Tôi cần cộng tất cả khoản chi GIẢ:
+35000, 7000, 18000 phải ra 60000, nhưng chương trình đang cho 42000.
+Hãy gợi ý một bước để tôi tự tìm lỗi, chưa viết lại cả chương trình.
+</code></pre></div>
+<h3>Thẻ trả lời A — HƯ CẤU, không gắn với sản phẩm</h3>
+<blockquote>
+<p>Khi <code>n = 3</code>, chỉ số của khoản Vở ghi là bao nhiêu? Hãy thay chỉ số đó vào điều kiện <code>i &lt; n - 1</code> và quyết định xem vòng lặp có cộng khoản này không.</p>
+</blockquote>
+<h3>Thẻ trả lời B — HƯ CẤU, cố ý chứa lời khuyên sai</h3>
+<blockquote>
+<p>Vòng lặp thiếu một lượt. Bạn cứ đổi thành <code>i &lt;= n</code>; như vậy sẽ cộng đủ và luôn an toàn. Không cần thử thêm vì lỗi này rất đơn giản.</p>
+</blockquote>
+<h3>Thẻ trả lời C — HƯ CẤU, không phải báo cáo đã chạy</h3>
+<blockquote>
+<p>Điều kiện đang bỏ phần tử cuối. Với yêu cầu cộng mọi khoản, hướng sửa là <code>i &lt; n</code>, không phải <code>i &lt;= n</code>. Tôi chưa thực thi chương trình; hãy kiểm tra danh sách rỗng, một khoản và ba khoản sau khi tự sửa.</p>
+</blockquote>
+<p>Lan chưa chọn “AI thắng cuộc”. Cô lấy bút khoanh yêu cầu <strong>gợi ý một bước</strong>, rồi gạch chân chữ <strong>luôn an toàn</strong> trên thẻ B. Một câu trả lời phải được xét cả độ đúng, cách giúp người học và bằng chứng, chứ không chỉ tốc độ xuất hiện.</p>
+<p>Trước khi đọc tiếp, hãy tự cộng ba khoản, chọn một thẻ để bắt đầu học và viết lý do. Nếu chưa biết C++, bạn vẫn có thể nhận ra rằng một kết luận về chương trình cần cách kiểm tra. Cuối chương, bạn sẽ quay lại lựa chọn này bằng một rubric cụ thể.</p>
+<p><strong>Đầu ra của chương:</strong> một bản nhận diện công cụ có phần “chưa biết”, một prompt đủ context, một phép tính chi phí có đơn vị và một quyết định dùng công cụ có điều kiện. Không cần đăng ký, cài đặt, tạo key, gọi API hoặc trả tiền để hoàn thành.</p>
+<h2>1.1. AI MYSTERY / AI MAP — Giải bí ẩn, đọc bản đồ AI</h2>
+<h3>Từ 42000 đến câu hỏi “mình đang dùng cái gì?”</h3>
+<p><code>35000 + 7000 = 42000</code>; thêm <code>18000</code> mới được <code>60000</code>. <strong>42000 có thể là tổng trung gian đúng</strong> hoặc tổng của hai khoản. Nó chỉ là sai lệch khi yêu cầu cộng đủ ba khoản mà chương trình kết thúc ở đó. Một con số đứng riêng chưa chẩn đoán được lỗi.</p>
+<p>Snippet có <code>n = 3</code>, chỉ số hợp lệ 0, 1, 2. Cận <code>i &lt; n - 1</code>, tức <code>i &lt; 2</code>, chặn khoản Vở ghi ở chỉ số 2. <code>static_cast&lt;int&gt;</code> chuyển kích thước sang số nguyên có dấu để biểu diễn cận; tối đa 500 khoản vừa trong miền đang dùng.</p>
+<p><strong>Kết quả dự đoán từ snippet</strong>, không phải log thực thi của lần biên tập:</p>
+<div class="code-wrap"><pre><code class="language-text">Tong chi tieu: 42000 VND
+</code></pre></div>
+<p>Chuỗi không dấu nhằm giảm lỗi hiển thị ở một số terminal. Trace đầy đủ, ca rỗng, kiểu có dấu/không dấu và executable cũ được học ở <strong>Chương 2 · Trở thành người điều khiển AI, mục 2.3 — Mission 03: Debug C++</strong>. Chương này mới nhận diện vấn đề và loại bằng chứng cần có.</p>
+<h3>Đáp án mở đầu — Chọn thẻ để học, không chọn giọng nói tự tin</h3>
+<p>Thẻ A giữ yêu cầu gợi ý một bước. Thẻ C sửa đúng, nói rõ chưa chạy nhưng tiết lộ nhiều hơn Minh yêu cầu. Thẻ B sai: <code>i &lt;= n</code> cho phép chỉ số <code>n</code> ngoài danh sách; truy cập đó trong C++ dẫn tới hành vi không xác định.</p>
+<p>Cận <code>i &lt; n</code> duyệt các chỉ số hợp lệ và chặn chỉ số bằng kích thước. Sửa cận <strong>chưa bổ sung toàn bộ kiểm tra dữ liệu</strong>; Minh còn phải giải thích và thử biến thể. Ba thẻ hư cấu không chứng minh thương hiệu nào tốt hơn.</p>
+<h3>Model, provider, application và producer: bốn câu hỏi khác nhau</h3>
+<p>“Mình dùng ChatGPT” thường nêu sản phẩm Minh mở, chưa xác định model. <strong>AI</strong>, trí tuệ nhân tạo, gồm cả nhận diện và phát hiện bất thường. Chương tập trung vào <strong>AI tạo sinh</strong>, tạo văn bản hoặc mã. <strong>LLM</strong>, mô hình ngôn ngữ lớn, thường nằm trong trợ lý; không phải mọi AI đều là chatbot. Khả năng nhận ảnh, âm thanh, tệp tùy model và ứng dụng.</p>
+<p><strong>Model</strong> là mô hình tính toán đã được huấn luyện để xử lý đầu vào và tạo đầu ra. GPT, Claude, Gemini có thể chỉ họ mô hình, chưa phải phiên bản. Tài liệu định danh đáng tin hơn đoán qua văn phong; lời giải mạch lạc không bảo đảm đúng.</p>
+<p><strong>Provider</strong> là bên cung cấp dịch vụ truy cập đến model trong đường đang xét: tiếp nhận, xác thực, áp dụng điều kiện; có thể vận hành trực tiếp hoặc làm trung gian. <strong>Producer</strong> xây dựng, huấn luyện hoặc phát hành model. Hai vai trò có thể cùng tổ chức nhưng không bắt buộc.</p>
+<p><strong>Application</strong> là nơi thao tác: trang chat, ứng dụng điện thoại/máy tính hoặc trợ lý lập trình. Nó tổ chức lịch sử, chọn thông tin, có thể nối công cụ/tìm kiếm và hiển thị bản sửa. <strong>User</strong> đặt mục tiêu, quyết định dữ liệu được phép gửi và kiểm tra phần mình sử dụng.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Vai trò</th>
+<th>Câu hỏi phải trả lời</th>
+<th>Cách ghi nếu thiếu bằng chứng</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Model</td>
+<td>Thành phần nào tạo đầu ra? Định danh nào được công bố?</td>
+<td>Chỉ biết họ model; chưa xác định phiên bản hoặc model từng lượt</td>
+</tr>
+<tr>
+<td>Provider</td>
+<td>Ai cung cấp đường truy cập đến model cho ứng dụng?</td>
+<td>Chưa xác định provider của đường truy cập</td>
+</tr>
+<tr>
+<td>Application</td>
+<td>Tôi mở và thao tác ở phần mềm nào?</td>
+<td>Ghi tên quan sát được, không suy ra model từ đó</td>
+</tr>
+<tr>
+<td>Producer</td>
+<td>Ai phát triển hoặc phát hành model?</td>
+<td>Chưa đủ dữ kiện; không gán cho nhóm viết giao diện</td>
+</tr>
+<tr>
+<td>User</td>
+<td>Ai giao việc và kiểm tra trước khi dùng kết quả?</td>
+<td>Minh hoặc Lan trong tình huống này</td>
+</tr>
+</tbody>
+</table></div>
+<p><img alt="Sơ đồ vai trò model, provider, application và user; mũi tên biểu diễn đường truy cập, không phải quyền sở hữu." src="../../assets/roles.svg"/></p>
+<p><em>AI MAP — Bản đồ vai trò. Một tổ chức có thể giữ nhiều vai trò; mỗi ô không nhất thiết là một công ty hay máy chủ riêng. Producer là câu hỏi bổ sung về bên phát triển, không phải một tầng bắt buộc trong mọi request.</em></p>
+<p>Bản nguồn dùng ví dụ <strong>Claude qua Amazon Bedrock</strong>: Anthropic là bên phát triển Claude, AWS cung cấp đường truy cập qua Bedrock trong tình huống đó. Vì vậy, nhãn “hỗ trợ Claude” không tự chứng minh kết nối trực tiếp tới Anthropic. Nguồn chính thức gốc là tài liệu Anthropic và AWS, liệt kê cuối chương. <strong>Mốc bộ nguồn là 29/10/2026; các thông tin dịch vụ chưa được xác minh độc lập trong lần biên tập này, cần tra lại khi áp dụng.</strong></p>
+<p>Tương tự, Gemini có thể được nhắc ở lớp ứng dụng hoặc họ model. “Mở ứng dụng Gemini”, “gọi Gemini API” và “chọn một model thuộc họ Gemini” không đồng nghĩa. Điều quan trọng không phải thuộc hết tên, mà là đặt tên vào đúng vai trò.</p>
+<h3>API và key không phải một bộ não tải về máy</h3>
+<p><strong>API</strong> là giao diện để các phần mềm giao tiếp theo quy tắc xác định. Trong chat, Minh gõ và gửi. Với API, chương trình chuẩn bị request theo định dạng dịch vụ; request có thể chỉ định model. API không phải model mới và cũng không chỉ dùng cho AI.</p>
+<p><strong>API key</strong> là một dạng thông tin xác thực để dịch vụ nhận biết quyền truy cập; có dịch vụ dùng cơ chế xác thực khác. Có key không có nghĩa sở hữu model, được dùng mọi phiên bản, quota vô hạn hoặc miễn phí. Quyền và hóa đơn còn phụ thuộc tài khoản, dự án và điều kiện dịch vụ.</p>
+<blockquote>
+<p><strong>SECURITY ALERT — Khóa không phải dữ liệu thực hành.</strong> Không đưa key thật vào chat, ảnh chụp, nhóm lớp hoặc kho mã công khai. Không nhúng khóa bí mật vào JavaScript phía trình duyệt: mã được gửi đến người dùng có thể bị đọc. ViSinhVien không cần key; đừng tạo bí mật chỉ để hoàn thành bài nhập môn.</p>
+</blockquote>
+<p>Nếu gặp key trong một bài hướng dẫn, hãy dùng placeholder thay vì sao chép khóa thật. Nếu nghi khóa đã lộ, thu hồi hoặc vô hiệu hóa qua dịch vụ trước, rồi kiểm tra mức dùng và xử lý bản sao. Xóa một dòng khỏi tệp mới nhất không làm các bản sao biến mất. Quy trình sự cố đầy đủ nằm ở <strong>Chương 4 · Sử dụng AI có trách nhiệm, mục 4.1 — Key trên GitHub</strong>.</p>
+<h3>Những đường vào AI, không phải những bậc thang danh giá</h3>
+<p><img alt="Bản đồ các cách truy cập AI qua ứng dụng chat, trợ lý lập trình, chương trình dùng API hoặc mô hình cục bộ; không xếp hạng thương hiệu." src="../../assets/ecosystem.svg"/></p>
+<p><em>AI MAP — Bản đồ đường truy cập. Chọn đường phù hợp nhiệm vụ và điều kiện, không mặc định API hay agent là cấp học cao hơn chat.</em></p>
+<p>Một luồng giản lược là <strong>người dùng → ứng dụng chuẩn bị thông tin → provider tiếp nhận → model tạo đầu ra → ứng dụng hiển thị → người dùng kiểm tra</strong>. Hệ thống thực có thể thêm trung gian, công cụ và nhiều lượt. Model chạy cục bộ có thể không cần provider bên ngoài nhận câu hỏi. Ngược lại, ứng dụng cài trên máy vẫn có thể gửi dữ liệu lên đám mây.</p>
+<p>Ứng dụng đôi khi được gọi là <strong>wrapper</strong>, phần mềm bao quanh model/API. “Chỉ là cái vỏ” bỏ qua giá trị của việc chọn đúng tệp, giữ phạm vi và cho người học duyệt thay đổi. Nhưng cũng đừng suy mọi wrapper đều đọc được dự án, chạy code hay tìm web. Nếu dùng Qoder, cần phân biệt Qoder IDE, Qoder Desktop và Qoder CLI; tên cùng họ không chứng minh chúng có cùng giao diện, quyền hay quy trình.</p>
+<h3>Cùng câu hỏi không đồng nghĩa cùng đầu vào</h3>
+<p>Ba thẻ hư cấu không xác định nguyên nhân khác biệt. Trong hệ thống thật, cùng câu gõ có thể kèm lịch sử, tài liệu, chỉ dẫn hoặc công cụ khác. Một nơi làm gia sư, nơi khác ưu tiên sinh mã. Giới hạn đầu ra, cấu hình và tính không tất định cũng ảnh hưởng.</p>
+<p>Minh điều tra theo ba bước: <strong>ghi nhãn ứng dụng/chế độ/model → liệt kê context và công cụ → ghi phần chưa biết</strong>. Nhãn “Tự động” chỉ cho phép ghi “chưa xác định model thực sự xử lý lượt này”. Chatbot tự giới thiệu không đủ làm bằng chứng duy nhất.</p>
+<p><strong>Bổ sung biên tập — nhận diện trên giấy.</strong> Ứng dụng GIẢ “Gia sư ViSinhVien” nói dùng Gemini API nhưng không công bố model cụ thể. Điền bốn vai trò; rồi thay mô tả bằng “hỗ trợ Claude”. Điều gì không còn biết được?</p>
+<h3>Đáp án nhận diện — Giữ chỗ trống đúng chỗ</h3>
+<p>Application là Gia sư ViSinhVien; provider của đường nêu trong đề là Google qua Gemini API; biết họ Gemini, chưa biết model cụ thể. Nhóm viết ứng dụng không vì thế là bên huấn luyện model. Nếu chỉ còn “hỗ trợ Claude”, provider và phiên bản đều chưa xác định. Thiếu bằng chứng thì giữ chỗ trống.</p>
+<h2>1.2. BEHIND THE SCENE — Phía sau một câu trả lời</h2>
+<h3>Prompt là lời giao việc; context là thông tin thực sự nhận được</h3>
+<p>Lan từng hỏi: “Làm app ví sinh viên chuyên nghiệp”. Câu trả lời HƯ CẤU trong tình huống biên tập đề xuất đăng nhập, máy chủ và đồng bộ thanh toán. Nghe đầy đủ, nhưng sai phạm vi. Minh thì viết “sửa vòng lặp này” mà quên dán code. Cả hai đang mong hệ thống biết những điều chưa gửi.</p>
+<p><strong>Prompt</strong> là yêu cầu hoặc chỉ dẫn đưa cho hệ thống. <strong>Context</strong>, ngữ cảnh của một lượt, gồm thông tin thực sự được nhận: prompt, lịch sử được chọn, tài liệu, code và kết quả công cụ. Theo cách dùng phổ biến, prompt là một phần của context. Tài liệu đang mở trước mắt bạn chưa chắc đã nằm trong context của model.</p>
+<p>Hãy sửa cách hỏi theo thứ tự có lý do:</p>
+<ol>
+<li><strong>Nêu mục tiêu trước triệu chứng.</strong> “Cộng tất cả khoản hợp lệ” cho biết 42000 có phải sai hay không; riêng “ra 42000” chưa đủ.</li>
+<li><strong>Đưa phần nhỏ có liên quan.</strong> Với lỗi cận, cần khai báo dữ liệu, kiểu tổng và vòng lặp; không cần cả ổ đĩa.</li>
+<li><strong>Đặt kỳ vọng cạnh hiện tượng.</strong> Ba khoản phải ra 60000, snippet dự đoán ra 42000; nếu chưa chạy, ghi đúng là dự đoán.</li>
+<li><strong>Giữ ràng buộc và giới hạn trợ giúp.</strong> Số nguyên VND, tối đa 500 khoản, gợi ý trước; tránh nhận một bản viết lại vượt bài học.</li>
+<li><strong>Yêu cầu cách kiểm tra.</strong> Hỏi test và bằng chứng thay vì chỉ yêu cầu “chắc chắn 100%”.</li>
+</ol>
+<p>Prompt tốt cần đủ dữ kiện, không cần dài hoặc đầy lời tôn xưng. “Hãy đóng vai chuyên gia hàng đầu” không thay thế code và kết quả mong đợi. Ngược lại, cắt mất hợp đồng để tiết kiệm vài token có thể khiến bạn tốn nhiều lượt sửa sai yêu cầu.</p>
+<h3>Brief chung: giúp hai người học giữ cùng một bài</h3>
+<p><strong>Brief</strong> là bản mô tả ngắn việc cần làm. Minh và Lan giữ bản hiện hành rồi thay dòng “việc lần này”, thay vì kể lại dự án theo trí nhớ. Đây là mẫu có thể dùng độc lập nếu bạn dán kèm code liên quan:</p>
+<div class="code-wrap"><pre><code class="language-text">DỰ ÁN: ViSinhVien, bài tập chỉ dùng dữ liệu GIẢ.
+NGƯỜI HỌC: Minh năm 1 học C++; Lan năm 2 học OOP/DSA/CSDL/Web.
+MỤC TIÊU: lưu danh sách khoản chi và tính tổng mọi khoản hợp lệ.
+DỮ LIỆU CHUNG: mỗi khoản có tên; amount là số nguyên VND.
+Nhánh C++ chỉ lưu phần tiền, không lưu tên khoản trong vector.
+HỢP ĐỒNG: 0 &lt; amount &lt;= 1000000000; tối đa 500 khoản.
+DANH SÁCH RỖNG: hợp lệ, tổng bằng 0; không tạo khoản amount = 0.
+MẪU GIẢ: Cơm trưa 35000; Xe buýt 7000; Vở ghi 18000.
+KỲ VỌNG: tổng 60000 VND; snippet lỗi bỏ khoản cuối cho 42000.
+C++: vector&lt;long long&gt; chỉ mô hình phần tiền; tổng tối đa 500000000000.
+WEB: Expense có id, title, amount, category; HTML + JS + localStorage.
+PHẠM VI: không backend, đăng nhập, ngân hàng, API AI hoặc dữ liệu thật.
+VIỆC LẦN NÀY: đọc snippet đính kèm, tìm nguyên nhân bỏ khoản cuối.
+CÁCH GIÚP: gợi ý một bước trước, chưa viết lại chương trình.
+NẾU THIẾU: chỉ ra thông tin cần bổ sung, không tự thêm tính năng.
+ĐẦU RA: vị trí nghi vấn, giải thích vừa sức, test và kết quả mong đợi.
+BẰNG CHỨNG: phân biệt suy luận, kỳ vọng và kết quả đã thực thi.
+</code></pre></div>
+<p>Minh chỉ cần mô hình tiền <code>vector&lt;long long&gt;</code> khi học vòng lặp; tên ba khoản trên giấy giúp hiểu ý nghĩa. Bản Web của Lan dùng <code>Expense{id,title,amount,category}</code>: <code>id</code> phân biệt khoản GIẢ, <code>title</code> là tên hiển thị, <code>amount</code> là tiền, <code>category</code> là nhóm. <code>id</code> không phải mã sinh viên. Mảng tiền C++ không tự trở thành mô hình đầy đủ bốn trường của Web.</p>
+<p>Liên hệ OOP là phân biệt trách nhiệm dữ liệu, xác thực và tính tổng; không bắt buộc thêm một lớp chỉ để có chữ “hướng đối tượng”. Với DSA, duyệt tổng một lần có thời gian O(n), phần nhớ phụ cho tổng là O(1). Với CSDL, Lan có thể xét thuộc tính và ràng buộc trên giấy. Đổi góc học không cho phép tự đưa máy chủ hay CSDL vào bản Web; minh họa SQLite <code>:memory:</code> ở phần khác là bài riêng.</p>
+<h3>Hợp đồng dữ liệu: bằng chứng bắt đầu trước khi chạy</h3>
+<p>Một <strong>hợp đồng</strong> nói đầu vào nào được chấp nhận và đầu ra nào được yêu cầu. Ở đây, mỗi khoản tồn tại phải có <code>amount</code> nguyên, lớn hơn 0, không quá 1000000000; danh sách có tối đa 500 khoản. Rỗng vẫn hợp lệ vì không có khoản nào vi phạm. Tổng 0 không đồng nghĩa có một khoản chi 0.</p>
+<p>Từ hợp đồng, tính được tổng lớn nhất:</p>
+<div class="code-wrap"><pre><code class="language-text">500 × 1000000000 = 500000000000 VND
+</code></pre></div>
+<p>C++ cần kiểu chứa được mức đó. Kiểu số nguyên có dấu 32 bit thường gặp chỉ đạt khoảng 2,1 tỷ; không đủ chứa 500 tỷ. Snippet dùng <code>long long</code> cho tiền và tổng. Không suy mọi <code>int</code> trên mọi hệ thống đều giống nhau; lý do lựa chọn là miền dữ liệu, không phải nhãn “tối ưu” của AI.</p>
+<p>Trong JavaScript, <code>Number</code> biểu diễn chính xác các số nguyên trong miền <strong>safe integers</strong>, số nguyên an toàn, từ <code>-9007199254740991</code> đến <code>9007199254740991</code>. Tổng 500000000000 nằm trong miền đó. Từng khoản nguyên và mọi tổng trung gian không vượt trần đang xét nên phù hợp với phép cộng của bài. Vượt miền an toàn thì không còn được bảo đảm biểu diễn riêng từng số nguyên.</p>
+<p>Điều này <strong>không</strong> có nghĩa “dùng Number là dữ liệu tự hợp lệ”. <code>amount</code> vẫn phải thỏa <code>Number.isInteger(amount)</code>, lớn hơn 0 và không quá 1000000000. Chuỗi <code>"7000"</code> không phải số 7000. Ô nhập Web có thể trả chuỗi; dữ liệu trong <code>localStorage</code> cũng được lưu dưới dạng chuỗi, cần phân tích và kiểm tra cấu trúc khi đọc lại. Chỉ kiểm tra ở giao diện không bảo vệ được mọi dữ liệu đã lưu.</p>
+<p>Bảng dưới là <strong>kỳ vọng theo hợp đồng, chưa phải kết quả đã chạy</strong>:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Ca kiểm tra</th>
+<th>Dữ liệu hoặc thao tác GIẢ</th>
+<th>Kỳ vọng</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Rỗng</td>
+<td>Không có khoản nào</td>
+<td>Tổng 0 VND</td>
+</tr>
+<tr>
+<td>Một khoản</td>
+<td>7000</td>
+<td>Tổng 7000 VND</td>
+</tr>
+<tr>
+<td>Ba khoản mẫu</td>
+<td>35000, 7000, 18000</td>
+<td>Tổng 60000 VND</td>
+</tr>
+<tr>
+<td>Chạm trần</td>
+<td>500 khoản, mỗi khoản 1000000000</td>
+<td>Tổng 500000000000 VND</td>
+</tr>
+<tr>
+<td>Sai giá trị</td>
+<td>0, số âm, 1.5 hoặc lớn hơn 1000000000</td>
+<td>Từ chối khoản sai, không âm thầm làm tròn</td>
+</tr>
+<tr>
+<td>Vượt số lượng</td>
+<td>Thêm khoản thứ 501</td>
+<td>Từ chối thêm, giữ danh sách hợp lệ trước đó</td>
+</tr>
+</tbody>
+</table></div>
+<p>Ba ca đầu kiểm tra một phần hành vi tổng. Ba ca sau yêu cầu cả xác thực dữ liệu. <strong>Đổi cận vòng lặp không tự giải quyết validation.</strong> Nếu snippet chỉ cộng dữ liệu đã hợp lệ, hãy nói giới hạn ấy thay vì tuyên bố nó đáp ứng toàn bộ bảng.</p>
+<h3>Token và context window: không phải số từ hay trí nhớ vô hạn</h3>
+<p><strong>Token</strong> là đơn vị dữ liệu hệ thống xử lý. Một từ có thể thành nhiều token; dấu câu, khoảng trắng, code, ngôn ngữ và tokenizer đều ảnh hưởng. Không có quy tắc “một từ tiếng Việt bằng một token”. Đếm khoảng trắng của sách không tính được hóa đơn.</p>
+<p><img alt="Các khối dữ liệu minh họa token và vùng context hữu hạn; cách chia khối không phải kết quả của tokenizer thật." src="../../assets/token-context.svg"/></p>
+<p><em>BEHIND THE SCENE — Khối chỉ minh họa chia/chọn thông tin, không tính token thật. Context không phải toàn bộ ổ đĩa.</em></p>
+<p><strong>Context window</strong> giới hạn lượng thông tin xử lý trong một lần theo dịch vụ; thường còn có giới hạn đầu ra riêng. Cửa sổ lớn không bảo đảm sử dụng chính xác mọi chi tiết hoặc cho phép gửi vô hạn.</p>
+<p>Lan dán lịch sử có cả yêu cầu backend đã bỏ và nhiều log thừa. Brief hiện hành bị chìm. Hội thoại dài còn có thể bị ứng dụng cắt, tóm tắt hoặc chọn lại; “đã nói từ đầu” chưa bảo đảm còn nguyên trong context.</p>
+<p>Hãy giữ brief hiện hành, hàm liên quan, dữ liệu GIẢ và ghi phần thay đổi. Model không tự biết tệp vừa sửa nếu chưa nhận bản mới. Trợ lý được quyền đọc dự án có thể lấy thêm nội dung; cần kiểm quyền và tệp thực sự được dùng, không đoán qua giao diện.</p>
+<p><strong>Bổ sung biên tập — chọn context.</strong> Với lỗi 42000, chọn giữa brief, hàm tổng, ba khoản GIẢ, sao kê thật và bài giảng không liên quan. Giải thích một phần phải loại.</p>
+<h3>Đáp án chọn context — Đủ để kiểm tra, không đủ để lộ dữ liệu</h3>
+<p>Chọn brief, hàm cùng khai báo cần hiểu và ba khoản GIẢ. Loại sao kê vì riêng tư, bài giảng vì gây nhiễu. Thiếu kiểu dữ liệu hoặc đoạn gọi hàm thì bổ sung đúng phần đó, không gửi cả ổ đĩa.</p>
+<h3>Training, inference và web search: ba việc không thay thế nhau</h3>
+<p><strong>Training</strong>, huấn luyện, dùng dữ liệu và thuật toán để điều chỉnh tham số model. <strong>Inference</strong>, suy luận theo nghĩa vận hành ở đây, dùng model đã có để tạo đầu ra từ đầu vào. Minh gửi ba khoản thì hệ thống có thể dùng chúng trong context; điều đó không tự chứng minh model vừa được huấn luyện lại và sẽ nhớ ba khoản ấy cho mọi người dùng.</p>
+<p>Nhưng “không huấn luyện lại ngay” cũng không đồng nghĩa “không lưu dữ liệu”. Lịch sử chat, bộ nhớ của ứng dụng, log vận hành và việc dùng nội dung để cải thiện dịch vụ là các vấn đề khác nhau. Cần đọc chính sách và cài đặt đúng sản phẩm. Không dùng hiểu biết về inference để thay cho kiểm tra quyền riêng tư.</p>
+<p><strong>Web search</strong> là truy xuất thông tin qua công cụ kết nối web, nếu sản phẩm có và lượt đó dùng nó. Hỏi “ưu đãi hôm nay là gì?” không tự bật tìm web. Câu trả lời có thể dựa vào kiến thức cũ. Ngược lại, có tìm kiếm cũng chưa bảo đảm nguồn phù hợp hoặc tóm tắt đúng.</p>
+<p>Với ba khoản tiền, phép cộng và kiểm tra code là căn cứ phù hợp. Với tuổi được sử dụng dịch vụ, cần điều khoản chính thức còn áp dụng. Minh không cần tìm web để cộng 60000; Lan không được dùng phép suy luận nghe hợp lý để thay cho điều kiện ưu đãi.</p>
+<h3>Hallucination và trích dẫn: chuyển sự tự tin thành câu hỏi kiểm chứng</h3>
+<p><strong>Hallucination</strong>, thường gọi ảo giác AI, là nội dung sai hoặc không có căn cứ được trình bày như đúng. Ví dụ HƯ CẤU: “JavaScript tự lưu mọi biến vào localStorage”, một hàm C++ không tồn tại, hoặc lời “đã chạy test” khi chỉ đọc văn bản. Tên gọi này không giải thích mọi nguyên nhân lỗi, nhưng nhắc ta không coi câu chữ là bằng chứng.</p>
+<p>Thay vì yêu cầu “đừng sai”, Minh hỏi chỉ số nào được duyệt, ca một khoản cho gì, và câu nào là dự đoán. Lan hỏi tệp nào ghi lưu trữ, khi nào đọc lại và JSON hỏng được xử lý ra sao. Nếu công cụ nói đã chạy, cần lệnh, dữ liệu, đầu ra, môi trường và khả năng đối chiếu. Một vài test qua vẫn không chứng minh đúng mọi đầu vào; test logic JavaScript không tự kiểm chứng DOM hay lưu/nạp trên trình duyệt.</p>
+<p>Với trích dẫn, làm lần lượt: <strong>khoanh claim → mở nguồn → tìm đoạn hỗ trợ → kiểm phạm vi và ngày → ghi giới hạn</strong>. Liên kết có thật chưa chắc hỗ trợ kết luận. “Đủ điều kiện nộp hồ sơ” khác “chắc chắn được duyệt”; điều khoản API khác điều khoản ứng dụng chat. Ngày truy cập không phải ngày phát hành. Không tìm được căn cứ thì ghi <strong>chưa xác minh</strong>, không bù bằng một đoạn giải thích tự tin hơn.</p>
+<h2>1.3. AI WALLET — Hiểu túi tiền trước khi bấm gửi</h2>
+<h3>Ba hình thức dùng, ba cách đọc quyền lợi</h3>
+<p>Minh thấy nút nâng cấp; Lan nghe “API rẻ hơn”. Trước khi so tiền, hai bạn cần biết đang so cái gì. Một sản phẩm miễn phí đủ giúp hiểu vòng lặp có thể là lựa chọn tốt hơn cả hai phương án trả tiền.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Hình thức</th>
+<th>Cách hiểu nhập môn</th>
+<th>Câu hỏi trước khi dùng</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Free</td>
+<td>Một phạm vi dùng không thu tiền theo điều kiện</td>
+<td>Model, tính năng, quota, dữ liệu và điều kiện tài khoản nào?</td>
+</tr>
+<tr>
+<td>Subscription — thuê bao</td>
+<td>Trả định kỳ cho quyền lợi của một gói/sản phẩm</td>
+<td>Bao gồm gì, giới hạn gì, gia hạn khi nào, khoản nào ngoài gói?</td>
+</tr>
+<tr>
+<td>API pay-as-you-go</td>
+<td>Chương trình gọi dịch vụ, phí theo lượng dùng và bảng giá</td>
+<td>Đơn vị input/output, công cụ, xác thực và giới hạn chi phí nào?</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Quota</strong> là hạn mức có đơn vị và chu kỳ: số lượt, tốc độ hoặc lượng dùng không thể đọc lẫn nhau. Free không có nghĩa vô hạn; trả tiền cũng không bảo đảm mọi yêu cầu được phục vụ không giới hạn.</p>
+<p>Quyền dùng ứng dụng và API phải được kiểm tra riêng. Đừng lấy biên lai thuê bao chat làm bằng chứng đã trả mọi API. Cũng không khẳng định “thuê bao không bao giờ có API”: bản nguồn dẫn tài liệu OpenAI về credit ChatGPT/API như một ngoại lệ cần đọc theo gói đủ điều kiện. <strong>Credit</strong> là giá trị hoặc lượng dùng được cấp, có thể có thời hạn và phạm vi. Claim về gói tích hợp này mang mốc nguồn <strong>29/10/2026, chưa xác minh độc lập ở lần biên tập này; cần tra lại</strong>, không phải lời hứa quyền lợi hiện hành.</p>
+<h3>Bài toán GIẢ ĐỊNH: tách input khỏi output</h3>
+<p>Lan muốn dự toán 50 request. <strong>Request</strong> là một yêu cầu gửi đến dịch vụ; một lần bấm của người dùng có thể dẫn đến nhiều request phía sau. Ta cố định kích thước và đơn giá để học phép tính, không mô tả hóa đơn của một hãng.</p>
+<p><strong>Toàn bộ giá, tỷ giá và lượng dùng dưới đây là GIẢ ĐỊNH.</strong> Không dùng chúng để mua dịch vụ hoặc dự đoán giá thật. Chưa có phí riêng của công cụ, cache, lưu trữ hay cơ chế xử lý đặc thù.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Đại lượng</th>
+<th style="text-align:right">Giá trị GIẢ ĐỊNH</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Input mỗi request</td>
+<td style="text-align:right">20000 token</td>
+</tr>
+<tr>
+<td>Output mỗi request</td>
+<td style="text-align:right">5000 token</td>
+</tr>
+<tr>
+<td>Số request ban đầu</td>
+<td style="text-align:right">50</td>
+</tr>
+<tr>
+<td>Giá input</td>
+<td style="text-align:right">0.30 USD / 1000000 token</td>
+</tr>
+<tr>
+<td>Giá output</td>
+<td style="text-align:right">2.50 USD / 1000000 token</td>
+</tr>
+<tr>
+<td>Tỷ giá</td>
+<td style="text-align:right">25000 VND / USD</td>
+</tr>
+</tbody>
+</table></div>
+<p>Trước khi xem đáp án, viết sáu dòng: tổng input, tổng output, tiền input, tiền output, tổng USD, tổng VND. Giữ đơn vị ở từng dòng. Phải chia cho một triệu vì đơn giá được niêm yết theo triệu token, không phải theo một token hoặc nghìn token.</p>
+<div class="code-wrap"><pre><code class="language-text">Tổng input  = input mỗi request × số request
+Tổng output = output mỗi request × số request
+Tiền input  = tổng input / 1000000 × giá input
+Tiền output = tổng output / 1000000 × giá output
+Tổng USD    = tiền input + tiền output
+Tổng VND    = tổng USD × tỷ giá giả định
+</code></pre></div>
+<h3>Đáp án AI WALLET — 50 request và kiểm tra chéo</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Bước</th>
+<th>Phép tính</th>
+<th style="text-align:right">Kết quả</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Gom input</td>
+<td>20000 × 50</td>
+<td style="text-align:right">1000000 token</td>
+</tr>
+<tr>
+<td>Gom output</td>
+<td>5000 × 50</td>
+<td style="text-align:right">250000 token</td>
+</tr>
+<tr>
+<td>Tính tiền input</td>
+<td>1000000 / 1000000 × 0.30</td>
+<td style="text-align:right">0.30 USD</td>
+</tr>
+<tr>
+<td>Tính tiền output</td>
+<td>250000 / 1000000 × 2.50</td>
+<td style="text-align:right">0.625 USD</td>
+</tr>
+<tr>
+<td>Cộng hai khoản</td>
+<td>0.30 + 0.625</td>
+<td style="text-align:right">0.925 USD</td>
+</tr>
+<tr>
+<td>Quy đổi sau cùng</td>
+<td>0.925 × 25000</td>
+<td style="text-align:right">23125 VND</td>
+</tr>
+</tbody>
+</table></div>
+<p>Kết quả là <strong>0.925 USD = 23125 VND, chưa phí</strong>. Không làm tròn 0.925 thành 0.93 ở giữa rồi gọi con số VND sau đó là kết quả chính xác. Thuế, chênh lệch tỷ giá thanh toán, phí ngân hàng và các dịch vụ tính riêng nếu có chưa nằm trong mô hình.</p>
+<p>Kiểm tra theo mỗi request: input là <code>20000 / 1000000 × 0.30 = 0.006 USD</code>; output là <code>5000 / 1000000 × 2.50 = 0.0125 USD</code>. Một request tốn <code>0.0185 USD</code>; nhân 50 cũng được <code>0.925 USD</code>. Hai hướng tính trùng nhau giúp phát hiện nhầm triệu với nghìn.</p>
+<p>Output ít token hơn nhưng đắt hơn ở bài này vì đơn giá output cao hơn. Không gộp 1250000 token rồi nhân một giá chung. Tiền phụ thuộc cả lượng và đơn giá của từng loại, không chỉ tổng số token.</p>
+<h3>Từ 50 lên 1000 request: con số nhỏ có thể đổi nghĩa</h3>
+<p>Giữ nguyên tất cả giả định, tăng số request từ 50 lên 1000, tức tăng <strong>20 lần</strong>, không phải 1000 lần. Tổng input thành 20000000 token; output thành 5000000 token. Tiền input là 6.00 USD, output là 12.50 USD.</p>
+<div class="code-wrap"><pre><code class="language-text">1000 request × 0.0185 USD = 18.50 USD
+0.925 USD × 20           = 18.50 USD
+18.50 USD × 25000        = 462500 VND, chưa phí
+</code></pre></div>
+<p>Như vậy, với <code>20000/5000</code> token input/output mỗi request, <strong>×50 cho 0.925 USD = 23125 VND</strong>, còn <strong>×1000 cho 18.50 USD = 462500 VND</strong>. Tính tuyến tính đúng vì ta giữ đơn giá và cơ cấu cố định. Dịch vụ thật có thể đổi bậc giá, model, chế độ hoặc phí công cụ; khi đó phải lập lại bảng.</p>
+<p>Để so sánh, một <strong>thuê bao GIẢ ĐỊNH 20 USD/tháng</strong> tương đương <strong>500000 VND/tháng</strong> theo cùng tỷ giá. Chưa thể kết luận API tương đương nhưng rẻ hơn: quota, tính năng và điều kiện có thể khác. Nếu Minh không cần mua thuê bao, chi tiền cho API không tự trở thành “tiết kiệm”. Phương án 0 VND phải có mặt trong bảng lựa chọn.</p>
+<h3>Những token không nằm trong câu bạn vừa gõ</h3>
+<p>Lan tưởng input chỉ là “sửa hàm tổng”. Ứng dụng có thể gửi thêm brief, lịch sử, tệp và <strong>tool output</strong>, kết quả công cụ như log test, vào lượt kế tiếp. Lịch sử đã gửi không mặc định miễn phí; cache và lưu phiên có cách tính riêng.</p>
+<p>Một số model ghi nhận/tính phí <strong>reasoning token</strong>, token xử lý suy luận. Cách tính vào usage, output hoặc giới hạn tùy model/provider, không tự nằm trong ví dụ này. Dự toán thật cần bộ đếm/ước tính phù hợp rồi đối chiếu usage khi được phép dùng, không dựa vào đếm từ.</p>
+<p><strong>Agent</strong> có thể đọc mã → sửa → test → đọc lỗi → lặp lại. “Sửa cho xong” có thể sinh nhiều request. Lan giới hạn một hàm, một đề xuất, đầu ra đủ kiểm tra và điểm dừng để xem lại. Khi bắt đầu lượt mới, cô dùng brief cập nhật, không bỏ ràng buộc để tiết kiệm.</p>
+<h3>Budget alert không phải hard cap</h3>
+<p><strong>Budget alert</strong> thông báo đạt ngưỡng; <strong>hard cap</strong> phải có cơ chế chặn dùng/chi theo phạm vi dịch vụ định nghĩa. Email ở 80% không chứng minh dừng ở 100%; số ghi trong ô “budget” không tự là cầu dao.</p>
+<p>Bản nguồn dẫn Gemini API billing và Google Cloud Budgets, <strong>mốc 29/10/2026, chưa xác minh độc lập, cần tra lại</strong>. Không mặc định mọi dịch vụ có cùng nút/cơ chế. Kể cả cap được hỗ trợ, độ trễ, request đang xử lý và ngoại lệ có thể ảnh hưởng mức vượt.</p>
+<p>Chưa hiểu thì chưa bật thanh toán. Nếu sau này được phép dùng, cần biết nơi xem usage, quota/giới hạn thực có, số bước agent, cách dừng và xử lý khóa. Prompt “đừng tiêu quá” không thay cơ chế tài khoản. Bài này tính trên giấy, không bật thanh toán để thử cảnh báo.</p>
+<h2>1.4. FREE FIRST — Học trước, chỉ mua khi biết mình thiếu gì</h2>
+<h3>Quyền không mua là một phần của kế hoạch</h3>
+<p>Nhìn thẻ A, Minh thấy mình cần giấy, kiến thức vòng lặp và có thể trình biên dịch sẵn có, chưa cần agent sửa kho mã. Lan cũng học được Web cục bộ không tích hợp AI. <strong>Free first</strong> ưu tiên phương án không thu phí đủ dùng, không bỏ qua điều kiện dịch vụ.</p>
+<p>Hết quota thì chia nhỏ câu hỏi, chờ chu kỳ sau, đọc tài liệu hoặc nhờ bạn. Không lách giới hạn bằng nhiều tài khoản, dùng key nhặt được hay thử thanh toán vì tò mò. Chưa có công cụ hợp lệ thì luyện bằng thẻ HƯ CẤU.</p>
+<p>Trước nâng cấp, điền: “Tôi thiếu ______; gói giải quyết bằng ______; tôi đo lợi ích qua ______”. Chưa điền được thì chưa có lý do rõ để mua. Trích vài trang đôi khi đủ thay việc mua context lớn.</p>
+<blockquote>
+<p><strong>Quyền không mua.</strong> Khả năng trả tiền không đo năng lực CNTT. Đây không phải chuẩn đầu ra, yêu cầu chi tiêu hay quy định TLU. Ngân sách AI bằng 0 vẫn hợp lệ.</p>
+</blockquote>
+<h3>300000 VND cho 15 tuần: trần kế hoạch, không phải cap kỹ thuật</h3>
+<p>Lan thử một kế hoạch <strong>GIẢ ĐỊNH 300000 VND cho học kỳ 15 tuần</strong>. Đây không phải khuyến nghị mức chi cho mọi sinh viên. Mục đích là thấy một quyết định hàng tháng có thể vượt kế hoạch cả kỳ.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Giai đoạn GIẢ ĐỊNH</th>
+<th style="text-align:right">Dự trù</th>
+<th>Điều kiện để quyết định</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Tuần 1–5: học nền tảng</td>
+<td style="text-align:right">0 VND</td>
+<td>Tài liệu và công cụ miễn phí hợp lệ đủ dùng</td>
+</tr>
+<tr>
+<td>Tuần 6–10: một nhu cầu rõ</td>
+<td style="text-align:right">Tối đa 100000 VND</td>
+<td>Có lợi ích đo được, đủ điều kiện dùng</td>
+</tr>
+<tr>
+<td>Tuần 11–15: hoàn thiện bài</td>
+<td style="text-align:right">Tối đa 100000 VND</td>
+<td>Đánh giá lại nhu cầu, không gia hạn theo quán tính</td>
+</tr>
+<tr>
+<td>Dự phòng</td>
+<td style="text-align:right">100000 VND</td>
+<td>Có thể giữ nguyên, không phải mục tiêu phải tiêu hết</td>
+</tr>
+<tr>
+<td>Tổng trần cá nhân</td>
+<td style="text-align:right">300000 VND</td>
+<td>Kế hoạch trên giấy, không chặn hóa đơn tự động</td>
+</tr>
+</tbody>
+</table></div>
+<p>Thuê bao giả định 500000 VND/tháng vượt cả kế hoạch; API 1000 request tốn 462500 VND chưa phí cũng vượt. Mức 23125 VND ban đầu chưa chứng minh Lan cần API, đủ tuổi hay quản lý khóa được.</p>
+<p>Trước chi, ghi nhiệm vụ, phương án miễn phí đã thử, trần tiền và ngày đánh giá lại. Biết ngày/cách dừng tự gia hạn <strong>trước khi mua</strong>, không giả định nút hủy giống nhau. Sau một tuần, đo lỗi đã hiểu hoặc thao tác tiết kiệm, không đếm câu AI sinh.</p>
+<p><strong>Bổ sung biên tập — cuối tuần thứ năm.</strong> Lan chưa thấy chức năng cần trả tiền. Giữ 100000 VND hay mua để “tạo động lực”? Ghi tiêu chí đánh giá lại.</p>
+<h3>Đáp án kế hoạch — Tiền chưa tiêu không phải phần học bị thiếu</h3>
+<p>Giữ dự trù; đánh giá lại sau bài refactor bằng context đủ dùng, giữ phạm vi và khả năng tự kiểm. Chỉ mua nếu giải quyết hạn chế thật, đủ điều kiện, trong ngân sách. Không cần tiêu hết dự phòng.</p>
+<h3>Ưu đãi sinh viên: đủ điều kiện nộp không có nghĩa chắc chắn nhận</h3>
+<p>Bản nguồn dẫn hướng dẫn GitHub Education với các điều kiện như đang theo học thuộc diện đủ điều kiện, có tài khoản cá nhân, chứng minh tình trạng sinh viên và <strong>từ 13 tuổi</strong>. Bản nguồn cũng ghi quyền lợi GitHub Pro và Copilot Student cho người học đã xác minh theo điều kiện. <strong>Đây là nội dung được ghi nhận theo bộ nguồn ngày 29/10/2026, chưa được kiểm chứng độc lập trong lần biên tập này; tên gói, tuổi, quyền lợi và điều kiện phải tra lại.</strong></p>
+<p>Không dùng một hướng dẫn cũ để tự đổi tên thành “Copilot Pro hiện tại”, không chốt quota từ trí nhớ. <strong>Completion</strong> là gợi ý hoàn thành mã; <strong>chat</strong> là trao đổi; <strong>agent</strong> có thể tổ chức nhiều bước. Quyền lợi ở một hình thức không bảo đảm mọi hình thức dùng đều vô hạn. Chương trình ưu đãi có thể gồm nhiều bên với điều khoản riêng, không mặc định cấp API key miễn phí cho mọi dịch vụ.</p>
+<p>Để đọc một ưu đãi, Lan tách năm câu hỏi: ai đủ điều kiện; cần bằng chứng nào; quyền lợi cụ thể là gì; kéo dài bao lâu; hết ưu đãi hoặc đến kỳ gia hạn thì điều gì xảy ra. Email trường có thể hỗ trợ chứng minh, không phải vé tự được duyệt. Email TLU không tự bảo đảm hồ sơ thành công.</p>
+<p>Bài tập chỉ yêu cầu đọc thông tin, không nộp hồ sơ hoặc tải giấy tờ. Nếu sau này đăng ký, dùng quy trình chính thức và chỉ cung cấp giấy tờ cần thiết ở đúng nơi. Không gửi giấy tờ vào chatbot hoặc nhóm lớp để “nhờ duyệt hộ”.</p>
+<h3>Tuổi, dữ liệu và tài khoản phải được xét trước giá</h3>
+<p>Điều kiện tuổi của một chương trình không áp dụng tự động cho chương trình khác. Bản nguồn ghi điều khoản Gemini API yêu cầu <strong>18 tuổi trở lên</strong> với Gemini API và Google AI Studio. <strong>Claim này mang mốc nguồn 29/10/2026, chưa xác minh độc lập; cần đọc lại điều khoản chính thức trước khi dùng.</strong> Không suy từ mốc 13 của một chương trình giáo dục rằng đủ điều kiện dùng mọi API. Khi chưa đáp ứng hoặc chưa rõ điều kiện, chọn bài trên giấy, không tìm cách vượt giới hạn.</p>
+<p>Cũng theo nội dung bản nguồn dẫn điều khoản Gemini API ở mốc đó, dịch vụ unpaid thuộc phạm vi áp dụng có thể dùng nội dung để cải thiện sản phẩm và có người xem xét; paid có nhiều trường hợp không dùng nội dung để cải thiện nhưng có thể tồn tại chương trình/tier đóng góp dữ liệu. <strong>Các chi tiết này chưa xác minh độc lập và không được trình bày như cam kết hiện hành.</strong> Bài học bền vững là phải xem đúng sản phẩm, cấp dịch vụ, lựa chọn dữ liệu và ngoại lệ.</p>
+<p>Không lấy điều khoản API gán nguyên cho ứng dụng chat. Không rút thành “trả phí là riêng tư tuyệt đối”, “không training là không lưu” hoặc “mọi provider giống nhau”. Với ViSinhVien, chỉ dùng ba khoản GIẢ; không có lý do đưa sao kê, số tài khoản hoặc lịch sử chi tiêu thật lên AI. <code>localStorage</code> cũng không phải kho bí mật hay sao lưu chắc chắn: dữ liệu có thể mất khi xóa dữ liệu trình duyệt, không tự đồng bộ thiết bị hoặc tạo đăng nhập.</p>
+<p>Nếu dùng dịch vụ, cần tài khoản hợp lệ, mật khẩu riêng và xác thực nhiều yếu tố khi được hỗ trợ. Không mua tài khoản lậu hoặc chia sẻ thuê bao/key mà bỏ qua điều khoản và quyền riêng tư. Người bán hoặc người dùng chung có thể đọc lịch sử, thu hồi quyền, làm phát sinh phí. Giá rẻ không bù được việc mất kiểm soát; điều kiện sử dụng phải được kiểm tra trước phép so sánh giá.</p>
+<h2>1.5. AI TOOL BATTLE — Đối chiếu công cụ theo việc, không theo danh tiếng</h2>
+<h3>Ma trận tác vụ: “hợp việc nào?” đứng trước “mạnh nhất?”</h3>
+<p>Minh thích thẻ A vì được tự suy nghĩ; Lan thích công cụ có thể chỉ đúng tệp liên quan. Không có mâu thuẫn: hai người đang ưu tiên tác vụ khác nhau. Giỏi dịch không tự chứng minh giỏi kiểm tra code; viết mã nhanh không chứng minh biết chính sách mới.</p>
+<p>Năm lăng kính để chọn là <strong>provenance</strong> — nguồn gốc/căn cứ; <strong>test</strong> — cách kiểm tra; <strong>context</strong> — thông tin cần nhận; <strong>privacy</strong> — điều kiện dữ liệu; <strong>cost</strong> — tổng chi phí. “Bằng chứng” của debug có thể là dòng code và test; “bằng chứng” của tuổi dùng dịch vụ phải là điều khoản đúng phạm vi.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Tác vụ</th>
+<th>Context cần có</th>
+<th>Provenance và test</th>
+<th>Privacy và cost</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Suy luận logic</td>
+<td>Code, chỉ số, mục tiêu cộng mọi khoản của Minh</td>
+<td>Bám cận vòng lặp; tự xét rỗng, một khoản, ba khoản</td>
+<td>Dữ liệu GIẢ; gợi ý ngắn trên phương án free phù hợp</td>
+</tr>
+<tr>
+<td>Code hoặc refactor</td>
+<td>Brief, hàm liên quan, cấu trúc Expense của Lan</td>
+<td>Đọc thay đổi; kiểm mẫu, biên và dữ liệu sai; không thêm backend</td>
+<td>Không key; xem quyền đọc tệp, số bước và phí lặp</td>
+</tr>
+<tr>
+<td>Đọc tài liệu dài</td>
+<td>Đặc tả và đoạn ghi chú được phép</td>
+<td>Trích đúng đoạn, tìm mâu thuẫn, so brief hiện hành</td>
+<td>Không gửi tài liệu hạn chế; trích đoạn trước khi mua context lớn</td>
+</tr>
+<tr>
+<td>Dịch và diễn giải</td>
+<td>Đoạn lỗi/tài liệu, trình độ người học</td>
+<td>Giữ tên API, số liệu và phủ định; không đổi số nguyên thành số thực</td>
+<td>Loại thông tin riêng; không cần agent nhiều bước</td>
+</tr>
+<tr>
+<td>Tìm thông tin mới</td>
+<td>Câu hỏi về ưu đãi/giá, đúng sản phẩm và phạm vi</td>
+<td>Nguồn chính thức hiện hành, đoạn hỗ trợ, ngày truy cập</td>
+<td>Không gửi giấy tờ; xét phí tìm kiếm nếu có</td>
+</tr>
+</tbody>
+</table></div>
+<p>Ma trận không xếp hạng sản phẩm thật. Không có web thì không dùng làm nguồn duy nhất cho chính sách hiện tại. Không chạy code vẫn có thể gợi ý, nhưng cần kiểm thử ở nơi khác. Chọn công cụ có phần việc mình kiểm chứng được, thay vì giao hết chỉ vì nó nhận làm.</p>
+<h3>Benchmark A–C: chuẩn bị một phép thử công bằng vừa đủ</h3>
+<p><strong>Benchmark</strong> là phép thử có kiểm soát để so mức phù hợp. Ba đề kế thừa nguồn, <strong>không có điểm sản phẩm điền sẵn</strong>. Không có công cụ được phép dùng thì phân tích trên giấy, ghi là luyện đánh giá, không phải benchmark thực.</p>
+<p>Giữ cùng brief, code, dữ liệu, đầu ra và giới hạn trợ giúp; nên mở trao đổi mới để giảm ảnh hưởng lịch sử. Ghi ứng dụng, nhãn model/chưa xác định, chế độ, ngày, tính năng bật. Khác biệt web/chạy code phải được ghi riêng, không quy tất cả cho model.</p>
+<p>Làm theo thứ tự <strong>gửi đề → giữ nguyên câu trả lời → tự kiểm → chấm → ghi hỏi bổ sung và giới hạn kết luận</strong>. Có điều kiện thì thử lại vì đầu ra có thể đổi. Vài đề không chứng minh “tốt nhất cho mọi người”.</p>
+<h3>Đề A — Giải thích logic C++ cho Minh</h3>
+<p>Dán <strong>nguyên snippet đầu chương và brief mục 1.2</strong>; chữ “xem đầu chương” không tự gửi tài liệu cho ứng dụng.</p>
+<div class="code-wrap"><pre><code class="language-text">Với snippet C++ đính kèm, hãy gợi ý một bước trước khi nêu cách sửa.
+Sau đó giải thích bằng chỉ số vì sao tổng ba khoản GIẢ bị thiếu.
+Nêu kết quả mong đợi sau sửa cho: rỗng; một khoản 7000;
+ba khoản 35000, 7000, 18000. Không truy cập quá danh sách.
+Phân biệt dự đoán với kết quả đã chạy; chưa viết lại toàn bộ bài.
+</code></pre></div>
+<p>Chấm cả độ đúng và cách giúp học: viết ngay toàn bài có thể đúng kết quả nhưng sai mức trợ giúp. Lời “đã chạy” cần bằng chứng.</p>
+<h3>Đề B — Refactor Web mà không đổi sản phẩm</h3>
+<p>Dùng brief và <strong>bản rút gọn cho đề bài</strong> dưới đây, chỉ cộng khi đầu vào hợp lệ. Không khẳng định demo <code>data.js</code> thiếu kiểm tra; không thay snippet vào demo đúng.</p>
+<div class="code-wrap"><pre><code class="language-javascript">function totalExpenses(expenses) {
+  return expenses.reduce((sum, expense) =&gt; sum + expense.amount, 0);
+}
+</code></pre></div>
+<div class="code-wrap"><pre><code class="language-text">Hãy đề xuất cách bổ sung xác thực cho bản rút gọn đính kèm.
+Expense có id, title, amount, category; amount là số nguyên VND,
+0 &lt; amount &lt;= 1000000000; danh sách tối đa 500 khoản; rỗng tổng 0.
+Giữ HTML + JavaScript + localStorage, không backend hoặc đăng nhập.
+Phân biệt kiểm tra khi thêm, khi nạp và trách nhiệm hàm tính tổng.
+Nêu cách xử lý JSON hỏng và các test; chưa thêm thư viện hay tính năng.
+</code></pre></div>
+<p>Chấm hợp đồng và hành vi, không thưởng số lớp hoặc tên hàm giống mẫu. Kiểm form rồi tin mọi dữ liệu đọc lại là chưa đủ.</p>
+<h3>Đề C — Đọc và kiểm tra nguồn cho Lan</h3>
+<p>Cung cấp brief và đoạn dữ kiện sau, kèm liên kết để người trả lời biết giới hạn nguồn:</p>
+<div class="code-wrap"><pre><code class="language-text">ĐOẠN ĐỐI CHIẾU TỪ BẢN NGUỒN, MỐC 29/10/2026:
+GitHub Education yêu cầu đáp ứng điều kiện người học, tài khoản cá nhân
+và bằng chứng tình trạng sinh viên; bản nguồn ghi tuổi tối thiểu 13.
+Email trường không tự bảo đảm được duyệt. Chưa xác minh độc lập lại.
+Nguồn: https://docs.github.com/en/education/explore-the-benefits-of-teaching-and-learning-with-github-education/github-education-for-students/apply-to-github-education-as-a-student
+
+Hãy tóm tắt cho Minh, phân biệt đủ điều kiện nộp với chắc chắn được duyệt.
+Email TLU có tự bảo đảm ưu đãi không? Đoạn này cho phép kết luận gì
+về quyền sử dụng một API khác? Nếu không truy xuất web thực,
+chỉ phân tích đoạn được cung cấp, không tuyên bố đã kiểm tin mới.
+</code></pre></div>
+<p>Đề C cố ý có mốc cũ và giới hạn xác minh. Một câu trả lời tốt không “làm mới” tài liệu bằng cách gắn ngày hiện tại. Nếu có truy xuất thật, phải ghi trang đã đọc và claim được hỗ trợ; việc đó là bằng chứng bổ sung, không xóa mốc của đoạn được cung cấp.</p>
+<h3>Đáp án benchmark A–C — Chuẩn đối chiếu, không phải kết quả đo</h3>
+<p><strong>A:</strong> <code>i &lt; n - 1</code> bỏ khoản cuối; sửa thành <code>i &lt; n</code>, không dùng <code>i &lt;= n</code>. Ba kỳ vọng sau sửa là <strong>0, 7000, 60000</strong>, không phải log. Ca một khoản phơi lộ việc bỏ mất khoản duy nhất; rỗng một mình chưa đủ. Trace/thực thi xem mục 2.3; validation là nhiệm vụ riêng.</p>
+<p><strong>B:</strong> kiểm cấu trúc danh sách, tối đa 500 khoản; từng <code>amount</code> thỏa <code>Number.isInteger</code>, lớn hơn 0, không quá 1000000000. Kiểm khi thêm và nạp lại; xử lý JSON hỏng có thông báo, không âm thầm mất dữ liệu. Có thể xác thực ở biên hoặc đầu hàm tổng nhưng phải rõ hợp đồng. Không thêm backend/tài khoản/thư viện lớn. Test logic chưa kiểm chứng giao diện/lưu trữ.</p>
+<p><strong>C:</strong> email TLU không bảo đảm duyệt; điều kiện và bằng chứng khác kết quả xét hồ sơ. Đoạn nguồn không chứng minh quyền mọi API hay điều khoản hiện tại. Không truy xuất mới thì giữ mốc gốc, ghi cần tra lại; không suy tuổi sang dịch vụ khác.</p>
+<h3>Rubric 10 điểm: dùng sau khi có bằng chứng</h3>
+<p><strong>Rubric</strong> là bảng tiêu chí chấm. Chấm từng đề A, B hoặc C theo năm tiêu chí, mỗi tiêu chí 0–2; tổng tối đa <strong>10 điểm cho một đề</strong>. Đây là cách chuyển năm lăng kính thành đánh giá đầu ra, không phải thuật toán xếp hạng công cụ.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Tiêu chí</th>
+<th>0 điểm</th>
+<th>1 điểm</th>
+<th>2 điểm</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Đúng trọng tâm</td>
+<td>Sai bài hoặc sai kết luận chính</td>
+<td>Đúng một phần, thiếu quan trọng</td>
+<td>Đúng tác vụ và kết quả chính</td>
+</tr>
+<tr>
+<td>Giữ ràng buộc/context</td>
+<td>Bỏ hoặc tự đổi yêu cầu</td>
+<td>Giữ phần lớn, cần nhắc</td>
+<td>Giữ yêu cầu liên quan, nhận ra dữ kiện thiếu</td>
+</tr>
+<tr>
+<td>Bằng chứng/provenance</td>
+<td>Bịa nguồn, bịa chạy test hoặc không căn cứ</td>
+<td>Có căn cứ nhưng chưa rõ/đủ</td>
+<td>Suy luận, test hoặc nguồn phù hợp; nêu giới hạn</td>
+</tr>
+<tr>
+<td>Dễ học và kiểm tra</td>
+<td>Khó hiểu, không có cách tự kiểm</td>
+<td>Hiểu được một phần</td>
+<td>Vừa sức, giúp tự làm bước tiếp</td>
+</tr>
+<tr>
+<td>An toàn và tiết kiệm</td>
+<td>Đòi dữ liệu thật/key hoặc mở rộng tốn kém</td>
+<td>Có nhắc nhưng chưa cụ thể</td>
+<td>Giữ dữ liệu GIẢ, phạm vi nhỏ, tránh chi phí vô ích</td>
+</tr>
+</tbody>
+</table></div>
+<p>Một đề nghị đưa key bí mật vào Web phải bị loại khỏi phương án triển khai đến khi sửa, dù tổng điểm khác cao. Điểm không bù được vi phạm điều kiện bắt buộc. Nếu chưa kiểm nguồn hoặc chưa chạy code, ghi phần đó là chưa kiểm, không tự cộng điểm như đã có bằng chứng.</p>
+<h3>Phiếu benchmark để trống</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Trường ghi nhận</th>
+<th>Kết quả của bạn</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Thử công cụ thật hay luyện đánh giá trên giấy?</td>
+<td>______________________________</td>
+</tr>
+<tr>
+<td>Ứng dụng, model công bố, provider biết được, chế độ</td>
+<td>______________________________</td>
+</tr>
+<tr>
+<td>Ngày thử, nguồn nhận diện, tính năng bật</td>
+<td>______________________________</td>
+</tr>
+<tr>
+<td>Brief, code và dữ liệu dùng chung</td>
+<td>______________________________</td>
+</tr>
+<tr>
+<td>Điểm A /10; B /10; C /10</td>
+<td>______________________________</td>
+</tr>
+<tr>
+<td>Căn cứ cho điểm và phần chưa kiểm</td>
+<td>______________________________</td>
+</tr>
+<tr>
+<td>Thời gian, số lượt hỏi lại</td>
+<td>______________________________</td>
+</tr>
+<tr>
+<td>Chi phí quan sát được hoặc “chưa xác định”</td>
+<td>______________________________</td>
+</tr>
+<tr>
+<td>Chọn cho tác vụ nào; không chọn cho tác vụ nào</td>
+<td>______________________________</td>
+</tr>
+</tbody>
+</table></div>
+<p>Chỉ chấm khi có bằng chứng; bài trên giấy không là kết quả model. Không phân bổ thuê bao thành giá request tùy tiện. Minh ưu tiên đúng, dễ hiểu, miễn phí hơn nhiều mã không giải thích nổi.</p>
+<h2>1.6. MINI CHALLENGE — 20 phút để nhận diện, ước chi và quyết định</h2>
+<h3>Chuẩn bị một tờ giấy, không chuẩn bị thẻ thanh toán</h3>
+<p>Lab kế thừa nguồn, làm cá nhân/theo cặp bằng sách và giấy. Không đăng ký, cài đặt, gọi API, tạo key, tải giấy tờ hay dùng chi tiêu thật; không cần tài khoản AI.</p>
+<p><strong>Tình huống GIẢ ĐỊNH:</strong> Minh cần hiểu lỗi 42000; Lan kiểm Web cục bộ và thông tin ưu đãi. Ứng dụng GIẢ “Trợ lý học ViSinhVien” chỉ công bố “Tự động”, không nêu model từng lượt/provider. Web vẫn HTML, JavaScript, <code>localStorage</code>, không backend. Dùng chi phí giả định mục 1.3.</p>
+<p>Nộp một phiếu gồm nhận diện, prompt, phép tính và quyết định có điều kiện. Không cần làm hết benchmark A–C trong lab; đây là nhiệm vụ ghép kỹ năng, không phải cuộc thi tốc độ.</p>
+<h3>Lịch 20 phút: làm từng bước vì một lý do</h3>
+<p><strong>Phút 0–4 — Nhận diện.</strong> Điền application/model/provider, thêm producer nếu biết. Gạch dữ kiện, khoanh điều chưa rõ để tránh đoán model từ giao diện. Quan sát công cụ thật thì chỉ đọc thông tin được phép, ghi nguồn/ngày, không đổi cài đặt.</p>
+<p><strong>Phút 4–8 — Viết prompt.</strong> Đưa mục tiêu, code, hợp đồng, ba khoản và cặp 60000/42000; xin gợi ý trước. Đọc như người chưa biết dự án để phát hiện thiếu context. Gửi nơi khác phải dán snippet thật.</p>
+<p><strong>Phút 8–13 — Ước chi.</strong> Tách input/output cho 50 request, đổi USD/VND, rồi xét 1000 request. Kiểm chéo từng request để bắt lỗi đơn vị; giữ nguyên số giả định để đối chiếu.</p>
+<p><strong>Phút 13–17 — Quyết định.</strong> Dùng ít nhất ba tiêu chí ma trận, có phương án không trả tiền, cách kiểm chứng và điều kiện đánh giá lại. Sở thích không thay thế bằng chứng.</p>
+<p><strong>Phút 17–20 — Đối chiếu.</strong> Sửa phiếu nhưng giữ dấu lỗi ban đầu để nhận ra điều vừa học. Nói trong 30 giây: biết/chưa biết gì, chọn gì, kiểm thế nào, chi tối đa bao nhiêu.</p>
+<h3>Worksheet — Điền trước khi mở đáp án</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Ô cần điền</th>
+<th>Câu trả lời của bạn</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Ứng dụng đang xét</td>
+<td>________________________________________</td>
+</tr>
+<tr>
+<td>Model cụ thể hoặc chế độ được công bố</td>
+<td>________________________________________</td>
+</tr>
+<tr>
+<td>Provider của đường truy cập</td>
+<td>________________________________________</td>
+</tr>
+<tr>
+<td>Producer, nếu có căn cứ</td>
+<td>________________________________________</td>
+</tr>
+<tr>
+<td>Nguồn và ngày quan sát, hoặc “tình huống GIẢ ĐỊNH”</td>
+<td>________________________________________</td>
+</tr>
+<tr>
+<td>Điều chưa đủ chứng cứ để kết luận</td>
+<td>________________________________________</td>
+</tr>
+<tr>
+<td>Mục tiêu và kết quả đúng của ViSinhVien</td>
+<td>________________________________________</td>
+</tr>
+<tr>
+<td>Hiện tượng được đề cho; test đầu tiên</td>
+<td>________________________________________</td>
+</tr>
+<tr>
+<td>Dữ liệu không được gửi</td>
+<td>________________________________________</td>
+</tr>
+</tbody>
+</table></div>
+<div class="code-wrap"><pre><code class="language-text">Tôi đang học: _________________________________________________
+Mục tiêu và phạm vi: __________________________________________
+Dữ liệu GIẢ, hợp đồng và code cần dán: __________________________
+Kết quả mong đợi / hiện tượng theo đề: _________________________
+Hãy giúp theo cách: ___________________________________________
+Tôi sẽ tự kiểm bằng: __________________________________________
+Phần chưa chạy hoặc chưa xác minh: _____________________________
+</code></pre></div>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Phép tính bắt buộc</th>
+<th>Kết quả kèm đơn vị</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>20000 × 50</td>
+<td>____________________ token input</td>
+</tr>
+<tr>
+<td>5000 × 50</td>
+<td>____________________ token output</td>
+</tr>
+<tr>
+<td>Tiền input theo đơn giá giả định</td>
+<td>____________________ USD</td>
+</tr>
+<tr>
+<td>Tiền output theo đơn giá giả định</td>
+<td>____________________ USD</td>
+</tr>
+<tr>
+<td>Tổng và quy đổi ở 50 request</td>
+<td>__________ USD = __________ VND</td>
+</tr>
+<tr>
+<td>Chi phí một request để kiểm tra chéo</td>
+<td>____________________ USD</td>
+</tr>
+<tr>
+<td>Tổng ở 1000 request, bằng 20 lần ban đầu</td>
+<td>__________ USD = __________ VND</td>
+</tr>
+<tr>
+<td>Khoản chưa tính trong ví dụ</td>
+<td>________________________________________</td>
+</tr>
+<tr>
+<td>So với kế hoạch 300000 VND, chưa phí</td>
+<td>________________________________________</td>
+</tr>
+</tbody>
+</table></div>
+<p>Hoàn thành quyết định có điều kiện:</p>
+<div class="code-wrap"><pre><code class="language-text">Với Minh, tôi chọn __________ vì __________.
+Với Lan, tôi chọn __________ vì __________.
+Ba tiêu chí tôi dựa vào là __________, __________, __________.
+Phương án không trả tiền của tôi là __________.
+Tôi chưa mua __________; mức chi tôi chấp nhận lúc này là __________.
+Tôi sẽ cân nhắc lại khi __________, sau khi kiểm tra __________.
+Nếu điều kiện tuổi chưa phù hợp hoặc chưa rõ, tôi sẽ __________.
+Nếu có nguy cơ vượt ngân sách, tôi sẽ __________.
+</code></pre></div>
+<h3>Đáp án MINI CHALLENGE — Một phiếu hoàn chỉnh có điều kiện</h3>
+<p><strong>Nhận diện:</strong> ứng dụng Trợ lý học ViSinhVien, chế độ Tự động; model/provider/producer chưa xác định. Nguồn là tình huống GIẢ ĐỊNH, không phải quan sát dịch vụ; không tự ghi ngày truy cập thật.</p>
+<p><strong>Mục tiêu:</strong> cộng mọi khoản hợp lệ; ba khoản GIẢ kỳ vọng 60000, lỗi đề cho 42000. Rỗng tổng 0; thử một khoản 7000 rồi ba khoản để kiểm lỗi bỏ cuối. Không gửi key, giấy tờ, sao kê, tài khoản hoặc dữ liệu cá nhân. Chưa chạy thì ghi kỳ vọng, không báo cáo test.</p>
+<p><strong>Prompt mẫu:</strong></p>
+<div class="code-wrap"><pre><code class="language-text">Tôi là Minh năm nhất, mới học vòng lặp C++.
+ViSinhVien cộng tất cả khoản hợp lệ: amount nguyên VND,
+0 &lt; amount &lt;= 1000000000, tối đa 500 khoản; rỗng tổng 0.
+Dữ liệu GIẢ: Cơm trưa 35000, Xe buýt 7000, Vở ghi 18000.
+Kỳ vọng 60000; tình huống đề cho chương trình kết thúc ở 42000.
+Tổng tối đa 500000000000, không đổi sang kiểu không chứa đủ.
+Tôi dán snippet lỗi ngay sau yêu cầu này.
+Hãy gợi ý một bước bằng chỉ số, chưa viết lại chương trình.
+Sau đó nêu test rỗng, một khoản 7000, ba khoản mẫu.
+Phân biệt suy luận với chạy thật; thiếu dữ kiện thì chỉ rõ.
+</code></pre></div>
+<p>Khi dùng mẫu này, phải dán kèm snippet đầu chương; câu “tôi dán” không tự đính kèm code. Nếu đã chạy thật, có thể thay dòng hiện tượng bằng lệnh và log của chính mình, không mượn kết quả dự đoán làm log.</p>
+<p><strong>Phép tính:</strong> tổng input 1000000 token, output 250000 token; tiền tương ứng 0.30 và 0.625 USD. Tổng <strong>0.925 USD = 23125 VND chưa phí</strong>. Một request <strong>0.0185 USD</strong>, nhân 50 khớp. Với 1000 request: input 20000000 token, output 5000000 token; tiền 6.00 + 12.50 = <strong>18.50 USD = 462500 VND chưa phí</strong>. Mức sau vượt kế hoạch giả định 300000 VND; cảnh báo không tự bảo đảm chặn hóa đơn. Thuê bao giả định 20 USD là 500000 VND/tháng nhưng chưa tương đương quyền lợi API.</p>
+<p><strong>Minh:</strong> dùng giấy/tài liệu hoặc gợi ý miễn phí hợp lệ; tự sửa cận trên bài làm, kiểm rỗng/một/ba khoản ở mục 2.3. Chọn theo context đủ dùng, test kiểm được, cost 0; dữ liệu GIẢ giữ privacy. Không cần API.</p>
+<p><strong>Lan:</strong> giữ Web cục bộ, kiểm đầu vào/tổng rồi kiểm riêng hiển thị/lưu/nạp. Ưu đãi cần nguồn chính thức; chưa truy xuất thì ghi chưa xác minh, chưa mua. Không tự tích hợp API.</p>
+<p><strong>Đánh giá lại</strong> khi free chưa đáp ứng nhu cầu rõ, đã tra quyền lợi/tuổi/dữ liệu, quản lý được chi phí và biết cách dừng gia hạn. Chưa đủ điều kiện hoặc chưa hiểu kiểm soát tiền thì tiếp tục trên giấy/miễn phí. Mức chi hiện tại có thể là 0 VND.</p>
+<h3>QUICK CHECK — Sáu câu tự kiểm cuối chương</h3>
+<p>Trả lời từng câu bằng một kết luận và một lý do. Đừng chỉ nhớ chữ “không”; hãy chỉ ra loại bằng chứng còn thiếu.</p>
+<ol>
+<li>Nhãn “tích hợp Claude” đã đủ xác định provider và phiên bản chưa?</li>
+<li>Cùng model nhưng một ứng dụng đề xuất backend cho ViSinhVien: có chắc quảng cáo sai không?</li>
+<li>Danh sách rỗng có vi phạm <code>amount &gt; 0</code> không? Có cần tạo một khoản 0 để biểu diễn rỗng không?</li>
+<li>Đếm số từ tiếng Việt có đủ tính chính xác hóa đơn token không?</li>
+<li>Email TLU có bảo đảm ưu đãi sinh viên và quyền dùng mọi API không?</li>
+<li>Trả phí và bật budget alert đã đủ bảo đảm riêng tư, không vượt ngân sách chưa?</li>
+</ol>
+<h3>Đáp án QUICK CHECK — Sáu kết luận và lý do</h3>
+<p><strong>1. Chưa.</strong> Cần định danh model và đường truy cập; producer có thể khác provider như ví dụ Claude qua Bedrock. Không đoán qua văn phong.</p>
+<p><strong>2. Chưa thể kết luận quảng cáo sai.</strong> Kiểm brief thực sự gửi, lịch sử, chỉ dẫn, công cụ và cấu hình. Backend sai phạm vi đã chốt, nhưng khác đầu ra chưa chứng minh khác model.</p>
+<p><strong>3. Không vi phạm, không cần khoản 0.</strong> Điều kiện dương áp dụng cho khoản tồn tại. Rỗng có tổng 0; tạo <code>amount = 0</code> lại vi phạm hợp đồng.</p>
+<p><strong>4. Không.</strong> Token tùy tokenizer/nội dung; usage có thể gồm lịch sử, code, tool output và khoản tính riêng. Cần bộ đếm phù hợp và báo cáo lượng dùng, không dùng wordcount.</p>
+<p><strong>5. Không.</strong> Còn điều kiện, bằng chứng sinh viên và xét hồ sơ. Tuổi/quyền dùng từng API phải tra riêng; mốc nguồn chưa phải xác nhận hiện hành.</p>
+<p><strong>6. Chưa.</strong> Kiểm chính sách đúng sản phẩm/tier/cài đặt. Budget alert không mặc định là hard cap; cần hiểu cơ chế chặn, phạm vi, độ trễ và request đang xử lý.</p>
+<h3>Tự giảng lại trong 7 phút — Bản chuyển thể từ Speaker Notes</h3>
+<p>Phần này không thay lab 20 phút. Bạn có thể nói cho bạn học hoặc tự ghi âm mà không mở giao diện dịch vụ. Đây là cách giữ nội dung trình bày 5–8 phút của bản nguồn trong hình thức tự học.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Thời gian</th>
+<th>Việc trình bày</th>
+<th>Điều cần chứng minh</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0:00–1:00</td>
+<td>Kể Minh, Lan, ba khoản GIẢ; phân biệt 42000 và 60000</td>
+<td>Tự cộng đúng, biết tổng trung gian chưa tự là lỗi</td>
+</tr>
+<tr>
+<td>1:00–2:15</td>
+<td>Vẽ application, provider, model; hỏi thêm producer</td>
+<td>Không đồng nhất ứng dụng với model, chấp nhận chưa biết</td>
+</tr>
+<tr>
+<td>2:15–3:30</td>
+<td>Sửa prompt thiếu; nhắc hợp đồng và chỉ số cuối</td>
+<td>Không đổi thành cận vượt mảng; chưa cần kể lại toàn trace</td>
+</tr>
+<tr>
+<td>3:30–4:45</td>
+<td>Tính riêng input/output, 50 rồi 1000 request</td>
+<td>Giữ đơn vị, số giả định và nhãn chưa phí</td>
+</tr>
+<tr>
+<td>4:45–6:00</td>
+<td>Chọn free first; nhắc tuổi, ưu đãi, gia hạn, dữ liệu</td>
+<td>Không biến email trường hoặc trả tiền thành bảo đảm</td>
+</tr>
+<tr>
+<td>6:00–7:00</td>
+<td>Hỏi kiểm code bằng gì, cảnh báo có dừng không</td>
+<td>Nêu được bằng chứng và điều chưa xác minh</td>
+</tr>
+</tbody>
+</table></div>
+<p>Có 5 phút thì giảm hỏi đáp, không bỏ nhãn giả định; có 8 phút thì thêm một quyết định có điều kiện. Không trình diễn đăng nhập, thanh toán hoặc giấy tờ để làm bài nói sinh động hơn.</p>
+<h3>SKILL UNLOCKED — Bạn mang gì sang chương tiếp theo?</h3>
+<p>Phiếu hoàn thành cần thể hiện: nhận diện vai trò, chọn context, phân biệt suy luận/thực thi/tìm nguồn, tính input/output và quyết định chi tiêu. Đây là bằng chứng một phiên học, không chứng nhận năng lực lâu dài.</p>
+<p>Ba câu mang theo:</p>
+<ul>
+<li><strong>Biết ứng dụng, đường truy cập và model được công bố; thiếu chứng cứ thì ghi chưa xác định.</strong></li>
+<li><strong>Đưa đúng mục tiêu/context, kiểm bằng phép tính, test hoặc nguồn; sự tự tin không phải bằng chứng.</strong></li>
+<li><strong>Ưu tiên miễn phí đủ dùng; tính lượng dùng và điều kiện trước trả tiền. Không mua vẫn học nghiêm túc.</strong></li>
+</ul>
+<p>Sang <strong>Chương 2 · Trở thành người điều khiển AI</strong>, Minh làm trace/sửa/test ở mục 2.3; Lan theo dữ liệu Web ở mục 2.4. <strong>Chương 3 · Đừng để AI suy nghĩ thay bạn</strong> giữ phần tự làm; <strong>Chương 4 · Sử dụng AI có trách nhiệm</strong> xét quyền, dữ liệu và trách nhiệm.</p>
+<h3>Nguồn chính thức và việc còn phải tra lại</h3>
+<p><strong>29/10/2026 là mốc truy cập của bộ nguồn được cung cấp</strong>, không phải ngày phát hành hoặc ngày kiểm tra của lần biên tập này. Chưa xác minh độc lập nội dung hiện hành; cần tra lại model, gói, credit, quota, tuổi, dữ liệu và billing trước khi áp dụng. Giữ nguyên 11 liên kết chính thức gốc:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Nội dung đối chiếu</th>
+<th>Nguồn chính thức</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Họ model, định danh</td>
+<td><a href="https://docs.anthropic.com/en/docs/about-claude/models/overview">Anthropic — Models overview</a></td>
+</tr>
+<tr>
+<td>Claude qua provider khác</td>
+<td><a href="https://aws.amazon.com/bedrock/claude/">AWS — Claude in Amazon Bedrock</a></td>
+</tr>
+<tr>
+<td>API, xác thực, chỉ định model</td>
+<td><a href="https://ai.google.dev/gemini-api/docs">Google — Gemini API docs</a></td>
+</tr>
+<tr>
+<td>Lớp ứng dụng Gemini</td>
+<td><a href="https://gemini.google/overview/">Google — Gemini overview</a></td>
+</tr>
+<tr>
+<td>Tuổi, điều kiện, bằng chứng sinh viên</td>
+<td><a href="https://docs.github.com/en/education/explore-the-benefits-of-teaching-and-learning-with-github-education/github-education-for-students/apply-to-github-education-as-a-student">GitHub — Apply to GitHub Education as a student</a></td>
+</tr>
+<tr>
+<td>Quyền lợi, thời hạn, giới hạn</td>
+<td><a href="https://education.github.com/pack">GitHub Student Developer Pack</a></td>
+</tr>
+<tr>
+<td>Free/paid, đơn vị giá, phụ phí</td>
+<td><a href="https://ai.google.dev/gemini-api/docs/pricing">Google — Gemini API pricing</a></td>
+</tr>
+<tr>
+<td>Tuổi, sản phẩm/tier, xử lý dữ liệu</td>
+<td><a href="https://ai.google.dev/gemini-api/terms">Google — Gemini API terms</a></td>
+</tr>
+<tr>
+<td>Cơ chế kiểm soát mức dùng</td>
+<td><a href="https://ai.google.dev/gemini-api/docs/billing">Google — Gemini API billing</a></td>
+</tr>
+<tr>
+<td>Ngân sách và cảnh báo</td>
+<td><a href="https://cloud.google.com/billing/docs/how-to/budgets">Google Cloud — Budgets</a></td>
+</tr>
+<tr>
+<td>Credit API theo điều kiện gói</td>
+<td><a href="https://developers.openai.com/api/docs/guides/chatgpt-api-credits">OpenAI — ChatGPT/API credits</a></td>
+</tr>
+</tbody>
+</table></div>
+<p>Giá <strong>0.30/2.50 USD mỗi triệu token</strong>, thuê bao <strong>20 USD</strong>, tỷ giá <strong>25000 VND/USD</strong>, ngân sách <strong>300000 VND</strong> đều GIẢ ĐỊNH, không lấy từ bảng giá thật. Thẻ hư cấu không phải benchmark; bảng kỳ vọng không phải log. Kiểm chứng thật phải ghi riêng công cụ/lệnh/nguồn, ngày và kết quả.</p>
+</main></body></html>

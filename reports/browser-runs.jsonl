@@ -1,0 +1,1071 @@
+{"runId":"2026-10-30T01:03:47.094Z","time":"2026-10-30T01:03:47.095Z","event":"start"}
+{"runId":"2026-10-30T01:03:47.094Z","time":"2026-10-30T01:03:47.457Z","event":"check","name":"Chapter 2 preview width 1440","ok":true,"evidence":{"width":1440,"scrollWidth":1425}}
+{"runId":"2026-10-30T01:03:47.094Z","time":"2026-10-30T01:03:47.573Z","event":"check","name":"Chapter 2 preview width 375","ok":true,"evidence":{"width":375,"scrollWidth":360}}
+{"time": "2026-10-30T01:04:29.917854+00:00", "event": "preliminary-screenshot-limitation", "evidence": "CLI window-size=375 produced a cropped viewport and Python cp1252 stderr decode error; screenshot exists but is NOT valid mobile evidence. Replaced for verification by CDP setDeviceMetricsOverride, 375px measured and screenshot reviewed.", "artifact": "chapter2-preview-mobile.png"}
+{"runId":"2026-10-30T01:51:15.704Z","time":"2026-10-30T01:51:15.705Z","event":"start"}
+{"runId":"2026-10-30T01:51:15.704Z","time":"2026-10-30T01:51:16.055Z","event":"check","name":"Dashboard 14 tasks / 8 phases","ok":true,"evidence":"Read state.js from file://"}
+{"runId":"2026-10-30T01:51:15.704Z","time":"2026-10-30T01:51:56.358Z","event":"error","error":"Error: CDP timeout Runtime.evaluate"}
+{"runId":"2026-10-30T01:52:41.227Z","time":"2026-10-30T01:52:41.227Z","event":"start"}
+{"runId":"2026-10-30T01:52:41.227Z","time":"2026-10-30T01:52:41.555Z","event":"check","name":"Dashboard 14 tasks / 8 phases","ok":true,"evidence":"Read state.js from file://"}
+{"runId":"2026-10-30T01:52:41.227Z","time":"2026-10-30T01:54:11.847Z","event":"error","error":"Error: CDP timeout Runtime.evaluate"}
+{"runId":"2026-10-30T01:54:41.295Z","time":"2026-10-30T01:54:41.296Z","event":"start"}
+{"runId":"2026-10-30T01:54:41.295Z","time":"2026-10-30T01:54:41.634Z","event":"check","name":"Dashboard 14 tasks / 8 phases","ok":true,"evidence":"Read state.js from file://"}
+{"runId":"2026-10-30T01:54:41.295Z","time":"2026-10-30T01:55:01.952Z","event":"check","name":"Book loaded","ok":true,"evidence":"4 full chapters, 4 self-check controls"}
+{"runId":"2026-10-30T01:54:41.295Z","time":"2026-10-30T01:55:01.953Z","event":"check","name":"Images decoded","ok":false,"evidence":16}
+{"runId":"2026-10-30T01:54:41.295Z","time":"2026-10-30T01:55:02.058Z","event":"check","name":"All book anchors exist","ok":true,"evidence":[]}
+{"runId":"2026-10-30T01:54:41.295Z","time":"2026-10-30T01:55:02.059Z","event":"check","name":"Budget 1000 calls","ok":true,"evidence":["18.500 USD","≈ 462.500 VND · chưa phí khác"]}
+{"runId":"2026-10-30T01:54:41.295Z","time":"2026-10-30T01:55:02.061Z","event":"check","name":"Reject blank budget","ok":true,"evidence":"No fabricated estimate for empty field"}
+{"runId":"2026-10-30T01:54:41.295Z","time":"2026-10-30T01:55:02.067Z","event":"check","name":"Trace 42000 / 60000","ok":true,"evidence":["Dừng tại i = 2 · tổng 42.000 VND. Vở ghi chưa được cộng.","Dừng tại i = 3 · tổng 60.000 VND. Đã cộng đủ ba khoản; vẫn cần ca biên và dữ liệu sai."]}
+{"runId":"2026-10-30T01:54:41.295Z","time":"2026-10-30T01:55:02.158Z","event":"check","name":"TOC non-accented search","ok":true,"evidence":"Unicode NFD and đ/d normalization"}
+{"runId":"2026-10-30T01:54:41.295Z","time":"2026-10-30T01:55:02.158Z","event":"check","name":"Self-check saves local progress","ok":true,"evidence":"User-owned self-check, not test score"}
+{"runId":"2026-10-30T01:54:41.295Z","time":"2026-10-30T01:55:02.159Z","event":"check","name":"Font controls stay within 16–22 px","ok":true,"evidence":"Measured CSS variable, then restored 18px"}
+{"runId":"2026-10-30T01:54:41.295Z","time":"2026-10-30T01:55:22.245Z","event":"check","name":"Reader self-check persists after reload","ok":true,"evidence":"Same isolated Chrome file:// origin"}
+{"runId":"2026-10-30T01:54:41.295Z","time":"2026-10-30T01:55:22.246Z","event":"check","name":"Quiz gives explanation","ok":true,"evidence":"Correct choice plus reasoning"}
+{"runId":"2026-10-30T01:54:41.295Z","time":"2026-10-30T01:55:22.247Z","event":"check","name":"Print opens and restores answers","ok":true,"evidence":"beforeprint/afterprint events"}
+{"runId":"2026-10-30T01:54:41.295Z","time":"2026-10-30T01:55:22.361Z","event":"check","name":"No page overflow at 768","ok":true,"evidence":{"width":768,"scrollWidth":753}}
+{"runId":"2026-10-30T01:54:41.295Z","time":"2026-10-30T01:55:22.487Z","event":"check","name":"No page overflow at 375","ok":true,"evidence":{"width":375,"scrollWidth":360}}
+{"runId":"2026-10-30T01:54:41.295Z","time":"2026-10-30T01:55:22.557Z","event":"check","name":"Mobile menu opens","ok":true,"evidence":"375px actual browser emulation"}
+{"runId":"2026-10-30T01:54:41.295Z","time":"2026-10-30T01:55:23.348Z","event":"check","name":"PDF rendered","ok":true,"evidence":"reports/print-preview.pdf; requires visual spot check"}
+{"runId":"2026-10-30T01:54:41.295Z","time":"2026-10-30T01:55:23.376Z","event":"check","name":"Web starts with three samples","ok":true,"evidence":"Fresh isolated browser profile"}
+{"runId":"2026-10-30T01:54:41.295Z","time":"2026-10-30T01:55:23.380Z","event":"check","name":"Web valid add 75000","ok":true,"evidence":{"total":"75.000 đ","message":"Đã thêm khoản chi giả. Hãy tự nhẩm tổng để đối chiếu."}}
+{"runId":"2026-10-30T01:54:41.295Z","time":"2026-10-30T01:55:23.381Z","event":"check","name":"Web rejects numeric suffix","ok":true,"evidence":{"total":"75.000 đ","message":"Nhập số nguyên VND, không có dấu chấm, phẩy hay chữ."}}
+{"runId":"2026-10-30T01:54:41.295Z","time":"2026-10-30T01:55:23.382Z","event":"check","name":"Web displays literal HTML-like title","ok":true,"evidence":"textContent, not parsed markup"}
+{"runId":"2026-10-30T01:54:41.295Z","time":"2026-10-30T01:55:23.397Z","event":"check","name":"Web localStorage persists in tested browser","ok":true,"evidence":"Observed on this Chrome file:// profile only; not universal guarantee"}
+{"runId":"2026-10-30T01:54:41.295Z","time":"2026-10-30T01:55:23.399Z","event":"check","name":"Web delete to empty = 0","ok":true,"evidence":"All fake rows removed in isolated profile"}
+{"runId":"2026-10-30T01:54:41.295Z","time":"2026-10-30T01:55:23.414Z","event":"check","name":"Corrupt storage falls back without overwrite","ok":true,"evidence":"Broken fixture kept; no real user data used"}
+{"runId":"2026-10-30T01:54:41.295Z","time":"2026-10-30T01:55:23.416Z","event":"check","name":"Fallback adds a real in-memory row","ok":true,"evidence":{"total":"60.001 đ","message":"Đã thêm khoản chi giả. Hãy tự nhẩm tổng để đối chiếu."}}
+{"runId":"2026-10-30T01:54:41.295Z","time":"2026-10-30T01:55:23.430Z","event":"check","name":"Fallback does not promise persistence","ok":true,"evidence":"In-memory addition disappears after reload, notice remains"}
+{"runId":"2026-10-30T01:54:41.295Z","time":"2026-10-30T01:55:23.501Z","event":"check","name":"Web demo no mobile page overflow","ok":true,"evidence":{"width":375,"scrollWidth":360}}
+{"runId":"2026-10-30T01:54:41.295Z","time":"2026-10-30T01:55:23.519Z","event":"check","name":"SVG transformed text in bounds: cover.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T01:54:41.295Z","time":"2026-10-30T01:55:23.612Z","event":"check","name":"SVG transformed text in bounds: chapter-01.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T01:54:41.295Z","time":"2026-10-30T01:55:23.707Z","event":"check","name":"SVG transformed text in bounds: chapter-02.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T01:54:41.295Z","time":"2026-10-30T01:55:23.791Z","event":"check","name":"SVG transformed text in bounds: chapter-03.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T01:54:41.295Z","time":"2026-10-30T01:55:23.873Z","event":"check","name":"SVG transformed text in bounds: chapter-04.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T01:54:41.295Z","time":"2026-10-30T01:55:23.957Z","event":"check","name":"SVG transformed text in bounds: ecosystem.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T01:54:41.295Z","time":"2026-10-30T01:55:24.040Z","event":"check","name":"SVG transformed text in bounds: roles.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T01:54:41.295Z","time":"2026-10-30T01:55:24.123Z","event":"check","name":"SVG transformed text in bounds: token-context.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T01:54:41.295Z","time":"2026-10-30T01:55:24.206Z","event":"check","name":"SVG transformed text in bounds: workspace.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T01:54:41.295Z","time":"2026-10-30T01:55:24.292Z","event":"check","name":"SVG transformed text in bounds: workflow.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T01:54:41.295Z","time":"2026-10-30T01:55:24.376Z","event":"check","name":"SVG transformed text in bounds: debugging.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T01:54:41.295Z","time":"2026-10-30T01:55:24.473Z","event":"check","name":"SVG transformed text in bounds: active-learning.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T01:54:41.295Z","time":"2026-10-30T01:55:24.555Z","event":"check","name":"SVG transformed text in bounds: ai-trap.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T01:54:41.295Z","time":"2026-10-30T01:55:24.639Z","event":"check","name":"SVG transformed text in bounds: security.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T01:54:41.295Z","time":"2026-10-30T01:55:24.743Z","event":"check","name":"SVG transformed text in bounds: final-boss.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T01:54:41.295Z","time":"2026-10-30T01:55:24.857Z","event":"check","name":"SVG transformed text in bounds: skill-map.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T01:54:41.295Z","time":"2026-10-30T01:55:24.925Z","event":"check","name":"No runtime exceptions","ok":true,"evidence":[]}
+{"runId":"2026-10-30T01:54:41.295Z","time":"2026-10-30T01:55:24.925Z","event":"check","name":"No remote content requests","ok":true,"evidence":[]}
+{"runId":"2026-10-30T01:55:59.102Z","time":"2026-10-30T01:55:59.103Z","event":"start"}
+{"runId":"2026-10-30T01:55:59.102Z","time":"2026-10-30T01:55:59.452Z","event":"check","name":"Dashboard 14 tasks / 8 phases","ok":true,"evidence":"Read state.js from file://"}
+{"runId":"2026-10-30T01:55:59.102Z","time":"2026-10-30T01:56:19.775Z","event":"check","name":"Book loaded","ok":true,"evidence":"4 full chapters, 4 self-check controls"}
+{"runId":"2026-10-30T01:55:59.102Z","time":"2026-10-30T01:56:19.825Z","event":"check","name":"Images decoded","ok":true,"evidence":[16,[]]}
+{"runId":"2026-10-30T01:55:59.102Z","time":"2026-10-30T01:56:19.921Z","event":"check","name":"All book anchors exist","ok":true,"evidence":[]}
+{"runId":"2026-10-30T01:55:59.102Z","time":"2026-10-30T01:56:19.922Z","event":"check","name":"Budget 1000 calls","ok":true,"evidence":["18.500 USD","≈ 462.500 VND · chưa phí khác"]}
+{"runId":"2026-10-30T01:55:59.102Z","time":"2026-10-30T01:56:19.923Z","event":"check","name":"Reject blank budget","ok":true,"evidence":"No fabricated estimate for empty field"}
+{"runId":"2026-10-30T01:55:59.102Z","time":"2026-10-30T01:56:19.924Z","event":"check","name":"Trace 42000 / 60000","ok":true,"evidence":["Dừng tại i = 2 · tổng 42.000 VND. Vở ghi chưa được cộng.","Dừng tại i = 3 · tổng 60.000 VND. Đã cộng đủ ba khoản; vẫn cần ca biên và dữ liệu sai."]}
+{"runId":"2026-10-30T01:55:59.102Z","time":"2026-10-30T01:56:20.020Z","event":"check","name":"TOC non-accented search","ok":true,"evidence":"Unicode NFD and đ/d normalization"}
+{"runId":"2026-10-30T01:55:59.102Z","time":"2026-10-30T01:56:20.021Z","event":"check","name":"Self-check saves local progress","ok":true,"evidence":"User-owned self-check, not test score"}
+{"runId":"2026-10-30T01:55:59.102Z","time":"2026-10-30T01:56:20.022Z","event":"check","name":"Font controls stay within 16–22 px","ok":true,"evidence":"Measured CSS variable, then restored 18px"}
+{"runId":"2026-10-30T01:55:59.102Z","time":"2026-10-30T01:56:40.112Z","event":"check","name":"Reader self-check persists after reload","ok":true,"evidence":"Same isolated Chrome file:// origin"}
+{"runId":"2026-10-30T01:55:59.102Z","time":"2026-10-30T01:56:40.113Z","event":"check","name":"Quiz gives explanation","ok":true,"evidence":"Correct choice plus reasoning"}
+{"runId":"2026-10-30T01:55:59.102Z","time":"2026-10-30T01:56:40.114Z","event":"check","name":"Print opens and restores answers","ok":true,"evidence":"beforeprint/afterprint events"}
+{"runId":"2026-10-30T01:55:59.102Z","time":"2026-10-30T01:56:40.225Z","event":"check","name":"No page overflow at 768","ok":true,"evidence":{"width":768,"scrollWidth":753}}
+{"runId":"2026-10-30T01:55:59.102Z","time":"2026-10-30T01:56:40.350Z","event":"check","name":"No page overflow at 375","ok":true,"evidence":{"width":375,"scrollWidth":360}}
+{"runId":"2026-10-30T01:55:59.102Z","time":"2026-10-30T01:56:40.423Z","event":"check","name":"Mobile menu opens","ok":true,"evidence":"375px actual browser emulation"}
+{"runId":"2026-10-30T01:55:59.102Z","time":"2026-10-30T01:56:41.171Z","event":"check","name":"PDF rendered","ok":true,"evidence":"reports/print-preview.pdf; requires visual spot check"}
+{"runId":"2026-10-30T01:55:59.102Z","time":"2026-10-30T01:56:41.202Z","event":"check","name":"Web starts with three samples","ok":true,"evidence":"Fresh isolated browser profile"}
+{"runId":"2026-10-30T01:55:59.102Z","time":"2026-10-30T01:56:41.205Z","event":"check","name":"Web valid add 75000","ok":true,"evidence":{"total":"75.000 đ","message":"Đã thêm khoản chi giả. Hãy tự nhẩm tổng để đối chiếu."}}
+{"runId":"2026-10-30T01:55:59.102Z","time":"2026-10-30T01:56:41.206Z","event":"check","name":"Web rejects numeric suffix","ok":true,"evidence":{"total":"75.000 đ","message":"Nhập số nguyên VND, không có dấu chấm, phẩy hay chữ."}}
+{"runId":"2026-10-30T01:55:59.102Z","time":"2026-10-30T01:56:41.207Z","event":"check","name":"Web displays literal HTML-like title","ok":true,"evidence":"textContent, not parsed markup"}
+{"runId":"2026-10-30T01:55:59.102Z","time":"2026-10-30T01:56:41.226Z","event":"check","name":"Web localStorage persists in tested browser","ok":true,"evidence":"Observed on this Chrome file:// profile only; not universal guarantee"}
+{"runId":"2026-10-30T01:55:59.102Z","time":"2026-10-30T01:56:41.228Z","event":"check","name":"Web delete to empty = 0","ok":true,"evidence":"All fake rows removed in isolated profile"}
+{"runId":"2026-10-30T01:55:59.102Z","time":"2026-10-30T01:56:41.245Z","event":"check","name":"Corrupt storage falls back without overwrite","ok":true,"evidence":"Broken fixture kept; no real user data used"}
+{"runId":"2026-10-30T01:55:59.102Z","time":"2026-10-30T01:56:41.247Z","event":"check","name":"Fallback adds a real in-memory row","ok":true,"evidence":{"total":"60.001 đ","message":"Đã thêm khoản chi giả. Hãy tự nhẩm tổng để đối chiếu."}}
+{"runId":"2026-10-30T01:55:59.102Z","time":"2026-10-30T01:56:41.261Z","event":"check","name":"Fallback does not promise persistence","ok":true,"evidence":"In-memory addition disappears after reload, notice remains"}
+{"runId":"2026-10-30T01:55:59.102Z","time":"2026-10-30T01:56:41.334Z","event":"check","name":"Web demo no mobile page overflow","ok":true,"evidence":{"width":375,"scrollWidth":360}}
+{"runId":"2026-10-30T01:55:59.102Z","time":"2026-10-30T01:56:41.353Z","event":"check","name":"SVG transformed text in bounds: cover.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T01:55:59.102Z","time":"2026-10-30T01:56:41.441Z","event":"check","name":"SVG transformed text in bounds: chapter-01.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T01:55:59.102Z","time":"2026-10-30T01:56:41.522Z","event":"check","name":"SVG transformed text in bounds: chapter-02.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T01:55:59.102Z","time":"2026-10-30T01:56:41.606Z","event":"check","name":"SVG transformed text in bounds: chapter-03.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T01:55:59.102Z","time":"2026-10-30T01:56:41.686Z","event":"check","name":"SVG transformed text in bounds: chapter-04.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T01:55:59.102Z","time":"2026-10-30T01:56:41.771Z","event":"check","name":"SVG transformed text in bounds: ecosystem.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T01:55:59.102Z","time":"2026-10-30T01:56:41.854Z","event":"check","name":"SVG transformed text in bounds: roles.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T01:55:59.102Z","time":"2026-10-30T01:56:41.935Z","event":"check","name":"SVG transformed text in bounds: token-context.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T01:55:59.102Z","time":"2026-10-30T01:56:42.021Z","event":"check","name":"SVG transformed text in bounds: workspace.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T01:55:59.102Z","time":"2026-10-30T01:56:42.103Z","event":"check","name":"SVG transformed text in bounds: workflow.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T01:55:59.102Z","time":"2026-10-30T01:56:42.190Z","event":"check","name":"SVG transformed text in bounds: debugging.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T01:55:59.102Z","time":"2026-10-30T01:56:42.272Z","event":"check","name":"SVG transformed text in bounds: active-learning.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T01:55:59.102Z","time":"2026-10-30T01:56:42.355Z","event":"check","name":"SVG transformed text in bounds: ai-trap.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T01:55:59.102Z","time":"2026-10-30T01:56:42.452Z","event":"check","name":"SVG transformed text in bounds: security.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T01:55:59.102Z","time":"2026-10-30T01:56:42.538Z","event":"check","name":"SVG transformed text in bounds: final-boss.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T01:55:59.102Z","time":"2026-10-30T01:56:42.638Z","event":"check","name":"SVG transformed text in bounds: skill-map.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T01:55:59.102Z","time":"2026-10-30T01:56:42.722Z","event":"check","name":"No runtime exceptions","ok":true,"evidence":[]}
+{"runId":"2026-10-30T01:55:59.102Z","time":"2026-10-30T01:56:42.723Z","event":"check","name":"No remote content requests","ok":true,"evidence":[]}
+{"runId":"2026-10-30T02:05:56.113Z","time":"2026-10-30T02:05:56.113Z","event":"start"}
+{"runId":"2026-10-30T02:05:56.113Z","time":"2026-10-30T02:05:56.472Z","event":"check","name":"Dashboard 14 tasks / 8 phases","ok":true,"evidence":"Read state.js from file://"}
+{"runId":"2026-10-30T02:05:56.113Z","time":"2026-10-30T02:06:16.773Z","event":"check","name":"Book loaded","ok":true,"evidence":"4 full chapters, 4 self-check controls"}
+{"runId":"2026-10-30T02:05:56.113Z","time":"2026-10-30T02:06:16.824Z","event":"check","name":"Images decoded","ok":true,"evidence":[16,[]]}
+{"runId":"2026-10-30T02:05:56.113Z","time":"2026-10-30T02:06:16.913Z","event":"check","name":"All book anchors exist","ok":true,"evidence":[]}
+{"runId":"2026-10-30T02:05:56.113Z","time":"2026-10-30T02:06:16.914Z","event":"check","name":"Budget 1000 calls","ok":true,"evidence":["18.500 USD","≈ 462.500 VND · chưa phí khác"]}
+{"runId":"2026-10-30T02:05:56.113Z","time":"2026-10-30T02:06:16.915Z","event":"check","name":"Reject blank budget","ok":true,"evidence":"No fabricated estimate for empty field"}
+{"runId":"2026-10-30T02:05:56.113Z","time":"2026-10-30T02:06:16.916Z","event":"check","name":"Trace 42000 / 60000","ok":true,"evidence":["Dừng tại i = 2 · tổng 42.000 VND. Vở ghi chưa được cộng.","Dừng tại i = 3 · tổng 60.000 VND. Đã cộng đủ ba khoản; vẫn cần ca biên và dữ liệu sai."]}
+{"runId":"2026-10-30T02:05:56.113Z","time":"2026-10-30T02:06:17.012Z","event":"check","name":"TOC non-accented search","ok":true,"evidence":"Unicode NFD and đ/d normalization"}
+{"runId":"2026-10-30T02:05:56.113Z","time":"2026-10-30T02:06:17.013Z","event":"check","name":"Self-check saves local progress","ok":true,"evidence":"User-owned self-check, not test score"}
+{"runId":"2026-10-30T02:05:56.113Z","time":"2026-10-30T02:06:17.014Z","event":"check","name":"Font controls stay within 16–22 px","ok":true,"evidence":"Measured CSS variable, then restored 18px"}
+{"runId":"2026-10-30T02:05:56.113Z","time":"2026-10-30T02:06:37.101Z","event":"check","name":"Reader self-check persists after reload","ok":true,"evidence":"Same isolated Chrome file:// origin"}
+{"runId":"2026-10-30T02:05:56.113Z","time":"2026-10-30T02:06:37.102Z","event":"check","name":"Quiz gives explanation","ok":true,"evidence":"Correct choice plus reasoning"}
+{"runId":"2026-10-30T02:05:56.113Z","time":"2026-10-30T02:06:37.104Z","event":"check","name":"Print opens and restores answers","ok":true,"evidence":"beforeprint/afterprint events"}
+{"runId":"2026-10-30T02:05:56.113Z","time":"2026-10-30T02:06:37.218Z","event":"check","name":"No page overflow at 768","ok":true,"evidence":{"width":768,"scrollWidth":753}}
+{"runId":"2026-10-30T02:05:56.113Z","time":"2026-10-30T02:06:37.326Z","event":"check","name":"No page overflow at 375","ok":true,"evidence":{"width":375,"scrollWidth":360}}
+{"runId":"2026-10-30T02:05:56.113Z","time":"2026-10-30T02:06:37.397Z","event":"check","name":"Mobile menu opens","ok":true,"evidence":"375px actual browser emulation"}
+{"runId":"2026-10-30T02:05:56.113Z","time":"2026-10-30T02:06:37.461Z","event":"check","name":"Web starts with three samples","ok":true,"evidence":"Fresh isolated browser profile"}
+{"runId":"2026-10-30T02:05:56.113Z","time":"2026-10-30T02:06:37.463Z","event":"check","name":"Web valid add 75000","ok":true,"evidence":{"total":"75.000 đ","message":"Đã thêm khoản chi giả. Hãy tự nhẩm tổng để đối chiếu."}}
+{"runId":"2026-10-30T02:05:56.113Z","time":"2026-10-30T02:06:37.464Z","event":"check","name":"Web rejects numeric suffix","ok":true,"evidence":{"total":"75.000 đ","message":"Nhập số nguyên VND, không có dấu chấm, phẩy hay chữ."}}
+{"runId":"2026-10-30T02:05:56.113Z","time":"2026-10-30T02:06:37.465Z","event":"check","name":"Web displays literal HTML-like title","ok":true,"evidence":"textContent, not parsed markup"}
+{"runId":"2026-10-30T02:05:56.113Z","time":"2026-10-30T02:06:37.479Z","event":"check","name":"Web localStorage persists in tested browser","ok":true,"evidence":"Observed on this Chrome file:// profile only; not universal guarantee"}
+{"runId":"2026-10-30T02:05:56.113Z","time":"2026-10-30T02:06:37.480Z","event":"check","name":"Web delete to empty = 0","ok":true,"evidence":"All fake rows removed in isolated profile"}
+{"runId":"2026-10-30T02:05:56.113Z","time":"2026-10-30T02:06:37.495Z","event":"check","name":"Corrupt storage falls back without overwrite","ok":true,"evidence":"Broken fixture kept; no real user data used"}
+{"runId":"2026-10-30T02:05:56.113Z","time":"2026-10-30T02:06:37.496Z","event":"check","name":"Fallback adds a real in-memory row","ok":true,"evidence":{"total":"60.001 đ","message":"Đã thêm khoản chi giả. Hãy tự nhẩm tổng để đối chiếu."}}
+{"runId":"2026-10-30T02:05:56.113Z","time":"2026-10-30T02:06:37.510Z","event":"check","name":"Fallback does not promise persistence","ok":true,"evidence":"In-memory addition disappears after reload, notice remains"}
+{"runId":"2026-10-30T02:05:56.113Z","time":"2026-10-30T02:06:37.576Z","event":"check","name":"Web demo no mobile page overflow","ok":true,"evidence":{"width":375,"scrollWidth":360}}
+{"runId":"2026-10-30T02:05:56.113Z","time":"2026-10-30T02:06:37.592Z","event":"check","name":"SVG transformed text in bounds: cover.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T02:05:56.113Z","time":"2026-10-30T02:06:37.593Z","event":"check","name":"SVG text does not collide: cover.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T02:05:56.113Z","time":"2026-10-30T02:06:37.594Z","event":"check","name":"SVG text at least 18px: cover.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T02:05:56.113Z","time":"2026-10-30T02:06:37.683Z","event":"check","name":"SVG transformed text in bounds: chapter-01.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T02:05:56.113Z","time":"2026-10-30T02:06:37.686Z","event":"check","name":"SVG text does not collide: chapter-01.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T02:05:56.113Z","time":"2026-10-30T02:06:37.686Z","event":"check","name":"SVG text at least 18px: chapter-01.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T02:05:56.113Z","time":"2026-10-30T02:06:37.779Z","event":"check","name":"SVG transformed text in bounds: chapter-02.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T02:05:56.113Z","time":"2026-10-30T02:06:37.780Z","event":"check","name":"SVG text does not collide: chapter-02.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T02:05:56.113Z","time":"2026-10-30T02:06:37.780Z","event":"check","name":"SVG text at least 18px: chapter-02.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T02:05:56.113Z","time":"2026-10-30T02:06:37.862Z","event":"check","name":"SVG transformed text in bounds: chapter-03.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T02:05:56.113Z","time":"2026-10-30T02:06:37.863Z","event":"check","name":"SVG text does not collide: chapter-03.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T02:05:56.113Z","time":"2026-10-30T02:06:37.863Z","event":"check","name":"SVG text at least 18px: chapter-03.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T02:05:56.113Z","time":"2026-10-30T02:06:37.944Z","event":"check","name":"SVG transformed text in bounds: chapter-04.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T02:05:56.113Z","time":"2026-10-30T02:06:37.945Z","event":"check","name":"SVG text does not collide: chapter-04.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T02:05:56.113Z","time":"2026-10-30T02:06:37.945Z","event":"check","name":"SVG text at least 18px: chapter-04.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T02:05:56.113Z","time":"2026-10-30T02:06:38.029Z","event":"check","name":"SVG transformed text in bounds: ecosystem.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T02:05:56.113Z","time":"2026-10-30T02:06:38.029Z","event":"check","name":"SVG text does not collide: ecosystem.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T02:05:56.113Z","time":"2026-10-30T02:06:38.030Z","event":"check","name":"SVG text at least 18px: ecosystem.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T02:05:56.113Z","time":"2026-10-30T02:06:38.112Z","event":"check","name":"SVG transformed text in bounds: roles.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T02:05:56.113Z","time":"2026-10-30T02:06:38.113Z","event":"check","name":"SVG text does not collide: roles.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T02:05:56.113Z","time":"2026-10-30T02:06:38.113Z","event":"check","name":"SVG text at least 18px: roles.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T02:05:56.113Z","time":"2026-10-30T02:06:38.195Z","event":"check","name":"SVG transformed text in bounds: token-context.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T02:05:56.113Z","time":"2026-10-30T02:06:38.196Z","event":"check","name":"SVG text does not collide: token-context.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T02:05:56.113Z","time":"2026-10-30T02:06:38.196Z","event":"check","name":"SVG text at least 18px: token-context.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T02:05:56.113Z","time":"2026-10-30T02:06:38.279Z","event":"check","name":"SVG transformed text in bounds: workspace.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T02:05:56.113Z","time":"2026-10-30T02:06:38.279Z","event":"check","name":"SVG text does not collide: workspace.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T02:05:56.113Z","time":"2026-10-30T02:06:38.280Z","event":"check","name":"SVG text at least 18px: workspace.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T02:05:56.113Z","time":"2026-10-30T02:06:38.361Z","event":"check","name":"SVG transformed text in bounds: workflow.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T02:05:56.113Z","time":"2026-10-30T02:06:38.362Z","event":"check","name":"SVG text does not collide: workflow.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T02:05:56.113Z","time":"2026-10-30T02:06:38.362Z","event":"check","name":"SVG text at least 18px: workflow.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T02:05:56.113Z","time":"2026-10-30T02:06:38.445Z","event":"check","name":"SVG transformed text in bounds: debugging.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T02:05:56.113Z","time":"2026-10-30T02:06:38.446Z","event":"check","name":"SVG text does not collide: debugging.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T02:05:56.113Z","time":"2026-10-30T02:06:38.446Z","event":"check","name":"SVG text at least 18px: debugging.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T02:05:56.113Z","time":"2026-10-30T02:06:38.532Z","event":"check","name":"SVG transformed text in bounds: active-learning.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T02:05:56.113Z","time":"2026-10-30T02:06:38.533Z","event":"check","name":"SVG text does not collide: active-learning.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T02:05:56.113Z","time":"2026-10-30T02:06:38.533Z","event":"check","name":"SVG text at least 18px: active-learning.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T02:05:56.113Z","time":"2026-10-30T02:06:38.628Z","event":"check","name":"SVG transformed text in bounds: ai-trap.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T02:05:56.113Z","time":"2026-10-30T02:06:38.629Z","event":"check","name":"SVG text does not collide: ai-trap.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T02:05:56.113Z","time":"2026-10-30T02:06:38.629Z","event":"check","name":"SVG text at least 18px: ai-trap.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T02:05:56.113Z","time":"2026-10-30T02:06:38.712Z","event":"check","name":"SVG transformed text in bounds: security.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T02:05:56.113Z","time":"2026-10-30T02:06:38.713Z","event":"check","name":"SVG text does not collide: security.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T02:05:56.113Z","time":"2026-10-30T02:06:38.713Z","event":"check","name":"SVG text at least 18px: security.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T02:05:56.113Z","time":"2026-10-30T02:06:38.813Z","event":"check","name":"SVG transformed text in bounds: final-boss.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T02:05:56.113Z","time":"2026-10-30T02:06:38.814Z","event":"check","name":"SVG text does not collide: final-boss.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T02:05:56.113Z","time":"2026-10-30T02:06:38.814Z","event":"check","name":"SVG text at least 18px: final-boss.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T02:05:56.113Z","time":"2026-10-30T02:06:38.912Z","event":"check","name":"SVG transformed text in bounds: skill-map.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T02:05:56.113Z","time":"2026-10-30T02:06:38.913Z","event":"check","name":"SVG text does not collide: skill-map.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T02:05:56.113Z","time":"2026-10-30T02:06:38.913Z","event":"check","name":"SVG text at least 18px: skill-map.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T02:05:56.113Z","time":"2026-10-30T02:06:38.981Z","event":"check","name":"No runtime exceptions","ok":true,"evidence":[]}
+{"runId":"2026-10-30T02:05:56.113Z","time":"2026-10-30T02:06:38.981Z","event":"check","name":"No remote content requests","ok":true,"evidence":[]}
+{"runId":"2026-10-30T02:26:48.894Z","time":"2026-10-30T02:26:48.894Z","event":"start"}
+{"runId":"2026-10-30T02:26:48.894Z","time":"2026-10-30T02:27:09.285Z","event":"check","name":"Dashboard 14 tasks / 8 phases","ok":true,"evidence":"Read state.js from file://"}
+{"runId":"2026-10-30T02:26:48.894Z","time":"2026-10-30T02:27:29.614Z","event":"check","name":"Book loaded","ok":true,"evidence":"4 full chapters, 4 self-check controls"}
+{"runId":"2026-10-30T02:26:48.894Z","time":"2026-10-30T02:27:29.615Z","event":"check","name":"Chapter 3 keeps its seven teaching moves","ok":true,"evidence":{"missing":[],"h2":28}}
+{"runId":"2026-10-30T02:26:48.894Z","time":"2026-10-30T02:27:29.617Z","event":"check","name":"Chapter 4 has dossiers 1–7 plus clinic, rubric, checklist","ok":true,"evidence":{"dossiers":["1","2","3","4","5","6","7"],"hasClinic":true,"hasRubric":true,"hasChecklist":true}}
+{"runId":"2026-10-30T02:26:48.894Z","time":"2026-10-30T02:27:29.618Z","event":"check","name":"Answers are collapsed until opened","ok":true,"evidence":"Answer blocks ship closed; print opens them temporarily"}
+{"runId":"2026-10-30T02:26:48.894Z","time":"2026-10-30T02:27:29.676Z","event":"check","name":"Images decoded","ok":true,"evidence":[16,[]]}
+{"runId":"2026-10-30T02:26:48.894Z","time":"2026-10-30T02:27:29.765Z","event":"check","name":"All book anchors exist","ok":true,"evidence":[]}
+{"runId":"2026-10-30T02:26:48.894Z","time":"2026-10-30T02:27:29.766Z","event":"check","name":"Budget 1000 calls","ok":true,"evidence":["18.500 USD","≈ 462.500 VND · chưa phí khác"]}
+{"runId":"2026-10-30T02:26:48.894Z","time":"2026-10-30T02:27:29.767Z","event":"check","name":"Reject blank budget","ok":true,"evidence":"No fabricated estimate for empty field"}
+{"runId":"2026-10-30T02:26:48.894Z","time":"2026-10-30T02:27:29.775Z","event":"check","name":"Trace 42000 / 60000","ok":true,"evidence":["Dừng tại i = 2 · tổng 42.000 VND. Vở ghi chưa được cộng.","Dừng tại i = 3 · tổng 60.000 VND. Đã cộng đủ ba khoản; vẫn cần ca biên và dữ liệu sai."]}
+{"runId":"2026-10-30T02:26:48.894Z","time":"2026-10-30T02:27:29.863Z","event":"check","name":"TOC non-accented search","ok":true,"evidence":"Unicode NFD and đ/d normalization"}
+{"runId":"2026-10-30T02:26:48.894Z","time":"2026-10-30T02:27:29.864Z","event":"check","name":"Self-check saves local progress","ok":true,"evidence":"User-owned self-check, not test score"}
+{"runId":"2026-10-30T02:26:48.894Z","time":"2026-10-30T02:27:29.866Z","event":"check","name":"Font controls stay within 16–22 px","ok":true,"evidence":"Measured CSS variable, then restored 18px"}
+{"runId":"2026-10-30T02:26:48.894Z","time":"2026-10-30T02:27:49.955Z","event":"check","name":"Reader self-check persists after reload","ok":true,"evidence":"Same isolated Chrome file:// origin"}
+{"runId":"2026-10-30T02:26:48.894Z","time":"2026-10-30T02:27:49.957Z","event":"check","name":"Quiz gives explanation","ok":true,"evidence":"Correct choice plus reasoning"}
+{"runId":"2026-10-30T02:26:48.894Z","time":"2026-10-30T02:27:49.958Z","event":"check","name":"Print opens and restores answers","ok":true,"evidence":"beforeprint/afterprint events"}
+{"runId":"2026-10-30T02:26:48.894Z","time":"2026-10-30T02:27:50.066Z","event":"check","name":"No page overflow at 768","ok":true,"evidence":{"width":768,"scrollWidth":753}}
+{"runId":"2026-10-30T02:26:48.894Z","time":"2026-10-30T02:27:50.193Z","event":"check","name":"No page overflow at 375","ok":true,"evidence":{"width":375,"scrollWidth":360}}
+{"runId":"2026-10-30T02:26:48.894Z","time":"2026-10-30T02:27:50.264Z","event":"check","name":"Mobile menu opens","ok":true,"evidence":"375px actual browser emulation"}
+{"runId":"2026-10-30T02:26:48.894Z","time":"2026-10-30T02:27:50.338Z","event":"check","name":"Web starts with three samples","ok":true,"evidence":"Fresh isolated browser profile"}
+{"runId":"2026-10-30T02:26:48.894Z","time":"2026-10-30T02:27:50.340Z","event":"check","name":"Web valid add 75000","ok":true,"evidence":{"total":"75.000 đ","message":"Đã thêm khoản chi giả. Hãy tự nhẩm tổng để đối chiếu."}}
+{"runId":"2026-10-30T02:26:48.894Z","time":"2026-10-30T02:27:50.341Z","event":"check","name":"Web rejects numeric suffix","ok":true,"evidence":{"total":"75.000 đ","message":"Nhập số nguyên VND, không có dấu chấm, phẩy hay chữ."}}
+{"runId":"2026-10-30T02:26:48.894Z","time":"2026-10-30T02:27:50.342Z","event":"check","name":"Web displays literal HTML-like title","ok":true,"evidence":"textContent, not parsed markup"}
+{"runId":"2026-10-30T02:26:48.894Z","time":"2026-10-30T02:27:50.358Z","event":"check","name":"Web localStorage persists in tested browser","ok":true,"evidence":"Observed on this Chrome file:// profile only; not universal guarantee"}
+{"runId":"2026-10-30T02:26:48.894Z","time":"2026-10-30T02:27:50.359Z","event":"check","name":"Web delete to empty = 0","ok":true,"evidence":"All fake rows removed in isolated profile"}
+{"runId":"2026-10-30T02:26:48.894Z","time":"2026-10-30T02:27:50.375Z","event":"check","name":"Corrupt storage falls back without overwrite","ok":true,"evidence":"Broken fixture kept; no real user data used"}
+{"runId":"2026-10-30T02:26:48.894Z","time":"2026-10-30T02:27:50.377Z","event":"check","name":"Fallback adds a real in-memory row","ok":true,"evidence":{"total":"60.001 đ","message":"Đã thêm khoản chi giả. Hãy tự nhẩm tổng để đối chiếu."}}
+{"runId":"2026-10-30T02:26:48.894Z","time":"2026-10-30T02:27:50.392Z","event":"check","name":"Fallback does not promise persistence","ok":true,"evidence":"In-memory addition disappears after reload, notice remains"}
+{"runId":"2026-10-30T02:26:48.894Z","time":"2026-10-30T02:27:50.474Z","event":"check","name":"Web demo no mobile page overflow","ok":true,"evidence":{"width":375,"scrollWidth":360}}
+{"runId":"2026-10-30T02:26:48.894Z","time":"2026-10-30T02:27:50.493Z","event":"check","name":"SVG transformed text in bounds: cover.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T02:26:48.894Z","time":"2026-10-30T02:27:50.494Z","event":"check","name":"SVG text does not collide: cover.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T02:26:48.894Z","time":"2026-10-30T02:27:50.494Z","event":"check","name":"SVG text at least 18px: cover.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T02:26:48.894Z","time":"2026-10-30T02:27:50.602Z","event":"check","name":"SVG transformed text in bounds: chapter-01.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T02:26:48.894Z","time":"2026-10-30T02:27:50.603Z","event":"check","name":"SVG text does not collide: chapter-01.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T02:26:48.894Z","time":"2026-10-30T02:27:50.604Z","event":"check","name":"SVG text at least 18px: chapter-01.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T02:26:48.894Z","time":"2026-10-30T02:27:50.696Z","event":"check","name":"SVG transformed text in bounds: chapter-02.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T02:26:48.894Z","time":"2026-10-30T02:27:50.697Z","event":"check","name":"SVG text does not collide: chapter-02.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T02:26:48.894Z","time":"2026-10-30T02:27:50.698Z","event":"check","name":"SVG text at least 18px: chapter-02.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T02:26:48.894Z","time":"2026-10-30T02:27:50.781Z","event":"check","name":"SVG transformed text in bounds: chapter-03.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T02:26:48.894Z","time":"2026-10-30T02:27:50.782Z","event":"check","name":"SVG text does not collide: chapter-03.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T02:26:48.894Z","time":"2026-10-30T02:27:50.782Z","event":"check","name":"SVG text at least 18px: chapter-03.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T02:26:48.894Z","time":"2026-10-30T02:27:50.864Z","event":"check","name":"SVG transformed text in bounds: chapter-04.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T02:26:48.894Z","time":"2026-10-30T02:27:50.865Z","event":"check","name":"SVG text does not collide: chapter-04.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T02:26:48.894Z","time":"2026-10-30T02:27:50.865Z","event":"check","name":"SVG text at least 18px: chapter-04.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T02:26:48.894Z","time":"2026-10-30T02:27:50.950Z","event":"check","name":"SVG transformed text in bounds: ecosystem.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T02:26:48.894Z","time":"2026-10-30T02:27:50.951Z","event":"check","name":"SVG text does not collide: ecosystem.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T02:26:48.894Z","time":"2026-10-30T02:27:50.952Z","event":"check","name":"SVG text at least 18px: ecosystem.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T02:26:48.894Z","time":"2026-10-30T02:27:51.051Z","event":"check","name":"SVG transformed text in bounds: roles.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T02:26:48.894Z","time":"2026-10-30T02:27:51.052Z","event":"check","name":"SVG text does not collide: roles.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T02:26:48.894Z","time":"2026-10-30T02:27:51.052Z","event":"check","name":"SVG text at least 18px: roles.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T02:26:48.894Z","time":"2026-10-30T02:27:51.146Z","event":"check","name":"SVG transformed text in bounds: token-context.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T02:26:48.894Z","time":"2026-10-30T02:27:51.147Z","event":"check","name":"SVG text does not collide: token-context.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T02:26:48.894Z","time":"2026-10-30T02:27:51.147Z","event":"check","name":"SVG text at least 18px: token-context.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T02:26:48.894Z","time":"2026-10-30T02:27:51.230Z","event":"check","name":"SVG transformed text in bounds: workspace.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T02:26:48.894Z","time":"2026-10-30T02:27:51.231Z","event":"check","name":"SVG text does not collide: workspace.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T02:26:48.894Z","time":"2026-10-30T02:27:51.231Z","event":"check","name":"SVG text at least 18px: workspace.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T02:26:48.894Z","time":"2026-10-30T02:27:51.314Z","event":"check","name":"SVG transformed text in bounds: workflow.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T02:26:48.894Z","time":"2026-10-30T02:27:51.315Z","event":"check","name":"SVG text does not collide: workflow.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T02:26:48.894Z","time":"2026-10-30T02:27:51.315Z","event":"check","name":"SVG text at least 18px: workflow.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T02:26:48.894Z","time":"2026-10-30T02:27:51.415Z","event":"check","name":"SVG transformed text in bounds: debugging.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T02:26:48.894Z","time":"2026-10-30T02:27:51.418Z","event":"check","name":"SVG text does not collide: debugging.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T02:26:48.894Z","time":"2026-10-30T02:27:51.418Z","event":"check","name":"SVG text at least 18px: debugging.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T02:26:48.894Z","time":"2026-10-30T02:27:51.518Z","event":"check","name":"SVG transformed text in bounds: active-learning.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T02:26:48.894Z","time":"2026-10-30T02:27:51.519Z","event":"check","name":"SVG text does not collide: active-learning.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T02:26:48.894Z","time":"2026-10-30T02:27:51.519Z","event":"check","name":"SVG text at least 18px: active-learning.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T02:26:48.894Z","time":"2026-10-30T02:27:51.614Z","event":"check","name":"SVG transformed text in bounds: ai-trap.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T02:26:48.894Z","time":"2026-10-30T02:27:51.615Z","event":"check","name":"SVG text does not collide: ai-trap.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T02:26:48.894Z","time":"2026-10-30T02:27:51.615Z","event":"check","name":"SVG text at least 18px: ai-trap.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T02:26:48.894Z","time":"2026-10-30T02:27:51.697Z","event":"check","name":"SVG transformed text in bounds: security.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T02:26:48.894Z","time":"2026-10-30T02:27:51.701Z","event":"check","name":"SVG text does not collide: security.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T02:26:48.894Z","time":"2026-10-30T02:27:51.701Z","event":"check","name":"SVG text at least 18px: security.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T02:26:48.894Z","time":"2026-10-30T02:27:51.801Z","event":"check","name":"SVG transformed text in bounds: final-boss.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T02:26:48.894Z","time":"2026-10-30T02:27:51.803Z","event":"check","name":"SVG text does not collide: final-boss.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T02:26:48.894Z","time":"2026-10-30T02:27:51.803Z","event":"check","name":"SVG text at least 18px: final-boss.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T02:26:48.894Z","time":"2026-10-30T02:27:51.902Z","event":"check","name":"SVG transformed text in bounds: skill-map.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T02:26:48.894Z","time":"2026-10-30T02:27:51.903Z","event":"check","name":"SVG text does not collide: skill-map.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T02:26:48.894Z","time":"2026-10-30T02:27:51.903Z","event":"check","name":"SVG text at least 18px: skill-map.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T02:26:48.894Z","time":"2026-10-30T02:27:51.984Z","event":"check","name":"No runtime exceptions","ok":true,"evidence":[]}
+{"runId":"2026-10-30T02:26:48.894Z","time":"2026-10-30T02:27:51.984Z","event":"check","name":"No remote content requests","ok":true,"evidence":[]}
+{"runId":"2026-10-30T03:04:06.327Z","time":"2026-10-30T03:04:06.328Z","event":"start"}
+{"runId":"2026-10-30T03:04:06.327Z","time":"2026-10-30T03:04:26.699Z","event":"check","name":"Dashboard 14 tasks / 8 phases","ok":true,"evidence":"Read state.js from file://"}
+{"runId":"2026-10-30T03:04:06.327Z","time":"2026-10-30T03:04:46.983Z","event":"check","name":"Book loaded","ok":true,"evidence":"4 full chapters, 4 self-check controls"}
+{"runId":"2026-10-30T03:04:06.327Z","time":"2026-10-30T03:04:46.985Z","event":"check","name":"Chapter 3 keeps its seven teaching moves","ok":true,"evidence":{"missing":[],"h2":28}}
+{"runId":"2026-10-30T03:04:06.327Z","time":"2026-10-30T03:04:46.986Z","event":"check","name":"Chapter 4 has dossiers 1–7 plus clinic, rubric, checklist","ok":true,"evidence":{"dossiers":["1","2","3","4","5","6","7"],"hasClinic":true,"hasRubric":true,"hasChecklist":true}}
+{"runId":"2026-10-30T03:04:06.327Z","time":"2026-10-30T03:04:46.987Z","event":"check","name":"Answers are collapsed until opened","ok":true,"evidence":"Answer blocks ship closed; print opens them temporarily"}
+{"runId":"2026-10-30T03:04:06.327Z","time":"2026-10-30T03:04:47.041Z","event":"check","name":"Images decoded","ok":true,"evidence":[16,[]]}
+{"runId":"2026-10-30T03:04:06.327Z","time":"2026-10-30T03:04:47.142Z","event":"check","name":"All book anchors exist","ok":true,"evidence":[]}
+{"runId":"2026-10-30T03:04:06.327Z","time":"2026-10-30T03:04:47.143Z","event":"check","name":"Budget 1000 calls","ok":true,"evidence":["18.500 USD","≈ 462500 VND · chưa phí khác"]}
+{"runId":"2026-10-30T03:04:06.327Z","time":"2026-10-30T03:04:47.144Z","event":"check","name":"Reject blank budget","ok":true,"evidence":"No fabricated estimate for empty field"}
+{"runId":"2026-10-30T03:04:06.327Z","time":"2026-10-30T03:04:47.151Z","event":"check","name":"Trace 42000 / 60000","ok":true,"evidence":["Dừng tại i = 2 · tổng 42.000 VND. Vở ghi chưa được cộng.","Dừng tại i = 3 · tổng 60.000 VND. Đã cộng đủ ba khoản; vẫn cần ca biên và dữ liệu sai."]}
+{"runId":"2026-10-30T03:04:06.327Z","time":"2026-10-30T03:04:47.242Z","event":"check","name":"TOC non-accented search","ok":true,"evidence":"Unicode NFD and đ/d normalization"}
+{"runId":"2026-10-30T03:04:06.327Z","time":"2026-10-30T03:04:47.243Z","event":"check","name":"Self-check saves local progress","ok":true,"evidence":"User-owned self-check, not test score"}
+{"runId":"2026-10-30T03:04:06.327Z","time":"2026-10-30T03:04:47.244Z","event":"check","name":"Font controls stay within 16–22 px","ok":true,"evidence":"Measured CSS variable, then restored 18px"}
+{"runId":"2026-10-30T03:04:06.327Z","time":"2026-10-30T03:05:07.321Z","event":"check","name":"Reader self-check persists after reload","ok":true,"evidence":"Same isolated Chrome file:// origin"}
+{"runId":"2026-10-30T03:04:06.327Z","time":"2026-10-30T03:05:07.324Z","event":"check","name":"Quiz gives explanation","ok":true,"evidence":"Correct choice plus reasoning"}
+{"runId":"2026-10-30T03:04:06.327Z","time":"2026-10-30T03:05:07.325Z","event":"check","name":"Print opens and restores answers","ok":true,"evidence":"beforeprint/afterprint events"}
+{"runId":"2026-10-30T03:04:06.327Z","time":"2026-10-30T03:05:07.444Z","event":"check","name":"No page overflow at 768","ok":true,"evidence":{"width":768,"scrollWidth":753}}
+{"runId":"2026-10-30T03:04:06.327Z","time":"2026-10-30T03:05:07.570Z","event":"check","name":"No page overflow at 375","ok":true,"evidence":{"width":375,"scrollWidth":360}}
+{"runId":"2026-10-30T03:04:06.327Z","time":"2026-10-30T03:05:07.641Z","event":"check","name":"Mobile menu opens","ok":true,"evidence":"375px actual browser emulation"}
+{"runId":"2026-10-30T03:04:06.327Z","time":"2026-10-30T03:05:08.367Z","event":"check","name":"PDF rendered","ok":true,"evidence":"reports/print-preview.pdf; requires visual spot check"}
+{"runId":"2026-10-30T03:04:06.327Z","time":"2026-10-30T03:05:08.400Z","event":"check","name":"Web starts with three samples","ok":true,"evidence":"Fresh isolated browser profile"}
+{"runId":"2026-10-30T03:04:06.327Z","time":"2026-10-30T03:05:08.403Z","event":"check","name":"Web valid add 75000","ok":true,"evidence":{"total":"75.000 đ","message":"Đã thêm khoản chi giả. Hãy tự nhẩm tổng để đối chiếu."}}
+{"runId":"2026-10-30T03:04:06.327Z","time":"2026-10-30T03:05:08.404Z","event":"check","name":"Web rejects numeric suffix","ok":true,"evidence":{"total":"75.000 đ","message":"Nhập số nguyên VND, không có dấu chấm, phẩy hay chữ."}}
+{"runId":"2026-10-30T03:04:06.327Z","time":"2026-10-30T03:05:08.405Z","event":"check","name":"Web displays literal HTML-like title","ok":true,"evidence":"textContent, not parsed markup"}
+{"runId":"2026-10-30T03:04:06.327Z","time":"2026-10-30T03:05:08.421Z","event":"check","name":"Web localStorage persists in tested browser","ok":true,"evidence":"Observed on this Chrome file:// profile only; not universal guarantee"}
+{"runId":"2026-10-30T03:04:06.327Z","time":"2026-10-30T03:05:08.422Z","event":"check","name":"Web delete to empty = 0","ok":true,"evidence":"All fake rows removed in isolated profile"}
+{"runId":"2026-10-30T03:04:06.327Z","time":"2026-10-30T03:05:08.438Z","event":"check","name":"Corrupt storage falls back without overwrite","ok":true,"evidence":"Broken fixture kept; no real user data used"}
+{"runId":"2026-10-30T03:04:06.327Z","time":"2026-10-30T03:05:08.440Z","event":"check","name":"Fallback adds a real in-memory row","ok":true,"evidence":{"total":"60.001 đ","message":"Đã thêm khoản chi giả. Hãy tự nhẩm tổng để đối chiếu."}}
+{"runId":"2026-10-30T03:04:06.327Z","time":"2026-10-30T03:05:08.456Z","event":"check","name":"Fallback does not promise persistence","ok":true,"evidence":"In-memory addition disappears after reload, notice remains"}
+{"runId":"2026-10-30T03:04:06.327Z","time":"2026-10-30T03:05:08.518Z","event":"check","name":"Web demo no mobile page overflow","ok":true,"evidence":{"width":375,"scrollWidth":360}}
+{"runId":"2026-10-30T03:04:06.327Z","time":"2026-10-30T03:05:08.535Z","event":"check","name":"SVG transformed text in bounds: cover.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T03:04:06.327Z","time":"2026-10-30T03:05:08.536Z","event":"check","name":"SVG text does not collide: cover.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T03:04:06.327Z","time":"2026-10-30T03:05:08.537Z","event":"check","name":"SVG text at least 18px: cover.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T03:04:06.327Z","time":"2026-10-30T03:05:08.625Z","event":"check","name":"SVG transformed text in bounds: chapter-01.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T03:04:06.327Z","time":"2026-10-30T03:05:08.626Z","event":"check","name":"SVG text does not collide: chapter-01.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T03:04:06.327Z","time":"2026-10-30T03:05:08.626Z","event":"check","name":"SVG text at least 18px: chapter-01.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T03:04:06.327Z","time":"2026-10-30T03:05:08.722Z","event":"check","name":"SVG transformed text in bounds: chapter-02.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T03:04:06.327Z","time":"2026-10-30T03:05:08.723Z","event":"check","name":"SVG text does not collide: chapter-02.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T03:04:06.327Z","time":"2026-10-30T03:05:08.723Z","event":"check","name":"SVG text at least 18px: chapter-02.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T03:04:06.327Z","time":"2026-10-30T03:05:08.807Z","event":"check","name":"SVG transformed text in bounds: chapter-03.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T03:04:06.327Z","time":"2026-10-30T03:05:08.807Z","event":"check","name":"SVG text does not collide: chapter-03.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T03:04:06.327Z","time":"2026-10-30T03:05:08.808Z","event":"check","name":"SVG text at least 18px: chapter-03.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T03:04:06.327Z","time":"2026-10-30T03:05:08.906Z","event":"check","name":"SVG transformed text in bounds: chapter-04.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T03:04:06.327Z","time":"2026-10-30T03:05:08.906Z","event":"check","name":"SVG text does not collide: chapter-04.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T03:04:06.327Z","time":"2026-10-30T03:05:08.907Z","event":"check","name":"SVG text at least 18px: chapter-04.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T03:04:06.327Z","time":"2026-10-30T03:05:08.988Z","event":"check","name":"SVG transformed text in bounds: ecosystem.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T03:04:06.327Z","time":"2026-10-30T03:05:08.989Z","event":"check","name":"SVG text does not collide: ecosystem.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T03:04:06.327Z","time":"2026-10-30T03:05:08.990Z","event":"check","name":"SVG text at least 18px: ecosystem.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T03:04:06.327Z","time":"2026-10-30T03:05:09.089Z","event":"check","name":"SVG transformed text in bounds: roles.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T03:04:06.327Z","time":"2026-10-30T03:05:09.089Z","event":"check","name":"SVG text does not collide: roles.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T03:04:06.327Z","time":"2026-10-30T03:05:09.090Z","event":"check","name":"SVG text at least 18px: roles.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T03:04:06.327Z","time":"2026-10-30T03:05:09.170Z","event":"check","name":"SVG transformed text in bounds: token-context.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T03:04:06.327Z","time":"2026-10-30T03:05:09.171Z","event":"check","name":"SVG text does not collide: token-context.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T03:04:06.327Z","time":"2026-10-30T03:05:09.172Z","event":"check","name":"SVG text at least 18px: token-context.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T03:04:06.327Z","time":"2026-10-30T03:05:09.270Z","event":"check","name":"SVG transformed text in bounds: workspace.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T03:04:06.327Z","time":"2026-10-30T03:05:09.271Z","event":"check","name":"SVG text does not collide: workspace.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T03:04:06.327Z","time":"2026-10-30T03:05:09.271Z","event":"check","name":"SVG text at least 18px: workspace.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T03:04:06.327Z","time":"2026-10-30T03:05:09.357Z","event":"check","name":"SVG transformed text in bounds: workflow.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T03:04:06.327Z","time":"2026-10-30T03:05:09.358Z","event":"check","name":"SVG text does not collide: workflow.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T03:04:06.327Z","time":"2026-10-30T03:05:09.359Z","event":"check","name":"SVG text at least 18px: workflow.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T03:04:06.327Z","time":"2026-10-30T03:05:09.456Z","event":"check","name":"SVG transformed text in bounds: debugging.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T03:04:06.327Z","time":"2026-10-30T03:05:09.457Z","event":"check","name":"SVG text does not collide: debugging.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T03:04:06.327Z","time":"2026-10-30T03:05:09.457Z","event":"check","name":"SVG text at least 18px: debugging.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T03:04:06.327Z","time":"2026-10-30T03:05:09.540Z","event":"check","name":"SVG transformed text in bounds: active-learning.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T03:04:06.327Z","time":"2026-10-30T03:05:09.541Z","event":"check","name":"SVG text does not collide: active-learning.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T03:04:06.327Z","time":"2026-10-30T03:05:09.541Z","event":"check","name":"SVG text at least 18px: active-learning.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T03:04:06.327Z","time":"2026-10-30T03:05:09.638Z","event":"check","name":"SVG transformed text in bounds: ai-trap.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T03:04:06.327Z","time":"2026-10-30T03:05:09.639Z","event":"check","name":"SVG text does not collide: ai-trap.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T03:04:06.327Z","time":"2026-10-30T03:05:09.639Z","event":"check","name":"SVG text at least 18px: ai-trap.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T03:04:06.327Z","time":"2026-10-30T03:05:09.721Z","event":"check","name":"SVG transformed text in bounds: security.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T03:04:06.327Z","time":"2026-10-30T03:05:09.722Z","event":"check","name":"SVG text does not collide: security.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T03:04:06.327Z","time":"2026-10-30T03:05:09.722Z","event":"check","name":"SVG text at least 18px: security.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T03:04:06.327Z","time":"2026-10-30T03:05:09.823Z","event":"check","name":"SVG transformed text in bounds: final-boss.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T03:04:06.327Z","time":"2026-10-30T03:05:09.824Z","event":"check","name":"SVG text does not collide: final-boss.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T03:04:06.327Z","time":"2026-10-30T03:05:09.824Z","event":"check","name":"SVG text at least 18px: final-boss.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T03:04:06.327Z","time":"2026-10-30T03:05:09.923Z","event":"check","name":"SVG transformed text in bounds: skill-map.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T03:04:06.327Z","time":"2026-10-30T03:05:09.924Z","event":"check","name":"SVG text does not collide: skill-map.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T03:04:06.327Z","time":"2026-10-30T03:05:09.924Z","event":"check","name":"SVG text at least 18px: skill-map.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T03:04:06.327Z","time":"2026-10-30T03:05:09.990Z","event":"check","name":"No runtime exceptions","ok":true,"evidence":[]}
+{"runId":"2026-10-30T03:04:06.327Z","time":"2026-10-30T03:05:09.990Z","event":"check","name":"No remote content requests","ok":true,"evidence":[]}
+{"runId":"2026-10-30T03:11:07.181Z","time":"2026-10-30T03:11:07.182Z","event":"start"}
+{"runId":"2026-10-30T03:11:07.181Z","time":"2026-10-30T03:11:27.544Z","event":"check","name":"Dashboard 14 tasks / 8 phases","ok":true,"evidence":"Read state.js from file://"}
+{"runId":"2026-10-30T03:11:07.181Z","time":"2026-10-30T03:11:47.856Z","event":"check","name":"Book loaded","ok":true,"evidence":"4 full chapters, 4 self-check controls"}
+{"runId":"2026-10-30T03:11:07.181Z","time":"2026-10-30T03:11:47.857Z","event":"check","name":"Chapter 3 keeps its seven teaching moves","ok":true,"evidence":{"missing":[],"h2":28}}
+{"runId":"2026-10-30T03:11:07.181Z","time":"2026-10-30T03:11:47.858Z","event":"check","name":"Chapter 4 has dossiers 1–7 plus clinic, rubric, checklist","ok":true,"evidence":{"dossiers":["1","2","3","4","5","6","7"],"hasClinic":true,"hasRubric":true,"hasChecklist":true}}
+{"runId":"2026-10-30T03:11:07.181Z","time":"2026-10-30T03:11:47.859Z","event":"check","name":"Answers are collapsed until opened","ok":true,"evidence":"Answer blocks ship closed; print opens them temporarily"}
+{"runId":"2026-10-30T03:11:07.181Z","time":"2026-10-30T03:11:47.912Z","event":"check","name":"Images decoded","ok":true,"evidence":[16,[]]}
+{"runId":"2026-10-30T03:11:07.181Z","time":"2026-10-30T03:11:48.005Z","event":"check","name":"All book anchors exist","ok":true,"evidence":[]}
+{"runId":"2026-10-30T03:11:07.181Z","time":"2026-10-30T03:11:48.006Z","event":"check","name":"Budget 1000 calls","ok":true,"evidence":["18.500 USD","≈ 462500 VND · chưa phí khác"]}
+{"runId":"2026-10-30T03:11:07.181Z","time":"2026-10-30T03:11:48.008Z","event":"check","name":"Reject blank budget","ok":true,"evidence":"No fabricated estimate for empty field"}
+{"runId":"2026-10-30T03:11:07.181Z","time":"2026-10-30T03:11:48.010Z","event":"check","name":"Trace 42000 / 60000","ok":true,"evidence":["Dừng tại i = 2 · tổng 42.000 VND. Vở ghi chưa được cộng.","Dừng tại i = 3 · tổng 60.000 VND. Đã cộng đủ ba khoản; vẫn cần ca biên và dữ liệu sai."]}
+{"runId":"2026-10-30T03:11:07.181Z","time":"2026-10-30T03:11:48.103Z","event":"check","name":"TOC non-accented search","ok":true,"evidence":"Unicode NFD and đ/d normalization"}
+{"runId":"2026-10-30T03:11:07.181Z","time":"2026-10-30T03:11:48.104Z","event":"check","name":"Self-check saves local progress","ok":true,"evidence":"User-owned self-check, not test score"}
+{"runId":"2026-10-30T03:11:07.181Z","time":"2026-10-30T03:11:48.105Z","event":"check","name":"Font controls stay within 16–22 px","ok":true,"evidence":"Measured CSS variable, then restored 18px"}
+{"runId":"2026-10-30T03:11:07.181Z","time":"2026-10-30T03:12:08.198Z","event":"check","name":"Reader self-check persists after reload","ok":true,"evidence":"Same isolated Chrome file:// origin"}
+{"runId":"2026-10-30T03:11:07.181Z","time":"2026-10-30T03:12:08.199Z","event":"check","name":"Quiz gives explanation","ok":true,"evidence":"Correct choice plus reasoning"}
+{"runId":"2026-10-30T03:11:07.181Z","time":"2026-10-30T03:12:08.200Z","event":"check","name":"Print opens and restores answers","ok":true,"evidence":"beforeprint/afterprint events"}
+{"runId":"2026-10-30T03:11:07.181Z","time":"2026-10-30T03:12:08.308Z","event":"check","name":"No page overflow at 768","ok":true,"evidence":{"width":768,"scrollWidth":753}}
+{"runId":"2026-10-30T03:11:07.181Z","time":"2026-10-30T03:12:08.419Z","event":"check","name":"No page overflow at 375","ok":true,"evidence":{"width":375,"scrollWidth":360}}
+{"runId":"2026-10-30T03:11:07.181Z","time":"2026-10-30T03:12:08.489Z","event":"check","name":"Mobile menu opens","ok":true,"evidence":"375px actual browser emulation"}
+{"runId":"2026-10-30T03:11:07.181Z","time":"2026-10-30T03:12:08.553Z","event":"check","name":"Web starts with three samples","ok":true,"evidence":"Fresh isolated browser profile"}
+{"runId":"2026-10-30T03:11:07.181Z","time":"2026-10-30T03:12:08.555Z","event":"check","name":"Web valid add 75000","ok":true,"evidence":{"total":"75.000 đ","message":"Đã thêm khoản chi giả. Hãy tự nhẩm tổng để đối chiếu."}}
+{"runId":"2026-10-30T03:11:07.181Z","time":"2026-10-30T03:12:08.556Z","event":"check","name":"Web rejects numeric suffix","ok":true,"evidence":{"total":"75.000 đ","message":"Nhập số nguyên VND, không có dấu chấm, phẩy hay chữ."}}
+{"runId":"2026-10-30T03:11:07.181Z","time":"2026-10-30T03:12:08.557Z","event":"check","name":"Web displays literal HTML-like title","ok":true,"evidence":"textContent, not parsed markup"}
+{"runId":"2026-10-30T03:11:07.181Z","time":"2026-10-30T03:12:08.571Z","event":"check","name":"Web localStorage persists in tested browser","ok":true,"evidence":"Observed on this Chrome file:// profile only; not universal guarantee"}
+{"runId":"2026-10-30T03:11:07.181Z","time":"2026-10-30T03:12:08.572Z","event":"check","name":"Web delete to empty = 0","ok":true,"evidence":"All fake rows removed in isolated profile"}
+{"runId":"2026-10-30T03:11:07.181Z","time":"2026-10-30T03:12:08.587Z","event":"check","name":"Corrupt storage falls back without overwrite","ok":true,"evidence":"Broken fixture kept; no real user data used"}
+{"runId":"2026-10-30T03:11:07.181Z","time":"2026-10-30T03:12:08.589Z","event":"check","name":"Fallback adds a real in-memory row","ok":true,"evidence":{"total":"60.001 đ","message":"Đã thêm khoản chi giả. Hãy tự nhẩm tổng để đối chiếu."}}
+{"runId":"2026-10-30T03:11:07.181Z","time":"2026-10-30T03:12:08.601Z","event":"check","name":"Fallback does not promise persistence","ok":true,"evidence":"In-memory addition disappears after reload, notice remains"}
+{"runId":"2026-10-30T03:11:07.181Z","time":"2026-10-30T03:12:08.666Z","event":"check","name":"Web demo no mobile page overflow","ok":true,"evidence":{"width":375,"scrollWidth":360}}
+{"runId":"2026-10-30T03:11:07.181Z","time":"2026-10-30T03:12:08.685Z","event":"check","name":"SVG transformed text in bounds: cover.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T03:11:07.181Z","time":"2026-10-30T03:12:08.686Z","event":"check","name":"SVG text does not collide: cover.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T03:11:07.181Z","time":"2026-10-30T03:12:08.687Z","event":"check","name":"SVG text at least 18px: cover.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T03:11:07.181Z","time":"2026-10-30T03:12:08.774Z","event":"check","name":"SVG transformed text in bounds: chapter-01.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T03:11:07.181Z","time":"2026-10-30T03:12:08.775Z","event":"check","name":"SVG text does not collide: chapter-01.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T03:11:07.181Z","time":"2026-10-30T03:12:08.775Z","event":"check","name":"SVG text at least 18px: chapter-01.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T03:11:07.181Z","time":"2026-10-30T03:12:08.871Z","event":"check","name":"SVG transformed text in bounds: chapter-02.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T03:11:07.181Z","time":"2026-10-30T03:12:08.872Z","event":"check","name":"SVG text does not collide: chapter-02.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T03:11:07.181Z","time":"2026-10-30T03:12:08.873Z","event":"check","name":"SVG text at least 18px: chapter-02.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T03:11:07.181Z","time":"2026-10-30T03:12:08.956Z","event":"check","name":"SVG transformed text in bounds: chapter-03.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T03:11:07.181Z","time":"2026-10-30T03:12:08.957Z","event":"check","name":"SVG text does not collide: chapter-03.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T03:11:07.181Z","time":"2026-10-30T03:12:08.957Z","event":"check","name":"SVG text at least 18px: chapter-03.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T03:11:07.181Z","time":"2026-10-30T03:12:09.038Z","event":"check","name":"SVG transformed text in bounds: chapter-04.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T03:11:07.181Z","time":"2026-10-30T03:12:09.039Z","event":"check","name":"SVG text does not collide: chapter-04.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T03:11:07.181Z","time":"2026-10-30T03:12:09.039Z","event":"check","name":"SVG text at least 18px: chapter-04.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T03:11:07.181Z","time":"2026-10-30T03:12:09.122Z","event":"check","name":"SVG transformed text in bounds: ecosystem.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T03:11:07.181Z","time":"2026-10-30T03:12:09.123Z","event":"check","name":"SVG text does not collide: ecosystem.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T03:11:07.181Z","time":"2026-10-30T03:12:09.123Z","event":"check","name":"SVG text at least 18px: ecosystem.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T03:11:07.181Z","time":"2026-10-30T03:12:09.206Z","event":"check","name":"SVG transformed text in bounds: roles.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T03:11:07.181Z","time":"2026-10-30T03:12:09.207Z","event":"check","name":"SVG text does not collide: roles.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T03:11:07.181Z","time":"2026-10-30T03:12:09.207Z","event":"check","name":"SVG text at least 18px: roles.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T03:11:07.181Z","time":"2026-10-30T03:12:09.288Z","event":"check","name":"SVG transformed text in bounds: token-context.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T03:11:07.181Z","time":"2026-10-30T03:12:09.289Z","event":"check","name":"SVG text does not collide: token-context.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T03:11:07.181Z","time":"2026-10-30T03:12:09.289Z","event":"check","name":"SVG text at least 18px: token-context.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T03:11:07.181Z","time":"2026-10-30T03:12:09.371Z","event":"check","name":"SVG transformed text in bounds: workspace.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T03:11:07.181Z","time":"2026-10-30T03:12:09.372Z","event":"check","name":"SVG text does not collide: workspace.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T03:11:07.181Z","time":"2026-10-30T03:12:09.372Z","event":"check","name":"SVG text at least 18px: workspace.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T03:11:07.181Z","time":"2026-10-30T03:12:09.455Z","event":"check","name":"SVG transformed text in bounds: workflow.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T03:11:07.181Z","time":"2026-10-30T03:12:09.456Z","event":"check","name":"SVG text does not collide: workflow.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T03:11:07.181Z","time":"2026-10-30T03:12:09.456Z","event":"check","name":"SVG text at least 18px: workflow.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T03:11:07.181Z","time":"2026-10-30T03:12:09.540Z","event":"check","name":"SVG transformed text in bounds: debugging.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T03:11:07.181Z","time":"2026-10-30T03:12:09.541Z","event":"check","name":"SVG text does not collide: debugging.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T03:11:07.181Z","time":"2026-10-30T03:12:09.541Z","event":"check","name":"SVG text at least 18px: debugging.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T03:11:07.181Z","time":"2026-10-30T03:12:09.624Z","event":"check","name":"SVG transformed text in bounds: active-learning.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T03:11:07.181Z","time":"2026-10-30T03:12:09.624Z","event":"check","name":"SVG text does not collide: active-learning.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T03:11:07.181Z","time":"2026-10-30T03:12:09.625Z","event":"check","name":"SVG text at least 18px: active-learning.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T03:11:07.181Z","time":"2026-10-30T03:12:09.722Z","event":"check","name":"SVG transformed text in bounds: ai-trap.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T03:11:07.181Z","time":"2026-10-30T03:12:09.723Z","event":"check","name":"SVG text does not collide: ai-trap.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T03:11:07.181Z","time":"2026-10-30T03:12:09.723Z","event":"check","name":"SVG text at least 18px: ai-trap.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T03:11:07.181Z","time":"2026-10-30T03:12:09.805Z","event":"check","name":"SVG transformed text in bounds: security.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T03:11:07.181Z","time":"2026-10-30T03:12:09.806Z","event":"check","name":"SVG text does not collide: security.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T03:11:07.181Z","time":"2026-10-30T03:12:09.806Z","event":"check","name":"SVG text at least 18px: security.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T03:11:07.181Z","time":"2026-10-30T03:12:09.890Z","event":"check","name":"SVG transformed text in bounds: final-boss.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T03:11:07.181Z","time":"2026-10-30T03:12:09.891Z","event":"check","name":"SVG text does not collide: final-boss.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T03:11:07.181Z","time":"2026-10-30T03:12:09.891Z","event":"check","name":"SVG text at least 18px: final-boss.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T03:11:07.181Z","time":"2026-10-30T03:12:09.989Z","event":"check","name":"SVG transformed text in bounds: skill-map.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T03:11:07.181Z","time":"2026-10-30T03:12:09.990Z","event":"check","name":"SVG text does not collide: skill-map.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T03:11:07.181Z","time":"2026-10-30T03:12:09.990Z","event":"check","name":"SVG text at least 18px: skill-map.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T03:11:07.181Z","time":"2026-10-30T03:12:10.059Z","event":"check","name":"No runtime exceptions","ok":true,"evidence":[]}
+{"runId":"2026-10-30T03:11:07.181Z","time":"2026-10-30T03:12:10.059Z","event":"check","name":"No remote content requests","ok":true,"evidence":[]}
+{"runId":"2026-10-30T03:12:33.457Z","time":"2026-10-30T03:12:33.458Z","event":"start"}
+{"runId":"2026-10-30T03:12:33.457Z","time":"2026-10-30T03:12:53.811Z","event":"check","name":"Dashboard 14 tasks / 8 phases","ok":true,"evidence":"Read state.js from file://"}
+{"runId":"2026-10-30T03:12:33.457Z","time":"2026-10-30T03:13:14.110Z","event":"check","name":"Book loaded","ok":true,"evidence":"4 full chapters, 4 self-check controls"}
+{"runId":"2026-10-30T03:12:33.457Z","time":"2026-10-30T03:13:14.111Z","event":"check","name":"Chapter 3 keeps its seven teaching moves","ok":true,"evidence":{"missing":[],"h2":28}}
+{"runId":"2026-10-30T03:12:33.457Z","time":"2026-10-30T03:13:14.112Z","event":"check","name":"Chapter 4 has dossiers 1–7 plus clinic, rubric, checklist","ok":true,"evidence":{"dossiers":["1","2","3","4","5","6","7"],"hasClinic":true,"hasRubric":true,"hasChecklist":true}}
+{"runId":"2026-10-30T03:12:33.457Z","time":"2026-10-30T03:13:14.113Z","event":"check","name":"Answers are collapsed until opened","ok":true,"evidence":"Answer blocks ship closed; print opens them temporarily"}
+{"runId":"2026-10-30T03:12:33.457Z","time":"2026-10-30T03:13:14.164Z","event":"check","name":"Images decoded","ok":true,"evidence":[16,[]]}
+{"runId":"2026-10-30T03:12:33.457Z","time":"2026-10-30T03:13:14.254Z","event":"check","name":"All book anchors exist","ok":true,"evidence":[]}
+{"runId":"2026-10-30T03:12:33.457Z","time":"2026-10-30T03:13:14.255Z","event":"check","name":"Budget 1000 calls","ok":true,"evidence":["18.500 USD","≈ 462500 VND · chưa phí khác"]}
+{"runId":"2026-10-30T03:12:33.457Z","time":"2026-10-30T03:13:14.255Z","event":"check","name":"Reject blank budget","ok":true,"evidence":"No fabricated estimate for empty field"}
+{"runId":"2026-10-30T03:12:33.457Z","time":"2026-10-30T03:13:14.258Z","event":"check","name":"Trace 42000 / 60000","ok":true,"evidence":["Dừng tại i = 2 · tổng 42.000 VND. Vở ghi chưa được cộng.","Dừng tại i = 3 · tổng 60.000 VND. Đã cộng đủ ba khoản; vẫn cần ca biên và dữ liệu sai."]}
+{"runId":"2026-10-30T03:12:33.457Z","time":"2026-10-30T03:13:14.352Z","event":"check","name":"TOC non-accented search","ok":true,"evidence":"Unicode NFD and đ/d normalization"}
+{"runId":"2026-10-30T03:12:33.457Z","time":"2026-10-30T03:13:14.353Z","event":"check","name":"Self-check saves local progress","ok":true,"evidence":"User-owned self-check, not test score"}
+{"runId":"2026-10-30T03:12:33.457Z","time":"2026-10-30T03:13:14.354Z","event":"check","name":"Font controls stay within 16–22 px","ok":true,"evidence":"Measured CSS variable, then restored 18px"}
+{"runId":"2026-10-30T03:12:33.457Z","time":"2026-10-30T03:13:34.447Z","event":"check","name":"Reader self-check persists after reload","ok":true,"evidence":"Same isolated Chrome file:// origin"}
+{"runId":"2026-10-30T03:12:33.457Z","time":"2026-10-30T03:13:34.448Z","event":"check","name":"Quiz gives explanation","ok":true,"evidence":"Correct choice plus reasoning"}
+{"runId":"2026-10-30T03:12:33.457Z","time":"2026-10-30T03:13:34.449Z","event":"check","name":"Print opens and restores answers","ok":true,"evidence":"beforeprint/afterprint events"}
+{"runId":"2026-10-30T03:12:33.457Z","time":"2026-10-30T03:13:34.556Z","event":"check","name":"No page overflow at 768","ok":true,"evidence":{"width":768,"scrollWidth":753}}
+{"runId":"2026-10-30T03:12:33.457Z","time":"2026-10-30T03:13:34.682Z","event":"check","name":"No page overflow at 375","ok":true,"evidence":{"width":375,"scrollWidth":360}}
+{"runId":"2026-10-30T03:12:33.457Z","time":"2026-10-30T03:13:34.753Z","event":"check","name":"Mobile menu opens","ok":true,"evidence":"375px actual browser emulation"}
+{"runId":"2026-10-30T03:12:33.457Z","time":"2026-10-30T03:13:35.498Z","event":"check","name":"PDF rendered","ok":true,"evidence":"reports/print-preview.pdf; requires visual spot check"}
+{"runId":"2026-10-30T03:12:33.457Z","time":"2026-10-30T03:13:35.525Z","event":"check","name":"Web starts with three samples","ok":true,"evidence":"Fresh isolated browser profile"}
+{"runId":"2026-10-30T03:12:33.457Z","time":"2026-10-30T03:13:35.527Z","event":"check","name":"Web valid add 75000","ok":true,"evidence":{"total":"75.000 đ","message":"Đã thêm khoản chi giả. Hãy tự nhẩm tổng để đối chiếu."}}
+{"runId":"2026-10-30T03:12:33.457Z","time":"2026-10-30T03:13:35.528Z","event":"check","name":"Web rejects numeric suffix","ok":true,"evidence":{"total":"75.000 đ","message":"Nhập số nguyên VND, không có dấu chấm, phẩy hay chữ."}}
+{"runId":"2026-10-30T03:12:33.457Z","time":"2026-10-30T03:13:35.529Z","event":"check","name":"Web displays literal HTML-like title","ok":true,"evidence":"textContent, not parsed markup"}
+{"runId":"2026-10-30T03:12:33.457Z","time":"2026-10-30T03:13:35.545Z","event":"check","name":"Web localStorage persists in tested browser","ok":true,"evidence":"Observed on this Chrome file:// profile only; not universal guarantee"}
+{"runId":"2026-10-30T03:12:33.457Z","time":"2026-10-30T03:13:35.546Z","event":"check","name":"Web delete to empty = 0","ok":true,"evidence":"All fake rows removed in isolated profile"}
+{"runId":"2026-10-30T03:12:33.457Z","time":"2026-10-30T03:13:35.561Z","event":"check","name":"Corrupt storage falls back without overwrite","ok":true,"evidence":"Broken fixture kept; no real user data used"}
+{"runId":"2026-10-30T03:12:33.457Z","time":"2026-10-30T03:13:35.563Z","event":"check","name":"Fallback adds a real in-memory row","ok":true,"evidence":{"total":"60.001 đ","message":"Đã thêm khoản chi giả. Hãy tự nhẩm tổng để đối chiếu."}}
+{"runId":"2026-10-30T03:12:33.457Z","time":"2026-10-30T03:13:35.577Z","event":"check","name":"Fallback does not promise persistence","ok":true,"evidence":"In-memory addition disappears after reload, notice remains"}
+{"runId":"2026-10-30T03:12:33.457Z","time":"2026-10-30T03:13:35.663Z","event":"check","name":"Web demo no mobile page overflow","ok":true,"evidence":{"width":375,"scrollWidth":360}}
+{"runId":"2026-10-30T03:12:33.457Z","time":"2026-10-30T03:13:35.682Z","event":"check","name":"SVG transformed text in bounds: cover.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T03:12:33.457Z","time":"2026-10-30T03:13:35.683Z","event":"check","name":"SVG text does not collide: cover.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T03:12:33.457Z","time":"2026-10-30T03:13:35.683Z","event":"check","name":"SVG text at least 18px: cover.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T03:12:33.457Z","time":"2026-10-30T03:13:35.774Z","event":"check","name":"SVG transformed text in bounds: chapter-01.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T03:12:33.457Z","time":"2026-10-30T03:13:35.775Z","event":"check","name":"SVG text does not collide: chapter-01.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T03:12:33.457Z","time":"2026-10-30T03:13:35.775Z","event":"check","name":"SVG text at least 18px: chapter-01.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T03:12:33.457Z","time":"2026-10-30T03:13:35.869Z","event":"check","name":"SVG transformed text in bounds: chapter-02.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T03:12:33.457Z","time":"2026-10-30T03:13:35.870Z","event":"check","name":"SVG text does not collide: chapter-02.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T03:12:33.457Z","time":"2026-10-30T03:13:35.870Z","event":"check","name":"SVG text at least 18px: chapter-02.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T03:12:33.457Z","time":"2026-10-30T03:13:35.952Z","event":"check","name":"SVG transformed text in bounds: chapter-03.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T03:12:33.457Z","time":"2026-10-30T03:13:35.953Z","event":"check","name":"SVG text does not collide: chapter-03.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T03:12:33.457Z","time":"2026-10-30T03:13:35.953Z","event":"check","name":"SVG text at least 18px: chapter-03.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T03:12:33.457Z","time":"2026-10-30T03:13:36.036Z","event":"check","name":"SVG transformed text in bounds: chapter-04.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T03:12:33.457Z","time":"2026-10-30T03:13:36.037Z","event":"check","name":"SVG text does not collide: chapter-04.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T03:12:33.457Z","time":"2026-10-30T03:13:36.037Z","event":"check","name":"SVG text at least 18px: chapter-04.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T03:12:33.457Z","time":"2026-10-30T03:13:36.119Z","event":"check","name":"SVG transformed text in bounds: ecosystem.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T03:12:33.457Z","time":"2026-10-30T03:13:36.120Z","event":"check","name":"SVG text does not collide: ecosystem.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T03:12:33.457Z","time":"2026-10-30T03:13:36.120Z","event":"check","name":"SVG text at least 18px: ecosystem.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T03:12:33.457Z","time":"2026-10-30T03:13:36.201Z","event":"check","name":"SVG transformed text in bounds: roles.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T03:12:33.457Z","time":"2026-10-30T03:13:36.202Z","event":"check","name":"SVG text does not collide: roles.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T03:12:33.457Z","time":"2026-10-30T03:13:36.202Z","event":"check","name":"SVG text at least 18px: roles.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T03:12:33.457Z","time":"2026-10-30T03:13:36.284Z","event":"check","name":"SVG transformed text in bounds: token-context.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T03:12:33.457Z","time":"2026-10-30T03:13:36.285Z","event":"check","name":"SVG text does not collide: token-context.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T03:12:33.457Z","time":"2026-10-30T03:13:36.285Z","event":"check","name":"SVG text at least 18px: token-context.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T03:12:33.457Z","time":"2026-10-30T03:13:36.367Z","event":"check","name":"SVG transformed text in bounds: workspace.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T03:12:33.457Z","time":"2026-10-30T03:13:36.368Z","event":"check","name":"SVG text does not collide: workspace.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T03:12:33.457Z","time":"2026-10-30T03:13:36.368Z","event":"check","name":"SVG text at least 18px: workspace.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T03:12:33.457Z","time":"2026-10-30T03:13:36.450Z","event":"check","name":"SVG transformed text in bounds: workflow.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T03:12:33.457Z","time":"2026-10-30T03:13:36.450Z","event":"check","name":"SVG text does not collide: workflow.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T03:12:33.457Z","time":"2026-10-30T03:13:36.451Z","event":"check","name":"SVG text at least 18px: workflow.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T03:12:33.457Z","time":"2026-10-30T03:13:36.538Z","event":"check","name":"SVG transformed text in bounds: debugging.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T03:12:33.457Z","time":"2026-10-30T03:13:36.541Z","event":"check","name":"SVG text does not collide: debugging.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T03:12:33.457Z","time":"2026-10-30T03:13:36.541Z","event":"check","name":"SVG text at least 18px: debugging.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T03:12:33.457Z","time":"2026-10-30T03:13:36.636Z","event":"check","name":"SVG transformed text in bounds: active-learning.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T03:12:33.457Z","time":"2026-10-30T03:13:36.637Z","event":"check","name":"SVG text does not collide: active-learning.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T03:12:33.457Z","time":"2026-10-30T03:13:36.637Z","event":"check","name":"SVG text at least 18px: active-learning.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T03:12:33.457Z","time":"2026-10-30T03:13:36.719Z","event":"check","name":"SVG transformed text in bounds: ai-trap.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T03:12:33.457Z","time":"2026-10-30T03:13:36.720Z","event":"check","name":"SVG text does not collide: ai-trap.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T03:12:33.457Z","time":"2026-10-30T03:13:36.720Z","event":"check","name":"SVG text at least 18px: ai-trap.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T03:12:33.457Z","time":"2026-10-30T03:13:36.801Z","event":"check","name":"SVG transformed text in bounds: security.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T03:12:33.457Z","time":"2026-10-30T03:13:36.802Z","event":"check","name":"SVG text does not collide: security.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T03:12:33.457Z","time":"2026-10-30T03:13:36.802Z","event":"check","name":"SVG text at least 18px: security.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T03:12:33.457Z","time":"2026-10-30T03:13:36.886Z","event":"check","name":"SVG transformed text in bounds: final-boss.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T03:12:33.457Z","time":"2026-10-30T03:13:36.887Z","event":"check","name":"SVG text does not collide: final-boss.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T03:12:33.457Z","time":"2026-10-30T03:13:36.887Z","event":"check","name":"SVG text at least 18px: final-boss.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T03:12:33.457Z","time":"2026-10-30T03:13:36.986Z","event":"check","name":"SVG transformed text in bounds: skill-map.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T03:12:33.457Z","time":"2026-10-30T03:13:36.987Z","event":"check","name":"SVG text does not collide: skill-map.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T03:12:33.457Z","time":"2026-10-30T03:13:36.987Z","event":"check","name":"SVG text at least 18px: skill-map.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T03:12:33.457Z","time":"2026-10-30T03:13:37.054Z","event":"check","name":"No runtime exceptions","ok":true,"evidence":[]}
+{"runId":"2026-10-30T03:12:33.457Z","time":"2026-10-30T03:13:37.055Z","event":"check","name":"No remote content requests","ok":true,"evidence":[]}
+{"runId":"2026-10-30T09:21:40.921Z","time":"2026-10-30T09:21:40.921Z","event":"start"}
+{"runId":"2026-10-30T09:21:40.921Z","time":"2026-10-30T09:22:01.418Z","event":"check","name":"Book loaded","ok":true,"evidence":"4 full chapters, 4 self-check controls"}
+{"runId":"2026-10-30T09:21:40.921Z","time":"2026-10-30T09:22:01.420Z","event":"check","name":"Chapter 3 keeps its seven teaching moves","ok":true,"evidence":{"missing":[],"h2":28}}
+{"runId":"2026-10-30T09:21:40.921Z","time":"2026-10-30T09:22:01.422Z","event":"check","name":"Chapter 4 has dossiers 1–7 plus clinic, rubric, checklist","ok":true,"evidence":{"dossiers":["1","2","3","4","5","6","7"],"hasClinic":true,"hasRubric":true,"hasChecklist":true}}
+{"runId":"2026-10-30T09:21:40.921Z","time":"2026-10-30T09:22:01.423Z","event":"check","name":"Answers are collapsed until opened","ok":true,"evidence":"Answer blocks ship closed; print opens them temporarily"}
+{"runId":"2026-10-30T09:21:40.921Z","time":"2026-10-30T09:22:01.489Z","event":"check","name":"Images decoded","ok":true,"evidence":[16,[]]}
+{"runId":"2026-10-30T09:21:40.921Z","time":"2026-10-30T09:22:01.565Z","event":"check","name":"All book anchors exist","ok":true,"evidence":[]}
+{"runId":"2026-10-30T09:21:40.921Z","time":"2026-10-30T09:22:01.566Z","event":"check","name":"Budget 1000 calls","ok":true,"evidence":["18.500 USD","≈ 462500 VND · chưa phí khác"]}
+{"runId":"2026-10-30T09:21:40.921Z","time":"2026-10-30T09:22:01.568Z","event":"check","name":"Reject blank budget","ok":true,"evidence":"No fabricated estimate for empty field"}
+{"runId":"2026-10-30T09:21:40.921Z","time":"2026-10-30T09:22:01.576Z","event":"check","name":"Trace 42000 / 60000","ok":true,"evidence":["Dừng tại i = 2 · tổng 42.000 VND. Vở ghi chưa được cộng.","Dừng tại i = 3 · tổng 60.000 VND. Đã cộng đủ ba khoản; vẫn cần ca biên và dữ liệu sai."]}
+{"runId":"2026-10-30T09:21:40.921Z","time":"2026-10-30T09:22:01.664Z","event":"check","name":"TOC non-accented search","ok":true,"evidence":"Unicode NFD and đ/d normalization"}
+{"runId":"2026-10-30T09:21:40.921Z","time":"2026-10-30T09:22:01.665Z","event":"check","name":"Self-check saves local progress","ok":true,"evidence":"User-owned self-check, not test score"}
+{"runId":"2026-10-30T09:21:40.921Z","time":"2026-10-30T09:22:01.667Z","event":"check","name":"Font controls stay within 16–22 px","ok":true,"evidence":"Measured CSS variable, then restored 18px"}
+{"runId":"2026-10-30T09:21:40.921Z","time":"2026-10-30T09:22:21.771Z","event":"check","name":"Reader self-check persists after reload","ok":true,"evidence":"Same isolated Chrome file:// origin"}
+{"runId":"2026-10-30T09:21:40.921Z","time":"2026-10-30T09:22:21.772Z","event":"check","name":"Quiz gives explanation","ok":true,"evidence":"Correct choice plus reasoning"}
+{"runId":"2026-10-30T09:21:40.921Z","time":"2026-10-30T09:22:21.773Z","event":"check","name":"Print opens and restores answers","ok":true,"evidence":"beforeprint/afterprint events"}
+{"runId":"2026-10-30T09:21:40.921Z","time":"2026-10-30T09:22:21.887Z","event":"check","name":"No page overflow at 768","ok":true,"evidence":{"width":768,"scrollWidth":753}}
+{"runId":"2026-10-30T09:21:40.921Z","time":"2026-10-30T09:22:21.998Z","event":"check","name":"No page overflow at 375","ok":true,"evidence":{"width":375,"scrollWidth":360}}
+{"runId":"2026-10-30T09:21:40.921Z","time":"2026-10-30T09:22:22.069Z","event":"check","name":"Mobile menu opens","ok":true,"evidence":"375px actual browser emulation"}
+{"runId":"2026-10-30T09:21:40.921Z","time":"2026-10-30T09:22:22.856Z","event":"check","name":"PDF rendered","ok":true,"evidence":"reports/print-preview.pdf; requires visual spot check"}
+{"runId":"2026-10-30T09:21:40.921Z","time":"2026-10-30T09:22:22.892Z","event":"check","name":"Web starts with three samples","ok":true,"evidence":"Fresh isolated browser profile"}
+{"runId":"2026-10-30T09:21:40.921Z","time":"2026-10-30T09:22:22.894Z","event":"check","name":"Web valid add 75000","ok":true,"evidence":{"total":"75.000 đ","message":"Đã thêm khoản chi giả. Hãy tự nhẩm tổng để đối chiếu."}}
+{"runId":"2026-10-30T09:21:40.921Z","time":"2026-10-30T09:22:22.895Z","event":"check","name":"Web rejects numeric suffix","ok":true,"evidence":{"total":"75.000 đ","message":"Nhập số nguyên VND, không có dấu chấm, phẩy hay chữ."}}
+{"runId":"2026-10-30T09:21:40.921Z","time":"2026-10-30T09:22:22.896Z","event":"check","name":"Web displays literal HTML-like title","ok":true,"evidence":"textContent, not parsed markup"}
+{"runId":"2026-10-30T09:21:40.921Z","time":"2026-10-30T09:22:22.913Z","event":"check","name":"Web localStorage persists in tested browser","ok":true,"evidence":"Observed on this Chrome file:// profile only; not universal guarantee"}
+{"runId":"2026-10-30T09:21:40.921Z","time":"2026-10-30T09:22:22.915Z","event":"check","name":"Web delete to empty = 0","ok":true,"evidence":"All fake rows removed in isolated profile"}
+{"runId":"2026-10-30T09:21:40.921Z","time":"2026-10-30T09:22:22.933Z","event":"check","name":"Corrupt storage falls back without overwrite","ok":true,"evidence":"Broken fixture kept; no real user data used"}
+{"runId":"2026-10-30T09:21:40.921Z","time":"2026-10-30T09:22:22.935Z","event":"check","name":"Fallback adds a real in-memory row","ok":true,"evidence":{"total":"60.001 đ","message":"Đã thêm khoản chi giả. Hãy tự nhẩm tổng để đối chiếu."}}
+{"runId":"2026-10-30T09:21:40.921Z","time":"2026-10-30T09:22:22.955Z","event":"check","name":"Fallback does not promise persistence","ok":true,"evidence":"In-memory addition disappears after reload, notice remains"}
+{"runId":"2026-10-30T09:21:40.921Z","time":"2026-10-30T09:22:23.027Z","event":"check","name":"Web demo no mobile page overflow","ok":true,"evidence":{"width":375,"scrollWidth":360}}
+{"runId":"2026-10-30T09:21:40.921Z","time":"2026-10-30T09:22:23.049Z","event":"check","name":"SVG transformed text in bounds: cover.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T09:21:40.921Z","time":"2026-10-30T09:22:23.051Z","event":"check","name":"SVG text does not collide: cover.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T09:21:40.921Z","time":"2026-10-30T09:22:23.051Z","event":"check","name":"SVG text at least 18px: cover.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T09:21:40.921Z","time":"2026-10-30T09:22:23.142Z","event":"check","name":"SVG transformed text in bounds: chapter-01.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T09:21:40.921Z","time":"2026-10-30T09:22:23.143Z","event":"check","name":"SVG text does not collide: chapter-01.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T09:21:40.921Z","time":"2026-10-30T09:22:23.143Z","event":"check","name":"SVG text at least 18px: chapter-01.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T09:21:40.921Z","time":"2026-10-30T09:22:23.238Z","event":"check","name":"SVG transformed text in bounds: chapter-02.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T09:21:40.921Z","time":"2026-10-30T09:22:23.239Z","event":"check","name":"SVG text does not collide: chapter-02.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T09:21:40.921Z","time":"2026-10-30T09:22:23.239Z","event":"check","name":"SVG text at least 18px: chapter-02.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T09:21:40.921Z","time":"2026-10-30T09:22:23.339Z","event":"check","name":"SVG transformed text in bounds: chapter-03.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T09:21:40.921Z","time":"2026-10-30T09:22:23.340Z","event":"check","name":"SVG text does not collide: chapter-03.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T09:21:40.921Z","time":"2026-10-30T09:22:23.340Z","event":"check","name":"SVG text at least 18px: chapter-03.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T09:21:40.921Z","time":"2026-10-30T09:22:23.440Z","event":"check","name":"SVG transformed text in bounds: chapter-04.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T09:21:40.921Z","time":"2026-10-30T09:22:23.440Z","event":"check","name":"SVG text does not collide: chapter-04.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T09:21:40.921Z","time":"2026-10-30T09:22:23.441Z","event":"check","name":"SVG text at least 18px: chapter-04.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T09:21:40.921Z","time":"2026-10-30T09:22:23.536Z","event":"check","name":"SVG transformed text in bounds: ecosystem.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T09:21:40.921Z","time":"2026-10-30T09:22:23.539Z","event":"check","name":"SVG text does not collide: ecosystem.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T09:21:40.921Z","time":"2026-10-30T09:22:23.539Z","event":"check","name":"SVG text at least 18px: ecosystem.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T09:21:40.921Z","time":"2026-10-30T09:22:23.638Z","event":"check","name":"SVG transformed text in bounds: roles.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T09:21:40.921Z","time":"2026-10-30T09:22:23.639Z","event":"check","name":"SVG text does not collide: roles.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T09:21:40.921Z","time":"2026-10-30T09:22:23.639Z","event":"check","name":"SVG text at least 18px: roles.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T09:21:40.921Z","time":"2026-10-30T09:22:23.734Z","event":"check","name":"SVG transformed text in bounds: token-context.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T09:21:40.921Z","time":"2026-10-30T09:22:23.735Z","event":"check","name":"SVG text does not collide: token-context.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T09:21:40.921Z","time":"2026-10-30T09:22:23.735Z","event":"check","name":"SVG text at least 18px: token-context.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T09:21:40.921Z","time":"2026-10-30T09:22:23.820Z","event":"check","name":"SVG transformed text in bounds: workspace.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T09:21:40.921Z","time":"2026-10-30T09:22:23.822Z","event":"check","name":"SVG text does not collide: workspace.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T09:21:40.921Z","time":"2026-10-30T09:22:23.822Z","event":"check","name":"SVG text at least 18px: workspace.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T09:21:40.921Z","time":"2026-10-30T09:22:23.938Z","event":"check","name":"SVG transformed text in bounds: workflow.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T09:21:40.921Z","time":"2026-10-30T09:22:23.939Z","event":"check","name":"SVG text does not collide: workflow.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T09:21:40.921Z","time":"2026-10-30T09:22:23.940Z","event":"check","name":"SVG text at least 18px: workflow.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T09:21:40.921Z","time":"2026-10-30T09:22:24.037Z","event":"check","name":"SVG transformed text in bounds: debugging.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T09:21:40.921Z","time":"2026-10-30T09:22:24.040Z","event":"check","name":"SVG text does not collide: debugging.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T09:21:40.921Z","time":"2026-10-30T09:22:24.040Z","event":"check","name":"SVG text at least 18px: debugging.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T09:21:40.921Z","time":"2026-10-30T09:22:24.136Z","event":"check","name":"SVG transformed text in bounds: active-learning.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T09:21:40.921Z","time":"2026-10-30T09:22:24.139Z","event":"check","name":"SVG text does not collide: active-learning.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T09:21:40.921Z","time":"2026-10-30T09:22:24.139Z","event":"check","name":"SVG text at least 18px: active-learning.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T09:21:40.921Z","time":"2026-10-30T09:22:24.235Z","event":"check","name":"SVG transformed text in bounds: ai-trap.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T09:21:40.921Z","time":"2026-10-30T09:22:24.237Z","event":"check","name":"SVG text does not collide: ai-trap.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T09:21:40.921Z","time":"2026-10-30T09:22:24.237Z","event":"check","name":"SVG text at least 18px: ai-trap.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T09:21:40.921Z","time":"2026-10-30T09:22:24.341Z","event":"check","name":"SVG transformed text in bounds: security.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T09:21:40.921Z","time":"2026-10-30T09:22:24.343Z","event":"check","name":"SVG text does not collide: security.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T09:21:40.921Z","time":"2026-10-30T09:22:24.343Z","event":"check","name":"SVG text at least 18px: security.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T09:21:40.921Z","time":"2026-10-30T09:22:24.439Z","event":"check","name":"SVG transformed text in bounds: final-boss.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T09:21:40.921Z","time":"2026-10-30T09:22:24.440Z","event":"check","name":"SVG text does not collide: final-boss.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T09:21:40.921Z","time":"2026-10-30T09:22:24.441Z","event":"check","name":"SVG text at least 18px: final-boss.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T09:21:40.921Z","time":"2026-10-30T09:22:24.536Z","event":"check","name":"SVG transformed text in bounds: skill-map.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T09:21:40.921Z","time":"2026-10-30T09:22:24.539Z","event":"check","name":"SVG text does not collide: skill-map.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T09:21:40.921Z","time":"2026-10-30T09:22:24.540Z","event":"check","name":"SVG text at least 18px: skill-map.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T09:21:40.921Z","time":"2026-10-30T09:22:24.620Z","event":"check","name":"One-page outline is first and complete","ok":false,"evidence":"missing #ban-do section"}
+{"runId":"2026-10-30T09:21:40.921Z","time":"2026-10-30T09:22:24.621Z","event":"error","error":"Error: {\"exceptionId\":1,\"text\":\"Uncaught\",\"lineNumber\":0,\"columnNumber\":14,\"scriptId\":\"56\",\"stackTrace\":{\"callFrames\":[{\"functionName\":\"\",\"scriptId\":\"56\",\"url\":\"\",\"lineNumber\":0,\"columnNumber\":14}]},\"exception\":{\"type\":\"object\",\"subtype\":\"error\",\"className\":\"TypeError\",\"description\":\"TypeError: Cannot read properties of null (reading 'innerHTML')\\n    at <anonymous>:1:15\",\"objectId\":\"-3685118096582979992.23.2\"}}"}
+{"runId":"2026-10-30T09:23:02.524Z","time":"2026-10-30T09:23:02.524Z","event":"start"}
+{"runId":"2026-10-30T09:23:02.524Z","time":"2026-10-30T09:23:23.000Z","event":"check","name":"Book loaded","ok":true,"evidence":"4 full chapters, 4 self-check controls"}
+{"runId":"2026-10-30T09:23:02.524Z","time":"2026-10-30T09:23:23.002Z","event":"check","name":"Chapter 3 keeps its seven teaching moves","ok":true,"evidence":{"missing":[],"h2":28}}
+{"runId":"2026-10-30T09:23:02.524Z","time":"2026-10-30T09:23:23.004Z","event":"check","name":"Chapter 4 has dossiers 1–7 plus clinic, rubric, checklist","ok":true,"evidence":{"dossiers":["1","2","3","4","5","6","7"],"hasClinic":true,"hasRubric":true,"hasChecklist":true}}
+{"runId":"2026-10-30T09:23:02.524Z","time":"2026-10-30T09:23:23.004Z","event":"check","name":"Answers are collapsed until opened","ok":true,"evidence":"Answer blocks ship closed; print opens them temporarily"}
+{"runId":"2026-10-30T09:23:02.524Z","time":"2026-10-30T09:23:23.072Z","event":"check","name":"Images decoded","ok":true,"evidence":[16,[]]}
+{"runId":"2026-10-30T09:23:02.524Z","time":"2026-10-30T09:23:23.144Z","event":"check","name":"All book anchors exist","ok":true,"evidence":[]}
+{"runId":"2026-10-30T09:23:02.524Z","time":"2026-10-30T09:23:23.145Z","event":"check","name":"Budget 1000 calls","ok":true,"evidence":["18.500 USD","≈ 462500 VND · chưa phí khác"]}
+{"runId":"2026-10-30T09:23:02.524Z","time":"2026-10-30T09:23:23.147Z","event":"check","name":"Reject blank budget","ok":true,"evidence":"No fabricated estimate for empty field"}
+{"runId":"2026-10-30T09:23:02.524Z","time":"2026-10-30T09:23:23.155Z","event":"check","name":"Trace 42000 / 60000","ok":true,"evidence":["Dừng tại i = 2 · tổng 42.000 VND. Vở ghi chưa được cộng.","Dừng tại i = 3 · tổng 60.000 VND. Đã cộng đủ ba khoản; vẫn cần ca biên và dữ liệu sai."]}
+{"runId":"2026-10-30T09:23:02.524Z","time":"2026-10-30T09:23:23.227Z","event":"check","name":"TOC non-accented search","ok":true,"evidence":"Unicode NFD and đ/d normalization"}
+{"runId":"2026-10-30T09:23:02.524Z","time":"2026-10-30T09:23:23.228Z","event":"check","name":"Self-check saves local progress","ok":true,"evidence":"User-owned self-check, not test score"}
+{"runId":"2026-10-30T09:23:02.524Z","time":"2026-10-30T09:23:23.230Z","event":"check","name":"Font controls stay within 16–22 px","ok":true,"evidence":"Measured CSS variable, then restored 18px"}
+{"runId":"2026-10-30T09:23:02.524Z","time":"2026-10-30T09:23:43.317Z","event":"check","name":"Reader self-check persists after reload","ok":true,"evidence":"Same isolated Chrome file:// origin"}
+{"runId":"2026-10-30T09:23:02.524Z","time":"2026-10-30T09:23:43.318Z","event":"check","name":"Quiz gives explanation","ok":true,"evidence":"Correct choice plus reasoning"}
+{"runId":"2026-10-30T09:23:02.524Z","time":"2026-10-30T09:23:43.320Z","event":"check","name":"Print opens and restores answers","ok":true,"evidence":"beforeprint/afterprint events"}
+{"runId":"2026-10-30T09:23:02.524Z","time":"2026-10-30T09:23:43.420Z","event":"check","name":"No page overflow at 768","ok":true,"evidence":{"width":768,"scrollWidth":753}}
+{"runId":"2026-10-30T09:23:02.524Z","time":"2026-10-30T09:23:43.528Z","event":"check","name":"No page overflow at 375","ok":true,"evidence":{"width":375,"scrollWidth":360}}
+{"runId":"2026-10-30T09:23:02.524Z","time":"2026-10-30T09:23:43.600Z","event":"check","name":"Mobile menu opens","ok":true,"evidence":"375px actual browser emulation"}
+{"runId":"2026-10-30T09:23:02.524Z","time":"2026-10-30T09:23:43.698Z","event":"check","name":"Web starts with three samples","ok":true,"evidence":"Fresh isolated browser profile"}
+{"runId":"2026-10-30T09:23:02.524Z","time":"2026-10-30T09:23:43.701Z","event":"check","name":"Web valid add 75000","ok":true,"evidence":{"total":"75.000 đ","message":"Đã thêm khoản chi giả. Hãy tự nhẩm tổng để đối chiếu."}}
+{"runId":"2026-10-30T09:23:02.524Z","time":"2026-10-30T09:23:43.703Z","event":"check","name":"Web rejects numeric suffix","ok":true,"evidence":{"total":"75.000 đ","message":"Nhập số nguyên VND, không có dấu chấm, phẩy hay chữ."}}
+{"runId":"2026-10-30T09:23:02.524Z","time":"2026-10-30T09:23:43.704Z","event":"check","name":"Web displays literal HTML-like title","ok":true,"evidence":"textContent, not parsed markup"}
+{"runId":"2026-10-30T09:23:02.524Z","time":"2026-10-30T09:23:43.722Z","event":"check","name":"Web localStorage persists in tested browser","ok":true,"evidence":"Observed on this Chrome file:// profile only; not universal guarantee"}
+{"runId":"2026-10-30T09:23:02.524Z","time":"2026-10-30T09:23:43.724Z","event":"check","name":"Web delete to empty = 0","ok":true,"evidence":"All fake rows removed in isolated profile"}
+{"runId":"2026-10-30T09:23:02.524Z","time":"2026-10-30T09:23:43.739Z","event":"check","name":"Corrupt storage falls back without overwrite","ok":true,"evidence":"Broken fixture kept; no real user data used"}
+{"runId":"2026-10-30T09:23:02.524Z","time":"2026-10-30T09:23:43.741Z","event":"check","name":"Fallback adds a real in-memory row","ok":true,"evidence":{"total":"60.001 đ","message":"Đã thêm khoản chi giả. Hãy tự nhẩm tổng để đối chiếu."}}
+{"runId":"2026-10-30T09:23:02.524Z","time":"2026-10-30T09:23:43.756Z","event":"check","name":"Fallback does not promise persistence","ok":true,"evidence":"In-memory addition disappears after reload, notice remains"}
+{"runId":"2026-10-30T09:23:02.524Z","time":"2026-10-30T09:23:43.826Z","event":"check","name":"Web demo no mobile page overflow","ok":true,"evidence":{"width":375,"scrollWidth":360}}
+{"runId":"2026-10-30T09:23:02.524Z","time":"2026-10-30T09:23:43.845Z","event":"check","name":"SVG transformed text in bounds: cover.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T09:23:02.524Z","time":"2026-10-30T09:23:43.846Z","event":"check","name":"SVG text does not collide: cover.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T09:23:02.524Z","time":"2026-10-30T09:23:43.847Z","event":"check","name":"SVG text at least 18px: cover.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T09:23:02.524Z","time":"2026-10-30T09:23:43.937Z","event":"check","name":"SVG transformed text in bounds: chapter-01.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T09:23:02.524Z","time":"2026-10-30T09:23:43.938Z","event":"check","name":"SVG text does not collide: chapter-01.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T09:23:02.524Z","time":"2026-10-30T09:23:43.939Z","event":"check","name":"SVG text at least 18px: chapter-01.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T09:23:02.524Z","time":"2026-10-30T09:23:44.036Z","event":"check","name":"SVG transformed text in bounds: chapter-02.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T09:23:02.524Z","time":"2026-10-30T09:23:44.037Z","event":"check","name":"SVG text does not collide: chapter-02.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T09:23:02.524Z","time":"2026-10-30T09:23:44.037Z","event":"check","name":"SVG text at least 18px: chapter-02.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T09:23:02.524Z","time":"2026-10-30T09:23:44.133Z","event":"check","name":"SVG transformed text in bounds: chapter-03.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T09:23:02.524Z","time":"2026-10-30T09:23:44.135Z","event":"check","name":"SVG text does not collide: chapter-03.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T09:23:02.524Z","time":"2026-10-30T09:23:44.136Z","event":"check","name":"SVG text at least 18px: chapter-03.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T09:23:02.524Z","time":"2026-10-30T09:23:44.248Z","event":"check","name":"SVG transformed text in bounds: chapter-04.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T09:23:02.524Z","time":"2026-10-30T09:23:44.249Z","event":"check","name":"SVG text does not collide: chapter-04.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T09:23:02.524Z","time":"2026-10-30T09:23:44.249Z","event":"check","name":"SVG text at least 18px: chapter-04.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T09:23:02.524Z","time":"2026-10-30T09:23:44.337Z","event":"check","name":"SVG transformed text in bounds: ecosystem.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T09:23:02.524Z","time":"2026-10-30T09:23:44.338Z","event":"check","name":"SVG text does not collide: ecosystem.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T09:23:02.524Z","time":"2026-10-30T09:23:44.339Z","event":"check","name":"SVG text at least 18px: ecosystem.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T09:23:02.524Z","time":"2026-10-30T09:23:44.436Z","event":"check","name":"SVG transformed text in bounds: roles.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T09:23:02.524Z","time":"2026-10-30T09:23:44.437Z","event":"check","name":"SVG text does not collide: roles.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T09:23:02.524Z","time":"2026-10-30T09:23:44.437Z","event":"check","name":"SVG text at least 18px: roles.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T09:23:02.524Z","time":"2026-10-30T09:23:44.531Z","event":"check","name":"SVG transformed text in bounds: token-context.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T09:23:02.524Z","time":"2026-10-30T09:23:44.532Z","event":"check","name":"SVG text does not collide: token-context.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T09:23:02.524Z","time":"2026-10-30T09:23:44.532Z","event":"check","name":"SVG text at least 18px: token-context.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T09:23:02.524Z","time":"2026-10-30T09:23:44.632Z","event":"check","name":"SVG transformed text in bounds: workspace.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T09:23:02.524Z","time":"2026-10-30T09:23:44.633Z","event":"check","name":"SVG text does not collide: workspace.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T09:23:02.524Z","time":"2026-10-30T09:23:44.633Z","event":"check","name":"SVG text at least 18px: workspace.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T09:23:02.524Z","time":"2026-10-30T09:23:44.732Z","event":"check","name":"SVG transformed text in bounds: workflow.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T09:23:02.524Z","time":"2026-10-30T09:23:44.735Z","event":"check","name":"SVG text does not collide: workflow.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T09:23:02.524Z","time":"2026-10-30T09:23:44.736Z","event":"check","name":"SVG text at least 18px: workflow.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T09:23:02.524Z","time":"2026-10-30T09:23:44.833Z","event":"check","name":"SVG transformed text in bounds: debugging.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T09:23:02.524Z","time":"2026-10-30T09:23:44.837Z","event":"check","name":"SVG text does not collide: debugging.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T09:23:02.524Z","time":"2026-10-30T09:23:44.837Z","event":"check","name":"SVG text at least 18px: debugging.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T09:23:02.524Z","time":"2026-10-30T09:23:44.946Z","event":"check","name":"SVG transformed text in bounds: active-learning.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T09:23:02.524Z","time":"2026-10-30T09:23:44.947Z","event":"check","name":"SVG text does not collide: active-learning.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T09:23:02.524Z","time":"2026-10-30T09:23:44.947Z","event":"check","name":"SVG text at least 18px: active-learning.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T09:23:02.524Z","time":"2026-10-30T09:23:45.032Z","event":"check","name":"SVG transformed text in bounds: ai-trap.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T09:23:02.524Z","time":"2026-10-30T09:23:45.033Z","event":"check","name":"SVG text does not collide: ai-trap.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T09:23:02.524Z","time":"2026-10-30T09:23:45.033Z","event":"check","name":"SVG text at least 18px: ai-trap.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T09:23:02.524Z","time":"2026-10-30T09:23:45.116Z","event":"check","name":"SVG transformed text in bounds: security.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T09:23:02.524Z","time":"2026-10-30T09:23:45.119Z","event":"check","name":"SVG text does not collide: security.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T09:23:02.524Z","time":"2026-10-30T09:23:45.119Z","event":"check","name":"SVG text at least 18px: security.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T09:23:02.524Z","time":"2026-10-30T09:23:45.221Z","event":"check","name":"SVG transformed text in bounds: final-boss.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T09:23:02.524Z","time":"2026-10-30T09:23:45.222Z","event":"check","name":"SVG text does not collide: final-boss.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T09:23:02.524Z","time":"2026-10-30T09:23:45.222Z","event":"check","name":"SVG text at least 18px: final-boss.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T09:23:02.524Z","time":"2026-10-30T09:23:45.316Z","event":"check","name":"SVG transformed text in bounds: skill-map.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T09:23:02.524Z","time":"2026-10-30T09:23:45.319Z","event":"check","name":"SVG text does not collide: skill-map.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T09:23:02.524Z","time":"2026-10-30T09:23:45.319Z","event":"check","name":"SVG text at least 18px: skill-map.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T09:23:02.524Z","time":"2026-10-30T09:24:05.514Z","event":"check","name":"One-page outline is first and complete","ok":false,"evidence":{"position":1,"routes":5,"missions":0,"dossiers":0,"broken":[],"hasContract":true,"hasLimits":true}}
+{"runId":"2026-10-30T09:23:02.524Z","time":"2026-10-30T09:24:05.517Z","event":"check","name":"Online build hides internal dashboard link","ok":true,"evidence":"site build drops production dashboard"}
+{"runId":"2026-10-30T09:23:02.524Z","time":"2026-10-30T09:24:05.517Z","event":"check","name":"No runtime exceptions","ok":true,"evidence":[]}
+{"runId":"2026-10-30T09:23:02.524Z","time":"2026-10-30T09:24:05.518Z","event":"check","name":"No remote content requests","ok":true,"evidence":[]}
+{"runId":"2026-10-30T09:24:38.096Z","time":"2026-10-30T09:24:38.097Z","event":"start"}
+{"runId":"2026-10-30T09:24:38.096Z","time":"2026-10-30T09:24:58.594Z","event":"check","name":"Book loaded","ok":true,"evidence":"4 full chapters, 4 self-check controls"}
+{"runId":"2026-10-30T09:24:38.096Z","time":"2026-10-30T09:24:58.596Z","event":"check","name":"Chapter 3 keeps its seven teaching moves","ok":true,"evidence":{"missing":[],"h2":28}}
+{"runId":"2026-10-30T09:24:38.096Z","time":"2026-10-30T09:24:58.597Z","event":"check","name":"Chapter 4 has dossiers 1–7 plus clinic, rubric, checklist","ok":true,"evidence":{"dossiers":["1","2","3","4","5","6","7"],"hasClinic":true,"hasRubric":true,"hasChecklist":true}}
+{"runId":"2026-10-30T09:24:38.096Z","time":"2026-10-30T09:24:58.598Z","event":"check","name":"Answers are collapsed until opened","ok":true,"evidence":"Answer blocks ship closed; print opens them temporarily"}
+{"runId":"2026-10-30T09:24:38.096Z","time":"2026-10-30T09:24:58.665Z","event":"check","name":"Images decoded","ok":true,"evidence":[16,[]]}
+{"runId":"2026-10-30T09:24:38.096Z","time":"2026-10-30T09:24:58.740Z","event":"check","name":"All book anchors exist","ok":true,"evidence":[]}
+{"runId":"2026-10-30T09:24:38.096Z","time":"2026-10-30T09:24:58.741Z","event":"check","name":"Budget 1000 calls","ok":true,"evidence":["18.500 USD","≈ 462500 VND · chưa phí khác"]}
+{"runId":"2026-10-30T09:24:38.096Z","time":"2026-10-30T09:24:58.743Z","event":"check","name":"Reject blank budget","ok":true,"evidence":"No fabricated estimate for empty field"}
+{"runId":"2026-10-30T09:24:38.096Z","time":"2026-10-30T09:24:58.751Z","event":"check","name":"Trace 42000 / 60000","ok":true,"evidence":["Dừng tại i = 2 · tổng 42.000 VND. Vở ghi chưa được cộng.","Dừng tại i = 3 · tổng 60.000 VND. Đã cộng đủ ba khoản; vẫn cần ca biên và dữ liệu sai."]}
+{"runId":"2026-10-30T09:24:38.096Z","time":"2026-10-30T09:24:58.842Z","event":"check","name":"TOC non-accented search","ok":true,"evidence":"Unicode NFD and đ/d normalization"}
+{"runId":"2026-10-30T09:24:38.096Z","time":"2026-10-30T09:24:58.843Z","event":"check","name":"Self-check saves local progress","ok":true,"evidence":"User-owned self-check, not test score"}
+{"runId":"2026-10-30T09:24:38.096Z","time":"2026-10-30T09:24:58.844Z","event":"check","name":"Font controls stay within 16–22 px","ok":true,"evidence":"Measured CSS variable, then restored 18px"}
+{"runId":"2026-10-30T09:24:38.096Z","time":"2026-10-30T09:25:18.934Z","event":"check","name":"Reader self-check persists after reload","ok":true,"evidence":"Same isolated Chrome file:// origin"}
+{"runId":"2026-10-30T09:24:38.096Z","time":"2026-10-30T09:25:18.935Z","event":"check","name":"Quiz gives explanation","ok":true,"evidence":"Correct choice plus reasoning"}
+{"runId":"2026-10-30T09:24:38.096Z","time":"2026-10-30T09:25:18.936Z","event":"check","name":"Print opens and restores answers","ok":true,"evidence":"beforeprint/afterprint events"}
+{"runId":"2026-10-30T09:24:38.096Z","time":"2026-10-30T09:25:19.032Z","event":"check","name":"No page overflow at 768","ok":true,"evidence":{"width":768,"scrollWidth":753}}
+{"runId":"2026-10-30T09:24:38.096Z","time":"2026-10-30T09:25:19.141Z","event":"check","name":"No page overflow at 375","ok":true,"evidence":{"width":375,"scrollWidth":360}}
+{"runId":"2026-10-30T09:24:38.096Z","time":"2026-10-30T09:25:19.214Z","event":"check","name":"Mobile menu opens","ok":true,"evidence":"375px actual browser emulation"}
+{"runId":"2026-10-30T09:24:38.096Z","time":"2026-10-30T09:25:19.310Z","event":"check","name":"Web starts with three samples","ok":true,"evidence":"Fresh isolated browser profile"}
+{"runId":"2026-10-30T09:24:38.096Z","time":"2026-10-30T09:25:19.312Z","event":"check","name":"Web valid add 75000","ok":true,"evidence":{"total":"75.000 đ","message":"Đã thêm khoản chi giả. Hãy tự nhẩm tổng để đối chiếu."}}
+{"runId":"2026-10-30T09:24:38.096Z","time":"2026-10-30T09:25:19.313Z","event":"check","name":"Web rejects numeric suffix","ok":true,"evidence":{"total":"75.000 đ","message":"Nhập số nguyên VND, không có dấu chấm, phẩy hay chữ."}}
+{"runId":"2026-10-30T09:24:38.096Z","time":"2026-10-30T09:25:19.315Z","event":"check","name":"Web displays literal HTML-like title","ok":true,"evidence":"textContent, not parsed markup"}
+{"runId":"2026-10-30T09:24:38.096Z","time":"2026-10-30T09:25:19.334Z","event":"check","name":"Web localStorage persists in tested browser","ok":true,"evidence":"Observed on this Chrome file:// profile only; not universal guarantee"}
+{"runId":"2026-10-30T09:24:38.096Z","time":"2026-10-30T09:25:19.336Z","event":"check","name":"Web delete to empty = 0","ok":true,"evidence":"All fake rows removed in isolated profile"}
+{"runId":"2026-10-30T09:24:38.096Z","time":"2026-10-30T09:25:19.351Z","event":"check","name":"Corrupt storage falls back without overwrite","ok":true,"evidence":"Broken fixture kept; no real user data used"}
+{"runId":"2026-10-30T09:24:38.096Z","time":"2026-10-30T09:25:19.353Z","event":"check","name":"Fallback adds a real in-memory row","ok":true,"evidence":{"total":"60.001 đ","message":"Đã thêm khoản chi giả. Hãy tự nhẩm tổng để đối chiếu."}}
+{"runId":"2026-10-30T09:24:38.096Z","time":"2026-10-30T09:25:19.367Z","event":"check","name":"Fallback does not promise persistence","ok":true,"evidence":"In-memory addition disappears after reload, notice remains"}
+{"runId":"2026-10-30T09:24:38.096Z","time":"2026-10-30T09:25:19.439Z","event":"check","name":"Web demo no mobile page overflow","ok":true,"evidence":{"width":375,"scrollWidth":360}}
+{"runId":"2026-10-30T09:24:38.096Z","time":"2026-10-30T09:25:19.459Z","event":"check","name":"SVG transformed text in bounds: cover.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T09:24:38.096Z","time":"2026-10-30T09:25:19.460Z","event":"check","name":"SVG text does not collide: cover.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T09:24:38.096Z","time":"2026-10-30T09:25:19.460Z","event":"check","name":"SVG text at least 18px: cover.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T09:24:38.096Z","time":"2026-10-30T09:25:19.553Z","event":"check","name":"SVG transformed text in bounds: chapter-01.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T09:24:38.096Z","time":"2026-10-30T09:25:19.554Z","event":"check","name":"SVG text does not collide: chapter-01.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T09:24:38.096Z","time":"2026-10-30T09:25:19.554Z","event":"check","name":"SVG text at least 18px: chapter-01.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T09:24:38.096Z","time":"2026-10-30T09:25:19.646Z","event":"check","name":"SVG transformed text in bounds: chapter-02.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T09:24:38.096Z","time":"2026-10-30T09:25:19.646Z","event":"check","name":"SVG text does not collide: chapter-02.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T09:24:38.096Z","time":"2026-10-30T09:25:19.647Z","event":"check","name":"SVG text at least 18px: chapter-02.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T09:24:38.096Z","time":"2026-10-30T09:25:19.748Z","event":"check","name":"SVG transformed text in bounds: chapter-03.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T09:24:38.096Z","time":"2026-10-30T09:25:19.749Z","event":"check","name":"SVG text does not collide: chapter-03.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T09:24:38.096Z","time":"2026-10-30T09:25:19.750Z","event":"check","name":"SVG text at least 18px: chapter-03.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T09:24:38.096Z","time":"2026-10-30T09:25:19.844Z","event":"check","name":"SVG transformed text in bounds: chapter-04.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T09:24:38.096Z","time":"2026-10-30T09:25:19.845Z","event":"check","name":"SVG text does not collide: chapter-04.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T09:24:38.096Z","time":"2026-10-30T09:25:19.845Z","event":"check","name":"SVG text at least 18px: chapter-04.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T09:24:38.096Z","time":"2026-10-30T09:25:19.932Z","event":"check","name":"SVG transformed text in bounds: ecosystem.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T09:24:38.096Z","time":"2026-10-30T09:25:19.933Z","event":"check","name":"SVG text does not collide: ecosystem.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T09:24:38.096Z","time":"2026-10-30T09:25:19.933Z","event":"check","name":"SVG text at least 18px: ecosystem.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T09:24:38.096Z","time":"2026-10-30T09:25:20.030Z","event":"check","name":"SVG transformed text in bounds: roles.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T09:24:38.096Z","time":"2026-10-30T09:25:20.033Z","event":"check","name":"SVG text does not collide: roles.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T09:24:38.096Z","time":"2026-10-30T09:25:20.033Z","event":"check","name":"SVG text at least 18px: roles.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T09:24:38.096Z","time":"2026-10-30T09:25:20.137Z","event":"check","name":"SVG transformed text in bounds: token-context.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T09:24:38.096Z","time":"2026-10-30T09:25:20.138Z","event":"check","name":"SVG text does not collide: token-context.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T09:24:38.096Z","time":"2026-10-30T09:25:20.138Z","event":"check","name":"SVG text at least 18px: token-context.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T09:24:38.096Z","time":"2026-10-30T09:25:20.231Z","event":"check","name":"SVG transformed text in bounds: workspace.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T09:24:38.096Z","time":"2026-10-30T09:25:20.232Z","event":"check","name":"SVG text does not collide: workspace.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T09:24:38.096Z","time":"2026-10-30T09:25:20.232Z","event":"check","name":"SVG text at least 18px: workspace.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T09:24:38.096Z","time":"2026-10-30T09:25:20.332Z","event":"check","name":"SVG transformed text in bounds: workflow.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T09:24:38.096Z","time":"2026-10-30T09:25:20.333Z","event":"check","name":"SVG text does not collide: workflow.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T09:24:38.096Z","time":"2026-10-30T09:25:20.333Z","event":"check","name":"SVG text at least 18px: workflow.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T09:24:38.096Z","time":"2026-10-30T09:25:20.433Z","event":"check","name":"SVG transformed text in bounds: debugging.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T09:24:38.096Z","time":"2026-10-30T09:25:20.434Z","event":"check","name":"SVG text does not collide: debugging.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T09:24:38.096Z","time":"2026-10-30T09:25:20.434Z","event":"check","name":"SVG text at least 18px: debugging.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T09:24:38.096Z","time":"2026-10-30T09:25:20.532Z","event":"check","name":"SVG transformed text in bounds: active-learning.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T09:24:38.096Z","time":"2026-10-30T09:25:20.533Z","event":"check","name":"SVG text does not collide: active-learning.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T09:24:38.096Z","time":"2026-10-30T09:25:20.534Z","event":"check","name":"SVG text at least 18px: active-learning.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T09:24:38.096Z","time":"2026-10-30T09:25:20.629Z","event":"check","name":"SVG transformed text in bounds: ai-trap.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T09:24:38.096Z","time":"2026-10-30T09:25:20.631Z","event":"check","name":"SVG text does not collide: ai-trap.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T09:24:38.096Z","time":"2026-10-30T09:25:20.632Z","event":"check","name":"SVG text at least 18px: ai-trap.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T09:24:38.096Z","time":"2026-10-30T09:25:20.727Z","event":"check","name":"SVG transformed text in bounds: security.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T09:24:38.096Z","time":"2026-10-30T09:25:20.728Z","event":"check","name":"SVG text does not collide: security.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T09:24:38.096Z","time":"2026-10-30T09:25:20.728Z","event":"check","name":"SVG text at least 18px: security.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T09:24:38.096Z","time":"2026-10-30T09:25:20.817Z","event":"check","name":"SVG transformed text in bounds: final-boss.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T09:24:38.096Z","time":"2026-10-30T09:25:20.818Z","event":"check","name":"SVG text does not collide: final-boss.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T09:24:38.096Z","time":"2026-10-30T09:25:20.818Z","event":"check","name":"SVG text at least 18px: final-boss.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T09:24:38.096Z","time":"2026-10-30T09:25:20.916Z","event":"check","name":"SVG transformed text in bounds: skill-map.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T09:24:38.096Z","time":"2026-10-30T09:25:20.917Z","event":"check","name":"SVG text does not collide: skill-map.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T09:24:38.096Z","time":"2026-10-30T09:25:20.917Z","event":"check","name":"SVG text at least 18px: skill-map.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T09:24:38.096Z","time":"2026-10-30T09:25:41.095Z","event":"check","name":"One-page outline is first and complete","ok":true,"evidence":{"position":1,"routes":5,"missions":7,"dossiers":8,"broken":[],"hasContract":true,"hasLimits":true}}
+{"runId":"2026-10-30T09:24:38.096Z","time":"2026-10-30T09:25:41.098Z","event":"check","name":"Online build hides internal dashboard link","ok":true,"evidence":"site build drops production dashboard"}
+{"runId":"2026-10-30T09:24:38.096Z","time":"2026-10-30T09:25:41.098Z","event":"check","name":"No runtime exceptions","ok":true,"evidence":[]}
+{"runId":"2026-10-30T09:24:38.096Z","time":"2026-10-30T09:25:41.099Z","event":"check","name":"No remote content requests","ok":true,"evidence":[]}
+{"runId":"2026-10-30T09:26:11.841Z","time":"2026-10-30T09:26:11.842Z","event":"start"}
+{"runId":"2026-10-30T09:26:11.841Z","time":"2026-10-30T09:26:32.166Z","event":"check","name":"Dashboard 14 tasks / 8 phases","ok":true,"evidence":"Read state.js from file://"}
+{"runId":"2026-10-30T09:26:11.841Z","time":"2026-10-30T09:26:52.507Z","event":"check","name":"Book loaded","ok":true,"evidence":"4 full chapters, 4 self-check controls"}
+{"runId":"2026-10-30T09:26:11.841Z","time":"2026-10-30T09:26:52.509Z","event":"check","name":"Chapter 3 keeps its seven teaching moves","ok":true,"evidence":{"missing":[],"h2":28}}
+{"runId":"2026-10-30T09:26:11.841Z","time":"2026-10-30T09:26:52.511Z","event":"check","name":"Chapter 4 has dossiers 1–7 plus clinic, rubric, checklist","ok":true,"evidence":{"dossiers":["1","2","3","4","5","6","7"],"hasClinic":true,"hasRubric":true,"hasChecklist":true}}
+{"runId":"2026-10-30T09:26:11.841Z","time":"2026-10-30T09:26:52.512Z","event":"check","name":"Answers are collapsed until opened","ok":true,"evidence":"Answer blocks ship closed; print opens them temporarily"}
+{"runId":"2026-10-30T09:26:11.841Z","time":"2026-10-30T09:26:52.588Z","event":"check","name":"Images decoded","ok":true,"evidence":[16,[]]}
+{"runId":"2026-10-30T09:26:11.841Z","time":"2026-10-30T09:26:52.693Z","event":"check","name":"All book anchors exist","ok":true,"evidence":[]}
+{"runId":"2026-10-30T09:26:11.841Z","time":"2026-10-30T09:26:52.694Z","event":"check","name":"Budget 1000 calls","ok":true,"evidence":["18.500 USD","≈ 462500 VND · chưa phí khác"]}
+{"runId":"2026-10-30T09:26:11.841Z","time":"2026-10-30T09:26:52.696Z","event":"check","name":"Reject blank budget","ok":true,"evidence":"No fabricated estimate for empty field"}
+{"runId":"2026-10-30T09:26:11.841Z","time":"2026-10-30T09:26:52.699Z","event":"check","name":"Trace 42000 / 60000","ok":true,"evidence":["Dừng tại i = 2 · tổng 42.000 VND. Vở ghi chưa được cộng.","Dừng tại i = 3 · tổng 60.000 VND. Đã cộng đủ ba khoản; vẫn cần ca biên và dữ liệu sai."]}
+{"runId":"2026-10-30T09:26:11.841Z","time":"2026-10-30T09:26:52.792Z","event":"check","name":"TOC non-accented search","ok":true,"evidence":"Unicode NFD and đ/d normalization"}
+{"runId":"2026-10-30T09:26:11.841Z","time":"2026-10-30T09:26:52.793Z","event":"check","name":"Self-check saves local progress","ok":true,"evidence":"User-owned self-check, not test score"}
+{"runId":"2026-10-30T09:26:11.841Z","time":"2026-10-30T09:26:52.794Z","event":"check","name":"Font controls stay within 16–22 px","ok":true,"evidence":"Measured CSS variable, then restored 18px"}
+{"runId":"2026-10-30T09:26:11.841Z","time":"2026-10-30T09:27:12.889Z","event":"check","name":"Reader self-check persists after reload","ok":true,"evidence":"Same isolated Chrome file:// origin"}
+{"runId":"2026-10-30T09:26:11.841Z","time":"2026-10-30T09:27:12.890Z","event":"check","name":"Quiz gives explanation","ok":true,"evidence":"Correct choice plus reasoning"}
+{"runId":"2026-10-30T09:26:11.841Z","time":"2026-10-30T09:27:12.892Z","event":"check","name":"Print opens and restores answers","ok":true,"evidence":"beforeprint/afterprint events"}
+{"runId":"2026-10-30T09:26:11.841Z","time":"2026-10-30T09:27:13.010Z","event":"check","name":"No page overflow at 768","ok":true,"evidence":{"width":768,"scrollWidth":753}}
+{"runId":"2026-10-30T09:26:11.841Z","time":"2026-10-30T09:27:13.138Z","event":"check","name":"No page overflow at 375","ok":true,"evidence":{"width":375,"scrollWidth":360}}
+{"runId":"2026-10-30T09:26:11.841Z","time":"2026-10-30T09:27:13.208Z","event":"check","name":"Mobile menu opens","ok":true,"evidence":"375px actual browser emulation"}
+{"runId":"2026-10-30T09:26:11.841Z","time":"2026-10-30T09:27:14.018Z","event":"check","name":"PDF rendered","ok":true,"evidence":"reports/print-preview.pdf; requires visual spot check"}
+{"runId":"2026-10-30T09:26:11.841Z","time":"2026-10-30T09:27:14.050Z","event":"check","name":"Web starts with three samples","ok":true,"evidence":"Fresh isolated browser profile"}
+{"runId":"2026-10-30T09:26:11.841Z","time":"2026-10-30T09:27:14.052Z","event":"check","name":"Web valid add 75000","ok":true,"evidence":{"total":"75.000 đ","message":"Đã thêm khoản chi giả. Hãy tự nhẩm tổng để đối chiếu."}}
+{"runId":"2026-10-30T09:26:11.841Z","time":"2026-10-30T09:27:14.053Z","event":"check","name":"Web rejects numeric suffix","ok":true,"evidence":{"total":"75.000 đ","message":"Nhập số nguyên VND, không có dấu chấm, phẩy hay chữ."}}
+{"runId":"2026-10-30T09:26:11.841Z","time":"2026-10-30T09:27:14.054Z","event":"check","name":"Web displays literal HTML-like title","ok":true,"evidence":"textContent, not parsed markup"}
+{"runId":"2026-10-30T09:26:11.841Z","time":"2026-10-30T09:27:14.070Z","event":"check","name":"Web localStorage persists in tested browser","ok":true,"evidence":"Observed on this Chrome file:// profile only; not universal guarantee"}
+{"runId":"2026-10-30T09:26:11.841Z","time":"2026-10-30T09:27:14.072Z","event":"check","name":"Web delete to empty = 0","ok":true,"evidence":"All fake rows removed in isolated profile"}
+{"runId":"2026-10-30T09:26:11.841Z","time":"2026-10-30T09:27:14.100Z","event":"check","name":"Corrupt storage falls back without overwrite","ok":true,"evidence":"Broken fixture kept; no real user data used"}
+{"runId":"2026-10-30T09:26:11.841Z","time":"2026-10-30T09:27:14.103Z","event":"check","name":"Fallback adds a real in-memory row","ok":true,"evidence":{"total":"60.001 đ","message":"Đã thêm khoản chi giả. Hãy tự nhẩm tổng để đối chiếu."}}
+{"runId":"2026-10-30T09:26:11.841Z","time":"2026-10-30T09:27:14.122Z","event":"check","name":"Fallback does not promise persistence","ok":true,"evidence":"In-memory addition disappears after reload, notice remains"}
+{"runId":"2026-10-30T09:26:11.841Z","time":"2026-10-30T09:27:14.184Z","event":"check","name":"Web demo no mobile page overflow","ok":true,"evidence":{"width":375,"scrollWidth":360}}
+{"runId":"2026-10-30T09:26:11.841Z","time":"2026-10-30T09:27:14.205Z","event":"check","name":"SVG transformed text in bounds: cover.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T09:26:11.841Z","time":"2026-10-30T09:27:14.206Z","event":"check","name":"SVG text does not collide: cover.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T09:26:11.841Z","time":"2026-10-30T09:27:14.206Z","event":"check","name":"SVG text at least 18px: cover.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T09:26:11.841Z","time":"2026-10-30T09:27:14.305Z","event":"check","name":"SVG transformed text in bounds: chapter-01.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T09:26:11.841Z","time":"2026-10-30T09:27:14.306Z","event":"check","name":"SVG text does not collide: chapter-01.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T09:26:11.841Z","time":"2026-10-30T09:27:14.306Z","event":"check","name":"SVG text at least 18px: chapter-01.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T09:26:11.841Z","time":"2026-10-30T09:27:14.391Z","event":"check","name":"SVG transformed text in bounds: chapter-02.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T09:26:11.841Z","time":"2026-10-30T09:27:14.392Z","event":"check","name":"SVG text does not collide: chapter-02.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T09:26:11.841Z","time":"2026-10-30T09:27:14.392Z","event":"check","name":"SVG text at least 18px: chapter-02.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T09:26:11.841Z","time":"2026-10-30T09:27:14.478Z","event":"check","name":"SVG transformed text in bounds: chapter-03.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T09:26:11.841Z","time":"2026-10-30T09:27:14.479Z","event":"check","name":"SVG text does not collide: chapter-03.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T09:26:11.841Z","time":"2026-10-30T09:27:14.479Z","event":"check","name":"SVG text at least 18px: chapter-03.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T09:26:11.841Z","time":"2026-10-30T09:27:14.576Z","event":"check","name":"SVG transformed text in bounds: chapter-04.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T09:26:11.841Z","time":"2026-10-30T09:27:14.578Z","event":"check","name":"SVG text does not collide: chapter-04.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T09:26:11.841Z","time":"2026-10-30T09:27:14.579Z","event":"check","name":"SVG text at least 18px: chapter-04.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T09:26:11.841Z","time":"2026-10-30T09:27:14.679Z","event":"check","name":"SVG transformed text in bounds: ecosystem.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T09:26:11.841Z","time":"2026-10-30T09:27:14.680Z","event":"check","name":"SVG text does not collide: ecosystem.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T09:26:11.841Z","time":"2026-10-30T09:27:14.681Z","event":"check","name":"SVG text at least 18px: ecosystem.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T09:26:11.841Z","time":"2026-10-30T09:27:14.780Z","event":"check","name":"SVG transformed text in bounds: roles.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T09:26:11.841Z","time":"2026-10-30T09:27:14.781Z","event":"check","name":"SVG text does not collide: roles.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T09:26:11.841Z","time":"2026-10-30T09:27:14.781Z","event":"check","name":"SVG text at least 18px: roles.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T09:26:11.841Z","time":"2026-10-30T09:27:14.877Z","event":"check","name":"SVG transformed text in bounds: token-context.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T09:26:11.841Z","time":"2026-10-30T09:27:14.879Z","event":"check","name":"SVG text does not collide: token-context.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T09:26:11.841Z","time":"2026-10-30T09:27:14.879Z","event":"check","name":"SVG text at least 18px: token-context.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T09:26:11.841Z","time":"2026-10-30T09:27:14.979Z","event":"check","name":"SVG transformed text in bounds: workspace.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T09:26:11.841Z","time":"2026-10-30T09:27:14.980Z","event":"check","name":"SVG text does not collide: workspace.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T09:26:11.841Z","time":"2026-10-30T09:27:14.980Z","event":"check","name":"SVG text at least 18px: workspace.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T09:26:11.841Z","time":"2026-10-30T09:27:15.075Z","event":"check","name":"SVG transformed text in bounds: workflow.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T09:26:11.841Z","time":"2026-10-30T09:27:15.077Z","event":"check","name":"SVG text does not collide: workflow.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T09:26:11.841Z","time":"2026-10-30T09:27:15.077Z","event":"check","name":"SVG text at least 18px: workflow.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T09:26:11.841Z","time":"2026-10-30T09:27:15.179Z","event":"check","name":"SVG transformed text in bounds: debugging.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T09:26:11.841Z","time":"2026-10-30T09:27:15.180Z","event":"check","name":"SVG text does not collide: debugging.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T09:26:11.841Z","time":"2026-10-30T09:27:15.180Z","event":"check","name":"SVG text at least 18px: debugging.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T09:26:11.841Z","time":"2026-10-30T09:27:15.278Z","event":"check","name":"SVG transformed text in bounds: active-learning.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T09:26:11.841Z","time":"2026-10-30T09:27:15.280Z","event":"check","name":"SVG text does not collide: active-learning.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T09:26:11.841Z","time":"2026-10-30T09:27:15.280Z","event":"check","name":"SVG text at least 18px: active-learning.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T09:26:11.841Z","time":"2026-10-30T09:27:15.375Z","event":"check","name":"SVG transformed text in bounds: ai-trap.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T09:26:11.841Z","time":"2026-10-30T09:27:15.376Z","event":"check","name":"SVG text does not collide: ai-trap.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T09:26:11.841Z","time":"2026-10-30T09:27:15.376Z","event":"check","name":"SVG text at least 18px: ai-trap.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T09:26:11.841Z","time":"2026-10-30T09:27:15.474Z","event":"check","name":"SVG transformed text in bounds: security.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T09:26:11.841Z","time":"2026-10-30T09:27:15.474Z","event":"check","name":"SVG text does not collide: security.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T09:26:11.841Z","time":"2026-10-30T09:27:15.475Z","event":"check","name":"SVG text at least 18px: security.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T09:26:11.841Z","time":"2026-10-30T09:27:15.564Z","event":"check","name":"SVG transformed text in bounds: final-boss.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T09:26:11.841Z","time":"2026-10-30T09:27:15.565Z","event":"check","name":"SVG text does not collide: final-boss.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T09:26:11.841Z","time":"2026-10-30T09:27:15.565Z","event":"check","name":"SVG text at least 18px: final-boss.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T09:26:11.841Z","time":"2026-10-30T09:27:15.676Z","event":"check","name":"SVG transformed text in bounds: skill-map.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T09:26:11.841Z","time":"2026-10-30T09:27:15.677Z","event":"check","name":"SVG text does not collide: skill-map.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T09:26:11.841Z","time":"2026-10-30T09:27:15.677Z","event":"check","name":"SVG text at least 18px: skill-map.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T09:26:11.841Z","time":"2026-10-30T09:27:35.859Z","event":"check","name":"One-page outline is first and complete","ok":true,"evidence":{"position":1,"routes":5,"missions":7,"dossiers":8,"broken":[],"hasContract":true,"hasLimits":true}}
+{"runId":"2026-10-30T09:26:11.841Z","time":"2026-10-30T09:27:35.859Z","event":"check","name":"Online build hides internal dashboard link","ok":true,"evidence":"offline package keeps dashboard"}
+{"runId":"2026-10-30T09:26:11.841Z","time":"2026-10-30T09:27:35.859Z","event":"check","name":"No runtime exceptions","ok":true,"evidence":[]}
+{"runId":"2026-10-30T09:26:11.841Z","time":"2026-10-30T09:27:35.859Z","event":"check","name":"No remote content requests","ok":true,"evidence":[]}
+{"runId":"2026-10-30T11:12:44.825Z","time":"2026-10-30T11:12:44.826Z","event":"start"}
+{"runId":"2026-10-30T11:12:44.825Z","time":"2026-10-30T11:13:05.365Z","event":"check","name":"Book loaded","ok":true,"evidence":"4 full chapters, 4 self-check controls"}
+{"runId":"2026-10-30T11:12:44.825Z","time":"2026-10-30T11:13:05.367Z","event":"check","name":"Chapter 3 keeps its seven teaching moves","ok":true,"evidence":{"missing":[],"h2":28}}
+{"runId":"2026-10-30T11:12:44.825Z","time":"2026-10-30T11:13:05.368Z","event":"check","name":"Chapter 4 has dossiers 1–7 plus clinic, rubric, checklist","ok":true,"evidence":{"dossiers":["1","2","3","4","5","6","7"],"hasClinic":true,"hasRubric":true,"hasChecklist":true}}
+{"runId":"2026-10-30T11:12:44.825Z","time":"2026-10-30T11:13:05.369Z","event":"check","name":"Answers are collapsed until opened","ok":true,"evidence":"Answer blocks ship closed; print opens them temporarily"}
+{"runId":"2026-10-30T11:12:44.825Z","time":"2026-10-30T11:13:05.431Z","event":"check","name":"Images decoded","ok":true,"evidence":[16,[]]}
+{"runId":"2026-10-30T11:12:44.825Z","time":"2026-10-30T11:13:05.513Z","event":"check","name":"All book anchors exist","ok":true,"evidence":[]}
+{"runId":"2026-10-30T11:12:44.825Z","time":"2026-10-30T11:13:05.514Z","event":"check","name":"Budget 1000 calls","ok":true,"evidence":["18.500 USD","≈ 462500 VND · chưa phí khác"]}
+{"runId":"2026-10-30T11:12:44.825Z","time":"2026-10-30T11:13:05.516Z","event":"check","name":"Reject blank budget","ok":true,"evidence":"No fabricated estimate for empty field"}
+{"runId":"2026-10-30T11:12:44.825Z","time":"2026-10-30T11:13:05.525Z","event":"check","name":"Trace 42000 / 60000","ok":true,"evidence":["Dừng tại i = 2 · tổng 42.000 VND. Vở ghi chưa được cộng.","Dừng tại i = 3 · tổng 60.000 VND. Đã cộng đủ ba khoản; vẫn cần ca biên và dữ liệu sai."]}
+{"runId":"2026-10-30T11:12:44.825Z","time":"2026-10-30T11:13:05.612Z","event":"check","name":"TOC non-accented search","ok":true,"evidence":"Unicode NFD and đ/d normalization"}
+{"runId":"2026-10-30T11:12:44.825Z","time":"2026-10-30T11:13:05.613Z","event":"check","name":"Self-check saves local progress","ok":true,"evidence":"User-owned self-check, not test score"}
+{"runId":"2026-10-30T11:12:44.825Z","time":"2026-10-30T11:13:05.615Z","event":"check","name":"Font controls stay within 16–22 px","ok":true,"evidence":"Measured CSS variable, then restored 18px"}
+{"runId":"2026-10-30T11:12:44.825Z","time":"2026-10-30T11:13:25.706Z","event":"check","name":"Reader self-check persists after reload","ok":true,"evidence":"Same isolated Chrome file:// origin"}
+{"runId":"2026-10-30T11:12:44.825Z","time":"2026-10-30T11:13:25.707Z","event":"check","name":"Quiz gives explanation","ok":true,"evidence":"Correct choice plus reasoning"}
+{"runId":"2026-10-30T11:12:44.825Z","time":"2026-10-30T11:13:25.708Z","event":"check","name":"Print opens and restores answers","ok":true,"evidence":"beforeprint/afterprint events"}
+{"runId":"2026-10-30T11:12:44.825Z","time":"2026-10-30T11:13:25.805Z","event":"check","name":"No page overflow at 768","ok":true,"evidence":{"width":768,"scrollWidth":753}}
+{"runId":"2026-10-30T11:12:44.825Z","time":"2026-10-30T11:13:25.911Z","event":"check","name":"No page overflow at 375","ok":true,"evidence":{"width":375,"scrollWidth":360}}
+{"runId":"2026-10-30T11:12:44.825Z","time":"2026-10-30T11:13:25.986Z","event":"check","name":"Mobile menu opens","ok":true,"evidence":"375px actual browser emulation"}
+{"runId":"2026-10-30T11:12:44.825Z","time":"2026-10-30T11:13:26.078Z","event":"check","name":"Web starts with three samples","ok":true,"evidence":"Fresh isolated browser profile"}
+{"runId":"2026-10-30T11:12:44.825Z","time":"2026-10-30T11:13:26.080Z","event":"check","name":"Web valid add 75000","ok":true,"evidence":{"total":"75.000 đ","message":"Đã thêm khoản chi giả. Hãy tự nhẩm tổng để đối chiếu."}}
+{"runId":"2026-10-30T11:12:44.825Z","time":"2026-10-30T11:13:26.081Z","event":"check","name":"Web rejects numeric suffix","ok":true,"evidence":{"total":"75.000 đ","message":"Nhập số nguyên VND, không có dấu chấm, phẩy hay chữ."}}
+{"runId":"2026-10-30T11:12:44.825Z","time":"2026-10-30T11:13:26.082Z","event":"check","name":"Web displays literal HTML-like title","ok":true,"evidence":"textContent, not parsed markup"}
+{"runId":"2026-10-30T11:12:44.825Z","time":"2026-10-30T11:13:26.104Z","event":"check","name":"Web localStorage persists in tested browser","ok":true,"evidence":"Observed on this Chrome file:// profile only; not universal guarantee"}
+{"runId":"2026-10-30T11:12:44.825Z","time":"2026-10-30T11:13:26.106Z","event":"check","name":"Web delete to empty = 0","ok":true,"evidence":"All fake rows removed in isolated profile"}
+{"runId":"2026-10-30T11:12:44.825Z","time":"2026-10-30T11:13:26.127Z","event":"check","name":"Corrupt storage falls back without overwrite","ok":true,"evidence":"Broken fixture kept; no real user data used"}
+{"runId":"2026-10-30T11:12:44.825Z","time":"2026-10-30T11:13:26.129Z","event":"check","name":"Fallback adds a real in-memory row","ok":true,"evidence":{"total":"60.001 đ","message":"Đã thêm khoản chi giả. Hãy tự nhẩm tổng để đối chiếu."}}
+{"runId":"2026-10-30T11:12:44.825Z","time":"2026-10-30T11:13:26.150Z","event":"check","name":"Fallback does not promise persistence","ok":true,"evidence":"In-memory addition disappears after reload, notice remains"}
+{"runId":"2026-10-30T11:12:44.825Z","time":"2026-10-30T11:13:26.226Z","event":"check","name":"Web demo no mobile page overflow","ok":true,"evidence":{"width":375,"scrollWidth":360}}
+{"runId":"2026-10-30T11:12:44.825Z","time":"2026-10-30T11:13:26.243Z","event":"check","name":"SVG transformed text in bounds: cover.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T11:12:44.825Z","time":"2026-10-30T11:13:26.244Z","event":"check","name":"SVG text does not collide: cover.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T11:12:44.825Z","time":"2026-10-30T11:13:26.245Z","event":"check","name":"SVG text at least 18px: cover.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T11:12:44.825Z","time":"2026-10-30T11:13:26.338Z","event":"check","name":"SVG transformed text in bounds: chapter-01.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T11:12:44.825Z","time":"2026-10-30T11:13:26.339Z","event":"check","name":"SVG text does not collide: chapter-01.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T11:12:44.825Z","time":"2026-10-30T11:13:26.339Z","event":"check","name":"SVG text at least 18px: chapter-01.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T11:12:44.825Z","time":"2026-10-30T11:13:26.433Z","event":"check","name":"SVG transformed text in bounds: chapter-02.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T11:12:44.825Z","time":"2026-10-30T11:13:26.434Z","event":"check","name":"SVG text does not collide: chapter-02.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T11:12:44.825Z","time":"2026-10-30T11:13:26.434Z","event":"check","name":"SVG text at least 18px: chapter-02.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T11:12:44.825Z","time":"2026-10-30T11:13:26.513Z","event":"check","name":"SVG transformed text in bounds: chapter-03.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T11:12:44.825Z","time":"2026-10-30T11:13:26.514Z","event":"check","name":"SVG text does not collide: chapter-03.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T11:12:44.825Z","time":"2026-10-30T11:13:26.514Z","event":"check","name":"SVG text at least 18px: chapter-03.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T11:12:44.825Z","time":"2026-10-30T11:13:26.614Z","event":"check","name":"SVG transformed text in bounds: chapter-04.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T11:12:44.825Z","time":"2026-10-30T11:13:26.615Z","event":"check","name":"SVG text does not collide: chapter-04.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T11:12:44.825Z","time":"2026-10-30T11:13:26.615Z","event":"check","name":"SVG text at least 18px: chapter-04.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T11:12:44.825Z","time":"2026-10-30T11:13:26.698Z","event":"check","name":"SVG transformed text in bounds: ecosystem.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T11:12:44.825Z","time":"2026-10-30T11:13:26.699Z","event":"check","name":"SVG text does not collide: ecosystem.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T11:12:44.825Z","time":"2026-10-30T11:13:26.699Z","event":"check","name":"SVG text at least 18px: ecosystem.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T11:12:44.825Z","time":"2026-10-30T11:13:26.808Z","event":"check","name":"SVG transformed text in bounds: roles.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T11:12:44.825Z","time":"2026-10-30T11:13:26.809Z","event":"check","name":"SVG text does not collide: roles.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T11:12:44.825Z","time":"2026-10-30T11:13:26.809Z","event":"check","name":"SVG text at least 18px: roles.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T11:12:44.825Z","time":"2026-10-30T11:13:26.897Z","event":"check","name":"SVG transformed text in bounds: token-context.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T11:12:44.825Z","time":"2026-10-30T11:13:26.898Z","event":"check","name":"SVG text does not collide: token-context.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T11:12:44.825Z","time":"2026-10-30T11:13:26.898Z","event":"check","name":"SVG text at least 18px: token-context.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T11:12:44.825Z","time":"2026-10-30T11:13:26.980Z","event":"check","name":"SVG transformed text in bounds: workspace.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T11:12:44.825Z","time":"2026-10-30T11:13:26.981Z","event":"check","name":"SVG text does not collide: workspace.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T11:12:44.825Z","time":"2026-10-30T11:13:26.981Z","event":"check","name":"SVG text at least 18px: workspace.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T11:12:44.825Z","time":"2026-10-30T11:13:27.064Z","event":"check","name":"SVG transformed text in bounds: workflow.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T11:12:44.825Z","time":"2026-10-30T11:13:27.065Z","event":"check","name":"SVG text does not collide: workflow.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T11:12:44.825Z","time":"2026-10-30T11:13:27.065Z","event":"check","name":"SVG text at least 18px: workflow.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T11:12:44.825Z","time":"2026-10-30T11:13:27.164Z","event":"check","name":"SVG transformed text in bounds: debugging.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T11:12:44.825Z","time":"2026-10-30T11:13:27.166Z","event":"check","name":"SVG text does not collide: debugging.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T11:12:44.825Z","time":"2026-10-30T11:13:27.166Z","event":"check","name":"SVG text at least 18px: debugging.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T11:12:44.825Z","time":"2026-10-30T11:13:27.247Z","event":"check","name":"SVG transformed text in bounds: active-learning.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T11:12:44.825Z","time":"2026-10-30T11:13:27.248Z","event":"check","name":"SVG text does not collide: active-learning.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T11:12:44.825Z","time":"2026-10-30T11:13:27.248Z","event":"check","name":"SVG text at least 18px: active-learning.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T11:12:44.825Z","time":"2026-10-30T11:13:27.346Z","event":"check","name":"SVG transformed text in bounds: ai-trap.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T11:12:44.825Z","time":"2026-10-30T11:13:27.347Z","event":"check","name":"SVG text does not collide: ai-trap.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T11:12:44.825Z","time":"2026-10-30T11:13:27.347Z","event":"check","name":"SVG text at least 18px: ai-trap.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T11:12:44.825Z","time":"2026-10-30T11:13:27.431Z","event":"check","name":"SVG transformed text in bounds: security.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T11:12:44.825Z","time":"2026-10-30T11:13:27.432Z","event":"check","name":"SVG text does not collide: security.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T11:12:44.825Z","time":"2026-10-30T11:13:27.433Z","event":"check","name":"SVG text at least 18px: security.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T11:12:44.825Z","time":"2026-10-30T11:13:27.532Z","event":"check","name":"SVG transformed text in bounds: final-boss.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T11:12:44.825Z","time":"2026-10-30T11:13:27.533Z","event":"check","name":"SVG text does not collide: final-boss.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T11:12:44.825Z","time":"2026-10-30T11:13:27.533Z","event":"check","name":"SVG text at least 18px: final-boss.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T11:12:44.825Z","time":"2026-10-30T11:13:27.650Z","event":"check","name":"SVG transformed text in bounds: skill-map.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T11:12:44.825Z","time":"2026-10-30T11:13:27.651Z","event":"check","name":"SVG text does not collide: skill-map.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T11:12:44.825Z","time":"2026-10-30T11:13:27.651Z","event":"check","name":"SVG text at least 18px: skill-map.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T11:12:44.825Z","time":"2026-10-30T11:13:47.852Z","event":"check","name":"One-page outline is first and complete","ok":true,"evidence":{"position":1,"routes":5,"missions":7,"dossiers":8,"broken":[],"hasContract":true,"hasLimits":true}}
+{"runId":"2026-10-30T11:12:44.825Z","time":"2026-10-30T11:13:47.855Z","event":"check","name":"Online build hides internal dashboard link","ok":true,"evidence":"site build drops production dashboard"}
+{"runId":"2026-10-30T11:12:44.825Z","time":"2026-10-30T11:13:47.855Z","event":"check","name":"No runtime exceptions","ok":true,"evidence":[]}
+{"runId":"2026-10-30T11:12:44.825Z","time":"2026-10-30T11:13:47.855Z","event":"check","name":"No remote content requests","ok":true,"evidence":[]}
+{"runId":"2026-10-30T11:13:48.095Z","time":"2026-10-30T11:13:48.095Z","event":"start"}
+{"runId":"2026-10-30T11:13:48.095Z","time":"2026-10-30T11:14:08.424Z","event":"check","name":"Dashboard 14 tasks / 8 phases","ok":true,"evidence":"Read state.js from file://"}
+{"runId":"2026-10-30T11:13:48.095Z","time":"2026-10-30T11:14:28.732Z","event":"check","name":"Book loaded","ok":true,"evidence":"4 full chapters, 4 self-check controls"}
+{"runId":"2026-10-30T11:13:48.095Z","time":"2026-10-30T11:14:28.734Z","event":"check","name":"Chapter 3 keeps its seven teaching moves","ok":true,"evidence":{"missing":[],"h2":28}}
+{"runId":"2026-10-30T11:13:48.095Z","time":"2026-10-30T11:14:28.735Z","event":"check","name":"Chapter 4 has dossiers 1–7 plus clinic, rubric, checklist","ok":true,"evidence":{"dossiers":["1","2","3","4","5","6","7"],"hasClinic":true,"hasRubric":true,"hasChecklist":true}}
+{"runId":"2026-10-30T11:13:48.095Z","time":"2026-10-30T11:14:28.736Z","event":"check","name":"Answers are collapsed until opened","ok":true,"evidence":"Answer blocks ship closed; print opens them temporarily"}
+{"runId":"2026-10-30T11:13:48.095Z","time":"2026-10-30T11:14:28.797Z","event":"check","name":"Images decoded","ok":true,"evidence":[16,[]]}
+{"runId":"2026-10-30T11:13:48.095Z","time":"2026-10-30T11:14:28.900Z","event":"check","name":"All book anchors exist","ok":true,"evidence":[]}
+{"runId":"2026-10-30T11:13:48.095Z","time":"2026-10-30T11:14:28.901Z","event":"check","name":"Budget 1000 calls","ok":true,"evidence":["18.500 USD","≈ 462500 VND · chưa phí khác"]}
+{"runId":"2026-10-30T11:13:48.095Z","time":"2026-10-30T11:14:28.901Z","event":"check","name":"Reject blank budget","ok":true,"evidence":"No fabricated estimate for empty field"}
+{"runId":"2026-10-30T11:13:48.095Z","time":"2026-10-30T11:14:28.909Z","event":"check","name":"Trace 42000 / 60000","ok":true,"evidence":["Dừng tại i = 2 · tổng 42.000 VND. Vở ghi chưa được cộng.","Dừng tại i = 3 · tổng 60.000 VND. Đã cộng đủ ba khoản; vẫn cần ca biên và dữ liệu sai."]}
+{"runId":"2026-10-30T11:13:48.095Z","time":"2026-10-30T11:14:28.998Z","event":"check","name":"TOC non-accented search","ok":true,"evidence":"Unicode NFD and đ/d normalization"}
+{"runId":"2026-10-30T11:13:48.095Z","time":"2026-10-30T11:14:28.999Z","event":"check","name":"Self-check saves local progress","ok":true,"evidence":"User-owned self-check, not test score"}
+{"runId":"2026-10-30T11:13:48.095Z","time":"2026-10-30T11:14:29.000Z","event":"check","name":"Font controls stay within 16–22 px","ok":true,"evidence":"Measured CSS variable, then restored 18px"}
+{"runId":"2026-10-30T11:13:48.095Z","time":"2026-10-30T11:14:49.080Z","event":"check","name":"Reader self-check persists after reload","ok":true,"evidence":"Same isolated Chrome file:// origin"}
+{"runId":"2026-10-30T11:13:48.095Z","time":"2026-10-30T11:14:49.081Z","event":"check","name":"Quiz gives explanation","ok":true,"evidence":"Correct choice plus reasoning"}
+{"runId":"2026-10-30T11:13:48.095Z","time":"2026-10-30T11:14:49.082Z","event":"check","name":"Print opens and restores answers","ok":true,"evidence":"beforeprint/afterprint events"}
+{"runId":"2026-10-30T11:13:48.095Z","time":"2026-10-30T11:14:49.186Z","event":"check","name":"No page overflow at 768","ok":true,"evidence":{"width":768,"scrollWidth":753}}
+{"runId":"2026-10-30T11:13:48.095Z","time":"2026-10-30T11:14:49.295Z","event":"check","name":"No page overflow at 375","ok":true,"evidence":{"width":375,"scrollWidth":360}}
+{"runId":"2026-10-30T11:13:48.095Z","time":"2026-10-30T11:14:49.365Z","event":"check","name":"Mobile menu opens","ok":true,"evidence":"375px actual browser emulation"}
+{"runId":"2026-10-30T11:13:48.095Z","time":"2026-10-30T11:14:50.139Z","event":"check","name":"PDF rendered","ok":true,"evidence":"reports/print-preview.pdf; requires visual spot check"}
+{"runId":"2026-10-30T11:13:48.095Z","time":"2026-10-30T11:14:50.170Z","event":"check","name":"Web starts with three samples","ok":true,"evidence":"Fresh isolated browser profile"}
+{"runId":"2026-10-30T11:13:48.095Z","time":"2026-10-30T11:14:50.172Z","event":"check","name":"Web valid add 75000","ok":true,"evidence":{"total":"75.000 đ","message":"Đã thêm khoản chi giả. Hãy tự nhẩm tổng để đối chiếu."}}
+{"runId":"2026-10-30T11:13:48.095Z","time":"2026-10-30T11:14:50.173Z","event":"check","name":"Web rejects numeric suffix","ok":true,"evidence":{"total":"75.000 đ","message":"Nhập số nguyên VND, không có dấu chấm, phẩy hay chữ."}}
+{"runId":"2026-10-30T11:13:48.095Z","time":"2026-10-30T11:14:50.174Z","event":"check","name":"Web displays literal HTML-like title","ok":true,"evidence":"textContent, not parsed markup"}
+{"runId":"2026-10-30T11:13:48.095Z","time":"2026-10-30T11:14:50.189Z","event":"check","name":"Web localStorage persists in tested browser","ok":true,"evidence":"Observed on this Chrome file:// profile only; not universal guarantee"}
+{"runId":"2026-10-30T11:13:48.095Z","time":"2026-10-30T11:14:50.190Z","event":"check","name":"Web delete to empty = 0","ok":true,"evidence":"All fake rows removed in isolated profile"}
+{"runId":"2026-10-30T11:13:48.095Z","time":"2026-10-30T11:14:50.204Z","event":"check","name":"Corrupt storage falls back without overwrite","ok":true,"evidence":"Broken fixture kept; no real user data used"}
+{"runId":"2026-10-30T11:13:48.095Z","time":"2026-10-30T11:14:50.206Z","event":"check","name":"Fallback adds a real in-memory row","ok":true,"evidence":{"total":"60.001 đ","message":"Đã thêm khoản chi giả. Hãy tự nhẩm tổng để đối chiếu."}}
+{"runId":"2026-10-30T11:13:48.095Z","time":"2026-10-30T11:14:50.221Z","event":"check","name":"Fallback does not promise persistence","ok":true,"evidence":"In-memory addition disappears after reload, notice remains"}
+{"runId":"2026-10-30T11:13:48.095Z","time":"2026-10-30T11:14:50.294Z","event":"check","name":"Web demo no mobile page overflow","ok":true,"evidence":{"width":375,"scrollWidth":360}}
+{"runId":"2026-10-30T11:13:48.095Z","time":"2026-10-30T11:14:50.312Z","event":"check","name":"SVG transformed text in bounds: cover.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T11:13:48.095Z","time":"2026-10-30T11:14:50.314Z","event":"check","name":"SVG text does not collide: cover.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T11:13:48.095Z","time":"2026-10-30T11:14:50.314Z","event":"check","name":"SVG text at least 18px: cover.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T11:13:48.095Z","time":"2026-10-30T11:14:50.403Z","event":"check","name":"SVG transformed text in bounds: chapter-01.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T11:13:48.095Z","time":"2026-10-30T11:14:50.404Z","event":"check","name":"SVG text does not collide: chapter-01.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T11:13:48.095Z","time":"2026-10-30T11:14:50.405Z","event":"check","name":"SVG text at least 18px: chapter-01.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T11:13:48.095Z","time":"2026-10-30T11:14:50.496Z","event":"check","name":"SVG transformed text in bounds: chapter-02.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T11:13:48.095Z","time":"2026-10-30T11:14:50.497Z","event":"check","name":"SVG text does not collide: chapter-02.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T11:13:48.095Z","time":"2026-10-30T11:14:50.497Z","event":"check","name":"SVG text at least 18px: chapter-02.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T11:13:48.095Z","time":"2026-10-30T11:14:50.581Z","event":"check","name":"SVG transformed text in bounds: chapter-03.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T11:13:48.095Z","time":"2026-10-30T11:14:50.581Z","event":"check","name":"SVG text does not collide: chapter-03.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T11:13:48.095Z","time":"2026-10-30T11:14:50.582Z","event":"check","name":"SVG text at least 18px: chapter-03.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T11:13:48.095Z","time":"2026-10-30T11:14:50.666Z","event":"check","name":"SVG transformed text in bounds: chapter-04.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T11:13:48.095Z","time":"2026-10-30T11:14:50.667Z","event":"check","name":"SVG text does not collide: chapter-04.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T11:13:48.095Z","time":"2026-10-30T11:14:50.667Z","event":"check","name":"SVG text at least 18px: chapter-04.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T11:13:48.095Z","time":"2026-10-30T11:14:50.763Z","event":"check","name":"SVG transformed text in bounds: ecosystem.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T11:13:48.095Z","time":"2026-10-30T11:14:50.764Z","event":"check","name":"SVG text does not collide: ecosystem.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T11:13:48.095Z","time":"2026-10-30T11:14:50.765Z","event":"check","name":"SVG text at least 18px: ecosystem.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T11:13:48.095Z","time":"2026-10-30T11:14:50.848Z","event":"check","name":"SVG transformed text in bounds: roles.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T11:13:48.095Z","time":"2026-10-30T11:14:50.849Z","event":"check","name":"SVG text does not collide: roles.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T11:13:48.095Z","time":"2026-10-30T11:14:50.849Z","event":"check","name":"SVG text at least 18px: roles.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T11:13:48.095Z","time":"2026-10-30T11:14:50.929Z","event":"check","name":"SVG transformed text in bounds: token-context.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T11:13:48.095Z","time":"2026-10-30T11:14:50.929Z","event":"check","name":"SVG text does not collide: token-context.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T11:13:48.095Z","time":"2026-10-30T11:14:50.930Z","event":"check","name":"SVG text at least 18px: token-context.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T11:13:48.095Z","time":"2026-10-30T11:14:51.012Z","event":"check","name":"SVG transformed text in bounds: workspace.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T11:13:48.095Z","time":"2026-10-30T11:14:51.013Z","event":"check","name":"SVG text does not collide: workspace.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T11:13:48.095Z","time":"2026-10-30T11:14:51.013Z","event":"check","name":"SVG text at least 18px: workspace.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T11:13:48.095Z","time":"2026-10-30T11:14:51.096Z","event":"check","name":"SVG transformed text in bounds: workflow.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T11:13:48.095Z","time":"2026-10-30T11:14:51.096Z","event":"check","name":"SVG text does not collide: workflow.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T11:13:48.095Z","time":"2026-10-30T11:14:51.097Z","event":"check","name":"SVG text at least 18px: workflow.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T11:13:48.095Z","time":"2026-10-30T11:14:51.186Z","event":"check","name":"SVG transformed text in bounds: debugging.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T11:13:48.095Z","time":"2026-10-30T11:14:51.187Z","event":"check","name":"SVG text does not collide: debugging.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T11:13:48.095Z","time":"2026-10-30T11:14:51.187Z","event":"check","name":"SVG text at least 18px: debugging.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T11:13:48.095Z","time":"2026-10-30T11:14:51.283Z","event":"check","name":"SVG transformed text in bounds: active-learning.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T11:13:48.095Z","time":"2026-10-30T11:14:51.284Z","event":"check","name":"SVG text does not collide: active-learning.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T11:13:48.095Z","time":"2026-10-30T11:14:51.284Z","event":"check","name":"SVG text at least 18px: active-learning.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T11:13:48.095Z","time":"2026-10-30T11:14:51.363Z","event":"check","name":"SVG transformed text in bounds: ai-trap.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T11:13:48.095Z","time":"2026-10-30T11:14:51.364Z","event":"check","name":"SVG text does not collide: ai-trap.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T11:13:48.095Z","time":"2026-10-30T11:14:51.364Z","event":"check","name":"SVG text at least 18px: ai-trap.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T11:13:48.095Z","time":"2026-10-30T11:14:51.446Z","event":"check","name":"SVG transformed text in bounds: security.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T11:13:48.095Z","time":"2026-10-30T11:14:51.447Z","event":"check","name":"SVG text does not collide: security.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T11:13:48.095Z","time":"2026-10-30T11:14:51.447Z","event":"check","name":"SVG text at least 18px: security.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T11:13:48.095Z","time":"2026-10-30T11:14:51.532Z","event":"check","name":"SVG transformed text in bounds: final-boss.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T11:13:48.095Z","time":"2026-10-30T11:14:51.533Z","event":"check","name":"SVG text does not collide: final-boss.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T11:13:48.095Z","time":"2026-10-30T11:14:51.534Z","event":"check","name":"SVG text at least 18px: final-boss.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T11:13:48.095Z","time":"2026-10-30T11:14:51.631Z","event":"check","name":"SVG transformed text in bounds: skill-map.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T11:13:48.095Z","time":"2026-10-30T11:14:51.632Z","event":"check","name":"SVG text does not collide: skill-map.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T11:13:48.095Z","time":"2026-10-30T11:14:51.632Z","event":"check","name":"SVG text at least 18px: skill-map.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T11:13:48.095Z","time":"2026-10-30T11:15:11.807Z","event":"check","name":"One-page outline is first and complete","ok":true,"evidence":{"position":1,"routes":5,"missions":7,"dossiers":8,"broken":[],"hasContract":true,"hasLimits":true}}
+{"runId":"2026-10-30T11:13:48.095Z","time":"2026-10-30T11:15:11.807Z","event":"check","name":"Online build hides internal dashboard link","ok":true,"evidence":"offline package keeps dashboard"}
+{"runId":"2026-10-30T11:13:48.095Z","time":"2026-10-30T11:15:11.807Z","event":"check","name":"No runtime exceptions","ok":true,"evidence":[]}
+{"runId":"2026-10-30T11:13:48.095Z","time":"2026-10-30T11:15:11.807Z","event":"check","name":"No remote content requests","ok":true,"evidence":[]}
+{"runId":"2026-10-30T11:24:01.088Z","time":"2026-10-30T11:24:01.088Z","event":"start"}
+{"runId":"2026-10-30T11:24:01.088Z","time":"2026-10-30T11:24:21.624Z","event":"check","name":"Book loaded","ok":true,"evidence":"4 full chapters, 4 self-check controls"}
+{"runId":"2026-10-30T11:24:01.088Z","time":"2026-10-30T11:24:21.626Z","event":"check","name":"Chapter 3 keeps its seven teaching moves","ok":true,"evidence":{"missing":[],"h2":28}}
+{"runId":"2026-10-30T11:24:01.088Z","time":"2026-10-30T11:24:21.627Z","event":"check","name":"Chapter 4 has dossiers 1–7 plus clinic, rubric, checklist","ok":true,"evidence":{"dossiers":["1","2","3","4","5","6","7"],"hasClinic":true,"hasRubric":true,"hasChecklist":true}}
+{"runId":"2026-10-30T11:24:01.088Z","time":"2026-10-30T11:24:21.628Z","event":"check","name":"Answers are collapsed until opened","ok":true,"evidence":"Answer blocks ship closed; print opens them temporarily"}
+{"runId":"2026-10-30T11:24:01.088Z","time":"2026-10-30T11:24:21.693Z","event":"check","name":"Images decoded","ok":true,"evidence":[16,[]]}
+{"runId":"2026-10-30T11:24:01.088Z","time":"2026-10-30T11:24:21.771Z","event":"check","name":"All book anchors exist","ok":true,"evidence":[]}
+{"runId":"2026-10-30T11:24:01.088Z","time":"2026-10-30T11:24:21.772Z","event":"check","name":"Budget 1000 calls","ok":true,"evidence":["18.500 USD","≈ 462500 VND · chưa phí khác"]}
+{"runId":"2026-10-30T11:24:01.088Z","time":"2026-10-30T11:24:21.775Z","event":"check","name":"Reject blank budget","ok":true,"evidence":"No fabricated estimate for empty field"}
+{"runId":"2026-10-30T11:24:01.088Z","time":"2026-10-30T11:24:21.782Z","event":"check","name":"Trace 42000 / 60000","ok":true,"evidence":["Dừng tại i = 2 · tổng 42.000 VND. Vở ghi chưa được cộng.","Dừng tại i = 3 · tổng 60.000 VND. Đã cộng đủ ba khoản; vẫn cần ca biên và dữ liệu sai."]}
+{"runId":"2026-10-30T11:24:01.088Z","time":"2026-10-30T11:24:21.871Z","event":"check","name":"TOC non-accented search","ok":true,"evidence":"Unicode NFD and đ/d normalization"}
+{"runId":"2026-10-30T11:24:01.088Z","time":"2026-10-30T11:24:21.872Z","event":"check","name":"Self-check saves local progress","ok":true,"evidence":"User-owned self-check, not test score"}
+{"runId":"2026-10-30T11:24:01.088Z","time":"2026-10-30T11:24:21.873Z","event":"check","name":"Font controls stay within 16–22 px","ok":true,"evidence":"Measured CSS variable, then restored 18px"}
+{"runId":"2026-10-30T11:24:01.088Z","time":"2026-10-30T11:24:41.954Z","event":"check","name":"Reader self-check persists after reload","ok":true,"evidence":"Same isolated Chrome file:// origin"}
+{"runId":"2026-10-30T11:24:01.088Z","time":"2026-10-30T11:24:41.955Z","event":"check","name":"Quiz gives explanation","ok":true,"evidence":"Correct choice plus reasoning"}
+{"runId":"2026-10-30T11:24:01.088Z","time":"2026-10-30T11:24:41.956Z","event":"check","name":"Print opens and restores answers","ok":true,"evidence":"beforeprint/afterprint events"}
+{"runId":"2026-10-30T11:24:01.088Z","time":"2026-10-30T11:24:42.046Z","event":"check","name":"No page overflow at 768","ok":true,"evidence":{"width":768,"scrollWidth":753}}
+{"runId":"2026-10-30T11:24:01.088Z","time":"2026-10-30T11:24:42.171Z","event":"check","name":"No page overflow at 375","ok":true,"evidence":{"width":375,"scrollWidth":360}}
+{"runId":"2026-10-30T11:24:01.088Z","time":"2026-10-30T11:24:42.243Z","event":"check","name":"Mobile menu opens","ok":true,"evidence":"375px actual browser emulation"}
+{"runId":"2026-10-30T11:24:01.088Z","time":"2026-10-30T11:24:42.326Z","event":"check","name":"Web starts with three samples","ok":true,"evidence":"Fresh isolated browser profile"}
+{"runId":"2026-10-30T11:24:01.088Z","time":"2026-10-30T11:24:42.328Z","event":"check","name":"Web valid add 75000","ok":true,"evidence":{"total":"75.000 đ","message":"Đã thêm khoản chi giả. Hãy tự nhẩm tổng để đối chiếu."}}
+{"runId":"2026-10-30T11:24:01.088Z","time":"2026-10-30T11:24:42.329Z","event":"check","name":"Web rejects numeric suffix","ok":true,"evidence":{"total":"75.000 đ","message":"Nhập số nguyên VND, không có dấu chấm, phẩy hay chữ."}}
+{"runId":"2026-10-30T11:24:01.088Z","time":"2026-10-30T11:24:42.331Z","event":"check","name":"Web displays literal HTML-like title","ok":true,"evidence":"textContent, not parsed markup"}
+{"runId":"2026-10-30T11:24:01.088Z","time":"2026-10-30T11:24:42.348Z","event":"check","name":"Web localStorage persists in tested browser","ok":true,"evidence":"Observed on this Chrome file:// profile only; not universal guarantee"}
+{"runId":"2026-10-30T11:24:01.088Z","time":"2026-10-30T11:24:42.349Z","event":"check","name":"Web delete to empty = 0","ok":true,"evidence":"All fake rows removed in isolated profile"}
+{"runId":"2026-10-30T11:24:01.088Z","time":"2026-10-30T11:24:42.364Z","event":"check","name":"Corrupt storage falls back without overwrite","ok":true,"evidence":"Broken fixture kept; no real user data used"}
+{"runId":"2026-10-30T11:24:01.088Z","time":"2026-10-30T11:24:42.366Z","event":"check","name":"Fallback adds a real in-memory row","ok":true,"evidence":{"total":"60.001 đ","message":"Đã thêm khoản chi giả. Hãy tự nhẩm tổng để đối chiếu."}}
+{"runId":"2026-10-30T11:24:01.088Z","time":"2026-10-30T11:24:42.388Z","event":"check","name":"Fallback does not promise persistence","ok":true,"evidence":"In-memory addition disappears after reload, notice remains"}
+{"runId":"2026-10-30T11:24:01.088Z","time":"2026-10-30T11:24:42.453Z","event":"check","name":"Web demo no mobile page overflow","ok":true,"evidence":{"width":375,"scrollWidth":360}}
+{"runId":"2026-10-30T11:24:01.088Z","time":"2026-10-30T11:24:42.471Z","event":"check","name":"SVG transformed text in bounds: cover.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T11:24:01.088Z","time":"2026-10-30T11:24:42.472Z","event":"check","name":"SVG text does not collide: cover.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T11:24:01.088Z","time":"2026-10-30T11:24:42.472Z","event":"check","name":"SVG text at least 18px: cover.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T11:24:01.088Z","time":"2026-10-30T11:24:42.560Z","event":"check","name":"SVG transformed text in bounds: chapter-01.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T11:24:01.088Z","time":"2026-10-30T11:24:42.563Z","event":"check","name":"SVG text does not collide: chapter-01.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T11:24:01.088Z","time":"2026-10-30T11:24:42.563Z","event":"check","name":"SVG text at least 18px: chapter-01.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T11:24:01.088Z","time":"2026-10-30T11:24:42.657Z","event":"check","name":"SVG transformed text in bounds: chapter-02.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T11:24:01.088Z","time":"2026-10-30T11:24:42.658Z","event":"check","name":"SVG text does not collide: chapter-02.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T11:24:01.088Z","time":"2026-10-30T11:24:42.658Z","event":"check","name":"SVG text at least 18px: chapter-02.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T11:24:01.088Z","time":"2026-10-30T11:24:42.740Z","event":"check","name":"SVG transformed text in bounds: chapter-03.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T11:24:01.088Z","time":"2026-10-30T11:24:42.741Z","event":"check","name":"SVG text does not collide: chapter-03.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T11:24:01.088Z","time":"2026-10-30T11:24:42.742Z","event":"check","name":"SVG text at least 18px: chapter-03.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T11:24:01.088Z","time":"2026-10-30T11:24:42.823Z","event":"check","name":"SVG transformed text in bounds: chapter-04.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T11:24:01.088Z","time":"2026-10-30T11:24:42.824Z","event":"check","name":"SVG text does not collide: chapter-04.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T11:24:01.088Z","time":"2026-10-30T11:24:42.824Z","event":"check","name":"SVG text at least 18px: chapter-04.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T11:24:01.088Z","time":"2026-10-30T11:24:42.908Z","event":"check","name":"SVG transformed text in bounds: ecosystem.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T11:24:01.088Z","time":"2026-10-30T11:24:42.909Z","event":"check","name":"SVG text does not collide: ecosystem.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T11:24:01.088Z","time":"2026-10-30T11:24:42.909Z","event":"check","name":"SVG text at least 18px: ecosystem.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T11:24:01.088Z","time":"2026-10-30T11:24:43.009Z","event":"check","name":"SVG transformed text in bounds: roles.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T11:24:01.088Z","time":"2026-10-30T11:24:43.010Z","event":"check","name":"SVG text does not collide: roles.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T11:24:01.088Z","time":"2026-10-30T11:24:43.010Z","event":"check","name":"SVG text at least 18px: roles.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T11:24:01.088Z","time":"2026-10-30T11:24:43.089Z","event":"check","name":"SVG transformed text in bounds: token-context.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T11:24:01.088Z","time":"2026-10-30T11:24:43.090Z","event":"check","name":"SVG text does not collide: token-context.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T11:24:01.088Z","time":"2026-10-30T11:24:43.090Z","event":"check","name":"SVG text at least 18px: token-context.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T11:24:01.088Z","time":"2026-10-30T11:24:43.173Z","event":"check","name":"SVG transformed text in bounds: workspace.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T11:24:01.088Z","time":"2026-10-30T11:24:43.173Z","event":"check","name":"SVG text does not collide: workspace.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T11:24:01.088Z","time":"2026-10-30T11:24:43.174Z","event":"check","name":"SVG text at least 18px: workspace.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T11:24:01.088Z","time":"2026-10-30T11:24:43.257Z","event":"check","name":"SVG transformed text in bounds: workflow.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T11:24:01.088Z","time":"2026-10-30T11:24:43.258Z","event":"check","name":"SVG text does not collide: workflow.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T11:24:01.088Z","time":"2026-10-30T11:24:43.258Z","event":"check","name":"SVG text at least 18px: workflow.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T11:24:01.088Z","time":"2026-10-30T11:24:43.342Z","event":"check","name":"SVG transformed text in bounds: debugging.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T11:24:01.088Z","time":"2026-10-30T11:24:43.343Z","event":"check","name":"SVG text does not collide: debugging.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T11:24:01.088Z","time":"2026-10-30T11:24:43.343Z","event":"check","name":"SVG text at least 18px: debugging.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T11:24:01.088Z","time":"2026-10-30T11:24:43.424Z","event":"check","name":"SVG transformed text in bounds: active-learning.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T11:24:01.088Z","time":"2026-10-30T11:24:43.425Z","event":"check","name":"SVG text does not collide: active-learning.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T11:24:01.088Z","time":"2026-10-30T11:24:43.426Z","event":"check","name":"SVG text at least 18px: active-learning.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T11:24:01.088Z","time":"2026-10-30T11:24:43.507Z","event":"check","name":"SVG transformed text in bounds: ai-trap.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T11:24:01.088Z","time":"2026-10-30T11:24:43.508Z","event":"check","name":"SVG text does not collide: ai-trap.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T11:24:01.088Z","time":"2026-10-30T11:24:43.509Z","event":"check","name":"SVG text at least 18px: ai-trap.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T11:24:01.088Z","time":"2026-10-30T11:24:43.605Z","event":"check","name":"SVG transformed text in bounds: security.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T11:24:01.088Z","time":"2026-10-30T11:24:43.606Z","event":"check","name":"SVG text does not collide: security.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T11:24:01.088Z","time":"2026-10-30T11:24:43.607Z","event":"check","name":"SVG text at least 18px: security.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T11:24:01.088Z","time":"2026-10-30T11:24:43.697Z","event":"check","name":"SVG transformed text in bounds: final-boss.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T11:24:01.088Z","time":"2026-10-30T11:24:43.698Z","event":"check","name":"SVG text does not collide: final-boss.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T11:24:01.088Z","time":"2026-10-30T11:24:43.698Z","event":"check","name":"SVG text at least 18px: final-boss.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T11:24:01.088Z","time":"2026-10-30T11:24:43.808Z","event":"check","name":"SVG transformed text in bounds: skill-map.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T11:24:01.088Z","time":"2026-10-30T11:24:43.809Z","event":"check","name":"SVG text does not collide: skill-map.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T11:24:01.088Z","time":"2026-10-30T11:24:43.809Z","event":"check","name":"SVG text at least 18px: skill-map.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T11:24:01.088Z","time":"2026-10-30T11:25:03.991Z","event":"check","name":"One-page outline is first and complete","ok":true,"evidence":{"position":1,"routes":5,"missions":7,"dossiers":8,"broken":[],"hasContract":true,"hasLimits":true}}
+{"runId":"2026-10-30T11:24:01.088Z","time":"2026-10-30T11:25:03.996Z","event":"check","name":"Online build hides internal dashboard link","ok":true,"evidence":"site build drops production dashboard"}
+{"runId":"2026-10-30T11:24:01.088Z","time":"2026-10-30T11:25:03.996Z","event":"check","name":"No runtime exceptions","ok":true,"evidence":[]}
+{"runId":"2026-10-30T11:24:01.088Z","time":"2026-10-30T11:25:03.996Z","event":"check","name":"No remote content requests","ok":true,"evidence":[]}

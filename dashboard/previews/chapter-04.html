@@ -1,0 +1,749 @@
+<!doctype html><html lang="vi"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>CHƯƠNG 4 · SỬ DỤNG AI CÓ TRÁCH NHIỆM</title><style>:root{--paper:#f6f3ea;--ink:#20342d;--muted:#58685f;--green:#35634b;--soft:#dce8d0;--rust:#b95132;--yellow:#f2dfa5;--line:#d4dbcf;--font:18px;--nav:270px}*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:90px}body{margin:0;background:var(--paper);color:var(--ink);font:var(--font)/1.8 system-ui,-apple-system,'Segoe UI',sans-serif}a{color:var(--green);text-underline-offset:4px}button,input,select{font:inherit}button,select{cursor:pointer}button{padding:8px 15px;min-height:40px;border:1px solid #879b85;border-radius:5px;background:transparent;color:var(--ink)}button:hover{background:var(--soft)}a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,summary:focus-visible{outline:3px solid var(--rust);outline-offset:4px}img{max-width:100%;height:auto}h1,h2,h3,h4{line-height:1.24;text-wrap:balance}h1,h2{font-family:Georgia,'Times New Roman',serif;font-weight:500;letter-spacing:-.035em}h1{font-size:clamp(48px,6vw,82px)}h2{font-size:clamp(31px,3vw,43px);margin:64px 0 25px}h3{font-size:24px;margin:40px 0 18px;letter-spacing:-.025em}h4{font-size:20px;margin:30px 0 16px}p{margin:0 0 20px}li{margin:8px 0}ul,ol{padding-left:26px}strong{font-weight:700}code{font: .87em/1.5 ui-monospace,Consolas,monospace;background:#e8ebdf;padding:2px 5px;border-radius:3px;overflow-wrap:anywhere}pre{margin:0;padding:23px;overflow-x:auto;max-width:100%;background:#21362f;color:#eef3e5;font-size:14px;line-height:1.65;tab-size:4}pre code{font:inherit;color:inherit;background:none;padding:0;border-radius:0;white-space:pre;overflow-wrap:normal}blockquote{margin:25px 0;padding:20px 24px;border-left:3px solid var(--green);background:#e8ecde;font-size:.96em}blockquote p:last-child{margin:0}hr{border:0;border-top:1px solid var(--line);margin:50px 0}.skip{position:fixed;left:12px;top:-100px;z-index:100;background:white;padding:12px}.skip:focus{top:12px}.sidebar{position:fixed;inset:0 auto 0 0;width:var(--nav);border-right:1px solid var(--line);padding:28px 22px 22px;background:#eceee3;overflow-y:auto;z-index:30}.brand{font:700 19px/1.25 system-ui;text-decoration:none;color:var(--ink);display:block;letter-spacing:-.03em}.brand small{display:block;font:11px/1.5 ui-monospace,monospace;letter-spacing:.08em;margin-top:9px;color:var(--muted)}.nav-search{margin:26px 0 16px;width:100%;background:transparent;border:1px solid #abb7a5;border-radius:5px;padding:9px 11px;font-size:13px}.toc{padding:0;list-style:none}.toc ul{list-style:none;margin:0 0 17px;padding:0 0 0 12px}.toc li{margin:3px 0}.toc a{display:block;font-size:12px;line-height:1.5;text-decoration:none;padding:5px 7px;border-radius:4px;color:#52634f}.toc>.toc-group>.chapter-link{font-size:13px;font-weight:700;color:var(--ink);margin-top:14px}.toc a:hover,.toc a.active{background:#dce5d0;color:#20342d}.nav-foot{font-size:11px;line-height:1.6;border-top:1px solid var(--line);padding-top:16px;margin-top:24px;color:var(--muted)}.topbar{height:62px;position:sticky;top:0;margin-left:var(--nav);display:flex;align-items:center;justify-content:space-between;padding:0 4vw;background:#f6f3eafa;border-bottom:1px solid var(--line);z-index:20;gap:12px}.top-label{font:11px/1.5 ui-monospace,monospace;letter-spacing:.12em;text-transform:uppercase}.tools{display:flex;align-items:center;gap:7px}.tools button{font-size:12px;padding:5px 9px;min-height:35px}.scroll-track{height:2px;position:absolute;bottom:0;left:0;right:0;background:var(--line)}#scroll-progress{height:100%;width:0;background:var(--rust)}.mobile-menu{display:none}.shade{display:none}main{margin-left:var(--nav)}.inner{max-width:1190px;padding:0 5vw;margin:auto}.eyebrow{font:11px/1.6 ui-monospace,monospace;letter-spacing:.17em;text-transform:uppercase}.hero{padding:64px 0 45px;border-bottom:1px solid var(--line)}.hero-grid{display:grid;grid-template-columns:1.05fr 1fr;gap:20px;align-items:center}.hero h1{margin:20px 0 25px}.hero h1 em{color:var(--rust);font-weight:400}.hero .lede{font-size:20px;line-height:1.6;max-width:620px}.hero-art{width:100%;border-radius:50% 50% 10px 10px}.hero-nav{display:flex;flex-wrap:wrap;gap:10px;margin-top:27px}.hero-nav a{padding:11px 17px;text-decoration:none;font-size:13px;border:1px solid var(--green);border-radius:4px}.hero-nav a:first-child{background:var(--green);color:#fff}.edition{font-size:11px;color:var(--muted);margin-top:35px;letter-spacing:.02em}.route-map{display:grid;grid-template-columns:repeat(4,1fr);margin:35px 0 0;border-top:1px solid var(--line)}.route-map a{padding:17px 12px 0 0;text-decoration:none;font-size:12px}.route-map b{display:block;font:23px Georgia;margin-bottom:5px}.intro{padding:20px 0 60px}.chapter{padding:70px 0 50px;border-top:1px solid var(--line)}.chapter-heading{display:grid;grid-template-columns:90px 1fr;gap:25px;align-items:start;margin:0 0 32px}.chapter-num{font:75px/.95 Georgia;color:var(--rust);letter-spacing:-.06em}.chapter-heading h2{font-size:clamp(36px,4.4vw,63px);margin:12px 0 18px;max-width:760px}.chapter-heading p{font-size:15px;color:var(--muted);line-height:1.65;max-width:720px}.opener{margin:0 0 50px}.opener img{width:100%;border:1px solid var(--line);border-radius:8px}.prose{max-width:900px;margin:0 auto;min-width:0}.prose>p:first-child{font-size:1.08em}.prose figure{margin:36px 0}.prose figure img{width:100%;border-radius:7px;border:1px solid var(--line);background:#f6f3ea}figcaption{font-size:12px;line-height:1.55;color:var(--muted);margin-top:8px}figcaption a{white-space:nowrap}.table-scroll{overflow-x:auto;max-width:100%;border:1px solid var(--line);border-radius:5px;margin:26px 0}table{border-collapse:collapse;min-width:570px;width:100%;font-size:14px;line-height:1.65}th{text-align:left;background:#e5e9dc;font-weight:650}td,th{padding:13px 15px;vertical-align:top;border-bottom:1px solid var(--line)}tr:last-child td{border-bottom:0}td code,th code{font-size:.9em}tbody tr:nth-child(even){background:#fff5}.code-wrap{margin:25px 0;min-width:0;max-width:100%;border-radius:6px;overflow:hidden}.code-top{background:#324b40;color:#dde6d6;padding:7px 14px;display:flex;justify-content:space-between;align-items:center;font:11px/1.5 ui-monospace,monospace}.code-top button{font:11px system-ui;min-height:28px;padding:3px 9px;color:#f4f7ef;border-color:#9eb19b}.code-top button:hover{background:#48624f}.answer{margin:30px 0;border-top:1px solid #a9b9a0;border-bottom:1px solid #a9b9a0;padding:4px 0}.answer summary{cursor:pointer;line-height:1.5;padding:17px 7px;font-size:16px;font-weight:650}.answer-body{padding:15px 8px 20px;min-width:0}.answer summary::marker{color:var(--rust)}.answer[open]{background:#f0f1e5}.instructor{font-size:14px}.widget{border:1px solid #b2c3a5;background:#e9edde;padding:26px;border-radius:8px;margin:34px 0}.widget h3{margin:8px 0 14px;font:30px/1.2 Georgia}.widget p{font-size:14px}.widget label{display:block;font-size:12px;font-weight:600}.widget input,.widget select{width:100%;border:1px solid #9dad94;background:#fbfcf6;padding:9px;border-radius:4px;margin-top:6px;color:var(--ink)}.budget-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.budget-result{display:flex;align-items:baseline;gap:15px;flex-wrap:wrap;margin:20px 0 0}.budget-result strong{font:38px/1.2 Georgia}.budget-result span{font-size:14px}.error{color:#91331e;font-weight:600}.trace-items{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:22px 0}.trace-item{border:1px solid #bbc8af;padding:18px 10px;text-align:center;border-radius:5px}.trace-item small{display:block;font:11px/1.4 ui-monospace,monospace}.trace-item b{font:28px/1.5 Georgia}.trace-item.added{background:#bfd7a5;border-color:#5b7946}.trace-item.current{outline:2px solid var(--rust);outline-offset:2px}.trace-controls{display:flex;align-items:end;gap:10px;flex-wrap:wrap}.trace-controls label{flex:1;min-width:160px}.trace-state{margin-top:18px;font-size:15px;min-height:54px}.quiz fieldset{border:0;padding:0;margin:0}.quiz legend{font-size:17px;font-weight:650;margin-bottom:15px}.quiz label{font-weight:400;font-size:15px;margin:9px 0;display:flex;gap:10px;align-items:start}.quiz input{width:auto;margin:6px 0 0}.quiz-result{margin-top:14px!important}.chapter-end{max-width:900px;margin:40px auto 0;padding:22px 0;border-top:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;gap:15px;font-size:13px}.chapter-end button[aria-pressed=true]{background:var(--green);color:white}.study-status{font:11px/1.5 ui-monospace,monospace;color:var(--muted)}.supplement{border-top:1px solid var(--line);padding:60px 0}.supplement>.section-title{font-size:44px;margin:12px 0 32px}.footer{padding:50px 0;border-top:1px solid var(--line);font-size:13px;color:var(--muted)}.footer strong{font:26px Georgia;color:var(--ink)}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}[hidden]{display:none!important}.focus .sidebar{display:none}.focus .topbar,.focus main{margin-left:0}.focus .inner{max-width:1100px}.focus .top-label{display:none}@media(min-width:1600px){:root{--nav:300px}.sidebar{padding:35px 28px}.inner{padding:0 65px}}@media(max-width:1150px){.hero-grid{grid-template-columns:1fr}.hero-art{max-height:440px;object-fit:contain;border-radius:0}.hero h1{max-width:680px}.hero .lede{max-width:650px}.top-label{display:none}}@media(max-width:950px){.sidebar{transform:translateX(-100%);width:280px;visibility:hidden}.topbar,main{margin-left:0}.mobile-menu{display:block}.nav-open .sidebar{transform:translateX(0);visibility:visible}.nav-open .shade{display:block;position:fixed;inset:0;background:#10241966;z-index:25;border:0;border-radius:0;width:100%;height:100%}.focus .sidebar{display:block}.inner{padding:0 6vw}.top-label{display:block}.hero{padding-top:42px}}@media(max-width:580px){body{font-size:var(--font)}.inner{padding:0 20px}.topbar{padding:0 14px}.top-label{display:none}.tools{gap:4px}.tools button{padding:5px 7px;font-size:11px}#focus-toggle{display:none}.hero{padding-top:33px}.hero h1{font-size:48px}.hero .lede{font-size:18px}.hero-art{max-height:none}.hero-nav a{font-size:12px}.route-map{grid-template-columns:repeat(2,1fr)}.route-map a{padding:12px 10px 0 0}.chapter{padding-top:42px}.chapter-heading{grid-template-columns:44px 1fr;gap:12px}.chapter-num{font-size:40px}.chapter-heading h2{font-size:35px;margin-top:8px}.chapter-heading p{font-size:13px}.opener{margin-bottom:30px}h2{font-size:31px;margin-top:42px}h3{font-size:22px}.widget{padding:17px}.budget-grid{grid-template-columns:repeat(2,1fr);gap:12px}.budget-result strong{font-size:32px}.trace-items{gap:7px}.trace-item{padding:12px 5px}.trace-item b{font-size:22px}.trace-item small{font-size:9px}.chapter-end{flex-direction:column;align-items:flex-start}.prose figure{margin:26px 0}.code-top{padding:7px 10px}pre{padding:16px}.supplement>.section-title{font-size:36px}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}@page{size:A4;margin:18mm}@media print{body{background:white;font:10.5pt/1.6 Georgia;color:#111}.sidebar,.topbar,.hero-nav,.route-map,.shade,.skip,.tools,.code-top button,.chapter-end,.widget button,.quiz,.nav-foot{display:none!important}main{margin:0}.inner{max-width:none;padding:0}.hero{padding-top:0}.hero-grid{grid-template-columns:1fr 1fr}.hero h1{font-size:40pt}.hero-art{max-height:100mm}.hero .lede{font-size:13pt}.hero .edition{font-size:8pt}.chapter,.supplement{break-before:page;padding-top:10mm}.chapter-heading h2{font-size:28pt}.chapter-num{font-size:42pt}.opener img{max-height:90mm;object-fit:contain}.prose{max-width:none}.prose h2{font-size:21pt}.prose h3{font-size:15pt}h2,h3,h4,summary{break-after:avoid}.prose figure{break-inside:avoid}.prose figure img{max-height:115mm;object-fit:contain}.table-scroll{overflow:visible}table{min-width:0;font-size:8.5pt}td,th{padding:6pt}pre{white-space:pre-wrap;overflow:visible;color:#111;background:#f1f1ec;font-size:8pt;overflow-wrap:anywhere}pre code{white-space:pre-wrap}.code-wrap{break-inside:avoid}.answer-body{display:block!important}.answer{border-color:#aaa}.widget{break-inside:avoid}.footer{font-size:9pt}a{color:inherit}.study-status{display:none}}
+main{margin:0}.preview-header{padding:16px 5vw;background:#20342d;color:#fff;font-size:13px}.preview-header a{color:#dce8d0}.preview-main{max-width:1000px;margin:auto;padding:30px 25px}.pending{font-size:13px;color:#58685f;border-left:2px solid #aaa;padding:10px}h1{font-size:44px}</style><body><header class="preview-header"><a href="../index.html">Về dashboard</a> · Bản xem trước nội dung; chưa thay cho kiểm thử bản xuất bản.</header><main class="preview-main prose"><h1>CHƯƠNG 4 · SỬ DỤNG AI CÓ TRÁCH NHIỆM</h1>
+<p>Tổng tiền của ViSinhVien đã hiện đúng <strong>60000</strong>. Minh định nộp ngay. Lan hỏi lại: “Nếu thầy hỏi dòng này từ đâu ra, dữ liệu của ai, và em đã kiểm tra những gì, mình trả lời được chưa?” Chương này bắt đầu từ câu hỏi đó.</p>
+<p>Làm chủ sản phẩm không có nghĩa là tự gõ từng ký tự hay tuyệt đối không dùng AI. Nó có nghĩa là bạn biết mình đang dùng gì, được phép dùng trong hoàn cảnh nào, có bằng chứng cho điều mình khẳng định và biết xử lý khi phát hiện sai sót. Một bài tập nhỏ là nơi an toàn để tập thói quen ấy, trước khi lỗi của mình ảnh hưởng đến người khác.</p>
+<p><strong>Nhân vật, hồ sơ sự cố và hội thoại trong chương đều HƯ CẤU.</strong> Đây là tài liệu tự học, <strong>không phải quy định của Trường Đại học Thủy lợi</strong> và không phải tư vấn pháp lý. Quyền dùng AI trong bài nộp do từng học phần và giảng viên quyết định.</p>
+<h2>Cách dùng phòng xử lý sự cố</h2>
+<p>Chương được tổ chức như một <strong>phòng xử lý sự cố</strong> gồm bảy hồ sơ và một phòng khám kỹ thuật. Mỗi hồ sơ có cùng sáu phần:</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Phần</th>
+<th>Bạn làm gì</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Sự cố</td>
+<td>Đọc tình huống hư cấu của Minh hoặc Lan.</td>
+</tr>
+<tr>
+<td>Dấu hiệu</td>
+<td>Gạch chân chi tiết cho thấy có vấn đề.</td>
+</tr>
+<tr>
+<td>Nguy cơ</td>
+<td>Nêu ai hoặc điều gì có thể bị ảnh hưởng.</td>
+</tr>
+<tr>
+<td>Các lựa chọn</td>
+<td>Chọn <strong>một</strong> hành động trước khi đọc tiếp. Viết lý do một dòng.</td>
+</tr>
+<tr>
+<td>Phân tích từng lựa chọn</td>
+<td>Mở sau khi đã chọn. Mỗi phương án đều được phân tích, kể cả phương án sai.</td>
+</tr>
+<tr>
+<td>Bài học</td>
+<td>Một quy tắc ngắn bạn mang sang bài tập thật.</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Mốc chung của câu chuyện:</strong> ViSinhVien là ứng dụng HTML/JavaScript lưu bằng <code>localStorage</code> trong trình duyệt; <strong>không có backend, đăng nhập hay cơ sở dữ liệu máy chủ</strong>. Mỗi khoản chi là <code>Expense{id,title,amount,category}</code>. <code>amount</code> là số nguyên VND từ 1 đến <code>1e9</code>; tối đa 500 khoản; danh sách rỗng có tổng 0. Bộ dữ liệu GIẢ chuẩn: Cơm trưa 35000, Xe buýt 7000, Vở ghi 18000, tổng <strong>60000 VND</strong>.</p>
+<p>Bạn sẽ gặp thêm SQL chạy bằng Python <code>sqlite3</code> với cơ sở dữ liệu <code>:memory:</code> ở mục 4.8. Đó là <strong>minh họa riêng</strong>, không phải thành phần của ViSinhVien. Các đoạn mã ngắn phục vụ giải thích; khi thực hành, hãy ghi kết quả mình thực sự quan sát, kể cả kết quả chưa đạt.</p>
+<p><strong>Thứ tự đọc:</strong> hồ sơ 4.1 (khóa bị lộ) được đặt đầu vì sai thứ tự xử lý có hậu quả lớn nhất. Nếu thời gian ít, làm 4.1, 4.2, 4.5 và mục 4.8 trước; các hồ sơ còn lại làm ở buổi sau.</p>
+<p><strong>Chuẩn bị:</strong> một tờ giấy hoặc tệp <code>ghi-chep-04.txt</code> trong thư mục <code>bai-lam</code>. Không cần cài đặt, đăng nhập, tạo khóa hay truy cập dịch vụ thật nào. Mọi chuỗi bí mật trong chương là placeholder như <code>DEMO_KEY_NOT_A_SECRET</code>, không có quyền truy cập.</p>
+<h2>4.1. Hồ sơ 01 — Khóa API xuất hiện trên GitHub</h2>
+<h3>Sự cố</h3>
+<p>ViSinhVien <strong>không cần API key</strong>. Nhưng trong một bài khác, Minh thử gọi một dịch vụ AI và để khóa trong tệp <code>config.js</code>. Tối thứ Sáu, bạn đẩy cả thư mục lên một kho GitHub công khai để nhờ Lan xem giúp. Sáng hôm sau, Lan nhắn: “Hình như tệp config có dòng <code>API_KEY = ...</code>?”</p>
+<p>Khi kể lại, chương chỉ dùng placeholder <code>DEMO_KEY_NOT_A_SECRET</code>. Trong đời thật, không chụp lại khóa đầy đủ để “làm bằng chứng”.</p>
+<h3>Dấu hiệu</h3>
+<ul>
+<li>Một chuỗi trông giống khóa nằm trong tệp đã commit.</li>
+<li>Kho ở chế độ công khai từ tối hôm trước; không ai biết chính xác bao nhiêu người đã xem hoặc clone.</li>
+<li>Minh định “xóa dòng đó rồi commit lại là xong”.</li>
+</ul>
+<h3>Nguy cơ</h3>
+<p>Khóa API cấp quyền dùng dịch vụ và có thể phát sinh chi phí dưới tên tài khoản của chủ khóa. Xóa dòng trong tệp <strong>không vô hiệu hóa khóa</strong>: bản cũ vẫn có thể nằm trong lịch sử Git, trong bản clone của người khác, trong cache hoặc trong đoạn chat từng dán. Khóa vẫn còn hiệu lực cho đến khi được thu hồi ở nhà cung cấp.</p>
+<p><img alt="Thu hồi trước, dọn sau: sáu bước xử lý khi khóa bị lộ, dùng nhãn giả không phải khóa thật." src="../../assets/security.svg"/></p>
+<h3>Các lựa chọn</h3>
+<p>Chọn <strong>một</strong> hành động Minh nên làm <strong>đầu tiên</strong>:</p>
+<ul>
+<li><strong>A.</strong> Xóa dòng khóa, commit “fix config”, rồi coi như xong.</li>
+<li><strong>B.</strong> Tạo khóa mới, dán vào tệp, để khóa cũ hoạt động thêm vài ngày cho chắc.</li>
+<li><strong>C.</strong> Dừng chia sẻ thêm, rồi thu hồi hoặc xoay vòng khóa cũ ở nhà cung cấp (hoặc báo ngay người có quyền nếu khóa không phải của mình).</li>
+<li><strong>D.</strong> Gửi nguyên khóa vào nhóm chat lớp để mọi người cùng kiểm tra xem có bị dùng chưa.</li>
+<li><strong>E.</strong> Tự viết lại lịch sử Git và ép đẩy (force push) để “xóa sạch”.</li>
+</ul>
+<h3>Đáp án Hồ sơ 01 — Phân tích từng lựa chọn</h3>
+<p><strong>A — Chưa đủ.</strong> Commit mới chỉ thay đổi bản hiện tại; khóa cũ vẫn hoạt động và vẫn có trong lịch sử. Đây là sai lầm phổ biến nhất vì màn hình trông “sạch”.</p>
+<p><strong>B — Sai thứ tự.</strong> Tạo khóa mới không làm khóa cũ mất hiệu lực. Để khóa cũ chạy thêm là để cửa mở. Thêm nữa, dán khóa mới vào cùng tệp có thể lặp lại sự cố.</p>
+<p><strong>C — Đúng hướng.</strong> Ưu tiên vô hiệu quyền đã lộ trước khi dọn bản lưu. Hướng dẫn của GitHub cũng khuyến nghị thu hồi hoặc xoay vòng bí mật trước khi xử lý việc loại bỏ dữ liệu khỏi kho [7]. Nếu khóa thuộc nhóm, trường hoặc nơi thực tập, Minh <strong>báo ngay</strong> người có quyền thay vì tự tìm cách truy cập tài khoản người khác.</p>
+<p><strong>D — Làm sự cố lớn hơn.</strong> Gửi khóa vào kênh khác là thêm một nơi lộ. Báo sự cố bằng mô tả, không bằng bí mật.</p>
+<p><strong>E — Không tự làm.</strong> Viết lại lịch sử ảnh hưởng mọi người đang dùng kho và vẫn không bảo đảm các bản clone hoặc cache biến mất. Việc này cần người quản lý kho quyết định và phối hợp. Chương này <strong>không cung cấp lệnh viết lại lịch sử</strong>.</p>
+<h3>Sáu bước xử lý có thể làm theo</h3>
+<ol>
+<li><strong>Dừng chia sẻ thêm.</strong> Không gửi lại tệp, không chụp nguyên khóa để hỏi nhóm. Trong phạm vi mình có quyền, tạm dừng công khai bản có bí mật. Không chuyển khóa sang kênh khác để “cất tạm”.</li>
+<li><strong>Thu hồi hoặc xoay vòng khóa ở nhà cung cấp.</strong> Dùng chức năng quản lý khóa chính thức nếu là tài khoản của mình; nếu không, báo người có quyền. <strong>Xác nhận khóa cũ đã bị vô hiệu</strong> — tạo khóa mới nhưng để khóa cũ còn hoạt động là chưa xong.</li>
+<li><strong>Kiểm tra mức sử dụng.</strong> Xem lượt gọi, chi phí và mốc thời gian bất thường trong trang quản lý của mình. “Chưa thấy dùng” không chứng minh chưa ai sao chép. Ghi thời điểm phát hiện và phạm vi chia sẻ, không lưu lại bí mật.</li>
+<li><strong>Kiểm tra bản liên quan trong phạm vi được phép.</strong> Commit, tệp cấu hình, bản build, ảnh chụp, đoạn chat có liên quan. Không tự truy cập tài khoản hay log của người khác. Khi tìm, tránh tạo log mới chứa khóa.</li>
+<li><strong>Báo đúng đầu mối.</strong> Bài học: giảng viên hoặc trưởng nhóm. Tài khoản tổ chức: kênh sự cố của tổ chức. Gửi thời điểm, dịch vụ, trạng thái thu hồi, phạm vi đã biết và điều chưa rõ; <strong>không đính kèm khóa</strong>.</li>
+<li><strong>Giảm dữ liệu còn lưu và ngăn tái diễn.</strong> Sau khi khống chế quyền truy cập, phối hợp xử lý các bản chứa bí mật theo quy trình phù hợp. Thay minh họa bằng placeholder, bỏ nhu cầu dùng khóa thật trong bài, thêm bước rà tệp trước khi chia sẻ.</li>
+</ol>
+<h3>Một thông báo sự cố ngắn, đủ để hành động</h3>
+<div class="code-wrap"><pre><code class="language-text">Em phát hiện lúc [giờ, ngày] một tệp trong [phạm vi chia sẻ] chứa khóa của [dịch vụ].
+Em đã dừng chia sẻ. Khóa cũ: [đã thu hồi / đang chờ người có quyền / chưa xác minh].
+Thời gian có thể đã lộ: [phạm vi biết được].
+Mức sử dụng: [đã kiểm tra gì, kết quả, hoặc chưa kiểm tra].
+Nhờ [đầu mối] hướng dẫn xử lý bản đã chia sẻ. Em không đính kèm khóa.
+</code></pre></div>
+<p>Báo sớm không có nghĩa đã kết luận có tấn công; chưa thấy lạm dụng cũng không phải lý do để giấu. Với dữ liệu hoặc hệ thống thật, người có thẩm quyền đánh giá nghĩa vụ thông báo. Đừng suy ra thời hạn pháp lý từ mẫu này.</p>
+<h3>Bài học</h3>
+<p><strong>Thu hồi trước, dọn sau. Báo bằng mô tả, không bằng bí mật.</strong> Lan cùng Minh tìm nguyên nhân tệp thừa lọt vào bản chia sẻ, rồi thêm một bước “rà danh sách tệp trước khi đẩy”. Sửa một bước quy trình cụ thể hữu ích hơn lời hứa “lần sau cẩn thận”.</p>
+<p><strong>QUICK CHECK:</strong> Minh đã xóa tệp <code>config.js</code> và tạo khóa mới. Còn thiếu việc gì quan trọng nhất? Trả lời một câu rồi đối chiếu với bước 2.</p>
+<h2>4.2. Hồ sơ 02 — Dữ liệu cá nhân đi vào cửa sổ chat</h2>
+<h3>Sự cố</h3>
+<p>Để nhờ AI tìm lỗi tính tổng, Minh định gửi <strong>ảnh chụp bảng chi tiêu thật</strong> của mình trong tháng. Ảnh có tên quán ăn quen, giờ giao dịch, số tài khoản ngân hàng bị che một nửa và góc màn hình còn hiện email sinh viên. Minh nghĩ: “Em đổi tên mình thành ‘Bạn A’ là ẩn danh rồi.”</p>
+<h3>Dấu hiệu</h3>
+<ul>
+<li>Lỗi cần sửa (bỏ sót khoản cuối) <strong>có thể tái hiện bằng ba khoản giả</strong>; không cần dữ liệu thật.</li>
+<li>Đổi tên nhưng giữ mã sinh viên, giờ, địa điểm và email.</li>
+<li>Ảnh chụp màn hình chứa nhiều thông tin hơn vùng lỗi.</li>
+</ul>
+<h3>Nguy cơ</h3>
+<p>Người biết bối cảnh vẫn có thể nhận ra “Bạn A” từ các trường còn lại. Ảnh có thể lộ email, tab trình duyệt, đường dẫn chứa tên. Một lớp che trong tệp chỉnh sửa có thể bị gỡ. Lịch sử chat có thể giữ đoạn từng dán ngay cả khi bạn đã xóa khỏi mã.</p>
+<h3>Phân loại trước khi dán</h3>
+<p>Quy tắc thực dụng: <strong>chọn dữ liệu ít nhạy cảm nhất nhưng vẫn đủ tái hiện vấn đề.</strong></p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Nhóm dữ liệu</th>
+<th>Cách hiểu khi làm bài</th>
+<th>Ví dụ và lựa chọn</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Giả/tổng hợp</td>
+<td>Tạo mới cho mục đích thử, không lấy hồ sơ thật rồi sửa sơ qua</td>
+<td>35000, 7000, 18000; liên hệ giả <code>demo001@example.invalid</code></td>
+</tr>
+<tr>
+<td>Đã khử nhận dạng/ẩn danh</td>
+<td>Đã xử lý để không còn xác định được người, kể cả khi liên kết với dữ liệu khác</td>
+<td>Chỉ gọi là ẩn danh khi đã đánh giá lại khả năng nhận diện; <strong>không mặc định sau khi bỏ tên</strong></td>
+</tr>
+<tr>
+<td>Cá nhân, nhạy cảm hoặc bí mật</td>
+<td>Liên quan một người, đời sống riêng tư, tài khoản hoặc quyền truy cập</td>
+<td>Mã sinh viên, ảnh hồ sơ, lịch chi tiêu thật, mật khẩu, khóa API — không đưa vào ví dụ công khai</td>
+</tr>
+</tbody>
+</table></div>
+<p>Bảng này là công cụ sàng lọc khi học, không thay thế phân loại pháp lý chi tiết. Khóa API cần bảo vệ vì cấp quyền truy cập, dù bản thân chuỗi khóa không nhận diện một người. Dữ liệu công khai ở nơi khác cũng không đương nhiên phù hợp để gom lại và gửi cho một dịch vụ AI.</p>
+<h3>Các lựa chọn</h3>
+<ul>
+<li><strong>A.</strong> Gửi ảnh nguyên bản; dịch vụ AI chắc không lưu đâu.</li>
+<li><strong>B.</strong> Đổi tên thành “Bạn A”, giữ các cột khác, rồi gửi.</li>
+<li><strong>C.</strong> Tự tạo ba khoản giả 35000, 7000, 18000 cùng đoạn hàm tính tổng, gửi phần đó.</li>
+<li><strong>D.</strong> Che bằng một lớp hình chữ nhật trong tệp chỉnh sửa, gửi tệp chỉnh sửa gốc.</li>
+</ul>
+<h3>Đáp án Hồ sơ 02 — Phân tích từng lựa chọn</h3>
+<p><strong>A — Không có căn cứ.</strong> Cách một dịch vụ lưu, dùng lại hay cho người xem xét nội dung phụ thuộc điều khoản, gói dịch vụ và thiết lập — bạn chưa kiểm tra. Quan trọng hơn: bài không cần dữ liệu thật.</p>
+<p><strong>B — Chưa phải ẩn danh.</strong> Mã sinh viên, giờ, quán quen và email vẫn đủ để người quen nhận ra. Mã hóa tên thành một mã ổn định trong khi vẫn giữ bảng đối chiếu cũng chưa phải ẩn danh hoàn toàn.</p>
+<p><strong>C — Lựa chọn tốt nhất.</strong> Lỗi bỏ khoản cuối vẫn lộ rõ (ra 42000 thay vì 60000). Dữ liệu được tạo mới từ đầu, không còn liên hệ với ai.</p>
+<p><strong>D — Rủi ro kỹ thuật.</strong> Lớp che có thể bị gỡ trong tệp gốc. Nếu thật sự cần ảnh, <strong>xuất ảnh phẳng</strong>, chỉ cắt đúng vùng lỗi rồi mở lại ảnh đầu ra để kiểm tra.</p>
+<h3>Hộp pháp lý — đọc để biết mình cần hỏi ai</h3>
+<blockquote>
+<p><strong>Mốc đối chiếu nguồn: 29/10/2026 (kế thừa từ bản gốc, chưa được kiểm tra lại trong lượt biên tập này).</strong> Bản gốc đối chiếu Luật Bảo vệ dữ liệu cá nhân số 91/2025/QH15 và Nghị định 356/2025/NĐ-CP, cùng có hiệu lực từ 01/01/2026 [1][2]; theo Điều 42 Nghị định 356, Nghị định 13/2023/NĐ-CP đã hết hiệu lực. Về sở hữu trí tuệ, bản gốc dùng Văn bản hợp nhất 67/VBHN-VPQH ngày 23/03/2026, thể hiện sửa đổi bởi Luật 131/2025/QH15 có hiệu lực từ 01/04/2026 [3]. Đây là định hướng học tập, <strong>không phải ý kiến pháp lý</strong>. Trước khi áp dụng cho dữ liệu, hợp đồng hay sản phẩm thật, mở văn bản gốc và hỏi người có thẩm quyền.</p>
+</blockquote>
+<p>Luật bảo vệ dữ liệu cá nhân có nội dung về khái niệm và khử nhận dạng, nguyên tắc xử lý theo phạm vi và mục đích, sự đồng ý và xử lý trong hoạt động AI. Nhưng đừng rút gọn thành “mọi xử lý đều phải xin đồng ý”: luật có các trường hợp ngoại lệ tại Điều 19 [1]. Cũng đừng tự suy diễn rằng bài tập của mình chắc chắn thuộc ngoại lệ. <strong>Nếu bài không cần dữ liệu thật, dùng dữ liệu giả là cách giảm vấn đề ngay từ thiết kế.</strong></p>
+<h3>Những chỗ hay quên: ảnh, chat, lịch sử</h3>
+<ul>
+<li><strong>Ảnh:</strong> email ở góc, đường dẫn chứa tên, tab trình duyệt, khóa trong bảng điều khiển.</li>
+<li><strong>Chat:</strong> đoạn từng dán rồi xóa khỏi mã vẫn có thể còn trong lịch sử hội thoại.</li>
+<li><strong>Git, bản sao lưu, log, bản xuất dự án:</strong> có thể chứa thông tin ngoài màn hình hiện tại.</li>
+</ul>
+<p>Đừng chỉ kiểm tra tệp đang mở. Với ví dụ cần chuỗi bí mật, dùng <code>DEMO_KEY_NOT_A_SECRET</code> và ghi rõ đó là placeholder.</p>
+<h3>Bài học</h3>
+<p><strong>Dữ liệu giả không chỉ là đổi tên — đó là dữ liệu được tạo mới.</strong> Hỏi “lỗi này cần tối thiểu dữ liệu gì để tái hiện?” trước khi hỏi “gửi cho AI thế nào?”.</p>
+<h2>4.3. Hồ sơ 03 — Agent sửa và xóa ngoài phạm vi</h2>
+<h3>Sự cố</h3>
+<p>Lan giao cho Agent: “Sửa lỗi tổng tiền trong <code>bai-lam/nam-2-web</code>.” Agent báo đã xong. Lan mở diff và thấy: hàm tổng được sửa, nhưng <code>index.html</code> đổi giao diện, tệp <code>test_data.cjs</code> bị xóa hai ca đang thất bại, và có đề nghị chạy lệnh cài một gói định dạng mã. Màn hình test giờ toàn màu xanh.</p>
+<h3>Dấu hiệu</h3>
+<ul>
+<li>Diff chạm vào tệp nằm ngoài mục tiêu.</li>
+<li>Số ca test <strong>giảm</strong> đúng bằng số ca đang thất bại.</li>
+<li>Có lệnh cài đặt không được yêu cầu.</li>
+<li>Báo cáo “đã xong” nhưng không nêu ca nào bị xóa.</li>
+</ul>
+<h3>Nguy cơ</h3>
+<p>Test xanh vì ca khó bị xóa là bằng chứng giả. Thay đổi giao diện không yêu cầu làm khó review. Gói lạ có thể mang rủi ro chuỗi cung ứng (xem Hồ sơ 04). Nhận cả gói thay đổi nghĩa là Lan nhận trách nhiệm cho những gì mình chưa đọc.</p>
+<p>Một Agent có thể đọc nhiều tệp, gọi lệnh và gửi nội dung tới dịch vụ, tùy công cụ, chế độ và thiết lập. Đừng mặc định “nằm trên máy em” là “không thể đi vào ngữ cảnh gửi ra ngoài”. Câu prompt “chỉ sửa tệp X” là <strong>yêu cầu</strong>, không phải hàng rào kỹ thuật; quyền thật nằm ở thiết lập và các hộp xác nhận bạn đồng ý.</p>
+<h3>Các lựa chọn</h3>
+<ul>
+<li><strong>A.</strong> Chấp nhận toàn bộ vì test đã xanh.</li>
+<li><strong>B.</strong> Dừng Agent. Quay về checkpoint đã tạo trước khi giao việc (Mission 06), rồi chỉ áp lại phần sửa hàm tổng sau khi đọc và hiểu diff đó.</li>
+<li><strong>C.</strong> Bảo Agent “khôi phục lại như cũ” mà không kiểm tra nó khôi phục gì.</li>
+<li><strong>D.</strong> Giữ thay đổi, chỉ tự gõ lại hai ca test đã bị xóa theo trí nhớ.</li>
+</ul>
+<h3>Đáp án Hồ sơ 03 — Phân tích từng lựa chọn</h3>
+<p><strong>A — Sai.</strong> Test xanh sau khi xóa ca thất bại không chứng minh hàm đúng. Phần hữu ích không hợp thức hóa phần ngoài phạm vi.</p>
+<p><strong>B — Đúng.</strong> Checkpoint là đường quay lại đã chuẩn bị trước. Sau khi quay về, so sánh với diff, giữ đúng một thay đổi được giao, chạy lại <strong>đủ</strong> bộ test gốc (34 ca cho bản Web tham khảo). Ghi vào nhật ký rằng lượt Agent đầu vượt phạm vi; không xóa lượt đó để câu chuyện trông đẹp.</p>
+<p><strong>C — Khôi phục mù.</strong> Bạn lại giao quyền cho chính công cụ vừa vượt phạm vi mà không có bằng chứng về trạng thái sau đó. Nếu không có checkpoint, hãy dừng, giữ nguyên hiện trạng và đối chiếu từng tệp với bản <code>vi-du</code> chỉ đọc.</p>
+<p><strong>D — Nguy hiểm.</strong> Ca test gõ lại theo trí nhớ có thể khác ca gốc. Giao diện thay đổi và đề nghị cài gói vẫn còn đó.</p>
+<h3>Hợp đồng giao việc nên có trước khi bấm chạy</h3>
+<div class="code-wrap"><pre><code class="language-text">Phạm vi: chỉ sửa hàm tính tổng trong bai-lam/nam-2-web/data.js.
+Không sửa, xóa hoặc đổi tên tệp khác. Không xóa hoặc sửa ca test.
+Không cài gói, đổi cấu hình, commit, đẩy mã hay truy cập mạng.
+Trước khi sửa: nêu giả thuyết, dòng dự kiến đổi, ca test sẽ chạy.
+Sau khi sửa: báo diff, số ca chạy, số ca đạt/không đạt, phần chưa kiểm.
+Nếu bị chặn hoặc cần quyền mới: dừng và hỏi, không tìm đường vòng.
+</code></pre></div>
+<h3>Bài học</h3>
+<p><strong>Checkpoint trước, diff sau, nhận từng phần.</strong> Số ca test phải giữ nguyên hoặc tăng; thấy giảm là dừng lại hỏi “ca nào biến mất và vì sao?”.</p>
+<h2>4.4. Hồ sơ 04 — Gói thư viện AI đề xuất</h2>
+<h3>Sự cố</h3>
+<p>Minh hỏi cách định dạng tiền cho đẹp. AI trả lời tự tin và đưa một lệnh cài cho gói có tên rất giống một thư viện quen thuộc, kèm câu “chạy lệnh này là xong”. Minh chưa từng nghe tên gói này.</p>
+<h3>Dấu hiệu</h3>
+<ul>
+<li>Tên gói gần giống thư viện phổ biến nhưng khác một vài ký tự (dấu hiệu <strong>typosquatting</strong>).</li>
+<li>Câu trả lời không dẫn registry chính thức, không nêu người duy trì hay kho nguồn.</li>
+<li>Lệnh cài tải mã từ mạng rồi chạy ngay.</li>
+<li>Bài hiện tại <strong>không cần thêm phụ thuộc</strong> để định dạng tiền; API có sẵn của trình duyệt đã đủ.</li>
+</ul>
+<h3>Nguy cơ</h3>
+<p>Gói không tồn tại, gói bị đặt tên nhầm hoặc gói độc hại có thể chạy script khi cài. Script cài có thể đọc biến môi trường, tệp cấu hình, khóa. Một lockfile giúp cố định phiên bản nhưng <strong>không biến gói độc hại thành đáng tin</strong> [6].</p>
+<h3>Các lựa chọn</h3>
+<ul>
+<li><strong>A.</strong> Chạy lệnh ngay; AI đã gợi ý thì chắc ổn.</li>
+<li><strong>B.</strong> Hỏi AI “gói này có an toàn không?” rồi làm theo câu trả lời.</li>
+<li><strong>C.</strong> Kiểm tra xem bài có thật sự cần phụ thuộc không. Nếu cần, đối chiếu tên, phiên bản, người duy trì, kho nguồn, giấy phép, dấu hiệu bảo trì và cảnh báo bảo mật trên registry chính thức — <strong>không cài trong bài này</strong>.</li>
+<li><strong>D.</strong> Cài vào một thư mục tạm “cho biết”, sau đó xóa.</li>
+</ul>
+<h3>Đáp án Hồ sơ 04 — Phân tích từng lựa chọn</h3>
+<p><strong>A — Sai.</strong> Sự tự tin không phải bằng chứng. Tên gói do mô hình sinh ra có thể không tồn tại hoặc bị nhắm tới để đánh lừa.</p>
+<p><strong>B — Vòng tròn.</strong> Cùng một nguồn vừa đề xuất, vừa tự chứng nhận. Bằng chứng phải đến từ registry và kho nguồn, không phải từ lời khẳng định.</p>
+<p><strong>C — Đúng.</strong> Câu hỏi đầu tiên luôn là “bài có cần thêm phụ thuộc không?”. Với ứng dụng HTML/JS nhỏ, câu trả lời thường là không. Hoạt động của chương chỉ là <strong>lập bảng kiểm chứng, không thực hiện cài gói</strong>. Nếu chưa xác minh được, bỏ đề xuất và dùng giải pháp đang hiểu.</p>
+<p><strong>D — Vẫn là chạy mã.</strong> Cài “cho biết” vẫn thực thi script trên máy bạn. Xóa thư mục sau đó không hoàn tác những gì script đã làm.</p>
+<h3>Bảng kiểm chứng để trống — điền khi thật sự cần</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Câu hỏi</th>
+<th>Bằng chứng cần có</th>
+<th>Đã kiểm?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Tên gói chính xác?</td>
+<td>Trang gói trên registry chính thức của hệ sinh thái</td>
+<td></td>
+</tr>
+<tr>
+<td>Phiên bản dự định dùng?</td>
+<td>Số phiên bản, ngày phát hành</td>
+<td></td>
+</tr>
+<tr>
+<td>Ai duy trì?</td>
+<td>Tài khoản nhà phát hành, lịch sử phát hành</td>
+<td></td>
+</tr>
+<tr>
+<td>Kho nguồn?</td>
+<td>Liên kết kho mã, khớp với registry</td>
+<td></td>
+</tr>
+<tr>
+<td>Giấy phép?</td>
+<td>Tệp giấy phép của gói</td>
+<td></td>
+</tr>
+<tr>
+<td>Có script cài không?</td>
+<td>Nội dung trường script trong manifest</td>
+<td></td>
+</tr>
+<tr>
+<td>Có cảnh báo bảo mật?</td>
+<td>Trang tư vấn bảo mật của hệ sinh thái</td>
+<td></td>
+</tr>
+<tr>
+<td>Có phụ thuộc bắc cầu lạ?</td>
+<td>Danh sách phụ thuộc, lockfile</td>
+<td></td>
+</tr>
+</tbody>
+</table></div>
+<p>Không bịa URL registry để làm đầy cột. Cột trống trung thực tốt hơn một dòng “đã kiểm” không có căn cứ.</p>
+<h3>Bài học</h3>
+<p><strong>Không cài chỉ để chứng tỏ chủ động.</strong> Thêm một phụ thuộc là thêm một bên bạn phải tin; hãy chắc mình thật sự cần.</p>
+<h2>4.5. Hồ sơ 05 — Bài tập hoàn toàn do AI làm</h2>
+<h3>Sự cố</h3>
+<p>Đề ViSinhVien ghi: “Được tham khảo tài liệu.” Không nhắc gì đến AI. Minh dán cả đề vào chat, nhận về toàn bộ <code>index.html</code>, <code>data.js</code>, <code>app.js</code> và một bài giải thích. Bạn sửa vài chỗ, chạy được, rồi định ghi trong phần khai báo: “Có tham khảo ý tưởng từ AI.”</p>
+<h3>Dấu hiệu</h3>
+<ul>
+<li>Đề không nói rõ về AI; “tham khảo tài liệu” <strong>không đồng nghĩa</strong> với “AI được viết hộ”.</li>
+<li>Toàn bộ chức năng chính do AI sinh.</li>
+<li>Lời khai nhỏ hơn mức hỗ trợ thực tế.</li>
+<li>Minh không giải thích được vì sao kiểm tra <code>amount</code> nằm ở đó.</li>
+</ul>
+<h3>Nguy cơ</h3>
+<p>Đây là vấn đề <strong>học thuật</strong>, và cách xử lý phụ thuộc yêu cầu học phần — chương này không thay quy định của trường. Ba hậu quả có thể xảy ra: mất phần luyện mà môn học nhắm tới; khai báo sai làm mất tính trung thực; không bảo vệ được bài khi bị hỏi.</p>
+<h3>Các lựa chọn</h3>
+<ul>
+<li><strong>A.</strong> Nộp nguyên, khai “có tham khảo ý tưởng”.</li>
+<li><strong>B.</strong> Hỏi giảng viên bằng một tin nhắn mô tả <strong>đúng việc đã làm</strong>, tiếp tục phần chắc chắn được phép trong lúc chờ, không mặc định im lặng là đồng ý.</li>
+<li><strong>C.</strong> Xóa hết, tự viết lại từ đầu theo trí nhớ của mã AI.</li>
+<li><strong>D.</strong> Không khai, vì “ai cũng dùng”.</li>
+</ul>
+<h3>Đáp án Hồ sơ 05 — Phân tích từng lựa chọn</h3>
+<p><strong>A — Khai không khớp.</strong> Nếu AI sinh cả hàm, phải nói là sinh bản nháp của hàm, không đổi thành “chỉ tham khảo ý tưởng”. Khai báo không thay thế sự cho phép.</p>
+<p><strong>B — Đúng hướng.</strong> Mô tả hành động cụ thể để giảng viên trả lời được:</p>
+<div class="code-wrap"><pre><code class="language-text">Thưa thầy/cô, với bài ViSinhVien, em dự định tự viết phần thêm khoản chi và tính tổng.
+Em muốn dùng AI để giải thích lỗi JavaScript và gợi ý ca kiểm thử cho amount,
+sau đó tự sửa và chạy kiểm tra. Em không định gửi dữ liệu thật hoặc nhờ AI làm toàn bộ bài.
+Phạm vi này có được phép không ạ? Nếu được, nhóm cần khai báo ở đâu và giữ bằng chứng nào?
+Nếu không, em sẽ dùng tài liệu môn học theo hướng dẫn.
+</code></pre></div>
+<p><strong>C — Trung thực nhưng lãng phí.</strong> Viết lại từ trí nhớ vẫn là làm lại bài của người khác, và bạn có thể đang bỏ phần học. Việc đúng là hỏi phạm vi, rồi <strong>tự làm lại phần cốt lõi có hiểu</strong>.</p>
+<p><strong>D — Tệ nhất.</strong> “Bạn cùng lớp cũng dùng” và “em chỉ dùng bản miễn phí” không phải căn cứ học thuật. Không khai là sai lệch về đóng góp.</p>
+<h3>Bảng phân loại — để hỏi, không phải để tự cho phép</h3>
+<p>Bảng này <strong>không phải quy định của TLU</strong>; nó giúp bạn đặt câu hỏi đúng.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Tình trạng</th>
+<th>Ví dụ trong bài ViSinhVien</th>
+<th>Việc cần làm</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Đã được cho phép</td>
+<td>Đề ghi được dùng AI gợi ý ca kiểm thử, phải khai báo</td>
+<td>Dùng đúng phần được phép, lưu lại phần hỗ trợ và tự kiểm tra</td>
+</tr>
+<tr>
+<td>Đã bị cấm</td>
+<td>Bài kiểm tra yêu cầu tự viết, không dùng công cụ sinh mã</td>
+<td>Không nhờ AI tạo lời giải hay sửa mã trong thời gian làm bài</td>
+</tr>
+<tr>
+<td>Chưa rõ</td>
+<td>Đề cho tham khảo tài liệu nhưng không nói về AI</td>
+<td>Hỏi giảng viên trước; chưa biến giả định thành sự cho phép</td>
+</tr>
+<tr>
+<td>Có điều kiện</td>
+<td>Được hỗ trợ giải thích nhưng không được sinh toàn bộ chức năng</td>
+<td>Tách câu hỏi giải thích khỏi yêu cầu viết hộ</td>
+</tr>
+</tbody>
+</table></div>
+<p>Với bài nhóm, cả nhóm cần biết phạm vi: một thành viên đưa mã AI vào nhánh chung có thể ảnh hưởng bản nộp của mọi người.</p>
+<h3>Bài học</h3>
+<p><strong>Khai báo là mô tả, không phải xin phép.</strong> Hỏi trước về phạm vi; khai sau đúng với việc đã làm.</p>
+<h2>4.6. Hồ sơ 06 — Đoạn mã không rõ giấy phép</h2>
+<h3>Sự cố</h3>
+<p>Minh tìm được một giao diện đẹp trên GitHub. Trang kho mở được không cần đăng nhập, nên bạn định chép một tệp vào ViSinhVien. Kho <strong>không có tệp LICENSE</strong>.</p>
+<h3>Dấu hiệu</h3>
+<ul>
+<li>Không có giấy phép, hoặc chỉ có tên giấy phép mà chưa đọc điều kiện.</li>
+<li>Có giấy phép cho mã nhưng ảnh và phông chữ đi kèm có điều kiện khác.</li>
+<li>Định “ghi nguồn là đủ”.</li>
+</ul>
+<h3>Nguy cơ</h3>
+<p>Công khai <strong>không</strong> tự trao quyền sao chép, phân phối hay tạo tác phẩm phái sinh [8]. Ghi nguồn là việc học thuật; nó không thay quyền sử dụng. Sản phẩm bị gắn đoạn không rõ quyền có thể phải gỡ bỏ hoặc gây tranh cãi khi công bố.</p>
+<h3>Các lựa chọn</h3>
+<ul>
+<li><strong>A.</strong> Chép vì kho công khai và ghi nguồn ở cuối bài.</li>
+<li><strong>B.</strong> Tự viết lại bảng khoản chi đơn giản mình hiểu; bỏ phần giao diện chưa rõ quyền.</li>
+<li><strong>C.</strong> Đổi tên biến và màu sắc để “không ai nhận ra”.</li>
+<li><strong>D.</strong> Nhờ AI viết lại giao diện đó từ ảnh chụp màn hình.</li>
+</ul>
+<h3>Đáp án Hồ sơ 06 — Phân tích từng lựa chọn</h3>
+<p><strong>A — Không đủ.</strong> Không có giấy phép nghĩa là không có cơ sở để coi là tự do sao chép. Đường dẫn nguồn không tạo ra quyền.</p>
+<p><strong>B — Đúng cho bài này.</strong> Sản phẩm bớt bóng bẩy nhưng nhóm biết nguồn gốc từng phần. Đây là giảm một vấn đề không cần thiết, không phải phòng thủ đến mức không dám học từ ai.</p>
+<p><strong>C — Vẫn là sao chép.</strong> Thay tên biến không xóa nghĩa vụ và không đổi bản chất việc dùng tác phẩm của người khác.</p>
+<p><strong>D — Chưa chắc sạch.</strong> Đầu ra có thể gần với thiết kế gốc; nhãn “AI tạo” không tự chứng minh nguồn gốc hay quyền sở hữu độc quyền. Kiểm nguồn nếu được dẫn và điều khoản công cụ bạn dùng.</p>
+<h3>Đọc tên giấy phép chưa đủ</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Tình huống</th>
+<th>Điều cần hiểu</th>
+<th>Hành động thực tế</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Mã mang giấy phép MIT</td>
+<td>Có quyền sử dụng rộng, nhưng phải giữ thông báo bản quyền và giấy phép theo điều kiện của MIT</td>
+<td>Giữ nội dung cần thiết khi sao chép; lưu nguồn và phiên bản</td>
+</tr>
+<tr>
+<td>Mã mang giấy phép GPL</td>
+<td><strong>Không</strong> phải giấy phép “cấm thương mại”; nghĩa vụ phụ thuộc phiên bản, việc chuyển giao và quan hệ với tác phẩm phái sinh</td>
+<td>Đọc đúng GPL áp dụng; hỏi người có chuyên môn nếu chưa xác định được nghĩa vụ</td>
+</tr>
+<tr>
+<td>Kho không có giấy phép rõ</td>
+<td>Không có cơ sở để coi là tự do sao chép</td>
+<td>Không đưa vào bản nộp chỉ bằng cách thêm đường dẫn</td>
+</tr>
+<tr>
+<td>AI đưa một đoạn mã</td>
+<td>Nhãn “AI tạo” không tự chứng minh nguồn gốc hay quyền</td>
+<td>Kiểm nguồn nếu có, điều khoản công cụ, dấu hiệu sao chép; thay phần chưa rõ quyền</td>
+</tr>
+</tbody>
+</table></div>
+<p>Với MIT, ghi nguồn học thuật và giữ thông báo giấy phép là hai việc khác nhau. Với GPL, đừng kết luận chỉ từ số dòng đã chép, cũng đừng nói “thấy GPL là không được dùng”. Phải xét văn bản giấy phép cụ thể; chương này không quyết định tính tương thích cho sản phẩm thật.</p>
+<p>Về pháp luật Việt Nam, bản gốc dẫn Điều 22 và Điều 25 khoản 3 của văn bản hợp nhất về sở hữu trí tuệ [3]: chương trình máy tính được bảo hộ, và lý do “em sao chép để học” không tự động là ngoại lệ cho mọi trường hợp. Điều này không cấm học từ tài liệu; nó nhắc kiểm tra quyền trước khi mang mã người khác vào bản nộp hoặc sản phẩm phân phối.</p>
+<h3>Thẻ nguồn nhỏ — điền ngay khi chọn tài nguyên</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Thành phần định dùng</th>
+<th>Nguồn/phiên bản</th>
+<th>Giấy phép và việc phải giữ</th>
+<th>Quyết định</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Ví dụ: đoạn CSS bố cục</td>
+<td>URL cụ thể đã mở, ngày xem</td>
+<td>Tên giấy phép, tệp LICENSE, điều kiện giữ thông báo</td>
+<td>Dùng có điều kiện / hỏi thêm / không dùng</td>
+</tr>
+</tbody>
+</table></div>
+<p>Dẫn đúng bản đã dùng, không chỉ trang chủ. Phân biệt <strong>tham khảo ý tưởng thuật toán</strong> với <strong>sao chép cách biểu đạt cụ thể</strong>. Chưa rõ thì khai nguồn và hỏi người chấm, không đổi vài chữ để che dấu vết.</p>
+<h3>Bài học</h3>
+<p><strong>Công khai không phải giấy phép.</strong> Một sản phẩm đơn giản mình hiểu tốt hơn một giao diện đẹp không rõ nguồn.</p>
+<h2>4.7. Hồ sơ 07 — Khai báo thiếu và ba tầng trách nhiệm</h2>
+<h3>Sự cố</h3>
+<p>Bài nộp của nhóm ghi: “Có sử dụng AI để tham khảo.” Nhưng AI đã sinh bản nháp hàm <code>parseAmount</code>, gợi ý bảy ca test, và Lan chép một đoạn CSS từ một kho không rõ giấy phép. Minh không chạy test trên máy mình mà chỉ đọc mã. Khi giảng viên hỏi “phần này em kiểm chứng thế nào?”, cả hai nhìn nhau.</p>
+<h3>Dấu hiệu</h3>
+<ul>
+<li>Một câu khai báo chung chung, không phân biệt gợi ý / sinh nội dung / nhóm sửa gì.</li>
+<li>Không nêu đã chạy gì, trên bản nào.</li>
+<li>Ghi “đã xác minh” trong khi chỉ đọc mã.</li>
+<li>Không nhắc nguồn CSS.</li>
+</ul>
+<h3>Nguy cơ</h3>
+<p>Người chấm không đánh giá được đóng góp thật. Nếu bị hỏi trực tiếp, nhóm không giải thích được — và đó là dấu hiệu mất phần học, không chỉ là lỗi trình bày. Về lâu dài, thói quen khai cao hơn thực tế sẽ theo sang báo cáo thực tập và công việc.</p>
+<h3>Các lựa chọn</h3>
+<ul>
+<li><strong>A.</strong> Giữ câu chung chung; nộp kèm toàn bộ lịch sử chat để “đầy đủ”.</li>
+<li><strong>B.</strong> Viết lại khai báo theo đúng việc đã làm: công cụ, thời điểm, phần được sinh, phần nhóm sửa, đã chạy gì và chưa chạy gì, nguồn CSS. Bổ sung phần còn thiếu nếu còn thời gian; nếu không, ghi đúng trạng thái.</li>
+<li><strong>C.</strong> Ghi “tự làm 100%” vì nhóm đã gõ lại vài dòng.</li>
+<li><strong>D.</strong> Bỏ phần CSS ra khỏi bài nhưng không nhắc gì trong khai báo.</li>
+</ul>
+<h3>Đáp án Hồ sơ 07 — Phân tích từng lựa chọn</h3>
+<p><strong>A — Quá tải và rủi ro.</strong> Một câu chung chung không đủ thông tin; dán cả lịch sử chat có thể đưa vào dữ liệu riêng tư không cần thiết. Mô tả đủ để giảng viên đánh giá, theo hình thức giảng viên yêu cầu.</p>
+<p><strong>B — Đúng.</strong> Khai báo tốt phân biệt: AI gợi ý gì, sinh nội dung nào, nhóm thay đổi gì, kiểm chứng đến đâu. Nếu mới đọc mã mà chưa chạy, ghi “đã rà soát bằng đọc mã; chưa chạy kiểm thử”, không ghi “đã xác minh”.</p>
+<p><strong>C — Sai.</strong> Gõ lại vài dòng không biến phần sinh hàng loạt thành tự làm. Tính trung thực nằm ở độ khớp giữa lời khai và hành động.</p>
+<p><strong>D — Che một phần.</strong> Bỏ đoạn không rõ quyền là tốt, nhưng vẫn cần nói rõ phần đã loại và lý do nếu hình thức khai báo yêu cầu.</p>
+<h3>Ba tầng trách nhiệm — không đổ lỗi cho công cụ, không nhận bừa mọi lỗi</h3>
+<p>Minh hỏi: “Nếu AI viết sai thì em chịu hết à?” Cần tách các tầng.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Tầng</th>
+<th>Câu hỏi cần trả lời</th>
+<th>Nhóm kiểm soát được</th>
+<th>Không nên khẳng định</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Học thuật</td>
+<td>Bài có đúng yêu cầu môn; đóng góp và khai báo có trung thực?</td>
+<td>Hỏi phạm vi AI, giải thích mã, ghi nguồn, ghi kết quả thật</td>
+<td>Mọi dùng AI đều là đạo văn; hoặc khai báo là chắc chắn được chấp nhận</td>
+</tr>
+<tr>
+<td>Nghề nghiệp</td>
+<td>Sản phẩm có được rà soát đúng vai trò và cảnh báo đúng giới hạn?</td>
+<td>Kiểm dữ liệu, báo lỗi, yêu cầu người phù hợp duyệt thay đổi</td>
+<td>Có AI hỗ trợ thì người làm không còn trách nhiệm; hoặc một người luôn gánh mọi lỗi nhóm</td>
+</tr>
+<tr>
+<td>Pháp lý</td>
+<td>Có vấn đề dữ liệu, quyền tác giả, hợp đồng hay quyền truy cập cần xem xét?</td>
+<td>Ngừng hành vi có vấn đề, giữ thông tin cần thiết, báo đầu mối có thẩm quyền</td>
+<td>Tự kết luận có tội, mức phạt hay bồi thường từ một ví dụ trong lớp</td>
+</tr>
+</tbody>
+</table></div>
+<p>Không có một câu “chịu 100% pháp lý” áp dụng cho mọi sinh viên và mọi đầu ra AI. Người nộp bài phải giải thích việc mình làm và mức kiểm tra; kết luận kỷ luật hay pháp lý phụ thuộc quy định, vai trò và tình tiết.</p>
+<h3>Chia vai nhưng không tạo khoảng trống</h3>
+<p>Minh phụ trách nhập và tính tổng; Lan rà soát hiển thị và nguồn; cả hai xem lại bản nộp. <strong>“Lan đã xem” phải rõ là xem gì</strong>: xem diff, đọc hàm, hay chạy ứng dụng. Với <code>textContent</code>, bằng chứng là diff và quan sát <code>&lt;b&gt;Vở&lt;/b&gt;</code> hiện nguyên văn. Với giới hạn 500 khoản, phải thử đúng giới hạn; ảnh tổng 60000 không chứng minh được điều đó.</p>
+<h3>Nói mức chắc chắn bằng ngôn ngữ kiểm chứng</h3>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Thay câu này</th>
+<th>Bằng câu này</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>“An toàn tuyệt đối”</td>
+<td>“Đã sửa chỗ hiển thị; ca <code>&lt;b&gt;Vở&lt;/b&gt;</code> đạt, ca giới hạn 501 khoản chưa chạy”</td>
+</tr>
+<tr>
+<td>“Không có dữ liệu nhạy cảm”</td>
+<td>“Đã rà các tệp X, Y và hai ảnh Z; không thấy email hay khóa thật”</td>
+</tr>
+<tr>
+<td>“AI bảo là MIT”</td>
+<td>“Đã mở tệp LICENSE trong kho, ghi lại tên và phiên bản”</td>
+</tr>
+<tr>
+<td>“Đã test xong”</td>
+<td>“34 ca chạy bằng Node 24 trên bản sao; 34 đạt, 0 không đạt; chưa thử trên trình duyệt khác”</td>
+</tr>
+</tbody>
+</table></div>
+<p>Nêu giới hạn giúp người đọc đối chiếu, nhưng không được dùng để che việc cốt lõi chưa làm. Phát hiện lỗi thì ghi tác động và cách khắc phục; không sửa lén kết quả cũ.</p>
+<h3>Mẫu khai báo AI — điền bằng sự thật</h3>
+<div class="code-wrap"><pre><code class="language-text">Bài/nhóm: ViSinhVien — [thành viên và vai trò].
+Phạm vi được phép: [hướng dẫn của bài hoặc phản hồi giảng viên; nếu chưa rõ, ghi đang chờ].
+Công cụ và thời điểm: [tên, phiên bản nếu biết, ngày dùng].
+Hỗ trợ thực tế: [giải thích, gợi ý, sinh nháp phần nào; tệp/hàm liên quan].
+Đóng góp của nhóm: [ai viết lại gì, lựa chọn nào được giữ hoặc bỏ và lý do].
+Dữ liệu đã cung cấp: [bộ dữ liệu giả, đoạn mã cần thiết; không dán bí mật].
+Nguồn và giấy phép: [nguồn thật đã dùng, điều kiện cần giữ, phần đã loại vì chưa rõ].
+Kiểm chứng: [đã chạy gì, trên bản nào, kết quả; phần chỉ đọc mã; phần chưa xác minh].
+Giới hạn: HTML/JavaScript dùng localStorage, không backend/đăng nhập; chỉ phục vụ học tập
+với dữ liệu giả. SQL là minh họa Python sqlite3 riêng trong :memory:.
+</code></pre></div>
+<h3>Bài học</h3>
+<p><strong>Khai báo tốt là bản đồ đóng góp, không phải câu xin lỗi hay lời khen.</strong> Viết để người khác kiểm lại được, không phải để trông đẹp.</p>
+<h2>4.8. Phòng khám kỹ thuật — SQL, XSS và C++</h2>
+<p>Ba lỗi dưới đây có cùng một gốc: <strong>biết hợp đồng ở ranh giới, không tin vào một lần chạy may mắn.</strong> Không cần thử chuỗi phá hoại để hiểu bất kỳ lỗi nào.</p>
+<h3>4.8.1. SQL — giá trị là dữ liệu, không phải cấu trúc câu lệnh</h3>
+<p><strong>Ranh giới ví dụ:</strong> SQL ở đây chạy riêng bằng Python <code>sqlite3</code> với <code>:memory:</code>; ViSinhVien không gửi SQL và không có backend. Tệp minh họa là <code>vi-du/minh-hoa-sqlite.py</code>. Không nối minh họa này vào sơ đồ kiến trúc ứng dụng Web.</p>
+<p>Giả sử bảng minh họa có cột <code>id</code>, <code>title</code>, <code>amount</code>, <code>category</code>. Lan muốn tìm một tên thử là <code>Vở O'Reilly</code>. Dấu nháy trong tên là dữ liệu bình thường, nhưng cách nối chuỗi sau đưa nó vào cú pháp SQL:</p>
+<div class="code-wrap"><pre><code class="language-python"># Mẫu KHÔNG nên dùng; chỉ đọc để nhận diện vấn đề.
+query = "SELECT title,amount FROM expenses WHERE title = '" + title + "'"
+</code></pre></div>
+<p>Với tên có dấu nháy, câu lệnh có thể sai cú pháp. Đáng ngại hơn, nối trực tiếp dữ liệu không tin cậy vào câu lệnh có thể cho dữ liệu <strong>làm thay đổi ý nghĩa SQL</strong>. Một tên sách hợp lệ đã đủ chỉ ra chương trình đang trộn hai vai trò: dữ liệu và mã lệnh.</p>
+<p>Cách đúng trong ngữ cảnh Python <code>sqlite3</code>:</p>
+<div class="code-wrap"><pre><code class="language-python"># conn là kết nối sqlite3 tới ":memory:" trong minh họa riêng.
+rows = conn.execute(
+    'SELECT title,amount FROM expenses WHERE title = ?',
+    (title,)
+).fetchall()
+</code></pre></div>
+<p>Dấu <code>?</code> là vị trí dành cho giá trị được gắn riêng. <code>(title,)</code> là tuple một phần tử; <strong>dấu phẩy tạo tuple</strong>, còn <code>(title)</code> chỉ là biểu thức trong ngoặc. Thiếu dấu phẩy là sai cấu trúc đối số. Trình điều khiển tách giá trị khỏi cấu trúc SQL, nên dấu nháy của <code>Vở O'Reilly</code> không cần bị thay thế bằng mẹo ghép chuỗi.</p>
+<p>OWASP ưu tiên truy vấn tham số hóa cho tình huống này [4]. Tuy vậy, <strong>tham số giá trị không thay thế tùy ý tên bảng, tên cột hay từ khóa sắp xếp</strong>. Nếu chương trình cho chọn cách sắp xếp, hãy ánh xạ lựa chọn sang một tập tên cột định trước — đó là lúc cần danh sách cho phép cho phần cấu trúc.</p>
+<p>Chạy minh họa từ thư mục gốc dự án:</p>
+<div class="code-wrap"><pre><code class="language-bash">python "vi-du/minh-hoa-sqlite.py"
+</code></pre></div>
+<p>Dòng đáng chú ý nhất là <code>Tra cuu tham so: [("Vở O'Reilly", 12000)]</code>: dấu nháy đi qua truy vấn như dữ liệu bình thường. Các dòng <code>PASS reject amount</code> cho thấy ràng buộc của bảng từ chối số âm, số 0, số thập phân và số vượt <code>1e9</code>. Trên một số máy Linux/macOS, lệnh là <code>python3</code>. Nếu không có Python, ghi “chưa chạy, thiếu Python” và đọc tiếp phần giải thích — đây là minh họa khái niệm, không phải điều kiện học xong chương.</p>
+<p>Ghi rõ đây là <strong>fixture SQL riêng</strong>, không thêm nó vào bộ ba khoản chuẩn rồi vẫn tuyên bố tổng 60000. Truy vấn tham số hóa cũng không tự giải quyết phân quyền, rò rỉ log hay mọi lỗi nghiệp vụ.</p>
+<h3>4.8.2. XSS — hiển thị tên khoản chi như văn bản</h3>
+<p>Minh muốn giao diện linh hoạt nên thử gán tên khoản chi bằng <code>innerHTML</code>. Lan đưa đầu vào vô hại <code>&lt;b&gt;Vở&lt;/b&gt;</code> và hỏi: “Người dùng nhập một cái tên, tại sao ứng dụng lại diễn giải nó thành thẻ?” Nếu giao diện in đậm chữ Vở, trình duyệt đang phân tích đầu vào như HTML. Ví dụ này <strong>không chạy mã độc</strong>, nhưng làm lộ điểm dữ liệu đã bị trao thêm ý nghĩa.</p>
+<p>Cách đúng cho một ô bảng cần hiển thị tên dưới dạng văn bản:</p>
+<div class="code-wrap"><pre><code class="language-javascript">const td = document.createElement('td');
+td.textContent = expense.title;
+</code></pre></div>
+<p>Khi <code>expense.title</code> là <code>&lt;b&gt;Vở&lt;/b&gt;</code>, nội dung mong đợi nhìn thấy là chính chuỗi <strong><code>&lt;b&gt;Vở&lt;/b&gt;</code></strong>, gồm cả dấu ngoặc nhọn, không phải chữ Vở in đậm. <code>td</code> là tên biến của đoạn minh họa. Trong <code>app.js</code> đi kèm, ô bảng có tên biến <code>cell</code>: tìm <code>cell.textContent = value</code> trong hàm <code>render</code>; <code>value</code> lần lượt là tên khoản, nhãn nhóm hoặc số tiền đã định dạng. Không đổi chỗ gán này thành <code>innerHTML</code> cho tên khoản chi.</p>
+<p>OWASP liệt kê <code>textContent</code> là một cách đưa dữ liệu vào nơi nhận văn bản an toàn trong DOM thông thường [5]. Phạm vi “văn bản thông thường” rất quan trọng: cách bảo vệ cho ô bảng <strong>không</strong> tự áp dụng cho URL, thuộc tính sự kiện, CSS hay chuỗi mã JavaScript. Nếu sau này thêm đường dẫn, cần kiểm soát loại URL và ngữ cảnh riêng. Nếu thật sự cần HTML phong phú, đó là yêu cầu mới cần cơ chế làm sạch phù hợp.</p>
+<p>Cũng đừng suy luận “dữ liệu nằm trong <code>localStorage</code> của em nên tin được”. Người dùng có thể sửa kho lưu trữ, dữ liệu cũ có thể đến từ phiên bản lỗi, máy có thể dùng chung. Hãy kiểm tra lúc nhập, lúc đọc lại và lúc đưa ra giao diện, theo trách nhiệm của từng lớp.</p>
+<h3>4.8.3. C++ — vượt chỉ số không phải phép thử vận may</h3>
+<p>Ở bài năm nhất bằng C++, Minh dùng một <code>std::vector</code> gồm ba số tiền. Với <code>n</code> phần tử, chỉ số hợp lệ là <code>0</code> đến <code>n - 1</code>. Truy cập ngoài biên bằng <code>operator[]</code> dẫn đến <strong>hành vi không xác định</strong>.</p>
+<p>“Hành vi không xác định” <strong>không có nghĩa chắc chắn chương trình sẽ crash</strong>. Nó có thể trông như chạy đúng, đọc giá trị lạ hoặc có biểu hiện khác. Một lần chạy không lỗi không chứng minh truy cập đó hợp lệ. Đừng chạy thử truy cập sai rồi dùng việc “máy em vẫn ổn” làm bằng chứng.</p>
+<p>Khi đọc vòng lặp duyệt mảng, đối chiếu điều kiện <code>i &lt; n</code>, không phải <code>i &lt;= n</code>. Khi chỉ số đến từ đầu vào, kiểm miền trước khi truy cập. Có thể tìm hiểu <code>vector::at()</code> để biết cơ chế báo lỗi ngoài biên của nó, nhưng vẫn phải xử lý đầu vào và lỗi phù hợp.</p>
+<p>Bài học chung với JavaScript và SQL: <strong>biết hợp đồng ở ranh giới, không tin vào một lần chạy may mắn.</strong></p>
+<h2>4.9. Thực hành trước khi nộp: kiểm tra, sửa và đưa bằng chứng</h2>
+<h3>Bài tập: duyệt một kho ViSinhVien giả định</h3>
+<p>Bạn rà soát bản nộp của Minh và Lan bằng dữ liệu giả, không truy cập tài khoản thật, không cài gói, không tạo khóa. Các lỗi dưới đây là <strong>phiếu tình huống</strong>, không phải kết luận về kho ví dụ đang có trong gói.</p>
+<p>Làm lần lượt: đối chiếu đặc tả → đọc luồng nhập–kiểm tra–lưu–hiển thị → xem nguồn và phạm vi AI → phân loại → sửa → ghi bằng chứng. Nếu chỉ đọc mã, đánh dấu phần chạy thử là <strong>chưa thực hiện</strong>.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Vấn đề trong kho giả định</th>
+<th>Mức xử lý</th>
+<th>Cách sửa hoặc quyết định</th>
+<th>Bằng chứng cần thu</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Tổng mẫu khác 60000</td>
+<td>Chặn nộp</td>
+<td>Rà chuyển đổi số và tính tổng</td>
+<td>Đầu vào, tổng trước/sau sửa</td>
+</tr>
+<tr>
+<td>Nhận 0, số âm, số lẻ hoặc tiền vượt <code>1e9</code></td>
+<td>Chặn nộp</td>
+<td>Kiểm tra đúng hợp đồng <code>amount</code></td>
+<td>Ca bị từ chối; nhận 1 và <code>1e9</code></td>
+</tr>
+<tr>
+<td>Nhận khoản thứ 501 hoặc tổng rỗng khác 0</td>
+<td>Chặn nộp</td>
+<td>Sửa giới hạn và tổng ban đầu</td>
+<td>Kết quả thử 500/501 khoản và rỗng</td>
+</tr>
+<tr>
+<td>Hiện tên bằng <code>innerHTML</code></td>
+<td>Chặn nộp</td>
+<td>Dùng <code>cell.textContent</code> như trong <code>app.js</code></td>
+<td>Diff; <code>&lt;b&gt;Vở&lt;/b&gt;</code> hiện nguyên văn</td>
+</tr>
+<tr>
+<td>Có dữ liệu thật không cần thiết hoặc khóa thật</td>
+<td>Chặn nộp</td>
+<td>Dừng chia sẻ; xử lý theo 4.1; dùng dữ liệu giả</td>
+<td>Ghi nhận xử lý, không đính kèm bí mật</td>
+</tr>
+<tr>
+<td>Mã chưa rõ giấy phép</td>
+<td>Chặn nộp phần đó</td>
+<td>Loại/thay hoặc xác minh quyền</td>
+<td>Nguồn, giấy phép hoặc phần thay thế</td>
+</tr>
+<tr>
+<td>Chưa rõ phạm vi dùng AI</td>
+<td>Hỏi giảng viên</td>
+<td>Hỏi cụ thể; không mặc định được phép</td>
+<td>Phản hồi hoặc trạng thái chờ</td>
+</tr>
+<tr>
+<td>Khai báo sai mức hỗ trợ AI</td>
+<td>Chặn nộp</td>
+<td>Khai đúng và theo hướng dẫn môn</td>
+<td>Khai báo khớp đóng góp</td>
+</tr>
+<tr>
+<td>Gói AI đề xuất chưa xác minh</td>
+<td>Chặn đưa gói vào bản nộp</td>
+<td>Không cài; xác minh hoặc bỏ</td>
+<td>Registry, người duy trì, nguồn, giấy phép</td>
+</tr>
+<tr>
+<td>Màu nút hoặc khoảng cách chưa đẹp</td>
+<td>Cải thiện sau</td>
+<td>Ưu tiên yêu cầu cốt lõi</td>
+<td>Danh sách cải tiến</td>
+</tr>
+</tbody>
+</table></div>
+<p>Chặn nộp <strong>không</strong> có nghĩa hủy cả bài: có thể loại phần chưa rõ hoặc thu hẹp chức năng nếu vẫn đáp ứng yêu cầu. Hỏi giảng viên không có nghĩa được bỏ qua trong lúc chờ. Màu sắc có thể cải thiện sau; dữ liệu thật trong ảnh thì không.</p>
+<h3>Ghi bằng chứng gọn và đối chiếu được</h3>
+<p>Ghi: <strong>mục tiêu, đầu vào, mong đợi, quan sát, trạng thái, bản mã kiểm tra.</strong> Ví dụ:</p>
+<div class="code-wrap"><pre><code class="language-text">Mục tiêu: tổng ba khoản giả.
+Đầu vào: 35000, 7000, 18000.
+Mong đợi: 60000.
+Quan sát: [điền sau khi chạy].
+Trạng thái: chưa chạy / đạt / không đạt.
+</code></pre></div>
+<p>Ghi riêng fixture SQL; chỉ giữ vùng ảnh cần thiết.</p>
+<p>Hai bộ kiểm thử kèm cẩm nang <strong>không cộng gộp</strong>: <code>vi-du/nam-2-web/test_data.cjs</code> có <strong>34 ca</strong> cho phần dữ liệu Web (33 ca gốc cộng một ca hồi quy cho lỗi <code>category</code> dạng mảng), còn <code>vi_sinh_vien.exe --test</code> của bản C++ chỉ in <strong>9 ca</strong>. Số ca không đồng nghĩa đã chạy hay bảo đảm chất lượng. Đối chiếu bộ mình nhận được, ghi cách chạy, số ca thực sự thực thi và kết quả. Chưa có xác nhận thì ghi “chưa xác minh”.</p>
+<h3>Rubric bốn mục — tự đánh giá</h3>
+<p>Mỗi mục 0–2 điểm, tối đa 8. Đây là rubric luyện tập, <strong>không phải thang điểm chính thức của TLU</strong>; điểm tổng không bù được vấn đề chặn nộp.</p>
+<div class="table-scroll"><table>
+<thead>
+<tr>
+<th>Mục</th>
+<th>0 điểm</th>
+<th>1 điểm</th>
+<th>2 điểm</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1. Trung thực học thuật và nguồn</td>
+<td>Không rõ phạm vi, đóng góp hoặc nguồn</td>
+<td>Có khai báo nhưng còn mơ hồ</td>
+<td>Phạm vi rõ; hỗ trợ, nguồn và quyền được ghi đúng</td>
+</tr>
+<tr>
+<td>2. Dữ liệu và quyền truy cập</td>
+<td>Dùng dữ liệu thật không cần thiết hoặc quyền quá rộng</td>
+<td>Có giảm dữ liệu nhưng chưa rà đủ bản chia sẻ</td>
+<td>Dùng dữ liệu giả; rà ảnh/tệp; quyền phù hợp công việc</td>
+</tr>
+<tr>
+<td>3. Tính đúng và đọc mã an toàn</td>
+<td>Không đối chiếu hợp đồng; nhầm SQL là backend</td>
+<td>Biết sửa nhưng bằng chứng còn thiếu</td>
+<td>Đối chiếu các giới hạn, hiển thị văn bản và ranh giới ví dụ</td>
+</tr>
+<tr>
+<td>4. Kiểm chứng và xử lý vấn đề</td>
+<td>Tuyên bố đạt không có căn cứ</td>
+<td>Ghi được một phần kết quả và việc còn thiếu</td>
+<td>Bằng chứng truy lại được; ưu tiên đúng; báo cáo trung thực</td>
+</tr>
+</tbody>
+</table></div>
+<h3>Sáu tình huống tự trả lời</h3>
+<p><strong>1.</strong> Đề chỉ ghi “tham khảo tài liệu”. Minh khai báo đầy đủ việc AI sinh hàm. Đã chắc được phép chưa?</p>
+<p><strong>2.</strong> Lan bỏ tên trong chi tiêu thật nhưng giữ mã sinh viên, giờ, địa điểm; ảnh còn email. Đã là dữ liệu giả hoặc ẩn danh chưa?</p>
+<p><strong>3.</strong> SQL nối chuỗi bị lỗi với <code>Vở O'Reilly</code>. Có nên xóa dấu nháy khỏi tên để sửa?</p>
+<p><strong>4.</strong> <code>&lt;b&gt;Vở&lt;/b&gt;</code> hiện in đậm; vòng lặp C++ dùng <code>i &lt;= n</code> vẫn chạy xong. Đã đạt chưa?</p>
+<p><strong>5.</strong> “Kho công khai không có giấy phép thì được chép, còn GPL cấm thương mại” — đúng không?</p>
+<p><strong>6.</strong> Đã commit khóa thật, Minh xóa tệp, tạo khóa mới rồi định ép đẩy lịch sử. Thiếu gì?</p>
+<h3>Đáp án sáu tình huống</h3>
+<p><strong>1. Chưa.</strong> Khai báo không thay sự cho phép. Hỏi giảng viên về việc đã làm; không đổi lời khai thành “gợi ý nhẹ”; chưa mặc định phần đó hợp lệ.</p>
+<p><strong>2. Chưa.</strong> Các trường còn lại vẫn có thể nhận diện người. Tạo dữ liệu giả mới, loại ảnh chứa thông tin thật và kiểm tra bản gửi cuối.</p>
+<p><strong>3. Không.</strong> Dùng <code>execute('SELECT title,amount FROM expenses WHERE title = ?', (title,))</code>; dấu phẩy tạo tuple một phần tử. Kiểm fixture SQL riêng trong <code>:memory:</code>, không thêm backend cho Web.</p>
+<p><strong>4. Chưa.</strong> Tên phải hiện nguyên văn bằng <code>textContent</code> trong ô bảng. Vòng lặp chạm chỉ số <code>n</code> có thể vượt biên; hành vi không xác định không nhất thiết crash. Sửa theo hợp đồng, không dựa vào may mắn.</p>
+<p><strong>5. Cả hai đều sai.</strong> Công khai không tự cấp quyền. GPL không cấm thương mại; nghĩa vụ phụ thuộc giấy phép và cách chuyển giao, kết hợp mã.</p>
+<p><strong>6.</strong> Xác nhận khóa cũ đã bị vô hiệu; dừng chia sẻ, kiểm tra mức sử dụng trong phạm vi được phép, báo đầu mối và phối hợp giảm bản lưu. Không tự viết lại lịch sử.</p>
+<h3>Checklist một trang trước khi gửi</h3>
+<p>Đánh dấu <strong>sau khi làm</strong>, không đánh dấu theo dự định.</p>
+<p><strong>A. Chặn nộp nếu chưa xử lý</strong></p>
+<ul>
+<li>[ ] Không còn khóa thật hoặc dữ liệu cá nhân không cần thiết trong tệp, ảnh và nội dung sẽ chia sẻ; sự cố đã phát hiện được báo và xử lý phù hợp.</li>
+<li>[ ] Ba khoản GIẢ đúng 35000 + 7000 + 18000 = 60000; rỗng bằng 0; <code>amount</code> nguyên, dương, không quá <code>1e9</code>; tối đa 500 khoản.</li>
+<li>[ ] Tên khoản chi hiển thị như văn bản bằng <code>textContent</code> (<code>cell.textContent</code> trong <code>app.js</code>); đã ghi trạng thái kiểm chuỗi <code>&lt;b&gt;Vở&lt;/b&gt;</code>.</li>
+<li>[ ] Không đưa vào đoạn mã chưa rõ quyền hoặc phụ thuộc chưa kiểm chứng; giữ thông báo giấy phép cần thiết.</li>
+<li>[ ] Khai báo AI đúng việc đã làm; không nhận là tự viết phần được sinh nháp, không ghi đã test khi chưa test.</li>
+<li>[ ] Phần kiểm chứng bắt buộc theo yêu cầu bài đã có kết quả thật; lỗi trọng yếu chưa bị che bằng điểm rubric.</li>
+</ul>
+<p><strong>B. Hỏi giảng viên hoặc người phụ trách khi chưa rõ</strong></p>
+<ul>
+<li>[ ] Đã làm rõ phạm vi AI, hỗ trợ nhóm và hình thức khai báo; phần chưa rõ được ghi trạng thái chờ.</li>
+<li>[ ] Đã hỏi về nguồn/giấy phép hoặc dữ liệu thật nếu bài bắt buộc dùng mà nhóm chưa xác định được điều kiện.</li>
+<li>[ ] Việc ngoài quyền của nhóm — xử lý tài khoản tổ chức, lịch sử kho chung — được chuyển đúng đầu mối.</li>
+</ul>
+<p><strong>C. Cải thiện sau, không làm sai mô tả hiện tại</strong></p>
+<ul>
+<li>[ ] Ghi riêng việc chỉnh giao diện và mở rộng tính năng, không lẫn với yêu cầu an toàn cốt lõi.</li>
+<li>[ ] Nêu rõ Web không backend; SQL riêng; không quảng bá <code>localStorage</code> là nơi bảo vệ tài chính thực tế.</li>
+<li>[ ] Giữ bằng chứng tối thiểu đủ đối chiếu; tránh tạo thêm ảnh, log hoặc bản sao chứa dữ liệu thừa.</li>
+</ul>
+<h2>4.10. Ranh giới với sản phẩm thật</h2>
+<p>Kiểm tra trong trình duyệt giúp bài tập nhất quán; nó <strong>không phải</strong> hàng rào đủ cho một hệ thống tài chính. <code>localStorage</code> không cung cấp đăng nhập, phân quyền hay bảo vệ dữ liệu tài chính trước mọi người dùng cùng môi trường. ViSinhVien là sản phẩm học tập với dữ liệu giả, <strong>không được quảng bá là ứng dụng tài chính an toàn</strong>.</p>
+<p>Nếu làm dịch vụ thật có máy chủ, cần thiết kế xác thực, phân quyền, kiểm tra dữ liệu phía máy chủ và biện pháp vận hành phù hợp. Máy chủ không được tin điều kiện chỉ đặt ở trình duyệt. Đây là ranh giới kiến thức để nhận ra việc mới cần làm, <strong>không phải</strong> yêu cầu nhồi thêm backend vào bài hiện tại.</p>
+<h2>4.11. Tự giảng lại trong 6 phút</h2>
+<p>Phần này kế thừa speaker notes của nguồn; tham gia tự nguyện.</p>
+<ul>
+<li><strong>Phút 1.</strong> Kể cảnh Minh định nộp vì tổng đã đúng. Hỏi: “60000 chứng minh được gì, chưa chứng minh được gì?” Chốt: không backend, dữ liệu giả.</li>
+<li><strong>Phút 2.</strong> Đọc tin nhắn hỏi giảng viên. Nhấn mạnh: phạm vi tùy môn; khai báo không thay giấy phép và không thay sự cho phép.</li>
+<li><strong>Phút 3.</strong> Dùng hai chuỗi vô hại <code>Vở O'Reilly</code> và <code>&lt;b&gt;Vở&lt;/b&gt;</code> để giải thích tách dữ liệu khỏi cú pháp. Không biểu diễn tấn công, không ngụ ý SQL thuộc Web.</li>
+<li><strong>Phút 4.</strong> Phân loại một ảnh chứa email và một đoạn mã không giấy phép. Hỏi cách giảm dữ liệu, giảm quyền, giảm phụ thuộc.</li>
+<li><strong>Phút 5.</strong> Đi qua thứ tự xử lý khóa: dừng chia sẻ → thu hồi/xoay vòng → kiểm tra → báo → giảm bản lưu. Nhấn mạnh: xóa tệp không vô hiệu khóa.</li>
+<li><strong>Phút 6.</strong> Chọn hai dòng “chặn nộp” trong bảng, yêu cầu bằng chứng cụ thể. Kết thúc bằng: “Em biết gì, chưa xác minh gì, bước tiếp theo là gì?”</li>
+</ul>
+<h2>4.12. Tóm tắt và điểm kết năng lực</h2>
+<p><strong>Tóm tắt:</strong> Làm chủ ViSinhVien là hiểu đặc tả, biết quyền dùng nguồn và công cụ, kiểm soát dữ liệu đưa đi, kiểm chứng đường đi của đầu vào và khai báo trung thực. <code>textContent</code>, truy vấn tham số hóa và kiểm tra giới hạn là biện pháp đúng <strong>trong ngữ cảnh cụ thể</strong>, không phải bùa bảo đảm mọi hệ thống an toàn. Khi có sự cố, ưu tiên khống chế quyền đã lộ và báo đúng người, không chỉ xóa dấu vết nhìn thấy.</p>
+<p><strong>Năng lực mở khóa:</strong> nhận ra một sự cố dữ liệu/quyền/nguồn trong vòng ba phút; chọn hành động ưu tiên đúng; viết được khai báo hỗ trợ AI khớp với việc đã làm; giải thích được vì sao <code>textContent</code>, truy vấn tham số hóa và <code>i &lt; n</code> đúng trong ngữ cảnh của chúng.</p>
+<p><strong>Chuyển sang Final Boss:</strong> bạn đã có đủ bốn chặng để làm <a href="../../chapters/final-boss.md">Build it. Test it. Explain it.</a> — nơi hai lỗi chủ đích, diff, test, khai báo và bảo vệ miệng gặp nhau trong một bài nộp.</p>
+<h2>Nguồn đối chiếu của chương</h2>
+<p>Mốc đối chiếu nội dung nguồn: <strong>29/10/2026</strong>, kế thừa từ bản gốc. Các nguồn pháp luật dùng để định hướng và xác định văn bản áp dụng; tình huống thật cần người có thẩm quyền đánh giá. Nội dung các văn bản <strong>chưa được kiểm tra lại</strong> trong lượt biên tập này — hãy mở bản gốc trước khi trích dẫn.</p>
+<ol>
+<li><a href="https://congbaocdn.chinhphu.vn/CongBaoCP/VanBan/2025/6/45578/57730-1-2025971-97291-2025-qh15.pdf">Luật Bảo vệ dữ liệu cá nhân số 91/2025/QH15</a>: khái niệm, khử nhận dạng, nguyên tắc, sự đồng ý, ngoại lệ và xử lý dữ liệu trong hoạt động AI.</li>
+<li><a href="https://congbaocdn.chinhphu.vn/180507251028987904/2026/1/17/356signed-1768638052103952849513.pdf">Nghị định 356/2025/NĐ-CP</a>: văn bản triển khai tại mốc đối chiếu; Điều 42 về hiệu lực và việc Nghị định 13/2023/NĐ-CP hết hiệu lực.</li>
+<li><a href="https://congbaocdn.chinhphu.vn/180507251028987904/2026/4/10/469197-1775632354_v1_1775783230_signed.pdf">Văn bản hợp nhất 67/VBHN-VPQH ngày 23/03/2026 về Luật Sở hữu trí tuệ</a>: bảo hộ chương trình máy tính và giới hạn của ngoại lệ liên quan.</li>
+<li><a href="https://cheatsheetseries.owasp.org/cheatsheets/SQL_Injection_Prevention_Cheat_Sheet.html">OWASP — SQL Injection Prevention Cheat Sheet</a>: truy vấn tham số hóa và danh sách cho phép đối với phần cấu trúc.</li>
+<li><a href="https://cheatsheetseries.owasp.org/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.html">OWASP — Cross Site Scripting Prevention Cheat Sheet</a>: nơi nhận dữ liệu an toàn như <code>textContent</code> và bảo vệ theo ngữ cảnh.</li>
+<li><a href="https://cheatsheetseries.owasp.org/cheatsheets/Software_Supply_Chain_Security_Cheat_Sheet.html">OWASP — Software Supply Chain Security Cheat Sheet</a>: đánh giá phụ thuộc và rủi ro chuỗi cung ứng phần mềm.</li>
+<li><a href="https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/removing-sensitive-data-from-a-repository">GitHub Docs — Removing sensitive data from a repository</a>: thu hồi/xoay vòng bí mật trước, giới hạn của việc xóa dữ liệu khỏi lịch sử và các bản sao.</li>
+<li><a href="https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/licensing-a-repository">GitHub Docs — Licensing a repository</a>: ý nghĩa của giấy phép và giới hạn quyền khi kho chỉ được công khai.</li>
+</ol>
+<p><strong>Nguồn kế thừa:</strong> mục 4.1–4.7 của bản gốc, đối chiếu <a href="../../source/Cam-nang-AI-Sinh-vien.original.md">bản bảo toàn</a>, <a href="../../editorial/01_SOURCE_AUDIT.md">Source Audit</a> và <a href="../../editorial/02_EDITORIAL_BLUEPRINT.md">Blueprint</a>. Bảy hồ sơ và phòng khám được tái cấu trúc; <strong>không thêm sự kiện, sản phẩm hay mức giá mới</strong>. Các nhận định pháp lý giữ nguyên mức thận trọng của bản gốc và được đánh dấu chưa kiểm tra lại.</p>
+</main></body></html>

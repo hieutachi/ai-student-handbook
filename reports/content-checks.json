@@ -1,0 +1,363 @@
+{
+  "checks": [
+    {
+      "name": "Local source links outline.md",
+      "ok": true,
+      "evidence": []
+    },
+    {
+      "name": "UTF-8 outline.md",
+      "ok": true,
+      "evidence": "No Unicode replacement character"
+    },
+    {
+      "name": "No raw HTML dependency outline.md",
+      "ok": true,
+      "evidence": "Plain Markdown with fenced code"
+    },
+    {
+      "name": "Local source links introduction.md",
+      "ok": true,
+      "evidence": []
+    },
+    {
+      "name": "UTF-8 introduction.md",
+      "ok": true,
+      "evidence": "No Unicode replacement character"
+    },
+    {
+      "name": "No raw HTML dependency introduction.md",
+      "ok": true,
+      "evidence": "Plain Markdown with fenced code"
+    },
+    {
+      "name": "Local source links chapter-01.md",
+      "ok": true,
+      "evidence": []
+    },
+    {
+      "name": "UTF-8 chapter-01.md",
+      "ok": true,
+      "evidence": "No Unicode replacement character"
+    },
+    {
+      "name": "No raw HTML dependency chapter-01.md",
+      "ok": true,
+      "evidence": "Plain Markdown with fenced code"
+    },
+    {
+      "name": "Local source links chapter-02.md",
+      "ok": true,
+      "evidence": []
+    },
+    {
+      "name": "UTF-8 chapter-02.md",
+      "ok": true,
+      "evidence": "No Unicode replacement character"
+    },
+    {
+      "name": "No raw HTML dependency chapter-02.md",
+      "ok": true,
+      "evidence": "Plain Markdown with fenced code"
+    },
+    {
+      "name": "Local source links chapter-03.md",
+      "ok": true,
+      "evidence": []
+    },
+    {
+      "name": "UTF-8 chapter-03.md",
+      "ok": true,
+      "evidence": "No Unicode replacement character"
+    },
+    {
+      "name": "No raw HTML dependency chapter-03.md",
+      "ok": true,
+      "evidence": "Plain Markdown with fenced code"
+    },
+    {
+      "name": "Local source links chapter-04.md",
+      "ok": true,
+      "evidence": []
+    },
+    {
+      "name": "UTF-8 chapter-04.md",
+      "ok": true,
+      "evidence": "No Unicode replacement character"
+    },
+    {
+      "name": "No raw HTML dependency chapter-04.md",
+      "ok": true,
+      "evidence": "Plain Markdown with fenced code"
+    },
+    {
+      "name": "Local source links prompt-library.md",
+      "ok": true,
+      "evidence": []
+    },
+    {
+      "name": "UTF-8 prompt-library.md",
+      "ok": true,
+      "evidence": "No Unicode replacement character"
+    },
+    {
+      "name": "No raw HTML dependency prompt-library.md",
+      "ok": true,
+      "evidence": "Plain Markdown with fenced code"
+    },
+    {
+      "name": "Local source links glossary.md",
+      "ok": true,
+      "evidence": []
+    },
+    {
+      "name": "UTF-8 glossary.md",
+      "ok": true,
+      "evidence": "No Unicode replacement character"
+    },
+    {
+      "name": "No raw HTML dependency glossary.md",
+      "ok": true,
+      "evidence": "Plain Markdown with fenced code"
+    },
+    {
+      "name": "Local source links final-boss.md",
+      "ok": true,
+      "evidence": []
+    },
+    {
+      "name": "UTF-8 final-boss.md",
+      "ok": true,
+      "evidence": "No Unicode replacement character"
+    },
+    {
+      "name": "No raw HTML dependency final-boss.md",
+      "ok": true,
+      "evidence": "Plain Markdown with fenced code"
+    },
+    {
+      "name": "Local source links learning-agreement.md",
+      "ok": true,
+      "evidence": []
+    },
+    {
+      "name": "UTF-8 learning-agreement.md",
+      "ok": true,
+      "evidence": "No Unicode replacement character"
+    },
+    {
+      "name": "No raw HTML dependency learning-agreement.md",
+      "ok": true,
+      "evidence": "Plain Markdown with fenced code"
+    },
+    {
+      "name": "Ch1 complete numbered structure",
+      "ok": true,
+      "evidence": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6"
+      ]
+    },
+    {
+      "name": "Ch1 depth floor (not quality score)",
+      "ok": true,
+      "evidence": {
+        "whitespace_words": 11129,
+        "minimum": 8000
+      }
+    },
+    {
+      "name": "Ch2 complete numbered structure",
+      "ok": true,
+      "evidence": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7"
+      ]
+    },
+    {
+      "name": "Ch2 depth floor (not quality score)",
+      "ok": true,
+      "evidence": {
+        "whitespace_words": 12096,
+        "minimum": 8500
+      }
+    },
+    {
+      "name": "Ch3 complete numbered structure",
+      "ok": true,
+      "evidence": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7"
+      ]
+    },
+    {
+      "name": "Ch3 depth floor (not quality score)",
+      "ok": true,
+      "evidence": {
+        "whitespace_words": 10271,
+        "minimum": 7500
+      }
+    },
+    {
+      "name": "Ch4 complete numbered structure",
+      "ok": true,
+      "evidence": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12"
+      ]
+    },
+    {
+      "name": "Ch4 depth floor (not quality score)",
+      "ok": true,
+      "evidence": {
+        "whitespace_words": 10843,
+        "minimum": 7500
+      }
+    },
+    {
+      "name": "Topic presence chapter-01.md",
+      "ok": true,
+      "evidence": {
+        "missing": [],
+        "note": "Presence only; human review checks meaning."
+      }
+    },
+    {
+      "name": "Topic presence chapter-02.md",
+      "ok": true,
+      "evidence": {
+        "missing": [],
+        "note": "Presence only; human review checks meaning."
+      }
+    },
+    {
+      "name": "Topic presence chapter-03.md",
+      "ok": true,
+      "evidence": {
+        "missing": [],
+        "note": "Presence only; human review checks meaning."
+      }
+    },
+    {
+      "name": "Topic presence chapter-04.md",
+      "ok": true,
+      "evidence": {
+        "missing": [],
+        "note": "Presence only; human review checks meaning."
+      }
+    },
+    {
+      "name": "Topic presence prompt-library.md",
+      "ok": true,
+      "evidence": {
+        "missing": [],
+        "note": "Presence only; human review checks meaning."
+      }
+    },
+    {
+      "name": "Topic presence final-boss.md",
+      "ok": true,
+      "evidence": {
+        "missing": [],
+        "note": "Presence only; human review checks meaning."
+      }
+    },
+    {
+      "name": "Topic presence outline.md",
+      "ok": true,
+      "evidence": {
+        "missing": [],
+        "note": "Presence only; human review checks meaning."
+      }
+    },
+    {
+      "name": "Original source unchanged",
+      "ok": true,
+      "evidence": {
+        "line_endings": "crlf",
+        "sha256": "704d10e9603d0b494196795b9b45ae701dfc1caadeab54bcc3d76c4c7ae53772",
+        "note": "Content snapshot; CRLF and LF forms of the same text are both accepted"
+      }
+    },
+    {
+      "name": "All sixteen illustrations",
+      "ok": true,
+      "evidence": [
+        "cover",
+        "chapter-01",
+        "chapter-02",
+        "chapter-03",
+        "chapter-04",
+        "ecosystem",
+        "roles",
+        "token-context",
+        "workspace",
+        "workflow",
+        "debugging",
+        "active-learning",
+        "ai-trap",
+        "security",
+        "final-boss",
+        "skill-map"
+      ]
+    },
+    {
+      "name": "All illustrations used in book",
+      "ok": true,
+      "evidence": [
+        "active-learning",
+        "ai-trap",
+        "chapter-01",
+        "chapter-02",
+        "chapter-03",
+        "chapter-04",
+        "cover",
+        "debugging",
+        "ecosystem",
+        "final-boss",
+        "roles",
+        "security",
+        "skill-map",
+        "token-context",
+        "workflow",
+        "workspace"
+      ]
+    },
+    {
+      "name": "At least eleven copyable prompt cards",
+      "ok": true,
+      "evidence": "P01–P11"
+    },
+    {
+      "name": "No unmarked real secret literals",
+      "ok": true,
+      "evidence": "Pattern scan only, not proof of all possible personal data"
+    }
+  ],
+  "all_passed": true,
+  "limitation": "Mechanical coverage and structural checks, not factual proof or pedagogical certification."
+}
