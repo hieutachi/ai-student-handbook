@@ -1,7 +1,7 @@
 {
   "title": "HỌC CNTT CÙNG AI",
   "started": "2026-10-29T23:24:54.719404+00:00",
-  "updated": "2026-10-30T11:17:21.945930+00:00",
+  "updated": "2026-10-30T11:29:32.726137+00:00",
   "tasks": [
     {
       "id": "audit",
@@ -348,6 +348,14 @@
     {
       "time": "2026-10-30T11:17:21.945930+00:00",
       "message": "Phát hành lại cùng dự án (action mới) sau khi báo cáo chất lượng thêm mục 10: operation succeeded + committed, access public. Kiểm lại trên URL thật: trang chủ 200 có #ban-do, demo và SVG 200, bản report trên live đã có mục 10."
+    },
+    {
+      "time": "2026-10-30T11:28:36.781904+00:00",
+      "message": "Git: repo github.com/hieutachi/ai-student-handbook (public, nhanh main, Issues bat), commit 5787325 voi 112 tep. .gitignore loai site/ va *.qoder.site; .gitattributes ep LF de phep kiem hash nguon khong bao do oan khi clone tren Linux/macOS."
+    },
+    {
+      "time": "2026-10-30T11:29:32.726137+00:00",
+      "message": "Publish lai ban online (action 2df809bc) de bao cao tren live co muc 11 ve Git; published + committed. Site/ khong vao repo nen khong tao drift commit."
     }
   ],
   "gallery": [
