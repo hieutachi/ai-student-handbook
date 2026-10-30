@@ -19,7 +19,7 @@ Hai điều cần giữ khi góp ý: **không đưa dữ liệu thật** (điể
 
 1. Giải nén toàn bộ gói hoặc `git clone`, giữ nguyên cấu trúc thư mục.
 2. Mở [website/index.html](website/index.html) bằng trình duyệt hiện đại. Không cần server, tài khoản AI hoặc Internet để đọc và dùng mô phỏng.
-3. Chọn nhánh Minh (C++) hoặc Lan (Web). Dùng mục lục, ô tìm không dấu, cỡ chữ, đáp án gập và thư viện prompt.
+3. Chọn nhánh Minh (C++) hoặc Lan (Web); mạch sách đi theo năm bước Hiểu, Dùng, Giữ vững, Có trách nhiệm, Chọn. Dùng mục lục, ô tìm không dấu, cỡ chữ, đáp án gập và thư viện prompt.
 4. Trước khi sửa ví dụ, tạo bản sao dưới `bai-lam/` theo hướng dẫn chương 2. Không dùng chi tiêu thật, API key, mật khẩu hay dữ liệu cá nhân.
 5. Mở [dashboard/index.html](dashboard/index.html) để xem hồ sơ sản xuất và kết quả. Dashboard tự đọc checkpoint cục bộ; nó không chạy Agent khi bạn mở gói.
 
@@ -42,7 +42,7 @@ Hai điều cần giữ khi góp ý: **không đưa dữ liệu thật** (điể
 |---|---|
 | `source/` | Bản Markdown gốc giữ nguyên, phục vụ đối chiếu |
 | `editorial/` | Kiểm kê đầy đủ, bản đồ tái cấu trúc, hệ thiết kế |
-| `chapters/` | Bốn chương mới, mở đầu và bốn phần phụ trợ |
+| `chapters/` | Năm chương, dự án tổng kết, mở đầu và các phần phụ trợ |
 | `assets/` | Hình SVG tự tạo và manifest mô tả mục đích |
 | `website/` | Bản đọc, CSS/JS nguồn; HTML nhúng CSS/JS khi xuất |
 | `dashboard/` | Tiến độ sản xuất, nhật ký checkpoint và xem trước |

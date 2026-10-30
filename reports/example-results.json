@@ -1,9 +1,9 @@
 {
-  "time": "2026-10-30T11:24:01.037893+00:00",
+  "time": "2026-10-30T12:42:45.676203+00:00",
   "all_expected_checks_passed": true,
   "checks": [
     {
-      "time": "2026-10-30T11:23:55.115819+00:00",
+      "time": "2026-10-30T12:42:43.328849+00:00",
       "label": "Node version",
       "command": [
         "node",
@@ -17,7 +17,7 @@
       "ok": true
     },
     {
-      "time": "2026-10-30T11:23:55.123642+00:00",
+      "time": "2026-10-30T12:42:43.336824+00:00",
       "label": "Python version",
       "command": [
         "C:\\Python314\\python.exe",
@@ -31,7 +31,7 @@
       "ok": true
     },
     {
-      "time": "2026-10-30T11:23:55.158340+00:00",
+      "time": "2026-10-30T12:42:43.369795+00:00",
       "label": "JavaScript data regression 34",
       "command": [
         "node",
@@ -45,7 +45,7 @@
       "ok": true
     },
     {
-      "time": "2026-10-30T11:23:55.189392+00:00",
+      "time": "2026-10-30T12:42:43.399491+00:00",
       "label": "SQLite standalone",
       "command": [
         "C:\\Python314\\python.exe",
@@ -59,7 +59,7 @@
       "ok": true
     },
     {
-      "time": "2026-10-30T11:23:55.224229+00:00",
+      "time": "2026-10-30T12:42:43.434861+00:00",
       "label": "Silver original intentional failures",
       "command": [
         "node",
@@ -73,11 +73,11 @@
       "ok": true
     },
     {
-      "time": "2026-10-30T11:23:55.263079+00:00",
+      "time": "2026-10-30T12:42:43.471379+00:00",
       "label": "Silver patched temporary copy",
       "command": [
         "node",
-        "D:\\0. TLU\\Chủ nhiệm - cố vấn học tập\\MasterMeeting\\AI-Student-Handbook\\reports\\verification-7h0tl3wi\\test_silver.cjs"
+        "D:\\0. TLU\\Chủ nhiệm - cố vấn học tập\\MasterMeeting\\AI-Student-Handbook\\reports\\verification-edlt02un\\test_silver.cjs"
       ],
       "exit_code": 0,
       "expected_exit": 0,
@@ -87,7 +87,7 @@
       "ok": true
     },
     {
-      "time": "2026-10-30T11:23:58.728998+00:00",
+      "time": "2026-10-30T12:42:43.534529+00:00",
       "label": "Compiler version",
       "command": [
         "wsl.exe",
@@ -105,7 +105,7 @@
       "ok": true
     },
     {
-      "time": "2026-10-30T11:23:59.314565+00:00",
+      "time": "2026-10-30T12:42:44.009973+00:00",
       "label": "C++ build vi_sinh_vien.cpp",
       "command": [
         "wsl.exe",
@@ -118,7 +118,7 @@
         "-Wextra",
         "/mnt/d/0. TLU/Chủ nhiệm - cố vấn học tập/MasterMeeting/AI-Student-Handbook/vi-du/nam-1-cpp/vi_sinh_vien.cpp",
         "-o",
-        "/mnt/d/0. TLU/Chủ nhiệm - cố vấn học tập/MasterMeeting/AI-Student-Handbook/reports/verification-7h0tl3wi/correct.exe"
+        "/mnt/d/0. TLU/Chủ nhiệm - cố vấn học tập/MasterMeeting/AI-Student-Handbook/reports/verification-edlt02un/correct.exe"
       ],
       "exit_code": 0,
       "expected_exit": 0,
@@ -128,14 +128,14 @@
       "ok": true
     },
     {
-      "time": "2026-10-30T11:23:59.385062+00:00",
+      "time": "2026-10-30T12:42:44.074913+00:00",
       "label": "C++ run vi_sinh_vien.cpp --test",
       "command": [
         "wsl.exe",
         "-d",
         "Ubuntu-22.04",
         "--",
-        "/mnt/d/0. TLU/Chủ nhiệm - cố vấn học tập/MasterMeeting/AI-Student-Handbook/reports/verification-7h0tl3wi/correct.exe",
+        "/mnt/d/0. TLU/Chủ nhiệm - cố vấn học tập/MasterMeeting/AI-Student-Handbook/reports/verification-edlt02un/correct.exe",
         "--test"
       ],
       "exit_code": 0,
@@ -146,14 +146,14 @@
       "ok": true
     },
     {
-      "time": "2026-10-30T11:23:59.450872+00:00",
+      "time": "2026-10-30T12:42:44.138436+00:00",
       "label": "C++ correct sample",
       "command": [
         "wsl.exe",
         "-d",
         "Ubuntu-22.04",
         "--",
-        "/mnt/d/0. TLU/Chủ nhiệm - cố vấn học tập/MasterMeeting/AI-Student-Handbook/reports/verification-7h0tl3wi/correct.exe"
+        "/mnt/d/0. TLU/Chủ nhiệm - cố vấn học tập/MasterMeeting/AI-Student-Handbook/reports/verification-edlt02un/correct.exe"
       ],
       "exit_code": 0,
       "expected_exit": 0,
@@ -163,7 +163,7 @@
       "ok": true
     },
     {
-      "time": "2026-10-30T11:23:59.909939+00:00",
+      "time": "2026-10-30T12:42:44.582718+00:00",
       "label": "C++ build loi-bo-sot.cpp",
       "command": [
         "wsl.exe",
@@ -176,7 +176,7 @@
         "-Wextra",
         "/mnt/d/0. TLU/Chủ nhiệm - cố vấn học tập/MasterMeeting/AI-Student-Handbook/vi-du/nam-1-cpp/loi-bo-sot.cpp",
         "-o",
-        "/mnt/d/0. TLU/Chủ nhiệm - cố vấn học tập/MasterMeeting/AI-Student-Handbook/reports/verification-7h0tl3wi/offbyone.exe"
+        "/mnt/d/0. TLU/Chủ nhiệm - cố vấn học tập/MasterMeeting/AI-Student-Handbook/reports/verification-edlt02un/offbyone.exe"
       ],
       "exit_code": 0,
       "expected_exit": 0,
@@ -186,14 +186,14 @@
       "ok": true
     },
     {
-      "time": "2026-10-30T11:23:59.976160+00:00",
+      "time": "2026-10-30T12:42:44.649070+00:00",
       "label": "C++ run loi-bo-sot.cpp",
       "command": [
         "wsl.exe",
         "-d",
         "Ubuntu-22.04",
         "--",
-        "/mnt/d/0. TLU/Chủ nhiệm - cố vấn học tập/MasterMeeting/AI-Student-Handbook/reports/verification-7h0tl3wi/offbyone.exe"
+        "/mnt/d/0. TLU/Chủ nhiệm - cố vấn học tập/MasterMeeting/AI-Student-Handbook/reports/verification-edlt02un/offbyone.exe"
       ],
       "exit_code": 0,
       "expected_exit": 0,
@@ -203,7 +203,7 @@
       "ok": true
     },
     {
-      "time": "2026-10-30T11:24:00.459261+00:00",
+      "time": "2026-10-30T12:42:45.102032+00:00",
       "label": "C++ build bronze.cpp",
       "command": [
         "wsl.exe",
@@ -216,7 +216,7 @@
         "-Wextra",
         "/mnt/d/0. TLU/Chủ nhiệm - cố vấn học tập/MasterMeeting/AI-Student-Handbook/vi-du/final-boss/bronze.cpp",
         "-o",
-        "/mnt/d/0. TLU/Chủ nhiệm - cố vấn học tập/MasterMeeting/AI-Student-Handbook/reports/verification-7h0tl3wi/bronze.exe"
+        "/mnt/d/0. TLU/Chủ nhiệm - cố vấn học tập/MasterMeeting/AI-Student-Handbook/reports/verification-edlt02un/bronze.exe"
       ],
       "exit_code": 0,
       "expected_exit": 0,
@@ -226,14 +226,14 @@
       "ok": true
     },
     {
-      "time": "2026-10-30T11:24:00.528259+00:00",
+      "time": "2026-10-30T12:42:45.165336+00:00",
       "label": "C++ run bronze.cpp",
       "command": [
         "wsl.exe",
         "-d",
         "Ubuntu-22.04",
         "--",
-        "/mnt/d/0. TLU/Chủ nhiệm - cố vấn học tập/MasterMeeting/AI-Student-Handbook/reports/verification-7h0tl3wi/bronze.exe"
+        "/mnt/d/0. TLU/Chủ nhiệm - cố vấn học tập/MasterMeeting/AI-Student-Handbook/reports/verification-edlt02un/bronze.exe"
       ],
       "exit_code": 1,
       "expected_exit": 1,
@@ -243,7 +243,7 @@
       "ok": true
     },
     {
-      "time": "2026-10-30T11:24:00.970433+00:00",
+      "time": "2026-10-30T12:42:45.610078+00:00",
       "label": "C++ build bronze-fixed.cpp",
       "command": [
         "wsl.exe",
@@ -254,9 +254,9 @@
         "-std=c++17",
         "-Wall",
         "-Wextra",
-        "/mnt/d/0. TLU/Chủ nhiệm - cố vấn học tập/MasterMeeting/AI-Student-Handbook/reports/verification-7h0tl3wi/bronze-fixed.cpp",
+        "/mnt/d/0. TLU/Chủ nhiệm - cố vấn học tập/MasterMeeting/AI-Student-Handbook/reports/verification-edlt02un/bronze-fixed.cpp",
         "-o",
-        "/mnt/d/0. TLU/Chủ nhiệm - cố vấn học tập/MasterMeeting/AI-Student-Handbook/reports/verification-7h0tl3wi/bronze-fixed.exe"
+        "/mnt/d/0. TLU/Chủ nhiệm - cố vấn học tập/MasterMeeting/AI-Student-Handbook/reports/verification-edlt02un/bronze-fixed.exe"
       ],
       "exit_code": 0,
       "expected_exit": 0,
@@ -266,14 +266,14 @@
       "ok": true
     },
     {
-      "time": "2026-10-30T11:24:01.037068+00:00",
+      "time": "2026-10-30T12:42:45.675259+00:00",
       "label": "C++ run bronze-fixed.cpp",
       "command": [
         "wsl.exe",
         "-d",
         "Ubuntu-22.04",
         "--",
-        "/mnt/d/0. TLU/Chủ nhiệm - cố vấn học tập/MasterMeeting/AI-Student-Handbook/reports/verification-7h0tl3wi/bronze-fixed.exe"
+        "/mnt/d/0. TLU/Chủ nhiệm - cố vấn học tập/MasterMeeting/AI-Student-Handbook/reports/verification-edlt02un/bronze-fixed.exe"
       ],
       "exit_code": 0,
       "expected_exit": 0,

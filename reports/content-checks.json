@@ -91,6 +91,21 @@
       "evidence": "Plain Markdown with fenced code"
     },
     {
+      "name": "Local source links chapter-05.md",
+      "ok": true,
+      "evidence": []
+    },
+    {
+      "name": "UTF-8 chapter-05.md",
+      "ok": true,
+      "evidence": "No Unicode replacement character"
+    },
+    {
+      "name": "No raw HTML dependency chapter-05.md",
+      "ok": true,
+      "evidence": "Plain Markdown with fenced code"
+    },
+    {
       "name": "Local source links prompt-library.md",
       "ok": true,
       "evidence": []
@@ -156,18 +171,15 @@
       "evidence": [
         "1",
         "2",
-        "3",
-        "4",
-        "5",
-        "6"
+        "3"
       ]
     },
     {
       "name": "Ch1 depth floor (not quality score)",
       "ok": true,
       "evidence": {
-        "whitespace_words": 11129,
-        "minimum": 8000
+        "whitespace_words": 9143,
+        "minimum": 6000
       }
     },
     {
@@ -187,7 +199,7 @@
       "name": "Ch2 depth floor (not quality score)",
       "ok": true,
       "evidence": {
-        "whitespace_words": 12096,
+        "whitespace_words": 16057,
         "minimum": 8500
       }
     },
@@ -208,7 +220,7 @@
       "name": "Ch3 depth floor (not quality score)",
       "ok": true,
       "evidence": {
-        "whitespace_words": 10271,
+        "whitespace_words": 13281,
         "minimum": 7500
       }
     },
@@ -234,12 +246,38 @@
       "name": "Ch4 depth floor (not quality score)",
       "ok": true,
       "evidence": {
-        "whitespace_words": 10843,
+        "whitespace_words": 13252,
         "minimum": 7500
       }
     },
     {
+      "name": "Ch5 complete numbered structure",
+      "ok": true,
+      "evidence": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ]
+    },
+    {
+      "name": "Ch5 depth floor (not quality score)",
+      "ok": true,
+      "evidence": {
+        "whitespace_words": 9137,
+        "minimum": 6000
+      }
+    },
+    {
       "name": "Topic presence chapter-01.md",
+      "ok": true,
+      "evidence": {
+        "missing": [],
+        "note": "Presence only; human review checks meaning."
+      }
+    },
+    {
+      "name": "Topic presence chapter-05.md",
       "ok": true,
       "evidence": {
         "missing": [],
@@ -304,7 +342,7 @@
       }
     },
     {
-      "name": "All sixteen illustrations",
+      "name": "All seventeen illustrations",
       "ok": true,
       "evidence": [
         "cover",
@@ -312,6 +350,7 @@
         "chapter-02",
         "chapter-03",
         "chapter-04",
+        "chapter-05",
         "ecosystem",
         "roles",
         "token-context",
@@ -335,6 +374,7 @@
         "chapter-02",
         "chapter-03",
         "chapter-04",
+        "chapter-05",
         "cover",
         "debugging",
         "ecosystem",

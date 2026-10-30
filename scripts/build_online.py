@@ -97,8 +97,8 @@ def main():
         raise SystemExit(f'Liên kết hỏng trong bản online: {sorted(missing)}')
 
     svg = len(list((SITE / 'assets').glob('*.svg')))
-    if svg != 16:
-        raise SystemExit(f'Sau khi sao chỉ còn {svg}/16 hình SVG')
+    if svg != 17:
+        raise SystemExit(f'Sau khi sao chỉ còn {svg}/17 hình SVG')
 
     total = sum(f.stat().st_size for f in SITE.rglob('*') if f.is_file())
     summary = {

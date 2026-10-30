@@ -1,21 +1,37 @@
-# CHƯƠNG 1 · BƯỚC VÀO THẾ GIỚI AI
+# CHƯƠNG 1 · AI TRONG HỌC TẬP: VAI TRÒ, CÁCH HOẠT ĐỘNG VÀ GIỚI HẠN
 
-Minh mở ba giao diện AI, dán cùng đoạn C++ và hỏi cùng một câu. Nơi thứ nhất hỏi ngược lại. Nơi thứ hai đưa cách sửa rất chắc chắn. Nơi thứ ba sửa khác, nhắc phải kiểm thử. Minh nhìn ba cửa sổ: “Nếu đều là AI, tại sao chúng không nói giống nhau? Mình nên tin cái nào?”.
+Đây là chương mở đầu của cuốn sách. Chương trả lời ba câu hỏi nền tảng trước khi bắt đầu dùng trợ lý AI: AI giúp được gì và không giúp được gì trong việc học, đâu là ranh giới giữa dùng AI để học và dùng AI để né học, và phía sau một câu trả lời của AI thực sự có những thành phần nào.
 
-**Bổ sung biên tập — tình huống mở và ba thẻ trả lời hoàn toàn HƯ CẤU**, không đại diện sản phẩm, không phải hội thoại hay benchmark thực. Minh năm nhất học C++; Lan năm hai học OOP/DSA/CSDL/Web. Hai nhân vật hư cấu không đại diện khảo sát TLU.
+Cả cuốn sách đi theo một mạch năm bước: **Hiểu → Dùng → Giữ vững → Có trách nhiệm → Chọn**. Chương 1 là bước *Hiểu*: nắm vai trò, cách hoạt động và giới hạn của AI. Chương 2 là bước *Dùng*: điều khiển quá trình làm việc với AI bằng bằng chứng. Chương 3 là bước *Giữ vững*: tận dụng AI mà vẫn tự học được. Chương 4 là bước *Có trách nhiệm*: giữ ranh giới về dữ liệu, bảo mật, bản quyền và liêm chính. Chương 5 là bước *Chọn*: chọn công cụ, model và gói dịch vụ phù hợp, kể cả chi phí. Việc chọn model và tính chi phí được đặt ở cuối có chủ đích, vì chỉ khi đã hiểu vai trò và ranh giới, người học mới chọn công cụ có cơ sở thay vì chọn theo danh tiếng hay giá.
 
-Hai bạn làm **ViSinhVien**, bài tập chi tiêu bằng dữ liệu GIẢ. Minh học mảng và vòng lặp; Lan làm Web với HTML, JavaScript, `localStorage`. Không có backend, đăng nhập, ngân hàng hay tài chính thật. Trợ lý AI giúp học; ViSinhVien không tích hợp AI.
+Toàn bộ chương có thể hoàn thành bằng sách và giấy: không cần đăng ký, cài đặt, tạo key, gọi API hoặc trả tiền. Nhân vật, hội thoại và các thẻ trả lời trong chương là *tình huống hư cấu*; chúng không đại diện cho sản phẩm cụ thể, không phải hội thoại hay benchmark thực, và không đại diện cho khảo sát sinh viên của Trường.
 
-Ba khoản GIẢ trên giấy của Minh là:
+## Mục tiêu học tập
 
-| Khoản chi GIẢ | Số tiền nguyên VND |
+Sau chương này, người học có thể:
+
+1. Nêu ba vai trò hợp lý của AI trong học tập, điều AI làm tốt và điều AI làm kém.
+2. Phân biệt dùng AI để học với lạm dụng AI để né học, dựa trên các dấu hiệu quan sát được; vận dụng nguyên tắc "AI hỗ trợ, người học quyết định".
+3. Phân biệt các vai trò model, provider, application (ứng dụng), producer và user trong một lượt dùng AI; ghi "chưa xác định" khi thiếu bằng chứng thay vì suy đoán.
+4. Viết một prompt đủ context, gồm mục tiêu, phần mã liên quan, hợp đồng dữ liệu, kết quả mong đợi và cách kiểm tra; giải thích token và context window ở mức khái niệm.
+5. Phân biệt suy luận, thực thi và tra cứu nguồn; nhận diện hiện tượng hallucination và kiểm tra trích dẫn.
+
+Sản phẩm của chương gồm ba thành phần: một bảng tự đánh giá cách dùng AI (đúng, lạm dụng hoặc cần hỏi giảng viên), một bản nhận diện công cụ có ghi rõ phần chưa biết và một prompt đủ context.
+
+## Tình huống mở đầu
+
+Tình huống minh họa xuyên suốt cuốn sách gồm hai sinh viên: Minh, năm nhất, đang học C++; Lan, năm hai, đã học lập trình hướng đối tượng (OOP), cấu trúc dữ liệu và giải thuật (DSA), cơ sở dữ liệu (CSDL) và lập trình Web. Hai người cùng thực hiện **ViSinhVien**, một bài tập quản lý chi tiêu chỉ dùng dữ liệu giả. Minh học mảng và vòng lặp trên phiên bản C++; Lan làm phiên bản Web bằng HTML, JavaScript và `localStorage`. Bài tập không có backend, đăng nhập, kết nối ngân hàng hay dữ liệu tài chính thật. Trợ lý AI chỉ được dùng để hỗ trợ việc học; bản thân ViSinhVien không tích hợp AI.
+
+Minh ghi ba khoản chi giả trên giấy như sau:
+
+| Khoản chi giả | Số tiền nguyên VND |
 | --- | ---: |
 | Cơm trưa | 35000 |
 | Xe buýt | 7000 |
 | Vở ghi | 18000 |
 | Tổng cần có | 60000 |
 
-Đây là **snippet có lỗi chủ đích** để đọc và đặt câu hỏi, không phải yêu cầu làm hỏng demo đúng. Các số tiền trong snippet đã được giả định hợp lệ; chương trình chưa làm nhiệm vụ nhập và xác thực dữ liệu.
+Đoạn mã dưới đây chứa một lỗi được đưa vào có chủ đích để người học đọc và đặt câu hỏi. Các số tiền trong đoạn mã được giả định là hợp lệ; chương trình chưa thực hiện việc nhập và xác thực dữ liệu.
 
 ```cpp
 #include <iostream>
@@ -33,7 +49,7 @@ int main() {
 }
 ```
 
-Minh dán nguyên snippet vào từng giao diện, rồi dùng cùng câu hỏi:
+Minh dán nguyên đoạn mã vào ba ứng dụng AI khác nhau, kèm cùng một câu hỏi:
 
 ```text
 Tôi mới học vòng lặp C++. Tôi cần cộng tất cả khoản chi GIẢ:
@@ -41,125 +57,215 @@ Tôi mới học vòng lặp C++. Tôi cần cộng tất cả khoản chi GIẢ
 Hãy gợi ý một bước để tôi tự tìm lỗi, chưa viết lại cả chương trình.
 ```
 
-### Thẻ trả lời A — HƯ CẤU, không gắn với sản phẩm
+Ba ứng dụng trả về ba câu trả lời khác nhau. Ứng dụng thứ nhất đặt câu hỏi ngược lại cho người học, ứng dụng thứ hai đưa ra cách sửa với giọng rất chắc chắn, ứng dụng thứ ba đề xuất cách sửa khác và nhắc phải kiểm thử. Các thẻ dưới đây không gắn với sản phẩm nào và không phải báo cáo đã chạy chương trình.
+
+### Thẻ trả lời A
 
 > Khi `n = 3`, chỉ số của khoản Vở ghi là bao nhiêu? Hãy thay chỉ số đó vào điều kiện `i < n - 1` và quyết định xem vòng lặp có cộng khoản này không.
 
-### Thẻ trả lời B — HƯ CẤU, không gắn với sản phẩm
+### Thẻ trả lời B
 
 > Vòng lặp thiếu một lượt. Bạn cứ đổi thành `i <= n`; như vậy sẽ cộng đủ và luôn an toàn. Không cần thử thêm vì lỗi này rất đơn giản.
 
-### Thẻ trả lời C — HƯ CẤU, không phải báo cáo đã chạy
+### Thẻ trả lời C
 
 > Điều kiện đang bỏ phần tử cuối. Với yêu cầu cộng mọi khoản, hướng sửa là `i < n`, không phải `i <= n`. Tôi chưa thực thi chương trình; hãy kiểm tra danh sách rỗng, một khoản và ba khoản sau khi tự sửa.
 
-Lan chưa chọn “AI thắng cuộc”. Cô lấy bút khoanh yêu cầu **gợi ý một bước**, rồi gạch chân chữ **luôn an toàn** trên thẻ B. Một câu trả lời phải được xét cả độ đúng, cách giúp người học và bằng chứng, chứ không chỉ tốc độ xuất hiện.
+Câu hỏi đặt ra là: nếu cả ba đều là AI, vì sao chúng trả lời khác nhau, và nên dựa vào câu trả lời nào? Một câu trả lời cần được xét đồng thời theo độ đúng, theo mức độ phù hợp với cách giúp người học và theo bằng chứng đi kèm, chứ không theo tốc độ xuất hiện hay độ tự tin của câu chữ. Chẳng hạn, prompt đã yêu cầu rõ **gợi ý một bước**, trong khi thẻ B khẳng định cách sửa được đề xuất **luôn an toàn** mà không nêu căn cứ.
 
-Trước khi đọc tiếp, hãy tự cộng ba khoản, chọn một thẻ để bắt đầu học và viết lý do. Nếu chưa biết C++, bạn vẫn có thể nhận ra rằng một kết luận về chương trình cần cách kiểm tra. Sau mục 1.5, hãy chấm lại ba thẻ bằng rubric 10 điểm ở đó (rubric viết cho Đề A–C, nhưng năm tiêu chí dùng được cho thẻ).
+**Yêu cầu trước khi đọc tiếp.** Hãy tự cộng ba khoản, chọn một thẻ để bắt đầu học và ghi lý do lựa chọn. Người chưa học C++ vẫn có thể nhận ra rằng một kết luận về chương trình cần đi kèm cách kiểm tra. Sau khi học xong mục 1.3, hãy chấm lại ba thẻ theo ba câu hỏi: kết luận có đúng không, cách giúp có đúng với yêu cầu không, và có bằng chứng đi kèm không.
 
-**Đầu ra của chương:** một bản nhận diện công cụ có phần “chưa biết”, một prompt đủ context, một phép tính chi phí có đơn vị và một quyết định dùng công cụ có điều kiện. Không cần đăng ký, cài đặt, tạo key, gọi API hoặc trả tiền để hoàn thành.
+## 1.1. Vai trò của AI trong học tập: giúp được gì, không giúp được gì, đâu là lạm dụng
 
-## 1.1. AI MYSTERY / AI MAP — Giải bí ẩn, đọc bản đồ AI
+Mục này giúp người học trả lời một câu hỏi trước mọi câu hỏi kỹ thuật: nên để AI làm phần việc nào trong quá trình học, và phần việc nào phải giữ lại cho người học. Câu trả lời được rút ra từ ba thẻ A, B, C ở tình huống mở đầu và từ ba khoản chi 35000, 7000, 18000.
 
-### Từ 42000 đến câu hỏi “mình đang dùng cái gì?”
+### Ba vai trò hợp lý của AI trong học tập
 
-`35000 + 7000 = 42000`; thêm `18000` mới được `60000`. **42000 có thể là tổng trung gian đúng** hoặc tổng của hai khoản. Nó chỉ là sai lệch khi yêu cầu cộng đủ ba khoản mà chương trình kết thúc ở đó. Một con số đứng riêng chưa chẩn đoán được lỗi.
+Học là quá trình thay đổi hiểu biết và kỹ năng của chính người học. Vì vậy, một vai trò của AI chỉ hợp lý khi sau lượt dùng, người học hiểu hoặc làm được nhiều hơn trước. Có ba vai trò đáp ứng điều kiện này.
 
-Snippet có `n = 3`, chỉ số hợp lệ 0, 1, 2. Cận `i < n - 1`, tức `i < 2`, chặn khoản Vở ghi ở chỉ số 2. `static_cast<int>` chuyển kích thước sang số nguyên có dấu để biểu diễn cận; tối đa 500 khoản vừa trong miền đang dùng.
+**Vai trò thứ nhất: gia sư giải thích.** AI có thể giải thích một khái niệm theo nhiều cách, đổi ví dụ khi người học chưa hiểu, hoặc đặt câu hỏi gợi mở thay vì đưa ngay đáp án. Thẻ A là ví dụ điển hình: thẻ này không sửa hộ mà hỏi chỉ số của khoản Vở ghi là bao nhiêu và vòng lặp có cộng khoản đó không. Minh phải tự trả lời, nên người hiểu vòng lặp là Minh chứ không phải AI. Người học có thể chủ động yêu cầu cách giúp này, như prompt trong tình huống mở đầu đã làm khi xin "một bước gợi ý, chưa viết lại cả chương trình".
 
-**Kết quả dự đoán từ snippet**, không phải log thực thi của lần biên tập:
+**Vai trò thứ hai: người phản biện và kiểm tra.** Sau khi tự làm xong, người học có thể nhờ AI tìm chỗ thiếu: ca kiểm thử chưa nghĩ tới, điều kiện biên bị bỏ sót, đoạn giải thích còn mơ hồ. Thẻ C làm đúng việc này khi nhắc kiểm tra danh sách rỗng, một khoản và ba khoản. Thứ tự rất quan trọng: *làm trước, nhờ phản biện sau*. Nếu đảo ngược thứ tự, người học chỉ còn đọc lại điều AI đã nghĩ hộ.
+
+**Vai trò thứ ba: trợ lý cho việc lặp.** Một số việc tốn thời gian nhưng không tạo ra hiểu biết mới: định dạng lại bảng, đổi tên biến đồng loạt, sinh dữ liệu giả để thử, soạn khung tài liệu. AI làm các việc này nhanh, người học tiết kiệm thời gian cho phần cần suy nghĩ. Tiêu chí phân biệt rất đơn giản: nếu bản thân việc đó chính là mục tiêu của bài học (ví dụ bài học đang dạy vòng lặp mà nhờ AI viết vòng lặp), thì đó không còn là "việc lặp" nữa.
+
+Ba vai trò có chung một điểm: AI nằm cạnh người học, không nằm thay chỗ người học.
+
+### AI làm tốt điều gì, làm kém điều gì
+
+Để quyết định giao việc nào cho AI, cần biết hai mặt của công cụ này. Phần dưới đây mô tả xu hướng chung; mức độ cụ thể khác nhau giữa các model và ứng dụng, và mục 1.2 sẽ nói cách phân biệt chúng.
+
+**AI thường làm tốt:**
+
+- **Tốc độ.** Phản hồi xuất hiện sau vài giây, kể cả khi yêu cầu dài. Người học có thể thử nhiều cách hỏi trong thời gian ngắn.
+- **Diễn đạt.** AI viết mạch lạc, đổi giọng văn, tóm tắt hoặc giải thích lại cùng một ý theo nhiều mức độ.
+- **Gợi ý.** AI nêu được nhiều hướng giải, nhiều ca thử, nhiều cách đặt tên, giúp người học thoát khỏi tình trạng "chưa biết bắt đầu từ đâu".
+
+**AI thường làm kém hoặc không thể làm:**
+
+- **Có thể sai mà vẫn tự tin.** Thẻ B khẳng định `i <= n` "luôn an toàn" và "không cần thử thêm" trong khi cách sửa đó cho phép truy cập ngoài danh sách. Giọng chắc chắn của câu chữ không phải bằng chứng về độ đúng. Hiện tượng này được gọi là hallucination và sẽ được phân tích ở mục 1.3.
+- **Thiếu ngữ cảnh.** AI chỉ biết điều đã được gửi vào lượt đó. Nếu quên dán mã, quên nêu phạm vi bài tập, AI sẽ đoán, và có thể đề xuất đăng nhập, máy chủ hay đồng bộ thanh toán cho một bài tập vốn chỉ dùng dữ liệu giả.
+- **Không chịu trách nhiệm.** Khi bài nộp có lỗi, khi một kết luận sai được đem ra dùng, người chịu hậu quả là người học. AI không đứng tên trên bài nộp và không giải thích thay trước giảng viên.
+
+Từ hai danh sách trên có thể rút ra một quy tắc phân công: giao cho AI những phần mà **kết quả kiểm tra được nhanh** (ca thử, định dạng, gợi ý hướng đi), và giữ lại cho người học những phần mà **hiểu biết và trách nhiệm không thể chuyển giao** (quyết định cuối, giải thích, kiểm chứng).
+
+### Dùng AI để học và dùng AI để né học
+
+Cùng một công cụ, cùng một bài toán, có thể dẫn tới hai kết quả hoàn toàn khác nhau. Hãy quay lại ví dụ ba khoản chi: 35000 cộng 7000 cộng 18000 phải bằng 60000, còn chương trình cho 42000.
+
+- Minh tự cộng ba khoản trước, thấy kết quả chương trình thiếu đúng 18000, rồi nhờ AI gợi ý một bước. Sau đó Minh tự sửa cận vòng lặp, thử ca rỗng, một khoản, ba khoản và giải thích được vì sao `i < n` đúng còn `i <= n` thì không. Đây là *dùng AI để học*.
+- Một cách làm khác: dán đoạn mã, nhận bản sửa hoàn chỉnh, chép vào bài và nộp. Chương trình có thể in đúng 60000. Nhưng khi được hỏi "vì sao vòng lặp dừng ở chỉ số 1", người học không trả lời được. Con số đúng, còn hiểu biết thì không tăng. Đây là *dùng AI để né học*.
+
+Điểm khác biệt không nằm ở việc có dùng AI hay không, mà ở chỗ **ai đã suy nghĩ**. Bảng dưới đây giúp nhận ra dấu hiệu qua hành vi quan sát được.
+
+| Tiêu chí | Dấu hiệu dùng đúng | Dấu hiệu lạm dụng |
+| --- | --- | --- |
+| Thứ tự | Tự thử hoặc tự dự đoán trước, rồi mới hỏi AI | Hỏi AI ngay khi vừa đọc đề, chưa tự thử |
+| Mức trợ giúp | Yêu cầu gợi ý từng bước, câu hỏi dẫn dắt | Yêu cầu bản hoàn chỉnh rồi chép nguyên |
+| Kiểm chứng | Tự chạy, tự đối chiếu với 60000 hoặc với test | Tin lời "đã đúng", không chạy, không đối chiếu |
+| Giải thích | Nói lại được bằng lời riêng vì sao đúng | Không giải thích được dòng mã vừa nộp |
+| Quyền quyết định | Chấp nhận, sửa hoặc bác bỏ từng đề xuất có lý do | Nhận mọi đề xuất, kể cả phần ngoài phạm vi bài |
+| Dấu vết học | Còn bản nháp, ghi chú, lỗi đã gặp và cách sửa | Chỉ còn kết quả cuối, không có quá trình |
+
+Ba ví dụ số 35000, 7000 và 18000 cho thấy một phép thử nhanh: sau khi dùng AI, nếu người học tự lần ra được tổng từng bước (35000, rồi 42000, rồi 60000) và chỉ ra bước nào bị bỏ, thì hiểu biết đã thuộc về người học. Nếu không lần ra được, kết quả đúng chỉ là mượn.
+
+Cần nói rõ thêm hai điều. Thứ nhất, một lượt dùng không lạm dụng không có nghĩa là hợp lệ trong mọi bài: mỗi học phần, mỗi bài tập có thể quy định riêng về việc được dùng AI đến mức nào, và quy định đó phải được tôn trọng. Thứ hai, những ranh giới về dữ liệu, bảo mật, bản quyền và liêm chính học thuật được trình bày ở Chương 4; cách giữ để vẫn tự học được trong khi dùng AI được trình bày ở Chương 3. Mục này chỉ đặt nền để người học nhận ra hai hướng đi.
+
+### Nguyên tắc xuyên suốt: AI hỗ trợ, người học quyết định
+
+Từ các phần trên có thể rút ra nguyên tắc mà cả cuốn sách sẽ nhắc lại: **AI hỗ trợ, người học quyết định.**
+
+Nguyên tắc này có ba nghĩa cụ thể. *Người học đặt mục tiêu*: nêu việc cần làm, giới hạn mức trợ giúp, chọn dữ liệu nào được gửi đi. *Người học kiểm chứng*: không dùng kết quả nào chưa có bằng chứng, dù lời giải nghe rất hợp lý. *Người học chịu trách nhiệm*: bài nộp mang tên người học, nên mọi dòng trong đó phải giải thích được. AI có thể đề xuất nhanh và nhiều, nhưng quyết định chấp nhận hay bác bỏ vẫn thuộc về người học.
+
+Nếu nhớ một câu từ chương này, đó nên là câu ấy. Ở Chương 2, nguyên tắc trở thành thao tác: giao việc rõ, kiểm bằng bằng chứng, nhận thay đổi có chủ đích. Ở Chương 3, nguyên tắc trở thành thói quen: tự dự đoán, tự làm, tự giải thích. Ở Chương 4, nguyên tắc trở thành ranh giới.
+
+### Bài tập tự đánh giá: dùng đúng, lạm dụng hay cần hỏi giảng viên
+
+Chưa hiểu ngay cách phân loại là điều bình thường; hãy dùng bảng dấu hiệu ở trên làm công cụ đối chiếu. Với mỗi tình huống giả định dưới đây, chọn một trong ba phương án: **dùng đúng**, **lạm dụng** hoặc **cần hỏi giảng viên**, rồi ghi lý do bằng một câu.
+
+| STT | Tình huống giả định | Lựa chọn | Lý do |
+| ---: | --- | --- | --- |
+| 1 | Minh tự cộng 35000 + 7000 + 18000, thấy chương trình in 42000, rồi nhờ AI gợi ý một bước để tự tìm lỗi. | | |
+| 2 | Lan nhờ AI viết trọn phần lưu dữ liệu vào `localStorage`, dán vào bài và nộp mà chưa đọc mã. | | |
+| 3 | Minh viết xong hàm tính tổng, rồi nhờ AI nêu thêm các ca kiểm thử còn thiếu; Minh tự dự đoán kết quả từng ca trước khi chạy. | | |
+| 4 | Đề bài ghi "sinh viên tự làm", nhưng Minh muốn nhờ AI giải thích một thông báo lỗi khó hiểu của trình biên dịch. | | |
+| 5 | AI báo "đã chạy test và tất cả đều đạt"; Lan ghi vào báo cáo như kết quả của chính Lan mà không chạy lại. | | |
+
+### Đáp án tự đánh giá: năm tình huống và lý do
+
+**1. Dùng đúng.** Minh tự làm trước, giới hạn mức trợ giúp ở một bước và còn giữ quyền tự sửa. Cả thứ tự, mức trợ giúp lẫn quyền quyết định đều khớp dấu hiệu dùng đúng.
+
+**2. Lạm dụng.** Phần việc này có thể chính là nội dung bài học, người học chưa đọc và chưa kiểm chứng, nên không giải thích được mã đã nộp. Cách đúng hơn là tự viết bản nháp rồi nhờ AI phản biện, hoặc xin gợi ý từng bước.
+
+**3. Dùng đúng.** AI đóng vai người phản biện sau khi người học đã làm. Việc tự dự đoán kết quả trước khi chạy giữ phần suy nghĩ thuộc về Minh.
+
+**4. Cần hỏi giảng viên.** Quy định "tự làm" có thể loại trừ mọi hỗ trợ của AI hoặc chỉ loại trừ việc làm hộ; câu chữ chưa đủ để kết luận. Việc đúng là hỏi giảng viên và ghi lại câu trả lời, không tự suy diễn theo hướng có lợi cho bản thân.
+
+**5. Lạm dụng.** Lời "đã chạy test" của AI chưa phải bằng chứng. Người học phải tự chạy, hoặc ghi rõ đây là lời khẳng định chưa kiểm chứng. Chỗ sai nằm ở khâu kiểm chứng và trách nhiệm, không nằm ở việc có dùng AI hay không.
+
+Nếu phân loại đúng cả năm tình huống kèm lý do hợp lý, người học đã nắm được tiêu chí của mục này. Nếu lệch một hoặc hai tình huống, nên đọc lại bảng dấu hiệu rồi thử viết lại lý do. Từ mục 1.2 trở đi, chương chuyển từ câu hỏi "nên dùng AI vào việc gì" sang câu hỏi "AI mà chúng ta đang dùng thực chất là gì".
+
+## 1.2. Nhận diện công cụ AI: model, provider và ứng dụng (AI Mystery, AI Map)
+
+### Từ con số 42000 đến câu hỏi "đang dùng công cụ nào?"
+
+Ta có `35000 + 7000 = 42000`; phải cộng thêm `18000` mới được `60000`. **Con số 42000 có thể là một tổng trung gian đúng**, tức tổng của hai khoản đầu. Nó chỉ trở thành sai lệch khi yêu cầu là cộng đủ ba khoản mà chương trình lại kết thúc ở đó. Một con số đứng riêng chưa đủ để chẩn đoán lỗi.
+
+Đoạn mã có `n = 3`, nên các chỉ số hợp lệ là 0, 1 và 2. Điều kiện `i < n - 1`, tức `i < 2`, khiến vòng lặp dừng trước khoản Vở ghi ở chỉ số 2. Phép `static_cast<int>` chuyển kích thước của vector sang số nguyên có dấu để biểu diễn cận; với tối đa 500 khoản, giá trị này nằm gọn trong miền đang dùng.
+
+**Kết quả mong đợi** (suy ra từ mã nguồn, chưa thực thi):
 
 ```text
 Tong chi tieu: 42000 VND
 ```
 
-Chuỗi không dấu nhằm giảm lỗi hiển thị ở một số terminal. Trace đầy đủ, ca rỗng, kiểu có dấu/không dấu và executable cũ được học ở **Chương 2 · Trở thành người điều khiển AI, mục 2.3 — Mission 03: Debug C++**. Chương này mới nhận diện vấn đề và loại bằng chứng cần có.
+Chuỗi in ra được viết không dấu nhằm giảm lỗi hiển thị trên một số terminal. Việc lần vết (trace) đầy đủ, ca danh sách rỗng, vấn đề kiểu có dấu và không dấu, cũng như tình huống chạy nhầm tệp thực thi cũ được trình bày ở Bài thực hành 03 (mục 2.3) trong **Chương 2 · Điều khiển quá trình làm việc với AI**. Chương này chỉ dừng ở việc nhận diện vấn đề và xác định loại bằng chứng cần có.
 
-### Đáp án mở đầu — Chọn thẻ để học, không chọn giọng nói tự tin
+### Đáp án mở đầu — Chọn thẻ để học, không chọn giọng văn tự tin
 
-**Nên bắt đầu học với Thẻ A**, vì nó giữ đúng yêu cầu gợi ý một bước. Thẻ C dùng để đối chiếu sau khi tự sửa: nó sửa đúng, nói rõ chưa chạy nhưng tiết lộ nhiều hơn Minh yêu cầu. Loại Thẻ B: `i <= n` cho phép chỉ số `n` ngoài danh sách; truy cập đó trong C++ dẫn tới hành vi không xác định.
+**Nên bắt đầu học với thẻ A**, vì thẻ này giữ đúng yêu cầu gợi ý một bước. Thẻ C phù hợp để đối chiếu sau khi đã tự sửa: thẻ này sửa đúng và nói rõ chưa chạy chương trình, nhưng tiết lộ nhiều hơn mức Minh yêu cầu. Thẻ B cần bị loại, vì điều kiện `i <= n` cho phép chỉ số `n` nằm ngoài danh sách; trong C++, truy cập như vậy dẫn tới hành vi không xác định (undefined behavior).
 
-Cận `i < n` duyệt các chỉ số hợp lệ và chặn chỉ số bằng kích thước. Sửa cận **chưa bổ sung toàn bộ kiểm tra dữ liệu**; Minh còn phải giải thích và thử biến thể. Ba thẻ hư cấu không chứng minh thương hiệu nào tốt hơn.
+Cận `i < n` duyệt đúng các chỉ số hợp lệ và dừng trước chỉ số bằng kích thước. Tuy nhiên, sửa cận **chưa bổ sung toàn bộ việc kiểm tra dữ liệu**; Minh vẫn cần tự giải thích và thử các biến thể. Ba thẻ hư cấu này cũng không chứng minh thương hiệu nào tốt hơn thương hiệu nào.
 
 ### Model, provider, application và producer: bốn câu hỏi khác nhau
 
-“Mình dùng ChatGPT” thường nêu sản phẩm Minh mở, chưa xác định model. **AI**, trí tuệ nhân tạo, gồm cả nhận diện và phát hiện bất thường. Chương tập trung vào **AI tạo sinh**, tạo văn bản hoặc mã. **LLM**, mô hình ngôn ngữ lớn, thường nằm trong trợ lý; không phải mọi AI đều là chatbot. Khả năng nhận ảnh, âm thanh, tệp tùy model và ứng dụng.
+Câu nói "tôi dùng ChatGPT" thường chỉ nêu tên sản phẩm đang mở, chưa xác định model nào xử lý yêu cầu. **Trí tuệ nhân tạo** (tiếng Anh: *artificial intelligence*, AI) là lĩnh vực rộng, bao gồm cả nhận dạng hình ảnh và phát hiện bất thường. Chương này tập trung vào **AI tạo sinh** (*generative AI*), tức các hệ thống tạo ra văn bản hoặc mã. **Mô hình ngôn ngữ lớn** (*large language model*, LLM) thường là thành phần cốt lõi của các trợ lý; tuy nhiên, không phải hệ thống AI nào cũng là chatbot. Khả năng nhận ảnh, âm thanh hay tệp phụ thuộc vào từng model và từng ứng dụng.
 
-**Model** là mô hình tính toán đã được huấn luyện để xử lý đầu vào và tạo đầu ra. GPT, Claude, Gemini có thể chỉ họ mô hình, chưa phải phiên bản. Tài liệu định danh đáng tin hơn đoán qua văn phong; lời giải mạch lạc không bảo đảm đúng.
+**Model** là mô hình tính toán đã được huấn luyện để xử lý đầu vào và tạo đầu ra. Các tên như GPT, Claude hay Gemini có thể chỉ một họ mô hình, chưa phải một phiên bản cụ thể. Tài liệu định danh chính thức đáng tin hơn việc đoán qua văn phong; một lời giải mạch lạc không bảo đảm là lời giải đúng.
 
-**Provider** là bên cung cấp dịch vụ truy cập đến model trong đường đang xét: tiếp nhận, xác thực, áp dụng điều kiện; có thể vận hành trực tiếp hoặc làm trung gian. **Producer** xây dựng, huấn luyện hoặc phát hành model. Hai vai trò có thể cùng tổ chức nhưng không bắt buộc.
+**Provider** là bên cung cấp dịch vụ truy cập đến model trên đường truy cập đang xét: tiếp nhận yêu cầu, xác thực và áp dụng các điều kiện sử dụng. Provider có thể trực tiếp vận hành model hoặc đóng vai trò trung gian. **Producer** là bên xây dựng, huấn luyện hoặc phát hành model. Hai vai trò này có thể thuộc cùng một tổ chức nhưng không bắt buộc.
 
-**Application** là nơi thao tác: trang chat, ứng dụng điện thoại/máy tính hoặc trợ lý lập trình. Nó tổ chức lịch sử, chọn thông tin, có thể nối công cụ/tìm kiếm và hiển thị bản sửa. **User** đặt mục tiêu, quyết định dữ liệu được phép gửi và kiểm tra phần mình sử dụng.
+**Application** (ứng dụng) là nơi người dùng thao tác: trang chat, ứng dụng trên điện thoại hoặc máy tính, hay trợ lý lập trình. Ứng dụng tổ chức lịch sử trao đổi, chọn thông tin gửi đi, có thể kết nối với công cụ hoặc chức năng tìm kiếm, và hiển thị các bản sửa. **User** (người dùng) đặt mục tiêu, quyết định dữ liệu nào được phép gửi và kiểm tra phần kết quả được đem ra sử dụng.
 
 | Vai trò | Câu hỏi phải trả lời | Cách ghi nếu thiếu bằng chứng |
 | --- | --- | --- |
-| Model | Thành phần nào tạo đầu ra? Định danh nào được công bố? | Chỉ biết họ model; chưa xác định phiên bản hoặc model từng lượt |
+| Model | Thành phần nào tạo đầu ra? Định danh nào được công bố? | Chỉ biết họ model; chưa xác định phiên bản hoặc model của từng lượt |
 | Provider | Ai cung cấp đường truy cập đến model cho ứng dụng? | Chưa xác định provider của đường truy cập |
-| Application | Tôi mở và thao tác ở phần mềm nào? | Ghi tên quan sát được, không suy ra model từ đó |
+| Application | Người dùng đang mở và thao tác ở phần mềm nào? | Ghi tên quan sát được, không suy ra model từ tên ứng dụng |
 | Producer | Ai phát triển hoặc phát hành model? | Chưa đủ dữ kiện; không gán cho nhóm viết giao diện |
 | User | Ai giao việc và kiểm tra trước khi dùng kết quả? | Minh hoặc Lan trong tình huống này |
 
 ![Sơ đồ vai trò model, provider, application và user; mũi tên biểu diễn đường truy cập, không phải quyền sở hữu.](../assets/roles.svg)
 
-*AI MAP — Bản đồ vai trò. Một tổ chức có thể giữ nhiều vai trò; mỗi ô không nhất thiết là một công ty hay máy chủ riêng. Producer là câu hỏi bổ sung về bên phát triển, không phải một tầng bắt buộc trong mọi request.*
+*Bản đồ vai trò (AI Map). Một tổ chức có thể đảm nhận nhiều vai trò; mỗi ô không nhất thiết tương ứng với một công ty hay một máy chủ riêng. Producer là câu hỏi bổ sung về bên phát triển, không phải một tầng bắt buộc trong mọi request.*
 
-Bản nguồn dùng ví dụ **Claude qua Amazon Bedrock**: Anthropic là bên phát triển Claude, AWS cung cấp đường truy cập qua Bedrock trong tình huống đó. Vì vậy, nhãn “hỗ trợ Claude” không tự chứng minh kết nối trực tiếp tới Anthropic. Nguồn chính thức gốc là tài liệu Anthropic và AWS, liệt kê cuối chương. **Mốc bộ nguồn là 29/10/2026; các thông tin dịch vụ chưa được xác minh độc lập trong lần biên tập này, cần tra lại khi áp dụng.**
+Một ví dụ điển hình là **Claude qua Amazon Bedrock**: Anthropic là bên phát triển Claude, còn AWS cung cấp đường truy cập qua Bedrock trong tình huống đó. Vì vậy, nhãn "hỗ trợ Claude" trên một ứng dụng không tự chứng minh rằng ứng dụng kết nối trực tiếp tới Anthropic. Căn cứ là tài liệu chính thức của Anthropic và AWS, liệt kê ở phần Tài liệu tham khảo cuối chương. *Chưa kiểm chứng:* các thông tin dịch vụ này được ghi nhận theo mốc 29/10/2026, chưa được xác minh độc lập và cần tra lại khi áp dụng.
 
-Tương tự, Gemini có thể được nhắc ở lớp ứng dụng hoặc họ model. “Mở ứng dụng Gemini”, “gọi Gemini API” và “chọn một model thuộc họ Gemini” không đồng nghĩa. Điều quan trọng không phải thuộc hết tên, mà là đặt tên vào đúng vai trò.
+Tương tự, tên Gemini có thể được nhắc tới ở lớp ứng dụng hoặc ở họ model. Các cụm "mở ứng dụng Gemini", "gọi Gemini API" và "chọn một model thuộc họ Gemini" không đồng nghĩa với nhau. Điều quan trọng không phải là thuộc hết các tên gọi, mà là đặt mỗi tên vào đúng vai trò của nó.
 
 ### API và key không phải một bộ não tải về máy
 
-**API** là giao diện để các phần mềm giao tiếp theo quy tắc xác định. Trong chat, Minh gõ và gửi. Với API, chương trình chuẩn bị request theo định dạng dịch vụ; request có thể chỉ định model. API không phải model mới và cũng không chỉ dùng cho AI.
+**API** (*application programming interface*) là giao diện để các phần mềm giao tiếp với nhau theo những quy tắc xác định. Khi dùng ứng dụng chat, Minh gõ câu hỏi và gửi đi. Khi dùng API, chương trình chuẩn bị request theo định dạng mà dịch vụ quy định; request có thể chỉ định model cần dùng. API không phải một model mới và cũng không chỉ dùng cho AI.
 
-**API key** là một dạng thông tin xác thực để dịch vụ nhận biết quyền truy cập; có dịch vụ dùng cơ chế xác thực khác. Có key không có nghĩa sở hữu model, được dùng mọi phiên bản, quota vô hạn hoặc miễn phí. Quyền và hóa đơn còn phụ thuộc tài khoản, dự án và điều kiện dịch vụ.
+**API key** là một dạng thông tin xác thực để dịch vụ nhận biết quyền truy cập; một số dịch vụ dùng cơ chế xác thực khác. Có key không có nghĩa là sở hữu model, được dùng mọi phiên bản, có quota vô hạn hoặc được miễn phí. Quyền truy cập và hóa đơn còn phụ thuộc vào tài khoản, dự án và điều kiện dịch vụ.
 
-> **SECURITY ALERT — Khóa không phải dữ liệu thực hành.** Không đưa key thật vào chat, ảnh chụp, nhóm lớp hoặc kho mã công khai. Không nhúng khóa bí mật vào JavaScript phía trình duyệt: mã được gửi đến người dùng có thể bị đọc. ViSinhVien không cần key; đừng tạo bí mật chỉ để hoàn thành bài nhập môn.
+> **Cảnh báo an toàn — Khóa không phải dữ liệu thực hành.** Không đưa key thật vào chat, ảnh chụp màn hình, nhóm lớp hoặc kho mã công khai. Không nhúng khóa bí mật vào JavaScript chạy phía trình duyệt, vì mã được gửi đến người dùng có thể bị đọc. ViSinhVien không cần key; không tạo bí mật chỉ để hoàn thành bài nhập môn.
 
-Nếu gặp key trong một bài hướng dẫn, hãy dùng placeholder thay vì sao chép khóa thật. Nếu nghi khóa đã lộ, thu hồi hoặc vô hiệu hóa qua dịch vụ trước, rồi kiểm tra mức dùng và xử lý bản sao. Xóa một dòng khỏi tệp mới nhất không làm các bản sao biến mất. Quy trình sự cố đầy đủ nằm ở **Chương 4 · Sử dụng AI có trách nhiệm, mục 4.1 — Hồ sơ 01: Khóa API xuất hiện trên GitHub**.
+Khi gặp key trong một bài hướng dẫn, cần dùng giá trị giữ chỗ (placeholder) thay vì sao chép khóa thật. Nếu nghi ngờ khóa đã bị lộ, trước hết phải thu hồi hoặc vô hiệu hóa khóa qua dịch vụ, sau đó kiểm tra mức sử dụng và xử lý các bản sao. Xóa một dòng khỏi phiên bản mới nhất của tệp không làm các bản sao trước đó biến mất. Quy trình xử lý sự cố đầy đủ được trình bày ở Hồ sơ 01 (mục 4.1) trong **Chương 4 · Sử dụng AI có trách nhiệm**.
 
-### Những đường vào AI, không phải những bậc thang danh giá
+### Các đường truy cập AI không phải các bậc thang thứ hạng
 
 ![Bản đồ các cách truy cập AI qua ứng dụng chat, trợ lý lập trình, chương trình dùng API hoặc mô hình cục bộ; không xếp hạng thương hiệu.](../assets/ecosystem.svg)
 
-*AI MAP — Bản đồ đường truy cập. Chọn đường phù hợp nhiệm vụ và điều kiện, không mặc định API hay agent là cấp học cao hơn chat.*
+*Bản đồ đường truy cập (AI Map). Đường truy cập được chọn theo nhiệm vụ và điều kiện sử dụng; API hay agent không mặc nhiên là cấp học cao hơn chat.*
 
-Một luồng giản lược là **người dùng → ứng dụng chuẩn bị thông tin → provider tiếp nhận → model tạo đầu ra → ứng dụng hiển thị → người dùng kiểm tra**. Hệ thống thực có thể thêm trung gian, công cụ và nhiều lượt. Model chạy cục bộ có thể không cần provider bên ngoài nhận câu hỏi. Ngược lại, ứng dụng cài trên máy vẫn có thể gửi dữ liệu lên đám mây.
+Một luồng xử lý giản lược gồm các bước: **người dùng → ứng dụng chuẩn bị thông tin → provider tiếp nhận → model tạo đầu ra → ứng dụng hiển thị → người dùng kiểm tra**. Hệ thống thực tế có thể có thêm trung gian, công cụ và nhiều lượt xử lý. Model chạy cục bộ có thể không cần provider bên ngoài tiếp nhận câu hỏi. Ngược lại, một ứng dụng cài trên máy vẫn có thể gửi dữ liệu lên đám mây.
 
-Ứng dụng đôi khi được gọi là **wrapper**, phần mềm bao quanh model/API. “Chỉ là cái vỏ” bỏ qua giá trị của việc chọn đúng tệp, giữ phạm vi và cho người học duyệt thay đổi. Nhưng cũng đừng suy mọi wrapper đều đọc được dự án, chạy code hay tìm web. Nếu dùng Qoder, cần phân biệt Qoder IDE, Qoder Desktop và Qoder CLI; tên cùng họ không chứng minh chúng có cùng giao diện, quyền hay quy trình. (Theo tài liệu sản phẩm Qoder; phần này chưa được kiểm chứng độc lập, cần tra lại ở Chương 2, mục 2.1.)
+Ứng dụng đôi khi được gọi là **wrapper**, tức phần mềm bao quanh model hoặc API. Cách nói "chỉ là cái vỏ" bỏ qua giá trị của việc chọn đúng tệp, giữ phạm vi công việc và cho người học duyệt từng thay đổi. Ngược lại, cũng không thể suy ra rằng mọi wrapper đều đọc được dự án, chạy được mã hay tìm kiếm được trên web. Chẳng hạn, khi dùng Qoder, cần phân biệt Qoder IDE, Qoder Desktop và Qoder CLI; các sản phẩm cùng họ tên không chứng tỏ chúng có cùng giao diện, quyền hạn hay quy trình. *Chưa kiểm chứng:* thông tin này dựa trên tài liệu sản phẩm Qoder theo mốc 29/10/2026, chưa được xác minh độc lập và cần tra lại; chi tiết được trình bày ở mục 2.1 của Chương 2.
 
-### Cùng câu hỏi không đồng nghĩa cùng đầu vào
+### Cùng câu hỏi không đồng nghĩa với cùng đầu vào
 
-Ba thẻ hư cấu không xác định nguyên nhân khác biệt. Trong hệ thống thật, cùng câu gõ có thể kèm lịch sử, tài liệu, chỉ dẫn hoặc công cụ khác. Một nơi làm gia sư, nơi khác ưu tiên sinh mã. Giới hạn đầu ra, cấu hình và tính không tất định cũng ảnh hưởng.
+Ba thẻ hư cấu không cho biết nguyên nhân của sự khác biệt. Trong hệ thống thực, cùng một câu gõ vào có thể được gửi kèm lịch sử, tài liệu, chỉ dẫn hệ thống hoặc công cụ khác nhau. Một ứng dụng có thể được cấu hình để đóng vai gia sư, ứng dụng khác lại ưu tiên sinh mã. Giới hạn độ dài đầu ra, các tham số cấu hình và tính không tất định của quá trình sinh cũng ảnh hưởng đến kết quả.
 
-Minh điều tra theo ba bước: **ghi nhãn ứng dụng/chế độ/model → liệt kê context và công cụ → ghi phần chưa biết**. Nhãn “Tự động” chỉ cho phép ghi “chưa xác định model thực sự xử lý lượt này”. Chatbot tự giới thiệu không đủ làm bằng chứng duy nhất. Sang Chương 2, “chế độ” sẽ cụ thể thành Ask (chỉ đọc, trả lời) và Agent (được sửa tệp, chạy lệnh); “context” được gọi là ngữ cảnh.
+Minh điều tra theo ba bước: **ghi nhãn ứng dụng, chế độ và model → liệt kê context và công cụ → ghi rõ phần chưa biết**. Nếu giao diện chỉ hiển thị nhãn "Tự động", Minh chỉ được phép ghi "chưa xác định model thực sự xử lý lượt này". Lời tự giới thiệu của chatbot không đủ làm bằng chứng duy nhất. Sang Chương 2, khái niệm "chế độ" sẽ được cụ thể hóa thành chế độ Ask (chỉ đọc và trả lời) và chế độ Agent (được sửa tệp và chạy lệnh); "context" khi đó được gọi là ngữ cảnh.
 
-**Bổ sung biên tập — nhận diện trên giấy.** Ứng dụng GIẢ “Gia sư ViSinhVien” nói dùng Gemini API nhưng không công bố model cụ thể. Điền bốn vai trò; rồi thay mô tả bằng “hỗ trợ Claude”. Điều gì không còn biết được?
+**Bài tập: nhận diện trên giấy.** Một ứng dụng giả định có tên "Gia sư ViSinhVien" tự mô tả là dùng Gemini API nhưng không công bố model cụ thể. Hãy điền bốn vai trò. Sau đó, thay phần mô tả bằng cụm "hỗ trợ Claude" và xác định thông tin nào không còn biết được.
 
 ### Đáp án nhận diện — Giữ chỗ trống đúng chỗ
 
-Application là Gia sư ViSinhVien; theo mô tả của chính ứng dụng, đường truy cập là Gemini API — nếu đúng là gọi trực tiếp thì provider là Google, nhưng ứng dụng cũng có thể đi qua trung gian, nên ghi “provider theo tự mô tả, chưa xác minh”; biết họ Gemini, chưa biết model cụ thể. Nhóm viết ứng dụng không vì thế là bên huấn luyện model. Nếu chỉ còn “hỗ trợ Claude”, provider và phiên bản đều chưa xác định. Thiếu bằng chứng thì giữ chỗ trống.
+Application là Gia sư ViSinhVien. Theo mô tả của chính ứng dụng, đường truy cập là Gemini API: nếu ứng dụng gọi trực tiếp thì provider là Google, nhưng ứng dụng cũng có thể đi qua một trung gian, nên cần ghi "provider theo tự mô tả, chưa xác minh". Về model, chỉ biết họ Gemini, chưa biết model cụ thể. Nhóm viết ứng dụng không vì thế mà trở thành bên huấn luyện model. Nếu mô tả chỉ còn "hỗ trợ Claude", cả provider lẫn phiên bản model đều chưa xác định. Khi thiếu bằng chứng, cần giữ nguyên chỗ trống.
 
-## 1.2. BEHIND THE SCENE — Phía sau một câu trả lời
+## 1.3. Phía sau một câu trả lời: prompt, context và token (Behind the Scene)
 
-### Prompt là lời giao việc; context là thông tin thực sự nhận được
+### Prompt là lời giao việc; context là thông tin thực sự được nhận
 
-Lan từng hỏi: “Làm app ví sinh viên chuyên nghiệp”. Câu trả lời HƯ CẤU trong tình huống biên tập đề xuất đăng nhập, máy chủ và đồng bộ thanh toán. Nghe đầy đủ, nhưng sai phạm vi. Minh thì viết “sửa vòng lặp này” mà quên dán code. Cả hai đang mong hệ thống biết những điều chưa gửi.
+Trong tình huống minh họa, Lan từng yêu cầu: "Làm app ví sinh viên chuyên nghiệp". Câu trả lời giả định nhận được đề xuất thêm đăng nhập, máy chủ và đồng bộ thanh toán. Đề xuất nghe có vẻ đầy đủ nhưng sai phạm vi bài tập. Minh thì viết "sửa vòng lặp này" nhưng quên dán mã. Cả hai trường hợp đều kỳ vọng hệ thống biết những thông tin chưa được gửi.
 
-**Prompt** là yêu cầu hoặc chỉ dẫn đưa cho hệ thống. **Context**, ngữ cảnh của một lượt, gồm thông tin thực sự được nhận: prompt, lịch sử được chọn, tài liệu, code và kết quả công cụ. Theo cách dùng phổ biến, prompt là một phần của context. Tài liệu đang mở trước mắt bạn chưa chắc đã nằm trong context của model.
+**Prompt** là yêu cầu hoặc chỉ dẫn đưa cho hệ thống. **Context** (ngữ cảnh) của một lượt là toàn bộ thông tin mà hệ thống thực sự nhận được: prompt, phần lịch sử được chọn, tài liệu, mã nguồn và kết quả của công cụ. Theo cách dùng phổ biến, prompt là một phần của context. Một tài liệu đang mở trên màn hình của người dùng chưa chắc đã nằm trong context của model.
 
-Hãy sửa cách hỏi theo thứ tự có lý do:
+Có thể cải thiện cách đặt câu hỏi theo trình tự sau, mỗi bước có lý do riêng:
 
-1. **Nêu mục tiêu trước triệu chứng.** “Cộng tất cả khoản hợp lệ” cho biết 42000 có phải sai hay không; riêng “ra 42000” chưa đủ.
-2. **Đưa phần nhỏ có liên quan.** Với lỗi cận, cần khai báo dữ liệu, kiểu tổng và vòng lặp; không cần cả ổ đĩa.
-3. **Đặt kỳ vọng cạnh hiện tượng.** Ba khoản phải ra 60000, snippet dự đoán ra 42000; nếu chưa chạy, ghi đúng là dự đoán.
-4. **Giữ ràng buộc và giới hạn trợ giúp.** Số nguyên VND, tối đa 500 khoản, gợi ý trước; tránh nhận một bản viết lại vượt bài học.
-5. **Yêu cầu cách kiểm tra.** Hỏi test và bằng chứng thay vì chỉ yêu cầu “chắc chắn 100%”.
+1. **Nêu mục tiêu trước triệu chứng.** Mục tiêu "cộng tất cả khoản hợp lệ" cho biết 42000 có phải là kết quả sai hay không; riêng câu "ra 42000" thì chưa đủ.
+2. **Đưa phần mã nhỏ nhưng có liên quan.** Với lỗi về cận vòng lặp, cần khai báo dữ liệu, kiểu của biến tổng và vòng lặp; không cần gửi cả ổ đĩa.
+3. **Đặt kết quả mong đợi cạnh hiện tượng quan sát.** Ba khoản phải cho 60000, đoạn mã được dự đoán cho 42000; nếu chưa chạy chương trình, phải ghi rõ đó là dự đoán.
+4. **Giữ ràng buộc và giới hạn mức trợ giúp.** Số tiền là số nguyên VND, tối đa 500 khoản, cần gợi ý trước; nhờ vậy tránh nhận về một bản viết lại vượt quá nội dung bài học.
+5. **Yêu cầu cách kiểm tra.** Đề nghị nêu test và bằng chứng thay vì chỉ yêu cầu "chắc chắn 100%".
 
-Prompt tốt cần đủ dữ kiện, không cần dài hoặc đầy lời tôn xưng. “Hãy đóng vai chuyên gia hàng đầu” không thay thế code và kết quả mong đợi. Ngược lại, cắt mất hợp đồng để tiết kiệm vài token có thể khiến bạn tốn nhiều lượt sửa sai yêu cầu.
+Một prompt tốt cần đủ dữ kiện, không nhất thiết phải dài hoặc dùng nhiều lời tôn xưng. Câu "Hãy đóng vai chuyên gia hàng đầu" không thay thế được mã nguồn và kết quả mong đợi. Ngược lại, lược bỏ hợp đồng dữ liệu để tiết kiệm vài token có thể khiến người dùng mất nhiều lượt trao đổi chỉ để sửa một yêu cầu bị hiểu sai.
 
-### Brief chung: giúp hai người học giữ cùng một bài
+### Brief chung: giúp hai người học giữ cùng một bài toán
 
-**Brief** là bản mô tả ngắn việc cần làm. Minh và Lan giữ bản hiện hành rồi thay dòng “việc lần này”, thay vì kể lại dự án theo trí nhớ. Đây là mẫu có thể dùng độc lập nếu bạn dán kèm code liên quan:
+**Brief** là bản mô tả ngắn gọn công việc cần làm. Minh và Lan giữ một bản brief hiện hành và chỉ thay dòng "việc lần này" ở mỗi lượt, thay vì kể lại dự án theo trí nhớ. Mẫu dưới đây có thể dùng độc lập, với điều kiện dán kèm phần mã liên quan:
 
 ```text
 DỰ ÁN: ViSinhVien, bài tập chỉ dùng dữ liệu GIẢ.
@@ -181,495 +287,133 @@ NẾU THIẾU: chỉ ra thông tin cần bổ sung, không tự thêm tính năn
 BẰNG CHỨNG: phân biệt suy luận, kỳ vọng và kết quả đã thực thi.
 ```
 
-Minh chỉ cần mô hình tiền `vector<long long>` khi học vòng lặp; tên ba khoản trên giấy giúp hiểu ý nghĩa. Bản Web của Lan dùng `Expense{id,title,amount,category}`: `id` phân biệt khoản GIẢ, `title` là tên hiển thị, `amount` là tiền, `category` là nhóm. `id` không phải mã sinh viên. Mảng tiền C++ không tự trở thành mô hình đầy đủ bốn trường của Web.
+Khi học vòng lặp, Minh chỉ cần mô hình hóa phần tiền bằng `vector<long long>`; tên ba khoản ghi trên giấy giúp hiểu ý nghĩa của dữ liệu. Phiên bản Web của Lan dùng cấu trúc `Expense{id,title,amount,category}`, trong đó `id` phân biệt các khoản giả, `title` là tên hiển thị, `amount` là số tiền và `category` là nhóm chi tiêu. Trường `id` không phải mã sinh viên. Mảng tiền trong C++ không tự trở thành mô hình đầy đủ bốn trường như ở phiên bản Web.
 
-Liên hệ OOP là phân biệt trách nhiệm dữ liệu, xác thực và tính tổng; không bắt buộc thêm một lớp chỉ để có chữ “hướng đối tượng”. Với DSA, duyệt tổng một lần có thời gian O(n), phần nhớ phụ cho tổng là O(1). Với CSDL, Lan có thể xét thuộc tính và ràng buộc trên giấy. Đổi góc học không cho phép tự đưa máy chủ hay CSDL vào bản Web; minh họa SQLite `:memory:` trong `vi-du/minh-hoa-sqlite.py` (Chương 4, mục 4.8.1) là bài riêng.
+Về góc độ OOP, điểm cần học là phân biệt trách nhiệm lưu dữ liệu, xác thực và tính tổng; không bắt buộc thêm một lớp chỉ để chương trình có dáng "hướng đối tượng". Về DSA, phép duyệt tính tổng một lần có độ phức tạp thời gian O(n), bộ nhớ phụ cho biến tổng là O(1). Về CSDL, Lan có thể phân tích thuộc tính và ràng buộc trên giấy. Việc thay đổi góc nhìn học tập không cho phép tự đưa máy chủ hay cơ sở dữ liệu vào phiên bản Web; ví dụ minh họa SQLite `:memory:` trong `vi-du/minh-hoa-sqlite.py` (mục 4.8.1 của Chương 4) là một bài riêng.
 
-### Hợp đồng dữ liệu: bằng chứng bắt đầu trước khi chạy
+### Hợp đồng dữ liệu: bằng chứng bắt đầu từ trước khi chạy chương trình
 
-Một **hợp đồng** nói đầu vào nào được chấp nhận và đầu ra nào được yêu cầu. Ở đây, mỗi khoản tồn tại phải có `amount` nguyên, lớn hơn 0, không quá 1000000000; danh sách có tối đa 500 khoản. Rỗng vẫn hợp lệ vì không có khoản nào vi phạm. Tổng 0 không đồng nghĩa có một khoản chi 0.
+**Hợp đồng dữ liệu** quy định đầu vào nào được chấp nhận và đầu ra nào được yêu cầu. Trong bài này, mỗi khoản chi tồn tại phải có `amount` là số nguyên, lớn hơn 0 và không quá 1000000000; danh sách có tối đa 500 khoản. Danh sách rỗng vẫn hợp lệ, vì không có khoản nào vi phạm điều kiện. Tổng bằng 0 không đồng nghĩa với việc có một khoản chi bằng 0.
 
-Từ hợp đồng, tính được tổng lớn nhất:
+Từ hợp đồng, có thể tính được tổng lớn nhất:
 
 ```text
 500 × 1000000000 = 500000000000 VND
 ```
 
-C++ cần kiểu chứa được mức đó. Kiểu số nguyên có dấu 32 bit thường gặp chỉ đạt khoảng 2,1 tỷ; không đủ chứa 500 tỷ. Snippet dùng `long long` cho tiền và tổng. Không suy mọi `int` trên mọi hệ thống đều giống nhau; lý do lựa chọn là miền dữ liệu, không phải nhãn “tối ưu” của AI.
+Trong C++, kiểu dữ liệu được chọn phải chứa được giá trị đó. Kiểu số nguyên có dấu 32 bit thường gặp chỉ đạt khoảng 2,1 tỷ, không đủ chứa 500 tỷ. Vì vậy, đoạn mã dùng `long long` cho số tiền và biến tổng. Không nên suy ra rằng kiểu `int` có cùng kích thước trên mọi hệ thống; lý do lựa chọn kiểu là miền giá trị của dữ liệu, không phải nhãn "tối ưu" do AI gắn vào.
 
-Trong JavaScript, `Number` biểu diễn chính xác các số nguyên trong miền **safe integers**, số nguyên an toàn, từ `-9007199254740991` đến `9007199254740991`. Tổng 500000000000 nằm trong miền đó. Từng khoản nguyên và mọi tổng trung gian không vượt trần đang xét nên phù hợp với phép cộng của bài. Vượt miền an toàn thì không còn được bảo đảm biểu diễn riêng từng số nguyên.
+Trong JavaScript, kiểu `Number` biểu diễn chính xác các số nguyên trong miền **số nguyên an toàn** (*safe integers*), từ `-9007199254740991` đến `9007199254740991`. Tổng 500000000000 nằm trong miền này. Vì từng khoản đều là số nguyên và mọi tổng trung gian không vượt trần đang xét, phép cộng của bài là chính xác. Ngoài miền an toàn, việc biểu diễn riêng biệt từng số nguyên không còn được bảo đảm.
 
-Điều này **không** có nghĩa “dùng Number là dữ liệu tự hợp lệ”. `amount` vẫn phải thỏa `Number.isSafeInteger(amount)` như trong `data.js`, lớn hơn 0 và không quá 1000000000. Chuỗi `"7000"` không phải số 7000. Ô nhập Web có thể trả chuỗi; dữ liệu trong `localStorage` cũng được lưu dưới dạng chuỗi, cần phân tích và kiểm tra cấu trúc khi đọc lại. Chỉ kiểm tra ở giao diện không bảo vệ được mọi dữ liệu đã lưu.
+Điều này **không** có nghĩa là "dùng Number thì dữ liệu tự hợp lệ". Giá trị `amount` vẫn phải thỏa `Number.isSafeInteger(amount)` như trong `data.js`, đồng thời lớn hơn 0 và không quá 1000000000. Chuỗi `"7000"` không phải là số 7000. Ô nhập trên trang Web có thể trả về chuỗi; dữ liệu trong `localStorage` cũng được lưu dưới dạng chuỗi, nên cần phân tích và kiểm tra cấu trúc khi đọc lại. Chỉ kiểm tra ở giao diện nhập liệu không bảo vệ được mọi dữ liệu đã lưu.
 
-Bảng dưới là **kỳ vọng theo hợp đồng, chưa phải kết quả đã chạy**:
+Bảng dưới đây là **kết quả mong đợi theo hợp đồng, chưa phải kết quả đã chạy**:
 
-| Ca kiểm tra | Dữ liệu hoặc thao tác GIẢ | Kỳ vọng |
+| Ca kiểm tra | Dữ liệu hoặc thao tác giả | Kết quả mong đợi |
 | --- | --- | --- |
 | Rỗng | Không có khoản nào | Tổng 0 VND |
 | Một khoản | 7000 | Tổng 7000 VND |
 | Ba khoản mẫu | 35000, 7000, 18000 | Tổng 60000 VND |
 | Chạm trần | 500 khoản, mỗi khoản 1000000000 | Tổng 500000000000 VND |
 | Sai giá trị | 0, số âm, 1.5 hoặc lớn hơn 1000000000 | Từ chối khoản sai, không âm thầm làm tròn |
-| Vượt số lượng | Thêm khoản thứ 501 | Từ chối thêm, giữ danh sách hợp lệ trước đó |
+| Vượt số lượng | Thêm khoản thứ 501 | Từ chối thêm, giữ nguyên danh sách hợp lệ trước đó |
 
-Ba ca đầu kiểm tra một phần hành vi tổng. Ba ca sau yêu cầu cả xác thực dữ liệu. **Đổi cận vòng lặp không tự giải quyết validation.** Nếu snippet chỉ cộng dữ liệu đã hợp lệ, hãy nói giới hạn ấy thay vì tuyên bố nó đáp ứng toàn bộ bảng.
+Ba ca đầu kiểm tra một phần hành vi tính tổng. Ba ca sau đòi hỏi thêm chức năng xác thực dữ liệu (validation). **Sửa cận vòng lặp không tự giải quyết được việc xác thực.** Nếu đoạn mã chỉ cộng dữ liệu đã hợp lệ, cần nêu rõ giới hạn đó thay vì tuyên bố rằng nó đáp ứng toàn bộ bảng.
 
-### Token và context window: không phải số từ hay trí nhớ vô hạn
+### Token và context window: không phải số từ, cũng không phải trí nhớ vô hạn
 
-**Token** là đơn vị dữ liệu hệ thống xử lý. Một từ có thể thành nhiều token; dấu câu, khoảng trắng, code, ngôn ngữ và tokenizer đều ảnh hưởng. Không có quy tắc “một từ tiếng Việt bằng một token”. Đếm khoảng trắng của sách không tính được hóa đơn.
+**Token** là đơn vị dữ liệu mà hệ thống xử lý. Một từ có thể được tách thành nhiều token; dấu câu, khoảng trắng, mã nguồn, ngôn ngữ và bộ tách token (*tokenizer*) đều ảnh hưởng đến số lượng. Không tồn tại quy tắc "một từ tiếng Việt bằng một token". Đếm số từ theo khoảng trắng không cho phép biết chính xác số token; việc quy token thành chi phí được trình bày ở Chương 5 (mục 5.1).
 
 ![Các khối dữ liệu minh họa token và vùng context hữu hạn; cách chia khối không phải kết quả của tokenizer thật.](../assets/token-context.svg)
 
-*BEHIND THE SCENE — Khối chỉ minh họa chia/chọn thông tin, không tính token thật. Context không phải toàn bộ ổ đĩa.*
+*Phía sau một câu trả lời (Behind the Scene). Các khối chỉ minh họa việc chia và chọn thông tin, không phản ánh số token thật. Context không phải toàn bộ ổ đĩa.*
 
-**Context window** giới hạn lượng thông tin xử lý trong một lần theo dịch vụ; thường còn có giới hạn đầu ra riêng. Cửa sổ lớn không bảo đảm sử dụng chính xác mọi chi tiết hoặc cho phép gửi vô hạn.
+**Context window** (cửa sổ ngữ cảnh) là giới hạn lượng thông tin được xử lý trong một lần, do từng dịch vụ quy định; thường còn có giới hạn riêng cho đầu ra. Cửa sổ lớn không bảo đảm mọi chi tiết đều được sử dụng chính xác, cũng không cho phép gửi thông tin vô hạn.
 
-Lan dán lịch sử có cả yêu cầu backend đã bỏ và nhiều log thừa. Brief hiện hành bị chìm. Hội thoại dài còn có thể bị ứng dụng cắt, tóm tắt hoặc chọn lại; “đã nói từ đầu” chưa bảo đảm còn nguyên trong context.
+Trong tình huống minh họa, Lan dán toàn bộ lịch sử trao đổi, gồm cả yêu cầu backend đã bị loại bỏ và nhiều đoạn log thừa. Kết quả là bản brief hiện hành bị chìm giữa các thông tin không còn hiệu lực. Ngoài ra, một cuộc hội thoại dài có thể bị ứng dụng cắt bớt, tóm tắt hoặc chọn lọc lại; việc "đã nói từ đầu" không bảo đảm thông tin đó còn nguyên trong context.
 
-Hãy giữ brief hiện hành, hàm liên quan, dữ liệu GIẢ và ghi phần thay đổi. Model không tự biết tệp vừa sửa nếu chưa nhận bản mới. Trợ lý được quyền đọc dự án có thể lấy thêm nội dung; cần kiểm quyền và tệp thực sự được dùng, không đoán qua giao diện.
+Cách làm phù hợp là giữ bản brief hiện hành, hàm liên quan, dữ liệu giả và ghi chú về phần đã thay đổi. Model không tự biết tệp vừa được sửa nếu chưa nhận được phiên bản mới. Trợ lý được cấp quyền đọc dự án có thể tự lấy thêm nội dung; khi đó cần kiểm tra quyền và các tệp thực sự được sử dụng, không đoán qua giao diện.
 
-**Bổ sung biên tập — chọn context.** Với lỗi 42000, chọn giữa brief, hàm tổng, ba khoản GIẢ, sao kê thật và bài giảng không liên quan. Giải thích một phần phải loại.
+**Bài tập: chọn context.** Với lỗi 42000, hãy chọn trong các thành phần sau: bản brief, hàm tính tổng, ba khoản giả, một bản sao kê ngân hàng thật và một bài giảng không liên quan. Giải thích lý do loại bỏ từng phần bị loại.
 
 ### Đáp án chọn context — Đủ để kiểm tra, không đủ để lộ dữ liệu
 
-Chọn brief, hàm cùng khai báo cần hiểu và ba khoản GIẢ. Loại sao kê vì riêng tư, bài giảng vì gây nhiễu. Thiếu kiểu dữ liệu hoặc đoạn gọi hàm thì bổ sung đúng phần đó, không gửi cả ổ đĩa.
+Chọn bản brief, hàm tính tổng cùng các khai báo cần để hiểu hàm, và ba khoản giả. Loại sao kê vì lý do riêng tư, loại bài giảng không liên quan vì gây nhiễu. Nếu thiếu kiểu dữ liệu hoặc đoạn mã gọi hàm, chỉ bổ sung đúng phần đó, không gửi cả ổ đĩa.
 
-### Training, inference và web search: ba việc không thay thế nhau
+### Training, inference và web search: ba hoạt động không thay thế nhau
 
-**Training**, huấn luyện, dùng dữ liệu và thuật toán để điều chỉnh tham số model. **Inference**, suy luận theo nghĩa vận hành ở đây, dùng model đã có để tạo đầu ra từ đầu vào. Minh gửi ba khoản thì hệ thống có thể dùng chúng trong context; điều đó không tự chứng minh model vừa được huấn luyện lại và sẽ nhớ ba khoản ấy cho mọi người dùng.
+**Huấn luyện** (*training*) là quá trình dùng dữ liệu và thuật toán để điều chỉnh tham số của model. **Suy luận** (*inference*), theo nghĩa vận hành được dùng ở đây, là việc dùng model đã có để tạo đầu ra từ đầu vào. Khi Minh gửi ba khoản chi, hệ thống có thể dùng chúng trong context của lượt đó; điều này không tự chứng minh rằng model vừa được huấn luyện lại và sẽ nhớ ba khoản ấy cho mọi người dùng.
 
-Nhưng “không huấn luyện lại ngay” cũng không đồng nghĩa “không lưu dữ liệu”. Lịch sử chat, bộ nhớ của ứng dụng, log vận hành và việc dùng nội dung để cải thiện dịch vụ là các vấn đề khác nhau. Cần đọc chính sách và cài đặt đúng sản phẩm. Không dùng hiểu biết về inference để thay cho kiểm tra quyền riêng tư.
+Tuy nhiên, "không huấn luyện lại ngay" cũng không đồng nghĩa với "không lưu dữ liệu". Lịch sử chat, bộ nhớ của ứng dụng, log vận hành và việc dùng nội dung để cải thiện dịch vụ là những vấn đề khác nhau. Cần đọc chính sách và kiểm tra cài đặt của đúng sản phẩm đang dùng. Hiểu biết về inference không thay thế được việc kiểm tra quyền riêng tư.
 
-**Web search** là truy xuất thông tin qua công cụ kết nối web, nếu sản phẩm có và lượt đó dùng nó. Hỏi “ưu đãi hôm nay là gì?” không tự bật tìm web. Câu trả lời có thể dựa vào kiến thức cũ. Ngược lại, có tìm kiếm cũng chưa bảo đảm nguồn phù hợp hoặc tóm tắt đúng.
+**Tìm kiếm web** (*web search*) là việc truy xuất thông tin qua công cụ kết nối Internet, nếu sản phẩm có công cụ này và lượt trao đổi đó thực sự sử dụng nó. Câu hỏi về một thông tin thay đổi theo ngày không tự kích hoạt tìm kiếm web; câu trả lời có thể chỉ dựa trên kiến thức cũ. Ngược lại, có tìm kiếm cũng chưa bảo đảm nguồn phù hợp hoặc nội dung được tóm tắt đúng.
 
-Với ba khoản tiền, phép cộng và kiểm tra code là căn cứ phù hợp. Với tuổi được sử dụng dịch vụ, cần điều khoản chính thức còn áp dụng. Minh không cần tìm web để cộng 60000; Lan không được dùng phép suy luận nghe hợp lý để thay cho điều kiện ưu đãi.
+Với ba khoản tiền, phép cộng và việc kiểm tra mã là căn cứ phù hợp. Với điều kiện sử dụng của một dịch vụ, căn cứ phải là điều khoản chính thức đang còn hiệu lực. Minh không cần tìm kiếm web để cộng ra 60000; Lan không thể dùng một suy luận nghe có vẻ hợp lý để thay cho điều khoản của dịch vụ.
 
 ### Hallucination và trích dẫn: chuyển sự tự tin thành câu hỏi kiểm chứng
 
-**Hallucination**, thường gọi ảo giác AI, là nội dung sai hoặc không có căn cứ được trình bày như đúng. Ví dụ HƯ CẤU: “JavaScript tự lưu mọi biến vào localStorage”, một hàm C++ không tồn tại, hoặc lời “đã chạy test” khi chỉ đọc văn bản. Tên gọi này không giải thích mọi nguyên nhân lỗi, nhưng nhắc ta không coi câu chữ là bằng chứng.
+**Hallucination**, thường gọi là ảo giác AI, là hiện tượng nội dung sai hoặc không có căn cứ được trình bày như thể đúng. Một số ví dụ giả định: "JavaScript tự lưu mọi biến vào localStorage", một hàm C++ không tồn tại, hoặc lời khẳng định "đã chạy test" trong khi hệ thống chỉ đọc văn bản. Tên gọi này không giải thích được mọi nguyên nhân gây lỗi, nhưng nhắc người dùng không coi câu chữ là bằng chứng.
 
-Thay vì yêu cầu “đừng sai”, Minh hỏi chỉ số nào được duyệt, ca một khoản cho gì, và câu nào là dự đoán. Lan hỏi tệp nào ghi lưu trữ, khi nào đọc lại và JSON hỏng được xử lý ra sao. Nếu công cụ nói đã chạy, cần lệnh, dữ liệu, đầu ra, môi trường và khả năng đối chiếu. Một vài test qua vẫn không chứng minh đúng mọi đầu vào; test logic JavaScript không tự kiểm chứng DOM hay lưu/nạp trên trình duyệt.
+Thay vì yêu cầu "đừng sai", Minh hỏi cụ thể: những chỉ số nào được duyệt, ca một khoản cho kết quả gì, và câu nào chỉ là dự đoán. Lan hỏi: tệp nào ghi dữ liệu vào bộ nhớ lưu trữ, khi nào dữ liệu được đọc lại, và dữ liệu JSON hỏng được xử lý ra sao. Nếu công cụ khẳng định đã chạy chương trình, cần có lệnh, dữ liệu, đầu ra, môi trường thực thi và khả năng đối chiếu. Một vài test đạt vẫn không chứng minh chương trình đúng với mọi đầu vào; test cho phần logic JavaScript cũng không tự kiểm chứng phần DOM hay việc lưu và nạp dữ liệu trên trình duyệt.
 
-Với trích dẫn, làm lần lượt: **khoanh claim → mở nguồn → tìm đoạn hỗ trợ → kiểm phạm vi và ngày → ghi giới hạn**. Liên kết có thật chưa chắc hỗ trợ kết luận. “Đủ điều kiện nộp hồ sơ” khác “chắc chắn được duyệt”; điều khoản API khác điều khoản ứng dụng chat. Ngày truy cập không phải ngày phát hành. Không tìm được căn cứ thì ghi **chưa xác minh**, không bù bằng một đoạn giải thích tự tin hơn.
+Với trích dẫn, cần thực hiện lần lượt: **khoanh vùng nhận định → mở nguồn → tìm đoạn hỗ trợ → kiểm tra phạm vi và ngày → ghi giới hạn**. Một liên kết có thật chưa chắc đã hỗ trợ kết luận. "Đủ điều kiện nộp" khác với "chắc chắn được chấp nhận"; điều khoản của API khác với điều khoản của ứng dụng chat. Ngày truy cập không phải là ngày phát hành. Nếu không tìm được căn cứ, cần ghi **chưa xác minh**, không bù đắp bằng một đoạn giải thích tự tin hơn.
 
-## 1.3. AI WALLET — Hiểu túi tiền trước khi bấm gửi
+## Câu hỏi tự kiểm tra
 
-### Ba hình thức dùng, ba cách đọc quyền lợi
+Trả lời từng câu bằng một kết luận và một lý do. Không chỉ ghi nhớ chữ "không", mà cần chỉ ra loại bằng chứng còn thiếu.
 
-Minh thấy nút nâng cấp; Lan nghe “API rẻ hơn”. Trước khi so tiền, hai bạn cần biết đang so cái gì. Một sản phẩm miễn phí đủ giúp hiểu vòng lặp có thể là lựa chọn tốt hơn cả hai phương án trả tiền.
+1. Nhãn "tích hợp Claude" đã đủ để xác định provider và phiên bản model chưa?
+2. Cùng một model nhưng một ứng dụng lại đề xuất thêm backend cho ViSinhVien: có thể chắc chắn rằng ứng dụng quảng cáo sai không?
+3. Danh sách rỗng có vi phạm điều kiện `amount > 0` không? Có cần tạo một khoản bằng 0 để biểu diễn danh sách rỗng không?
+4. Đếm số từ tiếng Việt có đủ để biết chính xác số token của một prompt không?
+5. Minh nhờ AI viết trọn vòng lặp tính tổng, chép vào bài rồi nộp. Việc này có phù hợp với nguyên tắc "AI hỗ trợ, người học quyết định" không?
+6. Một câu trả lời của AI viết rất chắc chắn có thể dùng ngay mà không cần kiểm tra không?
 
-| Hình thức | Cách hiểu nhập môn | Câu hỏi trước khi dùng |
+### Đáp án câu hỏi tự kiểm tra — Sáu kết luận và lý do
+
+**1. Chưa.** Cần định danh model và đường truy cập; producer có thể khác provider, như ví dụ Claude qua Amazon Bedrock. Không đoán qua văn phong của câu trả lời.
+
+**2. Chưa thể kết luận ứng dụng quảng cáo sai.** Cần kiểm tra brief thực sự được gửi, lịch sử, chỉ dẫn, công cụ và cấu hình. Đề xuất backend là sai so với phạm vi đã chốt, nhưng đầu ra khác nhau chưa chứng minh model khác nhau.
+
+**3. Không vi phạm và không cần khoản bằng 0.** Điều kiện số dương chỉ áp dụng cho các khoản tồn tại. Danh sách rỗng có tổng 0; việc tạo một khoản `amount = 0` mới là vi phạm hợp đồng.
+
+**4. Không.** Số token phụ thuộc vào tokenizer và nội dung; lượng dùng thực tế có thể gồm cả lịch sử, mã nguồn và kết quả của công cụ. Cần dùng công cụ đếm phù hợp và số liệu do dịch vụ báo cáo, không dùng số đếm từ.
+
+**5. Không phù hợp.** Người học không đặt giới hạn mức trợ giúp, không tự kiểm chứng và không giải thích được mã đã nộp, tức là quyết định thực chất do AI đưa ra. Cách đúng hơn là tự làm bản nháp, xin gợi ý từng bước và tự giải thích vì sao cận `i < n` đúng.
+
+**6. Không.** Độ tự tin của câu chữ không phải bằng chứng; thẻ B ở tình huống mở đầu tự tin nhưng sai. Cần kiểm bằng phép tính, test hoặc nguồn chính thức, và ghi "chưa xác minh" khi chưa có căn cứ.
+
+## Ôn tập: tự trình bày lại trong 5 phút
+
+Người học có thể trình bày trước nhóm học hoặc tự ghi âm, không cần mở giao diện của bất kỳ dịch vụ nào.
+
+| Thời gian | Nội dung trình bày | Điều cần chứng minh |
 | --- | --- | --- |
-| Free | Một phạm vi dùng không thu tiền theo điều kiện | Model, tính năng, quota, dữ liệu và điều kiện tài khoản nào? |
-| Subscription — thuê bao | Trả định kỳ cho quyền lợi của một gói/sản phẩm | Bao gồm gì, giới hạn gì, gia hạn khi nào, khoản nào ngoài gói? |
-| API pay-as-you-go | Chương trình gọi dịch vụ, phí theo lượng dùng và bảng giá | Đơn vị input/output, công cụ, xác thực và giới hạn chi phí nào? |
+| 0:00–1:00 | Nêu ba vai trò hợp lý của AI; điều AI làm tốt và làm kém | Phân biệt được hỗ trợ với làm thay |
+| 1:00–2:00 | Dùng ví dụ 35000, 7000, 18000 để so sánh dùng AI để học và để né học; đọc nguyên tắc "AI hỗ trợ, người học quyết định" | Chỉ ra được dấu hiệu lạm dụng qua hành vi quan sát được |
+| 2:00–3:00 | Vẽ sơ đồ application, provider, model; thêm câu hỏi về producer | Không đồng nhất ứng dụng với model; chấp nhận ghi "chưa biết" |
+| 3:00–4:00 | Sửa một prompt thiếu thông tin; nhắc hợp đồng dữ liệu và chỉ số cuối | Không đổi sang cận vượt mảng; nêu đúng context cần gửi |
+| 4:00–5:00 | Nêu cách kiểm tra mã, cách xử lý một câu trả lời tự tin nhưng chưa có bằng chứng | Nêu được bằng chứng và những điều chưa xác minh |
 
-**Quota** là hạn mức có đơn vị và chu kỳ: số lượt, tốc độ hoặc lượng dùng không thể đọc lẫn nhau. Free không có nghĩa vô hạn; trả tiền cũng không bảo đảm mọi yêu cầu được phục vụ không giới hạn.
+Nếu có thêm thời gian, bổ sung một tình huống từ bài tập tự đánh giá ở mục 1.1 và giải thích lý do chọn. Không trình diễn thao tác đăng nhập, thanh toán hoặc giấy tờ cá nhân để làm bài trình bày sinh động hơn.
 
-Quyền dùng ứng dụng và API phải được kiểm tra riêng. Đừng lấy biên lai thuê bao chat làm bằng chứng đã trả mọi API. Cũng không khẳng định “thuê bao không bao giờ có API”: bản nguồn dẫn tài liệu OpenAI về credit ChatGPT/API như một ngoại lệ cần đọc theo gói đủ điều kiện. **Credit** là giá trị hoặc lượng dùng được cấp, có thể có thời hạn và phạm vi. Claim về gói tích hợp này mang mốc nguồn **29/10/2026, chưa xác minh độc lập ở lần biên tập này; cần tra lại**, không phải lời hứa quyền lợi hiện hành.
+## Tóm tắt chương
 
-### Bài toán GIẢ ĐỊNH: tách input khỏi output
+Chương 1 thiết lập nền cho các chương sau: AI có vai trò hợp lý trong học tập, có giới hạn rõ ràng, và hoạt động theo những thành phần mà người học cần nhận diện được. Phiếu bài tập của chương là bằng chứng của một buổi học, không phải chứng nhận năng lực lâu dài.
 
-Lan muốn dự toán 50 request. **Request** là một yêu cầu gửi đến dịch vụ; một lần bấm của người dùng có thể dẫn đến nhiều request phía sau. Ta cố định kích thước và đơn giá để học phép tính, không mô tả hóa đơn của một hãng.
+Ba ý chính của chương:
 
-**Toàn bộ giá, tỷ giá và lượng dùng dưới đây là GIẢ ĐỊNH.** Không dùng chúng để mua dịch vụ hoặc dự đoán giá thật. Chưa có phí riêng của công cụ, cache, lưu trữ hay cơ chế xử lý đặc thù.
+- **AI hỗ trợ, người học quyết định: AI hợp lý khi đóng vai gia sư, người phản biện hoặc trợ lý cho việc lặp; dùng AI để học khác với dùng AI để né học ở chỗ ai đã suy nghĩ và ai kiểm chứng.**
+- **Cần biết ứng dụng đang dùng, đường truy cập và model được công bố; khi thiếu chứng cứ, ghi "chưa xác định".**
+- **Cần đưa đúng mục tiêu và context, rồi kiểm tra bằng phép tính, test hoặc nguồn; sự tự tin của câu trả lời không phải bằng chứng.**
 
-| Đại lượng | Giá trị GIẢ ĐỊNH |
-| --- | ---: |
-| Input mỗi request | 20000 token |
-| Output mỗi request | 5000 token |
-| Số request ban đầu | 50 |
-| Giá input | 0.30 USD / 1000000 token |
-| Giá output | 2.50 USD / 1000000 token |
-| Tỷ giá | 25000 VND / USD |
+## Cầu nối sang chương sau
 
-Trước khi xem đáp án, viết sáu dòng: tổng input, tổng output, tiền input, tiền output, tổng USD, tổng VND. Giữ đơn vị ở từng dòng. Phải chia cho một triệu vì đơn giá được niêm yết theo triệu token, không phải theo một token hoặc nghìn token.
+Hiểu vai trò, giới hạn và cách AI hoạt động mới chỉ là bước đầu; điều còn lại là biến hiểu biết đó thành thao tác cụ thể. **Chương 2 · Điều khiển quá trình làm việc với AI** hướng dẫn giao việc rõ, kiểm bằng bằng chứng và nhận thay đổi có chủ đích, qua các bài thực hành mà Minh và Lan cùng thực hiện.
 
-```text
-Tổng input  = input mỗi request × số request
-Tổng output = output mỗi request × số request
-Tiền input  = tổng input / 1000000 × giá input
-Tiền output = tổng output / 1000000 × giá output
-Tổng USD    = tiền input + tiền output
-Tổng VND    = tổng USD × tỷ giá giả định
-```
+## Tài liệu tham khảo
 
-### Đáp án AI WALLET — 50 request và kiểm tra chéo
-
-| Bước | Phép tính | Kết quả |
-| --- | --- | ---: |
-| Gom input | 20000 × 50 | 1000000 token |
-| Gom output | 5000 × 50 | 250000 token |
-| Tính tiền input | 1000000 / 1000000 × 0.30 | 0.30 USD |
-| Tính tiền output | 250000 / 1000000 × 2.50 | 0.625 USD |
-| Cộng hai khoản | 0.30 + 0.625 | 0.925 USD |
-| Quy đổi sau cùng | 0.925 × 25000 | 23125 VND |
-
-Kết quả là **0.925 USD = 23125 VND, chưa phí**. Không làm tròn 0.925 thành 0.93 ở giữa rồi gọi con số VND sau đó là kết quả chính xác. Thuế, chênh lệch tỷ giá thanh toán, phí ngân hàng và các dịch vụ tính riêng nếu có chưa nằm trong mô hình.
-
-Kiểm tra theo mỗi request: input là `20000 / 1000000 × 0.30 = 0.006 USD`; output là `5000 / 1000000 × 2.50 = 0.0125 USD`. Một request tốn `0.0185 USD`; nhân 50 cũng được `0.925 USD`. Hai hướng tính trùng nhau giúp phát hiện nhầm triệu với nghìn.
-
-Output ít token hơn nhưng đắt hơn ở bài này vì đơn giá output cao hơn. Không gộp 1250000 token rồi nhân một giá chung. Tiền phụ thuộc cả lượng và đơn giá của từng loại, không chỉ tổng số token.
-
-### Từ 50 lên 1000 request: con số nhỏ có thể đổi nghĩa
-
-Giữ nguyên tất cả giả định, tăng số request từ 50 lên 1000, tức tăng **20 lần**, không phải 1000 lần. Tổng input thành 20000000 token; output thành 5000000 token. Tiền input là 6.00 USD, output là 12.50 USD.
-
-```text
-1000 request × 0.0185 USD = 18.50 USD
-0.925 USD × 20           = 18.50 USD
-18.50 USD × 25000        = 462500 VND, chưa phí
-```
-
-Như vậy, với `20000/5000` token input/output mỗi request, **×50 cho 0.925 USD = 23125 VND**, còn **×1000 cho 18.50 USD = 462500 VND**. Tính tuyến tính đúng vì ta giữ đơn giá và cơ cấu cố định. Dịch vụ thật có thể đổi bậc giá, model, chế độ hoặc phí công cụ; khi đó phải lập lại bảng.
-
-Để so sánh, một **thuê bao GIẢ ĐỊNH 20 USD/tháng** tương đương **500000 VND/tháng** theo cùng tỷ giá. Chưa thể kết luận API tương đương nhưng rẻ hơn: quota, tính năng và điều kiện có thể khác. Nếu Minh không cần mua thuê bao, chi tiền cho API không tự trở thành “tiết kiệm”. Phương án 0 VND phải có mặt trong bảng lựa chọn.
-
-### Những token không nằm trong câu bạn vừa gõ
-
-Lan tưởng input chỉ là “sửa hàm tổng”. Ứng dụng có thể gửi thêm brief, lịch sử, tệp và **tool output**, kết quả công cụ như log test, vào lượt kế tiếp. Lịch sử đã gửi không mặc định miễn phí; cache và lưu phiên có cách tính riêng.
-
-Một số model ghi nhận/tính phí **reasoning token**, token xử lý suy luận. Cách tính vào usage, output hoặc giới hạn tùy model/provider, không tự nằm trong ví dụ này. Dự toán thật cần bộ đếm/ước tính phù hợp rồi đối chiếu usage khi được phép dùng, không dựa vào đếm từ.
-
-**Agent** có thể đọc mã → sửa → test → đọc lỗi → lặp lại. “Sửa cho xong” có thể sinh nhiều request. Lan giới hạn một hàm, một đề xuất, đầu ra đủ kiểm tra và điểm dừng để xem lại. Khi bắt đầu lượt mới, cô dùng brief cập nhật, không bỏ ràng buộc để tiết kiệm.
-
-### Budget alert không phải hard cap
-
-**Budget alert** thông báo đạt ngưỡng; **hard cap** phải có cơ chế chặn dùng/chi theo phạm vi dịch vụ định nghĩa. Email ở 80% không chứng minh dừng ở 100%; số ghi trong ô “budget” không tự là cầu dao.
-
-Bản nguồn dẫn Gemini API billing và Google Cloud Budgets, **mốc 29/10/2026, chưa xác minh độc lập, cần tra lại**. Không mặc định mọi dịch vụ có cùng nút/cơ chế. Kể cả cap được hỗ trợ, độ trễ, request đang xử lý và ngoại lệ có thể ảnh hưởng mức vượt.
-
-Chưa hiểu thì chưa bật thanh toán. Nếu sau này được phép dùng, cần biết nơi xem usage, quota/giới hạn thực có, số bước agent, cách dừng và xử lý khóa. Prompt “đừng tiêu quá” không thay cơ chế tài khoản. Bài này tính trên giấy, không bật thanh toán để thử cảnh báo.
-
-## 1.4. FREE FIRST — Học trước, chỉ mua khi biết mình thiếu gì
-
-### Quyền không mua là một phần của kế hoạch
-
-Nhìn thẻ A, Minh thấy mình cần giấy, kiến thức vòng lặp và có thể trình biên dịch sẵn có, chưa cần agent sửa kho mã. Lan cũng học được Web cục bộ không tích hợp AI. **Free first** ưu tiên phương án không thu phí đủ dùng, không bỏ qua điều kiện dịch vụ.
-
-Hết quota thì chia nhỏ câu hỏi, chờ chu kỳ sau, đọc tài liệu hoặc nhờ bạn. Không lách giới hạn bằng nhiều tài khoản, dùng key nhặt được hay thử thanh toán vì tò mò. Chưa có công cụ hợp lệ thì luyện bằng thẻ HƯ CẤU.
-
-Trước nâng cấp, điền: “Tôi thiếu ______; gói giải quyết bằng ______; tôi đo lợi ích qua ______”. Chưa điền được thì chưa có lý do rõ để mua. Trích vài trang đôi khi đủ thay việc mua context lớn.
-
-> **Quyền không mua.** Khả năng trả tiền không đo năng lực CNTT. Đây không phải chuẩn đầu ra, yêu cầu chi tiêu hay quy định TLU. Ngân sách AI bằng 0 vẫn hợp lệ.
-
-### 300000 VND cho 15 tuần: trần kế hoạch, không phải cap kỹ thuật
-
-Lan thử một kế hoạch **GIẢ ĐỊNH 300000 VND cho học kỳ 15 tuần**. Đây không phải khuyến nghị mức chi cho mọi sinh viên. Mục đích là thấy một quyết định hàng tháng có thể vượt kế hoạch cả kỳ.
-
-| Giai đoạn GIẢ ĐỊNH | Dự trù | Điều kiện để quyết định |
-| --- | ---: | --- |
-| Tuần 1–5: học nền tảng | 0 VND | Tài liệu và công cụ miễn phí hợp lệ đủ dùng |
-| Tuần 6–10: một nhu cầu rõ | Tối đa 100000 VND | Có lợi ích đo được, đủ điều kiện dùng |
-| Tuần 11–15: hoàn thiện bài | Tối đa 100000 VND | Đánh giá lại nhu cầu, không gia hạn theo quán tính |
-| Dự phòng | 100000 VND | Có thể giữ nguyên, không phải mục tiêu phải tiêu hết |
-| Tổng trần cá nhân | 300000 VND | Kế hoạch trên giấy, không chặn hóa đơn tự động |
-
-Thuê bao giả định 500000 VND/tháng vượt cả kế hoạch; nếu 1000 request dồn trong cùng học kỳ, 462500 VND chưa phí cũng vượt trần 300000 VND. Mức 23125 VND ban đầu chưa chứng minh Lan cần API, đủ tuổi hay quản lý khóa được.
-
-Trước chi, ghi nhiệm vụ, phương án miễn phí đã thử, trần tiền và ngày đánh giá lại. Biết ngày/cách dừng tự gia hạn **trước khi mua**, không giả định nút hủy giống nhau. Sau một tuần, đo lỗi đã hiểu hoặc thao tác tiết kiệm, không đếm câu AI sinh.
-
-**Bổ sung biên tập — cuối tuần thứ năm.** Lan chưa thấy chức năng cần trả tiền. Giữ 100000 VND hay mua để “tạo động lực”? Ghi tiêu chí đánh giá lại.
-
-### Đáp án kế hoạch — Tiền chưa tiêu không phải phần học bị thiếu
-
-Giữ dự trù; đánh giá lại sau khi làm Đề B (mục 1.5) bằng context đủ dùng, giữ phạm vi và khả năng tự kiểm. Chỉ mua nếu giải quyết hạn chế thật, đủ điều kiện, trong ngân sách. Không cần tiêu hết dự phòng.
-
-### Ưu đãi sinh viên: đủ điều kiện nộp không có nghĩa chắc chắn nhận
-
-Bản nguồn dẫn hướng dẫn GitHub Education với các điều kiện như đang theo học thuộc diện đủ điều kiện, có tài khoản cá nhân, chứng minh tình trạng sinh viên và **từ 13 tuổi**. Bản nguồn cũng ghi quyền lợi GitHub Pro và Copilot Student cho người học đã xác minh theo điều kiện. **Đây là nội dung được ghi nhận theo bộ nguồn ngày 29/10/2026, chưa được kiểm chứng độc lập trong lần biên tập này; tên gói, tuổi, quyền lợi và điều kiện phải tra lại.**
-
-Không dùng một hướng dẫn cũ để tự đổi tên thành “Copilot Pro hiện tại”, không chốt quota từ trí nhớ. **Completion** là gợi ý hoàn thành mã; **chat** là trao đổi; **agent** có thể tổ chức nhiều bước. Quyền lợi ở một hình thức không bảo đảm mọi hình thức dùng đều vô hạn. Chương trình ưu đãi có thể gồm nhiều bên với điều khoản riêng, không mặc định cấp API key miễn phí cho mọi dịch vụ.
-
-Để đọc một ưu đãi, Lan tách năm câu hỏi: ai đủ điều kiện; cần bằng chứng nào; quyền lợi cụ thể là gì; kéo dài bao lâu; hết ưu đãi hoặc đến kỳ gia hạn thì điều gì xảy ra. Email trường có thể hỗ trợ chứng minh, không phải vé tự được duyệt. Email TLU không tự bảo đảm hồ sơ thành công.
-
-Bài tập chỉ yêu cầu đọc thông tin, không nộp hồ sơ hoặc tải giấy tờ. Nếu sau này đăng ký, dùng quy trình chính thức và chỉ cung cấp giấy tờ cần thiết ở đúng nơi. Không gửi giấy tờ vào chatbot hoặc nhóm lớp để “nhờ duyệt hộ”.
-
-### Tuổi, dữ liệu và tài khoản phải được xét trước giá
-
-Điều kiện tuổi của một chương trình không áp dụng tự động cho chương trình khác. Bản nguồn ghi điều khoản Gemini API yêu cầu **18 tuổi trở lên** với Gemini API và Google AI Studio. **Claim này mang mốc nguồn 29/10/2026, chưa xác minh độc lập; cần đọc lại điều khoản chính thức trước khi dùng.** Không suy từ mốc 13 của một chương trình giáo dục rằng đủ điều kiện dùng mọi API. Khi chưa đáp ứng hoặc chưa rõ điều kiện, chọn bài trên giấy, không tìm cách vượt giới hạn.
-
-Cũng theo nội dung bản nguồn dẫn điều khoản Gemini API ở mốc đó, dịch vụ unpaid thuộc phạm vi áp dụng có thể dùng nội dung để cải thiện sản phẩm và có người xem xét; paid có nhiều trường hợp không dùng nội dung để cải thiện nhưng có thể tồn tại chương trình/tier đóng góp dữ liệu. **Các chi tiết này chưa xác minh độc lập và không được trình bày như cam kết hiện hành.** Bài học bền vững là phải xem đúng sản phẩm, cấp dịch vụ, lựa chọn dữ liệu và ngoại lệ.
-
-Không lấy điều khoản API gán nguyên cho ứng dụng chat. Không rút thành “trả phí là riêng tư tuyệt đối”, “không training là không lưu” hoặc “mọi provider giống nhau”. Với ViSinhVien, chỉ dùng ba khoản GIẢ; không có lý do đưa sao kê, số tài khoản hoặc lịch sử chi tiêu thật lên AI. `localStorage` cũng không phải kho bí mật hay sao lưu chắc chắn: dữ liệu có thể mất khi xóa dữ liệu trình duyệt, không tự đồng bộ thiết bị hoặc tạo đăng nhập.
-
-Nếu dùng dịch vụ, cần tài khoản hợp lệ, mật khẩu riêng và xác thực nhiều yếu tố khi được hỗ trợ. Không mua tài khoản lậu hoặc chia sẻ thuê bao/key mà bỏ qua điều khoản và quyền riêng tư. Người bán hoặc người dùng chung có thể đọc lịch sử, thu hồi quyền, làm phát sinh phí. Giá rẻ không bù được việc mất kiểm soát; điều kiện sử dụng phải được kiểm tra trước phép so sánh giá.
-
-## 1.5. AI TOOL BATTLE — Đối chiếu công cụ theo việc, không theo danh tiếng
-
-### Ma trận tác vụ: “hợp việc nào?” đứng trước “mạnh nhất?”
-
-Minh thích thẻ A vì được tự suy nghĩ; Lan thích công cụ có thể chỉ đúng tệp liên quan. Không có mâu thuẫn: hai người đang ưu tiên tác vụ khác nhau. Giỏi dịch không tự chứng minh giỏi kiểm tra code; viết mã nhanh không chứng minh biết chính sách mới.
-
-Năm lăng kính để chọn là **provenance** — nguồn gốc/căn cứ; **test** — cách kiểm tra; **context** — thông tin cần nhận; **privacy** — điều kiện dữ liệu; **cost** — tổng chi phí. “Bằng chứng” của debug có thể là dòng code và test; “bằng chứng” của tuổi dùng dịch vụ phải là điều khoản đúng phạm vi.
-
-| Tác vụ | Context cần có | Provenance và test | Privacy và cost |
-| --- | --- | --- | --- |
-| Suy luận logic | Code, chỉ số, mục tiêu cộng mọi khoản của Minh | Bám cận vòng lặp; tự xét rỗng, một khoản, ba khoản | Dữ liệu GIẢ; gợi ý ngắn trên phương án free phù hợp |
-| Code hoặc refactor | Brief, hàm liên quan, cấu trúc Expense của Lan | Đọc thay đổi; kiểm mẫu, biên và dữ liệu sai; không thêm backend | Không key; xem quyền đọc tệp, số bước và phí lặp |
-| Đọc tài liệu dài | Đặc tả và đoạn ghi chú được phép | Trích đúng đoạn, tìm mâu thuẫn, so brief hiện hành | Không gửi tài liệu hạn chế; trích đoạn trước khi mua context lớn |
-| Dịch và diễn giải | Đoạn lỗi/tài liệu, trình độ người học | Giữ tên API, số liệu và phủ định; không đổi số nguyên thành số thực | Loại thông tin riêng; không cần agent nhiều bước |
-| Tìm thông tin mới | Câu hỏi về ưu đãi/giá, đúng sản phẩm và phạm vi | Nguồn chính thức hiện hành, đoạn hỗ trợ, ngày truy cập | Không gửi giấy tờ; xét phí tìm kiếm nếu có |
-
-Ma trận không xếp hạng sản phẩm thật. Không có web thì không dùng làm nguồn duy nhất cho chính sách hiện tại. Không chạy code vẫn có thể gợi ý, nhưng cần kiểm thử ở nơi khác. Chọn công cụ có phần việc mình kiểm chứng được, thay vì giao hết chỉ vì nó nhận làm.
-
-### Benchmark A–C: chuẩn bị một phép thử công bằng vừa đủ
-
-**Benchmark** là phép thử có kiểm soát để so mức phù hợp. Ba đề kế thừa nguồn, **không có điểm sản phẩm điền sẵn**. Không có công cụ được phép dùng thì phân tích trên giấy, ghi là luyện đánh giá, không phải benchmark thực.
-
-Giữ cùng brief, code, dữ liệu, đầu ra và giới hạn trợ giúp; nên mở trao đổi mới để giảm ảnh hưởng lịch sử. Ghi ứng dụng, nhãn model/chưa xác định, chế độ, ngày, tính năng bật. Khác biệt web/chạy code phải được ghi riêng, không quy tất cả cho model.
-
-Làm theo thứ tự **gửi đề → giữ nguyên câu trả lời → tự kiểm → chấm → ghi hỏi bổ sung và giới hạn kết luận**. Có điều kiện thì thử lại vì đầu ra có thể đổi. Vài đề không chứng minh “tốt nhất cho mọi người”.
-
-### Đề A — Giải thích logic C++ cho Minh
-
-Dán **nguyên snippet đầu chương và brief mục 1.2**; chữ “xem đầu chương” không tự gửi tài liệu cho ứng dụng.
-
-```text
-Với snippet C++ đính kèm, hãy gợi ý một bước trước khi nêu cách sửa.
-Sau đó giải thích bằng chỉ số vì sao tổng ba khoản GIẢ bị thiếu.
-Nêu kết quả mong đợi sau sửa cho: rỗng; một khoản 7000;
-ba khoản 35000, 7000, 18000. Không truy cập quá danh sách.
-Phân biệt dự đoán với kết quả đã chạy; chưa viết lại toàn bộ bài.
-```
-
-Chấm cả độ đúng và cách giúp học: viết ngay toàn bài có thể đúng kết quả nhưng sai mức trợ giúp. Lời “đã chạy” cần bằng chứng.
-
-### Đề B — Refactor Web mà không đổi sản phẩm
-
-Dùng brief và **bản rút gọn cho đề bài** dưới đây, chỉ cộng khi đầu vào hợp lệ. Không khẳng định demo `data.js` thiếu kiểm tra; không thay snippet vào demo đúng.
-
-```javascript
-function totalExpenses(expenses) {
-  return expenses.reduce((sum, expense) => sum + expense.amount, 0);
-}
-```
-
-```text
-Hãy đề xuất cách bổ sung xác thực cho bản rút gọn đính kèm.
-Expense có id, title, amount, category; amount là số nguyên VND,
-0 < amount <= 1000000000; danh sách tối đa 500 khoản; rỗng tổng 0.
-Giữ HTML + JavaScript + localStorage, không backend hoặc đăng nhập.
-Phân biệt kiểm tra khi thêm, khi nạp và trách nhiệm hàm tính tổng.
-Nêu cách xử lý JSON hỏng và các test; chưa thêm thư viện hay tính năng.
-```
-
-Chấm hợp đồng và hành vi, không thưởng số lớp hoặc tên hàm giống mẫu. Kiểm form rồi tin mọi dữ liệu đọc lại là chưa đủ.
-
-### Đề C — Đọc và kiểm tra nguồn cho Lan
-
-Cung cấp brief và đoạn dữ kiện sau, kèm liên kết để người trả lời biết giới hạn nguồn:
-
-```text
-ĐOẠN ĐỐI CHIẾU TỪ BẢN NGUỒN, MỐC 29/10/2026:
-GitHub Education yêu cầu đáp ứng điều kiện người học, tài khoản cá nhân
-và bằng chứng tình trạng sinh viên; bản nguồn ghi tuổi tối thiểu 13.
-Email trường không tự bảo đảm được duyệt. Chưa xác minh độc lập lại.
-Nguồn: https://docs.github.com/en/education/explore-the-benefits-of-teaching-and-learning-with-github-education/github-education-for-students/apply-to-github-education-as-a-student
-
-Hãy tóm tắt cho Minh, phân biệt đủ điều kiện nộp với chắc chắn được duyệt.
-Email TLU có tự bảo đảm ưu đãi không? Đoạn này cho phép kết luận gì
-về quyền sử dụng một API khác? Nếu không truy xuất web thực,
-chỉ phân tích đoạn được cung cấp, không tuyên bố đã kiểm tin mới.
-```
-
-Đề C cố ý có mốc cũ và giới hạn xác minh. Một câu trả lời tốt không “làm mới” tài liệu bằng cách gắn ngày hiện tại. Nếu có truy xuất thật, phải ghi trang đã đọc và claim được hỗ trợ; việc đó là bằng chứng bổ sung, không xóa mốc của đoạn được cung cấp.
-
-### Đáp án benchmark A–C — Chuẩn đối chiếu, không phải kết quả đo
-
-**A:** `i < n - 1` bỏ khoản cuối; sửa thành `i < n`, không dùng `i <= n`. Ba kỳ vọng sau sửa là **0, 7000, 60000**, không phải log. Ca một khoản phơi lộ việc bỏ mất khoản duy nhất; rỗng một mình chưa đủ. Trace/thực thi xem mục 2.3; validation là nhiệm vụ riêng.
-
-**B:** kiểm cấu trúc danh sách, tối đa 500 khoản; từng `amount` thỏa `Number.isSafeInteger`, lớn hơn 0, không quá 1000000000. Kiểm khi thêm và nạp lại; xử lý JSON hỏng có thông báo, không âm thầm mất dữ liệu. Có thể xác thực ở biên hoặc đầu hàm tổng nhưng phải rõ hợp đồng. Không thêm backend/tài khoản/thư viện lớn. Test logic chưa kiểm chứng giao diện/lưu trữ.
-
-**C:** email TLU không bảo đảm duyệt; điều kiện và bằng chứng khác kết quả xét hồ sơ. Đoạn nguồn không chứng minh quyền mọi API hay điều khoản hiện tại. Không truy xuất mới thì giữ mốc gốc, ghi cần tra lại; không suy tuổi sang dịch vụ khác.
-
-### Rubric 10 điểm: dùng sau khi có bằng chứng
-
-**Rubric** là bảng tiêu chí chấm. Chấm từng đề A, B hoặc C theo năm tiêu chí, mỗi tiêu chí 0–2; tổng tối đa **10 điểm cho một đề**. Đây là cách chuyển năm lăng kính thành đánh giá đầu ra, không phải thuật toán xếp hạng công cụ.
-
-| Tiêu chí | 0 điểm | 1 điểm | 2 điểm |
-| --- | --- | --- | --- |
-| Đúng trọng tâm | Sai bài hoặc sai kết luận chính | Đúng một phần, thiếu quan trọng | Đúng tác vụ và kết quả chính |
-| Giữ ràng buộc/context | Bỏ hoặc tự đổi yêu cầu | Giữ phần lớn, cần nhắc | Giữ yêu cầu liên quan, nhận ra dữ kiện thiếu |
-| Bằng chứng/provenance | Bịa nguồn, bịa chạy test hoặc không căn cứ | Có căn cứ nhưng chưa rõ/đủ | Suy luận, test hoặc nguồn phù hợp; nêu giới hạn |
-| Dễ học và kiểm tra | Khó hiểu, không có cách tự kiểm | Hiểu được một phần | Vừa sức, giúp tự làm bước tiếp |
-| An toàn và tiết kiệm | Đòi dữ liệu thật/key hoặc mở rộng tốn kém | Có nhắc nhưng chưa cụ thể | Giữ dữ liệu GIẢ, phạm vi nhỏ, tránh chi phí vô ích |
-
-Một đề nghị đưa key bí mật vào Web phải bị loại khỏi phương án triển khai đến khi sửa, dù tổng điểm khác cao. Điểm không bù được vi phạm điều kiện bắt buộc. Nếu chưa kiểm nguồn hoặc chưa chạy code, ghi phần đó là chưa kiểm, không tự cộng điểm như đã có bằng chứng.
-
-### Phiếu benchmark để trống
-
-| Trường ghi nhận | Kết quả của bạn |
-| --- | --- |
-| Thử công cụ thật hay luyện đánh giá trên giấy? | ______________________________ |
-| Ứng dụng, model công bố, provider biết được, chế độ | ______________________________ |
-| Ngày thử, nguồn nhận diện, tính năng bật | ______________________________ |
-| Brief, code và dữ liệu dùng chung | ______________________________ |
-| Điểm A /10; B /10; C /10 | ______________________________ |
-| Căn cứ cho điểm và phần chưa kiểm | ______________________________ |
-| Thời gian, số lượt hỏi lại | ______________________________ |
-| Chi phí quan sát được hoặc “chưa xác định” | ______________________________ |
-| Chọn cho tác vụ nào; không chọn cho tác vụ nào | ______________________________ |
-
-Chỉ chấm khi có bằng chứng; bài trên giấy không là kết quả model. Không phân bổ thuê bao thành giá request tùy tiện. Minh ưu tiên đúng, dễ hiểu, miễn phí hơn nhiều mã không giải thích nổi.
-
-## 1.6. MINI CHALLENGE — 20 phút để nhận diện, ước chi và quyết định
-
-### Chuẩn bị một tờ giấy, không chuẩn bị thẻ thanh toán
-
-Lab kế thừa nguồn, làm cá nhân/theo cặp bằng sách và giấy. Không đăng ký, cài đặt, gọi API, tạo key, tải giấy tờ hay dùng chi tiêu thật; không cần tài khoản AI.
-
-**Tình huống GIẢ ĐỊNH:** Minh cần hiểu lỗi 42000; Lan kiểm Web cục bộ và thông tin ưu đãi. Ứng dụng GIẢ “Trợ lý học ViSinhVien” chỉ công bố “Tự động”, không nêu model từng lượt/provider. Web vẫn HTML, JavaScript, `localStorage`, không backend. Dùng chi phí giả định mục 1.3.
-
-Nộp một phiếu gồm nhận diện, prompt, phép tính và quyết định có điều kiện. Không cần làm hết benchmark A–C trong lab; đây là nhiệm vụ ghép kỹ năng, không phải cuộc thi tốc độ.
-
-### Lịch 20 phút: làm từng bước vì một lý do
-
-**Phút 0–4 — Nhận diện.** Điền application/model/provider, thêm producer nếu biết. Gạch dữ kiện, khoanh điều chưa rõ để tránh đoán model từ giao diện. Quan sát công cụ thật thì chỉ đọc thông tin được phép, ghi nguồn/ngày, không đổi cài đặt.
-
-**Phút 4–8 — Viết prompt.** Đưa mục tiêu, code, hợp đồng, ba khoản và cặp 60000/42000; xin gợi ý trước. Đọc như người chưa biết dự án để phát hiện thiếu context. Gửi nơi khác phải dán snippet thật.
-
-**Phút 8–13 — Ước chi.** Tách input/output cho 50 request, đổi USD/VND, rồi xét 1000 request. Kiểm chéo từng request để bắt lỗi đơn vị; giữ nguyên số giả định để đối chiếu.
-
-**Phút 13–17 — Quyết định.** Dùng ít nhất ba tiêu chí ma trận, có phương án không trả tiền, cách kiểm chứng và điều kiện đánh giá lại. Sở thích không thay thế bằng chứng.
-
-**Phút 17–20 — Đối chiếu.** Sửa phiếu nhưng giữ dấu lỗi ban đầu để nhận ra điều vừa học. Nói trong 30 giây: biết/chưa biết gì, chọn gì, kiểm thế nào, chi tối đa bao nhiêu.
-
-### Worksheet — Điền trước khi mở đáp án
-
-| Ô cần điền | Câu trả lời của bạn |
-| --- | --- |
-| Ứng dụng đang xét | ________________________________________ |
-| Model cụ thể hoặc chế độ được công bố | ________________________________________ |
-| Provider của đường truy cập | ________________________________________ |
-| Producer, nếu có căn cứ | ________________________________________ |
-| Nguồn và ngày quan sát, hoặc “tình huống GIẢ ĐỊNH” | ________________________________________ |
-| Điều chưa đủ chứng cứ để kết luận | ________________________________________ |
-| Mục tiêu và kết quả đúng của ViSinhVien | ________________________________________ |
-| Hiện tượng được đề cho; test đầu tiên | ________________________________________ |
-| Dữ liệu không được gửi | ________________________________________ |
-
-```text
-Tôi đang học: _________________________________________________
-Mục tiêu và phạm vi: __________________________________________
-Dữ liệu GIẢ, hợp đồng và code cần dán: __________________________
-Kết quả mong đợi / hiện tượng theo đề: _________________________
-Hãy giúp theo cách: ___________________________________________
-Tôi sẽ tự kiểm bằng: __________________________________________
-Phần chưa chạy hoặc chưa xác minh: _____________________________
-```
-
-| Phép tính bắt buộc | Kết quả kèm đơn vị |
-| --- | --- |
-| 20000 × 50 | ____________________ token input |
-| 5000 × 50 | ____________________ token output |
-| Tiền input theo đơn giá giả định | ____________________ USD |
-| Tiền output theo đơn giá giả định | ____________________ USD |
-| Tổng và quy đổi ở 50 request | __________ USD = __________ VND |
-| Chi phí một request để kiểm tra chéo | ____________________ USD |
-| Tổng ở 1000 request, bằng 20 lần ban đầu | __________ USD = __________ VND |
-| Khoản chưa tính trong ví dụ | ________________________________________ |
-| So với kế hoạch 300000 VND, chưa phí | ________________________________________ |
-
-Hoàn thành quyết định có điều kiện:
-
-```text
-Với Minh, tôi chọn __________ vì __________.
-Với Lan, tôi chọn __________ vì __________.
-Ba tiêu chí tôi dựa vào là __________, __________, __________.
-Phương án không trả tiền của tôi là __________.
-Tôi chưa mua __________; mức chi tôi chấp nhận lúc này là __________.
-Tôi sẽ cân nhắc lại khi __________, sau khi kiểm tra __________.
-Nếu điều kiện tuổi chưa phù hợp hoặc chưa rõ, tôi sẽ __________.
-Nếu có nguy cơ vượt ngân sách, tôi sẽ __________.
-```
-
-### Đáp án MINI CHALLENGE — Một phiếu hoàn chỉnh có điều kiện
-
-**Nhận diện:** ứng dụng Trợ lý học ViSinhVien, chế độ Tự động; model/provider/producer chưa xác định. Nguồn là tình huống GIẢ ĐỊNH, không phải quan sát dịch vụ; không tự ghi ngày truy cập thật.
-
-**Mục tiêu:** cộng mọi khoản hợp lệ; ba khoản GIẢ kỳ vọng 60000, lỗi đề cho 42000. Rỗng tổng 0; thử một khoản 7000 rồi ba khoản để kiểm lỗi bỏ cuối. Không gửi key, giấy tờ, sao kê, tài khoản hoặc dữ liệu cá nhân. Chưa chạy thì ghi kỳ vọng, không báo cáo test.
-
-**Prompt mẫu:**
-
-```text
-Tôi là Minh năm nhất, mới học vòng lặp C++.
-ViSinhVien cộng tất cả khoản hợp lệ: amount nguyên VND,
-0 < amount <= 1000000000, tối đa 500 khoản; rỗng tổng 0.
-Dữ liệu GIẢ: Cơm trưa 35000, Xe buýt 7000, Vở ghi 18000.
-Kỳ vọng 60000; tình huống đề cho chương trình kết thúc ở 42000.
-Tổng tối đa 500000000000, không đổi sang kiểu không chứa đủ.
-Tôi dán snippet lỗi ngay sau yêu cầu này.
-Hãy gợi ý một bước bằng chỉ số, chưa viết lại chương trình.
-Sau đó nêu test rỗng, một khoản 7000, ba khoản mẫu.
-Phân biệt suy luận với chạy thật; thiếu dữ kiện thì chỉ rõ.
-```
-
-Khi dùng mẫu này, phải dán kèm snippet đầu chương; câu “tôi dán” không tự đính kèm code. Nếu đã chạy thật, có thể thay dòng hiện tượng bằng lệnh và log của chính mình, không mượn kết quả dự đoán làm log.
-
-**Phép tính:** tổng input 1000000 token, output 250000 token; tiền tương ứng 0.30 và 0.625 USD. Tổng **0.925 USD = 23125 VND chưa phí**. Một request **0.0185 USD**, nhân 50 khớp. Với 1000 request: input 20000000 token, output 5000000 token; tiền 6.00 + 12.50 = **18.50 USD = 462500 VND chưa phí**. Mức sau vượt kế hoạch giả định 300000 VND; cảnh báo không tự bảo đảm chặn hóa đơn. Thuê bao giả định 20 USD là 500000 VND/tháng nhưng chưa tương đương quyền lợi API.
-
-**Minh:** dùng giấy/tài liệu hoặc gợi ý miễn phí hợp lệ; tự sửa cận trên bài làm, kiểm rỗng/một/ba khoản ở mục 2.3. Chọn theo context đủ dùng, test kiểm được, cost 0; dữ liệu GIẢ giữ privacy. Không cần API.
-
-**Lan:** giữ Web cục bộ, kiểm đầu vào/tổng rồi kiểm riêng hiển thị/lưu/nạp. Ưu đãi cần nguồn chính thức; chưa truy xuất thì ghi chưa xác minh, chưa mua. Không tự tích hợp API.
-
-**Đánh giá lại** khi free chưa đáp ứng nhu cầu rõ, đã tra quyền lợi/tuổi/dữ liệu, quản lý được chi phí và biết cách dừng gia hạn. Chưa đủ điều kiện hoặc chưa hiểu kiểm soát tiền thì tiếp tục trên giấy/miễn phí. Mức chi hiện tại có thể là 0 VND.
-
-### QUICK CHECK — Sáu câu tự kiểm cuối chương
-
-Trả lời từng câu bằng một kết luận và một lý do. Đừng chỉ nhớ chữ “không”; hãy chỉ ra loại bằng chứng còn thiếu.
-
-1. Nhãn “tích hợp Claude” đã đủ xác định provider và phiên bản chưa?
-2. Cùng model nhưng một ứng dụng đề xuất backend cho ViSinhVien: có chắc quảng cáo sai không?
-3. Danh sách rỗng có vi phạm `amount > 0` không? Có cần tạo một khoản 0 để biểu diễn rỗng không?
-4. Đếm số từ tiếng Việt có đủ tính chính xác hóa đơn token không?
-5. Email TLU có bảo đảm ưu đãi sinh viên và quyền dùng mọi API không?
-6. Trả phí và bật budget alert đã đủ bảo đảm riêng tư, không vượt ngân sách chưa?
-
-### Đáp án QUICK CHECK — Sáu kết luận và lý do
-
-**1. Chưa.** Cần định danh model và đường truy cập; producer có thể khác provider như ví dụ Claude qua Bedrock. Không đoán qua văn phong.
-
-**2. Chưa thể kết luận quảng cáo sai.** Kiểm brief thực sự gửi, lịch sử, chỉ dẫn, công cụ và cấu hình. Backend sai phạm vi đã chốt, nhưng khác đầu ra chưa chứng minh khác model.
-
-**3. Không vi phạm, không cần khoản 0.** Điều kiện dương áp dụng cho khoản tồn tại. Rỗng có tổng 0; tạo `amount = 0` lại vi phạm hợp đồng.
-
-**4. Không.** Token tùy tokenizer/nội dung; usage có thể gồm lịch sử, code, tool output và khoản tính riêng. Cần bộ đếm phù hợp và báo cáo lượng dùng, không dùng wordcount.
-
-**5. Không.** Còn điều kiện, bằng chứng sinh viên và xét hồ sơ. Tuổi/quyền dùng từng API phải tra riêng; mốc nguồn chưa phải xác nhận hiện hành.
-
-**6. Chưa.** Kiểm chính sách đúng sản phẩm/tier/cài đặt. Budget alert không mặc định là hard cap; cần hiểu cơ chế chặn, phạm vi, độ trễ và request đang xử lý.
-
-### Tự giảng lại trong 7 phút — Bản chuyển thể từ Speaker Notes
-
-Phần này không thay lab 20 phút. Bạn có thể nói cho bạn học hoặc tự ghi âm mà không mở giao diện dịch vụ. Đây là cách giữ nội dung trình bày 5–8 phút của bản nguồn trong hình thức tự học.
-
-| Thời gian | Việc trình bày | Điều cần chứng minh |
-| --- | --- | --- |
-| 0:00–1:00 | Kể Minh, Lan, ba khoản GIẢ; phân biệt 42000 và 60000 | Tự cộng đúng, biết tổng trung gian chưa tự là lỗi |
-| 1:00–2:15 | Vẽ application, provider, model; hỏi thêm producer | Không đồng nhất ứng dụng với model, chấp nhận chưa biết |
-| 2:15–3:30 | Sửa prompt thiếu; nhắc hợp đồng và chỉ số cuối | Không đổi thành cận vượt mảng; chưa cần kể lại toàn trace |
-| 3:30–4:45 | Tính riêng input/output, 50 rồi 1000 request | Giữ đơn vị, số giả định và nhãn chưa phí |
-| 4:45–6:00 | Chọn free first; nhắc tuổi, ưu đãi, gia hạn, dữ liệu | Không biến email trường hoặc trả tiền thành bảo đảm |
-| 6:00–7:00 | Hỏi kiểm code bằng gì, cảnh báo có dừng không | Nêu được bằng chứng và điều chưa xác minh |
-
-Có 5 phút thì giảm hỏi đáp, không bỏ nhãn giả định; có 8 phút thì thêm một quyết định có điều kiện. Không trình diễn đăng nhập, thanh toán hoặc giấy tờ để làm bài nói sinh động hơn.
-
-### SKILL UNLOCKED — Bạn mang gì sang chương tiếp theo?
-
-Phiếu hoàn thành cần thể hiện: nhận diện vai trò, chọn context, phân biệt suy luận/thực thi/tìm nguồn, tính input/output và quyết định chi tiêu. Đây là bằng chứng một phiên học, không chứng nhận năng lực lâu dài.
-
-Ba câu mang theo:
-
-- **Biết ứng dụng, đường truy cập và model được công bố; thiếu chứng cứ thì ghi chưa xác định.**
-- **Đưa đúng mục tiêu/context, kiểm bằng phép tính, test hoặc nguồn; sự tự tin không phải bằng chứng.**
-- **Ưu tiên miễn phí đủ dùng; tính lượng dùng và điều kiện trước trả tiền. Không mua vẫn học nghiêm túc.**
-
-Sang **Chương 2 · Trở thành người điều khiển AI**, Minh làm trace/sửa/test ở mục 2.3; Lan theo dữ liệu Web ở mục 2.4. **Chương 3 · Đừng để AI suy nghĩ thay bạn** giữ phần tự làm; **Chương 4 · Sử dụng AI có trách nhiệm** xét quyền, dữ liệu và trách nhiệm.
-
-### Nguồn chính thức và việc còn phải tra lại
-
-**29/10/2026 là mốc truy cập của bộ nguồn được cung cấp**, không phải ngày phát hành hoặc ngày kiểm tra của lần biên tập này. Chưa xác minh độc lập nội dung hiện hành; cần tra lại model, gói, credit, quota, tuổi, dữ liệu và billing trước khi áp dụng. Giữ nguyên 11 liên kết chính thức gốc:
+Các nguồn dưới đây được ghi nhận theo mốc truy cập 29/10/2026. *Chưa kiểm chứng:* nội dung hiện hành của các nguồn chưa được xác minh độc lập; cần tra lại thông tin về model, đường truy cập và API trước khi áp dụng. Các nguồn về giá, ưu đãi sinh viên và thanh toán được liệt kê ở Chương 5.
 
 | Nội dung đối chiếu | Nguồn chính thức |
 | --- | --- |
@@ -677,12 +421,5 @@ Sang **Chương 2 · Trở thành người điều khiển AI**, Minh làm trace
 | Claude qua provider khác | [AWS — Claude in Amazon Bedrock](https://aws.amazon.com/bedrock/claude/) |
 | API, xác thực, chỉ định model | [Google — Gemini API docs](https://ai.google.dev/gemini-api/docs) |
 | Lớp ứng dụng Gemini | [Google — Gemini overview](https://gemini.google/overview/) |
-| Tuổi, điều kiện, bằng chứng sinh viên | [GitHub — Apply to GitHub Education as a student](https://docs.github.com/en/education/explore-the-benefits-of-teaching-and-learning-with-github-education/github-education-for-students/apply-to-github-education-as-a-student) |
-| Quyền lợi, thời hạn, giới hạn | [GitHub Student Developer Pack](https://education.github.com/pack) |
-| Free/paid, đơn vị giá, phụ phí | [Google — Gemini API pricing](https://ai.google.dev/gemini-api/docs/pricing) |
-| Tuổi, sản phẩm/tier, xử lý dữ liệu | [Google — Gemini API terms](https://ai.google.dev/gemini-api/terms) |
-| Cơ chế kiểm soát mức dùng | [Google — Gemini API billing](https://ai.google.dev/gemini-api/docs/billing) |
-| Ngân sách và cảnh báo | [Google Cloud — Budgets](https://cloud.google.com/billing/docs/how-to/budgets) |
-| Credit API theo điều kiện gói | [OpenAI — ChatGPT/API credits](https://developers.openai.com/api/docs/guides/chatgpt-api-credits) |
 
-Giá **0.30/2.50 USD mỗi triệu token**, thuê bao **20 USD**, tỷ giá **25000 VND/USD**, ngân sách **300000 VND** đều GIẢ ĐỊNH, không lấy từ bảng giá thật. Thẻ hư cấu không phải benchmark; bảng kỳ vọng không phải log. Kiểm chứng thật phải ghi riêng công cụ/lệnh/nguồn, ngày và kết quả.
+Các thẻ trả lời hư cấu không phải benchmark; các bảng kết quả mong đợi không phải log thực thi. Mọi kiểm chứng thật phải ghi riêng công cụ, lệnh hoặc nguồn đã dùng, ngày thực hiện và kết quả thu được.

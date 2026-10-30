@@ -248,12 +248,12 @@ def cover(d):
     s = d.root
     meta(s, 64, 52, "CẨM NANG THỰC HÀNH / SINH VIÊN CNTT")
     line(s, 64, 77, 1136, 77, INK)
-    meta(s, 64, 143, "NHẬN DIỆN · ĐIỀU KHIỂN")
-    meta(s, 64, 174, "TỰ HỌC · TRÁCH NHIỆM")
+    meta(s, 64, 143, "HIỂU · DÙNG · GIỮ VỮNG")
+    meta(s, 64, 174, "TRÁCH NHIỆM · LỰA CHỌN")
     text(s, 60, 285, ("Học CNTT", "cùng AI."), 76, font=SERIF, leading=86)
     text(s, 64, 436, ("Đừng chỉ nhận một đáp án.", "Hãy biết vì sao nó đúng."), 27, leading=41)
     line(s, 64, 535, 130, 535, RUST, 4)
-    text(s, 64, 577, ("Một bài toán nhỏ.", "Bốn chặng tự chủ."), 27, font=SERIF, leading=38)
+    text(s, 64, 577, ("Một bài toán nhỏ.", "Năm bước tự chủ."), 27, font=SERIF, leading=38)
     # A shared desk and the actual three-item problem, not a generic AI mascot.
     ellipse(s, 867, 360, 260, 199, PALE)
     path(s, "M636 340 Q866 187 1107 341", stroke=GREEN, width=2, dash="5 9")
@@ -274,7 +274,7 @@ def cover(d):
         receipt(s, x, 447, name, amount, idx)
     path(s, "M637 632 V642 H1117 V632", stroke=GREEN, width=2)
     text(s, 877, 689, "= 60000", 38, INK, MONO, anchor="middle")
-    d.footer("Hai nhân vật hư cấu · một tình huống xuyên suốt", "01—04 / MISSION HANDBOOK")
+    d.footer("Hai nhân vật hư cấu · một tình huống xuyên suốt", "01—05 / CẨM NANG TỰ HỌC")
 
 
 def opener_people(d, minh_pose, lan_pose):
@@ -366,6 +366,28 @@ def chapter_04(d):
     d.arrow("M597 545 V561", "green")
     text(s, 687, 600, "Rồi mới chia sẻ", 20)
     d.footer("Nếu lộ key: thu hồi trước khi dọn dấu vết.", "MINH + LAN / 04")
+
+
+def chapter_05(d):
+    s = d.root
+    d.heading("CHƯƠNG 05 / LỰA CHỌN", "Chọn theo việc, không theo tên",
+              "Việc cần làm, rủi ro dữ liệu và ngân sách quyết định công cụ.", "05")
+    text(s, 600, 231, "“Việc này nên dùng công cụ nào?”", 28, font=SERIF, anchor="middle")
+    opener_people(d, "compare", "audit")
+    for x, rows, note, cost in (
+        (344, ("Giải thích", "một lỗi nhỏ"), "CHAT / ĐỦ DÙNG", "0 đ giả định"),
+        (526, ("Sửa nhiều", "tệp liên quan"), "TRỢ LÝ IDE", "Cần giới hạn"),
+        (708, ("Tra nguồn", "có trích dẫn"), "CÓ TÌM KIẾM", "Phải kiểm lại"),
+    ):
+        page = sheet(s, x, 276, 160, 222, PAPER)
+        text(page, 17, 60, rows, 22, leading=33)
+        line(page, 17, 100, 139, 100, RULE)
+        meta(page, 17, 135, note)
+        text(page, 17, 180, cost, 20, GREEN, weight="600")
+        line(s, x+80, 249, x+80, 270, GREEN, 2)
+    text(s, 603, 553, "Chọn theo việc, rủi ro và ngân sách.", 23,
+         font=SERIF, anchor="middle")
+    d.footer("Giá và điều kiện là dữ liệu giả định; cần tra lại khi áp dụng.", "MINH + LAN / 05")
 
 
 def ecosystem(d):
@@ -742,7 +764,7 @@ class Visual:
 
 
 VISUALS: Sequence[Visual] = (
-    Visual("cover", "Học CNTT cùng AI — một bài toán, bốn chặng",
+    Visual("cover", "Học CNTT cùng AI — một bài toán, năm bước",
            "Minh tóc đen ngắn áo xanh và Lan tóc đen ngang vai áo cam cùng đọc ba phiếu: "
            "Cơm trưa 35000, Xe buýt 7000, Vở ghi 18000; tổng đúng là 60000.",
            "Mở tình huống chung của cẩm nang và giới thiệu hai nhân vật hư cấu xuyên suốt.", cover, 780),
@@ -760,6 +782,10 @@ VISUALS: Sequence[Visual] = (
            "Minh và Lan rà phiếu dữ liệu, quyền, nguồn, test trước khi gửi bài. "
            "Chú thích nhắc thu hồi key bị lộ trước khi dọn dấu vết.",
            "Biến trách nhiệm thành những việc cụ thể trước khi chia sẻ.", chapter_04),
+    Visual("chapter-05", "Chọn theo việc, không theo tên",
+           "Minh so ba phiếu công cụ cho ba loại việc: giải thích lỗi nhỏ, sửa nhiều tệp, tra nguồn "
+           "có trích dẫn. Lan rà dữ liệu và ngân sách; không có thứ hạng thương hiệu.",
+           "Dẫn vào việc chọn công cụ theo nhiệm vụ, rủi ro và ngân sách.", chapter_05),
     Visual("ecosystem", "Nhiều lối vào, khác điều kiện",
            "Chat web, API và trợ lý IDE đi qua cổng dịch vụ tới model từ xa; "
            "một nhánh riêng chạy model trên máy. Không có thứ hạng thương hiệu.",
@@ -811,7 +837,7 @@ VISUALS: Sequence[Visual] = (
 
 
 EXPECTED_SLUGS = (
-    "cover", "chapter-01", "chapter-02", "chapter-03", "chapter-04",
+    "cover", "chapter-01", "chapter-02", "chapter-03", "chapter-04", "chapter-05",
     "ecosystem", "roles", "token-context", "workspace", "workflow", "debugging",
     "active-learning", "ai-trap", "security", "final-boss", "skill-map",
 )
@@ -858,7 +884,7 @@ def validate_svg(source: str, visual: Visual) -> None:
 def build_visuals():
     """Create and validate the full batch in memory before any filesystem writes."""
     if tuple(item.slug for item in VISUALS) != EXPECTED_SLUGS:
-        raise ValueError("The editorial collection must contain exactly the required 16 SVGs")
+        raise ValueError("The editorial collection must contain exactly the required 17 SVGs")
     result = []
     for visual in VISUALS:
         drawing = Drawing(visual.slug, visual.title, visual.alt, visual.height)

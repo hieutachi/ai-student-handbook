@@ -1,11 +1,11 @@
 {
   "site_directory": "site",
   "entry": "site/index.html",
-  "rewritten_parent_links": 68,
+  "rewritten_parent_links": 59,
   "remaining_parent_links": 0,
-  "files_copied": 34,
-  "svg_images": 16,
-  "total_bytes": 1355012,
+  "files_copied": 36,
+  "svg_images": 17,
+  "total_bytes": 1663001,
   "excluded_from_online": [
     "dashboard/",
     "scripts/",

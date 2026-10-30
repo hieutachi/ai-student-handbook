@@ -1,5 +1,5 @@
 {
-  "time": "2026-10-30T11:15:11.808Z",
+  "time": "2026-10-30T12:41:25.157Z",
   "browser": "Chrome/156.0.8078.48",
   "results": [
     {
@@ -10,14 +10,14 @@
     {
       "name": "Book loaded",
       "ok": true,
-      "evidence": "4 full chapters, 4 self-check controls"
+      "evidence": "5 full chapters, 5 self-check controls"
     },
     {
       "name": "Chapter 3 keeps its seven teaching moves",
       "ok": true,
       "evidence": {
         "missing": [],
-        "h2": 28
+        "h2": 27
       }
     },
     {
@@ -26,12 +26,12 @@
       "evidence": {
         "dossiers": [
           "1",
+          "7",
           "2",
+          "5",
           "3",
           "4",
-          "5",
-          "6",
-          "7"
+          "6"
         ],
         "hasClinic": true,
         "hasRubric": true,
@@ -47,7 +47,7 @@
       "name": "Images decoded",
       "ok": true,
       "evidence": [
-        16,
+        17,
         []
       ]
     },
@@ -112,7 +112,8 @@
       "ok": true,
       "evidence": {
         "width": 768,
-        "scrollWidth": 753
+        "scrollWidth": 753,
+        "wide": []
       }
     },
     {
@@ -120,18 +121,14 @@
       "ok": true,
       "evidence": {
         "width": 375,
-        "scrollWidth": 360
+        "scrollWidth": 360,
+        "wide": []
       }
     },
     {
       "name": "Mobile menu opens",
       "ok": true,
       "evidence": "375px actual browser emulation"
-    },
-    {
-      "name": "PDF rendered",
-      "ok": true,
-      "evidence": "reports/print-preview.pdf; requires visual spot check"
     },
     {
       "name": "Web starts with three samples",
@@ -267,6 +264,21 @@
     },
     {
       "name": "SVG text at least 18px: chapter-04.svg",
+      "ok": true,
+      "evidence": 18
+    },
+    {
+      "name": "SVG transformed text in bounds: chapter-05.svg",
+      "ok": true,
+      "evidence": []
+    },
+    {
+      "name": "SVG text does not collide: chapter-05.svg",
+      "ok": true,
+      "evidence": []
+    },
+    {
+      "name": "SVG text at least 18px: chapter-05.svg",
       "ok": true,
       "evidence": 18
     },
@@ -440,7 +452,7 @@
       "ok": true,
       "evidence": {
         "position": 1,
-        "routes": 5,
+        "routes": 6,
         "missions": 7,
         "dossiers": 8,
         "broken": [],

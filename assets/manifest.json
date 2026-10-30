@@ -1,6 +1,6 @@
 [
   {
-    "title": "Học CNTT cùng AI — một bài toán, bốn chặng",
+    "title": "Học CNTT cùng AI — một bài toán, năm bước",
     "path": "assets/cover.svg",
     "alt": "Minh tóc đen ngắn áo xanh và Lan tóc đen ngang vai áo cam cùng đọc ba phiếu: Cơm trưa 35000, Xe buýt 7000, Vở ghi 18000; tổng đúng là 60000.",
     "purpose": "Mở tình huống chung của cẩm nang và giới thiệu hai nhân vật hư cấu xuyên suốt."
@@ -28,6 +28,12 @@
     "path": "assets/chapter-04.svg",
     "alt": "Minh và Lan rà phiếu dữ liệu, quyền, nguồn, test trước khi gửi bài. Chú thích nhắc thu hồi key bị lộ trước khi dọn dấu vết.",
     "purpose": "Biến trách nhiệm thành những việc cụ thể trước khi chia sẻ."
+  },
+  {
+    "title": "Chọn theo việc, không theo tên",
+    "path": "assets/chapter-05.svg",
+    "alt": "Minh so ba phiếu công cụ cho ba loại việc: giải thích lỗi nhỏ, sửa nhiều tệp, tra nguồn có trích dẫn. Lan rà dữ liệu và ngân sách; không có thứ hạng thương hiệu.",
+    "purpose": "Dẫn vào việc chọn công cụ theo nhiệm vụ, rủi ro và ngân sách."
   },
   {
     "title": "Nhiều lối vào, khác điều kiện",

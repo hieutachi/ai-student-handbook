@@ -11,7 +11,7 @@ try {
   const saved = JSON.parse(localStorage.getItem(storageKey) || 'null');
   if(saved && typeof saved === 'object') {
     if(Number.isInteger(saved.font) && saved.font>=16 && saved.font<=22) state.font=saved.font;
-    if(Array.isArray(saved.done)) state.done=[...new Set(saved.done.filter(x=>['1','2','3','4'].includes(x)))];
+    if(Array.isArray(saved.done)) state.done=[...new Set(saved.done.filter(x=>['1','2','3','4','5'].includes(x)))];
   }
 } catch { persistent=false; }
 function save() {
@@ -20,7 +20,7 @@ function save() {
   catch {persistent=false;studyStatus();}
 }
 function studyStatus() {
-  $('#study-status').textContent=state.done.length+'/4 chương tự đánh dấu đã kiểm'+(persistent?' · lưu trên trình duyệt này':' · bộ nhớ tạm, có thể mất khi tải lại');
+  $('#study-status').textContent=state.done.length+'/5 chương tự đánh dấu đã kiểm'+(persistent?' · lưu trên trình duyệt này':' · bộ nhớ tạm, có thể mất khi tải lại');
 }
 function applyFont() {document.documentElement.style.setProperty('--font',state.font+'px');}
 applyFont(); studyStatus();
