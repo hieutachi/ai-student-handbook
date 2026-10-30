@@ -1,15 +1,15 @@
-# HỌC CNTT CÙNG AI · CẨM NANG SINH VIÊN
+# HỌC CNTT CÙNG AI · SỔ TAY THỰC HÀNH
 
-Hiểu công cụ · Làm chủ kiến thức · Sử dụng có trách nhiệm
+Bản đầy đủ đi kèm Cẩm nang khởi đầu: bảy bài thực hành, bảy hồ sơ, benchmark, dự án tổng kết và các phụ lục.
 
-Phiên bản 30/10/2026. Năm chương, dự án tổng kết và các phụ lục.
+Phiên bản 30/10/2026.
 
 
 ---
 
 ## BẢN ĐỒ NỘI DUNG
 
-**Tóm lược.** Đây là cẩm nang tự học dành cho sinh viên năm thứ nhất và năm thứ hai ngành Công nghệ thông tin, Trường Đại học Thủy lợi. Mục đích của sách là hướng dẫn sử dụng AI khi làm bài tập lập trình mà **không giao phần suy nghĩ cho công cụ**: hiểu vai trò của AI, dùng có kiểm soát, giữ việc học, giữ trách nhiệm, rồi mới chọn công cụ.
+**Tóm lược.** Đây là **Sổ tay thực hành** đi kèm [Cẩm nang khởi đầu](cam-nang/introduction.md), dành cho sinh viên năm thứ nhất và năm thứ hai ngành Công nghệ thông tin, Trường Đại học Thủy lợi. Cẩm nang nêu ý chính và việc nhỏ để thử; sổ tay này chứa bản đầy đủ của các bài thực hành, hồ sơ tình huống, đáp án và rubric. Mục đích chung là hướng dẫn sử dụng AI khi làm bài tập lập trình mà **không giao phần suy nghĩ cho công cụ**: hiểu vai trò của AI, dùng có kiểm soát, giữ việc học, giữ trách nhiệm, rồi mới chọn công cụ.
 
 **Phạm vi.** Sách không phải quy định chính thức của Trường, không phải đề cương học phần, không phải tài liệu quảng cáo công cụ và không phải bảng giá. Minh và Lan, mọi hội thoại, phiếu khảo sát và con số chi phí trong sách là tình huống hư cấu hoặc dữ liệu giả định phục vụ học tập. Rubric trong sách là rubric luyện tập. Tuyên bố phạm vi đầy đủ được trình bày trong [Lời giới thiệu](chapters/introduction.md).
 
@@ -71,7 +71,9 @@ Khi gặp một con số không có trên trang này, người đọc cần tìm
 
 ## LỜI GIỚI THIỆU
 
-**Học CNTT cùng AI — Cẩm nang tự học và tra cứu dành cho sinh viên năm thứ nhất và năm thứ hai, Khoa Công nghệ thông tin, Trường Đại học Thủy lợi.**
+**Học CNTT cùng AI — Sổ tay thực hành dành cho sinh viên năm thứ nhất và năm thứ hai, Khoa Công nghệ thông tin, Trường Đại học Thủy lợi.**
+
+Sổ tay này là bản đầy đủ đi kèm [Cẩm nang khởi đầu](cam-nang/introduction.md). Người mới bắt đầu nên đọc cẩm nang trước: mỗi mục ở đó nêu một ý chính, một việc nhỏ để thử và chỉ sang đúng bài trong sổ tay này khi muốn làm trọn vẹn.
 
 ### Mục đích và đối tượng của sách
 

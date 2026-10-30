@@ -14,11 +14,12 @@ from bs4 import BeautifulSoup
 
 ROOT = Path(__file__).resolve().parents[1]
 SITE = ROOT / 'site'
-HTML = ROOT / 'website' / 'index.html'
+# Hai trang: cẩm nang khởi đầu là trang chủ, sổ tay thực hành đi kèm.
+PAGES = ['index.html', 'so-tay.html']
 
 # Những nhánh được publish. reports/ chỉ lấy tệp .md; ảnh chụp và nhật ký ở lại máy.
 COPY_DIRS = ['assets', 'vi-du', 'editorial', 'source']
-COPY_FILES = ['Cam-nang-AI-Sinh-vien-Redesigned.md']
+COPY_FILES = ['Cam-nang-khoi-dau.md', 'So-tay-thuc-hanh.md']
 COPY_SELECTIVE = {'reports': ['04_QUALITY_REPORT.md']}
 EXCLUDE_SUFFIX = {'.png', '.pdf', '.jsonl', '.exe', '.out'}
 
@@ -58,12 +59,15 @@ def main():
         shutil.copy2(ROOT / filename, SITE / filename)
         copied.append(filename)
 
-    page = HTML.read_text(encoding='utf-8')
-    # Dashboard là công cụ sản xuất nội bộ: ẩn khỏi trang chủ, không phải nội dung sinh viên cần.
-    page = re.sub(r'<a href="\.\./dashboard/index\.html">Dashboard sản xuất</a>(<br>)?', '', page)
-    before = len(re.findall(r'(?:src|href)="\.\./', page))
-    page = page.replace('src="../', 'src="').replace('href="../', 'href="')
-    after = len(re.findall(r'(?:src|href)="\.\./', page))
+    before = after = 0
+    for name in PAGES:
+        page = (ROOT / 'website' / name).read_text(encoding='utf-8')
+        # Dashboard là công cụ sản xuất nội bộ: ẩn khỏi trang chủ, không phải nội dung sinh viên cần.
+        page = re.sub(r'<a href="\.\./dashboard/index\.html">Dashboard sản xuất</a>(<br>)?', '', page)
+        before += len(re.findall(r'(?:src|href)="\.\./', page))
+        page = page.replace('src="../', 'src="').replace('href="../', 'href="')
+        after += len(re.findall(r'(?:src|href)="\.\./', page))
+        (SITE / name).write_text(page, encoding='utf-8')
     if after:
         raise SystemExit(f'Còn {after} đường dẫn ../ sau khi viết lại')
 
@@ -72,18 +76,17 @@ def main():
         text = demo.read_text(encoding='utf-8')
         demo.write_text(text.replace('../../website/index.html', '../../index.html'), encoding='utf-8')
 
-    (SITE / 'index.html').write_text(page, encoding='utf-8')
-
     # Kiểm bằng BeautifulSoup: mã HTML trong khối <pre> chỉ là văn bản, không phải liên kết.
-    soup = BeautifulSoup((SITE / 'index.html').read_text(encoding='utf-8'), 'html.parser')
-    for tag in soup.find_all('pre'):
-        tag.decompose()
     missing = []
-    for value in {a.get('href') for a in soup.find_all('a', href=True)} | {i.get('src') for i in soup.find_all('img', src=True)}:
-        if not value or value.startswith(('http:', 'https:', 'mailto:', 'data:', '#')):
-            continue
-        if not (SITE / unquote(value.split('#')[0])).exists():
-            missing.append(value)
+    for name in PAGES:
+        soup = BeautifulSoup((SITE / name).read_text(encoding='utf-8'), 'html.parser')
+        for tag in soup.find_all('pre'):
+            tag.decompose()
+        for value in {a.get('href') for a in soup.find_all('a', href=True)} | {i.get('src') for i in soup.find_all('img', src=True)}:
+            if not value or value.startswith(('http:', 'https:', 'mailto:', 'data:', '#')):
+                continue
+            if not (SITE / unquote(value.split('#')[0])).exists():
+                missing.append(f'{name} -> {value}')
     for demo in sorted((SITE / 'vi-du').rglob('*.html')):
         dsoup = BeautifulSoup(demo.read_text(encoding='utf-8'), 'html.parser')
         for tag in dsoup.find_all('pre'):
@@ -104,12 +107,13 @@ def main():
     summary = {
         'site_directory': SITE.relative_to(ROOT).as_posix(),
         'entry': 'site/index.html',
+        'pages': PAGES,
         'rewritten_parent_links': before,
         'remaining_parent_links': after,
-        'files_copied': len(copied) + 1,
+        'files_copied': len(copied) + len(PAGES),
         'svg_images': svg,
         'total_bytes': total,
-        'excluded_from_online': ['dashboard/', 'scripts/', 'chapters/ (nguồn biên tập)',
+        'excluded_from_online': ['dashboard/', 'scripts/', 'chapters/ và cam-nang/ (nguồn biên tập)',
                                  'reports/*.png|pdf|jsonl', 'website/ (nguồn CSS/JS)'],
         'broken_links': missing,
     }

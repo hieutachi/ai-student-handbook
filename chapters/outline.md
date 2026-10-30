@@ -1,6 +1,6 @@
 # BẢN ĐỒ NỘI DUNG
 
-**Tóm lược.** Đây là cẩm nang tự học dành cho sinh viên năm thứ nhất và năm thứ hai ngành Công nghệ thông tin, Trường Đại học Thủy lợi. Mục đích của sách là hướng dẫn sử dụng AI khi làm bài tập lập trình mà **không giao phần suy nghĩ cho công cụ**: hiểu vai trò của AI, dùng có kiểm soát, giữ việc học, giữ trách nhiệm, rồi mới chọn công cụ.
+**Tóm lược.** Đây là **Sổ tay thực hành** đi kèm [Cẩm nang khởi đầu](../cam-nang/introduction.md), dành cho sinh viên năm thứ nhất và năm thứ hai ngành Công nghệ thông tin, Trường Đại học Thủy lợi. Cẩm nang nêu ý chính và việc nhỏ để thử; sổ tay này chứa bản đầy đủ của các bài thực hành, hồ sơ tình huống, đáp án và rubric. Mục đích chung là hướng dẫn sử dụng AI khi làm bài tập lập trình mà **không giao phần suy nghĩ cho công cụ**: hiểu vai trò của AI, dùng có kiểm soát, giữ việc học, giữ trách nhiệm, rồi mới chọn công cụ.
 
 **Phạm vi.** Sách không phải quy định chính thức của Trường, không phải đề cương học phần, không phải tài liệu quảng cáo công cụ và không phải bảng giá. Minh và Lan, mọi hội thoại, phiếu khảo sát và con số chi phí trong sách là tình huống hư cấu hoặc dữ liệu giả định phục vụ học tập. Rubric trong sách là rubric luyện tập. Tuyên bố phạm vi đầy đủ được trình bày trong [Lời giới thiệu](introduction.md).
 

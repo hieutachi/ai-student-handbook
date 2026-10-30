@@ -1918,3 +1918,393 @@
 {"runId":"2026-10-30T12:41:33.248Z","time":"2026-10-30T12:42:36.258Z","event":"check","name":"Online build hides internal dashboard link","ok":true,"evidence":"site build drops production dashboard"}
 {"runId":"2026-10-30T12:41:33.248Z","time":"2026-10-30T12:42:36.258Z","event":"check","name":"No runtime exceptions","ok":true,"evidence":[]}
 {"runId":"2026-10-30T12:41:33.248Z","time":"2026-10-30T12:42:36.258Z","event":"check","name":"No remote content requests","ok":true,"evidence":[]}
+{"runId":"2026-10-30T14:49:18.331Z","time":"2026-10-30T14:49:18.331Z","event":"start"}
+{"runId":"2026-10-30T14:49:18.331Z","time":"2026-10-30T14:49:38.691Z","event":"check","name":"Dashboard 14 tasks / 8 phases","ok":true,"evidence":"Read state.js from file://"}
+{"runId":"2026-10-30T14:49:18.331Z","time":"2026-10-30T14:49:59.048Z","event":"check","name":"So tay loaded","ok":true,"evidence":"5 full chapters, 5 self-check controls"}
+{"runId":"2026-10-30T14:49:18.331Z","time":"2026-10-30T14:49:59.051Z","event":"check","name":"So tay chapter 3 keeps its seven teaching moves","ok":true,"evidence":{"missing":[],"h2":27}}
+{"runId":"2026-10-30T14:49:18.331Z","time":"2026-10-30T14:49:59.053Z","event":"check","name":"So tay chapter 4 has dossiers 1–7 plus clinic, rubric, checklist","ok":true,"evidence":{"dossiers":["1","7","2","5","3","4","6"],"hasClinic":true,"hasRubric":true,"hasChecklist":true}}
+{"runId":"2026-10-30T14:49:18.331Z","time":"2026-10-30T14:49:59.054Z","event":"check","name":"So tay answers are collapsed until opened","ok":true,"evidence":"Answer blocks ship closed; print opens them temporarily"}
+{"runId":"2026-10-30T14:49:18.331Z","time":"2026-10-30T14:49:59.141Z","event":"check","name":"So tay images decoded","ok":true,"evidence":[17,[]]}
+{"runId":"2026-10-30T14:49:18.331Z","time":"2026-10-30T14:49:59.151Z","event":"check","name":"So tay anchors exist","ok":true,"evidence":[]}
+{"runId":"2026-10-30T14:49:18.331Z","time":"2026-10-30T14:49:59.152Z","event":"check","name":"So tay trace widget sits in 2.3","ok":true,"evidence":"Mission 03 keeps the trace simulation"}
+{"runId":"2026-10-30T14:49:18.331Z","time":"2026-10-30T14:49:59.154Z","event":"check","name":"So tay one-page outline is first and complete","ok":true,"evidence":{"position":1,"routes":6,"missions":7,"dossiers":8,"broken":[],"hasContract":true,"hasLimits":true}}
+{"runId":"2026-10-30T14:49:18.331Z","time":"2026-10-30T14:49:59.155Z","event":"check","name":"So tay links back to cam nang","ok":true,"evidence":"hero and sidebar"}
+{"runId":"2026-10-30T14:49:18.331Z","time":"2026-10-30T14:49:59.400Z","event":"check","name":"So tay no page overflow at 768","ok":true,"evidence":{"width":768,"scrollWidth":753,"wide":[]}}
+{"runId":"2026-10-30T14:49:18.331Z","time":"2026-10-30T14:49:59.545Z","event":"check","name":"So tay no page overflow at 375","ok":true,"evidence":{"width":375,"scrollWidth":360,"wide":[]}}
+{"runId":"2026-10-30T14:49:18.331Z","time":"2026-10-30T14:50:19.650Z","event":"check","name":"Book loaded","ok":true,"evidence":"5 short chapters, 5 self-check controls"}
+{"runId":"2026-10-30T14:49:18.331Z","time":"2026-10-30T14:50:19.654Z","event":"check","name":"Every numbered section has Thử ngay and Tự tìm hiểu thêm","ok":true,"evidence":{"numbered":25,"tryNow":25,"more":25,"answers":25,"words":27585}}
+{"runId":"2026-10-30T14:49:18.331Z","time":"2026-10-30T14:50:19.655Z","event":"check","name":"Cam nang keeps answers short and collapsed","ok":true,"evidence":"Gợi ý đối chiếu ≤ 100 words, shipped closed"}
+{"runId":"2026-10-30T14:49:18.331Z","time":"2026-10-30T14:50:19.656Z","event":"check","name":"Cross-links into so tay resolve","ok":true,"evidence":{"count":50,"broken":[]}}
+{"runId":"2026-10-30T14:49:18.331Z","time":"2026-10-30T14:50:19.657Z","event":"check","name":"Cam nang does not carry so tay assessment layer","ok":true,"evidence":"no rubric/criteria headings in the starter book"}
+{"runId":"2026-10-30T14:49:18.331Z","time":"2026-10-30T14:50:19.686Z","event":"check","name":"Images decoded","ok":true,"evidence":[16,[]]}
+{"runId":"2026-10-30T14:49:18.331Z","time":"2026-10-30T14:50:19.783Z","event":"check","name":"All book anchors exist","ok":true,"evidence":[]}
+{"runId":"2026-10-30T14:49:18.331Z","time":"2026-10-30T14:50:19.784Z","event":"check","name":"Budget 1000 calls","ok":true,"evidence":["18.500 USD","≈ 462500 VND · chưa phí khác"]}
+{"runId":"2026-10-30T14:49:18.331Z","time":"2026-10-30T14:50:19.786Z","event":"check","name":"Reject blank budget","ok":true,"evidence":"No fabricated estimate for empty field"}
+{"runId":"2026-10-30T14:49:18.331Z","time":"2026-10-30T14:50:19.787Z","event":"check","name":"Trace widget sits in 2.2","ok":true,"evidence":"Starter book attaches the trace simulation to 2.2"}
+{"runId":"2026-10-30T14:49:18.331Z","time":"2026-10-30T14:50:19.789Z","event":"check","name":"Trace 42000 / 60000","ok":true,"evidence":["Dừng tại i = 2 · tổng 42.000 VND. Vở ghi chưa được cộng.","Dừng tại i = 3 · tổng 60.000 VND. Đã cộng đủ ba khoản; vẫn cần ca biên và dữ liệu sai."]}
+{"runId":"2026-10-30T14:49:18.331Z","time":"2026-10-30T14:50:19.898Z","event":"check","name":"TOC non-accented search","ok":true,"evidence":"Unicode NFD and đ/d normalization"}
+{"runId":"2026-10-30T14:49:18.331Z","time":"2026-10-30T14:50:19.899Z","event":"check","name":"Self-check saves local progress","ok":true,"evidence":"User-owned self-check, not test score"}
+{"runId":"2026-10-30T14:49:18.331Z","time":"2026-10-30T14:50:19.901Z","event":"check","name":"Font controls stay within 16–22 px","ok":true,"evidence":"Measured CSS variable, then restored 18px"}
+{"runId":"2026-10-30T14:49:18.331Z","time":"2026-10-30T14:50:39.957Z","event":"check","name":"Reader self-check persists after reload","ok":true,"evidence":"Same isolated Chrome file:// origin"}
+{"runId":"2026-10-30T14:49:18.331Z","time":"2026-10-30T14:51:00.093Z","event":"check","name":"Progress is kept per book","ok":true,"evidence":"so-tay storage key is separate from cam-nang"}
+{"runId":"2026-10-30T14:49:18.331Z","time":"2026-10-30T14:51:20.155Z","event":"check","name":"Quiz gives explanation","ok":true,"evidence":"Correct choice plus reasoning"}
+{"runId":"2026-10-30T14:49:18.331Z","time":"2026-10-30T14:51:20.156Z","event":"check","name":"Print opens and restores answers","ok":true,"evidence":"beforeprint/afterprint events"}
+{"runId":"2026-10-30T14:49:18.331Z","time":"2026-10-30T14:51:20.258Z","event":"check","name":"Book no page overflow at 768","ok":true,"evidence":{"width":768,"scrollWidth":753,"wide":[]}}
+{"runId":"2026-10-30T14:49:18.331Z","time":"2026-10-30T14:51:20.346Z","event":"check","name":"Book no page overflow at 375","ok":true,"evidence":{"width":375,"scrollWidth":360,"wide":[]}}
+{"runId":"2026-10-30T14:49:18.331Z","time":"2026-10-30T14:51:20.411Z","event":"check","name":"Mobile menu opens","ok":true,"evidence":"375px actual browser emulation"}
+{"runId":"2026-10-30T14:49:18.331Z","time":"2026-10-30T14:51:20.461Z","event":"check","name":"Web starts with three samples","ok":true,"evidence":"Fresh isolated browser profile"}
+{"runId":"2026-10-30T14:49:18.331Z","time":"2026-10-30T14:51:20.463Z","event":"check","name":"Web valid add 75000","ok":true,"evidence":{"total":"75.000 đ","message":"Đã thêm khoản chi giả. Hãy tự nhẩm tổng để đối chiếu."}}
+{"runId":"2026-10-30T14:49:18.331Z","time":"2026-10-30T14:51:20.466Z","event":"check","name":"Web rejects numeric suffix","ok":true,"evidence":{"total":"75.000 đ","message":"Nhập số nguyên VND, không có dấu chấm, phẩy hay chữ."}}
+{"runId":"2026-10-30T14:49:18.331Z","time":"2026-10-30T14:51:20.467Z","event":"check","name":"Web displays literal HTML-like title","ok":true,"evidence":"textContent, not parsed markup"}
+{"runId":"2026-10-30T14:49:18.331Z","time":"2026-10-30T14:51:20.487Z","event":"check","name":"Web localStorage persists in tested browser","ok":true,"evidence":"Observed on this Chrome file:// profile only; not universal guarantee"}
+{"runId":"2026-10-30T14:49:18.331Z","time":"2026-10-30T14:51:20.488Z","event":"check","name":"Web delete to empty = 0","ok":true,"evidence":"All fake rows removed in isolated profile"}
+{"runId":"2026-10-30T14:49:18.331Z","time":"2026-10-30T14:51:20.505Z","event":"check","name":"Corrupt storage falls back without overwrite","ok":true,"evidence":"Broken fixture kept; no real user data used"}
+{"runId":"2026-10-30T14:49:18.331Z","time":"2026-10-30T14:51:20.507Z","event":"check","name":"Fallback adds a real in-memory row","ok":true,"evidence":{"total":"60.001 đ","message":"Đã thêm khoản chi giả. Hãy tự nhẩm tổng để đối chiếu."}}
+{"runId":"2026-10-30T14:49:18.331Z","time":"2026-10-30T14:51:20.530Z","event":"check","name":"Fallback does not promise persistence","ok":true,"evidence":"In-memory addition disappears after reload, notice remains"}
+{"runId":"2026-10-30T14:49:18.331Z","time":"2026-10-30T14:51:20.623Z","event":"check","name":"Web demo no mobile page overflow","ok":true,"evidence":{"width":375,"scrollWidth":360}}
+{"runId":"2026-10-30T14:49:18.331Z","time":"2026-10-30T14:51:20.644Z","event":"check","name":"SVG transformed text in bounds: cover.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T14:49:18.331Z","time":"2026-10-30T14:51:20.645Z","event":"check","name":"SVG text does not collide: cover.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T14:49:18.331Z","time":"2026-10-30T14:51:20.645Z","event":"check","name":"SVG text at least 18px: cover.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T14:49:18.331Z","time":"2026-10-30T14:51:20.755Z","event":"check","name":"SVG transformed text in bounds: chapter-01.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T14:49:18.331Z","time":"2026-10-30T14:51:20.756Z","event":"check","name":"SVG text does not collide: chapter-01.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T14:49:18.331Z","time":"2026-10-30T14:51:20.756Z","event":"check","name":"SVG text at least 18px: chapter-01.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T14:49:18.331Z","time":"2026-10-30T14:51:20.856Z","event":"check","name":"SVG transformed text in bounds: chapter-02.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T14:49:18.331Z","time":"2026-10-30T14:51:20.858Z","event":"check","name":"SVG text does not collide: chapter-02.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T14:49:18.331Z","time":"2026-10-30T14:51:20.858Z","event":"check","name":"SVG text at least 18px: chapter-02.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T14:49:18.331Z","time":"2026-10-30T14:51:20.951Z","event":"check","name":"SVG transformed text in bounds: chapter-03.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T14:49:18.331Z","time":"2026-10-30T14:51:20.953Z","event":"check","name":"SVG text does not collide: chapter-03.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T14:49:18.331Z","time":"2026-10-30T14:51:20.953Z","event":"check","name":"SVG text at least 18px: chapter-03.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T14:49:18.331Z","time":"2026-10-30T14:51:21.052Z","event":"check","name":"SVG transformed text in bounds: chapter-04.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T14:49:18.331Z","time":"2026-10-30T14:51:21.053Z","event":"check","name":"SVG text does not collide: chapter-04.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T14:49:18.331Z","time":"2026-10-30T14:51:21.053Z","event":"check","name":"SVG text at least 18px: chapter-04.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T14:49:18.331Z","time":"2026-10-30T14:51:21.146Z","event":"check","name":"SVG transformed text in bounds: chapter-05.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T14:49:18.331Z","time":"2026-10-30T14:51:21.147Z","event":"check","name":"SVG text does not collide: chapter-05.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T14:49:18.331Z","time":"2026-10-30T14:51:21.147Z","event":"check","name":"SVG text at least 18px: chapter-05.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T14:49:18.331Z","time":"2026-10-30T14:51:21.234Z","event":"check","name":"SVG transformed text in bounds: ecosystem.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T14:49:18.331Z","time":"2026-10-30T14:51:21.235Z","event":"check","name":"SVG text does not collide: ecosystem.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T14:49:18.331Z","time":"2026-10-30T14:51:21.235Z","event":"check","name":"SVG text at least 18px: ecosystem.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T14:49:18.331Z","time":"2026-10-30T14:51:21.329Z","event":"check","name":"SVG transformed text in bounds: roles.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T14:49:18.331Z","time":"2026-10-30T14:51:21.330Z","event":"check","name":"SVG text does not collide: roles.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T14:49:18.331Z","time":"2026-10-30T14:51:21.330Z","event":"check","name":"SVG text at least 18px: roles.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T14:49:18.331Z","time":"2026-10-30T14:51:21.413Z","event":"check","name":"SVG transformed text in bounds: token-context.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T14:49:18.331Z","time":"2026-10-30T14:51:21.414Z","event":"check","name":"SVG text does not collide: token-context.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T14:49:18.331Z","time":"2026-10-30T14:51:21.414Z","event":"check","name":"SVG text at least 18px: token-context.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T14:49:18.331Z","time":"2026-10-30T14:51:21.496Z","event":"check","name":"SVG transformed text in bounds: workspace.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T14:49:18.331Z","time":"2026-10-30T14:51:21.497Z","event":"check","name":"SVG text does not collide: workspace.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T14:49:18.331Z","time":"2026-10-30T14:51:21.497Z","event":"check","name":"SVG text at least 18px: workspace.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T14:49:18.331Z","time":"2026-10-30T14:51:21.595Z","event":"check","name":"SVG transformed text in bounds: workflow.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T14:49:18.331Z","time":"2026-10-30T14:51:21.596Z","event":"check","name":"SVG text does not collide: workflow.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T14:49:18.331Z","time":"2026-10-30T14:51:21.596Z","event":"check","name":"SVG text at least 18px: workflow.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T14:49:18.331Z","time":"2026-10-30T14:51:21.681Z","event":"check","name":"SVG transformed text in bounds: debugging.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T14:49:18.331Z","time":"2026-10-30T14:51:21.684Z","event":"check","name":"SVG text does not collide: debugging.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T14:49:18.331Z","time":"2026-10-30T14:51:21.684Z","event":"check","name":"SVG text at least 18px: debugging.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T14:49:18.331Z","time":"2026-10-30T14:51:21.780Z","event":"check","name":"SVG transformed text in bounds: active-learning.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T14:49:18.331Z","time":"2026-10-30T14:51:21.783Z","event":"check","name":"SVG text does not collide: active-learning.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T14:49:18.331Z","time":"2026-10-30T14:51:21.783Z","event":"check","name":"SVG text at least 18px: active-learning.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T14:49:18.331Z","time":"2026-10-30T14:51:21.879Z","event":"check","name":"SVG transformed text in bounds: ai-trap.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T14:49:18.331Z","time":"2026-10-30T14:51:21.880Z","event":"check","name":"SVG text does not collide: ai-trap.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T14:49:18.331Z","time":"2026-10-30T14:51:21.880Z","event":"check","name":"SVG text at least 18px: ai-trap.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T14:49:18.331Z","time":"2026-10-30T14:51:21.980Z","event":"check","name":"SVG transformed text in bounds: security.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T14:49:18.331Z","time":"2026-10-30T14:51:21.983Z","event":"check","name":"SVG text does not collide: security.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T14:49:18.331Z","time":"2026-10-30T14:51:21.983Z","event":"check","name":"SVG text at least 18px: security.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T14:49:18.331Z","time":"2026-10-30T14:51:22.100Z","event":"check","name":"SVG transformed text in bounds: final-boss.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T14:49:18.331Z","time":"2026-10-30T14:51:22.101Z","event":"check","name":"SVG text does not collide: final-boss.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T14:49:18.331Z","time":"2026-10-30T14:51:22.102Z","event":"check","name":"SVG text at least 18px: final-boss.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T14:49:18.331Z","time":"2026-10-30T14:51:22.207Z","event":"check","name":"SVG transformed text in bounds: skill-map.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T14:49:18.331Z","time":"2026-10-30T14:51:22.208Z","event":"check","name":"SVG text does not collide: skill-map.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T14:49:18.331Z","time":"2026-10-30T14:51:22.208Z","event":"check","name":"SVG text at least 18px: skill-map.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T14:49:18.331Z","time":"2026-10-30T14:51:42.340Z","event":"check","name":"Online build hides internal dashboard link","ok":true,"evidence":"offline package keeps dashboard"}
+{"runId":"2026-10-30T14:49:18.331Z","time":"2026-10-30T14:51:42.341Z","event":"check","name":"No runtime exceptions","ok":true,"evidence":[]}
+{"runId":"2026-10-30T14:49:18.331Z","time":"2026-10-30T14:51:42.341Z","event":"check","name":"No remote content requests","ok":true,"evidence":[]}
+{"runId":"2026-10-30T14:51:42.545Z","time":"2026-10-30T14:51:42.545Z","event":"start"}
+{"runId":"2026-10-30T14:51:42.545Z","time":"2026-10-30T14:52:02.876Z","event":"check","name":"Dashboard 14 tasks / 8 phases","ok":true,"evidence":"Read state.js from file://"}
+{"runId":"2026-10-30T14:51:42.545Z","time":"2026-10-30T14:52:23.210Z","event":"check","name":"So tay loaded","ok":true,"evidence":"5 full chapters, 5 self-check controls"}
+{"runId":"2026-10-30T14:51:42.545Z","time":"2026-10-30T14:52:23.214Z","event":"check","name":"So tay chapter 3 keeps its seven teaching moves","ok":true,"evidence":{"missing":[],"h2":27}}
+{"runId":"2026-10-30T14:51:42.545Z","time":"2026-10-30T14:52:23.215Z","event":"check","name":"So tay chapter 4 has dossiers 1–7 plus clinic, rubric, checklist","ok":true,"evidence":{"dossiers":["1","7","2","5","3","4","6"],"hasClinic":true,"hasRubric":true,"hasChecklist":true}}
+{"runId":"2026-10-30T14:51:42.545Z","time":"2026-10-30T14:52:23.217Z","event":"check","name":"So tay answers are collapsed until opened","ok":true,"evidence":"Answer blocks ship closed; print opens them temporarily"}
+{"runId":"2026-10-30T14:51:42.545Z","time":"2026-10-30T14:52:23.291Z","event":"check","name":"So tay images decoded","ok":true,"evidence":[17,[]]}
+{"runId":"2026-10-30T14:51:42.545Z","time":"2026-10-30T14:52:23.298Z","event":"check","name":"So tay anchors exist","ok":true,"evidence":[]}
+{"runId":"2026-10-30T14:51:42.545Z","time":"2026-10-30T14:52:23.299Z","event":"check","name":"So tay trace widget sits in 2.3","ok":true,"evidence":"Mission 03 keeps the trace simulation"}
+{"runId":"2026-10-30T14:51:42.545Z","time":"2026-10-30T14:52:23.300Z","event":"check","name":"So tay one-page outline is first and complete","ok":true,"evidence":{"position":1,"routes":6,"missions":7,"dossiers":8,"broken":[],"hasContract":true,"hasLimits":true}}
+{"runId":"2026-10-30T14:51:42.545Z","time":"2026-10-30T14:52:23.301Z","event":"check","name":"So tay links back to cam nang","ok":true,"evidence":"hero and sidebar"}
+{"runId":"2026-10-30T14:51:42.545Z","time":"2026-10-30T14:52:23.529Z","event":"check","name":"So tay no page overflow at 768","ok":true,"evidence":{"width":768,"scrollWidth":753,"wide":[]}}
+{"runId":"2026-10-30T14:51:42.545Z","time":"2026-10-30T14:52:23.688Z","event":"check","name":"So tay no page overflow at 375","ok":true,"evidence":{"width":375,"scrollWidth":360,"wide":[]}}
+{"runId":"2026-10-30T14:51:42.545Z","time":"2026-10-30T14:52:43.796Z","event":"check","name":"Book loaded","ok":true,"evidence":"5 short chapters, 5 self-check controls"}
+{"runId":"2026-10-30T14:51:42.545Z","time":"2026-10-30T14:52:43.799Z","event":"check","name":"Every numbered section has Thử ngay and Tự tìm hiểu thêm","ok":true,"evidence":{"numbered":25,"tryNow":25,"more":25,"answers":25,"words":27585}}
+{"runId":"2026-10-30T14:51:42.545Z","time":"2026-10-30T14:52:43.800Z","event":"check","name":"Cam nang keeps answers short and collapsed","ok":true,"evidence":"Gợi ý đối chiếu ≤ 100 words, shipped closed"}
+{"runId":"2026-10-30T14:51:42.545Z","time":"2026-10-30T14:52:43.801Z","event":"check","name":"Cross-links into so tay resolve","ok":true,"evidence":{"count":50,"broken":[]}}
+{"runId":"2026-10-30T14:51:42.545Z","time":"2026-10-30T14:52:43.803Z","event":"check","name":"Cam nang does not carry so tay assessment layer","ok":true,"evidence":"no rubric/criteria headings in the starter book"}
+{"runId":"2026-10-30T14:51:42.545Z","time":"2026-10-30T14:52:43.832Z","event":"check","name":"Images decoded","ok":true,"evidence":[16,[]]}
+{"runId":"2026-10-30T14:51:42.545Z","time":"2026-10-30T14:52:43.935Z","event":"check","name":"All book anchors exist","ok":true,"evidence":[]}
+{"runId":"2026-10-30T14:51:42.545Z","time":"2026-10-30T14:52:43.936Z","event":"check","name":"Budget 1000 calls","ok":true,"evidence":["18.500 USD","≈ 462500 VND · chưa phí khác"]}
+{"runId":"2026-10-30T14:51:42.545Z","time":"2026-10-30T14:52:43.938Z","event":"check","name":"Reject blank budget","ok":true,"evidence":"No fabricated estimate for empty field"}
+{"runId":"2026-10-30T14:51:42.545Z","time":"2026-10-30T14:52:43.939Z","event":"check","name":"Trace widget sits in 2.2","ok":true,"evidence":"Starter book attaches the trace simulation to 2.2"}
+{"runId":"2026-10-30T14:51:42.545Z","time":"2026-10-30T14:52:43.940Z","event":"check","name":"Trace 42000 / 60000","ok":true,"evidence":["Dừng tại i = 2 · tổng 42.000 VND. Vở ghi chưa được cộng.","Dừng tại i = 3 · tổng 60.000 VND. Đã cộng đủ ba khoản; vẫn cần ca biên và dữ liệu sai."]}
+{"runId":"2026-10-30T14:51:42.545Z","time":"2026-10-30T14:52:44.049Z","event":"check","name":"TOC non-accented search","ok":true,"evidence":"Unicode NFD and đ/d normalization"}
+{"runId":"2026-10-30T14:51:42.545Z","time":"2026-10-30T14:52:44.050Z","event":"check","name":"Self-check saves local progress","ok":true,"evidence":"User-owned self-check, not test score"}
+{"runId":"2026-10-30T14:51:42.545Z","time":"2026-10-30T14:52:44.051Z","event":"check","name":"Font controls stay within 16–22 px","ok":true,"evidence":"Measured CSS variable, then restored 18px"}
+{"runId":"2026-10-30T14:51:42.545Z","time":"2026-10-30T14:53:04.108Z","event":"check","name":"Reader self-check persists after reload","ok":true,"evidence":"Same isolated Chrome file:// origin"}
+{"runId":"2026-10-30T14:51:42.545Z","time":"2026-10-30T14:53:24.223Z","event":"check","name":"Progress is kept per book","ok":true,"evidence":"so-tay storage key is separate from cam-nang"}
+{"runId":"2026-10-30T14:51:42.545Z","time":"2026-10-30T14:53:44.281Z","event":"check","name":"Quiz gives explanation","ok":true,"evidence":"Correct choice plus reasoning"}
+{"runId":"2026-10-30T14:51:42.545Z","time":"2026-10-30T14:53:44.282Z","event":"check","name":"Print opens and restores answers","ok":true,"evidence":"beforeprint/afterprint events"}
+{"runId":"2026-10-30T14:51:42.545Z","time":"2026-10-30T14:53:44.382Z","event":"check","name":"Book no page overflow at 768","ok":true,"evidence":{"width":768,"scrollWidth":753,"wide":[]}}
+{"runId":"2026-10-30T14:51:42.545Z","time":"2026-10-30T14:53:44.472Z","event":"check","name":"Book no page overflow at 375","ok":true,"evidence":{"width":375,"scrollWidth":360,"wide":[]}}
+{"runId":"2026-10-30T14:51:42.545Z","time":"2026-10-30T14:53:44.538Z","event":"check","name":"Mobile menu opens","ok":true,"evidence":"375px actual browser emulation"}
+{"runId":"2026-10-30T14:51:42.545Z","time":"2026-10-30T14:53:44.589Z","event":"check","name":"Web starts with three samples","ok":true,"evidence":"Fresh isolated browser profile"}
+{"runId":"2026-10-30T14:51:42.545Z","time":"2026-10-30T14:53:44.591Z","event":"check","name":"Web valid add 75000","ok":true,"evidence":{"total":"75.000 đ","message":"Đã thêm khoản chi giả. Hãy tự nhẩm tổng để đối chiếu."}}
+{"runId":"2026-10-30T14:51:42.545Z","time":"2026-10-30T14:53:44.593Z","event":"check","name":"Web rejects numeric suffix","ok":true,"evidence":{"total":"75.000 đ","message":"Nhập số nguyên VND, không có dấu chấm, phẩy hay chữ."}}
+{"runId":"2026-10-30T14:51:42.545Z","time":"2026-10-30T14:53:44.595Z","event":"check","name":"Web displays literal HTML-like title","ok":true,"evidence":"textContent, not parsed markup"}
+{"runId":"2026-10-30T14:51:42.545Z","time":"2026-10-30T14:53:44.615Z","event":"check","name":"Web localStorage persists in tested browser","ok":true,"evidence":"Observed on this Chrome file:// profile only; not universal guarantee"}
+{"runId":"2026-10-30T14:51:42.545Z","time":"2026-10-30T14:53:44.617Z","event":"check","name":"Web delete to empty = 0","ok":true,"evidence":"All fake rows removed in isolated profile"}
+{"runId":"2026-10-30T14:51:42.545Z","time":"2026-10-30T14:53:44.654Z","event":"check","name":"Corrupt storage falls back without overwrite","ok":true,"evidence":"Broken fixture kept; no real user data used"}
+{"runId":"2026-10-30T14:51:42.545Z","time":"2026-10-30T14:53:44.657Z","event":"check","name":"Fallback adds a real in-memory row","ok":true,"evidence":{"total":"60.001 đ","message":"Đã thêm khoản chi giả. Hãy tự nhẩm tổng để đối chiếu."}}
+{"runId":"2026-10-30T14:51:42.545Z","time":"2026-10-30T14:53:44.681Z","event":"check","name":"Fallback does not promise persistence","ok":true,"evidence":"In-memory addition disappears after reload, notice remains"}
+{"runId":"2026-10-30T14:51:42.545Z","time":"2026-10-30T14:53:44.766Z","event":"check","name":"Web demo no mobile page overflow","ok":true,"evidence":{"width":375,"scrollWidth":360}}
+{"runId":"2026-10-30T14:51:42.545Z","time":"2026-10-30T14:53:44.785Z","event":"check","name":"SVG transformed text in bounds: cover.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T14:51:42.545Z","time":"2026-10-30T14:53:44.786Z","event":"check","name":"SVG text does not collide: cover.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T14:51:42.545Z","time":"2026-10-30T14:53:44.787Z","event":"check","name":"SVG text at least 18px: cover.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T14:51:42.545Z","time":"2026-10-30T14:53:44.895Z","event":"check","name":"SVG transformed text in bounds: chapter-01.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T14:51:42.545Z","time":"2026-10-30T14:53:44.896Z","event":"check","name":"SVG text does not collide: chapter-01.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T14:51:42.545Z","time":"2026-10-30T14:53:44.896Z","event":"check","name":"SVG text at least 18px: chapter-01.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T14:51:42.545Z","time":"2026-10-30T14:53:44.993Z","event":"check","name":"SVG transformed text in bounds: chapter-02.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T14:51:42.545Z","time":"2026-10-30T14:53:44.994Z","event":"check","name":"SVG text does not collide: chapter-02.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T14:51:42.545Z","time":"2026-10-30T14:53:44.994Z","event":"check","name":"SVG text at least 18px: chapter-02.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T14:51:42.545Z","time":"2026-10-30T14:53:45.090Z","event":"check","name":"SVG transformed text in bounds: chapter-03.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T14:51:42.545Z","time":"2026-10-30T14:53:45.091Z","event":"check","name":"SVG text does not collide: chapter-03.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T14:51:42.545Z","time":"2026-10-30T14:53:45.091Z","event":"check","name":"SVG text at least 18px: chapter-03.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T14:51:42.545Z","time":"2026-10-30T14:53:45.189Z","event":"check","name":"SVG transformed text in bounds: chapter-04.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T14:51:42.545Z","time":"2026-10-30T14:53:45.190Z","event":"check","name":"SVG text does not collide: chapter-04.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T14:51:42.545Z","time":"2026-10-30T14:53:45.190Z","event":"check","name":"SVG text at least 18px: chapter-04.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T14:51:42.545Z","time":"2026-10-30T14:53:45.290Z","event":"check","name":"SVG transformed text in bounds: chapter-05.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T14:51:42.545Z","time":"2026-10-30T14:53:45.291Z","event":"check","name":"SVG text does not collide: chapter-05.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T14:51:42.545Z","time":"2026-10-30T14:53:45.292Z","event":"check","name":"SVG text at least 18px: chapter-05.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T14:51:42.545Z","time":"2026-10-30T14:53:45.391Z","event":"check","name":"SVG transformed text in bounds: ecosystem.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T14:51:42.545Z","time":"2026-10-30T14:53:45.393Z","event":"check","name":"SVG text does not collide: ecosystem.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T14:51:42.545Z","time":"2026-10-30T14:53:45.393Z","event":"check","name":"SVG text at least 18px: ecosystem.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T14:51:42.545Z","time":"2026-10-30T14:53:45.489Z","event":"check","name":"SVG transformed text in bounds: roles.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T14:51:42.545Z","time":"2026-10-30T14:53:45.490Z","event":"check","name":"SVG text does not collide: roles.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T14:51:42.545Z","time":"2026-10-30T14:53:45.490Z","event":"check","name":"SVG text at least 18px: roles.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T14:51:42.545Z","time":"2026-10-30T14:53:45.572Z","event":"check","name":"SVG transformed text in bounds: token-context.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T14:51:42.545Z","time":"2026-10-30T14:53:45.574Z","event":"check","name":"SVG text does not collide: token-context.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T14:51:42.545Z","time":"2026-10-30T14:53:45.574Z","event":"check","name":"SVG text at least 18px: token-context.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T14:51:42.545Z","time":"2026-10-30T14:53:45.673Z","event":"check","name":"SVG transformed text in bounds: workspace.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T14:51:42.545Z","time":"2026-10-30T14:53:45.674Z","event":"check","name":"SVG text does not collide: workspace.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T14:51:42.545Z","time":"2026-10-30T14:53:45.675Z","event":"check","name":"SVG text at least 18px: workspace.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T14:51:42.545Z","time":"2026-10-30T14:53:45.772Z","event":"check","name":"SVG transformed text in bounds: workflow.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T14:51:42.545Z","time":"2026-10-30T14:53:45.773Z","event":"check","name":"SVG text does not collide: workflow.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T14:51:42.545Z","time":"2026-10-30T14:53:45.773Z","event":"check","name":"SVG text at least 18px: workflow.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T14:51:42.545Z","time":"2026-10-30T14:53:45.860Z","event":"check","name":"SVG transformed text in bounds: debugging.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T14:51:42.545Z","time":"2026-10-30T14:53:45.861Z","event":"check","name":"SVG text does not collide: debugging.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T14:51:42.545Z","time":"2026-10-30T14:53:45.862Z","event":"check","name":"SVG text at least 18px: debugging.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T14:51:42.545Z","time":"2026-10-30T14:53:45.977Z","event":"check","name":"SVG transformed text in bounds: active-learning.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T14:51:42.545Z","time":"2026-10-30T14:53:45.978Z","event":"check","name":"SVG text does not collide: active-learning.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T14:51:42.545Z","time":"2026-10-30T14:53:45.978Z","event":"check","name":"SVG text at least 18px: active-learning.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T14:51:42.545Z","time":"2026-10-30T14:53:46.089Z","event":"check","name":"SVG transformed text in bounds: ai-trap.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T14:51:42.545Z","time":"2026-10-30T14:53:46.090Z","event":"check","name":"SVG text does not collide: ai-trap.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T14:51:42.545Z","time":"2026-10-30T14:53:46.091Z","event":"check","name":"SVG text at least 18px: ai-trap.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T14:51:42.545Z","time":"2026-10-30T14:53:46.179Z","event":"check","name":"SVG transformed text in bounds: security.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T14:51:42.545Z","time":"2026-10-30T14:53:46.180Z","event":"check","name":"SVG text does not collide: security.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T14:51:42.545Z","time":"2026-10-30T14:53:46.180Z","event":"check","name":"SVG text at least 18px: security.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T14:51:42.545Z","time":"2026-10-30T14:53:46.294Z","event":"check","name":"SVG transformed text in bounds: final-boss.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T14:51:42.545Z","time":"2026-10-30T14:53:46.295Z","event":"check","name":"SVG text does not collide: final-boss.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T14:51:42.545Z","time":"2026-10-30T14:53:46.295Z","event":"check","name":"SVG text at least 18px: final-boss.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T14:51:42.545Z","time":"2026-10-30T14:53:46.408Z","event":"check","name":"SVG transformed text in bounds: skill-map.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T14:51:42.545Z","time":"2026-10-30T14:53:46.410Z","event":"check","name":"SVG text does not collide: skill-map.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T14:51:42.545Z","time":"2026-10-30T14:53:46.410Z","event":"check","name":"SVG text at least 18px: skill-map.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T14:51:42.545Z","time":"2026-10-30T14:54:06.553Z","event":"check","name":"Online build hides internal dashboard link","ok":true,"evidence":"offline package keeps dashboard"}
+{"runId":"2026-10-30T14:51:42.545Z","time":"2026-10-30T14:54:06.553Z","event":"check","name":"No runtime exceptions","ok":true,"evidence":[]}
+{"runId":"2026-10-30T14:51:42.545Z","time":"2026-10-30T14:54:06.554Z","event":"check","name":"No remote content requests","ok":true,"evidence":[]}
+{"runId":"2026-10-30T14:54:16.062Z","time":"2026-10-30T14:54:16.063Z","event":"start"}
+{"runId":"2026-10-30T14:54:16.062Z","time":"2026-10-30T14:54:36.583Z","event":"check","name":"So tay loaded","ok":true,"evidence":"5 full chapters, 5 self-check controls"}
+{"runId":"2026-10-30T14:54:16.062Z","time":"2026-10-30T14:54:36.586Z","event":"check","name":"So tay chapter 3 keeps its seven teaching moves","ok":true,"evidence":{"missing":[],"h2":27}}
+{"runId":"2026-10-30T14:54:16.062Z","time":"2026-10-30T14:54:36.588Z","event":"check","name":"So tay chapter 4 has dossiers 1–7 plus clinic, rubric, checklist","ok":true,"evidence":{"dossiers":["1","7","2","5","3","4","6"],"hasClinic":true,"hasRubric":true,"hasChecklist":true}}
+{"runId":"2026-10-30T14:54:16.062Z","time":"2026-10-30T14:54:36.589Z","event":"check","name":"So tay answers are collapsed until opened","ok":true,"evidence":"Answer blocks ship closed; print opens them temporarily"}
+{"runId":"2026-10-30T14:54:16.062Z","time":"2026-10-30T14:54:36.661Z","event":"check","name":"So tay images decoded","ok":true,"evidence":[17,[]]}
+{"runId":"2026-10-30T14:54:16.062Z","time":"2026-10-30T14:54:36.669Z","event":"check","name":"So tay anchors exist","ok":true,"evidence":[]}
+{"runId":"2026-10-30T14:54:16.062Z","time":"2026-10-30T14:54:36.670Z","event":"check","name":"So tay trace widget sits in 2.3","ok":true,"evidence":"Mission 03 keeps the trace simulation"}
+{"runId":"2026-10-30T14:54:16.062Z","time":"2026-10-30T14:54:36.672Z","event":"check","name":"So tay one-page outline is first and complete","ok":true,"evidence":{"position":1,"routes":6,"missions":7,"dossiers":8,"broken":[],"hasContract":true,"hasLimits":true}}
+{"runId":"2026-10-30T14:54:16.062Z","time":"2026-10-30T14:54:36.672Z","event":"check","name":"So tay links back to cam nang","ok":true,"evidence":"hero and sidebar"}
+{"runId":"2026-10-30T14:54:16.062Z","time":"2026-10-30T14:54:36.926Z","event":"check","name":"So tay no page overflow at 768","ok":true,"evidence":{"width":768,"scrollWidth":753,"wide":[]}}
+{"runId":"2026-10-30T14:54:16.062Z","time":"2026-10-30T14:54:37.081Z","event":"check","name":"So tay no page overflow at 375","ok":true,"evidence":{"width":375,"scrollWidth":360,"wide":[]}}
+{"runId":"2026-10-30T14:54:16.062Z","time":"2026-10-30T14:54:57.189Z","event":"check","name":"Book loaded","ok":true,"evidence":"5 short chapters, 5 self-check controls"}
+{"runId":"2026-10-30T14:54:16.062Z","time":"2026-10-30T14:54:57.192Z","event":"check","name":"Every numbered section has Thử ngay and Tự tìm hiểu thêm","ok":true,"evidence":{"numbered":25,"tryNow":25,"more":25,"answers":25,"words":27585}}
+{"runId":"2026-10-30T14:54:16.062Z","time":"2026-10-30T14:54:57.193Z","event":"check","name":"Cam nang keeps answers short and collapsed","ok":true,"evidence":"Gợi ý đối chiếu ≤ 100 words, shipped closed"}
+{"runId":"2026-10-30T14:54:16.062Z","time":"2026-10-30T14:54:57.194Z","event":"check","name":"Cross-links into so tay resolve","ok":true,"evidence":{"count":50,"broken":[]}}
+{"runId":"2026-10-30T14:54:16.062Z","time":"2026-10-30T14:54:57.195Z","event":"check","name":"Cam nang does not carry so tay assessment layer","ok":true,"evidence":"no rubric/criteria headings in the starter book"}
+{"runId":"2026-10-30T14:54:16.062Z","time":"2026-10-30T14:54:57.224Z","event":"check","name":"Images decoded","ok":true,"evidence":[16,[]]}
+{"runId":"2026-10-30T14:54:16.062Z","time":"2026-10-30T14:54:57.321Z","event":"check","name":"All book anchors exist","ok":true,"evidence":[]}
+{"runId":"2026-10-30T14:54:16.062Z","time":"2026-10-30T14:54:57.322Z","event":"check","name":"Budget 1000 calls","ok":true,"evidence":["18.500 USD","≈ 462500 VND · chưa phí khác"]}
+{"runId":"2026-10-30T14:54:16.062Z","time":"2026-10-30T14:54:57.324Z","event":"check","name":"Reject blank budget","ok":true,"evidence":"No fabricated estimate for empty field"}
+{"runId":"2026-10-30T14:54:16.062Z","time":"2026-10-30T14:54:57.325Z","event":"check","name":"Trace widget sits in 2.2","ok":true,"evidence":"Starter book attaches the trace simulation to 2.2"}
+{"runId":"2026-10-30T14:54:16.062Z","time":"2026-10-30T14:54:57.332Z","event":"check","name":"Trace 42000 / 60000","ok":true,"evidence":["Dừng tại i = 2 · tổng 42.000 VND. Vở ghi chưa được cộng.","Dừng tại i = 3 · tổng 60.000 VND. Đã cộng đủ ba khoản; vẫn cần ca biên và dữ liệu sai."]}
+{"runId":"2026-10-30T14:54:16.062Z","time":"2026-10-30T14:54:57.435Z","event":"check","name":"TOC non-accented search","ok":true,"evidence":"Unicode NFD and đ/d normalization"}
+{"runId":"2026-10-30T14:54:16.062Z","time":"2026-10-30T14:54:57.436Z","event":"check","name":"Self-check saves local progress","ok":true,"evidence":"User-owned self-check, not test score"}
+{"runId":"2026-10-30T14:54:16.062Z","time":"2026-10-30T14:54:57.437Z","event":"check","name":"Font controls stay within 16–22 px","ok":true,"evidence":"Measured CSS variable, then restored 18px"}
+{"runId":"2026-10-30T14:54:16.062Z","time":"2026-10-30T14:55:17.502Z","event":"check","name":"Reader self-check persists after reload","ok":true,"evidence":"Same isolated Chrome file:// origin"}
+{"runId":"2026-10-30T14:54:16.062Z","time":"2026-10-30T14:55:37.618Z","event":"check","name":"Progress is kept per book","ok":true,"evidence":"so-tay storage key is separate from cam-nang"}
+{"runId":"2026-10-30T14:54:16.062Z","time":"2026-10-30T14:55:57.683Z","event":"check","name":"Quiz gives explanation","ok":true,"evidence":"Correct choice plus reasoning"}
+{"runId":"2026-10-30T14:54:16.062Z","time":"2026-10-30T14:55:57.684Z","event":"check","name":"Print opens and restores answers","ok":true,"evidence":"beforeprint/afterprint events"}
+{"runId":"2026-10-30T14:54:16.062Z","time":"2026-10-30T14:55:57.778Z","event":"check","name":"Book no page overflow at 768","ok":true,"evidence":{"width":768,"scrollWidth":753,"wide":[]}}
+{"runId":"2026-10-30T14:54:16.062Z","time":"2026-10-30T14:55:57.869Z","event":"check","name":"Book no page overflow at 375","ok":true,"evidence":{"width":375,"scrollWidth":360,"wide":[]}}
+{"runId":"2026-10-30T14:54:16.062Z","time":"2026-10-30T14:55:57.951Z","event":"check","name":"Mobile menu opens","ok":true,"evidence":"375px actual browser emulation"}
+{"runId":"2026-10-30T14:54:16.062Z","time":"2026-10-30T14:55:58.000Z","event":"check","name":"Web starts with three samples","ok":true,"evidence":"Fresh isolated browser profile"}
+{"runId":"2026-10-30T14:54:16.062Z","time":"2026-10-30T14:55:58.002Z","event":"check","name":"Web valid add 75000","ok":true,"evidence":{"total":"75.000 đ","message":"Đã thêm khoản chi giả. Hãy tự nhẩm tổng để đối chiếu."}}
+{"runId":"2026-10-30T14:54:16.062Z","time":"2026-10-30T14:55:58.003Z","event":"check","name":"Web rejects numeric suffix","ok":true,"evidence":{"total":"75.000 đ","message":"Nhập số nguyên VND, không có dấu chấm, phẩy hay chữ."}}
+{"runId":"2026-10-30T14:54:16.062Z","time":"2026-10-30T14:55:58.007Z","event":"check","name":"Web displays literal HTML-like title","ok":true,"evidence":"textContent, not parsed markup"}
+{"runId":"2026-10-30T14:54:16.062Z","time":"2026-10-30T14:55:58.030Z","event":"check","name":"Web localStorage persists in tested browser","ok":true,"evidence":"Observed on this Chrome file:// profile only; not universal guarantee"}
+{"runId":"2026-10-30T14:54:16.062Z","time":"2026-10-30T14:55:58.032Z","event":"check","name":"Web delete to empty = 0","ok":true,"evidence":"All fake rows removed in isolated profile"}
+{"runId":"2026-10-30T14:54:16.062Z","time":"2026-10-30T14:55:58.059Z","event":"check","name":"Corrupt storage falls back without overwrite","ok":true,"evidence":"Broken fixture kept; no real user data used"}
+{"runId":"2026-10-30T14:54:16.062Z","time":"2026-10-30T14:55:58.064Z","event":"check","name":"Fallback adds a real in-memory row","ok":true,"evidence":{"total":"60.001 đ","message":"Đã thêm khoản chi giả. Hãy tự nhẩm tổng để đối chiếu."}}
+{"runId":"2026-10-30T14:54:16.062Z","time":"2026-10-30T14:55:58.080Z","event":"check","name":"Fallback does not promise persistence","ok":true,"evidence":"In-memory addition disappears after reload, notice remains"}
+{"runId":"2026-10-30T14:54:16.062Z","time":"2026-10-30T14:55:58.162Z","event":"check","name":"Web demo no mobile page overflow","ok":true,"evidence":{"width":375,"scrollWidth":360}}
+{"runId":"2026-10-30T14:54:16.062Z","time":"2026-10-30T14:55:58.181Z","event":"check","name":"SVG transformed text in bounds: cover.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T14:54:16.062Z","time":"2026-10-30T14:55:58.183Z","event":"check","name":"SVG text does not collide: cover.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T14:54:16.062Z","time":"2026-10-30T14:55:58.183Z","event":"check","name":"SVG text at least 18px: cover.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T14:54:16.062Z","time":"2026-10-30T14:55:58.291Z","event":"check","name":"SVG transformed text in bounds: chapter-01.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T14:54:16.062Z","time":"2026-10-30T14:55:58.292Z","event":"check","name":"SVG text does not collide: chapter-01.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T14:54:16.062Z","time":"2026-10-30T14:55:58.292Z","event":"check","name":"SVG text at least 18px: chapter-01.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T14:54:16.062Z","time":"2026-10-30T14:55:58.406Z","event":"check","name":"SVG transformed text in bounds: chapter-02.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T14:54:16.062Z","time":"2026-10-30T14:55:58.407Z","event":"check","name":"SVG text does not collide: chapter-02.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T14:54:16.062Z","time":"2026-10-30T14:55:58.407Z","event":"check","name":"SVG text at least 18px: chapter-02.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T14:54:16.062Z","time":"2026-10-30T14:55:58.524Z","event":"check","name":"SVG transformed text in bounds: chapter-03.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T14:54:16.062Z","time":"2026-10-30T14:55:58.525Z","event":"check","name":"SVG text does not collide: chapter-03.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T14:54:16.062Z","time":"2026-10-30T14:55:58.526Z","event":"check","name":"SVG text at least 18px: chapter-03.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T14:54:16.062Z","time":"2026-10-30T14:55:58.639Z","event":"check","name":"SVG transformed text in bounds: chapter-04.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T14:54:16.062Z","time":"2026-10-30T14:55:58.640Z","event":"check","name":"SVG text does not collide: chapter-04.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T14:54:16.062Z","time":"2026-10-30T14:55:58.640Z","event":"check","name":"SVG text at least 18px: chapter-04.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T14:54:16.062Z","time":"2026-10-30T14:55:58.753Z","event":"check","name":"SVG transformed text in bounds: chapter-05.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T14:54:16.062Z","time":"2026-10-30T14:55:58.756Z","event":"check","name":"SVG text does not collide: chapter-05.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T14:54:16.062Z","time":"2026-10-30T14:55:58.756Z","event":"check","name":"SVG text at least 18px: chapter-05.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T14:54:16.062Z","time":"2026-10-30T14:55:58.869Z","event":"check","name":"SVG transformed text in bounds: ecosystem.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T14:54:16.062Z","time":"2026-10-30T14:55:58.870Z","event":"check","name":"SVG text does not collide: ecosystem.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T14:54:16.062Z","time":"2026-10-30T14:55:58.870Z","event":"check","name":"SVG text at least 18px: ecosystem.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T14:54:16.062Z","time":"2026-10-30T14:55:58.951Z","event":"check","name":"SVG transformed text in bounds: roles.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T14:54:16.062Z","time":"2026-10-30T14:55:58.952Z","event":"check","name":"SVG text does not collide: roles.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T14:54:16.062Z","time":"2026-10-30T14:55:58.952Z","event":"check","name":"SVG text at least 18px: roles.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T14:54:16.062Z","time":"2026-10-30T14:55:59.052Z","event":"check","name":"SVG transformed text in bounds: token-context.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T14:54:16.062Z","time":"2026-10-30T14:55:59.053Z","event":"check","name":"SVG text does not collide: token-context.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T14:54:16.062Z","time":"2026-10-30T14:55:59.053Z","event":"check","name":"SVG text at least 18px: token-context.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T14:54:16.062Z","time":"2026-10-30T14:55:59.135Z","event":"check","name":"SVG transformed text in bounds: workspace.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T14:54:16.062Z","time":"2026-10-30T14:55:59.136Z","event":"check","name":"SVG text does not collide: workspace.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T14:54:16.062Z","time":"2026-10-30T14:55:59.136Z","event":"check","name":"SVG text at least 18px: workspace.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T14:54:16.062Z","time":"2026-10-30T14:55:59.252Z","event":"check","name":"SVG transformed text in bounds: workflow.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T14:54:16.062Z","time":"2026-10-30T14:55:59.253Z","event":"check","name":"SVG text does not collide: workflow.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T14:54:16.062Z","time":"2026-10-30T14:55:59.253Z","event":"check","name":"SVG text at least 18px: workflow.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T14:54:16.062Z","time":"2026-10-30T14:55:59.357Z","event":"check","name":"SVG transformed text in bounds: debugging.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T14:54:16.062Z","time":"2026-10-30T14:55:59.358Z","event":"check","name":"SVG text does not collide: debugging.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T14:54:16.062Z","time":"2026-10-30T14:55:59.358Z","event":"check","name":"SVG text at least 18px: debugging.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T14:54:16.062Z","time":"2026-10-30T14:55:59.457Z","event":"check","name":"SVG transformed text in bounds: active-learning.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T14:54:16.062Z","time":"2026-10-30T14:55:59.458Z","event":"check","name":"SVG text does not collide: active-learning.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T14:54:16.062Z","time":"2026-10-30T14:55:59.458Z","event":"check","name":"SVG text at least 18px: active-learning.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T14:54:16.062Z","time":"2026-10-30T14:55:59.553Z","event":"check","name":"SVG transformed text in bounds: ai-trap.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T14:54:16.062Z","time":"2026-10-30T14:55:59.555Z","event":"check","name":"SVG text does not collide: ai-trap.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T14:54:16.062Z","time":"2026-10-30T14:55:59.555Z","event":"check","name":"SVG text at least 18px: ai-trap.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T14:54:16.062Z","time":"2026-10-30T14:55:59.650Z","event":"check","name":"SVG transformed text in bounds: security.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T14:54:16.062Z","time":"2026-10-30T14:55:59.651Z","event":"check","name":"SVG text does not collide: security.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T14:54:16.062Z","time":"2026-10-30T14:55:59.652Z","event":"check","name":"SVG text at least 18px: security.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T14:54:16.062Z","time":"2026-10-30T14:55:59.742Z","event":"check","name":"SVG transformed text in bounds: final-boss.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T14:54:16.062Z","time":"2026-10-30T14:55:59.743Z","event":"check","name":"SVG text does not collide: final-boss.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T14:54:16.062Z","time":"2026-10-30T14:55:59.743Z","event":"check","name":"SVG text at least 18px: final-boss.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T14:54:16.062Z","time":"2026-10-30T14:55:59.852Z","event":"check","name":"SVG transformed text in bounds: skill-map.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T14:54:16.062Z","time":"2026-10-30T14:55:59.853Z","event":"check","name":"SVG text does not collide: skill-map.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T14:54:16.062Z","time":"2026-10-30T14:55:59.853Z","event":"check","name":"SVG text at least 18px: skill-map.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T14:54:16.062Z","time":"2026-10-30T14:56:20.014Z","event":"check","name":"Online build hides internal dashboard link","ok":true,"evidence":"site build drops production dashboard"}
+{"runId":"2026-10-30T14:54:16.062Z","time":"2026-10-30T14:56:20.014Z","event":"check","name":"No runtime exceptions","ok":true,"evidence":[]}
+{"runId":"2026-10-30T14:54:16.062Z","time":"2026-10-30T14:56:20.015Z","event":"check","name":"No remote content requests","ok":true,"evidence":[]}
+{"runId":"2026-10-30T14:56:20.222Z","time":"2026-10-30T14:56:20.223Z","event":"start"}
+{"runId":"2026-10-30T14:56:20.222Z","time":"2026-10-30T14:56:40.755Z","event":"check","name":"So tay loaded","ok":true,"evidence":"5 full chapters, 5 self-check controls"}
+{"runId":"2026-10-30T14:56:20.222Z","time":"2026-10-30T14:56:40.758Z","event":"check","name":"So tay chapter 3 keeps its seven teaching moves","ok":true,"evidence":{"missing":[],"h2":27}}
+{"runId":"2026-10-30T14:56:20.222Z","time":"2026-10-30T14:56:40.760Z","event":"check","name":"So tay chapter 4 has dossiers 1–7 plus clinic, rubric, checklist","ok":true,"evidence":{"dossiers":["1","7","2","5","3","4","6"],"hasClinic":true,"hasRubric":true,"hasChecklist":true}}
+{"runId":"2026-10-30T14:56:20.222Z","time":"2026-10-30T14:56:40.760Z","event":"check","name":"So tay answers are collapsed until opened","ok":true,"evidence":"Answer blocks ship closed; print opens them temporarily"}
+{"runId":"2026-10-30T14:56:20.222Z","time":"2026-10-30T14:56:40.833Z","event":"check","name":"So tay images decoded","ok":true,"evidence":[17,[]]}
+{"runId":"2026-10-30T14:56:20.222Z","time":"2026-10-30T14:56:40.840Z","event":"check","name":"So tay anchors exist","ok":true,"evidence":[]}
+{"runId":"2026-10-30T14:56:20.222Z","time":"2026-10-30T14:56:40.841Z","event":"check","name":"So tay trace widget sits in 2.3","ok":true,"evidence":"Mission 03 keeps the trace simulation"}
+{"runId":"2026-10-30T14:56:20.222Z","time":"2026-10-30T14:56:40.842Z","event":"check","name":"So tay one-page outline is first and complete","ok":true,"evidence":{"position":1,"routes":6,"missions":7,"dossiers":8,"broken":[],"hasContract":true,"hasLimits":true}}
+{"runId":"2026-10-30T14:56:20.222Z","time":"2026-10-30T14:56:40.843Z","event":"check","name":"So tay links back to cam nang","ok":true,"evidence":"hero and sidebar"}
+{"runId":"2026-10-30T14:56:20.222Z","time":"2026-10-30T14:56:41.072Z","event":"check","name":"So tay no page overflow at 768","ok":true,"evidence":{"width":768,"scrollWidth":753,"wide":[]}}
+{"runId":"2026-10-30T14:56:20.222Z","time":"2026-10-30T14:56:41.226Z","event":"check","name":"So tay no page overflow at 375","ok":true,"evidence":{"width":375,"scrollWidth":360,"wide":[]}}
+{"runId":"2026-10-30T14:56:20.222Z","time":"2026-10-30T14:57:01.322Z","event":"check","name":"Book loaded","ok":true,"evidence":"5 short chapters, 5 self-check controls"}
+{"runId":"2026-10-30T14:56:20.222Z","time":"2026-10-30T14:57:01.326Z","event":"check","name":"Every numbered section has Thử ngay and Tự tìm hiểu thêm","ok":true,"evidence":{"numbered":25,"tryNow":25,"more":25,"answers":25,"words":27585}}
+{"runId":"2026-10-30T14:56:20.222Z","time":"2026-10-30T14:57:01.326Z","event":"check","name":"Cam nang keeps answers short and collapsed","ok":true,"evidence":"Gợi ý đối chiếu ≤ 100 words, shipped closed"}
+{"runId":"2026-10-30T14:56:20.222Z","time":"2026-10-30T14:57:01.327Z","event":"check","name":"Cross-links into so tay resolve","ok":true,"evidence":{"count":50,"broken":[]}}
+{"runId":"2026-10-30T14:56:20.222Z","time":"2026-10-30T14:57:01.329Z","event":"check","name":"Cam nang does not carry so tay assessment layer","ok":true,"evidence":"no rubric/criteria headings in the starter book"}
+{"runId":"2026-10-30T14:56:20.222Z","time":"2026-10-30T14:57:01.355Z","event":"check","name":"Images decoded","ok":true,"evidence":[16,[]]}
+{"runId":"2026-10-30T14:56:20.222Z","time":"2026-10-30T14:57:01.448Z","event":"check","name":"All book anchors exist","ok":true,"evidence":[]}
+{"runId":"2026-10-30T14:56:20.222Z","time":"2026-10-30T14:57:01.449Z","event":"check","name":"Budget 1000 calls","ok":true,"evidence":["18.500 USD","≈ 462500 VND · chưa phí khác"]}
+{"runId":"2026-10-30T14:56:20.222Z","time":"2026-10-30T14:57:01.450Z","event":"check","name":"Reject blank budget","ok":true,"evidence":"No fabricated estimate for empty field"}
+{"runId":"2026-10-30T14:56:20.222Z","time":"2026-10-30T14:57:01.454Z","event":"check","name":"Trace widget sits in 2.2","ok":true,"evidence":"Starter book attaches the trace simulation to 2.2"}
+{"runId":"2026-10-30T14:56:20.222Z","time":"2026-10-30T14:57:01.462Z","event":"check","name":"Trace 42000 / 60000","ok":true,"evidence":["Dừng tại i = 2 · tổng 42.000 VND. Vở ghi chưa được cộng.","Dừng tại i = 3 · tổng 60.000 VND. Đã cộng đủ ba khoản; vẫn cần ca biên và dữ liệu sai."]}
+{"runId":"2026-10-30T14:56:20.222Z","time":"2026-10-30T14:57:01.564Z","event":"check","name":"TOC non-accented search","ok":true,"evidence":"Unicode NFD and đ/d normalization"}
+{"runId":"2026-10-30T14:56:20.222Z","time":"2026-10-30T14:57:01.565Z","event":"check","name":"Self-check saves local progress","ok":true,"evidence":"User-owned self-check, not test score"}
+{"runId":"2026-10-30T14:56:20.222Z","time":"2026-10-30T14:57:01.566Z","event":"check","name":"Font controls stay within 16–22 px","ok":true,"evidence":"Measured CSS variable, then restored 18px"}
+{"runId":"2026-10-30T14:56:20.222Z","time":"2026-10-30T14:57:21.630Z","event":"check","name":"Reader self-check persists after reload","ok":true,"evidence":"Same isolated Chrome file:// origin"}
+{"runId":"2026-10-30T14:56:20.222Z","time":"2026-10-30T14:57:41.733Z","event":"check","name":"Progress is kept per book","ok":true,"evidence":"so-tay storage key is separate from cam-nang"}
+{"runId":"2026-10-30T14:56:20.222Z","time":"2026-10-30T14:58:01.798Z","event":"check","name":"Quiz gives explanation","ok":true,"evidence":"Correct choice plus reasoning"}
+{"runId":"2026-10-30T14:56:20.222Z","time":"2026-10-30T14:58:01.801Z","event":"check","name":"Print opens and restores answers","ok":true,"evidence":"beforeprint/afterprint events"}
+{"runId":"2026-10-30T14:56:20.222Z","time":"2026-10-30T14:58:01.888Z","event":"check","name":"Book no page overflow at 768","ok":true,"evidence":{"width":768,"scrollWidth":753,"wide":[]}}
+{"runId":"2026-10-30T14:56:20.222Z","time":"2026-10-30T14:58:01.981Z","event":"check","name":"Book no page overflow at 375","ok":true,"evidence":{"width":375,"scrollWidth":360,"wide":[]}}
+{"runId":"2026-10-30T14:56:20.222Z","time":"2026-10-30T14:58:02.060Z","event":"check","name":"Mobile menu opens","ok":true,"evidence":"375px actual browser emulation"}
+{"runId":"2026-10-30T14:56:20.222Z","time":"2026-10-30T14:58:02.106Z","event":"check","name":"Web starts with three samples","ok":true,"evidence":"Fresh isolated browser profile"}
+{"runId":"2026-10-30T14:56:20.222Z","time":"2026-10-30T14:58:02.108Z","event":"check","name":"Web valid add 75000","ok":true,"evidence":{"total":"75.000 đ","message":"Đã thêm khoản chi giả. Hãy tự nhẩm tổng để đối chiếu."}}
+{"runId":"2026-10-30T14:56:20.222Z","time":"2026-10-30T14:58:02.109Z","event":"check","name":"Web rejects numeric suffix","ok":true,"evidence":{"total":"75.000 đ","message":"Nhập số nguyên VND, không có dấu chấm, phẩy hay chữ."}}
+{"runId":"2026-10-30T14:56:20.222Z","time":"2026-10-30T14:58:02.110Z","event":"check","name":"Web displays literal HTML-like title","ok":true,"evidence":"textContent, not parsed markup"}
+{"runId":"2026-10-30T14:56:20.222Z","time":"2026-10-30T14:58:02.125Z","event":"check","name":"Web localStorage persists in tested browser","ok":true,"evidence":"Observed on this Chrome file:// profile only; not universal guarantee"}
+{"runId":"2026-10-30T14:56:20.222Z","time":"2026-10-30T14:58:02.127Z","event":"check","name":"Web delete to empty = 0","ok":true,"evidence":"All fake rows removed in isolated profile"}
+{"runId":"2026-10-30T14:56:20.222Z","time":"2026-10-30T14:58:02.147Z","event":"check","name":"Corrupt storage falls back without overwrite","ok":true,"evidence":"Broken fixture kept; no real user data used"}
+{"runId":"2026-10-30T14:56:20.222Z","time":"2026-10-30T14:58:02.149Z","event":"check","name":"Fallback adds a real in-memory row","ok":true,"evidence":{"total":"60.001 đ","message":"Đã thêm khoản chi giả. Hãy tự nhẩm tổng để đối chiếu."}}
+{"runId":"2026-10-30T14:56:20.222Z","time":"2026-10-30T14:58:02.167Z","event":"check","name":"Fallback does not promise persistence","ok":true,"evidence":"In-memory addition disappears after reload, notice remains"}
+{"runId":"2026-10-30T14:56:20.222Z","time":"2026-10-30T14:58:02.240Z","event":"check","name":"Web demo no mobile page overflow","ok":true,"evidence":{"width":375,"scrollWidth":360}}
+{"runId":"2026-10-30T14:56:20.222Z","time":"2026-10-30T14:58:02.257Z","event":"check","name":"SVG transformed text in bounds: cover.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T14:56:20.222Z","time":"2026-10-30T14:58:02.259Z","event":"check","name":"SVG text does not collide: cover.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T14:56:20.222Z","time":"2026-10-30T14:58:02.259Z","event":"check","name":"SVG text at least 18px: cover.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T14:56:20.222Z","time":"2026-10-30T14:58:02.347Z","event":"check","name":"SVG transformed text in bounds: chapter-01.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T14:56:20.222Z","time":"2026-10-30T14:58:02.351Z","event":"check","name":"SVG text does not collide: chapter-01.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T14:56:20.222Z","time":"2026-10-30T14:58:02.351Z","event":"check","name":"SVG text at least 18px: chapter-01.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T14:56:20.222Z","time":"2026-10-30T14:58:02.445Z","event":"check","name":"SVG transformed text in bounds: chapter-02.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T14:56:20.222Z","time":"2026-10-30T14:58:02.446Z","event":"check","name":"SVG text does not collide: chapter-02.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T14:56:20.222Z","time":"2026-10-30T14:58:02.446Z","event":"check","name":"SVG text at least 18px: chapter-02.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T14:56:20.222Z","time":"2026-10-30T14:58:02.529Z","event":"check","name":"SVG transformed text in bounds: chapter-03.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T14:56:20.222Z","time":"2026-10-30T14:58:02.530Z","event":"check","name":"SVG text does not collide: chapter-03.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T14:56:20.222Z","time":"2026-10-30T14:58:02.530Z","event":"check","name":"SVG text at least 18px: chapter-03.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T14:56:20.222Z","time":"2026-10-30T14:58:02.612Z","event":"check","name":"SVG transformed text in bounds: chapter-04.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T14:56:20.222Z","time":"2026-10-30T14:58:02.612Z","event":"check","name":"SVG text does not collide: chapter-04.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T14:56:20.222Z","time":"2026-10-30T14:58:02.613Z","event":"check","name":"SVG text at least 18px: chapter-04.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T14:56:20.222Z","time":"2026-10-30T14:58:02.694Z","event":"check","name":"SVG transformed text in bounds: chapter-05.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T14:56:20.222Z","time":"2026-10-30T14:58:02.695Z","event":"check","name":"SVG text does not collide: chapter-05.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T14:56:20.222Z","time":"2026-10-30T14:58:02.695Z","event":"check","name":"SVG text at least 18px: chapter-05.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T14:56:20.222Z","time":"2026-10-30T14:58:02.777Z","event":"check","name":"SVG transformed text in bounds: ecosystem.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T14:56:20.222Z","time":"2026-10-30T14:58:02.778Z","event":"check","name":"SVG text does not collide: ecosystem.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T14:56:20.222Z","time":"2026-10-30T14:58:02.778Z","event":"check","name":"SVG text at least 18px: ecosystem.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T14:56:20.222Z","time":"2026-10-30T14:58:02.860Z","event":"check","name":"SVG transformed text in bounds: roles.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T14:56:20.222Z","time":"2026-10-30T14:58:02.861Z","event":"check","name":"SVG text does not collide: roles.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T14:56:20.222Z","time":"2026-10-30T14:58:02.861Z","event":"check","name":"SVG text at least 18px: roles.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T14:56:20.222Z","time":"2026-10-30T14:58:02.941Z","event":"check","name":"SVG transformed text in bounds: token-context.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T14:56:20.222Z","time":"2026-10-30T14:58:02.942Z","event":"check","name":"SVG text does not collide: token-context.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T14:56:20.222Z","time":"2026-10-30T14:58:02.943Z","event":"check","name":"SVG text at least 18px: token-context.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T14:56:20.222Z","time":"2026-10-30T14:58:03.041Z","event":"check","name":"SVG transformed text in bounds: workspace.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T14:56:20.222Z","time":"2026-10-30T14:58:03.042Z","event":"check","name":"SVG text does not collide: workspace.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T14:56:20.222Z","time":"2026-10-30T14:58:03.042Z","event":"check","name":"SVG text at least 18px: workspace.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T14:56:20.222Z","time":"2026-10-30T14:58:03.129Z","event":"check","name":"SVG transformed text in bounds: workflow.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T14:56:20.222Z","time":"2026-10-30T14:58:03.130Z","event":"check","name":"SVG text does not collide: workflow.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T14:56:20.222Z","time":"2026-10-30T14:58:03.130Z","event":"check","name":"SVG text at least 18px: workflow.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T14:56:20.222Z","time":"2026-10-30T14:58:03.227Z","event":"check","name":"SVG transformed text in bounds: debugging.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T14:56:20.222Z","time":"2026-10-30T14:58:03.228Z","event":"check","name":"SVG text does not collide: debugging.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T14:56:20.222Z","time":"2026-10-30T14:58:03.228Z","event":"check","name":"SVG text at least 18px: debugging.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T14:56:20.222Z","time":"2026-10-30T14:58:03.312Z","event":"check","name":"SVG transformed text in bounds: active-learning.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T14:56:20.222Z","time":"2026-10-30T14:58:03.313Z","event":"check","name":"SVG text does not collide: active-learning.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T14:56:20.222Z","time":"2026-10-30T14:58:03.313Z","event":"check","name":"SVG text at least 18px: active-learning.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T14:56:20.222Z","time":"2026-10-30T14:58:03.409Z","event":"check","name":"SVG transformed text in bounds: ai-trap.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T14:56:20.222Z","time":"2026-10-30T14:58:03.410Z","event":"check","name":"SVG text does not collide: ai-trap.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T14:56:20.222Z","time":"2026-10-30T14:58:03.410Z","event":"check","name":"SVG text at least 18px: ai-trap.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T14:56:20.222Z","time":"2026-10-30T14:58:03.492Z","event":"check","name":"SVG transformed text in bounds: security.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T14:56:20.222Z","time":"2026-10-30T14:58:03.492Z","event":"check","name":"SVG text does not collide: security.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T14:56:20.222Z","time":"2026-10-30T14:58:03.493Z","event":"check","name":"SVG text at least 18px: security.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T14:56:20.222Z","time":"2026-10-30T14:58:03.578Z","event":"check","name":"SVG transformed text in bounds: final-boss.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T14:56:20.222Z","time":"2026-10-30T14:58:03.579Z","event":"check","name":"SVG text does not collide: final-boss.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T14:56:20.222Z","time":"2026-10-30T14:58:03.579Z","event":"check","name":"SVG text at least 18px: final-boss.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T14:56:20.222Z","time":"2026-10-30T14:58:03.661Z","event":"check","name":"SVG transformed text in bounds: skill-map.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T14:56:20.222Z","time":"2026-10-30T14:58:03.661Z","event":"check","name":"SVG text does not collide: skill-map.svg","ok":true,"evidence":[]}
+{"runId":"2026-10-30T14:56:20.222Z","time":"2026-10-30T14:58:03.662Z","event":"check","name":"SVG text at least 18px: skill-map.svg","ok":true,"evidence":18}
+{"runId":"2026-10-30T14:56:20.222Z","time":"2026-10-30T14:58:23.794Z","event":"check","name":"Online build hides internal dashboard link","ok":true,"evidence":"site build drops production dashboard"}
+{"runId":"2026-10-30T14:56:20.222Z","time":"2026-10-30T14:58:23.795Z","event":"check","name":"No runtime exceptions","ok":true,"evidence":[]}
+{"runId":"2026-10-30T14:56:20.222Z","time":"2026-10-30T14:58:23.795Z","event":"check","name":"No remote content requests","ok":true,"evidence":[]}

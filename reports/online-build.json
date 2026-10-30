@@ -1,15 +1,19 @@
 {
   "site_directory": "site",
   "entry": "site/index.html",
-  "rewritten_parent_links": 59,
+  "pages": [
+    "index.html",
+    "so-tay.html"
+  ],
+  "rewritten_parent_links": 101,
   "remaining_parent_links": 0,
-  "files_copied": 36,
+  "files_copied": 39,
   "svg_images": 17,
-  "total_bytes": 1663001,
+  "total_bytes": 2117078,
   "excluded_from_online": [
     "dashboard/",
     "scripts/",
-    "chapters/ (nguồn biên tập)",
+    "chapters/ và cam-nang/ (nguồn biên tập)",
     "reports/*.png|pdf|jsonl",
     "website/ (nguồn CSS/JS)"
   ],

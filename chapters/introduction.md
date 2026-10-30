@@ -1,6 +1,8 @@
 # LỜI GIỚI THIỆU
 
-**Học CNTT cùng AI — Cẩm nang tự học và tra cứu dành cho sinh viên năm thứ nhất và năm thứ hai, Khoa Công nghệ thông tin, Trường Đại học Thủy lợi.**
+**Học CNTT cùng AI — Sổ tay thực hành dành cho sinh viên năm thứ nhất và năm thứ hai, Khoa Công nghệ thông tin, Trường Đại học Thủy lợi.**
+
+Sổ tay này là bản đầy đủ đi kèm [Cẩm nang khởi đầu](../cam-nang/introduction.md). Người mới bắt đầu nên đọc cẩm nang trước: mỗi mục ở đó nêu một ý chính, một việc nhỏ để thử và chỉ sang đúng bài trong sổ tay này khi muốn làm trọn vẹn.
 
 ## Mục đích và đối tượng của sách
 

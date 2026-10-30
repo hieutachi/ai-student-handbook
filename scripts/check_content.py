@@ -4,6 +4,7 @@ from urllib.parse import unquote
 import hashlib
 import json
 import re
+import subprocess
 import sys
 from bs4 import BeautifulSoup
 from markdown_it import MarkdownIt
@@ -70,9 +71,17 @@ form='crlf' if CRLF in raw else 'lf'
 check('Original source unchanged',digest['crlf']=='704d10e9603d0b494196795b9b45ae701dfc1caadeab54bcc3d76c4c7ae53772' or digest['lf']=='efbc9d5ed7587fe453c8a45a0b7bc877be0c3783bed5eff1076de15185570468',{'line_endings':form,'sha256':digest[form],'note':'Content snapshot; CRLF and LF forms of the same text are both accepted'})
 expected=['cover','chapter-01','chapter-02','chapter-03','chapter-04','chapter-05','ecosystem','roles','token-context','workspace','workflow','debugging','active-learning','ai-trap','security','final-boss','skill-map']
 check('All seventeen illustrations',all((ROOT/'assets'/(x+'.svg')).exists() for x in expected),expected)
-html=(ROOT/'website/index.html').read_text(encoding='utf-8');soup=BeautifulSoup(html,'html.parser')
-paths={Path(i['src']).stem for i in soup.find_all('img',src=True)}
-check('All illustrations used in book',all(x in paths for x in expected),sorted(paths))
+# Hai bản đọc: cẩm nang (index.html) và sổ tay (so-tay.html) dùng chung kho hình.
+paths=set()
+for page in ('index.html','so-tay.html'):
+    soup=BeautifulSoup((ROOT/'website'/page).read_text(encoding='utf-8'),'html.parser')
+    paths|={Path(i['src']).stem for i in soup.find_all('img',src=True)}
+check('All illustrations used across both books',all(x in paths for x in expected),sorted(paths))
+# Cẩm nang khởi đầu: cấu trúc, độ dài có trần, liên kết chéo và nguồn gốc khối mã (scripts/verify_camnang.py).
+cam=subprocess.run([sys.executable,str(ROOT/'scripts/verify_camnang.py')],capture_output=True,text=True,encoding='utf-8')
+check('Cam nang khoi dau invariants',cam.returncode==0,[l for l in cam.stdout.splitlines() if 'FAIL' in l or 'THIẾU' in l] or 'verify_camnang.py OK')
+cam_words=sum(len((ROOT/'cam-nang'/f).read_text(encoding='utf-8').split()) for f in ['introduction.md','chapter-01.md','chapter-02.md','chapter-03.md','chapter-04.md','chapter-05.md','final-project.md','prompt-library.md','glossary.md'] if (ROOT/'cam-nang'/f).exists())
+check('Cam nang total length ceiling (not quality score)',22000<=cam_words<=30000,{'whitespace_words':cam_words,'range':'22000–30000'})
 check('At least eleven copyable prompt cards',len(BeautifulSoup(md.render(texts['prompt-library.md']),'html.parser').find_all('pre'))>=11,'P01–P11')
 check('No unmarked real secret literals',not re.search(r'sk-[A-Za-z0-9_-]{20,}|ghp_[A-Za-z0-9]{20,}','\n'.join(texts.values())),'Pattern scan only, not proof of all possible personal data')
 report={'checks':results,'all_passed':all(r['ok'] for r in results),'limitation':'Mechanical coverage and structural checks, not factual proof or pedagogical certification.'}

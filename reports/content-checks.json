@@ -365,7 +365,7 @@
       ]
     },
     {
-      "name": "All illustrations used in book",
+      "name": "All illustrations used across both books",
       "ok": true,
       "evidence": [
         "active-learning",
@@ -386,6 +386,19 @@
         "workflow",
         "workspace"
       ]
+    },
+    {
+      "name": "Cam nang khoi dau invariants",
+      "ok": true,
+      "evidence": "verify_camnang.py OK"
+    },
+    {
+      "name": "Cam nang total length ceiling (not quality score)",
+      "ok": true,
+      "evidence": {
+        "whitespace_words": 28452,
+        "range": "22000–30000"
+      }
     },
     {
       "name": "At least eleven copyable prompt cards",

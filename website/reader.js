@@ -4,7 +4,8 @@ const $ = s => document.querySelector(s);
 const $$ = s => [...document.querySelectorAll(s)];
 const announce = text => { $('#action-status').textContent = text; };
 const normalize = s => s.normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/đ/g,'d').replace(/Đ/g,'D').toLowerCase();
-const storageKey = 'ai-handbook-study-v2';
+// Mỗi cuốn (cẩm nang, sổ tay) giữ tiến độ riêng trên cùng origin.
+const storageKey = 'ai-handbook-study-v2' + (document.body.dataset.book ? '-' + document.body.dataset.book : '');
 let state = {font:18,done:[]};
 let persistent = true;
 try {

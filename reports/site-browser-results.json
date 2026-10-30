@@ -1,14 +1,14 @@
 {
-  "time": "2026-10-30T12:42:36.258Z",
+  "time": "2026-10-30T14:58:23.795Z",
   "browser": "Chrome/156.0.8078.48",
   "results": [
     {
-      "name": "Book loaded",
+      "name": "So tay loaded",
       "ok": true,
       "evidence": "5 full chapters, 5 self-check controls"
     },
     {
-      "name": "Chapter 3 keeps its seven teaching moves",
+      "name": "So tay chapter 3 keeps its seven teaching moves",
       "ok": true,
       "evidence": {
         "missing": [],
@@ -16,7 +16,7 @@
       }
     },
     {
-      "name": "Chapter 4 has dossiers 1–7 plus clinic, rubric, checklist",
+      "name": "So tay chapter 4 has dossiers 1–7 plus clinic, rubric, checklist",
       "ok": true,
       "evidence": {
         "dossiers": [
@@ -34,15 +34,103 @@
       }
     },
     {
-      "name": "Answers are collapsed until opened",
+      "name": "So tay answers are collapsed until opened",
       "ok": true,
       "evidence": "Answer blocks ship closed; print opens them temporarily"
+    },
+    {
+      "name": "So tay images decoded",
+      "ok": true,
+      "evidence": [
+        17,
+        []
+      ]
+    },
+    {
+      "name": "So tay anchors exist",
+      "ok": true,
+      "evidence": []
+    },
+    {
+      "name": "So tay trace widget sits in 2.3",
+      "ok": true,
+      "evidence": "Mission 03 keeps the trace simulation"
+    },
+    {
+      "name": "So tay one-page outline is first and complete",
+      "ok": true,
+      "evidence": {
+        "position": 1,
+        "routes": 6,
+        "missions": 7,
+        "dossiers": 8,
+        "broken": [],
+        "hasContract": true,
+        "hasLimits": true
+      }
+    },
+    {
+      "name": "So tay links back to cam nang",
+      "ok": true,
+      "evidence": "hero and sidebar"
+    },
+    {
+      "name": "So tay no page overflow at 768",
+      "ok": true,
+      "evidence": {
+        "width": 768,
+        "scrollWidth": 753,
+        "wide": []
+      }
+    },
+    {
+      "name": "So tay no page overflow at 375",
+      "ok": true,
+      "evidence": {
+        "width": 375,
+        "scrollWidth": 360,
+        "wide": []
+      }
+    },
+    {
+      "name": "Book loaded",
+      "ok": true,
+      "evidence": "5 short chapters, 5 self-check controls"
+    },
+    {
+      "name": "Every numbered section has Thử ngay and Tự tìm hiểu thêm",
+      "ok": true,
+      "evidence": {
+        "numbered": 25,
+        "tryNow": 25,
+        "more": 25,
+        "answers": 25,
+        "words": 27585
+      }
+    },
+    {
+      "name": "Cam nang keeps answers short and collapsed",
+      "ok": true,
+      "evidence": "Gợi ý đối chiếu ≤ 100 words, shipped closed"
+    },
+    {
+      "name": "Cross-links into so tay resolve",
+      "ok": true,
+      "evidence": {
+        "count": 50,
+        "broken": []
+      }
+    },
+    {
+      "name": "Cam nang does not carry so tay assessment layer",
+      "ok": true,
+      "evidence": "no rubric/criteria headings in the starter book"
     },
     {
       "name": "Images decoded",
       "ok": true,
       "evidence": [
-        17,
+        16,
         []
       ]
     },
@@ -63,6 +151,11 @@
       "name": "Reject blank budget",
       "ok": true,
       "evidence": "No fabricated estimate for empty field"
+    },
+    {
+      "name": "Trace widget sits in 2.2",
+      "ok": true,
+      "evidence": "Starter book attaches the trace simulation to 2.2"
     },
     {
       "name": "Trace 42000 / 60000",
@@ -93,6 +186,11 @@
       "evidence": "Same isolated Chrome file:// origin"
     },
     {
+      "name": "Progress is kept per book",
+      "ok": true,
+      "evidence": "so-tay storage key is separate from cam-nang"
+    },
+    {
       "name": "Quiz gives explanation",
       "ok": true,
       "evidence": "Correct choice plus reasoning"
@@ -103,7 +201,7 @@
       "evidence": "beforeprint/afterprint events"
     },
     {
-      "name": "No page overflow at 768",
+      "name": "Book no page overflow at 768",
       "ok": true,
       "evidence": {
         "width": 768,
@@ -112,7 +210,7 @@
       }
     },
     {
-      "name": "No page overflow at 375",
+      "name": "Book no page overflow at 375",
       "ok": true,
       "evidence": {
         "width": 375,
@@ -441,19 +539,6 @@
       "name": "SVG text at least 18px: skill-map.svg",
       "ok": true,
       "evidence": 18
-    },
-    {
-      "name": "One-page outline is first and complete",
-      "ok": true,
-      "evidence": {
-        "position": 1,
-        "routes": 6,
-        "missions": 7,
-        "dossiers": 8,
-        "broken": [],
-        "hasContract": true,
-        "hasLimits": true
-      }
     },
     {
       "name": "Online build hides internal dashboard link",
