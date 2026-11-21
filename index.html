@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cổng Trải Nghiệm Bản Đọc Cá Nhân Hóa - Sinh Viên TLU</title>
+  <meta name="description" content="Minh chứng sinh viên tự tạo bản đọc phù hợp với trải nghiệm cá nhân bằng công cụ AI">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #090d16;
+      --card-bg: #131b2e;
+      --card-border: #1e293b;
+      --card-hover: #263352;
+      --text-main: #f8fafc;
+      --text-muted: #94a3b8;
+      --primary: #38bdf8;
+      --primary-glow: rgba(56, 189, 248, 0.25);
+      --gold: #f59e0b;
+      --gold-glow: rgba(245, 158, 11, 0.35);
+      --green: #10b981;
+      --emerald: #059669;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+      background-color: var(--bg);
+      color: var(--text-main);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      padding-bottom: 80px;
+    }
+    a { text-decoration: none; color: inherit; }
+
+    /* Top Sticky Bar */
+    .topbar {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(9, 13, 22, 0.85);
+      backdrop-filter: blur(16px);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+      padding: 14px 20px;
+    }
+    .topbar-content {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: 800;
+      font-size: 1.05rem;
+      letter-spacing: -0.02em;
+    }
+    .brand-badge {
+      background: linear-gradient(135deg, #2563eb, #38bdf8);
+      color: white;
+      padding: 3px 8px;
+      border-radius: 6px;
+      font-size: 0.75rem;
+      font-weight: 800;
+    }
+    .top-actions {
+      display: flex;
+      gap: 12px;
+    }
+    .btn-top {
+      font-size: 0.85rem;
+      font-weight: 600;
+      padding: 6px 14px;
+      border-radius: 8px;
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      transition: all 0.2s;
+    }
+    .btn-top:hover {
+      background: rgba(255, 255, 255, 0.12);
+    }
+
+    .container {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    /* Hero / Intro */
+    .hero {
+      text-align: center;
+      padding: 40px 0 30px;
+    }
+    .hero-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(56, 189, 248, 0.1);
+      border: 1px solid rgba(56, 189, 248, 0.3);
+      color: var(--primary);
+      padding: 6px 16px;
+      border-radius: 999px;
+      font-size: 0.85rem;
+      font-weight: 700;
+      margin-bottom: 16px;
+    }
+    .hero-title {
+      font-size: clamp(1.8rem, 4vw, 2.8rem);
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      line-height: 1.25;
+      margin-bottom: 16px;
+      background: linear-gradient(135deg, #ffffff 0%, #cbd5e1 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .hero-lead {
+      color: var(--text-muted);
+      font-size: clamp(0.95rem, 2vw, 1.15rem);
+      max-width: 800px;
+      margin: 0 auto 24px;
+    }
+    .hero-instruction {
+      display: inline-block;
+      background: rgba(16, 185, 129, 0.12);
+      border: 1px solid rgba(16, 185, 129, 0.35);
+      color: #6ee7b7;
+      padding: 8px 18px;
+      border-radius: 10px;
+      font-size: 0.95rem;
+      font-weight: 600;
+    }
+
+    /* FEATURED SPOTLIGHT: JURASSIC FOREST */
+    .featured-section {
+      margin: 35px 0 55px;
+    }
+    .featured-card {
+      background: radial-gradient(circle at top left, #1a281c 0%, #0e1711 70%, #080d09 100%);
+      border: 2px solid var(--gold);
+      box-shadow: 0 12px 40px var(--gold-glow);
+      border-radius: 24px;
+      padding: clamp(24px, 4vw, 44px);
+      position: relative;
+      overflow: hidden;
+    }
+    .featured-card::before {
+      content: "";
+      position: absolute;
+      top: -100px;
+      right: -100px;
+      width: 300px;
+      height: 300px;
+      background: radial-gradient(circle, rgba(245, 158, 11, 0.18) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .featured-header {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 16px;
+      flex-wrap: wrap;
+    }
+    .award-badge {
+      background: linear-gradient(135deg, #d97706, #b45309);
+      color: #fff;
+      font-weight: 800;
+      font-size: 0.85rem;
+      padding: 6px 14px;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(217, 119, 6, 0.4);
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .featured-tag {
+      color: #86efac;
+      font-size: 0.85rem;
+      font-weight: 600;
+      background: rgba(34, 197, 94, 0.15);
+      padding: 6px 12px;
+      border-radius: 8px;
+    }
+    .featured-name {
+      font-size: clamp(2rem, 5vw, 3.2rem);
+      font-weight: 800;
+      color: #fef08a;
+      letter-spacing: -0.02em;
+      line-height: 1.15;
+      margin-bottom: 16px;
+      font-family: 'Space Grotesk', sans-serif;
+    }
+    .featured-desc {
+      font-size: clamp(1rem, 2vw, 1.25rem);
+      color: #e2e8f0;
+      line-height: 1.7;
+      margin-bottom: 24px;
+      max-width: 900px;
+    }
+    .featured-pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 30px;
+    }
+    .pill {
+      background: rgba(255, 255, 255, 0.07);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      padding: 6px 14px;
+      border-radius: 999px;
+      font-size: 0.88rem;
+      color: #cbd5e1;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .pill span { color: #4ade80; }
+
+    .btn-featured-cta {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+      color: #000;
+      font-size: clamp(1.05rem, 2.5vw, 1.35rem);
+      font-weight: 800;
+      padding: 16px 36px;
+      border-radius: 14px;
+      box-shadow: 0 6px 25px rgba(245, 158, 11, 0.5);
+      transition: all 0.25s ease;
+      cursor: pointer;
+      width: 100%;
+      max-width: 440px;
+      text-align: center;
+    }
+    .btn-featured-cta:hover {
+      transform: translateY(-3px) scale(1.02);
+      box-shadow: 0 10px 35px rgba(245, 158, 11, 0.65);
+      background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%);
+    }
+
+    /* GRID SECTION */
+    .section-title {
+      font-size: clamp(1.4rem, 3vw, 1.9rem);
+      font-weight: 800;
+      margin: 40px 0 20px;
+      letter-spacing: -0.02em;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+      gap: 22px;
+    }
+    .item-card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 18px;
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: all 0.25s ease;
+      position: relative;
+    }
+    .item-card:hover {
+      transform: translateY(-4px);
+      border-color: var(--primary);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4), 0 0 15px var(--primary-glow);
+    }
+    .card-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 12px;
+    }
+    .card-id {
+      font-family: 'Space Grotesk', monospace;
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: var(--primary);
+      background: rgba(56, 189, 248, 0.1);
+      padding: 4px 10px;
+      border-radius: 6px;
+    }
+    .card-theme-tag {
+      font-size: 0.78rem;
+      font-weight: 600;
+      color: #94a3b8;
+      background: rgba(255, 255, 255, 0.05);
+      padding: 4px 10px;
+      border-radius: 6px;
+      max-width: 60%;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+    }
+    .card-title {
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 8px;
+      letter-spacing: -0.01em;
+    }
+    .card-desc {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+      margin-bottom: 22px;
+      line-height: 1.55;
+    }
+    .btn-launch {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      width: 100%;
+      padding: 13px 18px;
+      border-radius: 10px;
+      background: rgba(56, 189, 248, 0.12);
+      border: 1px solid rgba(56, 189, 248, 0.35);
+      color: #e0f2fe;
+      font-weight: 700;
+      font-size: 0.95rem;
+      transition: all 0.2s ease;
+    }
+    .item-card:hover .btn-launch {
+      background: var(--primary);
+      color: #000;
+      border-color: var(--primary);
+      box-shadow: 0 4px 16px var(--primary-glow);
+    }
+
+    /* Original Base Reader Box */
+    .base-box {
+      margin-top: 55px;
+      background: rgba(30, 41, 59, 0.5);
+      border: 1px dashed rgba(255, 255, 255, 0.2);
+      border-radius: 16px;
+      padding: 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    .base-info h4 {
+      font-size: 1.1rem;
+      margin-bottom: 4px;
+    }
+    .base-info p {
+      color: var(--text-muted);
+      font-size: 0.9rem;
+    }
+    .btn-base {
+      padding: 10px 20px;
+      border-radius: 8px;
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: #fff;
+    }
+    .btn-base:hover {
+      background: rgba(255, 255, 255, 0.18);
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 60px;
+      color: #64748b;
+      font-size: 0.85rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Sticky Navigation -->
+  <div class="topbar">
+    <div class="topbar-content">
+      <div class="brand">
+        <span>🎓 TLU</span>
+        <span class="brand-badge">AI WORKSHOP</span>
+        <span style="font-weight: 500; color: #94a3b8; font-size: 0.9rem;">Cổng Bản Đọc Cá Nhân Hóa</span>
+      </div>
+      <div class="top-actions">
+        <a href="#vinh-danh" class="btn-top" style="color: #fbbf24; border-color: rgba(245, 158, 11, 0.4);">🏆 Bài Vinh Danh</a>
+        <a href="#danh-sach" class="btn-top">📂 Danh Sách 10 Bài</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <!-- Header / Intro -->
+    <header class="hero">
+      <div class="hero-pill">⚡ KẾT QUẢ THỰC HÀNH TẠI HỘI TRƯỜNG</div>
+      <h1 class="hero-title">SINH VIÊN TỰ TẠO BẢN ĐỌC<br>PHÙ HỢP TRẢI NGHIỆM CÁ NHÂN BẰNG AI</h1>
+      <p class="hero-lead">
+        Từ một cuốn cẩm nang nội dung thống nhất, sinh viên sử dụng công cụ AI (Prompt & Vibe Coding) để tự kiến tạo một không gian đọc tương tác mang đậm phong cách và thế giới quan riêng biệt.
+      </p>
+      <div class="hero-instruction">
+        👉 <strong>Thao tác:</strong> Chạm / Click vào các nút bên dưới để mở và thao tác trực tiếp trên các bản đọc!
+      </div>
+    </header>
+
+    <!-- SECTION 1: VINH DANH TRÊN ĐẦU (JURASSIC FOREST) -->
+    <section id="vinh-danh" class="featured-section">
+      <div class="featured-card">
+        <div class="featured-header">
+          <div class="award-badge">⭐ SẢN PHẨM VINH DANH XUẤT SẮC NHẤT</div>
+          <div class="featured-tag">🦕 Chủ đề: Kỷ Jura & Thám hiểm Sinh vật cổ</div>
+        </div>
+        <h2 class="featured-name">Jurassic Forest HTML</h2>
+        <p class="featured-desc">
+          Tác phẩm xuất sắc nhất trong việc chuyển đổi tài liệu học tập thành một chuyến phiêu lưu sinh thái kỷ Jura đắm chìm. Các thẻ cú pháp HTML được lồng ghép thành những mảnh ghép hóa thạch tiền sử cần giải mã, tạo nên hiệu ứng kích thích trí tò mò và hứng thú tự học đỉnh cao.
+        </p>
+        <div class="featured-pills">
+          <div class="pill"><span>✓</span> Gamification hóa việc đọc tài liệu</div>
+          <div class="pill"><span>✓</span> Tone màu rừng nhiệt đới & hiệu ứng âm hưởng huyền bí</div>
+          <div class="pill"><span>✓</span> Làm chủ Prompt hướng dẫn AI sinh giao diện tương tác mượt mà</div>
+          <div class="pill"><span>✓</span> Đỉnh cao cá nhân hóa trải nghiệm học (LXD)</div>
+        </div>
+        <a href="https://jurassic-forest-html-wq3jhj1jzr4.qoder.website" target="_blank" rel="noopener noreferrer" class="btn-featured-cta">
+          🚀 MỞ BẢN ĐỌC JURASSIC FOREST (TRỰC TIẾP) &rarr;
+        </a>
+      </div>
+    </section>
+
+    <!-- SECTION 2: 9 BẢN ĐỌC CÒN LẠI -->
+    <section id="danh-sach">
+      <h2 class="section-title">📂 Khám Phá 9 Không Gian Học Tập Cá Nhân Hóa Khác</h2>
+      <div class="grid">
+
+        <!-- 01 -->
+        <div class="item-card">
+          <div>
+            <div class="card-top">
+              <span class="card-id">#01</span>
+              <span class="card-theme-tag">Interactive Workshop</span>
+            </div>
+            <h3 class="card-title">HTML Workshop</h3>
+            <p class="card-desc">Giao diện theo phong cách workshop thực chiến, tích hợp bảng lộ trình tương tác đa chức năng.</p>
+          </div>
+          <a href="https://html-workshop-8wg5ohayfqz.qoder.website/#home" target="_blank" rel="noopener noreferrer" class="btn-launch">
+            Mở Bản Đọc Trực Tiếp ↗
+          </a>
+        </div>
+
+        <!-- 02 -->
+        <div class="item-card">
+          <div>
+            <div class="card-top">
+              <span class="card-id">#02</span>
+              <span class="card-theme-tag">Minimalist Focus</span>
+            </div>
+            <h3 class="card-title">HTML Viva Reader</h3>
+            <p class="card-desc">Thiết kế thanh lịch, trang nhã, tối ưu hóa nhịp đọc và khả năng tập trung sâu của người học.</p>
+          </div>
+          <a href="https://html-viva-8wg5ohayfqz.qoder.website" target="_blank" rel="noopener noreferrer" class="btn-launch">
+            Mở Bản Đọc Trực Tiếp ↗
+          </a>
+        </div>
+
+        <!-- 03 -->
+        <div class="item-card">
+          <div>
+            <div class="card-top">
+              <span class="card-id">#03</span>
+              <span class="card-theme-tag">Eco Forest Theme</span>
+            </div>
+            <h3 class="card-title">Web Forest</h3>
+            <p class="card-desc">Tone màu xanh mát mắt của rừng sinh thái, tạo cảm giác học tập an yên, thư giãn.</p>
+          </div>
+          <a href="https://web-forest-2atsn9kxxen.qoder.website" target="_blank" rel="noopener noreferrer" class="btn-launch">
+            Mở Bản Đọc Trực Tiếp ↗
+          </a>
+        </div>
+
+        <!-- 04 -->
+        <div class="item-card">
+          <div>
+            <div class="card-top">
+              <span class="card-id">#04</span>
+              <span class="card-theme-tag">Sci-Fi Universe</span>
+            </div>
+            <h3 class="card-title">CSE122 Solar System</h3>
+            <p class="card-desc">Chủ đề Hệ Mặt Trời & Ngân hà khoa học viễn tưởng, biến việc tích lũy kiến thức thành hành trình du hành vũ trụ.</p>
+          </div>
+          <a href="https://cse122-solar-system-kg42veqywyg.qoder.website" target="_blank" rel="noopener noreferrer" class="btn-launch">
+            Mở Bản Đọc Trực Tiếp ↗
+          </a>
+        </div>
+
+        <!-- 05 -->
+        <div class="item-card">
+          <div>
+            <div class="card-top">
+              <span class="card-id">#05</span>
+              <span class="card-theme-tag">Personal Academy</span>
+            </div>
+            <h3 class="card-title">Anhhh Academy</h3>
+            <p class="card-desc">Mô hình học viện tri thức mang phong cách cá nhân, bố cục chia chuyên mục khoa học, hiện đại.</p>
+          </div>
+          <a href="https://anhhh-academy-xk3plk8tv2x.qoder.website/" target="_blank" rel="noopener noreferrer" class="btn-launch">
+            Mở Bản Đọc Trực Tiếp ↗
+          </a>
+        </div>
+
+        <!-- 07 -->
+        <div class="item-card">
+          <div>
+            <div class="card-top">
+              <span class="card-id">#07</span>
+              <span class="card-theme-tag">Slime Lab Theme</span>
+            </div>
+            <h3 class="card-title">SlimeLab HTML Reader</h3>
+            <p class="card-desc">Thế giới phòng thí nghiệm Slime ngộ nghĩnh, màu sắc rực rỡ mang năng lượng tích cực cho giờ học.</p>
+          </div>
+          <a href="https://slimelab-html-reader-yyrxaes5ehg.qoder.website/" target="_blank" rel="noopener noreferrer" class="btn-launch">
+            Mở Bản Đọc Trực Tiếp ↗
+          </a>
+        </div>
+
+        <!-- 08 -->
+        <div class="item-card">
+          <div>
+            <div class="card-top">
+              <span class="card-id">#08</span>
+              <span class="card-theme-tag">Friendly & Cute</span>
+            </div>
+            <h3 class="card-title">Bống Học HTML</h3>
+            <p class="card-desc">Giao diện gần gũi, thân thiện, chia nhỏ chặng học và nhiệm vụ hàng ngày giúp tiếp thu dễ dàng.</p>
+          </div>
+          <a href="https://bong-hoc-html-jne7cu6gx54.qoder.website/" target="_blank" rel="noopener noreferrer" class="btn-launch">
+            Mở Bản Đọc Trực Tiếp ↗
+          </a>
+        </div>
+
+        <!-- 09 -->
+        <div class="item-card">
+          <div>
+            <div class="card-top">
+              <span class="card-id">#09</span>
+              <span class="card-theme-tag">Direct Code Lab</span>
+            </div>
+            <h3 class="card-title">TagLab HTML</h3>
+            <p class="card-desc">Phòng thí nghiệm thẻ trực quan cho dân kỹ thuật, tra cứu cú pháp và xem hiệu ứng hiển thị tức thì.</p>
+          </div>
+          <a href="https://taglab-html-z4orleor4ka.qoder.website" target="_blank" rel="noopener noreferrer" class="btn-launch">
+            Mở Bản Đọc Trực Tiếp ↗
+          </a>
+        </div>
+
+        <!-- 10 -->
+        <div class="item-card">
+          <div>
+            <div class="card-top">
+              <span class="card-id">#10</span>
+              <span class="card-theme-tag">Academic Standard</span>
+            </div>
+            <h3 class="card-title">HTML Academy</h3>
+            <p class="card-desc">Thiết kế theo chuẩn mực học viện đào tạo chuyên nghiệp, chia cấu trúc bài giảng rõ ràng, bài bản.</p>
+          </div>
+          <a href="https://html-academy-g0crrh0dzf7.qoder.website/" target="_blank" rel="noopener noreferrer" class="btn-launch">
+            Mở Bản Đọc Trực Tiếp ↗
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 3: BẢN GỐC ĐỂ ĐỐI CHỨNG -->
+    <div class="base-box">
+      <div class="base-info">
+        <h4>📖 Bản Cẩm Nang & Sổ Tay Gốc (Nội dung đối chứng)</h4>
+        <p>Cuốn cẩm nang xuất phát điểm mà sinh viên sử dụng để tùy biến giao diện và thiết kế trải nghiệm.</p>
+      </div>
+      <a href="https://ai-student-handbook-8nchu0xfadn.qoder.website" target="_blank" rel="noopener noreferrer" class="btn-base">
+        Xem Cẩm Nang Gốc ↗
+      </a>
+    </div>
+
+    <footer>
+      Minh chứng phục vụ buổi báo cáo chuyên đề về Ứng dụng AI trong Học tập chủ động & Đổi mới giảng dạy.
+    </footer>
+  </div>
+
+</body>
+</html>
